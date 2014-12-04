@@ -1,0 +1,2403 @@
+<?xml version="1.0"?>
+<Skein rootNode="node-0x7de2bc90" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+  <generator>Zoom</generator>
+  <activeNode nodeId="node-0x796eec90" />
+  <item nodeId="node-0x7de2bc90">
+    <command xml:space="preserve">- start -</command>
+    <result xml:space="preserve">
+
+
+Blood on the Snow
+An Interactive Fiction by spanky
+Release 1 / Serial number 141203 / Inform 7 build 6L38 (I6/v6.33 lib 6/12N) SD
+
+Mountain Road
+They say you shouldn&apos;t drive when you&apos;re angry. That was but one of a hundred pieces of good advice I was ignoring as I sped down the icy road to the chalet, my foot a little heavier on the gas than it needed to be.
+
+I&apos;d had a long, promising career in homicide ahead of me, or at least that&apos;s what I kept telling myself, and it was all down the drain now. I had planned on a senior detective&apos;s desk being in the cards for me, at least. Hell, maybe even going into private investigations. Well, I guess I could still do that.
+
+A few hours earlier, I&apos;d turned in my badge and my gun and walked out, more or less the way I&apos;d seen it in the movies. The captain was yelling his head off, couldn&apos;t figure out why a promising young detective would just up and quit. I hoped he never did.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="130">NO</temporary>
+    <children>
+      <child nodeId="node-0x7dec7260" />
+      <child nodeId="node-0x7de2be90" />
+      <child nodeId="node-0x7dfc16f0" />
+      <child nodeId="node-0x7de2bd00" />
+    </children>
+  </item>
+  <item nodeId="node-0x7de2bd00">
+    <command xml:space="preserve">actions</command>
+    <result xml:space="preserve">Actions listing on.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="125">YES</temporary>
+    <children>
+      <child nodeId="node-0x7de2bd50" />
+    </children>
+  </item>
+  <item nodeId="node-0x7de2bd50">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">[going north]
+
+Mountain_Pass
+I had the radio on tuned to some news station-- truth be told, I already missed the chatter of the dispatch as I was driving. The traffic report had little bearing on my current locale, but the weather gave me some concern: snowstorm coming up off the Great Lakes, apparently. Spending the weekend with a small crowd I barely knew appealed very little to me. Being cooped up with them the entire time due to weather seemed like a recipe for an epidemic of cabin fever.
+
+[going north - succeeded]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="125">YES</temporary>
+    <children>
+      <child nodeId="node-0x7de2bda0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7de2bda0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">[going north]
+
+Hairpin_Turn
+If I&apos;d finished that last thought a few seconds earlier, I might&apos;ve noticed the caution sign for the sharp turn, barely visible through the snow. The car was going too fast, and the guardrail came out of nowhere.
+
+[going north - succeeded]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="125">YES</temporary>
+    <children>
+      <child nodeId="node-0x7de2bdf0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7de2bdf0">
+    <command xml:space="preserve">brake</command>
+    <result xml:space="preserve">I slammed my foot on the brakes, but to no avail.
+
+[looking]
+Bottom of Cliff
+Taking stock of my situation, I was surprised to find myself more or less unhurt, save for a dull ache in my left wrist where I&apos;d tried to brace against the door. I took a few deep breaths, and tried to gather myself-- I was still a little mentally a little shocked and unfocused.
+
+Test
+
+[looking - succeeded]
+
+That&apos;s not a verb I recognise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="125">YES</temporary>
+    <children>
+      <child nodeId="node-0x7de2be40" />
+    </children>
+  </item>
+  <item nodeId="node-0x7de2be40">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">[looking]
+Bottom of Cliff
+Taking stock of my situation, I was surprised to find myself more or less unhurt, save for a dull ache in my left wrist where I&apos;d tried to brace against the door. I took a few deep breaths, and tried to gather myself-- I was still a little mentally a little shocked and unfocused.
+
+Test
+
+[looking - succeeded]
+
+The back end of the car lost traction and swung out wide, trying vainly to follow the front, just like one of those car commercials. Unfortunately, I was not a professional driver, nor was this a closed course, and the right side of the car went over the edge of the cliff, momentum then taking the rest of the car with it. In shock, my brain couldn&apos;t manage to tell my body to do more than grip the wheel uselessly as the car tumbled down the steep incline. I lost count of the rolls after three. The roof hit a tree, and I&apos;m jerked upward against the seat belt. Snow from the branches fell into a pile onto the passenger window from the impact. I heard a thud, and the moonlight I&apos;d briefly glimpsed was snuffed out by it.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="124">YES</temporary>
+  </item>
+  <item nodeId="node-0x7dfc16f0">
+    <command xml:space="preserve">drive</command>
+    <result xml:space="preserve">
+Mountain pass
+I had the radio on tuned to some news station-- truth be told, I already missed the chatter of the dispatch as I was driving. The traffic report had little bearing on my current locale, but the weather gave me some concern: snowstorm coming up off the Great Lakes, apparently. Spending the weekend with a small crowd I barely knew appealed very little to me. Being cooped up with them the entire time due to weather seemed like a recipe for an epidemic of cabin fever.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="130">YES</temporary>
+    <children>
+      <child nodeId="node-0x796c6180" />
+    </children>
+  </item>
+  <item nodeId="node-0x796c6180">
+    <command xml:space="preserve">drive</command>
+    <result xml:space="preserve">
+Hairpin Turn
+If I&apos;d finished that last thought a few seconds earlier, I might&apos;ve noticed the caution sign for the sharp turn, barely visible through the snow. The car was going too fast, and the guardrail came out of nowhere.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="130">YES</temporary>
+    <children>
+      <child nodeId="node-0x7def9740" />
+      <child nodeId="node-0x7df5df70" />
+    </children>
+  </item>
+  <item nodeId="node-0x7df5df70">
+    <command xml:space="preserve">stop</command>
+    <result xml:space="preserve">I hit the brakes, but the car kept straight for the guardrail, slamming through, and going over.
+
+The back end of the car lost traction and swung out wide, trying vainly to follow the front, just like one of those car commercials. Unfortunately, I was not a professional driver, nor was this a closed course, and the right side of the car went over the edge of the cliff, momentum then taking the rest of the car with it. In shock, my brain couldn&apos;t manage to tell my body to do more than grip the wheel uselessly as the car tumbled down the steep incline. I lost count of the rolls after three. The roof hit a tree, and I&apos;m jerked upward against the seat belt. Snow from the branches fell into a pile onto the passenger window from the impact. I heard a thud, snuffing out the brief glimpse of moonlight.
+
+Upturned Car
+I wasn&apos;t sure how long I&apos;d been out. Taking stock of my situation, I was surprised to find myself more or less unhurt, save for a dull ache in my left wrist where I&apos;d tried to brace against the door. I took a few deep breaths, and tried to gather myself-- I was still a little mentally a little shocked and unfocused.
+
+The car was presently lying at the bottom of a cliff on its side. Above me, I could see moonlight, dimly mottled by the snow on the passenger side windows. The windshield in front of me showed nothing but evergreen forest, extending into the darkness.
+
+I was still strapped in, the seat belt made sure I stayed put. At least one thing in this car still knew how to do its job right.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="130">YES</temporary>
+    <children>
+      <child nodeId="node-0x7eb74670" />
+    </children>
+  </item>
+  <item nodeId="node-0x7eb74670">
+    <command xml:space="preserve">unbuckle self</command>
+    <result xml:space="preserve">I wrestled with the jammed seat belt for a moment, then managed to undo it, falling a few inches down against the driver door once the chest belt was free.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="130">YES</temporary>
+    <children>
+      <child nodeId="node-0x7eb33880" />
+    </children>
+  </item>
+  <item nodeId="node-0x7eb33880">
+    <command xml:space="preserve">kick windshield</command>
+    <result xml:space="preserve">Bracing my back against the sideways seat, I gave the windshield a couple of sharp kicks, dislodging it from the frame and making myself an exit. It fell out onto the snow with a muffled crunch, and the bitter winter wind started to blow into the compartment. I grabbed my bag and stepped out into the forest.
+
+Bottom of Cliff
+I stood on a  ridge densely packed with trees some ways below the highway. My overturned car sat a few feet away. The ridge extended as far as I could see to the north, going nowhere in particular. To the west I saw the steep incline the car had rolled down, and the path it&apos;d cut through the snow and brush.
+
+I was miles from nowhere. It had stopped snowing for the moment. The night sky was starting to lighten, I figured I had an hour before sunrise.
+
+Fucking swell.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="130">YES</temporary>
+    <children>
+      <child nodeId="node-0x7ea422e0" />
+      <child nodeId="node-0x7ea2e180" />
+      <child nodeId="node-0x7ea58970" />
+    </children>
+  </item>
+  <item nodeId="node-0x7ea58970">
+    <command xml:space="preserve">get in</command>
+    <result xml:space="preserve">You must supply a noun.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="123">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dff0610" />
+      <child nodeId="node-0x7ea74a60" />
+    </children>
+  </item>
+  <item nodeId="node-0x7ea74a60">
+    <command xml:space="preserve">up</command>
+    <result xml:space="preserve">
+Sharp Bend
+I stood about a hundred feet from the hairpin turn where my car had gone over; I could see the tire tracks and broken guardrail to the south.
+
+The second I turned my head to look down the lane, I saw a pair of headlights approach. A black Mercedes pulled up and came to a stop just in front of me. The passenger door opened, and I saw Val looking out at me.
+
+&quot;Get in,&quot; she said.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="123">YES</temporary>
+    <children>
+      <child nodeId="node-0x7e83dbd0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7e83dbd0">
+    <command xml:space="preserve">get in</command>
+    <result xml:space="preserve">I got into the Mercedes.
+
+Sedan
+The inside of the Mercedes was yards of brushed metal and hand-stiched leather. It even still smelled new. Having run out of things to talk about, nothing to do now but wait to arrive.
+
+Val drove the car, her eyes seemed like they were looking miles beyond the road, the mountains, and the horizon.
+I&apos;d run out of things to talk about. Nothing to do now but wait for us to get there.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="122">YES</temporary>
+  </item>
+  <item nodeId="node-0x7dff0610">
+    <command xml:space="preserve"> up</command>
+    <result xml:space="preserve">
+Sharp Bend
+I stood about a hundred feet from the hairpin turn where my car had gone over; I could see the tire tracks and broken guardrail to the south.
+
+The second I turned my head to look down the lane, I saw a pair of headlights approach. A black Mercedes pulled up and came to a stop just in front of me. The passenger door opened, and I saw Val looking out at me.
+
+&quot;Get in,&quot; she said.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="108">YES</temporary>
+    <children>
+      <child nodeId="node-0x79614b60" />
+    </children>
+  </item>
+  <item nodeId="node-0x79614b60">
+    <command xml:space="preserve">get in</command>
+    <result xml:space="preserve">I got into the Mercedes.
+
+Sedan
+The inside of the Mercedes was yards of brushed metal and hand-stiched leather. It even still smelled new.
+
+Val drove the car, her eyes seemed like they were looking miles beyond the road, the mountains, and the horizon.
+I&apos;d run out of things to talk about. Nothing to do now but wait for us to get there.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="107">YES</temporary>
+  </item>
+  <item nodeId="node-0x7ea2e180">
+    <command xml:space="preserve"> up</command>
+    <result xml:space="preserve">
+Sharp Bend
+I stood about a hundred feet from the hairpin turn where my car had gone over; I could see the tire tracks and broken guardrail to the south.
+
+The second I turned my head to look down the lane, I saw a pair of headlights approach. A black Mercedes pulled up and came to a stop just in front of me. The passenger door opened, and I saw Val looking out at me.
+
+&quot;Get in,&quot; she said.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="115">YES</temporary>
+    <children>
+      <child nodeId="node-0x7e89ee20" />
+    </children>
+  </item>
+  <item nodeId="node-0x7e89ee20">
+    <command xml:space="preserve">get in</command>
+    <result xml:space="preserve">I got into the Mercedes.
+
+Sedan
+The inside of the Mercedes was yards of brushed metal and hand-stiched leather. It even still smelled new. Having run out of things to talk about, nothing to do now but wait to arrive.
+
+Val drove the car, her eyes seemed like they were looking miles beyond the road, the mountains, and the horizon.
+I&apos;d run out of things to talk about. Nothing to do now but wait for us to get there.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="114">YES</temporary>
+  </item>
+  <item nodeId="node-0x7ea422e0">
+    <command xml:space="preserve">up</command>
+    <result xml:space="preserve">
+Sharp Bend
+I stood about a hundred feet from the hairpin turn where my car had gone over; I could see the tire tracks and broken guardrail to the south.
+
+The second I turned my head to look down the lane, I saw a pair of headlights approach. A black Mercedes pulled up and came to a stop just in front of me. The passenger door opened, and I saw Val looking out at me.
+
+&quot;Get in,&quot; she said.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="130">YES</temporary>
+    <children>
+      <child nodeId="node-0x796eec90" />
+    </children>
+  </item>
+  <item nodeId="node-0x796eec90">
+    <command xml:space="preserve">get in</command>
+    <result xml:space="preserve">I got into the Mercedes.
+
+Sedan
+The inside of the Mercedes was yards of brushed metal and hand-stiched leather. It even still smelled new. Having run out of things to talk about, nothing to do now but wait to arrive.
+
+Val drove the car, her eyes seemed like they were looking miles beyond the road, the mountains, and the horizon.
+I&apos;d run out of things to talk about. Nothing to do now but wait for us to get there.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="129">YES</temporary>
+  </item>
+  <item nodeId="node-0x7def9740">
+    <command xml:space="preserve">brake</command>
+    <result xml:space="preserve">I hit the brakes, but the car kept straight for the guardrail, slamming through, and going over.
+
+The back end of the car lost traction and swung out wide, trying vainly to follow the front, just like one of those car commercials. Unfortunately, I was not a professional driver, nor was this a closed course, and the right side of the car went over the edge of the cliff, momentum then taking the rest of the car with it. In shock, my brain couldn&apos;t manage to tell my body to do more than grip the wheel uselessly as the car tumbled down the steep incline. I lost count of the rolls after three. The roof hit a tree, and I&apos;m jerked upward against the seat belt. Snow from the branches fell into a pile onto the passenger window from the impact. I heard a thud, snuffing out the brief glimpse of moonlight.
+
+Upturned Car
+I wasn&apos;t sure how long I&apos;d been out. Taking stock of my situation, I was surprised to find myself more or less unhurt, save for a dull ache in my left wrist where I&apos;d tried to brace against the door. I took a few deep breaths, and tried to gather myself-- I was still a little mentally a little shocked and unfocused.
+
+The car was presently lying at the bottom of a cliff on its side. Above me, I could see moonlight, dimly mottled by the snow on the passenger side windows. The windshield in front of me showed nothing but evergreen forest, extending into the darkness.
+
+I was still strapped in, the seat belt made sure I stayed put. At least one thing in this car still knew how to do its job right.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="93">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dfafd50" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dfafd50">
+    <command xml:space="preserve">kick windshield</command>
+    <result xml:space="preserve">The seat belt held me firmly in place in what was now the bottom of the upturned car. I wasn&apos;t going to be able to see or do much of anything until I unbuckled myself.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="93">YES</temporary>
+    <children>
+      <child nodeId="node-0x797d01c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x797d01c0">
+    <command xml:space="preserve">unbuckle self</command>
+    <result xml:space="preserve">I wrestled with the jammed seat belt for a moment, then managed to undo it, falling a few inches down against the driver door once the chest belt was free.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="93">YES</temporary>
+    <children>
+      <child nodeId="node-0x7ea427b0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7ea427b0">
+    <command xml:space="preserve">kick windshield</command>
+    <result xml:space="preserve">Bracing my back against the sideways seat, I gave the windshield a couple of sharp kicks, dislodging it from the frame and making myself an exit. It fell out onto the snow with a muffled crunch, and the bitter winter wind started to blow into the compartment. I grabbed my bag and stepped out into the forest.
+
+Bottom of Cliff
+I stood on a  ridge densely packed with trees some ways below the highway. My overturned car sat a few feet away. The ridge extended as far as I could see to the north, going nowhere in particular. To the west I saw the steep incline the car had rolled down, and the path it&apos;d cut through the snow and brush.
+
+I was miles from nowhere. It had stopped snowing for the moment. The night sky was starting to lighten, I figured I had an hour before sunrise.
+
+Fucking swell.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="93">YES</temporary>
+    <children>
+      <child nodeId="node-0x7de70b90" />
+      <child nodeId="node-0x7df49850" />
+    </children>
+  </item>
+  <item nodeId="node-0x7df49850">
+    <command xml:space="preserve">get in</command>
+    <result xml:space="preserve">You must supply a noun.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="93">YES</temporary>
+    <children>
+      <child nodeId="node-0x7eb51450" />
+    </children>
+  </item>
+  <item nodeId="node-0x7eb51450">
+    <command xml:space="preserve">get in</command>
+    <result xml:space="preserve">You must supply a noun.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="93">YES</temporary>
+    <children>
+      <child nodeId="node-0x7b314470" />
+    </children>
+  </item>
+  <item nodeId="node-0x7b314470">
+    <command xml:space="preserve">up</command>
+    <result xml:space="preserve">
+Sharp Bend
+I stood about a hundred feet from the hairpin turn where my car had gone over; I could see the tire tracks and broken guardrail to the south.
+
+The second I turned my head to look down the lane, I saw a pair of headlights approach. A black Mercedes pulled up and came to a stop just in front of me. The passenger door opened, and I saw Val looking out at me.
+
+&quot;Get in,&quot; she said.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="93">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dfc8b40" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dfc8b40">
+    <command xml:space="preserve">get in</command>
+    <result xml:space="preserve">I got into the Mercedes.
+
+Sedan
+The inside of the Mercedes was yards of brushed metal and hand-stiched leather. It even still smelled new. Having run out of things to talk about, nothing to do now but wait to arrive.
+
+Val drove the car, her eyes seemed like they were looking miles beyond the road, the mountains, and the horizon.
+I&apos;d run out of things to talk about. Nothing to do now but wait for us to get there.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="92">YES</temporary>
+  </item>
+  <item nodeId="node-0x7de70b90">
+    <command xml:space="preserve">up</command>
+    <result xml:space="preserve">
+Sharp Bend
+I stood about a hundred feet from the hairpin turn where my car had gone over; I could see the tire tracks and broken guardrail to the south.
+
+The second I turned my head to look down the lane, I saw a pair of headlights approach. A black Mercedes pulled up and came to a stop just in front of me. The passenger door opened, and I saw Val looking out at me.
+
+&quot;Get in,&quot; she said.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="83">YES</temporary>
+    <children>
+      <child nodeId="node-0x7ea42eb0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7ea42eb0">
+    <command xml:space="preserve">get in</command>
+    <result xml:space="preserve">I got into the Mercedes.
+
+Sedan
+The inside of the Mercedes was yards of brushed metal and hand-stiched leather. It even still smelled new.
+
+Val drove the car, her eyes seemed like they were looking miles beyond the road, the mountains, and the horizon.
+I&apos;d run out of things to talk about. Nothing to do now but wait for us to get there.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="82">YES</temporary>
+  </item>
+  <item nodeId="node-0x7de2be90">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Mountain pass
+I had the radio on tuned to some news station-- truth be told, I already missed the chatter of the dispatch as I was driving. The traffic report had little bearing on my current locale, but the weather gave me some concern: snowstorm coming up off the Great Lakes, apparently. Spending the weekend with a small crowd I barely knew appealed very little to me. Being cooped up with them the entire time due to weather seemed like a recipe for an epidemic of cabin fever.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="360">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec5da0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec5da0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Hairpin Turn
+If I&apos;d finished that last thought a few seconds earlier, I might&apos;ve noticed the caution sign for the sharp turn, barely visible through the snow. The car was going too fast, and the guardrail came out of nowhere.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="360">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec5df0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec5df0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">I couldn&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="360">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec5e40" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec5e40">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">I couldn&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="360">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec5eb0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec5eb0">
+    <command xml:space="preserve">down</command>
+    <result xml:space="preserve">It&apos;s too late to stop, so I don&apos;t even bother. Instead, I press my head and back against the seat and put my arms in front of my face.
+
+The back end of the car lost traction and swung out wide, trying vainly to follow the front, just like one of those car commercials. Unfortunately, I was not a professional driver, nor was this a closed course, and the right side of the car went over the edge of the cliff, momentum then taking the rest of the car with it. In shock, my brain couldn&apos;t manage to tell my body to do more than grip the wheel uselessly as the car tumbled down the steep incline. I lost count of the rolls after three. The roof hit a tree, and I&apos;m jerked upward against the seat belt. Snow from the branches fell into a pile onto the passenger window from the impact. I heard a thud, snuffing out the brief glimpse of moonlight.
+
+Upturned Sedan
+Taking stock of my situation, I was surprised to find myself more or less unhurt, save for a dull ache in my left wrist where I&apos;d tried to brace against the door. I took a few deep breaths, and tried to gather myself-- I was still a little mentally a little shocked and unfocused.
+
+The car was presently lying at the bottom of a cliff on its side. Above me, I could see moonlight, dimly mottled by the snow on the passenger side windows. The windshield in front of me showed nothing but evergreen forest, extending into the darkness.
+
+I was still strapped in, the seat belt made sure I stayed put. At least one thing in this car still knew how to do its job right.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="360">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec6bd0" />
+      <child nodeId="node-0x7dec5f20" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec5f20">
+    <command xml:space="preserve">unbuckle me</command>
+    <result xml:space="preserve">I wrestled with the jammed seat belt for a moment, then managed to undo it, falling a few inches down against the driver door once the chest belt was free.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="360">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec6050" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec6050">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Upturned Sedan
+Taking stock of my situation, I was surprised to find myself more or less unhurt, save for a dull ache in my left wrist where I&apos;d tried to brace against the door. I took a few deep breaths, and tried to gather myself-- I was still a little mentally a little shocked and unfocused.
+
+The car was presently lying at the bottom of a cliff on its side. Above me, I could see moonlight, dimly mottled by the snow on the passenger side windows. The windshield in front of me showed nothing but evergreen forest, extending into the darkness.
+
+I crouched at the bottom of the car on the driver door, trying to figure the best way out.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="360">YES</temporary>
+    <children>
+      <child nodeId="node-0x7de2bf20" />
+    </children>
+  </item>
+  <item nodeId="node-0x7de2bf20">
+    <command xml:space="preserve">kick door</command>
+    <result xml:space="preserve">Which do you mean, the driver door or the passenger door?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="360">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec60a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec60a0">
+    <command xml:space="preserve">kick driver door</command>
+    <result xml:space="preserve">It&apos;s down against a foot of packed snow, with the hard earth below that. I try to kick the driver&apos;s side door, but don&apos;t get further than cracking the window.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="360">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec6110" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec6110">
+    <command xml:space="preserve">attach driver door</command>
+    <result xml:space="preserve">(to the cell phone)
+I would have achieved nothing by this.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="360">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec6180" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec6180">
+    <command xml:space="preserve">attack driver door</command>
+    <result xml:space="preserve">It&apos;s down against a foot of packed snow, with the hard earth below that. I try to kick the driver&apos;s side door, but don&apos;t get further than cracking the window.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="360">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec61f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec61f0">
+    <command xml:space="preserve">punch driver door</command>
+    <result xml:space="preserve">That wouldn&apos;t accomplish much.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="360">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec6260" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec6260">
+    <command xml:space="preserve">punch windshield</command>
+    <result xml:space="preserve">I hit the windshield a few times, and can feel it start to come loose. A good solid kick ought to do it.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="360">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec62d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec62d0">
+    <command xml:space="preserve">hit windshield</command>
+    <result xml:space="preserve">I hit the windshield a few times, and can feel it start to come loose. A good solid kick ought to do it.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="360">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec5f90" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec5f90">
+    <command xml:space="preserve">hit windshield</command>
+    <result xml:space="preserve">I hit the windshield a few times, and can feel it start to come loose. A good solid kick ought to do it.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="360">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec5fe0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec5fe0">
+    <command xml:space="preserve">kick windshield</command>
+    <result xml:space="preserve">Bracing my back against the sideways seat, I gave the windshield a couple of sharp kicks, dislodging it from the frame and making myself an exit. It fell out onto the snow with a muffled crunch, and the bitter winter wind started to blow into the compartment. I grabbed my bag and stepped out into the forest.
+
+Bottom of Cliff
+I stood on a  ridge densely packed with trees some ways below the highway. My overturned car sat a few feet away. The ridge extended as far as I could see to the north, going nowhere in particular. To the west I saw the steep incline the car had rolled down, and the path it&apos;d cut through the snow and brush.
+
+I was miles from nowhere. The night sky was starting to lighten, I figured I had an hour before sunrise.
+
+Fucking swell.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="360">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec64c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec64c0">
+    <command xml:space="preserve">kick passenger door</command>
+    <result xml:space="preserve">I couldn&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="360">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec6530" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec6530">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Bottom of Cliff
+I stood on a  ridge densely packed with trees some ways below the highway. My overturned car sat a few feet away. The ridge extended as far as I could see to the north, going nowhere in particular. To the west I saw the steep incline the car had rolled down, and the path it&apos;d cut through the snow and brush.
+
+I was miles from nowhere. The night sky was starting to lighten, I figured I had an hour before sunrise.
+
+Fucking swell.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="360">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec65a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec65a0">
+    <command xml:space="preserve">kick windshield</command>
+    <result xml:space="preserve">I couldn&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="360">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec6610" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec6610">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Bottom of Cliff
+I stood on a  ridge densely packed with trees some ways below the highway. My overturned car sat a few feet away. The ridge extended as far as I could see to the north, going nowhere in particular. To the west I saw the steep incline the car had rolled down, and the path it&apos;d cut through the snow and brush.
+
+I was miles from nowhere. The night sky was starting to lighten, I figured I had an hour before sunrise.
+
+Fucking swell.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="360">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec6680" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec6680">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">I was carrying:
+  a cell phone
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="360">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec66f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec66f0">
+    <command xml:space="preserve">x cell phone</command>
+    <result xml:space="preserve">I saw nothing special about the cell phone.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="360">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec6760" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec6760">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Bottom of Cliff
+I stood on a  ridge densely packed with trees some ways below the highway. My overturned car sat a few feet away. The ridge extended as far as I could see to the north, going nowhere in particular. To the west I saw the steep incline the car had rolled down, and the path it&apos;d cut through the snow and brush.
+
+I was miles from nowhere, and the cherry on top was that my cell phone was broken. The night sky was starting to lighten, I figured I had an hour before sunrise.
+
+Fucking swell.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="360">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec67d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec67d0">
+    <command xml:space="preserve">exits</command>
+    <result xml:space="preserve">That&apos;s not a verb I recognise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="360">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec6840" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec6840">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Sharp Bend
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="360">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec68b0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec68b0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">I couldn&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="360">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec6920" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec6920">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">
+Bottom of Cliff
+I stood on a  ridge densely packed with trees some ways below the highway. My overturned car sat a few feet away. The ridge extended as far as I could see to the north, going nowhere in particular. To the west I saw the steep incline the car had rolled down, and the path it&apos;d cut through the snow and brush.
+
+I was miles from nowhere, and the cherry on top was that my cell phone was broken. The night sky was starting to lighten, I figured I had an hour before sunrise.
+
+Fucking swell.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="360">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec6340" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec6340">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Mountain Ridge
+I tr
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="360">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec63b0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec63b0">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Mountain Ridge
+I tr
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="360">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec6420" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec6420">
+    <command xml:space="preserve">i</command>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="359">YES</temporary>
+  </item>
+  <item nodeId="node-0x7dec6bd0">
+    <command xml:space="preserve">unbuckel</command>
+    <result xml:space="preserve">That&apos;s not a verb I recognise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="123">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec6c40" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec6c40">
+    <command xml:space="preserve">unbuckle</command>
+    <result xml:space="preserve">I wrestled with the jammed seat belt for a moment, then managed to unclick it, falling a few inches down against the driver door once the chest belt was free.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="123">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec6cb0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec6cb0">
+    <command xml:space="preserve">unbuckle self</command>
+    <result xml:space="preserve">That&apos;s not a verb I recognise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="123">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec6d20" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec6d20">
+    <command xml:space="preserve">unbuckle myself</command>
+    <result xml:space="preserve">I&apos;d already extricated myself from the restraints.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="123">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec6d90" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec6d90">
+    <command xml:space="preserve">unbuckle me</command>
+    <result xml:space="preserve">I&apos;d already extricated myself from the restraints.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="123">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec6e00" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec6e00">
+    <command xml:space="preserve">unbuckle player</command>
+    <result xml:space="preserve">That&apos;s not a verb I recognise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="123">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec6e70" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec6e70">
+    <command xml:space="preserve">look me</command>
+    <result xml:space="preserve">As good-looking as ever.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="123">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec6ee0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec6ee0">
+    <command xml:space="preserve">x me</command>
+    <result xml:space="preserve">As good-looking as ever.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="123">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec6f50" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec6f50">
+    <command xml:space="preserve">unbuckle me</command>
+    <result xml:space="preserve">I&apos;d already extricated myself from the restraints.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="123">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec6fc0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec6fc0">
+    <command xml:space="preserve">kick windshield</command>
+    <result xml:space="preserve">&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="123">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec7030" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec7030">
+    <command xml:space="preserve">x door</command>
+    <result xml:space="preserve">Which do you mean, the driver door or Carry out kicking the dri The passenger door?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="123">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec70a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec70a0">
+    <command xml:space="preserve">x</command>
+    <result xml:space="preserve">What do you want to examine?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="123">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec7110" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec7110">
+    <command xml:space="preserve">bite</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="123">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec7180" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec7180">
+    <command xml:space="preserve">bite windshield</command>
+    <result xml:space="preserve">That&apos;s not a verb I recognise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="123">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec71f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec71f0">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Bottom of Cliff
+Taking stock of my situation, I was surprised to find myself more or less unhurt, save for a dull ache in my left wrist where I&apos;d tried to brace against the door. I took a few deep breaths, and tried to gather myself-- I was still a little mentally a little shocked and unfocused.Test2
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="122">YES</temporary>
+  </item>
+  <item nodeId="node-0x7dec7260">
+    <command xml:space="preserve">test me</command>
+    <result xml:space="preserve">(Testing.)
+
+&gt;[1] drive
+
+Mountain pass
+I had the radio on tuned to some news station-- truth be told, I already missed the chatter of the dispatch as I was driving. The traffic report had little bearing on my current locale, but the weather gave me some concern: snowstorm coming up off the Great Lakes, apparently. Spending the weekend with a small crowd I barely knew appealed very little to me. Being cooped up with them the entire time due to weather seemed like a recipe for an epidemic of cabin fever.
+
+&gt;[2] drive
+
+Hairpin Turn
+If I&apos;d finished that last thought a few seconds earlier, I might&apos;ve noticed the caution sign for the sharp turn, barely visible through the snow. The car was going too fast, and the guardrail came out of nowhere.
+
+&gt;[3] brake
+I hit the brakes, but the car kept straight for the guardrail, slamming through, and going over.
+
+The back end of the car lost traction and swung out wide, trying vainly to follow the front, just like one of those car commercials. Unfortunately, I was not a professional driver, nor was this a closed course, and the right side of the car went over the edge of the cliff, momentum then taking the rest of the car with it. In shock, my brain couldn&apos;t manage to tell my body to do more than grip the wheel uselessly as the car tumbled down the steep incline. I lost count of the rolls after three. The roof hit a tree, and I&apos;m jerked upward against the seat belt. Snow from the branches fell into a pile onto the passenger window from the impact. I heard a thud, snuffing out the brief glimpse of moonlight.
+
+Upturned Car
+I wasn&apos;t sure how long I&apos;d been out. Taking stock of my situation, I was surprised to find myself more or less unhurt, save for a dull ache in my left wrist where I&apos;d tried to brace against the door. I took a few deep breaths, and tried to gather myself-- I was still a little mentally a little shocked and unfocused.
+
+The car was presently lying at the bottom of a cliff on its side. Above me, I could see moonlight, dimly mottled by the snow on the passenger side windows. The windshield in front of me showed nothing but evergreen forest, extending into the darkness.
+
+I was still strapped in, the seat belt made sure I stayed put. At least one thing in this car still knew how to do its job right.
+
+&gt;[4] unbuckle seat belt
+I wrestled with the jammed seat belt for a moment, then managed to undo it, falling a few inches down against the driver door once the chest belt was free.
+
+&gt;[5] look
+Upturned Car
+I wasn&apos;t sure how long I&apos;d been out. Taking stock of my situation, I was surprised to find myself more or less unhurt, save for a dull ache in my left wrist where I&apos;d tried to brace against the door. I took a few deep breaths, and tried to gather myself-- I was still a little mentally a little shocked and unfocused.
+
+The car was presently lying at the bottom of a cliff on its side. Above me, I could see moonlight, dimly mottled by the snow on the passenger side windows. The windshield in front of me showed nothing but evergreen forest, extending into the darkness.
+
+I crouched at the bottom of the car on the driver door, trying to figure the best way out.
+
+&gt;[6] kick windshield
+Bracing my back against the sideways seat, I gave the windshield a couple of sharp kicks, dislodging it from the frame and making myself an exit. It fell out onto the snow with a muffled crunch, and the bitter winter wind started to blow into the compartment. I grabbed my bag and stepped out into the forest.
+
+Bottom of Cliff
+I stood on a  ridge densely packed with trees some ways below the highway. My overturned car sat a few feet away. The ridge extended as far as I could see to the north, going nowhere in particular. To the west I saw the steep incline the car had rolled down, and the path it&apos;d cut through the snow and brush.
+
+I was miles from nowhere. It had stopped snowing for the moment. The night sky was starting to lighten, I figured I had an hour before sunrise.
+
+Fucking swell.
+
+&gt;[7] look
+Bottom of Cliff
+I stood on a  ridge densely packed with trees some ways below the highway. My overturned car sat a few feet away. The ridge extended as far as I could see to the north, going nowhere in particular. To the west I saw the steep incline the car had rolled down, and the path it&apos;d cut through the snow and brush.
+
+I was miles from nowhere. It had stopped snowing for the moment. The night sky was starting to lighten, I figured I had an hour before sunrise.
+
+Fucking swell.
+
+&gt;[8] up
+
+Sharp Bend
+I stood about a hundred feet from the hairpin turn where my car had gone over; I could see the tire tracks and broken guardrail to the south.
+
+The second I turned my head to look down the lane, I saw a pair of headlights approach. A black Mercedes pulled up and came to a stop just in front of me. The passenger door opened, and I saw Val looking out at me.
+
+&quot;Get in,&quot; she said.
+
+&gt;[9] get in
+I got into the Mercedes.
+
+Sedan
+The inside of the Mercedes was yards of brushed metal and hand-stiched leather. It even still smelled new.
+
+Val drove the car, her eyes seemed like they were looking miles beyond the road, the mountains, and the horizon.
+I&apos;d run out of things to talk about. Nothing to do now but wait for us to get there.
+
+&gt;[10] talk to val
+I said hello to Val.
+
+I could have asked about her car, asked about the chalet or asked about sunrise.
+
+&gt;[11] ask about car
+&quot;Nice ride,&quot; I said.
+
+&quot;You should have called,&quot; Val replied, ignoring my comment.
+
+I could have asked about the chalet or asked about sunrise.
+
+&gt;[12] ask about chalet
+Where are we going?
+
+My house.
+
+I could have asked about sunrise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="75">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec6b50" />
+      <child nodeId="node-0x7dec9250" />
+      <child nodeId="node-0x7dec6ae0" />
+      <child nodeId="node-0x7dfd72f0" />
+      <child nodeId="node-0x7e9d92b0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7e9d92b0">
+    <command xml:space="preserve">ask about car</command>
+    <result xml:space="preserve">&quot;Nice ride,&quot; I said.
+
+&quot;You should have called,&quot; Val replied, ignoring my comment.
+
+I could have asked about sunrise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="61">YES</temporary>
+    <children>
+      <child nodeId="node-0x7e97c560" />
+    </children>
+  </item>
+  <item nodeId="node-0x7e97c560">
+    <command xml:space="preserve">ask about chalet</command>
+    <result xml:space="preserve">Where are we going?
+
+My house.
+
+I could have asked about sunrise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="61">YES</temporary>
+    <children>
+      <child nodeId="node-0x7e86a4b0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7e86a4b0">
+    <command xml:space="preserve">ask about sunrise</command>
+    <result xml:space="preserve">&quot;Sun goes up at 7:03 today. Always check what time sunrise is when you leave for the night,&quot; she said.
+
+I looked out the window, trying not to feel like a kid being scolded by his mom.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="61">YES</temporary>
+    <children>
+      <child nodeId="node-0x7b0d6a90" />
+    </children>
+  </item>
+  <item nodeId="node-0x7b0d6a90">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Sedan
+The inside of the Mercedes was yards of brushed metal and hand-stiched leather. It even still smelled new. Having run out of things to talk about, nothing to do now but wait to arrive.
+
+Val drove the car, her eyes seemed like they were looking miles beyond the road, the mountains, and the horizon.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="61">YES</temporary>
+    <children>
+      <child nodeId="node-0x7e9daed0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7e9daed0">
+    <command xml:space="preserve">topics</command>
+    <result xml:space="preserve">I could have asked about her car, asked about the chalet or asked about sunrise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="61">YES</temporary>
+    <children>
+      <child nodeId="node-0x7ea41390" />
+    </children>
+  </item>
+  <item nodeId="node-0x7ea41390">
+    <command xml:space="preserve">ask about car</command>
+    <result xml:space="preserve">&quot;Nice ride,&quot; I said.
+
+&quot;You should have called,&quot; Val replied, ignoring my comment.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="61">YES</temporary>
+    <children>
+      <child nodeId="node-0x7b0de300" />
+    </children>
+  </item>
+  <item nodeId="node-0x7b0de300">
+    <command xml:space="preserve">ask about chalet</command>
+    <result xml:space="preserve">Where are we going?
+
+My house.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="61">YES</temporary>
+    <children>
+      <child nodeId="node-0x7b141360" />
+    </children>
+  </item>
+  <item nodeId="node-0x7b141360">
+    <command xml:space="preserve">ask about sunrise</command>
+    <result xml:space="preserve">&quot;Sun goes up at 7:03 today. Always check what time sunrise is when you leave for the night,&quot; she said.
+
+I looked out the window, trying not to feel like a kid being scolded by his mom.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="61">YES</temporary>
+    <children>
+      <child nodeId="node-0x79606850" />
+    </children>
+  </item>
+  <item nodeId="node-0x79606850">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Sedan
+The inside of the Mercedes was yards of brushed metal and hand-stiched leather. It even still smelled new. Having run out of things to talk about, nothing to do now but wait to arrive.
+
+Val drove the car, her eyes seemed like they were looking miles beyond the road, the mountains, and the horizon.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="61">YES</temporary>
+    <children>
+      <child nodeId="node-0x7e9620c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7e9620c0">
+    <command xml:space="preserve">scenes</command>
+    <result xml:space="preserve">Scene &apos;Entire Game&apos; playing (for 18 mins now)
+Scene &apos;Mountain_Driving&apos; ended
+Scene &apos;Car_Escape&apos; ended
+Scene &apos;Cliff_Climbing&apos; ended
+Scene &apos;Car_Embarking&apos; ended
+Scene &apos;Mercedes_Riding&apos; playing (for 12 mins now)
+(Scene monitoring now switched on. Type &quot;scenes off&quot; to switch it off again.)
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="61">YES</temporary>
+    <children>
+      <child nodeId="node-0x7979fcd0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7979fcd0">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Sedan
+The inside of the Mercedes was yards of brushed metal and hand-stiched leather. It even still smelled new. Having run out of things to talk about, nothing to do now but wait to arrive.
+
+Val drove the car, her eyes seemed like they were looking miles beyond the road, the mountains, and the horizon.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="61">YES</temporary>
+    <children>
+      <child nodeId="node-0x7e940700" />
+    </children>
+  </item>
+  <item nodeId="node-0x7e940700">
+    <command xml:space="preserve">topics</command>
+    <result xml:space="preserve">I could have asked about her car, asked about the chalet or asked about sunrise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="61">YES</temporary>
+    <children>
+      <child nodeId="node-0x79608270" />
+    </children>
+  </item>
+  <item nodeId="node-0x79608270">
+    <command xml:space="preserve">   </command>
+    <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="60">YES</temporary>
+  </item>
+  <item nodeId="node-0x7dfd72f0">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Sedan
+The inside of the Mercedes was yards of brushed metal and hand-stiched leather. It even still smelled new.
+
+Val drove the car, her eyes seemed like they were looking miles beyond the road, the mountains, and the horizon.
+
+I could have asked about sunrise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="33">YES</temporary>
+    <children>
+      <child nodeId="node-0x7df1edc0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7df1edc0">
+    <command xml:space="preserve">topics</command>
+    <result xml:space="preserve">I could have asked about her car, asked about the chalet or asked about sunrise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="33">YES</temporary>
+    <children>
+      <child nodeId="node-0x7de6b7a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7de6b7a0">
+    <command xml:space="preserve">ask about car</command>
+    <result xml:space="preserve">&quot;Nice ride,&quot; I said.
+
+&quot;You should have called,&quot; Val replied, ignoring my comment.
+
+I could have asked about sunrise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="33">YES</temporary>
+    <children>
+      <child nodeId="node-0x7e868c40" />
+    </children>
+  </item>
+  <item nodeId="node-0x7e868c40">
+    <command xml:space="preserve">ask about chalet</command>
+    <result xml:space="preserve">Where are we going?
+
+My house.
+
+I could have asked about sunrise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="33">YES</temporary>
+    <children>
+      <child nodeId="node-0x7b439d90" />
+    </children>
+  </item>
+  <item nodeId="node-0x7b439d90">
+    <command xml:space="preserve">ask about sunrise</command>
+    <result xml:space="preserve">&quot;Sun goes up at 7:03 today. Always check what time sunrise is when you leave for the night,&quot; she said.
+
+I looked out the window, trying not to feel like a kid being scolded by his mom.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="33">YES</temporary>
+    <children>
+      <child nodeId="node-0x796bd960" />
+    </children>
+  </item>
+  <item nodeId="node-0x796bd960">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Sedan
+The inside of the Mercedes was yards of brushed metal and hand-stiched leather. It even still smelled new.
+
+Val drove the car, her eyes seemed like they were looking miles beyond the road, the mountains, and the horizon.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="33">YES</temporary>
+    <children>
+      <child nodeId="node-0x796ab080" />
+    </children>
+  </item>
+  <item nodeId="node-0x796ab080">
+    <command xml:space="preserve">topics</command>
+    <result xml:space="preserve">I could have asked about her car, asked about the chalet or asked about sunrise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="33">YES</temporary>
+    <children>
+      <child nodeId="node-0x7ea2bb70" />
+    </children>
+  </item>
+  <item nodeId="node-0x7ea2bb70">
+    <command xml:space="preserve">ask about car</command>
+    <result xml:space="preserve">&quot;Nice ride,&quot; I said.
+
+&quot;You should have called,&quot; Val replied, ignoring my comment.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="33">YES</temporary>
+    <children>
+      <child nodeId="node-0x7de129d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7de129d0">
+    <command xml:space="preserve">ask about chalet</command>
+    <result xml:space="preserve">Where are we going?
+
+My house.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="33">YES</temporary>
+    <children>
+      <child nodeId="node-0x7b0bd6f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7b0bd6f0">
+    <command xml:space="preserve">ask about sunrise</command>
+    <result xml:space="preserve">&quot;Sun goes up at 7:03 today. Always check what time sunrise is when you leave for the night,&quot; she said.
+
+I looked out the window, trying not to feel like a kid being scolded by his mom.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="33">YES</temporary>
+    <children>
+      <child nodeId="node-0x7e880700" />
+    </children>
+  </item>
+  <item nodeId="node-0x7e880700">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Sedan
+The inside of the Mercedes was yards of brushed metal and hand-stiched leather. It even still smelled new.
+
+Val drove the car, her eyes seemed like they were looking miles beyond the road, the mountains, and the horizon.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="32">YES</temporary>
+  </item>
+  <item nodeId="node-0x7dec6ae0">
+    <command xml:space="preserve">x val</command>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="110">YES</temporary>
+  </item>
+  <item nodeId="node-0x7dec9250">
+    <command xml:space="preserve">ask about chalet</command>
+    <result xml:space="preserve">Where are we going?
+
+My house.
+
+I could have asked about sunrise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="75">YES</temporary>
+    <children>
+      <child nodeId="node-0x7eb4f510" />
+      <child nodeId="node-0x7dec92c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec92c0">
+    <command xml:space="preserve">topics</command>
+    <result xml:space="preserve">I could have asked about her car or asked about the chalet.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="40">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec9330" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec9330">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="40">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec93a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec93a0">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="40">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec9410" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec9410">
+    <command xml:space="preserve">topics</command>
+    <result xml:space="preserve">I could have asked about her car or asked about the chalet.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="40">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec9480" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec9480">
+    <command xml:space="preserve">stop talking</command>
+    <result xml:space="preserve">That noun did not make sense in this context.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="40">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec94f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec94f0">
+    <command xml:space="preserve">stop talking to val</command>
+    <result xml:space="preserve">That noun did not make sense in this context.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="40">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec9560" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec9560">
+    <command xml:space="preserve">ask about car</command>
+    <result xml:space="preserve">&quot;Nice ride,&quot; I said.
+
+&quot;You should have called,&quot; Val replied, ignoring my comment.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="40">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec95d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec95d0">
+    <command xml:space="preserve"> topics</command>
+    <result xml:space="preserve">I could have asked about her car or asked about the chalet.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="40">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec9640" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec9640">
+    <command xml:space="preserve">greet val</command>
+    <result xml:space="preserve">I was already talking to Val.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="40">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec96b0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec96b0">
+    <command xml:space="preserve">ungreet val</command>
+    <result xml:space="preserve">That noun did not make sense in this context.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="40">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec9720" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec9720">
+    <command xml:space="preserve">farewell</command>
+    <result xml:space="preserve">I said goodbye to Val.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="39">YES</temporary>
+  </item>
+  <item nodeId="node-0x7eb4f510">
+    <command xml:space="preserve">ask about sunrise</command>
+    <result xml:space="preserve">&quot;Sun goes up at 7:03 today. Always check what time sunrise is when you leave for the night,&quot; she said.
+
+I looked out the window, trying not to feel like a kid being scolded by his mom.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="75">YES</temporary>
+    <children>
+      <child nodeId="node-0x7eb30250" />
+    </children>
+  </item>
+  <item nodeId="node-0x7eb30250">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Sedan
+The inside of the Mercedes was yards of brushed metal and hand-stiched leather. It even still smelled new. Having run out of things to talk about, nothing to do now but wait to arrive.
+
+Val drove the car, her eyes seemed like they were looking miles beyond the road, the mountains, and the horizon.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="75">YES</temporary>
+    <children>
+      <child nodeId="node-0x7eb2eb00" />
+    </children>
+  </item>
+  <item nodeId="node-0x7eb2eb00">
+    <command xml:space="preserve">topics</command>
+    <result xml:space="preserve">I could have asked about her car, asked about the chalet or asked about sunrise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="75">YES</temporary>
+    <children>
+      <child nodeId="node-0x7eb50c50" />
+    </children>
+  </item>
+  <item nodeId="node-0x7eb50c50">
+    <command xml:space="preserve">ask about car</command>
+    <result xml:space="preserve">&quot;Nice ride,&quot; I said.
+
+&quot;You should have called,&quot; Val replied, ignoring my comment.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="75">YES</temporary>
+    <children>
+      <child nodeId="node-0x7e8747b0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7e8747b0">
+    <command xml:space="preserve">ask about chalet</command>
+    <result xml:space="preserve">Where are we going?
+
+My house.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="75">YES</temporary>
+    <children>
+      <child nodeId="node-0x7b3ab620" />
+    </children>
+  </item>
+  <item nodeId="node-0x7b3ab620">
+    <command xml:space="preserve">ask about sunrise</command>
+    <result xml:space="preserve">&quot;Sun goes up at 7:03 today. Always check what time sunrise is when you leave for the night,&quot; she said.
+
+I looked out the window, trying not to feel like a kid being scolded by his mom.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="75">YES</temporary>
+    <children>
+      <child nodeId="node-0x7eb54f00" />
+    </children>
+  </item>
+  <item nodeId="node-0x7eb54f00">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Sedan
+The inside of the Mercedes was yards of brushed metal and hand-stiched leather. It even still smelled new. Having run out of things to talk about, nothing to do now but wait to arrive.
+
+Val drove the car, her eyes seemed like they were looking miles beyond the road, the mountains, and the horizon.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="75">YES</temporary>
+    <children>
+      <child nodeId="node-0x7eb41160" />
+    </children>
+  </item>
+  <item nodeId="node-0x7eb41160">
+    <command xml:space="preserve">scenes</command>
+    <result xml:space="preserve">Scene &apos;Entire Game&apos; playing (for 17 mins now)
+Scene &apos;Mountain_Driving&apos; ended
+Scene &apos;Car_Escape&apos; ended
+Scene &apos;Cliff_Climbing&apos; ended
+Scene &apos;Car_Embarking&apos; ended
+Scene &apos;Mercedes_Riding&apos; playing (for 11 mins now)
+(Scene monitoring now switched on. Type &quot;scenes off&quot; to switch it off again.)
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="75">YES</temporary>
+    <children>
+      <child nodeId="node-0x796282c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x796282c0">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Sedan
+The inside of the Mercedes was yards of brushed metal and hand-stiched leather. It even still smelled new. Having run out of things to talk about, nothing to do now but wait to arrive.
+
+Val drove the car, her eyes seemed like they were looking miles beyond the road, the mountains, and the horizon.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="75">YES</temporary>
+    <children>
+      <child nodeId="node-0x7b3e9810" />
+    </children>
+  </item>
+  <item nodeId="node-0x7b3e9810">
+    <command xml:space="preserve">topics</command>
+    <result xml:space="preserve">I could have asked about her car, asked about the chalet or asked about sunrise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="75">YES</temporary>
+    <children>
+      <child nodeId="node-0x7b3c2260" />
+    </children>
+  </item>
+  <item nodeId="node-0x7b3c2260">
+    <command xml:space="preserve">   </command>
+    <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="75">YES</temporary>
+    <children>
+      <child nodeId="node-0x7ea41700" />
+    </children>
+  </item>
+  <item nodeId="node-0x7ea41700">
+    <command xml:space="preserve">   </command>
+    <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="74">YES</temporary>
+  </item>
+  <item nodeId="node-0x7dec6b50">
+    <command xml:space="preserve">topics</command>
+    <result xml:space="preserve">I could have asked about her car, asked about the chalet or asked about sunrise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="47">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec7ea0" />
+      <child nodeId="node-0x7dec76c0" />
+      <child nodeId="node-0x7e951430" />
+    </children>
+  </item>
+  <item nodeId="node-0x7e951430">
+    <command xml:space="preserve">ask about car</command>
+    <result xml:space="preserve">&quot;Nice ride,&quot; I said.
+
+&quot;You should have called,&quot; Val replied, ignoring my comment.
+
+I could have asked about sunrise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="47">YES</temporary>
+    <children>
+      <child nodeId="node-0x7e9a3fe0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7e9a3fe0">
+    <command xml:space="preserve">ask about chalet</command>
+    <result xml:space="preserve">Where are we going?
+
+My house.
+
+I could have asked about sunrise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="47">YES</temporary>
+    <children>
+      <child nodeId="node-0x797e3d40" />
+    </children>
+  </item>
+  <item nodeId="node-0x797e3d40">
+    <command xml:space="preserve">ask about sunrise</command>
+    <result xml:space="preserve">&quot;Sun goes up at 7:03 today. Always check what time sunrise is when you leave for the night,&quot; she said.
+
+I looked out the window, trying not to feel like a kid being scolded by his mom.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="47">YES</temporary>
+    <children>
+      <child nodeId="node-0x7e9a40a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7e9a40a0">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Sedan
+The inside of the Mercedes was yards of brushed metal and hand-stiched leather. It even still smelled new.
+
+Val drove the car, her eyes seemed like they were looking miles beyond the road, the mountains, and the horizon.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="47">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dfd9ea0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dfd9ea0">
+    <command xml:space="preserve">topics</command>
+    <result xml:space="preserve">I could have asked about her car, asked about the chalet or asked about sunrise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="47">YES</temporary>
+    <children>
+      <child nodeId="node-0x79628310" />
+    </children>
+  </item>
+  <item nodeId="node-0x79628310">
+    <command xml:space="preserve">ask about car</command>
+    <result xml:space="preserve">&quot;Nice ride,&quot; I said.
+
+&quot;You should have called,&quot; Val replied, ignoring my comment.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="47">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dfde250" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dfde250">
+    <command xml:space="preserve">ask about chalet</command>
+    <result xml:space="preserve">Where are we going?
+
+My house.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="47">YES</temporary>
+    <children>
+      <child nodeId="node-0x7b0edb90" />
+    </children>
+  </item>
+  <item nodeId="node-0x7b0edb90">
+    <command xml:space="preserve">ask about sunrise</command>
+    <result xml:space="preserve">&quot;Sun goes up at 7:03 today. Always check what time sunrise is when you leave for the night,&quot; she said.
+
+I looked out the window, trying not to feel like a kid being scolded by his mom.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="47">YES</temporary>
+    <children>
+      <child nodeId="node-0x7b0f57e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7b0f57e0">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Sedan
+The inside of the Mercedes was yards of brushed metal and hand-stiched leather. It even still smelled new.
+
+Val drove the car, her eyes seemed like they were looking miles beyond the road, the mountains, and the horizon.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="47">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dfd64c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dfd64c0">
+    <command xml:space="preserve">scenes</command>
+    <result xml:space="preserve">Scene &apos;Entire Game&apos; playing (for 18 mins now)
+Scene &apos;Mountain_Driving&apos; ended
+Scene &apos;Car_Escape&apos; ended
+Scene &apos;Cliff_Climbing&apos; ended
+Scene &apos;Car_Embarking&apos; ended
+Scene &apos;Mercedes_Riding&apos; playing (for 12 mins now)
+(Scene monitoring now switched on. Type &quot;scenes off&quot; to switch it off again.)
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="47">YES</temporary>
+    <children>
+      <child nodeId="node-0x7b0dfb90" />
+    </children>
+  </item>
+  <item nodeId="node-0x7b0dfb90">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Sedan
+The inside of the Mercedes was yards of brushed metal and hand-stiched leather. It even still smelled new.
+
+Val drove the car, her eyes seemed like they were looking miles beyond the road, the mountains, and the horizon.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="47">YES</temporary>
+    <children>
+      <child nodeId="node-0x7ea37850" />
+    </children>
+  </item>
+  <item nodeId="node-0x7ea37850">
+    <command xml:space="preserve">topics</command>
+    <result xml:space="preserve">I could have asked about her car, asked about the chalet or asked about sunrise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="46">YES</temporary>
+  </item>
+  <item nodeId="node-0x7dec76c0">
+    <command xml:space="preserve">stop talking</command>
+    <result xml:space="preserve">(to Val)
+I stopped talking to Val and turned my attention elsewhere.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="109">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec7730" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec7730">
+    <command xml:space="preserve">stop talking to val</command>
+    <result xml:space="preserve">I wasn&apos;t talking to Val.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="109">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec77a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec77a0">
+    <command xml:space="preserve">ask about car</command>
+    <result xml:space="preserve">(addressing Val)
+I didn&apos;t understand that sentence.
+
+I could have asked about sunrise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="109">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec7810" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec7810">
+    <command xml:space="preserve"> topics</command>
+    <result xml:space="preserve">I could have asked about her car, asked about the chalet or asked about sunrise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="109">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec7880" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec7880">
+    <command xml:space="preserve">greet val</command>
+    <result xml:space="preserve">I was already talking to Val.
+
+I could have asked about sunrise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="109">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec78f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec78f0">
+    <command xml:space="preserve">ungreet val</command>
+    <result xml:space="preserve">That noun did not make sense in this context.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="109">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec7960" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec7960">
+    <command xml:space="preserve">farewell</command>
+    <result xml:space="preserve">I stopped talking to Val and turned my attention elsewhere.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="109">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec79d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec79d0">
+    <command xml:space="preserve">greet val</command>
+    <result xml:space="preserve">I said hello to Val.
+
+I could have asked about sunrise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="109">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec7a40" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec7a40">
+    <command xml:space="preserve">stop talking to val</command>
+    <result xml:space="preserve">I stopped talking to Val and turned my attention elsewhere.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="109">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec7ab0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec7ab0">
+    <command xml:space="preserve">talk to val</command>
+    <result xml:space="preserve">I said hello to Val.
+
+I could have asked about sunrise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="109">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec7b20" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec7b20">
+    <command xml:space="preserve">topics</command>
+    <result xml:space="preserve">I could have asked about her car, asked about the chalet or asked about sunrise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="109">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec7b90" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec7b90">
+    <command xml:space="preserve">x val</command>
+    <result xml:space="preserve">Her dark green eyes stood out from her pale face like gems set in a Venetian mask. She looked to be thirty, but she could have been three hundred for all I knew.
+
+I could have asked about sunrise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="109">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec7c00" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec7c00">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="109">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec7c70" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec7c70">
+    <command xml:space="preserve">topics</command>
+    <result xml:space="preserve">I could have asked about her car, asked about the chalet or asked about sunrise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="109">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec7ce0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec7ce0">
+    <command xml:space="preserve">x val</command>
+    <result xml:space="preserve">Her dark green eyes stood out from her pale face like gems set in a Venetian mask. She looked to be thirty, but she could have been three hundred for all I knew.
+
+I could have asked about sunrise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="109">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec7d50" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec7d50">
+    <command xml:space="preserve">ask about dawn</command>
+    <result xml:space="preserve">&quot;Sun goes up at 7:03 today. Always check what time sunrise is when you leave for the night,&quot; she said.
+
+I looked out the window, trying not to feel like a kid being scolded by his mom.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="109">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec7dc0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec7dc0">
+    <command xml:space="preserve">topics</command>
+    <result xml:space="preserve">I could have asked about her car, asked about the chalet or asked about sunrise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="109">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec7e30" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec7e30">
+    <command xml:space="preserve">x val</command>
+    <result xml:space="preserve">Her dark green eyes stood out from her pale face like gems set in a Venetian mask. She looked to be thirty, but she could have been three hundred for all I knew.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="108">YES</temporary>
+  </item>
+  <item nodeId="node-0x7dec7ea0">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="54">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec7f10" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec7f10">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="54">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec7f80" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec7f80">
+    <command xml:space="preserve">topics</command>
+    <result xml:space="preserve">I could have asked about her car or asked about the chalet.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="54">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec7ff0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec7ff0">
+    <command xml:space="preserve">stop talking</command>
+    <result xml:space="preserve">(to Val)
+I said goodbye to Val.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="54">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec8060" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec8060">
+    <command xml:space="preserve">stop talking to val</command>
+    <result xml:space="preserve">I wasn&apos;t talking to Val.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="54">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec80d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec80d0">
+    <command xml:space="preserve">ask about car</command>
+    <result xml:space="preserve">(addressing Val)
+I didn&apos;t understand that sentence.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="54">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec8140" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec8140">
+    <command xml:space="preserve"> topics</command>
+    <result xml:space="preserve">I could have asked about her car or asked about the chalet.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="54">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec81b0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec81b0">
+    <command xml:space="preserve">greet val</command>
+    <result xml:space="preserve">I was already talking to Val.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="54">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec8220" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec8220">
+    <command xml:space="preserve">ungreet val</command>
+    <result xml:space="preserve">That noun did not make sense in this context.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="54">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec8290" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec8290">
+    <command xml:space="preserve">farewell</command>
+    <result xml:space="preserve">I said goodbye to Val.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="54">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec8300" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec8300">
+    <command xml:space="preserve">greet val</command>
+    <result xml:space="preserve">I said hello to Val.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="54">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dec8370" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dec8370">
+    <command xml:space="preserve">stop talking to val</command>
+    <result xml:space="preserve">I said goodbye to Val.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="53">YES</temporary>
+  </item>
+</Skein>

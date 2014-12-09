@@ -5,97 +5,97 @@
     <key>0</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
         <key>Line</key><integer>1</integer>
-        <key>Title</key><string>"Blood on the Snow" by spanky</string>
+        <key>Title</key><string>"Blood on the Snow" by PN</string>
         <key>Level</key><integer>0</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
     <key>1</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>17</integer>
+        <key>Line</key><integer>21</integer>
         <key>Title</key><string>Section 1 - Game Scene List</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>2</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>28</integer>
+        <key>Line</key><integer>32</integer>
         <key>Title</key><string>Section 2 - Scene Mountain_Driving</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>3</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>64</integer>
+        <key>Line</key><integer>68</integer>
         <key>Title</key><string>Section 3 - Scene Car_Escape</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>4</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>128</integer>
+        <key>Line</key><integer>132</integer>
         <key>Title</key><string>Section 4 - Scene Cliff_Climbing</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>5</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>134</integer>
+        <key>Line</key><integer>138</integer>
         <key>Title</key><string>Section 5 - Scene Car_Embarking</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>6</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>162</integer>
+        <key>Line</key><integer>166</integer>
         <key>Title</key><string>Section 6 - Scene Riding_Scene</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>7</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>181</integer>
+        <key>Line</key><integer>185</integer>
         <key>Title</key><string>Section 7 - Scene Cliff_Gameover</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>8</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>192</integer>
+        <key>Line</key><integer>196</integer>
         <key>Title</key><string>Section 8 - Scene Body_Discovery</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>9</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>214</integer>
+        <key>Line</key><integer>259</integer>
         <key>Title</key><string>Section 9 - Conversation Riding_Scene</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>10</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>246</integer>
+        <key>Line</key><integer>291</integer>
         <key>Title</key><string>Section 10 - Command Overrides</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>11</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>262</integer>
+        <key>Line</key><integer>309</integer>
         <key>Title</key><string>Section 11 - Conversation Tweaks</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>12</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>303</integer>
-        <key>Title</key><string>Section 12 - Inventory</string>
+        <key>Line</key><integer>351</integer>
+        <key>Title</key><string>Section 12 - Inventory and Mechanics</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>13</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>314</integer>
+        <key>Line</key><integer>362</integer>
         <key>Title</key><string>Section 13 - Tests</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>

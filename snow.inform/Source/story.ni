@@ -1,18 +1,22 @@
-"Blood on the Snow" by spanky
+"Blood on the Snow" by PN
 
-Release along with a website and interpreter.
+Release along with a website and interpreter and cover art.
+The Release number is 1.
+
+The story genre is "Urban Fantasy".
 
 Include Basic Screen Effects by Emily Short.
 Include Threaded Conversation by Chris Conley.
 [Made with Threaded Conversation Version 2/140602]
 
-[Include Room Description Control by Emily Short.]
-[Include Plurality by Emily Short.
-Include Conversation Framework by Eric Eve.]
+[CHANGE THE FOLLOWING LINE FOR DEBUGGING]
+Debug_on is a truth state that varies. Debug_on is usually true.
 
 When play begins:
 	now the story viewpoint is first person singular;
-	now the story tense is past tense.
+	now the story tense is past tense;
+	If debug_on is true:
+		try switching the story transcript on.
 
 Section 1 - Game Scene List
 
@@ -33,13 +37,13 @@ Understand the command drive as something new. Understand "drive" as driving. Dr
 
 Road is a backdrop. Road is in the introcar. The description is " Snow was coming down in great, big flakes, landing right on top of the packed, slippery mess on the road.".
 Window is a backdrop. Window is in the introcar.
-Radio is a backdrop. Radio is in the introcar.
+Introcar_radio is a backdrop. Introcar_radio is in the introcar. The printed name is "radio".
 Instead of examining outside when the player is in the introcar:
 	Try examining the road.
 Instead of examining the window when the player is in the introcar:
 	Try examining the road.
 
-Mountain_Road is a room in the introcar. The printed name of Mountain_Road is "Mountain Road". The description is "They say you shouldn't drive when you're angry. That was but one of a hundred pieces of good advice I was ignoring as I sped down the icy road to the chalet, my foot a little heavier on the gas than it needed to be.[paragraph break]I'd had a long, promising career in homicide ahead of me, or so I kept telling myself, and it was all down the drain now. I had planned on a senior detective's desk being in the cards for me, at least. Hell, maybe even going into private investigations. I guess I could still do that.[paragraph break]Not six hours earlier, I'd turned in my badge and my gun and walked out, more or less the way I'd seen it in the movies. The captain was yelling his head off, couldn't figure out why a promising young detective would just up and quit. I hoped he never did."
+Mountain_Road is a room in the introcar. The printed name of Mountain_Road is "Mountain Road". The description is "They say you shouldn't drive when you're angry. That was just one of a hundred pieces of good advice I was ignoring as I sped down the icy road to the chalet, my foot a little heavier on the gas than it needed to be.[paragraph break]I'd had a long, promising career in homicide ahead of me, or so I kept telling myself, and it was all down the drain now. I had planned on a senior detective's desk being in the cards for me, at least. Hell, maybe even going into private investigations. I guess I could still do that.[paragraph break]Not six hours earlier, I'd turned in my badge and my gun and walked out, more or less the way I'd seen it in the movies. The captain was yelling his head off, couldn't figure out why a promising young detective like me would just up and quit. I honestly hoped he never did."
 Instead of driving when the player is in the Mountain_Road:
 	Try going north.
 
@@ -104,7 +108,7 @@ Instead of attacking the windshield:
 	try punching the windshield;
 	stop the action.
 Instead of kicking the windshield:
-	say "Bracing my back against the sideways seat, I gave the windshield a couple of sharp kicks. I felt the seal start to give, and then it dislodged entirely from the frame, making an exit. It fell out onto the snow with a muffled crunch, and the bitter wind started to blow into the compartment. I grabbed my bag and stepped out into the forest.[paragraph break]".;
+	say "Bracing my back against the sideways seat, I gave the windshield a couple of sharp kicks. I felt the seal start to give, and then it dislodged entirely from the frame, making an exit. It fell out onto the snow with a muffled crunch, and the bitter wind started to blow into the old car. I grabbed my bag and stepped out into the forest.[paragraph break]".;
 	wait for any key;
 	Now the player is in the Bottom of Cliff;
 	stop the action.
@@ -196,18 +200,55 @@ Section 8 - Scene Body_Discovery
 Driveway is a room. 
 
 Front_Porch is a room. Front_Porch is east of the Driveway.
-Foyer is a room. Foyer is east of the Front_Porch. The description is "I walked into the spacious foyer, trying not to walk into the large wooden lacquered screens in front of the door. The shiny black wood was decorated with an intricate picture in gold paint, depicting a Chinese court scene. It seemed at odds with the exterior of the house, but matched the rest of the decor; the interior was a mixture of Old World furniture and Asian influences.
-
-[if the scene is Body_Discovery][paragraph break]A layer of snow had blown in through the open doorway, slowly melting into a damp puddle on the large Persian rug.[end if]"
+Foyer is a room. Foyer is east of the Front_Porch. The description is "I walked into the spacious foyer, trying not to walk into the large wooden lacquered screens in front of the door. The shiny black wood was decorated with an intricate picture in gold paint, depicting a Chinese court scene. It seemed at odds with the exterior of the house, but matched the rest of the decor; the interior was a mixture of Old World furniture and Asian influences.[if the scene is Body_Discovery][paragraph break]A layer of snow had blown in through the open doorway, slowly melting into a damp puddle on the large Persian rug.[end if]"
 [TODO: Add door here to the front porch]
 
-Greatroom is a room.
+Greatroom is a room. Greatroom is east of the Foyer. The description is "The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
 
-Wine_Cellar is a room. The printed name is "Wine Cellar". The description is "The second I walked into the dark wine cellar, recessed lights in the ceiling turned on, activated by what must be a motion sensor.
+A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade.[if the radio is switched on] Coming from somewhere up there I could hear [carol title] warbling from what sounded like an old radio.[end if]"
+
+Reading_Nook is a room. Reading_Nook is above Greatroom. The printed name is "Reading Nook". The description is "I climbed the stairs to the reading nook. Shelves and shelves of books lined the walls of the small room, most of them either non-fiction, or bound in handsome leather. A couple of wingback armchairs faced each other with a coffee table in between.[if the scene is body_discovery][paragraph break]A man sat in one, slightly paunchy and slightly grey, his eyes and mouth wide open. He was wearing a wool cardigan, damp with a dark, almost black liquid. What looked like a large carving knife was sticking out of his chest.[end if]".
+The radio is a device in the reading_nook. The radio is switched on. The description is, "It was vintage, maybe 1920 or 1930 if I had to guess, though the polished dark wood didn't look like it'd aged a day."
+
+Instead of switching on the radio:
+	say "I wasn't really in the mood for more carols.".
+
+Rule for writing a paragraph about the radio:
+	say "An antique wooden radio sits on the table[if the radio is switched on], playing Christmas carols[end if].".
+	
+To say carol title:
+	Choose a random row from the Table of Christmas Carols;
+	Say "[quotation mark]";
+	say description entry;
+	Say "[quotation mark]".
+
+Table of Christmas Carols
+Description
+"God Rest Ye Merry, Gentlemen"
+"O Come, All Ye Faithful"
+"Angels We Have Heard on High"
+"Hark, The Herald Angels Sing"
+"We Three Kings"
+
+Hallway_Downstairs is a room. Hallway_Downstairs is east of the Greatroom. The printed name is "Downstairs Hallway".
+
+Hallway_Upstairs is above the Hallway_Downstairs. The printed name is "Upstairs Hallway".
+
+Wine_Cellar is a room. Wine_Cellar is below the Hallway_Downstairs. The printed name is "Wine Cellar". The description is "The second I walked into the dark wine cellar, recessed lights in the ceiling turned on, activated by what must be a motion sensor.
 [paragraph break]
-A wooden wine rack runs the length of the room"
+A wine rack runs the perimeter of the room, holding enough bottles to supply a medium-sized restaurant. A few seem to be missing here and there."
+
+The wine rack is scenery in the Wine_Cellar. The description is "Hundreds of dark green bottles rested in the diamond-crossed wooden cubbyholes, corks facing out.[paragraph break]I took a look at the gaps in the collection. A couple were missing from a section of Californian whites. One was missing from the other end, the hole surrounded by other bottles of expensive Burgundy red."
+
+Understand "missing wine" as wine rack.
+Understand "missing bottles" as wine rack.
 
 [Wine cellar, one bottle missing]
+[expensive Bordeux, unlikely he would've taken it to drink alone]
+[one wineglass on the table, other knocked over the railing, having fallen somewhere
+
+finds shard of glass, but glass upstairs is whole, give clue if the player has examined the whole glass]
+
 [blood, almost black]
 [fire roaring]
 [Christmas carols playing]
@@ -255,7 +296,9 @@ Instead of kicking a person:
 
 Understand the command punch as something new. Punching is an action applying to one thing. Understand "punch [something]" as punching.
 Instead of punching a person:
-	say "I was a lot of things, but Dick Tracy wasn't one of them.".
+	say "Might be hard to believe from the way I look, but I always thought of my investigative methods as more like Hercule Poirot than Dick Tracy. Trust me, I'm easy like Sunday morning.".
+Instead of punching something:
+	say "I had an Everlast heavy bag for that sort of thing.".
 [TODO: Give useful error message for unpunchable things]
 
 Understand the command hit as something new. Hitting is an action applying to one thing. Understand "hit [something]" as attacking.
@@ -287,6 +330,7 @@ The revised report other subjects rule substitutes for the standard report other
 
 When play begins:
 		now the quip-suggestion-phrase is "[We] [could] asked ".
+[TODO: This needs fixing]
 
 To decide whether scene_conversation is exhausted:
 	decide on whether or not the number of scene-restricted quips which are not recollected by someone is 0.
@@ -304,14 +348,15 @@ if the number of quips which are recollected by someone is 0, say "You have not 
         if N is 0, say "You haven't discussed [the noun] with anyone yet."]
 [test me with "look/x outside/x window/s/drive"]
 
-Section 12 - Inventory
+Section 12 - Inventory and Mechanics
 
 A thing can be either broken or unbroken. A thing is usually unbroken.
 
 The player is carrying a cell phone.
 
-[TODO: Make the cell phone break when the player enters the Bottom of Cliff by whatever method]
+Blood_status is a truth state that varies. Blood_status is usually false.
 
+[TODO: Make the cell phone break when the player enters the Bottom of Cliff by whatever method]
 [TODO: I felt like the sun could come up any minute, but Val kept driving, seemingly unconcerned.]
 	
 Section 13 - Tests
@@ -322,14 +367,43 @@ Test firstconvo with "drive/drive/brake/unbuckle seat belt/kick windshield/any k
 
 Test sunrise_lose with "drive/drive/brake/unbuckle seat belt/kick windshield/n/n/n"
 
+Test body with "drive/drive/brake/unbuckle seat belt/kick windshield/any key/up/get in/talk to val/ask about sunrise/ask about house/ask about car/wait/e/e/e/u"
+
 [Ask Val about CAR / SUNRISE / CHALET]
 [If the command matches "ask" or "ask [character]"]
 
 
+
+
+[Alan Bowden, Professor Emeritus, Columbia University]
+[Jan Svensson, wealthy investor/mountaineer]
+[Scott Gage, dot com CEO]
+
 ["Unbuckling myself, I braced my back against the seats and kicked hard at the windshield of the sideways car, unlodging it from its seal, and making myself an exit. I reached into the passenger footwell, which was now above me, and threw my duffle bag out through the hole. It landed on the snow with a muffled crunch."]
 
+[They sent a constable, low level]
+
+[No shit.]
+[Val didn't tell anyone, expecting the blackmail to resolve peacefully]
 [foreshadow shutters as soon as the player enters chalet]
 [tell the truth rather than lying in interrogation]
+
+[Redherring: Isn't it suspicious that Svensson canceled, and then this happened?
+Gage suggests maybe he's making a political move, and/or wants to buy Gage's company]
+
+[Redherring: Suggests that Val did it before she went to pick up the MC]
+[Redherring: Doubt in the player's mind if she can glamor him]
+
+[Clue: Discovery of cut brakes reveal it was premeditated]
+[Clue: Destruction of shutters to kill constable]
+
+[Clue: No signs of forced entry at gate]
+[Clue: One set of beds isn't made, Gage wasn't expected]
+
+[Val says to get the blood from hidden door, Bowden sometimes brought regular students up here]
+
+[Once player drinks, someone complains to Val "Don't tell me you're forcing him to eat those disgusting leftovers from the fridge! It's terrible about poor Alan and all, but there's no reason we can't go out for food, right?"]
+
 [speakeasy; "They pass the Volstead Act again when I wasn't looking?"]
 [It's near to a full moon]
 [Werewolves? Something tells me they aren't getting their security deposit back]
@@ -344,3 +418,8 @@ Test sunrise_lose with "drive/drive/brake/unbuckle seat belt/kick windshield/n/n
 [After my car got wrecked in that accident / You still think that was an accident?]
 [V. Det. fastropes in?]
 [Lots of people in the Red Cross]
+
+[Rich investor apparenty cancelled, imply maybe had something to do with the situation, knew there was going to be an attacker]
+[Turns out was a crime where startup owner realized there wasn't going to be an investment, got angry
+That lazy piece of shit? He never worked a day in his life. Born with a silver spoon in his mouth, ran a factory or two during the war, and reinvented himself as some scholar? What a fucking joke. He sits in this house drinking thousand dollar bottles of wine and fucking undergrads.]
+

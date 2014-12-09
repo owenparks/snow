@@ -1,0 +1,10 @@
+- Problem with Inform7
+    - Threaded Conversation did not work
+        - Fixed version is in Git
+        - TC from Git requires v11 of Convo Framework
+    - Version of Convo Framework is v10 on website
+        - Had to Google for HTML directory on Emily Short's website for this??
+        - This is apparently called the Public Library??
+
+    - After all this, Threaded Conversation worked until I tried to do subjects.
+    - The example using the weather subject was broken.

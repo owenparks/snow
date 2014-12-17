@@ -1,11 +1,12 @@
-- Fix fucking conversation keywords
-
+- Fix fucking topics double printing and having wrong tenses or whatever
 - Drinking blood (optional) will give heightened senses and make solving puzzles easier.
+- Make sure the need to talk to Val and wait, and so on is properly signposted
+
 
 - Emails list full of boring student crap, need to key off the initials from book
 - Getting into a knife fight is a bad proposition. The loser dies in the street, the winner gets to die in the hospital.
 
-
 Low priority:
 - Add scenery to all the mountain areas, add them to region I guess
 - Clock in the vals_car scenery
+- Examine self, you know people are going to do that shit and complain.

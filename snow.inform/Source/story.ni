@@ -1,4 +1,8 @@
 "Blood on the Snow" by PN
+[Cover art by Dan Smith
+Licensed under Creative Commons By 2.0
+Image at: https://flic.kr/p/pPkjHD
+License Terms at: https://creativecommons.org/licenses/by/2.0/]
 
 Release along with a website and interpreter and cover art.
 The Release number is 1.
@@ -7,17 +11,19 @@ The story genre is "Mystery".
 
 Include Basic Screen Effects by Emily Short.
 Include Threaded Conversation by Chris Conley.
+Include Exit Lister by Gavin Lambert.
+[TODO: Use default Exit Lister Version 3 and make all modifications here]
 [Made with Threaded Conversation Version 2/140602]
 
 [CHANGE THE FOLLOWING LINE FOR DEBUGGING]
-Debug_on is a truth state that varies. Debug_on is usually true.
+Debug_on is a truth state that varies. Debug_on is usually false.
 
 When play begins:
 	now the story viewpoint is first person singular;
 	now the story tense is past tense;
 	If debug_on is true:
 		try switching the story transcript on.
-
+		
 Section 1 - Game Scene List
 
 Mountain_Driving is a scene. Mountain_Driving begins when play begins. Mountain_Driving ends when Car_Escape begins.
@@ -25,9 +31,10 @@ Car_Escape is a scene. Car_Escape begins when Upturned Car is visited. Car_Escap
 Cliff_Climbing is a scene. Cliff_Climbing begins when Car_Escape ends. Cliff_Climbing ends when Car_Embarking begins.
 Car_Embarking is a scene. Car_Embarking begins when Sharp Bend is visited. Car_Embarking ends when Riding_Scene begins.
 Riding_Scene is a scene. Riding_Scene begins when the player is in the Valcar_Container for the first time. Riding_Scene ends when Body_Discovery begins.
-Body_Discovery is a scene. Body_Discovery begins when the player is in the Driveway for the first time. Body_Discovery ends when the body is known.
-Guest_Arrival is a scene. Guest_Arrival begins when Body_Discovery ends.
-First_Investigation is a scene. First_Investigation begins when Guest_Arrival ends. First_Investigation ends when PC_Bedroom_Door is open.
+Body_Discovery is a scene. Body_Discovery begins when the player is in the Driveway for the first time. Body_Discovery ends when the body is examined.
+Prearrival is a scene. Prearrival begins when Body_Discovery ends. Prearrival ends when Guest_Arrival begins.
+Guest_Arrival is a scene. Guest_Arrival begins when guests arrive. Guest_Arrival ends when first investigation starts.
+First_Investigation is a scene. First_Investigation begins when Guest_Arrival ends. First_Investigation ends when PC_Bedroom_Door is open. [TODO: Move Val here after some amount of time]
 First_Sleep is a scene. First_Sleep begins when First_Investigation ends.
 
 Cliff_Gameover is a scene. Cliff_Gameover begins when the player is in the Precipice for the first time.
@@ -119,7 +126,7 @@ Instead of opening the passenger door:
 	say "There's too much snow on top. I try to push, but the weight keeps the door from opening.";
 	stop the action.
 
-The windshield is scenery in the Upturned Car.
+The windshield is scenery in the Upturned Car. The description is "Flecked with snow and road salt, it was already cracked in a spiderweb pattern where it'd collided with a rock.".
 Instead of opening the windshield:
 	say "That's not something that typically opens on a car, I'll have to use some force.";
 	stop the action.
@@ -196,7 +203,7 @@ The Valcar_Container is an enterable container. The printed name is "Mercedes".
 Sedan is a room. The description is "The inside of the Mercedes was yards of brushed metal and hand-stitched leather. It still smelled new.[if scene_conversation is exhausted] Having run out of things to talk about, nothing to do now but wait to arrive.[end if]".
 [TODO: Move NPCs to their own section?]
 [TODO: Add scenery]
-Val is a woman. Val is in the Sedan. The description is "Her dark green eyes stood out from her face like gems set in a Venetian mask. She looked to be thirty, but she could have been three hundred for all I knew. Her pale skin shone in the moonlight, contrasting with her too-red lipstick. Straight auburn hair framed a face I wouldn't have kicked out of bed for eating crackers.[paragraph break]".
+Val is a woman. Val is in the Sedan. The description is "The first thing I noticed were the dark green eyes, clear even driving down a street with no lights. She looked to be thirty, but she could have been three hundred for all I knew. Her face shone in the moonlight, pale and beautiful and unnatural. She was wearing too-red lipstick, which gave her the look of a Venetian mask. Straight auburn hair framed a face I wouldn't have kicked out of bed for eating crackers.[paragraph break]".
 
 Instead of waiting in the Sedan during Riding_Scene:
 	If scene_conversation is exhausted:
@@ -217,34 +224,86 @@ When Cliff_Gameover begins:
 
 Section 8 - Scene Body_Discovery
 
-Val_House is a woman. The printed name is "Val".
+Val_House is a woman. The printed name is "Val". Understand "Val" as Val_House. The description is "She wore a belted black overcoat with straight shoulders, which covered all of her except for the bottom of a long pencil skirt. She hadn't bothered taking her driving gloves off. I couldn't put my finger on it, but there was something stiffly formal and practised about the way she moved.[if Val_House is in the Reading_Nook][paragraph break]Her eyes rested on what was left of the professor, her expression unreadable.[end if]".
+
+Rule for writing a paragraph about Val_House:
+	If Val_House is in the Reading_Nook:
+		say "Val stood to my left, looking impassively at the body of Alan Bowden.";
+	If the scene is Guest_Arrival:
+		say "";
 
 When Body_Discovery begins:
 	now Val_House is in the Foyer;
-	say "Val got out of the car and took her bag out of the trunk.[paragraph break][quotation mark]Come on, I'll introduce you to Mark,[quotation mark] she said, walking up the drive.".
+	say "Val got out of the car and took her bag out of the trunk.[paragraph break][quotation mark]Come on, I'll introduce you to Alan,[quotation mark] she said, walking up the drive.".
 
 Driveway is a room. "We stood at the end of a long gravel drive, staring up at a large house with a dark red wood exterior. Steps to the east led to a porch that spanned the facade of the place, wrapping around to a deck in the back that presumably had a great view of the lake and the countryside. It was more ski lodge than cabin, and looked like it could comfortably shelter an entire biathlon team if it had to."
 House is scenery in the Driveway. Understand "facade/chalet/lodge" as house. The description is "It seemed oddly imposing for what was just another vacation home in the Adirondacks. From the front, it looked like two or three  spacious floors with high ceilings. The steeply angled roofs were clearly designed to shed the several feet of snow dumped on it by nor'easters every year. ".
 Driveway_scenery is scenery in the Driveway. Understand "driveway" as driveway_scenery. The printed name is "the driveway".
 [TODO: Cars, killer's car has a cold engine? Or else, owner's car is missing?]
 
-Front_Porch is a room. Front_Porch is east of the Driveway. The printed name is "Front Porch". The description is "".
-[TODO: Describe shutters]
+Front_Porch is a room. Front_Porch is east of the Driveway. The printed name is "Front Porch". The description is "Steps led up from the gravel driveway to the porch. Narrow unpainted wood planks extended the length of the house, along with windows that looked into rooms at the front of the house. Through them, I saw blinds, and a glint of something metallic, like a shutter.".
+Windows are scenery in the Front_Porch. The description is "I peered at the window next to the door. It looked to be double or triple pane glass. Crouching down slightly, I saw a recessed mechanism for a metal shutter door, almost like a security gate. Presumably, upon activation, it would slam down and block entry.". Understand "shutter" as windows. Understand "blinds" as windows.
+[TODO: Ask about shutters if they are observed]
 
-Foyer is a room. Foyer is east of the Front_Porch. The description is "I walked into the spacious foyer, trying not to walk into the large lacquered screens in front of the door. The shiny black wood was decorated with an intricate picture in gold paint, depicting a Chinese court scene. It seemed at odds with the exterior of the house, but matched the rest of the decor; the interior was a mixture of Old World furniture and Asian influences.[if the scene is Body_Discovery][paragraph break]A layer of snow had blown in through the open doorway, slowly melting into a damp puddle on the enormous Persian rug.[end if]"
+Front_Door is a lockable unlocked door. Front_Door is open. Front_Door is west of the Foyer and east of the Front_Porch.
+Foyer is a room. The description is "I walked into the spacious foyer, trying not to walk into the large lacquered screens in front of the door. The shiny black wood was decorated with an intricate picture in gold paint, depicting a Chinese court scene. It seemed at odds with the exterior of the house, but matched the rest of the decor; the interior was a mixture of Old World furniture and Asian influences.[if the scene is Body_Discovery][paragraph break]A layer of snow had blown in through the open doorway, and was slowly melting into a puddle on the enormous Persian rug.[end if][if the scene is Guest_Arrival][paragraph break]Three men stood on the rug, their coats and pant cuffs damp with snow. Val made introductions all around, as if nothing was wrong. Jan Svennson was a broad-shouldered man with pale blue eyes. He was casually brushing snow off a European performance fleece sweater. Either he liked ice climbing, or he wanted people to think he did. He had the handshake of a salesman and the grin of a frat boy.[paragraph break]Scott Gage, on the other hand, was tall and lanky, and didn't seem at all suited to the cold. He wore a pair of Japanese selvedge jeans with the cuffs turned up to make sure everyone knew it. I'd have guessed he'd picked them up somewhere in SoHo if it weren't for the sweater he was wearing, useless against real cold, as all Californian sweaters are. [paragraph break]I studied their faces carefully. If one of them knew about Alan upstairs, they weren't letting on. The three men were overdressed for vacation, as rich men often are. But somehow, they were oddly mismatched. I doubted that they came here together.[end if]"
 [TODO: Add door here to the front porch]
+[TODO: Move some of this to the descriptions of the guys]
+[TODO: end scene when player leaves the room, or talks to Val]
+
+[Gentlemen, we have a problem. Alan's dead.
+Gage: Christ, I'd been telling him to get a security system]
 
 Greatroom is a room. Greatroom is east of the Foyer. The description is "The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
+	
+A large set of sofas were arranged around a huge rug. A dark [if the stain is examined]wine [end if]stain was conspicuous against the pattern of the fabric. Everything in the room faced a gray slate fireplace. [if the fire is lit]A fire roared inside, fresh logs having been added not too long ago.[end if]
 
-A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade.[if the radio is switched on] Coming from somewhere up there I could hear [carol title] warbling from what sounded like an old radio.[end if]"
+A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade.[if the radio is switched on] Coming from somewhere up there I could hear [carol title] warbling from what sounded like an old radio.[end if]".
+To decide whether the fire is lit:
+	If the scene is Body_Discovery, yes;
+	If the scene is First_Investigation, yes;
+	no.
+The stain is scenery in the greatroom. The description is "A dark red spot about the size of a hand stood out from the beige couch. From the color, it looked like wine.".;
 
-Reading_Nook is a room. Reading_Nook is above Greatroom. The printed name is "Reading Nook". The description is "I climbed the stairs to the reading nook. Shelves and shelves of books lined the walls of the small room, most of them either non-fiction, or bound in handsome leather. A couple of wingback armchairs faced each other with a coffee table in between.[if the scene is body_discovery][paragraph break]A man sat in one, slightly paunchy and slightly grey, his eyes and mouth wide open. He was wearing a wool cardigan, damp with a dark, almost black liquid. What looked like a large carving knife was sticking out of his chest, plunged in so far that only the handle was visible.[end if]".
-The body is scenery in the reading_nook. Understand "corpse" as body. The description is "I could tell he didn't get out much. His skin was slightly pallid, and not just because he was dead.".
+The sofa is scenery in the greatroom. Understand "couch" as sofa.
+
+After examining the sofa for the first time:
+	Now the glass shard is in the greatroom.
+
+After examining the glass shard for the first time:
+	Now the broken_wineglass is in the greatroom.
+
+The glass shard is scenery. The description is "A broken piece of crystal.[if the broken_wineglass is examined] It came from a broken wineglass in the greatroom.[end if] The ruined facets of vintage cut crystal reflected light like a cheap engagement ring.".
+
+The broken_wineglass is a thing. The printed name is "broken wineglass". Understand "broken wineglass" as broken_wineglass. The description is "The curves of the wineglass were jagged edges now, a heap of shattered crystal under the sofa. It must've fallen from quite a height.".
+Instead of taking the broken_wineglass:
+	say "I had enough of a mess on my hands without taking this one with me.";
+	stop the action.
+
+[TODO Move me]
+A clue is a kind of thing.
+
+Reading_Nook is a room. Reading_Nook is above Greatroom. The printed name is "Reading Nook". The description is "I climbed the stairs to the reading nook. Shelves lined the walls of the small room, and a couple of books had been knocked off them onto the floor. A pair of wingback armchairs faced each other with a coffee table in between.[if the scene is body_discovery][paragraph break]A man sat in one, slightly paunchy and slightly grey, his eyes and mouth wide open. His glasses were askew. He was wearing a wool cardigan, stained on the front with a dark, almost black liquid. What looked like a large carving knife was sticking out of his chest, plunged in so far that only the handle was visible.[end if]".
+The body is scenery in the reading_nook. Understand "corpse" as body. The description is "I could tell he didn't get out much. His skin was slightly pallid, and not just because he was dead.".[TODO: better desc]
+Instead of taking body:
+	say "I didn't want to move him just yet.";
+	stop the action.
+
+the shelves are scenery in the reading_nook. Understand "bookshelves" as shelves. The description is "Mostly non-fiction: scholarly journal archives, collections of essays, and books on literature. A small section appeared to contain first and second editions. The owner seemed to have a bit of a collector's streak.".
+
+the books are scenery in the reading_nook. 
+Instead of taking books:
+	say "I thought I'd better not disturb the scene. They were just some random books anyhow, not much use to take them with me.";
+	stop the action.
+
+[TODO: Remove body once scene ends]
 
 The radio is a device in the reading_nook. The radio is switched on. The description is "It was vintage, maybe 1920 or 1930 if I had to guess, though the polished dark wood didn't look like it'd aged a day.".
 
 Instead of switching on the radio:
 	say "I wasn't really in the mood for more carols.".
+Instead of taking the radio:
+	say "I didn't see the point in carrying an old-fashioned wood radio with me.".
 
 Rule for writing a paragraph about the radio:
 	say "An antique wooden radio sat on the table[if the radio is switched on], playing Christmas carols[end if].".
@@ -263,14 +322,67 @@ Description
 "Hark, The Herald Angels Sing"
 "We Three Kings"
 
-a bottle of wine is in the Reading_Nook. The description is "A Bordeaux from back in 2001. Expensive bottle to be drinking alone."
+a bottle of wine is in the Reading_Nook. The description is "A Bordeaux from back in 2001, uncorked and almost empty. Expensive bottle to be drinking alone."
 
 When Body_Discovery ends:
-	Now Val is in the Reading_Nook;
-	say "Val came up the stairs, freezing the second she saw the body. Her eyes went wide, and I could tell her mind was racing, the first time I'd seen anything but unflappable boredom on her face. Half of me was relieved to know that there was something in this world that could shock her. The other half of me was unnerved by it. She hitched the poker face back on pretty quick.[paragraph break]Val nodded at the poor stiff and said, [quotation mark]Meet Professor Alan Bowden, our host this weekend.[quotation mark]".
+	Now Val_House is in the Reading_Nook;
+	say "Val came up the stairs, freezing the second she saw the body. Her eyes narrowed, and I could tell her mind was racing, the first time I'd seen anything but unflappable boredom on her face. Half of me was relieved to know that there was something in this world that could shock her. The other half was unnerved by it. She looked away and hitched the poker face back on pretty quick.[paragraph break]Val nodded at the poor stiff and said, [quotation mark]Meet Professor Alan Bowden, our host this weekend.[quotation mark][line break]";
+	[end the story saying "THE END - VERSION 1".]
 	[TODO: This is just for testing the first act REMOVE ME]
 
-Section 9 - Main House
+Section PreArrival
+
+Prearrival_Counter is a number variable. Prearrival_Counter is usually 0.
+Every turn during Prearrival:
+	Increase Prearrival_Counter by 1.
+		
+To decide whether the guests arrive:
+	If Prearrival_Counter > 20, yes;
+	no.
+
+Section 9 - Scene Guest_Arrival
+
+When Guest_Arrival begins:
+	say "I heard the front door open, and the sound of voices from the foyer. It closed a minute later.[paragraph break][if the player is in the Reading_Nook]Val and I glanced at each other across the dead man, and she left back down the stairs.[end if][if the player is in the Greatroom]Val came down the stairs, and crossed the room toward the sound of the noise.[end if]";
+	now Jan_Arrival is in the Foyer;
+	now Scott_Arrival is in the Foyer;
+	now Nathan_Arrival is in the Foyer;
+	now Val_House is in the Foyer;
+
+Jan_Arrival is a man. The printed name is "Jan". The description is "He wore".
+Scott_Arrival is a man. The printed name is "Scott".
+Nathan_Arrival is a man. The printed name is "Nathan". The description is "The sideswept brown locks  and pencil mustache were meant to look youthful and sporty, like he'd just stopped playing cricket for teatime. The lines on the face and brow made him look more Vincent Price than Errol Flynn, though. I could tell by the way he stood that he didn't have a care in the world, or at least I wasn't one of them. His half-lidded stare gave him an air of casual arrogance, like he was perpetually waiting for the valet to bring his car around.".
+
+Instead of saying hello to Jan_Arrival:
+	say "He didn't seem to be in a talking mood. He kept tapping his foot and looking at the door like he had somewhere to be, even though we both knew he wasn't leaving soon. None of us were.";
+	stop the action.
+Instead of saying hello to Scott_Arrival:
+	say "He was all nerves, maybe he'd never seen a dead man before. He put a cigarette in his mouth, fumbled for a lighter, before apparently thinking better of the whole thing, and putting it away. I thought I'd talk to him later when he was a little less jittery.";
+	stop the action.
+Instead of saying hello to Nathan_Arrival:
+	say "I approached him and got a condescending look for my trouble.";
+	stop the action.
+
+[LOGIC to change scene conditions from Guest_Arrival to First_Investigation]
+Left_Guests is a truth state that varies. Left_Guests is false.
+
+Instead of going west in the Foyer during Guest_Arrival:
+		now Left_Guests is true;
+Instead of going east in the Foyer during Guest_Arrival:
+		now Left_Guests is true;
+Instead of saying hello to Val_House in the Foyer during Guest_Arrival:
+	now Left_Guests is true;
+
+To decide whether first investigation starts:
+	If Left_Guests is true:
+		decide yes;
+	decide no.
+	
+Section 10 - Scene First_Investigation
+
+
+
+Section 11 - Main House
 
 Hallway_Downstairs is a room. Hallway_Downstairs is east of the Greatroom. The printed name is "Downstairs Hallway".
 
@@ -285,7 +397,7 @@ The wine rack is scenery in the Wine_Cellar. The description is "Hundreds of dar
 Understand "missing wine" as wine rack.
 Understand "missing bottles" as wine rack.
 
-Section Master Bedroom
+Section 12 Master Bedroom
 
 Doors are usually closed.
 Master_Bedroom_Door is a closed door. 
@@ -294,12 +406,9 @@ Master_Bedroom_Door is north of the Hallway_Upstairs and south of the Master_Bed
 
 Master_Bedroom is a room.
 
-Section Guest Bedrooms
+Section 13 Guest Bedrooms
 
-[Wine cellar, one bottle missing]
-[expensive Bordeux, unlikely he would've taken it to drink alone]
 [one wineglass on the table, other knocked over the railing, having fallen somewhere
-
 finds shard of glass, but glass upstairs is whole, give clue if the player has examined the whole glass]
 
 [blood, almost black]
@@ -312,13 +421,13 @@ finds shard of glass, but glass upstairs is whole, give clue if the player has e
 [TODO: Move this]
 A room can be indoors or outdoors. A room is usually indoors.
 
-Section PC Bedroom
+Section 14 Bedroom
 
 PC_Bedroom_Door is a closed door.
 PC_Bedroom_Door is scenery.
 PC_Bedroom_Door is east of the Hallway_Upstairs and south of the PC_Bedroom.
 
-Section 1 - Scene First Sleep
+Section 15 - Scene First Sleep
 
 The PC_Bedroom is a room. The description is "[if the scene is First_Sleep]I checked my watch, it was getting late, almost noon. I had a million things to think about, but figured I should still get a few hours' sleep while I still could.[end if]"
 
@@ -327,7 +436,7 @@ Val_Sleep is in the PC_Bedroom. The printed name is "Val".The description is "[i
 Bottle of whiskey is in the PC_Bedroom.
 [TODO: You can drink to think and pass the time in lieu of sleeping]
 
-Section 2 - Conversation Riding_Scene
+Section 16 - Conversation Riding_Scene
 
 Chalet is a subject. Understand "ski chalet/house" as chalet.
 Sunrise is a subject. Understand "dawn" as sunrise.
@@ -359,7 +468,16 @@ what time sunrise is a repeatable questioning quip.
 		it is off-limits.
 		it is available.]
 
-Section 3 - Command Overrides
+Section 17 - Conversation Guest_Arrival
+
+
+
+Section 18 - Command Overrides
+
+A thing can be examined or unexamined. A thing is usually unexamined.
+
+After examining something:
+	Now the noun is examined.
 
 Understand the command kick as something new. Kicking is an action applying to one thing. Understand "kick [something]" as kicking. 
 Instead of kicking a person:
@@ -367,7 +485,7 @@ Instead of kicking a person:
 
 Understand the command punch as something new. Punching is an action applying to one thing. Understand "punch [something]" as punching.
 Instead of punching a person:
-	say "Might be hard to believe from the way I look, but I always thought of my investigative methods as more like Hercule Poirot than Dick Tracy. Trust me, I'm easy like Sunday morning.".
+	say "Might be hard to believe from the way I look, but I always thought of my investigative methods as more Hercule Poirot than Dick Tracy. Trust me, I'm easy like Sunday morning.".
 Instead of punching something:
 	say "I had an Everlast heavy bag for that sort of thing.".
 [TODO: Give useful error message for unpunchable things]
@@ -377,7 +495,7 @@ Understand the command hit as something new. Hitting is an action applying to on
 After reading a command:
 	If the player's command matches "ask", replace the player's command with "topics".
 	
-Section 4 - Conversation Tweaks
+Section 19 - Conversation Tweaks
 
 [The standard listing subject changes rule is not listed in any rulebook.
 The standard report other subjects rule is not listed in any rulebook.]
@@ -417,9 +535,8 @@ if the number of quips which are recollected by someone is 0, say "You have not 
                 say "You have discussed '[the item]' with [the list of other people who recollect the item].";
                 increment N;
         if N is 0, say "You haven't discussed [the noun] with anyone yet."]
-[test me with "look/x outside/x window/s/drive"]
 
-Section 5 - Inventory and Mechanics
+Section 20 - Inventory and Mechanics
 
 A thing can be either broken or unbroken. A thing is usually unbroken.
 
@@ -430,7 +547,7 @@ Blood_status is a truth state that varies. Blood_status is usually false.
 [TODO: Make the cell phone break when the player enters the Bottom of Cliff by whatever method]
 [TODO: I felt like the sun could come up any minute, but Val kept driving, seemingly unconcerned.]
 	
-Section 6 - Tests
+Section 21 - Tests
 
 Test me with "drive/drive/brake/unbuckle seat belt/kick windshield/any key/up/get in/talk about/ask about chalet/ask about Mercedes/ask about sunrise"
 
@@ -442,7 +559,10 @@ Test discover with "drive/drive/brake/unbuckle seat belt/kick windshield/any key
 
 Test body with "drive/drive/brake/unbuckle seat belt/kick windshield/any key/up/get in/talk to val/ask about sunrise/ask about house/ask about car/wait/e/e/e/u"
 
+Test arrival with "drive/drive/brake/unbuckle seat belt/kick windshield/any key/up/get in/talk to val/ask about sunrise/ask about house/ask about car/wait/e/e/e/u/x body/d/w"
+
 [They sent a constable, low level]
+[He was putting on a good show, but I could tell he didn't seem to have any interest in finding out who did it. That, or some brass had told him not to.]
 
 [No shit.]
 [Val didn't tell anyone, expecting the blackmail to resolve peacefully]
@@ -463,7 +583,9 @@ Gage suggests maybe he's making a political move, and/or wants to buy Gage's com
 
 [Val says to get the blood from hidden door, Bowden sometimes brought regular students up here]
 
-[Once player drinks, someone complains to Val "Don't tell me you're forcing him to eat those disgusting leftovers from the fridge! It's terrible about poor Alan and all, but there's no reason we can't go out for food, right?"]
+[Once player drinks blood, someone complains to Val "Don't tell me you're forcing him to eat those disgusting leftovers from the fridge! It's terrible about poor Alan and all, but there's no reason we can't go out for food, right?"
+
+I told myself it was just tomato juice]
 
 [speakeasy; "They pass the Volstead Act again when I wasn't looking?"]
 [It's near to a full moon]
@@ -479,6 +601,8 @@ Gage suggests maybe he's making a political move, and/or wants to buy Gage's com
 [V. Det. fastropes in?]
 [Deader than McKinley]
 [Lots of people in the Red Cross]
+[Snobbish vam prefer the lodge to inferior skiing towns, but would love]
+
 
 [V.Det: What are bad pennies made of?]
 

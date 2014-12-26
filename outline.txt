@@ -1,0 +1,21 @@
+A plot: Who killed Alan?
+B plot: What was he being blackmailed over?
+C plot: Why did Val turn the MC?
+
+Prelude
+- Drive car
+- Car crashes
+- Escape car
+- Get to road
+- Car trip with Val
+- Arrive at house, find body
+Day 1
+- Time to investigate house and clues
+- After 20 turns, Guests arrive, look at them, no talking
+- They go to rooms, talk to them, investigate
+- Report clues to Val
+    - (A) Results are that it was probably someone he knew
+    - (B) Book in master bedroom returned from Kelly
+    - (C) Val has been waiting a long time for a protege
+Night 1
+- 

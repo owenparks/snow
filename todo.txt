@@ -1,7 +1,15 @@
+- Change the intro to prearrival and guest arrival
+    - Prearrival, Val says she'll look around the house.
+        - TODO it would be nice to give Val actual pathing, but this is really just a nice to have
+    - Guest arrival she introduces the PC to the suspects so their names are all known.
+        - Maybe give the player a few turns to look at them then send them to their rooms.
+
 - Fix fucking topics double printing and having wrong tenses or whatever
 - Drinking blood (optional) will give heightened senses and make solving puzzles easier.
 - Make sure the need to talk to Val and wait, and so on is properly signposted
+- Add descriptions for scenery obviously listed in room descriptions
 
+- Clues list when player types hint
 
 - Emails list full of boring student crap, need to key off the initials from book
 - Getting into a knife fight is a bad proposition. The loser dies in the street, the winner gets to die in the hospital.

@@ -1,0 +1,112 @@
+====================
+Someone want to call the police?
+What, like the actual police?
+Val looked at him blankly for a moment, the face of a woman realizing that if she wanted the job done right, she'd have to do it herself.
+"I'm calling the Magistrate's office, give me your phone."
+(give phone to her, show that it's broken)
+(make sure player can't drop items)
+
+===================
+Valentine Elizabeth Carter. Born 1902, Los Angeles, CA. turned 1936 by Emil Carter.
+
+It was all news to me.
+======
+
+She turned around and looked over her shoulder, holding me briefly in the piercing emerald gaze.
+
+"You're the detective, you figure it out."
+
+===================
+
+Gold ring around Val's neck
+
+-Guest_Arrival, three guests come back.
+    - Elaborate on the plan for the ski weekend
+        - Establish they're all old money except for one
+    - Bring up the idea that it was someone from outside, a hunter
+
+- Blackmail subplot
+- Hunter Subplot
+    - Stalker outside the house, extra set of footprints
+    - Missing car
+
+- V Det. brings suit?
+
+
+=========
+[if 
+Is he old money?
+One thing you learn in our world is that old money is a relative term.
+
+======
+
+The blackmailer isn't a professional-- keeps asking for more and more money.
+Crime is one of passion, or the blackmailer and the murderer are different people.
+
+======
+
+Did you know him?
+Pretty well, once upon a time.
+[if val_help_letter is known]Still well enough that he wrote to you asking for help with a blackmailer.
+[end if]
+
+How did you know him, were you a student of his?
+Do I strike you as one of the eager young undergrads he'd bring up here for a weekend?
+
+====
+
+I drank it down in one, and it warmed me like spiced cider with brandy in it. Until that moment, I hadn't realized how cold I'd been.
+
+========
+What about your girlfriend? You think she could have done it?
+??
+You know what I think? I think Alan tried to ask the wrong person for help, I think he ended up running straight into the arms of his blackmailer, and that's why he got killed.
+=======
+Oh sure, he has a private jet and can get a tee time at Loch Lomond, but it's not as though that really fools any of us.
+
+I know he bought his way into the Circle, just like he bought his way into any country club young enough to want him.
+
+His "Patron"? Christ, what a joke. The way I heard it, he was a broke nobleman, and six figures changed hands once the deed was done. It's pathetic, really. No wonder the Circle's thinning out these days.
+He looked me up and down. "Present company excepted, of course," he said, scarcely able to keep his lip from curling.
+=======================================================
+
+Protege?
+She really hasn't told you anything about it?
+He came up to me, leering. He put two fingers to my neck, pressed against my jugular. The fingers were soft and uncalloused, but the grip was wiry and strong.
+I'd heard Val was waiting something like fifty years for the privilege, I can't imagine why she'd waste it on a pretty plaything like you.
+He looked me up and down, taking a long drag on his cigarette.
+"I suppose she could have done worse."
+
+==============================================
+We went way back. He wasn't perfect, but I know he deserved better than he got.
+==================================
+(Once blackmail is known)
+You said you were going to be straight with me.
+I have been.
+Maybe you forgot to mention the little fact that he was being blackmailed?
+I didn't think it was relevant.
+=================================================
+How the hell didn't you think that was relevant?
+Because blackmailers don't kill their marks.
+===========================================
+Did you know this was going to happen?
+No.
+========================================
+Listen, kid. Here's how it's going down. We have about twelve hours before the law, our kind of law, shows up stomping their flat feet around. They don't much care if the wrong one of us takes the rap, or if no one does. Alan's nobody to the Circle, I doubt they'd care if this case went stone cold. But he was a friend of mine, and he deserves better than that.
+======================================
+What's in it for me?
+I'm your first client, and I know a lot of people, how about you make this one on the house? You owe me, remember?
+===================================
+Why you working so hard on this case? You'd never even heard of Alan until today.
+Him and Val go way back, apparently. She owes him and I owe her. I pay my debts.
+===================================
+We've got a dead man upstairs.
+Oh, no one's debating that, old sport. I just don't see the point of all these questions.
+=============================
+With the steady clacking sound of a roller coaster ascending (nah, too opposite) opaque metal shutters came down on every window in the place.
+======
+"If only he'd bought a security system"
+And it turns out that actually he had installed one??
+Yet the killer knew about it
+    - That plus the fact that the PC's brakes were cut indicates premeditation
+=======

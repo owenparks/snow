@@ -8,3 +8,11 @@
 
     - After all this, Threaded Conversation worked until I tried to do subjects.
     - The example using the weather subject was broken.
+
+- The Inform7 book does not even mention tables, according to the index
+
+- Scene conditionals
+    - [If scene is happening]
+    - If the scene is scenename (does not work within strings)
+    - Every turn during scenename
+- Dialogue punctuation by Ron Newcomb is broken

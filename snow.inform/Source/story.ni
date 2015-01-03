@@ -12,6 +12,7 @@ The story genre is "Mystery".
 Include Basic Screen Effects by Emily Short.
 Include Threaded Conversation by Chris Conley.
 Include Exit Lister by Gavin Lambert.
+Include Dialogue Punctuation by Ron Newcomb.
 [TODO: Use default Exit Lister Version 3 and make all modifications here]
 [Made with Threaded Conversation Version 2/140602]
 
@@ -23,6 +24,8 @@ When play begins:
 	now the story tense is past tense;
 	If debug_on is true:
 		try switching the story transcript on.
+
+A clue is a kind of thing.
 		
 Section 1 - Game Scene List
 
@@ -171,8 +174,9 @@ Sharp Bend is a room. Sharp Bend is above Bottom of Cliff and north of Hairpin_T
 Rule for writing a paragraph about the Valcar_Container:
 	say "A Mercedes is quietly idling here, V8 purring.";
 	
+[TODO: Maybe leaving this in could leave a trail of fixmes]
 Rule for writing a paragraph about a person:
-	say "";
+	stop;
 	
 Rule for writing a paragraph about Val:
 	If Val is in the Sedan:
@@ -200,10 +204,10 @@ When Riding_Scene begins:
 The Valcar_Container is an enterable container. The printed name is "Mercedes".
 [TODO: Can't go down in initial scene, but allow the player to come back here]
 
-Sedan is a room. The description is "The inside of the Mercedes was yards of brushed metal and hand-stitched leather. It still smelled new.[if scene_conversation is exhausted] Having run out of things to talk about, nothing to do now but wait to arrive.[end if]".
+Sedan is a room. The description is "The inside of the Mercedes was yards of brushed metal and hand-stitched leather. It still smelled new.[if scene_conversation is exhausted] Having run out of things to talk about, I had nothing to do but wait for us to arrive.[end if]".
 [TODO: Move NPCs to their own section?]
 [TODO: Add scenery]
-Val is a woman. Val is in the Sedan. The description is "The first thing I noticed were the dark green eyes, clear even driving down a street with no lights. She looked to be thirty, but she could have been three hundred for all I knew. Her face shone in the moonlight, pale and beautiful and unnatural. She was wearing too-red lipstick, which gave her the look of a Venetian mask. Straight auburn hair framed a face I wouldn't have kicked out of bed for eating crackers.[paragraph break]".
+Val is a woman. Val is in the Sedan. The description is "The first thing I noticed were the dark green eyes, clear even driving down a street with no lights. She looked to be in her thirties, but she could have been three hundred for all I knew. Her face shone in the moonlight, pale and beautiful and unnatural. She was wearing too-red lipstick, which gave her the look of a Venetian mask. Straight auburn hair framed a face I wouldn't have kicked out of bed for eating crackers.[paragraph break]".
 
 Instead of waiting in the Sedan during Riding_Scene:
 	If scene_conversation is exhausted:
@@ -243,51 +247,57 @@ Driveway_scenery is scenery in the Driveway. Understand "driveway" as driveway_s
 
 Front_Porch is a room. Front_Porch is east of the Driveway. The printed name is "Front Porch". The description is "Steps led up from the gravel driveway to the porch. Narrow unpainted wood planks extended the length of the house, along with windows that looked into rooms at the front of the house. Through them, I saw blinds, and a glint of something metallic, like a shutter.".
 Windows are scenery in the Front_Porch. The description is "I peered at the window next to the door. It looked to be double or triple pane glass. Crouching down slightly, I saw a recessed mechanism for a metal shutter door, almost like a security gate. Presumably, upon activation, it would slam down and block entry.". Understand "shutter" as windows. Understand "blinds" as windows.
-[TODO: Ask about shutters if they are observed]
+[TODO: Ask Val about shutters if they are observed]
 
-Front_Door is a lockable unlocked door. Front_Door is open. Front_Door is west of the Foyer and east of the Front_Porch.
-Foyer is a room. The description is "I walked into the spacious foyer, trying not to walk into the large lacquered screens in front of the door. The shiny black wood was decorated with an intricate picture in gold paint, depicting a Chinese court scene. It seemed at odds with the exterior of the house, but matched the rest of the decor; the interior was a mixture of Old World furniture and Asian influences.[if the scene is Body_Discovery][paragraph break]A layer of snow had blown in through the open doorway, and was slowly melting into a puddle on the enormous Persian rug.[end if][if the scene is Guest_Arrival][paragraph break]Three men stood on the rug, their coats and pant cuffs damp with snow. Val made introductions all around, as if nothing was wrong. Jan Svennson was a broad-shouldered man with pale blue eyes. He was casually brushing snow off a European performance fleece sweater. Either he liked ice climbing, or he wanted people to think he did. He had the handshake of a salesman and the grin of a frat boy.[paragraph break]Scott Gage, on the other hand, was tall and lanky, and didn't seem at all suited to the cold. He wore a pair of Japanese selvedge jeans with the cuffs turned up to make sure everyone knew it. I'd have guessed he'd picked them up somewhere in SoHo if it weren't for the sweater he was wearing, useless against real cold, as all Californian sweaters are. [paragraph break]I studied their faces carefully. If one of them knew about Alan upstairs, they weren't letting on. The three men were overdressed for vacation, as rich men often are. But somehow, they were oddly mismatched. I doubted that they came here together.[end if]"
-[TODO: Add door here to the front porch]
-[TODO: Move some of this to the descriptions of the guys]
+the front door is a lockable unlocked door. the front door is open. front door is west of the Foyer and east of the Front_Porch. The description is "A large wooden door, painted white as a preacher's picket fence. It didn't have a window or peephole. Something seemed odd about the lock, like it had been damaged. There was splintered wood on the side of the doorframe where someone had apparently forced the door open." Understand "doorframe" as front door.
+Rule for writing a paragraph about the front door:
+	say "[if the front door is open]The front door stood open to the porch.[end if] [if the front door is unexamined]I could tell right away that something was wrong, like the door had been damaged somehow.[end if]".
+	
+The lock is scenery in the Front_Porch. The lock is a clue. The description is "I could see obvious scratch marks at the deadbolt that could've been left by an intruder using a lockpick. Going by the state of the doorframe, the attempt hadn't been successful.";
+	
+Foyer is a room. The description is "I walked into the spacious foyer, trying not to walk into the large lacquered screens in front of the door. The shiny black wood was decorated with an intricate picture in gold paint, depicting a Chinese court scene. It seemed at odds with the exterior of the house, but matched the rest of the decor; the interior was a mixture of Old World furniture and Asian influences.[if Body_Discovery is happening][paragraph break]A layer of snow had blown in through the open doorway, and was slowly melting into a puddle on the enormous Persian rug.[end if]
+[if Guest_Arrival is happening][paragraph break]Three men stood on the rug, their coats and pant cuffs damp with snow. Val made introductions all around, as if nothing was wrong. [paragraph break]I studied their faces carefully. If one of them knew about Alan upstairs, they weren't letting on. The three men were overdressed for vacation, as rich men often are. But somehow, they were oddly mismatched. I doubted that they came here together.[end if]"
 [TODO: end scene when player leaves the room, or talks to Val]
 
-[Gentlemen, we have a problem. Alan's dead.
-Gage: Christ, I'd been telling him to get a security system]
 
 Greatroom is a room. Greatroom is east of the Foyer. The description is "The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
 	
-A large set of sofas were arranged around a huge rug. A dark [if the stain is examined]wine [end if]stain was conspicuous against the pattern of the fabric. Everything in the room faced a gray slate fireplace. [if the fire is lit]A fire roared inside, fresh logs having been added not too long ago.[end if]
+A large set of sofas were arranged around a huge rug. A dark [if the stain is examined]wine [end if]stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. [if the fire is lit]A fire roared inside, fresh logs having been added not too long ago.[end if]
 
-A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade.[if the radio is switched on] Coming from somewhere up there I could hear [carol title] warbling from what sounded like an old radio.[end if]".
+A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade.[if the radio is switched on] Coming from somewhere up there I heard [carol title] warbling from what sounded like an old radio.[end if]".
 To decide whether the fire is lit:
 	If the scene is Body_Discovery, yes;
 	If the scene is First_Investigation, yes;
 	no.
-The stain is scenery in the greatroom. The description is "A dark red spot about the size of a hand stood out from the beige couch. From the color, it looked like wine.".;
+The stain is scenery in the greatroom. The stain is a clue. The description is "An oblong dark red spot about the size of a pear stood out from the beige couch. From the color, it looked like wine. As I was looking at it, I realized something on the floor was reflecting firelight back at me.".;
 
 The sofa is scenery in the greatroom. Understand "couch" as sofa.
 
 After examining the sofa for the first time:
 	Now the glass shard is in the greatroom.
+	
+After examining the stain for the first time:
+	Now the glass shard is in the greatroom.
 
 After examining the glass shard for the first time:
-	Now the broken_wineglass is in the greatroom.
+	Remove the glass shard from play;
+	Now the shattered wineglass is in the greatroom.	
 
-The glass shard is scenery. The description is "A broken piece of crystal.[if the broken_wineglass is examined] It came from a broken wineglass in the greatroom.[end if] The ruined facets of vintage cut crystal reflected light like a cheap engagement ring.".
+The glass shard is a thing. The glass shard is fixed in place. The description is "A broken shard of glass.[if the shattered wineglass is examined] It came from a broken wineglass in the greatroom.[end if] The ruined facets of vintage crystal reflected light like a cheap engagement ring.[paragraph break]I crouched down for a closer look and realized it had come from a shattered wineglass,  the pieces obscured by the sofa".
+Instead of taking the glass shard:
+	try examining the glass shard.
 
-The broken_wineglass is a thing. The printed name is "broken wineglass". Understand "broken wineglass" as broken_wineglass. The description is "The curves of the wineglass were jagged edges now, a heap of shattered crystal under the sofa. It must've fallen from quite a height.".
-Instead of taking the broken_wineglass:
-	say "I had enough of a mess on my hands without taking this one with me.";
+The shattered wineglass is a clue. The printed name is "broken wineglass". Understand "broken wineglass" as shattered wineglass. The description is "The curves of the wineglass were jagged edges now, a heap of shattered crystal under the sofa. It must've fallen from quite a height.".
+After taking the shattered wineglass:
+	say "I had enough of a mess on my hands without taking this one with me, but kept it anyway. It told an interesting story.";
 	stop the action.
 
-[TODO Move me]
-A clue is a kind of thing.
-
-Reading_Nook is a room. Reading_Nook is above Greatroom. The printed name is "Reading Nook". The description is "I climbed the stairs to the reading nook. Shelves lined the walls of the small room, and a couple of books had been knocked off them onto the floor. A pair of wingback armchairs faced each other with a coffee table in between.[if the scene is body_discovery][paragraph break]A man sat in one, slightly paunchy and slightly grey, his eyes and mouth wide open. His glasses were askew. He was wearing a wool cardigan, stained on the front with a dark, almost black liquid. What looked like a large carving knife was sticking out of his chest, plunged in so far that only the handle was visible.[end if]".
-The body is scenery in the reading_nook. Understand "corpse" as body. The description is "I could tell he didn't get out much. His skin was slightly pallid, and not just because he was dead.".[TODO: better desc]
+Reading_Nook is a room. Reading_Nook is above Greatroom. The printed name is "Reading Nook". The description is "I climbed the stairs to the reading nook. Shelves lined the walls of the small room, and a couple of books had been knocked off them onto the floor. A pair of wingback armchairs faced each other with a coffee table in between.[if the scene is body_discovery][paragraph break]A man sat in one, slightly paunchy and slightly grey, his eyes and mouth wide open. His glasses were askew. He was wearing a navy blue cardigan, stained on the front with a dark, almost black liquid. What looked like a small knife was sticking out of his neck, plunged in so far that only the handle was visible.[end if]".
+The body is scenery in the reading_nook. Understand "corpse / man" as body. The description is "He looked like he was fifty, but something about his well-preserved look told me that he was probably sixty. It wasn't that he was in good shape-- I doubted he'd seen much real exercise since he was in high school, and maybe not even then. He struck me as a debate team sort of guy.  I could tell he didn't get out much. His fingers were broad, but smooth. His hands had no calluses and no rings, but he wore a Rolex watch. It wasn't fake, and had cost probably three times what my car was worth before I'd driven it off a cliff a few hours ago."[TODO: Master Bedroom closet, one pair of boots, unused]
 Instead of taking body:
 	say "I didn't want to move him just yet.";
 	stop the action.
+The knife is scenery in the reading_nook. The knife is a clue. The description is "It looked like a silver carving knife with an ivory handle. A monogram on the end read [quotation mark]AHB[quotation mark]. It didn't look that long or that sharp, but someone had made a pretty clean business of stabbing Bowden with it. Or maybe they'd just gotten lucky. It happens like that sometimes."
 
 the shelves are scenery in the reading_nook. Understand "bookshelves" as shelves. The description is "Mostly non-fiction: scholarly journal archives, collections of essays, and books on literature. A small section appeared to contain first and second editions. The owner seemed to have a bit of a collector's streak.".
 
@@ -326,7 +336,7 @@ a bottle of wine is in the Reading_Nook. The description is "A Bordeaux from bac
 
 When Body_Discovery ends:
 	Now Val_House is in the Reading_Nook;
-	say "Val came up the stairs, freezing the second she saw the body. Her eyes narrowed, and I could tell her mind was racing, the first time I'd seen anything but unflappable boredom on her face. Half of me was relieved to know that there was something in this world that could shock her. The other half was unnerved by it. She looked away and hitched the poker face back on pretty quick.[paragraph break]Val nodded at the poor stiff and said, [quotation mark]Meet Professor Alan Bowden, our host this weekend.[quotation mark][line break]";
+	say "Val came up the stairs, freezing the second she saw the body. Her eyes narrowed, and I could tell her mind was racing, the first time I'd seen anything but placid boredom on her face. Half of me was relieved to know that there was something in this world that could perturb her. The other half was unnerved by it. She looked away and hitched the poker face back on pretty quick.[paragraph break]Val nodded at the poor stiff and said, [quotation mark]Meet Professor Alan Bowden, our host this weekend.[quotation mark][line break]";
 	[end the story saying "THE END - VERSION 1".]
 	[TODO: This is just for testing the first act REMOVE ME]
 
@@ -337,30 +347,31 @@ Every turn during Prearrival:
 	Increase Prearrival_Counter by 1.
 		
 To decide whether the guests arrive:
-	If Prearrival_Counter > 20, yes;
+	If Prearrival_Counter > 10, yes;
 	no.
 
 Section 9 - Scene Guest_Arrival
 
 When Guest_Arrival begins:
-	say "I heard the front door open, and the sound of voices from the foyer. It closed a minute later.[paragraph break][if the player is in the Reading_Nook]Val and I glanced at each other across the dead man, and she left back down the stairs.[end if][if the player is in the Greatroom]Val came down the stairs, and crossed the room toward the sound of the noise.[end if]";
+	say "[if the player is not in the Foyer]I heard the front door open, and the sound of voices from the foyer. It closed a minute later.[end if][if the player is in the Foyer]The front door opened, and three men filed in, a lanky one in designer jeans holding the door for the other two. He closed it behind them, and they stood there looking around and putting snow on the rug, as though they expected a butler to come and announce them.[end if][paragraph break][if the player is in the Reading_Nook]Val and I glanced at each other across the dead man, and she left back down the stairs.[end if][if the player is in the Greatroom]Val came down the stairs, and crossed the room toward the sound of the noise.[end if]";
 	now Jan_Arrival is in the Foyer;
 	now Scott_Arrival is in the Foyer;
 	now Nathan_Arrival is in the Foyer;
 	now Val_House is in the Foyer;
+	now the front door is closed.
 
-Jan_Arrival is a man. The printed name is "Jan". The description is "He wore".
-Scott_Arrival is a man. The printed name is "Scott".
+Jan_Arrival is a man. The printed name is "Jan". The description is "Jan Svennson was a broad-shouldered man with pale blue eyes. He was casually brushing snow off a European performance fleece sweater. Either he liked ice climbing, or he wanted people to think he did. He had the handshake of a salesman and the grin of a frat boy.".
+Scott_Arrival is a man. The printed name is "Scott". The description is "Scott Gage, on the other hand, was tall and lanky, and didn't seem at all suited to the cold. He wore a pair of Japanese selvedge jeans with the cuffs turned up to make sure everyone knew it. I'd have guessed he'd picked them up somewhere in SoHo if it weren't for the sweater he was wearing, useless against real cold, as all Californian sweaters are.".
 Nathan_Arrival is a man. The printed name is "Nathan". The description is "The sideswept brown locks  and pencil mustache were meant to look youthful and sporty, like he'd just stopped playing cricket for teatime. The lines on the face and brow made him look more Vincent Price than Errol Flynn, though. I could tell by the way he stood that he didn't have a care in the world, or at least I wasn't one of them. His half-lidded stare gave him an air of casual arrogance, like he was perpetually waiting for the valet to bring his car around.".
 
 Instead of saying hello to Jan_Arrival:
 	say "He didn't seem to be in a talking mood. He kept tapping his foot and looking at the door like he had somewhere to be, even though we both knew he wasn't leaving soon. None of us were.";
 	stop the action.
 Instead of saying hello to Scott_Arrival:
-	say "He was all nerves, maybe he'd never seen a dead man before. He put a cigarette in his mouth, fumbled for a lighter, before apparently thinking better of the whole thing, and putting it away. I thought I'd talk to him later when he was a little less jittery.";
+	say "He was all nerves, maybe he'd never seen a dead man before. He put a cigarette in his mouth, patted a few pockets for a lighter, before apparently thinking better of the whole thing, and putting it away. I thought I'd talk to him later when he was a little less jittery.";
 	stop the action.
 Instead of saying hello to Nathan_Arrival:
-	say "I approached him and got a condescending look for my trouble.";
+	say "I approached him and got a condescending look for my trouble. He clearly didn't want to speak to me. At least, not until he had a reason to.";
 	stop the action.
 
 [LOGIC to change scene conditions from Guest_Arrival to First_Investigation]
@@ -377,10 +388,23 @@ To decide whether first investigation starts:
 	If Left_Guests is true:
 		decide yes;
 	decide no.
-	
+
+[zippo lighter clue, requires cigarettes to use]	
+
 Section 10 - Scene First_Investigation
 
+When First_Investigation begins:
+	say "Val waited a minute for the conversations the three were having to die down.";
+	say "(Press a key)";
+	wait for any key;
+	say "She folded her arms across her chest and took a deep breath quiet enough that only I heard it.[paragraph break]"
 
+[TODO: When First_Investigation begins:
+	Now Scott_Investigation is in the ]
+
+Scott_Investigation is a man. The description is "He had an unlit cigarette between his lips. They all seemed to smoke. His fingers fumbled with a brushed metal lighter and didn't seem to be making much progress, but he was giving it the old college try."
+Jan_Investigation is a man.
+Nathan_Investigation is a man.
 
 Section 11 - Main House
 
@@ -388,18 +412,19 @@ Hallway_Downstairs is a room. Hallway_Downstairs is east of the Greatroom. The p
 
 Hallway_Upstairs is above the Hallway_Downstairs. The printed name is "Upstairs Hallway".
 
-Wine_Cellar is a room. Wine_Cellar is below the Hallway_Downstairs. The printed name is "Wine Cellar". The description is "The second I walked into the dark wine cellar, recessed lights in the ceiling turned on, activated by what must be a motion sensor.
+Wine_Cellar is a room. Wine_Cellar is below the Hallway_Downstairs. The printed name is "Wine Cellar". The description is "The second I walked into the dark wine cellar, recessed lights in the ceiling turned on, probably activated by a motion sensor.
 [paragraph break]
-A wine rack ran the perimeter of the room, holding enough bottles to supply a medium-sized restaurant. A few seemed to be missing here and there."
+A wine rack ran the perimeter of the room, holding enough bottles to supply a French restaurant. A few seemed to be missing here and there. A wooden chair sat in the corner."
 
-The wine rack is scenery in the Wine_Cellar. The description is "Hundreds of dark green bottles rested in the diamond-crossed wooden cubbyholes, corks facing out.[paragraph break]I took a look at the gaps in the collection. A couple were missing from a section of Californian whites. One was missing from the other end, the hole surrounded by bottles of Burgundy red."
+The wooden chair is scenery in the Wine_Cellar. The description is "A simple chair made from dark wood, appearing to have woven reeds for the seat. It's probably just here to add to the country style decor, I can't imagine anyone sitting in the cellar drinking wine long enough to use it.".
+
+The wine rack is scenery in the Wine_Cellar. The description is "What had to be about a hundred dark green bottles rested in the diamond-crossed wooden cubbyholes, corks facing out.[paragraph break]I took a look at the gaps in the collection. A couple were missing from a section of Californian whites. One was missing from the other end, the hole surrounded by bottles of Burgundy red."
 
 Understand "missing wine" as wine rack.
 Understand "missing bottles" as wine rack.
 
 Section 12 Master Bedroom
 
-Doors are usually closed.
 Master_Bedroom_Door is a closed door. 
 Master_Bedroom_Door is scenery.
 Master_Bedroom_Door is north of the Hallway_Upstairs and south of the Master_Bedroom.
@@ -408,18 +433,17 @@ Master_Bedroom is a room.
 
 Section 13 Guest Bedrooms
 
+Nathan_Room is a room. The printed name is "Oak Room";
+
+Scott_Room is a room. The printed name is "Sumac Room";
+
+Jan_Room is a room. The printed name is "Hemlock Room";
+
 [one wineglass on the table, other knocked over the railing, having fallen somewhere
 finds shard of glass, but glass upstairs is whole, give clue if the player has examined the whole glass]
 
-[blood, almost black]
-[fire roaring]
-[Christmas carols playing]
-[what looked like a silver carving knife]
 [TODO: Adaptive hint system]
 [TODO: If the player is too confused, simply change to an objective, use the "acting confused" cues from EmShort]
-
-[TODO: Move this]
-A room can be indoors or outdoors. A room is usually indoors.
 
 Section 14 Bedroom
 
@@ -433,7 +457,12 @@ The PC_Bedroom is a room. The description is "[if the scene is First_Sleep]I che
 
 Val_Sleep is in the PC_Bedroom. The printed name is "Val".The description is "[if the scene is First_Sleep]Val was lying on top of the covers, facing the window. Her breathing was steady and slow, but I couldn't tell if she was asleep. She wore just a satin pajama shirt. If the cold bothered her, she didn't show it.[end if]"
 
-Bottle of whiskey is in the PC_Bedroom.
+the bottle of bourbon is in the PC_Bedroom. The description is "A bottle of Four Roses small batch. One of the better ways to pass the time, if I had to choose. It was still half full, if I had to be an optimist about something." ;
+
+carry out drinking the bottle of bourbon for the first time:
+	say "I poured out a measure into one of the glasses on the chest of drawers and drank it slowly, letting it linger on my tongue.[paragraph break]I thought about the idea that someone was just outside the window, peering in, waiting . I thought about the three men I'd just met. I thought about the man I'd seen in the chair with his eyes wide open, who didn't seem to mind that I was drinking his bourbon, since he didn't mind much of anything anymore.";
+carry out drinking the bottle of bourbon for the second time:
+	say "I went back to the bottle and poured again, more generous this time. I listened to the sound of something between snow and frozen rain pattering against the window. I listened to Val's steady breathing. She was either asleep, or thinking just as hard as I was. I stared at her back a long time, trying to decide if I wanted to talk to her.";
 [TODO: You can drink to think and pass the time in lieu of sleeping]
 
 Section 16 - Conversation Riding_Scene
@@ -468,20 +497,19 @@ what time sunrise is a repeatable questioning quip.
 		it is off-limits.
 		it is available.]
 
-Section 17 - Conversation Guest_Arrival
+Section 17 - Conversation First_Investigation
 
+who nathan is a repeatable questioning quip.
+	The printed name is "about Nathan". The true-name is "who is Nathan".
+	The comment is "".
 
 
 Section 18 - Command Overrides
 
-A thing can be examined or unexamined. A thing is usually unexamined.
-
-After examining something:
-	Now the noun is examined.
 
 Understand the command kick as something new. Kicking is an action applying to one thing. Understand "kick [something]" as kicking. 
 Instead of kicking a person:
-	say "In my experience, detective work required far less kicking than Shaft had led me to believe."
+	say "In my experience, detective work required far less kicking than 70s cop shows had led me to believe."
 
 Understand the command punch as something new. Punching is an action applying to one thing. Understand "punch [something]" as punching.
 Instead of punching a person:
@@ -536,7 +564,58 @@ if the number of quips which are recollected by someone is 0, say "You have not 
                 increment N;
         if N is 0, say "You haven't discussed [the noun] with anyone yet."]
 
-Section 20 - Inventory and Mechanics
+Section 20 - Clues and Hints
+
+A thing can be examined or unexamined. A thing is usually unexamined.
+
+After examining something:
+	Now the noun is examined.
+
+After examining something for the first time:
+	If the noun is a clue:
+		Increase FoundClues by 1.
+
+FoundClues is a number that varies. FoundClues is 0.
+
+Understand the command "clues" as something new. Understand "clues" as asking for clues. Asking for clues is an action out of world.
+
+Carry out asking for clues:
+	say "[bold type]Clues[roman type][paragraph break]";
+	repeat through the Table of NotAloneClues:
+		if clue is examined:
+			say "[clue entry][line break]";
+	say "[paragraph break]";
+	repeat through the Table of StruggleClues:
+		if clue is examined:
+			say "[clue entry][line break]";
+	[TODO: paragraph break between tables]
+
+Table of NotAloneClues
+clue
+the shattered wineglass
+the bottle of wine
+
+Table of StruggleClues
+clue
+the stain
+
+Table of PremeditatedClues
+clue
+the knife
+the lock
+
+Understand the command "hint" as something new. Understand "hint" as asking for a hint. Asking for a hint is an action out of world. Instead of thinking, try asking for a hint.
+Carry out asking for a hint:
+	say "[bold type]Objective[roman type][paragraph break]";
+	Try asking for clues.
+
+Understand the command "help" as something new. Understand "help" as asking for a hint.
+
+Section 21 - Inventory and Mechanics
+
+A room can be indoors or outdoors. A room is usually indoors.
+
+Doors are usually closed.
 
 A thing can be either broken or unbroken. A thing is usually unbroken.
 
@@ -547,7 +626,7 @@ Blood_status is a truth state that varies. Blood_status is usually false.
 [TODO: Make the cell phone break when the player enters the Bottom of Cliff by whatever method]
 [TODO: I felt like the sun could come up any minute, but Val kept driving, seemingly unconcerned.]
 	
-Section 21 - Tests
+Section 22 - Tests
 
 Test me with "drive/drive/brake/unbuckle seat belt/kick windshield/any key/up/get in/talk about/ask about chalet/ask about Mercedes/ask about sunrise"
 

@@ -19,7 +19,7 @@ picture 1 "/Users/spanky/Dropbox/snow/snow.materials/Cover.png"
 
 placeholder [IFID] = "615AD313-D26C-44F5-9110-1C79488431D3"
 placeholder [RELEASE] = "1"
-placeholder [YEAR] = "2014"
+placeholder [YEAR] = "2015"
 placeholder [TITLE] = "Blood on the Snow"
 placeholder [AUTHOR] = "PN"
 placeholder [BLURB] = "A work of interactive fiction."

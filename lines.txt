@@ -109,4 +109,120 @@ With the steady clacking sound of a roller coaster ascending (nah, too opposite)
 And it turns out that actually he had installed one??
 Yet the killer knew about it
     - That plus the fact that the PC's brakes were cut indicates premeditation
-=======
+===========
+What happened to the body?
+Nothing. It's still there.
+==========
+
+What happens to folks who don't wait their turn?
+The Circle only really has a single sanction.
+What is it?
+He took a slow drag on his cigarette for effect. "What do you think?"
+
+============
+
+Your merit badge is cute. You been wearing it long?
+I've worn the Mark for more than a hundred years, so longer than that police badge you've got.
+I shrugged. Don't got it any more, had to give it up.
+That's a real shame. Not to worry, I'm sure your new sugar mommy will be happy to look after you.
+
+============
+
+Your file said you used to work in homicide.
+I've only been one of you people for 48 hours, and I already have a file?
+You've had a file for three weeks now.
+I didn't like that. I didn't like it so much I could hardly think of a cute comeback to make. He seemed to enjoy lording over me the fact that he knew something I didn't. It was probably a feeling he didn't get to enjoy very often.
+"We all have files," he went on. "Did you think you could just get a hickey and you'd be in like Flynn, learn the secret handshake and everything? It takes resources to sweep something this size under the rug for this long. Know-how, connections, and money, and that means paperwork."
+
+
+=========
+
+Val
+    - murder: I need you to solve this. Call it your first case in the private sector, call it a favor to me, I don't care. But you've got until the law gets here to look around unrestricted, and after that, who knows.
+
+    - Alan: Did you know him well? As well as anyone. We were friends, I suppose, as much as any of us can be.
+        - Enemies: I doubt he had many, if any at all. The Circle is old people with long memories, so you can imagine the politics. We all have a lot of people we'd like out of our hair, but not Alan. He kept out of all that, he just taught classes and lived the quiet life. Well, he did invite students up here or to one of his other houses for... recreational retreats every so often.
+    - Hunter: It's possible. It's rare, but it does happen from time to time. Some nut gets it in their head
+    - Circle: So you're telling me that I am now part of an international cabal of parasites. There's no need to be so dramatic about it. It's not like I recruited you into a Wall St. firm.
+    - Patron:
+        - My file if (my file) is known: You've been stalking me for weeks now? I wouldn't put it like that. How would you put it then? I got the go ahead for a patron application I put in a while back. That sort of opportunity doesn't come every day, so I scouted for a recruit. And then I made you an offer. 
+        - (If my file has been discussed) Our first meeting: So the first time we met, that wasn't a coincidence, was it? Would you have chosen differently if you'd known? No. Then what the hell are you sore about? She sounded impatient again.
+     
+    - House:
+    - Blackmail: Did you know about this?
+        - Why didn't you say something: Because I didn't think it was relevant. Why the hell wouldn't it be relevant? Because blackmailers don't kill their marks.
+
+    - Nathan: He's in financial trouble (unlocked by having item or dialogue option?) and is trying to get an investment from Alan, and is using his knowledge of Alan's affair to get it
+
+    =========
+    At crash scene
+    Val:
+        - about brake line
+        - about file (if asked)
+            - It's all supposed to be confidential
+
+Ask her about Nathan
+Is he old money? 
+I guess. He made a sizeable fortune selling boots to the Allies during World War I, a real war profiteer. He used it to buy that ridiculous title, a couple of country estates, and even restored an old manor house. But a little time running with the Circle crowd will tell you that "old money" is a relative term. 
+
+=========================
+
+So this hunter found out where Alan lives, came kitted out with gear to break in and kill him. He gets to the front door, tries to pick it with the skill of a drunk raccoon, finally gives up and breaks the door open. Alan doesn't hear him come in. Okay, that part could hold water, he had the radio turned up pretty high. But then they both sit down to a nice glass of the most expensive wine he had in his house, and then Alan gets stabbed with his own letter opener?
+
+(if front door is examined)
+(if letter opener is examined)
+
+========================
+
+Brake lines were cut by the blackmailer, not the killer
+
+=====================
+
+Ask her about car
+    - Leave it, no one's going to stumble on it anytime soon way out here. Our people will collect it once the storm breaks, to keep the police out of it.
+    
+=======================
+
+Final scene
+
+PC is sapped and tied up so that the killer can find out what he/she knows before killing them all and faking his own death to escape
+
+planned to open all the shutters, 
+
+(if PC has glass shard, can try to escape by cutting rope, otherwise, has to talk to stall)
+
+========
+
+V Det
+
+He stood well over six feet with a build that belonged on the inside of an octagon cage. The designer charcoal suit he wore hadn’t quite been successfully altered to his wide frame. A deep purple tie sat at his neck in a fat knot Donald Trump would have approved of. 
+
+Pretty well dressed for a cop, or whatever passed for one in Val's world. Probably a little too well dressed for him to be entirely on the level. The deeply furrowed brow made  him look like a gorilla in Prada. I had no trouble believing his was the man left in the office, someone who was in charge because everyone else had been smart enough to make an excuse and not show up for the holidays.
+
+=====================
+Final scene, player is sapped and tied up, "talk to self" is the final way to puzzle out the mystery.
+
+==============================
+
+A sunny place for shady people
+- W Somerset Maugham
+==============================
+
+Why are you here?
+ALan's all right. Really, the house has nice position, and at the height of skiing season, it's hard to beat the crowd. He gestured vaguely towards the surrounding countryside as though it were a buffet.
+
+You've been here before.
+Oh, sure. He liked to keep things small, but he always wanted to be the center of attention. He'd do these little get-togethers a few times a season. Here in the winter, and his home in Martha's Vineyard for the summers. There's nothing quite like riding a horse along the beach in the moonlight, is there?
+
+You don't seem all that upset he's dead.
+I liked him well enough, but it was really only ever a friendship of convenience. He threw great parties, knew the right people, you know. He raised both eyebrows playfully. You can't possibly still think one of us did it? I think it's pretty clear 
+
+Where were you last night? (Final)
+His lofty affected manner disappeared the second I asked. His smile was still fixed on his face, but the black eyes were suddenly cold and threatening. I met his gaze, unflinching. It felt like skinny dipping in Lake Ontario.
+
+"I don't know what the hell you think you're playing at, but let's get one thing straight. You're nobody, and if you carry on making wild accusations, you're going to make a lot of enemies. Who knows, an enemy in the Circle is trouble not even Val can protect you from." (TODO a little blunt)
+
+- Nathan
+
+===============================
+

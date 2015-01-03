@@ -12,7 +12,7 @@ The story genre is "Mystery".
 Include Basic Screen Effects by Emily Short.
 Include Threaded Conversation by Chris Conley.
 Include Exit Lister by Gavin Lambert.
-Include Dialogue Punctuation by Ron Newcomb.
+[Include Dialogue Punctuation by Ron Newcomb.]
 [TODO: Use default Exit Lister Version 3 and make all modifications here]
 [Made with Threaded Conversation Version 2/140602]
 
@@ -88,12 +88,14 @@ Instead of going south when the player is in the Hairpin_Turn:
 	Try going down.
 Carry out going down when the player is in the Hairpin_Turn:
 	Say "It's too late to stop, so I don't even bother. Instead, I press my head and back against the seat and put my arms in front of my face.[paragraph break]The back end of the car lost traction and swung out wide, trying vainly to follow the front, just like one of those car commercials. Unfortunately, I was not a professional driver, nor was this a closed course, and the right side of the car went over the edge of the cliff, momentum then taking the rest of the car with it. In shock, my brain couldn't manage to tell my body to do more than grip the wheel uselessly as the car tumbled down the steep incline. I lost count of the rolls after three. The roof hit a tree, and I jerked upward against the seat belt. Snow from the branches fell into a pile onto the passenger window from the impact. I heard a thud, snuffing out the brief glimpse of moonlight.[paragraph break]";
+	wait for any key;
 	Continue the action.
 
 After reading a command:
 	If the player's command matches "brake" or the player's command matches "stop":
 		If the player is in the Hairpin_Turn:
 			say "I hit the brakes, but the car kept straight for the guardrail, slamming through, and going over.[paragraph break]The back end of the car lost traction and swung out wide, trying vainly to follow the front, just like one of those car commercials. Unfortunately, I was not a professional driver, nor was this a closed course, and the right side of the car went over the edge of the cliff, momentum then taking the rest of the car with it. In shock, my brain couldn't manage to tell my body to do more than grip the wheel uselessly as the car tumbled down the steep incline. I lost count of the rolls after three. The roof hit a tree, and I was jerked upward against the seat belt. Snow from the branches fell into a pile onto the passenger window from the impact. I heard a thud, snuffing out the brief glimpse of moonlight.[paragraph break]";
+			wait for any key;
 			now the player is in the Upturned Car;
 			stop the action.
 	
@@ -484,7 +486,7 @@ what the chalet is a repeatable questioning quip.
 	It mentions ski chalet.
 	[Understand "ski chalet/house" as what the chalet.]
 	The comment is "Where are we going?".
-	The reply is "My house.".
+	The reply is "TODO.".
 	The proper scene is Riding_Scene.
 what time sunrise is a repeatable questioning quip.
 	The printed name is "about sunrise". The true-name is "what time sunrise".
@@ -501,11 +503,12 @@ Section 17 - Conversation First_Investigation
 
 who nathan is a repeatable questioning quip.
 	The printed name is "about Nathan". The true-name is "who is Nathan".
-	The comment is "".
-
+	The comment is "[quotation mark]This Nathan Wyndham, is he old money?[quotation mark] I asked."
+	The reply is "[quotation mark]I guess. He made a sizeable fortune selling boots to the Allies during World War I, a real war profiteer. He used it to buy that ridiculous title, a couple of country estates, and even restored an old manor house. But a little time running with the Circle crowd will tell you that [quotation mark]old money[quotation mark] is a relative term.[quotation mark]".
+	It quip-supplies Val_House.
+	The proper scene of who nathan is First_Investigation.
 
 Section 18 - Command Overrides
-
 
 Understand the command kick as something new. Kicking is an action applying to one thing. Understand "kick [something]" as kicking. 
 Instead of kicking a person:
@@ -531,7 +534,7 @@ The standard report other subjects rule is not listed in any rulebook.]
 Listing repeatable quips is an activity.
 
 Rule for listing repeatable quips (this is the standard listing repeatable subject changes rule):
-    prepare a list of repeatable quips;
+    prepare a list of repeatable quips which are available;
     say "[quip-suggestion-phrase][the prepared list delimited in disjunctive style]." (A).
 
 Check changing the subject (this is the subject change revised rule):
@@ -550,7 +553,7 @@ When play begins:
 [TODO: This needs fixing]
 
 To decide whether scene_conversation is exhausted:
-	decide on whether or not the number of scene-restricted quips which are not recollected by someone is 0.
+	decide on whether or not the number of available quips which are not recollected by someone is 0.
 
 [Understand "remember [any subject]" or "remember [something]" as remembering. Remembering is an action applying to one visible thing.]
 [Check remembering:
@@ -628,17 +631,17 @@ Blood_status is a truth state that varies. Blood_status is usually false.
 	
 Section 22 - Tests
 
-Test me with "drive/drive/brake/unbuckle seat belt/kick windshield/any key/up/get in/talk about/ask about chalet/ask about Mercedes/ask about sunrise"
+Test me with "drive/drive/brake/look/unbuckle seat belt/kick windshield/any key/up/get in/talk about/ask about chalet/ask about Mercedes/ask about sunrise"
 
-Test firstconvo with "drive/drive/brake/unbuckle seat belt/kick windshield/any key/up/get in/talk about"
+Test firstconvo with "drive/drive/brake/look/unbuckle seat belt/kick windshield/any key/up/get in/talk about"
 
-Test sunrise_lose with "drive/drive/brake/unbuckle seat belt/kick windshield/n/n/n"
+Test sunrise_lose with "drive/drive/brake/look/unbuckle seat belt/kick windshield/n/n/n"
 
-Test discover with "drive/drive/brake/unbuckle seat belt/kick windshield/any key/up/get in/talk to val/ask about sunrise/ask about house/ask about car/wait"
+Test discover with "drive/drive/brake/look/unbuckle seat belt/kick windshield/any key/up/get in/talk to val/ask about sunrise/ask about house/ask about car/wait"
 
-Test body with "drive/drive/brake/unbuckle seat belt/kick windshield/any key/up/get in/talk to val/ask about sunrise/ask about house/ask about car/wait/e/e/e/u"
+Test body with "drive/drive/brake/look/unbuckle seat belt/kick windshield/any key/up/get in/talk to val/ask about sunrise/ask about house/ask about car/wait/e/e/e/u"
 
-Test arrival with "drive/drive/brake/unbuckle seat belt/kick windshield/any key/up/get in/talk to val/ask about sunrise/ask about house/ask about car/wait/e/e/e/u/x body/d/w"
+Test arrival with "drive/drive/brake/look/unbuckle seat belt/kick windshield/any key/up/get in/talk to val/ask about sunrise/ask about house/ask about car/wait/e/e/e/u/x body/d/w"
 
 [They sent a constable, low level]
 [He was putting on a good show, but I could tell he didn't seem to have any interest in finding out who did it. That, or some brass had told him not to.]

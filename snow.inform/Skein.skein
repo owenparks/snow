@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Skein rootNode="node-0x787a4690" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x787a4690" />
+  <activeNode nodeId="node-0x7d805630" />
   <item nodeId="node-0x787a4690">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
@@ -25,15 +25,61 @@ Not six hours earlier, I&apos;d turned in my badge and my gun and walked out, mo
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="88">NO</temporary>
+    <temporary score="169">NO</temporary>
     <children>
       <child nodeId="node-0x7be74e30" />
-      <child nodeId="node-0x7be72820" />
       <child nodeId="node-0x786edb70" />
-      <child nodeId="node-0x7be71350" />
+      <child nodeId="node-0x7bf315f0" />
       <child nodeId="node-0x7be714d0" />
       <child nodeId="node-0x7be70d70" />
+      <child nodeId="node-0x7dd828e0" />
     </children>
+  </item>
+  <item nodeId="node-0x7dd828e0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Mountain Pass
+I had the radio on tuned to some news station-- truth be told, I already missed the chatter of the dispatch as I was driving. The traffic report had little bearing on my current locale, but the weather gave me some concern: snowstorm coming up off the Great Lakes, apparently. Spending the weekend with a small crowd I barely knew appealed very little to me. Being cooped up with them the entire time due to weather seemed like a recipe for an epidemic of cabin fever.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="99">YES</temporary>
+    <children>
+      <child nodeId="node-0x7870e360" />
+    </children>
+  </item>
+  <item nodeId="node-0x7870e360">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Hairpin Turn
+If I&apos;d finished that last thought a few seconds earlier, I might&apos;ve noticed the caution sign for the sharp turn, barely visible through the snow. The car was going too fast, and the guardrail came out of nowhere.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="99">YES</temporary>
+    <children>
+      <child nodeId="node-0x7dd583f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7dd583f0">
+    <command xml:space="preserve">brake</command>
+    <result xml:space="preserve">I hit the brakes, but the car kept straight for the guardrail, slamming through, and going over.
+
+The back end of the car lost traction and swung out wide, trying vainly to follow the front, just like one of those car commercials. Unfortunately, I was not a professional driver, nor was this a closed course, and the right side of the car went over the edge of the cliff, momentum then taking the rest of the car with it. In shock, my brain couldn&apos;t manage to tell my body to do more than grip the wheel uselessly as the car tumbled down the steep incline. I lost count of the rolls after three. The roof hit a tree, and I was jerked upward against the seat belt. Snow from the branches fell into a pile onto the passenger window from the impact. I heard a thud, snuffing out the brief glimpse of moonlight.
+
+Upturned Car
+I wasn&apos;t sure how long I&apos;d been out. Taking stock of my situation, I was surprised to find myself more or less unhurt, save for a dull ache in my left wrist where I&apos;d tried to brace against the door. I took a few deep breaths, and tried to gather myself-- I was still a little mentally a little shocked and unfocused.
+
+The car was presently lying at the bottom of a cliff on its side. Above me, I could see moonlight, dimly mottled by the snow on the passenger side windows. The windshield in front of me showed nothing but evergreen forest, extending into the darkness.
+
+I was still strapped in, the seat belt made sure I stayed put. At least one thing in this car still knew how to do its job right.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="98">YES</temporary>
   </item>
   <item nodeId="node-0x7be70d70">
     <command xml:space="preserve">look</command>
@@ -382,9 +428,10 @@ I could see a broken wineglass here.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="68">YES</temporary>
+    <temporary score="169">YES</temporary>
     <children>
-      <child nodeId="node-0x7be71540" />
+      <child nodeId="node-0x7be15300" />
+      <child nodeId="node-0x8206e040" />
       <child nodeId="node-0x79899af0" />
     </children>
   </item>
@@ -543,7 +590,7 @@ Scene &apos;Body_Discovery&apos; playing (for 4 mins now)
     <changed>YES</changed>
     <temporary score="67">YES</temporary>
   </item>
-  <item nodeId="node-0x7be71540">
+  <item nodeId="node-0x8206e040">
     <command xml:space="preserve">test arrival</command>
     <result xml:space="preserve">(Testing.)
 
@@ -569,10 +616,18 @@ The car was presently lying at the bottom of a cliff on its side. Above me, I co
 
 I was still strapped in, the seat belt made sure I stayed put. At least one thing in this car still knew how to do its job right.
 
-&gt;[4] unbuckle seat belt
+&gt;[4] look
+Upturned Car
+I wasn&apos;t sure how long I&apos;d been out. Taking stock of my situation, I was surprised to find myself more or less unhurt, save for a dull ache in my left wrist where I&apos;d tried to brace against the door. I took a few deep breaths, and tried to gather myself-- I was still a little mentally a little shocked and unfocused.
+
+The car was presently lying at the bottom of a cliff on its side. Above me, I could see moonlight, dimly mottled by the snow on the passenger side windows. The windshield in front of me showed nothing but evergreen forest, extending into the darkness.
+
+I was still strapped in, the seat belt made sure I stayed put. At least one thing in this car still knew how to do its job right.
+
+&gt;[5] unbuckle seat belt
 I wrestled with the jammed seat belt for a moment, then managed to undo it, falling a few inches down against the driver door once the chest belt was free.
 
-&gt;[5] kick windshield
+&gt;[6] kick windshield
 Bracing my back against the sideways seat, I gave the windshield a couple of sharp kicks. I felt the seal start to give, and then it dislodged entirely from the frame, making an exit. It fell out onto the snow with a muffled crunch, and the bitter wind started to blow into the old car. I grabbed my bag and stepped out into the forest.
 
 Bottom of Cliff
@@ -582,10 +637,10 @@ I was miles from nowhere. It had stopped snowing for the moment. The night sky w
 
 Fucking swell.
 
-&gt;[6] any key
+&gt;[7] any key
 That noun did not make sense in this context.
 
-&gt;[7] up
+&gt;[8] up
 
 Sharp Bend
 I stood about a hundred feet from the hairpin turn where my car had gone over; I could see the tire tracks and broken guardrail to the south.
@@ -594,39 +649,39 @@ The second I turned my head to look down the lane, I saw a pair of headlights ap
 
 &quot;Get in,&quot; she said.
 
-&gt;[8] get in
+&gt;[9] get in
 I got into the Mercedes.
 
 Sedan
-The inside of the Mercedes was yards of brushed metal and hand-stitched leather. It still smelled new.
+The inside of the Mercedes was yards of brushed metal and hand-stitched leather. It still smelled new. Having run out of things to talk about, I had nothing to do but wait for us to arrive.
 
 Val drove the car, her eyes looking miles beyond the road, the mountains, and the horizon.
 
-&gt;[9] talk to val
+&gt;[10] talk to val
 I said hello to Val.
 
 I could have asked ask about her car, ask about the chalet or ask about sunrise.
 
-&gt;[10] ask about sunrise
+&gt;[11] ask about sunrise
 &quot;Sun goes up at 7:03 today. Always check the time before you leave for the night,&quot; she said.
 
 I looked out the window, trying not to feel like a kid being lectured by his mom.
 
 I could have asked ask about her car or ask about the chalet.
 
-&gt;[11] ask about house
+&gt;[12] ask about house
 Where are we going?
 
-My house.
+TODO.
 
 I could have asked ask about her car.
 
-&gt;[12] ask about car
+&gt;[13] ask about car
 &quot;Nice ride,&quot; I said.
 
 &quot;You should have called,&quot; Val replied, ignoring my comment.
 
-&gt;[13] wait
+&gt;[14] wait
 Driveway
 We stood at the end of a long gravel drive, staring up at a large house with a dark red wood exterior. Steps to the east led to a porch that spanned the facade of the place, wrapping around to a deck in the back that presumably had a great view of the lake and the countryside. It was more ski lodge than cabin, and looked like it could comfortably shelter an entire biathlon team if it had to.
 
@@ -634,14 +689,15 @@ Val got out of the car and took her bag out of the trunk.
 
 &quot;Come on, I&apos;ll introduce you to Alan,&quot; she said, walking up the drive.
 
-&gt;[14] e
+&gt;[15] e
 
 Front Porch
 Steps led up from the gravel driveway to the porch. Narrow unpainted wood planks extended the length of the house, along with windows that looked into rooms at the front of the house. Through them, I saw blinds, and a glint of something metallic, like a shutter.
 
 The front door stood open to the porch.
+ I could tell right away that something was wrong, like the door had been damaged somehow.
 
-&gt;[15] e
+&gt;[16] e
 
 Foyer
 I walked into the spacious foyer, trying not to walk into the large lacquered screens in front of the door. The shiny black wood was decorated with an intricate picture in gold paint, depicting a Chinese court scene. It seemed at odds with the exterior of the house, but matched the rest of the decor; the interior was a mixture of Old World furniture and Asian influences.
@@ -649,193 +705,262 @@ I walked into the spacious foyer, trying not to walk into the large lacquered sc
 A layer of snow had blown in through the open doorway, and was slowly melting into a puddle on the enormous Persian rug. 
 
 The front door stood open to the porch.
+ I could tell right away that something was wrong, like the door had been damaged somehow.
 
 
-&gt;[16] e
+&gt;[17] e
 
 Greatroom
 The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
 
 A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
 
-A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;Angels We Have Heard on High&quot; warbling from what sounded like an old radio.
+A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;We Three Kings&quot; warbling from what sounded like an old radio.
 
-&gt;[17] u
+&gt;[18] u
 
 Reading Nook
 I climbed the stairs to the reading nook. Shelves lined the walls of the small room, and a couple of books had been knocked off them onto the floor. A pair of wingback armchairs faced each other with a coffee table in between.
 
-A man sat in one, slightly paunchy and slightly grey, his eyes and mouth wide open. His glasses were askew. He was wearing a navy blue cardigan, stained on the front with a dark, almost black liquid. What looked like a large carving knife was sticking out of his chest, plunged in so far that only the handle was visible.
+A man sat in one, slightly paunchy and slightly grey, his eyes and mouth wide open. His glasses were askew. He was wearing a navy blue cardigan, stained on the front with a dark, almost black liquid. What looked like a small knife was sticking out of his neck, plunged in so far that only the handle was visible.
 
 An antique wooden radio sat on the table, playing Christmas carols.
 
 I could also see a bottle of wine here.
 
-&gt;[18] x body
+&gt;[19] x body
 He looked like he was fifty, but something about his well-preserved look told me that he was probably sixty. It wasn&apos;t that he was in good shape-- I doubted he&apos;d seen much real exercise since he was in high school, and maybe not even then. He struck me as a debate team sort of guy.  I could tell he didn&apos;t get out much. His fingers were broad, but smooth. His hands had no calluses and no rings, but he wore a Rolex watch. It wasn&apos;t fake, and had cost probably three times what my car was worth before I&apos;d driven it off a cliff a few hours ago.
 
-Val came up the stairs, freezing the second she saw the body. Her eyes narrowed, and I could tell her mind was racing, the first time I&apos;d seen anything but placid boredom on her face. Half of me was relieved to know that there was something in this world that could perturb her. The other half was unnerved by it. She looked away and hitched the poker face back on pretty quick.
-
-Val nodded at the poor stiff and said, &quot;Meet Professor Alan Bowden, our host this weekend.&quot;
-
-&gt;[19] d
+&gt;[20] d
 
 Greatroom
 The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
 
 A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
 
-A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;God Rest Ye Merry, Gentlemen&quot; warbling from what sounded like an old radio.
+A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;Hark, The Herald Angels Sing&quot; warbling from what sounded like an old radio.
 
-&gt;[20] w
+&gt;[21] w
 
 Foyer
-I walked into the spacious foyer, trying not to walk into the large lacquered screens in front of the door. The shiny black wood was decorated with an intricate picture in gold paint, depicting a Chinese court scene. It seemed at odds with the exterior of the house, but matched the rest of the decor; the interior was a mixture of Old World furniture and Asian influences. 
+I walked into the spacious foyer, trying not to walk into the large lacquered screens in front of the door. The shiny black wood was decorated with an intricate picture in gold paint, depicting a Chinese court scene. It seemed at odds with the exterior of the house, but matched the rest of the decor; the interior was a mixture of Old World furniture and Asian influences.
+
+A layer of snow had blown in through the open doorway, and was slowly melting into a puddle on the enormous Persian rug. 
 
 The front door stood open to the porch.
+ I could tell right away that something was wrong, like the door had been damaged somehow.
+
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="60">YES</temporary>
+    <temporary score="169">YES</temporary>
     <children>
-      <child nodeId="node-0x7be715b0" />
+      <child nodeId="node-0x80a948e0" />
+      <child nodeId="node-0x81e8b470" />
+      <child nodeId="node-0x7bf21440" />
+      <child nodeId="node-0x7871a1f0" />
+      <child nodeId="node-0x7bef89f0" />
     </children>
   </item>
-  <item nodeId="node-0x7be715b0">
-    <command xml:space="preserve">close door</command>
-    <result xml:space="preserve">I closed the front door.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="60">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be71620" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be71620">
+  <item nodeId="node-0x7bef89f0">
     <command xml:space="preserve">look</command>
-    <result xml:space="preserve">Foyer
-I walked into the spacious foyer, trying not to walk into the large lacquered screens in front of the door. The shiny black wood was decorated with an intricate picture in gold paint, depicting a Chinese court scene. It seemed at odds with the exterior of the house, but matched the rest of the decor; the interior was a mixture of Old World furniture and Asian influences. 
+    <result xml:space="preserve">Sedan
+The inside of the Mercedes was yards of brushed metal and hand-stitched leather. It still smelled new.
 
+Val drove the car, her eyes looking miles beyond the road, the mountains, and the horizon.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="139">YES</temporary>
+    <children>
+      <child nodeId="node-0x79927900" />
+    </children>
+  </item>
+  <item nodeId="node-0x79927900">
+    <command xml:space="preserve">topics</command>
+    <result xml:space="preserve">I could have asked about her car, about the chalet, about sunrise or about Nathan.
+
+I could have asked about her car, about the chalet, about sunrise or about Nathan.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="60">YES</temporary>
+    <temporary score="139">YES</temporary>
     <children>
-      <child nodeId="node-0x7be71690" />
+      <child nodeId="node-0x80a77280" />
     </children>
   </item>
-  <item nodeId="node-0x7be71690">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Greatroom
-The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
-
-A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
-
-A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;Angels We Have Heard on High&quot; warbling from what sounded like an old radio.
+  <item nodeId="node-0x80a77280">
+    <command xml:space="preserve">scope</command>
+    <result xml:space="preserve">1: myself (757641)
+2: Val (758281)
+3: a cell phone (757673)
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="60">YES</temporary>
+    <temporary score="139">YES</temporary>
     <children>
-      <child nodeId="node-0x7be71700" />
+      <child nodeId="node-0x81ee32c0" />
     </children>
   </item>
-  <item nodeId="node-0x7be71700">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Downstairs Hallway
+  <item nodeId="node-0x81ee32c0">
+    <command xml:space="preserve">scenes</command>
+    <result xml:space="preserve">Scene &apos;Entire Game&apos; playing (for 16 mins now)
+Scene &apos;Mountain_Driving&apos; ended
+Scene &apos;Car_Escape&apos; ended
+Scene &apos;Cliff_Climbing&apos; ended
+Scene &apos;Car_Embarking&apos; ended
+Scene &apos;Riding_Scene&apos; playing (for 13 mins now)
+(Scene monitoring now switched on. Type &quot;scenes off&quot; to switch it off again.)
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="60">YES</temporary>
+    <temporary score="139">YES</temporary>
     <children>
-      <child nodeId="node-0x7be71770" />
+      <child nodeId="node-0x7bee48e0" />
     </children>
   </item>
-  <item nodeId="node-0x7be71770">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">I couldn&apos;t go that way.
+  <item nodeId="node-0x7bee48e0">
+    <command xml:space="preserve">topics</command>
+    <result xml:space="preserve">I could have asked about her car, about the chalet, about sunrise or about Nathan.
+
+I could have asked about her car, about the chalet, about sunrise or about Nathan.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="60">YES</temporary>
+    <temporary score="139">YES</temporary>
     <children>
-      <child nodeId="node-0x7be717e0" />
+      <child nodeId="node-0x7bf64d10" />
     </children>
   </item>
-  <item nodeId="node-0x7be717e0">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">I couldn&apos;t go that way.
+  <item nodeId="node-0x7bf64d10">
+    <command xml:space="preserve">ask about nathan</command>
+    <result xml:space="preserve">That doesn&apos;t seem to be a topic of conversation at the moment.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="60">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be71850" />
-    </children>
+    <temporary score="138">YES</temporary>
   </item>
-  <item nodeId="node-0x7be71850">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">
-Greatroom
-The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
+  <item nodeId="node-0x7871a1f0">
+    <command xml:space="preserve">ask about house</command>
+    <result xml:space="preserve">Where are we going?
 
-A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
-
-A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;O Come, All Ye Faithful&quot; warbling from what sounded like an old radio.
+TODO.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="60">YES</temporary>
+    <temporary score="131">YES</temporary>
     <children>
-      <child nodeId="node-0x7be71270" />
+      <child nodeId="node-0x7bfb2c60" />
     </children>
   </item>
-  <item nodeId="node-0x7be71270">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Downstairs Hallway
-I heard the front door open, and the sound of voices from the foyer. It closed a minute later.
+  <item nodeId="node-0x7bfb2c60">
+    <command xml:space="preserve">ask about sunrise</command>
+    <result xml:space="preserve">&quot;Sun goes up at 7:03 today. Always check the time before you leave for the night,&quot; she said.
 
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="60">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be712e0" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be712e0">
-    <command xml:space="preserve">w</command>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="59">YES</temporary>
-  </item>
-  <item nodeId="node-0x7be71350">
-    <command xml:space="preserve">tests</command>
-    <result xml:space="preserve">That noun did not make sense in this context.
+I looked out the window, trying not to feel like a kid being lectured by his mom.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="49">YES</temporary>
+    <temporary score="131">YES</temporary>
     <children>
-      <child nodeId="node-0x7be71b00" />
+      <child nodeId="node-0x8208c140" />
     </children>
   </item>
-  <item nodeId="node-0x7be71b00">
-    <command xml:space="preserve">test</command>
+  <item nodeId="node-0x8208c140">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Sedan
+The inside of the Mercedes was yards of brushed metal and hand-stitched leather. It still smelled new.
+
+Val drove the car, her eyes looking miles beyond the road, the mountains, and the horizon.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="131">YES</temporary>
+    <children>
+      <child nodeId="node-0x81adda70" />
+    </children>
+  </item>
+  <item nodeId="node-0x81adda70">
+    <command xml:space="preserve">topics</command>
+    <result xml:space="preserve">I could have asked about her car, about the chalet, about sunrise or about Nathan.
+
+I could have asked about her car, about the chalet, about sunrise or about Nathan.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="130">YES</temporary>
+  </item>
+  <item nodeId="node-0x7bf21440">
+    <command xml:space="preserve">scope</command>
+    <result xml:space="preserve">1: myself (757641)
+2: Val (758281)
+3: a cell phone (757673)
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="155">YES</temporary>
+    <children>
+      <child nodeId="node-0x81ec2a70" />
+    </children>
+  </item>
+  <item nodeId="node-0x81ec2a70">
+    <command xml:space="preserve">scenes</command>
+    <result xml:space="preserve">Scene &apos;Entire Game&apos; playing (for 15 mins now)
+Scene &apos;Mountain_Driving&apos; ended
+Scene &apos;Car_Escape&apos; ended
+Scene &apos;Cliff_Climbing&apos; ended
+Scene &apos;Car_Embarking&apos; ended
+Scene &apos;Riding_Scene&apos; playing (for 12 mins now)
+(Scene monitoring now switched on. Type &quot;scenes off&quot; to switch it off again.)
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="155">YES</temporary>
+    <children>
+      <child nodeId="node-0x81eae670" />
+    </children>
+  </item>
+  <item nodeId="node-0x81eae670">
+    <command xml:space="preserve">topics</command>
+    <result xml:space="preserve">I could have asked about her car, about the chalet or about sunrise.
+
+I could have asked about her car, about the chalet or about sunrise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="155">YES</temporary>
+    <children>
+      <child nodeId="node-0x80a543f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x80a543f0">
+    <command xml:space="preserve">ask about nathan</command>
+    <result xml:space="preserve">That doesn&apos;t seem to be a topic of conversation at the moment.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="155">YES</temporary>
+    <children>
+      <child nodeId="node-0x81ee21b0" />
+    </children>
+  </item>
+  <item nodeId="node-0x81ee21b0">
+    <command xml:space="preserve"> test</command>
     <result xml:space="preserve">&gt;--&gt; The following tests are available:
 &apos;test me&apos;
 &apos;test firstconvo&apos;
@@ -846,27 +971,627 @@ I heard the front door open, and the sound of voices from the foyer. It closed a
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="49">YES</temporary>
+    <temporary score="155">YES</temporary>
     <children>
-      <child nodeId="node-0x7be71b70" />
+      <child nodeId="node-0x81ecff10" />
     </children>
   </item>
-  <item nodeId="node-0x7be71b70">
+  <item nodeId="node-0x81ecff10">
     <command xml:space="preserve">test arrival</command>
     <result xml:space="preserve">(Testing.)
 
 &gt;[1] drive
+You must supply a noun.
 
+&gt;[2] drive
+You must supply a noun.
+
+&gt;[3] brake
+That noun did not make sense in this context.
+
+&gt;[4] look
+Sedan
+The inside of the Mercedes was yards of brushed metal and hand-stitched leather. It still smelled new.
+
+Val drove the car, her eyes looking miles beyond the road, the mountains, and the horizon.
+
+&gt;[5] unbuckle seat belt
+That noun did not make sense in this context.
+
+&gt;[6] kick windshield
+I couldn&apos;t see any such thing.
+
+&gt;[7] any key
+That noun did not make sense in this context.
+
+&gt;[8] up
+I couldn&apos;t go that way.
+
+&gt;[9] get in
+You must supply a noun.
+
+&gt;[10] talk to val
+I was already talking to Val.
+
+&gt;[11] ask about sunrise
+&quot;Sun goes up at 7:03 today. Always check the time before you leave for the night,&quot; she said.
+
+I looked out the window, trying not to feel like a kid being lectured by his mom.
+
+&gt;[12] ask about house
+Where are we going?
+
+TODO.
+
+&gt;[13] ask about car
+&quot;Nice ride,&quot; I said.
+
+&quot;You should have called,&quot; Val replied, ignoring my comment.
+
+&gt;[14] wait
+Time passed.
+
+&gt;[15] e
+I couldn&apos;t go that way.
+
+&gt;[16] e
+I couldn&apos;t go that way.
+
+&gt;[17] e
+I couldn&apos;t go that way.
+
+&gt;[18] u
+I couldn&apos;t go that way.
+
+&gt;[19] x body
+I couldn&apos;t see any such thing.
+
+&gt;[20] d
+I couldn&apos;t go that way.
+
+&gt;[21] w
+I couldn&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="155">YES</temporary>
+    <children>
+      <child nodeId="node-0x7bfb3750" />
+    </children>
+  </item>
+  <item nodeId="node-0x7bfb3750">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Sedan
+The inside of the Mercedes was yards of brushed metal and hand-stitched leather. It still smelled new.
+
+Val drove the car, her eyes looking miles beyond the road, the mountains, and the horizon.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="155">YES</temporary>
+    <children>
+      <child nodeId="node-0x80a558e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x80a558e0">
+    <command xml:space="preserve">topics</command>
+    <result xml:space="preserve">I could have asked about her car, about the chalet or about sunrise.
+
+I could have asked about her car, about the chalet or about sunrise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="155">YES</temporary>
+    <children>
+      <child nodeId="node-0x81a54510" />
+    </children>
+  </item>
+  <item nodeId="node-0x81a54510">
+    <command xml:space="preserve">ask about her car</command>
+    <result xml:space="preserve">&quot;Nice ride,&quot; I said.
+
+&quot;You should have called,&quot; Val replied, ignoring my comment.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="155">YES</temporary>
+    <children>
+      <child nodeId="node-0x7be9b270" />
+    </children>
+  </item>
+  <item nodeId="node-0x7be9b270">
+    <command xml:space="preserve">ask about the chalet</command>
+    <result xml:space="preserve">Where are we going?
+
+TODO.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="155">YES</temporary>
+    <children>
+      <child nodeId="node-0x82069920" />
+    </children>
+  </item>
+  <item nodeId="node-0x82069920">
+    <command xml:space="preserve">ask about sunrise</command>
+    <result xml:space="preserve">&quot;Sun goes up at 7:03 today. Always check the time before you leave for the night,&quot; she said.
+
+I looked out the window, trying not to feel like a kid being lectured by his mom.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="155">YES</temporary>
+    <children>
+      <child nodeId="node-0x80a8d6d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x80a8d6d0">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Sedan
+The inside of the Mercedes was yards of brushed metal and hand-stitched leather. It still smelled new.
+
+Val drove the car, her eyes looking miles beyond the road, the mountains, and the horizon.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="155">YES</temporary>
+    <children>
+      <child nodeId="node-0x7bf63860" />
+    </children>
+  </item>
+  <item nodeId="node-0x7bf63860">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passed.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="155">YES</temporary>
+    <children>
+      <child nodeId="node-0x787dece0" />
+    </children>
+  </item>
+  <item nodeId="node-0x787dece0">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Sedan
+The inside of the Mercedes was yards of brushed metal and hand-stitched leather. It still smelled new.
+
+Val drove the car, her eyes looking miles beyond the road, the mountains, and the horizon.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="154">YES</temporary>
+  </item>
+  <item nodeId="node-0x81e8b470">
+    <command xml:space="preserve">topics</command>
+    <result xml:space="preserve">I could have asked nothing.
+
+I could have asked nothing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="169">YES</temporary>
+    <children>
+      <child nodeId="node-0x81eb14e0" />
+      <child nodeId="node-0x80a7f360" />
+    </children>
+  </item>
+  <item nodeId="node-0x80a7f360">
+    <command xml:space="preserve">ask about chalet</command>
+    <result xml:space="preserve">Where are we going?
+
+TODO.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="125">YES</temporary>
+    <children>
+      <child nodeId="node-0x81e980f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x81e980f0">
+    <command xml:space="preserve">ask about house</command>
+    <result xml:space="preserve">Where are we going?
+
+TODO.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="125">YES</temporary>
+    <children>
+      <child nodeId="node-0x7b96aa90" />
+    </children>
+  </item>
+  <item nodeId="node-0x7b96aa90">
+    <command xml:space="preserve">ask about sunrise</command>
+    <result xml:space="preserve">&quot;Sun goes up at 7:03 today. Always check the time before you leave for the night,&quot; she said.
+
+I looked out the window, trying not to feel like a kid being lectured by his mom.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="125">YES</temporary>
+    <children>
+      <child nodeId="node-0x80ad59f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x80ad59f0">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Sedan
+The inside of the Mercedes was yards of brushed metal and hand-stitched leather. It still smelled new.
+
+Val drove the car, her eyes looking miles beyond the road, the mountains, and the horizon.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="125">YES</temporary>
+    <children>
+      <child nodeId="node-0x7bf2cea0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7bf2cea0">
+    <command xml:space="preserve">topics</command>
+    <result xml:space="preserve">I could have asked about her car, about the chalet, about sunrise or about Nathan.
+
+I could have asked about her car, about the chalet, about sunrise or about Nathan.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="124">YES</temporary>
+  </item>
+  <item nodeId="node-0x81eb14e0">
+    <command xml:space="preserve">ask about nathan</command>
+    <result xml:space="preserve">That doesn&apos;t seem to be a topic of conversation at the moment.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="169">YES</temporary>
+    <children>
+      <child nodeId="node-0x820414a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x820414a0">
+    <command xml:space="preserve"> test</command>
+    <result xml:space="preserve">&gt;--&gt; The following tests are available:
+&apos;test me&apos;
+&apos;test firstconvo&apos;
+&apos;test sunrise_lose&apos;
+&apos;test discover&apos;
+&apos;test body&apos;
+&apos;test arrival&apos;
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="169">YES</temporary>
+    <children>
+      <child nodeId="node-0x78769c30" />
+    </children>
+  </item>
+  <item nodeId="node-0x78769c30">
+    <command xml:space="preserve">test arrival</command>
+    <result xml:space="preserve">(Testing.)
+
+&gt;[1] drive
+You must supply a noun.
+
+&gt;[2] drive
+You must supply a noun.
+
+&gt;[3] brake
+That noun did not make sense in this context.
+
+&gt;[4] look
+Foyer
+I walked into the spacious foyer, trying not to walk into the large lacquered screens in front of the door. The shiny black wood was decorated with an intricate picture in gold paint, depicting a Chinese court scene. It seemed at odds with the exterior of the house, but matched the rest of the decor; the interior was a mixture of Old World furniture and Asian influences.
+
+A layer of snow had blown in through the open doorway, and was slowly melting into a puddle on the enormous Persian rug. 
+
+The front door stood open to the porch.
+ I could tell right away that something was wrong, like the door had been damaged somehow.
+
+
+&gt;[5] unbuckle seat belt
+That noun did not make sense in this context.
+
+&gt;[6] kick windshield
+I couldn&apos;t see any such thing.
+
+&gt;[7] any key
+That noun did not make sense in this context.
+
+&gt;[8] up
+I couldn&apos;t go that way.
+
+&gt;[9] get in
+You must supply a noun.
+
+&gt;[10] talk to val
+I said hello to Val.
+
+&gt;[11] ask about sunrise
+That doesn&apos;t seem to be a topic of conversation at the moment.
+
+&gt;[12] ask about house
+That doesn&apos;t seem to be a topic of conversation at the moment.
+
+&gt;[13] ask about car
+That doesn&apos;t seem to be a topic of conversation at the moment.
+
+&gt;[14] wait
+Time passed.
+
+&gt;[15] e
+
+Greatroom
+The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
+
+A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
+
+A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;We Three Kings&quot; warbling from what sounded like an old radio.
+
+&gt;[16] e
+
+Downstairs Hallway
+
+&gt;[17] e
+I couldn&apos;t go that way.
+
+&gt;[18] u
+
+Upstairs Hallway
+
+&gt;[19] x body
+I couldn&apos;t see any such thing.
+
+&gt;[20] d
+
+Downstairs Hallway
+
+&gt;[21] w
+
+Greatroom
+The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
+
+A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
+
+A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;God Rest Ye Merry, Gentlemen&quot; warbling from what sounded like an old radio.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="169">YES</temporary>
+    <children>
+      <child nodeId="node-0x80ae70b0" />
+    </children>
+  </item>
+  <item nodeId="node-0x80ae70b0">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Greatroom
+The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
+
+A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
+
+A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;Angels We Have Heard on High&quot; warbling from what sounded like an old radio.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="169">YES</temporary>
+    <children>
+      <child nodeId="node-0x80a4f500" />
+    </children>
+  </item>
+  <item nodeId="node-0x80a4f500">
+    <command xml:space="preserve">topics</command>
+    <result xml:space="preserve">I could have asked nothing.
+
+I could have asked nothing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="169">YES</temporary>
+    <children>
+      <child nodeId="node-0x8208be40" />
+    </children>
+  </item>
+  <item nodeId="node-0x8208be40">
+    <command xml:space="preserve">ask about her car</command>
+    <result xml:space="preserve">There was no one there to talk to.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="169">YES</temporary>
+    <children>
+      <child nodeId="node-0x82074280" />
+    </children>
+  </item>
+  <item nodeId="node-0x82074280">
+    <command xml:space="preserve">ask about the chalet</command>
+    <result xml:space="preserve">There was no one there to talk to.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="169">YES</temporary>
+    <children>
+      <child nodeId="node-0x820ece90" />
+    </children>
+  </item>
+  <item nodeId="node-0x820ece90">
+    <command xml:space="preserve">ask about sunrise</command>
+    <result xml:space="preserve">There was no one there to talk to.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="169">YES</temporary>
+    <children>
+      <child nodeId="node-0x820c9ff0" />
+    </children>
+  </item>
+  <item nodeId="node-0x820c9ff0">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Greatroom
+The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
+
+A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
+
+A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;O Come, All Ye Faithful&quot; warbling from what sounded like an old radio.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="169">YES</temporary>
+    <children>
+      <child nodeId="node-0x81edc320" />
+    </children>
+  </item>
+  <item nodeId="node-0x81edc320">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passed.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="169">YES</temporary>
+    <children>
+      <child nodeId="node-0x7d805630" />
+    </children>
+  </item>
+  <item nodeId="node-0x7d805630">
+    <command xml:space="preserve">look</command>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="168">YES</temporary>
+  </item>
+  <item nodeId="node-0x80a948e0">
+    <command xml:space="preserve"> look</command>
+    <result xml:space="preserve">Sedan
+The inside of the Mercedes was yards of brushed metal and hand-stitched leather. It still smelled new.
+
+Val drove the car, her eyes looking miles beyond the road, the mountains, and the horizon.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="117">YES</temporary>
+    <children>
+      <child nodeId="node-0x7d97ce40" />
+    </children>
+  </item>
+  <item nodeId="node-0x7d97ce40">
+    <command xml:space="preserve">talk to val</command>
+    <result xml:space="preserve">I was already talking to Val.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="117">YES</temporary>
+    <children>
+      <child nodeId="node-0x80a38610" />
+    </children>
+  </item>
+  <item nodeId="node-0x80a38610">
+    <command xml:space="preserve">topics</command>
+    <result xml:space="preserve">I could have asked about her car, about the chalet, about sunrise or about Nathan.
+
+I could have asked about her car, about the chalet, about sunrise or about Nathan.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="117">YES</temporary>
+    <children>
+      <child nodeId="node-0x7bf99810" />
+    </children>
+  </item>
+  <item nodeId="node-0x7bf99810">
+    <command xml:space="preserve">ask about chalet</command>
+    <result xml:space="preserve">Where are we going?
+
+My house.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="117">YES</temporary>
+    <children>
+      <child nodeId="node-0x80ad9d40" />
+    </children>
+  </item>
+  <item nodeId="node-0x80ad9d40">
+    <command xml:space="preserve">ask about house</command>
+    <result xml:space="preserve">Where are we going?
+
+My house.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="117">YES</temporary>
+    <children>
+      <child nodeId="node-0x7bf973e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7bf973e0">
+    <command xml:space="preserve">ask about sunrise</command>
+    <result xml:space="preserve">&quot;Sun goes up at 7:03 today. Always check the time before you leave for the night,&quot; she said.
+
+I looked out the window, trying not to feel like a kid being lectured by his mom.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="116">YES</temporary>
+  </item>
+  <item nodeId="node-0x7be15300">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
 Mountain Pass
 I had the radio on tuned to some news station-- truth be told, I already missed the chatter of the dispatch as I was driving. The traffic report had little bearing on my current locale, but the weather gave me some concern: snowstorm coming up off the Great Lakes, apparently. Spending the weekend with a small crowd I barely knew appealed very little to me. Being cooped up with them the entire time due to weather seemed like a recipe for an epidemic of cabin fever.
 
-&gt;[2] drive
-
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="96">YES</temporary>
+    <children>
+      <child nodeId="node-0x7db6f4a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7db6f4a0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
 Hairpin Turn
 If I&apos;d finished that last thought a few seconds earlier, I might&apos;ve noticed the caution sign for the sharp turn, barely visible through the snow. The car was going too fast, and the guardrail came out of nowhere.
 
-&gt;[3] brake
-I hit the brakes, but the car kept straight for the guardrail, slamming through, and going over.
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="96">YES</temporary>
+    <children>
+      <child nodeId="node-0x787b0790" />
+    </children>
+  </item>
+  <item nodeId="node-0x787b0790">
+    <command xml:space="preserve">brake</command>
+    <result xml:space="preserve">I hit the brakes, but the car kept straight for the guardrail, slamming through, and going over.
 
 The back end of the car lost traction and swung out wide, trying vainly to follow the front, just like one of those car commercials. Unfortunately, I was not a professional driver, nor was this a closed course, and the right side of the car went over the edge of the cliff, momentum then taking the rest of the car with it. In shock, my brain couldn&apos;t manage to tell my body to do more than grip the wheel uselessly as the car tumbled down the steep incline. I lost count of the rolls after three. The roof hit a tree, and I was jerked upward against the seat belt. Snow from the branches fell into a pile onto the passenger window from the impact. I heard a thud, snuffing out the brief glimpse of moonlight.
 
@@ -877,293 +1602,68 @@ The car was presently lying at the bottom of a cliff on its side. Above me, I co
 
 I was still strapped in, the seat belt made sure I stayed put. At least one thing in this car still knew how to do its job right.
 
-&gt;[4] unbuckle seat belt
-I wrestled with the jammed seat belt for a moment, then managed to undo it, falling a few inches down against the driver door once the chest belt was free.
-
-&gt;[5] kick windshield
-Bracing my back against the sideways seat, I gave the windshield a couple of sharp kicks. I felt the seal start to give, and then it dislodged entirely from the frame, making an exit. It fell out onto the snow with a muffled crunch, and the bitter wind started to blow into the old car. I grabbed my bag and stepped out into the forest.
-
-Bottom of Cliff
-I stood on a  ridge densely packed with trees some ways below the highway. My overturned car sat a few feet away. The ridge extended as far as I could see to the north, going nowhere in particular. To the west I saw the steep incline the car had rolled down, and the path it&apos;d cut through the snow and brush.
-
-I was miles from nowhere. It had stopped snowing for the moment. The night sky was starting to lighten, I figured I had an hour before sunrise.
-
-Fucking swell.
-
-&gt;[6] any key
-That noun did not make sense in this context.
-
-&gt;[7] up
-
-Sharp Bend
-I stood about a hundred feet from the hairpin turn where my car had gone over; I could see the tire tracks and broken guardrail to the south.
-
-The second I turned my head to look down the lane, I saw a pair of headlights approach. A black Mercedes pulled up and came to a stop just in front of me. The passenger door opened, and I saw Val looking out at me.
-
-&quot;Get in,&quot; she said.
-
-&gt;[8] get in
-I got into the Mercedes.
-
-Sedan
-The inside of the Mercedes was yards of brushed metal and hand-stitched leather. It still smelled new.
-
-Val drove the car, her eyes looking miles beyond the road, the mountains, and the horizon.
-
-&gt;[9] talk to val
-I said hello to Val.
-
-I could have asked ask about her car, ask about the chalet or ask about sunrise.
-
-&gt;[10] ask about sunrise
-&quot;Sun goes up at 7:03 today. Always check the time before you leave for the night,&quot; she said.
-
-I looked out the window, trying not to feel like a kid being lectured by his mom.
-
-I could have asked ask about her car or ask about the chalet.
-
-&gt;[11] ask about house
-Where are we going?
-
-My house.
-
-I could have asked ask about her car.
-
-&gt;[12] ask about car
-&quot;Nice ride,&quot; I said.
-
-&quot;You should have called,&quot; Val replied, ignoring my comment.
-
-&gt;[13] wait
-Driveway
-We stood at the end of a long gravel drive, staring up at a large house with a dark red wood exterior. Steps to the east led to a porch that spanned the facade of the place, wrapping around to a deck in the back that presumably had a great view of the lake and the countryside. It was more ski lodge than cabin, and looked like it could comfortably shelter an entire biathlon team if it had to.
-
-Val got out of the car and took her bag out of the trunk.
-
-&quot;Come on, I&apos;ll introduce you to Alan,&quot; she said, walking up the drive.
-
-&gt;[14] e
-
-Front Porch
-Steps led up from the gravel driveway to the porch. Narrow unpainted wood planks extended the length of the house, along with windows that looked into rooms at the front of the house. Through them, I saw blinds, and a glint of something metallic, like a shutter.
-
-I could see a front door here.
-
-&gt;[15] e
-
-Foyer
-I walked into the spacious foyer, trying not to walk into the large lacquered screens in front of the door. The shiny black wood was decorated with an intricate picture in gold paint, depicting a Chinese court scene. It seemed at odds with the exterior of the house, but matched the rest of the decor; the interior was a mixture of Old World furniture and Asian influences.
-
-A layer of snow had blown in through the open doorway, and was slowly melting into a puddle on the enormous Persian rug. 
-
-
-I could also see a front door here.
-
-&gt;[16] e
-
-Greatroom
-The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
-
-A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
-
-A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;God Rest Ye Merry, Gentlemen&quot; warbling from what sounded like an old radio.
-
-&gt;[17] u
-
-Reading Nook
-I climbed the stairs to the reading nook. Shelves lined the walls of the small room, and a couple of books had been knocked off them onto the floor. A pair of wingback armchairs faced each other with a coffee table in between.
-
-A man sat in one, slightly paunchy and slightly grey, his eyes and mouth wide open. His glasses were askew. He was wearing a navy blue cardigan, stained on the front with a dark, almost black liquid. What looked like a large carving knife was sticking out of his chest, plunged in so far that only the handle was visible.
-
-An antique wooden radio sat on the table, playing Christmas carols.
-
-I could also see a bottle of wine here.
-
-&gt;[18] x body
-He looked like he was fifty, but something about his well-preserved look told me that he was probably sixty. It wasn&apos;t that he was in good shape-- I doubted he&apos;d seen much real exercise since he was in high school, and maybe not even then. He struck me as a debate team sort of guy.  I could tell he didn&apos;t get out much. His fingers were broad, but smooth. His hands had no calluses and no rings, but he wore a Rolex watch. It wasn&apos;t fake, and had cost probably three times what my car was worth before I&apos;d driven it off a cliff a few hours ago.
-
-Val came up the stairs, freezing the second she saw the body. Her eyes narrowed, and I could tell her mind was racing, the first time I&apos;d seen anything but placid boredom on her face. Half of me was relieved to know that there was something in this world that could perturb her. The other half was unnerved by it. She looked away and hitched the poker face back on pretty quick.
-
-Val nodded at the poor stiff and said, &quot;Meet Professor Alan Bowden, our host this weekend.&quot;
-
-&gt;[19] d
-
-Greatroom
-The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
-
-A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
-
-A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;We Three Kings&quot; warbling from what sounded like an old radio.
-
-&gt;[20] w
-
-Foyer
-I walked into the spacious foyer, trying not to walk into the large lacquered screens in front of the door. The shiny black wood was decorated with an intricate picture in gold paint, depicting a Chinese court scene. It seemed at odds with the exterior of the house, but matched the rest of the decor; the interior was a mixture of Old World furniture and Asian influences. 
-
-I could see a front door here.
-
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="49">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be71be0" />
-    </children>
+    <changed>NO</changed>
+    <temporary score="95">YES</temporary>
   </item>
-  <item nodeId="node-0x7be71be0">
-    <command xml:space="preserve">e</command>
+  <item nodeId="node-0x7bf315f0">
+    <command xml:space="preserve">drive</command>
     <result xml:space="preserve">
-Greatroom
-The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
-
-A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
-
-A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;Hark, The Herald Angels Sing&quot; warbling from what sounded like an old radio.
+Mountain Pass
+I had the radio on tuned to some news station-- truth be told, I already missed the chatter of the dispatch as I was driving. The traffic report had little bearing on my current locale, but the weather gave me some concern: snowstorm coming up off the Great Lakes, apparently. Spending the weekend with a small crowd I barely knew appealed very little to me. Being cooped up with them the entire time due to weather seemed like a recipe for an epidemic of cabin fever.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="49">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="106">YES</temporary>
     <children>
-      <child nodeId="node-0x7be71c50" />
+      <child nodeId="node-0x7bf54200" />
     </children>
   </item>
-  <item nodeId="node-0x7be71c50">
-    <command xml:space="preserve">e</command>
+  <item nodeId="node-0x7bf54200">
+    <command xml:space="preserve">drive</command>
     <result xml:space="preserve">
-Downstairs Hallway
+Hairpin Turn
+If I&apos;d finished that last thought a few seconds earlier, I might&apos;ve noticed the caution sign for the sharp turn, barely visible through the snow. The car was going too fast, and the guardrail came out of nowhere.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="49">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="106">YES</temporary>
     <children>
-      <child nodeId="node-0x7be71cc0" />
+      <child nodeId="node-0x787f0eb0" />
     </children>
   </item>
-  <item nodeId="node-0x7be71cc0">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">
-Greatroom
-The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
+  <item nodeId="node-0x787f0eb0">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">It&apos;s too late to stop, so I don&apos;t even bother. Instead, I press my head and back against the seat and put my arms in front of my face.
 
-A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
+The back end of the car lost traction and swung out wide, trying vainly to follow the front, just like one of those car commercials. Unfortunately, I was not a professional driver, nor was this a closed course, and the right side of the car went over the edge of the cliff, momentum then taking the rest of the car with it. In shock, my brain couldn&apos;t manage to tell my body to do more than grip the wheel uselessly as the car tumbled down the steep incline. I lost count of the rolls after three. The roof hit a tree, and I jerked upward against the seat belt. Snow from the branches fell into a pile onto the passenger window from the impact. I heard a thud, snuffing out the brief glimpse of moonlight.
 
-A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;O Come, All Ye Faithful&quot; warbling from what sounded like an old radio.
+Upturned Car
+I wasn&apos;t sure how long I&apos;d been out. Taking stock of my situation, I was surprised to find myself more or less unhurt, save for a dull ache in my left wrist where I&apos;d tried to brace against the door. I took a few deep breaths, and tried to gather myself-- I was still a little mentally a little shocked and unfocused.
+
+The car was presently lying at the bottom of a cliff on its side. Above me, I could see moonlight, dimly mottled by the snow on the passenger side windows. The windshield in front of me showed nothing but evergreen forest, extending into the darkness.
+
+I was still strapped in, the seat belt made sure I stayed put. At least one thing in this car still knew how to do its job right.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="49">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="105">YES</temporary>
     <children>
-      <child nodeId="node-0x7be71d30" />
+      <child nodeId="node-0x78769350" />
     </children>
   </item>
-  <item nodeId="node-0x7be71d30">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">
-Foyer
-I walked into the spacious foyer, trying not to walk into the large lacquered screens in front of the door. The shiny black wood was decorated with an intricate picture in gold paint, depicting a Chinese court scene. It seemed at odds with the exterior of the house, but matched the rest of the decor; the interior was a mixture of Old World furniture and Asian influences. 
-
-I could see a front door here.
+  <item nodeId="node-0x78769350">
+    <command xml:space="preserve">test body</command>
+    <result xml:space="preserve">The seat belt held me firmly in place in what was now the bottom of the upturned car. I wasn&apos;t going to be able to see or do much of anything until I unbuckled myself.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="49">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be71da0" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be71da0">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Greatroom
-The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
-
-A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
-
-A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;God Rest Ye Merry, Gentlemen&quot; warbling from what sounded like an old radio.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="49">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be71e10" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be71e10">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">
-Foyer
-I walked into the spacious foyer, trying not to walk into the large lacquered screens in front of the door. The shiny black wood was decorated with an intricate picture in gold paint, depicting a Chinese court scene. It seemed at odds with the exterior of the house, but matched the rest of the decor; the interior was a mixture of Old World furniture and Asian influences. 
-
-I could see a front door here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="49">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be71e80" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be71e80">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Greatroom
-The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
-
-A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
-
-A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;O Come, All Ye Faithful&quot; warbling from what sounded like an old radio.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="49">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be71ef0" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be71ef0">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">
-Foyer
-I walked into the spacious foyer, trying not to walk into the large lacquered screens in front of the door. The shiny black wood was decorated with an intricate picture in gold paint, depicting a Chinese court scene. It seemed at odds with the exterior of the house, but matched the rest of the decor; the interior was a mixture of Old World furniture and Asian influences. 
-
-I could see a front door here.
-
-The front door opened, and three men filed in, a lanky one in designer jeans holding the door for the other two.
-
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="49">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be71f60" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be71f60">
-    <command xml:space="preserve">look</command>
-    <result xml:space="preserve">Foyer
-I walked into the spacious foyer, trying not to walk into the large lacquered screens in front of the door. The shiny black wood was decorated with an intricate picture in gold paint, depicting a Chinese court scene. It seemed at odds with the exterior of the house, but matched the rest of the decor; the interior was a mixture of Old World furniture and Asian influences. 
-
-Three men stood on the rug, their coats and pant cuffs damp with snow. Val made introductions all around, as if nothing was wrong. Jan Svennson was a broad-shouldered man with pale blue eyes. He was casually brushing snow off a European performance fleece sweater. Either he liked ice climbing, or he wanted people to think he did. He had the handshake of a salesman and the grin of a frat boy.
-
-Scott Gage, on the other hand, was tall and lanky, and didn&apos;t seem at all suited to the cold. He wore a pair of Japanese selvedge jeans with the cuffs turned up to make sure everyone knew it. I&apos;d have guessed he&apos;d picked them up somewhere in SoHo if it weren&apos;t for the sweater he was wearing, useless against real cold, as all Californian sweaters are. 
-
-I studied their faces carefully. If one of them knew about Alan upstairs, they weren&apos;t letting on. The three men were overdressed for vacation, as rich men often are. But somehow, they were oddly mismatched. I doubted that they came here together.
-
-
-I could also see Nathan, Scott, Jan and a front door here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="48">YES</temporary>
+    <temporary score="102">YES</temporary>
   </item>
   <item nodeId="node-0x786edb70">
     <command xml:space="preserve">tet</command>
@@ -1491,1896 +1991,6 @@ Scene &apos;Body_Discovery&apos; playing (for 5 mins now)
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="77">YES</temporary>
-  </item>
-  <item nodeId="node-0x7be72820">
-    <command xml:space="preserve">clues</command>
-    <result xml:space="preserve">Clues
-
-
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="62">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be72890" />
-      <child nodeId="node-0x7bf4aa60" />
-    </children>
-  </item>
-  <item nodeId="node-0x7bf4aa60">
-    <command xml:space="preserve">help</command>
-    <result xml:space="preserve">Objective
-
-Clues
-
-
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="62">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be80970" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be80970">
-    <command xml:space="preserve">hitn</command>
-    <result xml:space="preserve">That noun did not make sense in this context.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="62">YES</temporary>
-    <children>
-      <child nodeId="node-0x7bf63680" />
-    </children>
-  </item>
-  <item nodeId="node-0x7bf63680">
-    <command xml:space="preserve">hint</command>
-    <result xml:space="preserve">Objective
-
-Clues
-
-
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="62">YES</temporary>
-    <children>
-      <child nodeId="node-0x7d941490" />
-    </children>
-  </item>
-  <item nodeId="node-0x7d941490">
-    <command xml:space="preserve">help</command>
-    <result xml:space="preserve">Objective
-
-Clues
-
-
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="62">YES</temporary>
-    <children>
-      <child nodeId="node-0x7860b6c0" />
-    </children>
-  </item>
-  <item nodeId="node-0x7860b6c0">
-    <command xml:space="preserve">test</command>
-    <result xml:space="preserve">&gt;--&gt; The following tests are available:
-&apos;test me&apos;
-&apos;test firstconvo&apos;
-&apos;test sunrise_lose&apos;
-&apos;test discover&apos;
-&apos;test body&apos;
-&apos;test arrival&apos;
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="62">YES</temporary>
-    <children>
-      <child nodeId="node-0x7982be20" />
-    </children>
-  </item>
-  <item nodeId="node-0x7982be20">
-    <command xml:space="preserve">test arrival</command>
-    <result xml:space="preserve">(Testing.)
-
-&gt;[1] drive
-
-Mountain Pass
-I had the radio on tuned to some news station-- truth be told, I already missed the chatter of the dispatch as I was driving. The traffic report had little bearing on my current locale, but the weather gave me some concern: snowstorm coming up off the Great Lakes, apparently. Spending the weekend with a small crowd I barely knew appealed very little to me. Being cooped up with them the entire time due to weather seemed like a recipe for an epidemic of cabin fever.
-
-&gt;[2] drive
-
-Hairpin Turn
-If I&apos;d finished that last thought a few seconds earlier, I might&apos;ve noticed the caution sign for the sharp turn, barely visible through the snow. The car was going too fast, and the guardrail came out of nowhere.
-
-&gt;[3] brake
-I hit the brakes, but the car kept straight for the guardrail, slamming through, and going over.
-
-The back end of the car lost traction and swung out wide, trying vainly to follow the front, just like one of those car commercials. Unfortunately, I was not a professional driver, nor was this a closed course, and the right side of the car went over the edge of the cliff, momentum then taking the rest of the car with it. In shock, my brain couldn&apos;t manage to tell my body to do more than grip the wheel uselessly as the car tumbled down the steep incline. I lost count of the rolls after three. The roof hit a tree, and I was jerked upward against the seat belt. Snow from the branches fell into a pile onto the passenger window from the impact. I heard a thud, snuffing out the brief glimpse of moonlight.
-
-Upturned Car
-I wasn&apos;t sure how long I&apos;d been out. Taking stock of my situation, I was surprised to find myself more or less unhurt, save for a dull ache in my left wrist where I&apos;d tried to brace against the door. I took a few deep breaths, and tried to gather myself-- I was still a little mentally a little shocked and unfocused.
-
-The car was presently lying at the bottom of a cliff on its side. Above me, I could see moonlight, dimly mottled by the snow on the passenger side windows. The windshield in front of me showed nothing but evergreen forest, extending into the darkness.
-
-I was still strapped in, the seat belt made sure I stayed put. At least one thing in this car still knew how to do its job right.
-
-&gt;[4] unbuckle seat belt
-I wrestled with the jammed seat belt for a moment, then managed to undo it, falling a few inches down against the driver door once the chest belt was free.
-
-&gt;[5] kick windshield
-Bracing my back against the sideways seat, I gave the windshield a couple of sharp kicks. I felt the seal start to give, and then it dislodged entirely from the frame, making an exit. It fell out onto the snow with a muffled crunch, and the bitter wind started to blow into the old car. I grabbed my bag and stepped out into the forest.
-
-Bottom of Cliff
-I stood on a  ridge densely packed with trees some ways below the highway. My overturned car sat a few feet away. The ridge extended as far as I could see to the north, going nowhere in particular. To the west I saw the steep incline the car had rolled down, and the path it&apos;d cut through the snow and brush.
-
-I was miles from nowhere. It had stopped snowing for the moment. The night sky was starting to lighten, I figured I had an hour before sunrise.
-
-Fucking swell.
-
-&gt;[6] any key
-That noun did not make sense in this context.
-
-&gt;[7] up
-
-Sharp Bend
-I stood about a hundred feet from the hairpin turn where my car had gone over; I could see the tire tracks and broken guardrail to the south.
-
-The second I turned my head to look down the lane, I saw a pair of headlights approach. A black Mercedes pulled up and came to a stop just in front of me. The passenger door opened, and I saw Val looking out at me.
-
-&quot;Get in,&quot; she said.
-
-&gt;[8] get in
-I got into the Mercedes.
-
-Sedan
-The inside of the Mercedes was yards of brushed metal and hand-stitched leather. It still smelled new.
-
-Val drove the car, her eyes looking miles beyond the road, the mountains, and the horizon.
-
-&gt;[9] talk to val
-I said hello to Val.
-
-I could have asked ask about her car, ask about the chalet or ask about sunrise.
-
-&gt;[10] ask about sunrise
-&quot;Sun goes up at 7:03 today. Always check the time before you leave for the night,&quot; she said.
-
-I looked out the window, trying not to feel like a kid being lectured by his mom.
-
-I could have asked ask about her car or ask about the chalet.
-
-&gt;[11] ask about house
-Where are we going?
-
-My house.
-
-I could have asked ask about her car.
-
-&gt;[12] ask about car
-&quot;Nice ride,&quot; I said.
-
-&quot;You should have called,&quot; Val replied, ignoring my comment.
-
-&gt;[13] wait
-Driveway
-We stood at the end of a long gravel drive, staring up at a large house with a dark red wood exterior. Steps to the east led to a porch that spanned the facade of the place, wrapping around to a deck in the back that presumably had a great view of the lake and the countryside. It was more ski lodge than cabin, and looked like it could comfortably shelter an entire biathlon team if it had to.
-
-Val got out of the car and took her bag out of the trunk.
-
-&quot;Come on, I&apos;ll introduce you to Alan,&quot; she said, walking up the drive.
-
-&gt;[14] e
-
-Front Porch
-Steps led up from the gravel driveway to the porch. Narrow unpainted wood planks extended the length of the house, along with windows that looked into rooms at the front of the house. Through them, I saw blinds, and a glint of something metallic, like a shutter.
-
-The front door stood open to the porch.
-
-&gt;[15] e
-
-Foyer
-I walked into the spacious foyer, trying not to walk into the large lacquered screens in front of the door. The shiny black wood was decorated with an intricate picture in gold paint, depicting a Chinese court scene. It seemed at odds with the exterior of the house, but matched the rest of the decor; the interior was a mixture of Old World furniture and Asian influences.
-
-A layer of snow had blown in through the open doorway, and was slowly melting into a puddle on the enormous Persian rug. 
-
-The front door stood open to the porch.
-
-
-&gt;[16] e
-
-Greatroom
-The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
-
-A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
-
-A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;We Three Kings&quot; warbling from what sounded like an old radio.
-
-&gt;[17] u
-
-Reading Nook
-I climbed the stairs to the reading nook. Shelves lined the walls of the small room, and a couple of books had been knocked off them onto the floor. A pair of wingback armchairs faced each other with a coffee table in between.
-
-A man sat in one, slightly paunchy and slightly grey, his eyes and mouth wide open. His glasses were askew. He was wearing a navy blue cardigan, stained on the front with a dark, almost black liquid. What looked like a large carving knife was sticking out of his chest, plunged in so far that only the handle was visible.
-
-An antique wooden radio sat on the table, playing Christmas carols.
-
-I could also see a bottle of wine here.
-
-&gt;[18] x body
-He looked like he was fifty, but something about his well-preserved look told me that he was probably sixty. It wasn&apos;t that he was in good shape-- I doubted he&apos;d seen much real exercise since he was in high school, and maybe not even then. He struck me as a debate team sort of guy.  I could tell he didn&apos;t get out much. His fingers were broad, but smooth. His hands had no calluses and no rings, but he wore a Rolex watch. It wasn&apos;t fake, and had cost probably three times what my car was worth before I&apos;d driven it off a cliff a few hours ago.
-
-Val came up the stairs, freezing the second she saw the body. Her eyes narrowed, and I could tell her mind was racing, the first time I&apos;d seen anything but placid boredom on her face. Half of me was relieved to know that there was something in this world that could perturb her. The other half was unnerved by it. She looked away and hitched the poker face back on pretty quick.
-
-Val nodded at the poor stiff and said, &quot;Meet Professor Alan Bowden, our host this weekend.&quot;
-
-&gt;[19] d
-
-Greatroom
-The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
-
-A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
-
-A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;God Rest Ye Merry, Gentlemen&quot; warbling from what sounded like an old radio.
-
-&gt;[20] w
-
-Foyer
-I walked into the spacious foyer, trying not to walk into the large lacquered screens in front of the door. The shiny black wood was decorated with an intricate picture in gold paint, depicting a Chinese court scene. It seemed at odds with the exterior of the house, but matched the rest of the decor; the interior was a mixture of Old World furniture and Asian influences. 
-
-The front door stood open to the porch.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="62">YES</temporary>
-    <children>
-      <child nodeId="node-0x7beb3140" />
-      <child nodeId="node-0x7be8da60" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be8da60">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">
-Front Porch
-Steps led up from the gravel driveway to the porch. Narrow unpainted wood planks extended the length of the house, along with windows that looked into rooms at the front of the house. Through them, I saw blinds, and a glint of something metallic, like a shutter.
-
-The front door stood open to the porch.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="42">YES</temporary>
-    <children>
-      <child nodeId="node-0x7d9466a0" />
-    </children>
-  </item>
-  <item nodeId="node-0x7d9466a0">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Foyer
-I walked into the spacious foyer, trying not to walk into the large lacquered screens in front of the door. The shiny black wood was decorated with an intricate picture in gold paint, depicting a Chinese court scene. It seemed at odds with the exterior of the house, but matched the rest of the decor; the interior was a mixture of Old World furniture and Asian influences. 
-
-The front door stood open to the porch.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="42">YES</temporary>
-    <children>
-      <child nodeId="node-0x78627490" />
-    </children>
-  </item>
-  <item nodeId="node-0x78627490">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">
-Front Porch
-Steps led up from the gravel driveway to the porch. Narrow unpainted wood planks extended the length of the house, along with windows that looked into rooms at the front of the house. Through them, I saw blinds, and a glint of something metallic, like a shutter.
-
-The front door stood open to the porch.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="42">YES</temporary>
-    <children>
-      <child nodeId="node-0x79823c40" />
-    </children>
-  </item>
-  <item nodeId="node-0x79823c40">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Foyer
-I walked into the spacious foyer, trying not to walk into the large lacquered screens in front of the door. The shiny black wood was decorated with an intricate picture in gold paint, depicting a Chinese court scene. It seemed at odds with the exterior of the house, but matched the rest of the decor; the interior was a mixture of Old World furniture and Asian influences. 
-
-The front door stood open to the porch.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="42">YES</temporary>
-    <children>
-      <child nodeId="node-0x7b95ebe0" />
-    </children>
-  </item>
-  <item nodeId="node-0x7b95ebe0">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">
-Front Porch
-Steps led up from the gravel driveway to the porch. Narrow unpainted wood planks extended the length of the house, along with windows that looked into rooms at the front of the house. Through them, I saw blinds, and a glint of something metallic, like a shutter.
-
-The front door stood open to the porch.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="42">YES</temporary>
-    <children>
-      <child nodeId="node-0x7d851cc0" />
-    </children>
-  </item>
-  <item nodeId="node-0x7d851cc0">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Foyer
-I walked into the spacious foyer, trying not to walk into the large lacquered screens in front of the door. The shiny black wood was decorated with an intricate picture in gold paint, depicting a Chinese court scene. It seemed at odds with the exterior of the house, but matched the rest of the decor; the interior was a mixture of Old World furniture and Asian influences. 
-
-The front door stood open to the porch.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="42">YES</temporary>
-    <children>
-      <child nodeId="node-0x7997abe0" />
-    </children>
-  </item>
-  <item nodeId="node-0x7997abe0">
-    <command xml:space="preserve">i</command>
-    <result xml:space="preserve">I was carrying:
-  a cell phone
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="42">YES</temporary>
-    <children>
-      <child nodeId="node-0x798a2640" />
-    </children>
-  </item>
-  <item nodeId="node-0x798a2640">
-    <command xml:space="preserve">d</command>
-    <result xml:space="preserve">I couldn&apos;t go that way.
-
-The front door opened, and three men filed in, a lanky one in designer jeans holding the door for the other two. He closed it behind them, and they stood there looking around and putting snow on the rug, as though they expected a butler to come and announce them.
-
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="42">YES</temporary>
-    <children>
-      <child nodeId="node-0x7d990720" />
-    </children>
-  </item>
-  <item nodeId="node-0x7d990720">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="42">YES</temporary>
-    <children>
-      <child nodeId="node-0x786bcff0" />
-    </children>
-  </item>
-  <item nodeId="node-0x786bcff0">
-    <command xml:space="preserve">x val</command>
-    <result xml:space="preserve">She wore a belted black overcoat with straight shoulders, which covered all of her except for the bottom of a long pencil skirt. She hadn&apos;t bothered taking her driving gloves off. I couldn&apos;t put my finger on it, but there was something stiffly formal and practised about the way she moved.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="42">YES</temporary>
-    <children>
-      <child nodeId="node-0x7982bda0" />
-    </children>
-  </item>
-  <item nodeId="node-0x7982bda0">
-    <command xml:space="preserve">look</command>
-    <result xml:space="preserve">Foyer
-I walked into the spacious foyer, trying not to walk into the large lacquered screens in front of the door. The shiny black wood was decorated with an intricate picture in gold paint, depicting a Chinese court scene. It seemed at odds with the exterior of the house, but matched the rest of the decor; the interior was a mixture of Old World furniture and Asian influences. 
-
-
-
-I could also see Nathan, Scott and Jan here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="42">YES</temporary>
-  </item>
-  <item nodeId="node-0x7beb3140">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Greatroom
-The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
-
-A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
-
-A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;Hark, The Herald Angels Sing&quot; warbling from what sounded like an old radio.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="62">YES</temporary>
-    <children>
-      <child nodeId="node-0x7d951de0" />
-    </children>
-  </item>
-  <item nodeId="node-0x7d951de0">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">
-Foyer
-I walked into the spacious foyer, trying not to walk into the large lacquered screens in front of the door. The shiny black wood was decorated with an intricate picture in gold paint, depicting a Chinese court scene. It seemed at odds with the exterior of the house, but matched the rest of the decor; the interior was a mixture of Old World furniture and Asian influences. 
-
-The front door stood open to the porch.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="62">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be8ad30" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be8ad30">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Greatroom
-The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
-
-A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
-
-A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;Angels We Have Heard on High&quot; warbling from what sounded like an old radio.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="62">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be92190" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be92190">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">
-Foyer
-I walked into the spacious foyer, trying not to walk into the large lacquered screens in front of the door. The shiny black wood was decorated with an intricate picture in gold paint, depicting a Chinese court scene. It seemed at odds with the exterior of the house, but matched the rest of the decor; the interior was a mixture of Old World furniture and Asian influences. 
-
-The front door stood open to the porch.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="62">YES</temporary>
-    <children>
-      <child nodeId="node-0x7bea16c0" />
-    </children>
-  </item>
-  <item nodeId="node-0x7bea16c0">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Greatroom
-The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
-
-A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
-
-A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;O Come, All Ye Faithful&quot; warbling from what sounded like an old radio.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="62">YES</temporary>
-    <children>
-      <child nodeId="node-0x798aec30" />
-    </children>
-  </item>
-  <item nodeId="node-0x798aec30">
-    <command xml:space="preserve">i</command>
-    <result xml:space="preserve">I was carrying:
-  a cell phone
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="62">YES</temporary>
-    <children>
-      <child nodeId="node-0x7989bb80" />
-    </children>
-  </item>
-  <item nodeId="node-0x7989bb80">
-    <command xml:space="preserve">d</command>
-    <result xml:space="preserve">I couldn&apos;t go that way.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="62">YES</temporary>
-    <children>
-      <child nodeId="node-0x7d85b3d0" />
-    </children>
-  </item>
-  <item nodeId="node-0x7d85b3d0">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">
-Foyer
-I walked into the spacious foyer, trying not to walk into the large lacquered screens in front of the door. The shiny black wood was decorated with an intricate picture in gold paint, depicting a Chinese court scene. It seemed at odds with the exterior of the house, but matched the rest of the decor; the interior was a mixture of Old World furniture and Asian influences. 
-
-The front door stood open to the porch.
-
-The front door opened, and three men filed in, a lanky one in designer jeans holding the door for the other two. He closed it behind them, and they stood there looking around and putting snow on the rug, as though they expected a butler to come and announce them.
-
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="62">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be75e20" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be75e20">
-    <command xml:space="preserve">x val</command>
-    <result xml:space="preserve">She wore a belted black overcoat with straight shoulders, which covered all of her except for the bottom of a long pencil skirt. She hadn&apos;t bothered taking her driving gloves off. I couldn&apos;t put my finger on it, but there was something stiffly formal and practised about the way she moved.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="62">YES</temporary>
-    <children>
-      <child nodeId="node-0x7becc6c0" />
-    </children>
-  </item>
-  <item nodeId="node-0x7becc6c0">
-    <command xml:space="preserve">look</command>
-    <result xml:space="preserve">Foyer
-I walked into the spacious foyer, trying not to walk into the large lacquered screens in front of the door. The shiny black wood was decorated with an intricate picture in gold paint, depicting a Chinese court scene. It seemed at odds with the exterior of the house, but matched the rest of the decor; the interior was a mixture of Old World furniture and Asian influences. 
-
-Three men stood on the rug, their coats and pant cuffs damp with snow. Val made introductions all around, as if nothing was wrong. 
-
-I studied their faces carefully. If one of them knew about Alan upstairs, they weren&apos;t letting on. The three men were overdressed for vacation, as rich men often are. But somehow, they were oddly mismatched. I doubted that they came here together.
-
-
-
-I could also see Nathan, Scott and Jan here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="62">YES</temporary>
-    <children>
-      <child nodeId="node-0x787459a0" />
-    </children>
-  </item>
-  <item nodeId="node-0x787459a0">
-    <command xml:space="preserve">scenes</command>
-    <result xml:space="preserve">Scene &apos;Entire Game&apos; playing (for 25 mins now)
-Scene &apos;Mountain_Driving&apos; ended
-Scene &apos;Car_Escape&apos; ended
-Scene &apos;Cliff_Climbing&apos; ended
-Scene &apos;Car_Embarking&apos; ended
-Scene &apos;Riding_Scene&apos; ended
-Scene &apos;Body_Discovery&apos; ended
-Scene &apos;Prearrival&apos; ended
-Scene &apos;Guest_Arrival&apos; playing (for 2 mins now)
-(Scene monitoring now switched on. Type &quot;scenes off&quot; to switch it off again.)
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="62">YES</temporary>
-    <children>
-      <child nodeId="node-0x799fb080" />
-    </children>
-  </item>
-  <item nodeId="node-0x799fb080">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">[Scene &apos;Guest_Arrival&apos; ends]
-[Scene &apos;First_Investigation&apos; begins]
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="62">YES</temporary>
-    <children>
-      <child nodeId="node-0x7d9df090" />
-    </children>
-  </item>
-  <item nodeId="node-0x7d9df090">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">(first opening the front door)
-
-Front Porch
-Steps led up from the gravel driveway to the porch. Narrow unpainted wood planks extended the length of the house, along with windows that looked into rooms at the front of the house. Through them, I saw blinds, and a glint of something metallic, like a shutter.
-
-The front door stood open to the porch.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="61">YES</temporary>
-  </item>
-  <item nodeId="node-0x7be72890">
-    <command xml:space="preserve">hint</command>
-    <result xml:space="preserve">Objective
-
-Clues
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="1183">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be72900" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be72900">
-    <command xml:space="preserve">i</command>
-    <result xml:space="preserve">I was carrying:
-  a cell phone
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="1183">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be72970" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be72970">
-    <command xml:space="preserve">test body</command>
-    <result xml:space="preserve">(Testing.)
-
-&gt;[1] drive
-
-Mountain Pass
-I had the radio on tuned to some news station-- truth be told, I already missed the chatter of the dispatch as I was driving. The traffic report had little bearing on my current locale, but the weather gave me some concern: snowstorm coming up off the Great Lakes, apparently. Spending the weekend with a small crowd I barely knew appealed very little to me. Being cooped up with them the entire time due to weather seemed like a recipe for an epidemic of cabin fever.
-
-&gt;[2] drive
-
-Hairpin Turn
-If I&apos;d finished that last thought a few seconds earlier, I might&apos;ve noticed the caution sign for the sharp turn, barely visible through the snow. The car was going too fast, and the guardrail came out of nowhere.
-
-&gt;[3] brake
-I hit the brakes, but the car kept straight for the guardrail, slamming through, and going over.
-
-The back end of the car lost traction and swung out wide, trying vainly to follow the front, just like one of those car commercials. Unfortunately, I was not a professional driver, nor was this a closed course, and the right side of the car went over the edge of the cliff, momentum then taking the rest of the car with it. In shock, my brain couldn&apos;t manage to tell my body to do more than grip the wheel uselessly as the car tumbled down the steep incline. I lost count of the rolls after three. The roof hit a tree, and I was jerked upward against the seat belt. Snow from the branches fell into a pile onto the passenger window from the impact. I heard a thud, snuffing out the brief glimpse of moonlight.
-
-Upturned Car
-I wasn&apos;t sure how long I&apos;d been out. Taking stock of my situation, I was surprised to find myself more or less unhurt, save for a dull ache in my left wrist where I&apos;d tried to brace against the door. I took a few deep breaths, and tried to gather myself-- I was still a little mentally a little shocked and unfocused.
-
-The car was presently lying at the bottom of a cliff on its side. Above me, I could see moonlight, dimly mottled by the snow on the passenger side windows. The windshield in front of me showed nothing but evergreen forest, extending into the darkness.
-
-I was still strapped in, the seat belt made sure I stayed put. At least one thing in this car still knew how to do its job right.
-
-&gt;[4] unbuckle seat belt
-I wrestled with the jammed seat belt for a moment, then managed to undo it, falling a few inches down against the driver door once the chest belt was free.
-
-&gt;[5] kick windshield
-Bracing my back against the sideways seat, I gave the windshield a couple of sharp kicks. I felt the seal start to give, and then it dislodged entirely from the frame, making an exit. It fell out onto the snow with a muffled crunch, and the bitter wind started to blow into the old car. I grabbed my bag and stepped out into the forest.
-
-Bottom of Cliff
-I stood on a  ridge densely packed with trees some ways below the highway. My overturned car sat a few feet away. The ridge extended as far as I could see to the north, going nowhere in particular. To the west I saw the steep incline the car had rolled down, and the path it&apos;d cut through the snow and brush.
-
-I was miles from nowhere. It had stopped snowing for the moment. The night sky was starting to lighten, I figured I had an hour before sunrise.
-
-Fucking swell.
-
-&gt;[6] any key
-That noun did not make sense in this context.
-
-&gt;[7] up
-
-Sharp Bend
-I stood about a hundred feet from the hairpin turn where my car had gone over; I could see the tire tracks and broken guardrail to the south.
-
-The second I turned my head to look down the lane, I saw a pair of headlights approach. A black Mercedes pulled up and came to a stop just in front of me. The passenger door opened, and I saw Val looking out at me.
-
-&quot;Get in,&quot; she said.
-
-&gt;[8] get in
-I got into the Mercedes.
-
-Sedan
-The inside of the Mercedes was yards of brushed metal and hand-stitched leather. It still smelled new.
-
-Val drove the car, her eyes looking miles beyond the road, the mountains, and the horizon.
-
-&gt;[9] talk to val
-I said hello to Val.
-
-I could have asked ask about her car, ask about the chalet or ask about sunrise.
-
-&gt;[10] ask about sunrise
-&quot;Sun goes up at 7:03 today. Always check the time before you leave for the night,&quot; she said.
-
-I looked out the window, trying not to feel like a kid being lectured by his mom.
-
-I could have asked ask about her car or ask about the chalet.
-
-&gt;[11] ask about house
-Where are we going?
-
-My house.
-
-I could have asked ask about her car.
-
-&gt;[12] ask about car
-&quot;Nice ride,&quot; I said.
-
-&quot;You should have called,&quot; Val replied, ignoring my comment.
-
-&gt;[13] wait
-Driveway
-We stood at the end of a long gravel drive, staring up at a large house with a dark red wood exterior. Steps to the east led to a porch that spanned the facade of the place, wrapping around to a deck in the back that presumably had a great view of the lake and the countryside. It was more ski lodge than cabin, and looked like it could comfortably shelter an entire biathlon team if it had to.
-
-Val got out of the car and took her bag out of the trunk.
-
-&quot;Come on, I&apos;ll introduce you to Alan,&quot; she said, walking up the drive.
-
-&gt;[14] e
-
-Front Porch
-Steps led up from the gravel driveway to the porch. Narrow unpainted wood planks extended the length of the house, along with windows that looked into rooms at the front of the house. Through them, I saw blinds, and a glint of something metallic, like a shutter.
-
-I could see Front_Door here.
-
-&gt;[15] e
-
-Foyer
-I walked into the spacious foyer, trying not to walk into the large lacquered screens in front of the door. The shiny black wood was decorated with an intricate picture in gold paint, depicting a Chinese court scene. It seemed at odds with the exterior of the house, but matched the rest of the decor; the interior was a mixture of Old World furniture and Asian influences.
-
-A layer of snow had blown in through the open doorway, and was slowly melting into a puddle on the enormous Persian rug.
-
-Three men stood on the rug, their coats and pant cuffs damp with snow. Val made introductions all around, as if nothing was wrong. Jan Svennson was a broad-shouldered man with pale blue eyes. He was casually brushing snow off a European performance fleece sweater. Either he liked ice climbing, or he wanted people to think he did. He had the handshake of a salesman and the grin of a frat boy.
-
-Scott Gage, on the other hand, was tall and lanky, and didn&apos;t seem at all suited to the cold. He wore a pair of Japanese selvedge jeans with the cuffs turned up to make sure everyone knew it. I&apos;d have guessed he&apos;d picked them up somewhere in SoHo if it weren&apos;t for the sweater he was wearing, useless against real cold, as all Californian sweaters are. 
-
-I studied their faces carefully. If one of them knew about Alan upstairs, they weren&apos;t letting on. The three men were overdressed for vacation, as rich men often are. But somehow, they were oddly mismatched. I doubted that they came here together.
-
-
-I could also see Front_Door here.
-
-&gt;[16] e
-
-Greatroom
-The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
-
-A large set of sofas were arranged around a huge rug. A dark stain was conspicuous against the pattern of the fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
-
-A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;Angels We Have Heard on High&quot; warbling from what sounded like an old radio.
-
-&gt;[17] u
-
-Reading Nook
-I climbed the stairs to the reading nook. Shelves lined the walls of the small room, and a couple of books had been knocked off them onto the floor. A pair of wingback armchairs faced each other with a coffee table in between.
-
-A man sat in one, slightly paunchy and slightly grey, his eyes and mouth wide open. His glasses were askew. He was wearing a wool cardigan, stained on the front with a dark, almost black liquid. What looked like a large carving knife was sticking out of his chest, plunged in so far that only the handle was visible.
-
-An antique wooden radio sat on the table, playing Christmas carols.
-
-I could also see a bottle of wine here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="1183">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be745e0" />
-      <child nodeId="node-0x7be73d20" />
-      <child nodeId="node-0x7be732a0" />
-      <child nodeId="node-0x7be729e0" />
-      <child nodeId="node-0x7be73a80" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be73a80">
-    <command xml:space="preserve">take wine</command>
-    <result xml:space="preserve">Taken.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1090">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be73af0" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be73af0">
-    <command xml:space="preserve">x body</command>
-    <result xml:space="preserve">I could tell he didn&apos;t get out much. His skin was slightly pallid, and not just because he was dead.
-
-Val came up the stairs, freezing the second she saw the body. Her eyes narrowed, and I could tell her mind was racing, the first time I&apos;d seen anything but unflappable boredom on her face. Half of me was relieved to know that there was something in this world that could shock her. The other half was unnerved by it. She looked away and hitched the poker face back on pretty quick.
-
-Val nodded at the poor stiff and said, &quot;Meet Professor Alan Bowden, our host this weekend.&quot;
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1090">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be73b60" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be73b60">
-    <command xml:space="preserve">hint</command>
-    <result xml:space="preserve">Objective
-
-Clues
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1090">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be73bd0" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be73bd0">
-    <command xml:space="preserve">x wineglass</command>
-    <result xml:space="preserve">I couldn&apos;t see any such thing.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1090">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be73c40" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be73c40">
-    <command xml:space="preserve">x wine</command>
-    <result xml:space="preserve">A Bordeaux from back in 2001, uncorked and almost empty. Expensive bottle to be drinking alone.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1090">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be73cb0" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be73cb0">
-    <command xml:space="preserve">clues</command>
-    <result xml:space="preserve">Clues
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1089">YES</temporary>
-  </item>
-  <item nodeId="node-0x7be729e0">
-    <command xml:space="preserve">x wine</command>
-    <result xml:space="preserve">A Bordeaux from back in 2001, uncorked and almost empty. Expensive bottle to be drinking alone.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1183">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be72a50" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be72a50">
-    <command xml:space="preserve">clues</command>
-    <result xml:space="preserve">Clues
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1183">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be72ac0" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be72ac0">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">I couldn&apos;t go that way.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1183">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be72b30" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be72b30">
-    <command xml:space="preserve">d</command>
-    <result xml:space="preserve">
-Greatroom
-The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
-
-A large set of sofas were arranged around a huge rug. A dark stain was conspicuous against the pattern of the fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
-
-A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;God Rest Ye Merry, Gentlemen&quot; warbling from what sounded like an old radio.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1183">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be72ba0" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be72ba0">
-    <command xml:space="preserve">x sofa</command>
-    <result xml:space="preserve">I saw nothing special about the sofa.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1183">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be72c10" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be72c10">
-    <command xml:space="preserve">s shard</command>
-    <result xml:space="preserve">I only understood you as far as wanting to (go) s.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1183">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be72c80" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be72c80">
-    <command xml:space="preserve">x shard</command>
-    <result xml:space="preserve">A broken shard of glass. The ruined facets of vintage crystal reflected light like a cheap engagement ring.
-
-I crouched down for a closer look and realized it had come from a shattered wineglass,  the pieces obscured by the sofa
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1183">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be72cf0" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be72cf0">
-    <command xml:space="preserve">x glass</command>
-    <result xml:space="preserve">I couldn&apos;t see any such thing.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1183">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be72d60" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be72d60">
-    <command xml:space="preserve">take glass</command>
-    <result xml:space="preserve">I couldn&apos;t see any such thing.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1183">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be72dd0" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be72dd0">
-    <command xml:space="preserve">clues</command>
-    <result xml:space="preserve">Clues
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1183">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be72e40" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be72e40">
-    <command xml:space="preserve">i</command>
-    <result xml:space="preserve">I was carrying:
-  a cell phone
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1183">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be72eb0" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be72eb0">
-    <command xml:space="preserve">x shard</command>
-    <result xml:space="preserve">I couldn&apos;t see any such thing.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1183">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be72f20" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be72f20">
-    <command xml:space="preserve">x wineglass</command>
-    <result xml:space="preserve">The curves of the wineglass were jagged edges now, a heap of shattered crystal under the sofa. It must&apos;ve fallen from quite a height.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1183">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be72f90" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be72f90">
-    <command xml:space="preserve">look</command>
-    <result xml:space="preserve">Greatroom
-The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
-
-A large set of sofas were arranged around a huge rug. A dark stain was conspicuous against the pattern of the fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
-
-A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;We Three Kings&quot; warbling from what sounded like an old radio.
-
-I could see a broken wineglass here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1183">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be73000" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be73000">
-    <command xml:space="preserve">x broken wineglass</command>
-    <result xml:space="preserve">The curves of the wineglass were jagged edges now, a heap of shattered crystal under the sofa. It must&apos;ve fallen from quite a height.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1183">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be73070" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be73070">
-    <command xml:space="preserve">clues</command>
-    <result xml:space="preserve">Clues
-
-broken wineglass
-bottle of wine
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1183">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be730e0" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be730e0">
-    <command xml:space="preserve"></command>
-    <result xml:space="preserve">I beg your pardon?
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1183">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be73150" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be73150">
-    <command xml:space="preserve"></command>
-    <result xml:space="preserve">I beg your pardon?
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1183">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be731c0" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be731c0">
-    <command xml:space="preserve">scenes</command>
-    <result xml:space="preserve">Scene &apos;Entire Game&apos; playing (for 22 mins now)
-Scene &apos;Mountain_Driving&apos; ended
-Scene &apos;Car_Escape&apos; ended
-Scene &apos;Cliff_Climbing&apos; ended
-Scene &apos;Car_Embarking&apos; ended
-Scene &apos;Riding_Scene&apos; ended
-Scene &apos;Body_Discovery&apos; playing (for 14 mins now)
-(Scene monitoring now switched on. Type &quot;scenes off&quot; to switch it off again.)
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1183">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be73230" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be73230">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">
-Foyer
-I walked into the spacious foyer, trying not to walk into the large lacquered screens in front of the door. The shiny black wood was decorated with an intricate picture in gold paint, depicting a Chinese court scene. It seemed at odds with the exterior of the house, but matched the rest of the decor; the interior was a mixture of Old World furniture and Asian influences.
-
-A layer of snow had blown in through the open doorway, and was slowly melting into a puddle on the enormous Persian rug.
-
-Three men stood on the rug, their coats and pant cuffs damp with snow. Val made introductions all around, as if nothing was wrong. Jan Svennson was a broad-shouldered man with pale blue eyes. He was casually brushing snow off a European performance fleece sweater. Either he liked ice climbing, or he wanted people to think he did. He had the handshake of a salesman and the grin of a frat boy.
-
-Scott Gage, on the other hand, was tall and lanky, and didn&apos;t seem at all suited to the cold. He wore a pair of Japanese selvedge jeans with the cuffs turned up to make sure everyone knew it. I&apos;d have guessed he&apos;d picked them up somewhere in SoHo if it weren&apos;t for the sweater he was wearing, useless against real cold, as all Californian sweaters are. 
-
-I studied their faces carefully. If one of them knew about Alan upstairs, they weren&apos;t letting on. The three men were overdressed for vacation, as rich men often are. But somehow, they were oddly mismatched. I doubted that they came here together.
-
-
-I could also see Front_Door here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1182">YES</temporary>
-  </item>
-  <item nodeId="node-0x7be732a0">
-    <command xml:space="preserve">hint</command>
-    <result xml:space="preserve">Objective
-
-Clues
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1135">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be73310" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be73310">
-    <command xml:space="preserve">x wineglass</command>
-    <result xml:space="preserve">I couldn&apos;t see any such thing.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1135">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be73380" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be73380">
-    <command xml:space="preserve">x wine</command>
-    <result xml:space="preserve">A Bordeaux from back in 2001, uncorked and almost empty. Expensive bottle to be drinking alone.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1135">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be733f0" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be733f0">
-    <command xml:space="preserve">clues</command>
-    <result xml:space="preserve">Clues
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1135">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be73460" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be73460">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">I couldn&apos;t go that way.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1135">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be734d0" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be734d0">
-    <command xml:space="preserve">d</command>
-    <result xml:space="preserve">
-Greatroom
-The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
-
-A large set of sofas were arranged around a huge rug. A dark stain was conspicuous against the pattern of the fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
-
-A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;God Rest Ye Merry, Gentlemen&quot; warbling from what sounded like an old radio.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1135">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be73540" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be73540">
-    <command xml:space="preserve">x sofa</command>
-    <result xml:space="preserve">I saw nothing special about the sofa.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1135">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be735b0" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be735b0">
-    <command xml:space="preserve">s shard</command>
-    <result xml:space="preserve">I only understood you as far as wanting to (go) s.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1135">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be73620" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be73620">
-    <command xml:space="preserve">x shard</command>
-    <result xml:space="preserve">A broken shard of glass. The ruined facets of vintage crystal reflected light like a cheap engagement ring.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1135">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be73690" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be73690">
-    <command xml:space="preserve">x glass</command>
-    <result xml:space="preserve">A broken shard of glass. The ruined facets of vintage crystal reflected light like a cheap engagement ring.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1135">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be73700" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be73700">
-    <command xml:space="preserve">take glass</command>
-    <result xml:space="preserve">Taken.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1135">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be73770" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be73770">
-    <command xml:space="preserve">clues</command>
-    <result xml:space="preserve">Clues
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1135">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be737e0" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be737e0">
-    <command xml:space="preserve">i</command>
-    <result xml:space="preserve">I was carrying:
-  a glass shard
-  a cell phone
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1135">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be73850" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be73850">
-    <command xml:space="preserve">x shard</command>
-    <result xml:space="preserve">A broken shard of glass. The ruined facets of vintage crystal reflected light like a cheap engagement ring.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1135">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be738c0" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be738c0">
-    <command xml:space="preserve">x wineglass</command>
-    <result xml:space="preserve">The curves of the wineglass were jagged edges now, a heap of shattered crystal under the sofa. It must&apos;ve fallen from quite a height.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1135">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be73930" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be73930">
-    <command xml:space="preserve">look</command>
-    <result xml:space="preserve">Greatroom
-The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
-
-A large set of sofas were arranged around a huge rug. A dark stain was conspicuous against the pattern of the fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
-
-A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;Hark, The Herald Angels Sing&quot; warbling from what sounded like an old radio.
-
-I could see a broken wineglass here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1135">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be739a0" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be739a0">
-    <command xml:space="preserve">x broken wineglass</command>
-    <result xml:space="preserve">The curves of the wineglass were jagged edges now, a heap of shattered crystal under the sofa. It must&apos;ve fallen from quite a height.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1135">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be73a10" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be73a10">
-    <command xml:space="preserve">clues</command>
-    <result xml:space="preserve">Clues
-
-broken wineglass
-
-bottle of wine
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1134">YES</temporary>
-  </item>
-  <item nodeId="node-0x7be73d20">
-    <command xml:space="preserve">x wineglass</command>
-    <result xml:space="preserve">I couldn&apos;t see any such thing.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1159">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be73d90" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be73d90">
-    <command xml:space="preserve">x wine</command>
-    <result xml:space="preserve">A Bordeaux from back in 2001, uncorked and almost empty. Expensive bottle to be drinking alone.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1159">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be73e00" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be73e00">
-    <command xml:space="preserve">clues</command>
-    <result xml:space="preserve">Clues
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1159">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be73e70" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be73e70">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">I couldn&apos;t go that way.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1159">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be73ee0" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be73ee0">
-    <command xml:space="preserve">d</command>
-    <result xml:space="preserve">
-Greatroom
-The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
-
-A large set of sofas were arranged around a huge rug. A dark stain was conspicuous against the pattern of the fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
-
-A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;Hark, The Herald Angels Sing&quot; warbling from what sounded like an old radio.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1159">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be73f50" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be73f50">
-    <command xml:space="preserve">x sofa</command>
-    <result xml:space="preserve">I saw nothing special about the sofa.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1159">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be73fc0" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be73fc0">
-    <command xml:space="preserve">s shard</command>
-    <result xml:space="preserve">I only understood you as far as wanting to (go) s.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1159">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be74030" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be74030">
-    <command xml:space="preserve">x shard</command>
-    <result xml:space="preserve">A broken shard of glass. The ruined facets of vintage crystal reflected light like a cheap engagement ring.
-
-I crouched down for a closer look and realized it had come from a shattered wineglass,  the pieces obscured by the sofa
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1159">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be740a0" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be740a0">
-    <command xml:space="preserve">x glass</command>
-    <result xml:space="preserve">I couldn&apos;t see any such thing.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1159">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be74110" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be74110">
-    <command xml:space="preserve">take glass</command>
-    <result xml:space="preserve">I couldn&apos;t see any such thing.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1159">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be74180" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be74180">
-    <command xml:space="preserve">clues</command>
-    <result xml:space="preserve">Clues
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1159">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be741f0" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be741f0">
-    <command xml:space="preserve">i</command>
-    <result xml:space="preserve">I was carrying:
-  a cell phone
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1159">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be74260" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be74260">
-    <command xml:space="preserve">x shard</command>
-    <result xml:space="preserve">I couldn&apos;t see any such thing.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1159">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be742d0" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be742d0">
-    <command xml:space="preserve">x wineglass</command>
-    <result xml:space="preserve">The curves of the wineglass were jagged edges now, a heap of shattered crystal under the sofa. It must&apos;ve fallen from quite a height.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1159">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be74340" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be74340">
-    <command xml:space="preserve">look</command>
-    <result xml:space="preserve">Greatroom
-The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
-
-A large set of sofas were arranged around a huge rug. A dark stain was conspicuous against the pattern of the fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
-
-A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;God Rest Ye Merry, Gentlemen&quot; warbling from what sounded like an old radio.
-
-I could see a broken wineglass here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1159">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be743b0" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be743b0">
-    <command xml:space="preserve">x broken wineglass</command>
-    <result xml:space="preserve">The curves of the wineglass were jagged edges now, a heap of shattered crystal under the sofa. It must&apos;ve fallen from quite a height.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1159">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be74420" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be74420">
-    <command xml:space="preserve">clues</command>
-    <result xml:space="preserve">Clues
-
-broken wineglass
-bottle of wine
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1159">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be74490" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be74490">
-    <command xml:space="preserve"></command>
-    <result xml:space="preserve">I beg your pardon?
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1159">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be74500" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be74500">
-    <command xml:space="preserve"></command>
-    <result xml:space="preserve">I beg your pardon?
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1159">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be74570" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be74570">
-    <command xml:space="preserve">scenes</command>
-    <result xml:space="preserve">Scene &apos;Entire Game&apos; playing (for 22 mins now)
-Scene &apos;Mountain_Driving&apos; ended
-Scene &apos;Car_Escape&apos; ended
-Scene &apos;Cliff_Climbing&apos; ended
-Scene &apos;Car_Embarking&apos; ended
-Scene &apos;Riding_Scene&apos; ended
-Scene &apos;Body_Discovery&apos; playing (for 14 mins now)
-(Scene monitoring now switched on. Type &quot;scenes off&quot; to switch it off again.)
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1158">YES</temporary>
-  </item>
-  <item nodeId="node-0x7be745e0">
-    <command xml:space="preserve">x body</command>
-    <result xml:space="preserve">I could tell he didn&apos;t get out much. His skin was slightly pallid, and not just because he was dead.
-
-Val came up the stairs, freezing the second she saw the body. Her eyes narrowed, and I could tell her mind was racing, the first time I&apos;d seen anything but unflappable boredom on her face. Half of me was relieved to know that there was something in this world that could shock her. The other half was unnerved by it. She looked away and hitched the poker face back on pretty quick.
-
-Val nodded at the poor stiff and said, &quot;Meet Professor Alan Bowden, our host this weekend.&quot;
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1113">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be74650" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be74650">
-    <command xml:space="preserve">hint</command>
-    <result xml:space="preserve">Objective
-
-Clues
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1113">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be746c0" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be746c0">
-    <command xml:space="preserve">x wineglass</command>
-    <result xml:space="preserve">I couldn&apos;t see any such thing.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1113">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be74730" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be74730">
-    <command xml:space="preserve">x wine</command>
-    <result xml:space="preserve">A Bordeaux from back in 2001, uncorked and almost empty. Expensive bottle to be drinking alone.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1113">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be747a0" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be747a0">
-    <command xml:space="preserve">clues</command>
-    <result xml:space="preserve">Clues
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1113">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be74810" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be74810">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">I couldn&apos;t go that way.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1113">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be74880" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be74880">
-    <command xml:space="preserve">d</command>
-    <result xml:space="preserve">
-Greatroom
-The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
-
-A large set of sofas were arranged around a huge rug. A dark stain was conspicuous against the pattern of the fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
-
-A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I could hear &quot;God Rest Ye Merry, Gentlemen&quot; warbling from what sounded like an old radio.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1113">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be748f0" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be748f0">
-    <command xml:space="preserve">x sofa</command>
-    <result xml:space="preserve">I saw nothing special about the sofa.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1113">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be74960" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be74960">
-    <command xml:space="preserve">s shard</command>
-    <result xml:space="preserve">I only understood you as far as wanting to (go) s.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1113">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be749d0" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be749d0">
-    <command xml:space="preserve">x shard</command>
-    <result xml:space="preserve">A broken shard of glass. The ruined facets of vintage crystal reflected light like a cheap engagement ring.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1113">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be74a40" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be74a40">
-    <command xml:space="preserve">x glass</command>
-    <result xml:space="preserve">A broken shard of glass. The ruined facets of vintage crystal reflected light like a cheap engagement ring.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1113">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be74ab0" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be74ab0">
-    <command xml:space="preserve">take glass</command>
-    <result xml:space="preserve">Taken.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1113">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be74b20" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be74b20">
-    <command xml:space="preserve">clues</command>
-    <result xml:space="preserve">Clues
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1113">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be74b90" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be74b90">
-    <command xml:space="preserve">i</command>
-    <result xml:space="preserve">I was carrying:
-  a glass shard
-  a cell phone
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1113">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be74c00" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be74c00">
-    <command xml:space="preserve">x shard</command>
-    <result xml:space="preserve">A broken shard of glass. The ruined facets of vintage crystal reflected light like a cheap engagement ring.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1113">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be74c70" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be74c70">
-    <command xml:space="preserve">x wineglass</command>
-    <result xml:space="preserve">The curves of the wineglass were jagged edges now, a heap of shattered crystal under the sofa. It must&apos;ve fallen from quite a height.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1113">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be74ce0" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be74ce0">
-    <command xml:space="preserve">look</command>
-    <result xml:space="preserve">Greatroom
-The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
-
-A large set of sofas were arranged around a huge rug. A dark stain was conspicuous against the pattern of the fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
-
-A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I could hear &quot;Angels We Have Heard on High&quot; warbling from what sounded like an old radio.
-
-I could see a broken wineglass here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1113">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be74d50" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be74d50">
-    <command xml:space="preserve">x broken wineglass</command>
-    <result xml:space="preserve">The curves of the wineglass were jagged edges now, a heap of shattered crystal under the sofa. It must&apos;ve fallen from quite a height.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1113">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be74dc0" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be74dc0">
-    <command xml:space="preserve">clues</command>
-    <result xml:space="preserve">Clues
-
-broken wineglassbottle of wine
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1112">YES</temporary>
   </item>
   <item nodeId="node-0x7be74e30">
     <command xml:space="preserve">hint</command>

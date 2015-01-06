@@ -27,7 +27,7 @@ When play begins:
 
 A clue is a kind of thing.
 		
-Section 1 - Game Scene List
+Chapter 1 - Game Scene List
 
 Mountain_Driving is a scene. Mountain_Driving begins when play begins. Mountain_Driving ends when Car_Escape begins.
 Car_Escape is a scene. Car_Escape begins when Upturned Car is visited. Car_Escape ends when Bottom of Cliff is visited.
@@ -42,7 +42,7 @@ First_Sleep is a scene. First_Sleep begins when First_Investigation ends.
 
 Cliff_Gameover is a scene. Cliff_Gameover begins when the player is in the Precipice for the first time.
 
-Section 2 - Scene Mountain_Driving
+Chapter 2 - Scene Mountain_Driving
 
 Introcar is a region.
 
@@ -89,7 +89,7 @@ Instead of going south when the player is in the Hairpin_Turn:
 Carry out going down when the player is in the Hairpin_Turn:
 	Say "It's too late to stop, so I don't even bother. Instead, I press my head and back against the seat and put my arms in front of my face.[paragraph break]The back end of the car lost traction and swung out wide, trying vainly to follow the front, just like one of those car commercials. Unfortunately, I was not a professional driver, nor was this a closed course, and the right side of the car went over the edge of the cliff, momentum then taking the rest of the car with it. In shock, my brain couldn't manage to tell my body to do more than grip the wheel uselessly as the car tumbled down the steep incline. I lost count of the rolls after three. The roof hit a tree, and I jerked upward against the seat belt. Snow from the branches fell into a pile onto the passenger window from the impact. I heard a thud, snuffing out the brief glimpse of moonlight.[paragraph break]";
 	wait for any key;
-	Continue the action.
+	now the player is in the Upturned Car.
 
 After reading a command:
 	If the player's command matches "brake" or the player's command matches "stop":
@@ -99,13 +99,13 @@ After reading a command:
 			now the player is in the Upturned Car;
 			stop the action.
 	
-Section 3 - Scene Car_Escape
+Chapter 3 - Scene Car_Escape
 
 A room is either strapped or unstrapped. A room is usually unstrapped.
 When the Car_Escape begins:
 	Now the cell phone is broken.
 	
-Upturned Car is a strapped room. Upturned Car is below the Hairpin_Turn. The description is "I wasn't sure how long I'd been out. Taking stock of my situation, I was surprised to find myself more or less unhurt, save for a dull ache in my left wrist where I'd tried to brace against the door. I took a few deep breaths, and tried to gather myself-- I was still a little mentally a little shocked and unfocused.[paragraph break]The car was presently lying at the bottom of a cliff on its side. Above me, I could see moonlight, dimly mottled by the snow on the passenger side windows. The windshield in front of me showed nothing but evergreen forest, extending into the darkness.[if Upturned Car is strapped][paragraph break]I was still strapped in, the seat belt made sure I stayed put. At least one thing in this car still knew how to do its job right.[end if][if Upturned Car is unstrapped][paragraph break]I crouched at the bottom of the car on the driver door, trying to figure the best way out.[end if]".
+Upturned Car is a strapped room.[ Upturned Car is below the Hairpin_Turn.] The description is "I wasn't sure how long I'd been out. Taking stock of my situation, I was surprised to find myself more or less unhurt, save for a dull ache in my left wrist where I'd tried to brace against the door. I took a few deep breaths, and tried to gather myself-- I was still a little mentally a little shocked and unfocused.[paragraph break]The car was presently lying at the bottom of a cliff on its side. Above me, I could see moonlight, dimly mottled by the snow on the passenger side windows. The windshield in front of me showed nothing but evergreen forest, extending into the darkness.[if Upturned Car is strapped][paragraph break]I was still strapped in, the seat belt made sure I stayed put. At least one thing in this car still knew how to do its job right.[end if][if Upturned Car is unstrapped][paragraph break]I crouched at the bottom of the car on the driver door, trying to figure the best way out.[end if]".
 [The chest belt had dug into my neck pretty hard, but it hadn't left a bruise.]
 The driver door is scenery in the Upturned Car.
 Instead of kicking the driver door:
@@ -271,7 +271,7 @@ To decide whether the fire is lit:
 	If the scene is Body_Discovery, yes;
 	If the scene is First_Investigation, yes;
 	no.
-The stain is scenery in the greatroom. The stain is a clue. The description is "An oblong dark red spot about the size of a pear stood out from the beige couch. From the color, it looked like wine. As I was looking at it, I realized something on the floor was reflecting firelight back at me.".;
+The stain is scenery in the greatroom. The stain is a clue. The printed name is "stain on Greatroom sofa". The description is "An oblong dark red spot about the size of a pear stood out from the beige couch. From the color, it looked like wine. As I was looking at it, I realized something on the floor was reflecting firelight back at me.".;
 
 The sofa is scenery in the greatroom. Understand "couch" as sofa.
 
@@ -283,18 +283,18 @@ After examining the stain for the first time:
 
 After examining the glass shard for the first time:
 	Remove the glass shard from play;
-	Now the shattered wineglass is in the greatroom.	
+	Now the shattered glass is in the greatroom.	
 
-The glass shard is a thing. The glass shard is fixed in place. The description is "A broken shard of glass.[if the shattered wineglass is examined] It came from a broken wineglass in the greatroom.[end if] The ruined facets of vintage crystal reflected light like a cheap engagement ring.[paragraph break]I crouched down for a closer look and realized it had come from a shattered wineglass,  the pieces obscured by the sofa".
+The glass shard is a thing. The glass shard is fixed in place. The description is "A broken shard of glass.[if the shattered glass is examined] It came from a broken wineglass in the greatroom.[end if] The ruined facets of vintage crystal reflected light like a cheap engagement ring.[paragraph break]I crouched down for a closer look and realized it had come from a shattered wineglass,  the pieces obscured by the sofa".
 Instead of taking the glass shard:
 	try examining the glass shard.
 
-The shattered wineglass is a clue. The printed name is "broken wineglass". Understand "broken wineglass" as shattered wineglass. The description is "The curves of the wineglass were jagged edges now, a heap of shattered crystal under the sofa. It must've fallen from quite a height.".
-After taking the shattered wineglass:
+The shattered glass is a clue. The printed name is "broken wineglass". Understand "broken wineglass" as shattered glass. The description is "The curves of the wineglass were jagged edges now, a heap of shattered crystal under the sofa. It must've fallen from quite a height.".
+After taking the shattered glass:
 	say "I had enough of a mess on my hands without taking this one with me, but kept it anyway. It told an interesting story.";
 	stop the action.
 
-Reading_Nook is a room. Reading_Nook is above Greatroom. The printed name is "Reading Nook". The description is "I climbed the stairs to the reading nook. Shelves lined the walls of the small room, and a couple of books had been knocked off them onto the floor. A pair of wingback armchairs faced each other with a coffee table in between.[if the scene is body_discovery][paragraph break]A man sat in one, slightly paunchy and slightly grey, his eyes and mouth wide open. His glasses were askew. He was wearing a navy blue cardigan, stained on the front with a dark, almost black liquid. What looked like a small knife was sticking out of his neck, plunged in so far that only the handle was visible.[end if]".
+Reading_Nook is a room. Reading_Nook is above Greatroom. The printed name is "Reading Nook". The description is "I climbed the stairs to the reading nook. Shelves lined the walls of the small room, and a couple of books had been knocked off them onto the floor. A pair of wingback armchairs faced each other with a coffee table in between. A small pool of red liquid lay underneath the table.[if the scene is body_discovery][paragraph break]A man sat in one, slightly paunchy and slightly grey, his eyes and mouth wide open. His glasses were askew. He was wearing a navy blue cardigan, stained all over the front with a dark, almost black liquid. What looked like a small knife was sticking out of his neck, plunged in so far that only the handle was visible.[end if]".
 The body is scenery in the reading_nook. Understand "corpse / man" as body. The description is "He looked like he was fifty, but something about his well-preserved look told me that he was probably sixty. It wasn't that he was in good shape-- I doubted he'd seen much real exercise since he was in high school, and maybe not even then. He struck me as a debate team sort of guy.  I could tell he didn't get out much. His fingers were broad, but smooth. His hands had no calluses and no rings, but he wore a Rolex watch. It wasn't fake, and had cost probably three times what my car was worth before I'd driven it off a cliff a few hours ago."[TODO: Master Bedroom closet, one pair of boots, unused]
 Instead of taking body:
 	say "I didn't want to move him just yet.";
@@ -311,6 +311,8 @@ Instead of taking books:
 [TODO: Remove body once scene ends]
 
 The radio is a device in the reading_nook. The radio is switched on. The description is "It was vintage, maybe 1920 or 1930 if I had to guess, though the polished dark wood didn't look like it'd aged a day.".
+
+the pool of wine is a clue in the reading_nook. It is scenery. The description is "A small pool of red wine had fallen on the rug underneath the table, bleeding out onto the wood floor."
 
 Instead of switching on the radio:
 	say "I wasn't really in the mood for more carols.".
@@ -334,13 +336,14 @@ Description
 "Hark, The Herald Angels Sing"
 "We Three Kings"
 
-a bottle of wine is in the Reading_Nook. The description is "A Bordeaux from back in 2001, uncorked and almost empty. Expensive bottle to be drinking alone."
+a bottle of wine is in the Reading_Nook. It is a clue. The description is "A Bordeaux from back in 2001, uncorked and almost empty. Expensive bottle to be drinking alone."
+
+a wineglass is in the Reading_Nook. It is a clue. The description is "A crystal wineglass, empty but for a few drops of red wine at the bottom.".
 
 When Body_Discovery ends:
 	Now Val_House is in the Reading_Nook;
 	say "Val came up the stairs, freezing the second she saw the body. Her eyes narrowed, and I could tell her mind was racing, the first time I'd seen anything but placid boredom on her face. Half of me was relieved to know that there was something in this world that could perturb her. The other half was unnerved by it. She looked away and hitched the poker face back on pretty quick.[paragraph break]Val nodded at the poor stiff and said, [quotation mark]Meet Professor Alan Bowden, our host this weekend.[quotation mark][line break]";
-	[end the story saying "THE END - VERSION 1".]
-	[TODO: This is just for testing the first act REMOVE ME]
+	wait for any key;
 
 Section PreArrival
 
@@ -356,6 +359,7 @@ Section 9 - Scene Guest_Arrival
 
 When Guest_Arrival begins:
 	say "[if the player is not in the Foyer]I heard the front door open, and the sound of voices from the foyer. It closed a minute later.[end if][if the player is in the Foyer]The front door opened, and three men filed in, a lanky one in designer jeans holding the door for the other two. He closed it behind them, and they stood there looking around and putting snow on the rug, as though they expected a butler to come and announce them.[end if][paragraph break][if the player is in the Reading_Nook]Val and I glanced at each other across the dead man, and she left back down the stairs.[end if][if the player is in the Greatroom]Val came down the stairs, and crossed the room toward the sound of the noise.[end if]";
+	wait for any key;
 	now Jan_Arrival is in the Foyer;
 	now Scott_Arrival is in the Foyer;
 	now Nathan_Arrival is in the Foyer;
@@ -364,7 +368,7 @@ When Guest_Arrival begins:
 
 Jan_Arrival is a man. The printed name is "Jan". The description is "Jan Svennson was a broad-shouldered man with pale blue eyes. He was casually brushing snow off a European performance fleece sweater. Either he liked ice climbing, or he wanted people to think he did. He had the handshake of a salesman and the grin of a frat boy.".
 Scott_Arrival is a man. The printed name is "Scott". The description is "Scott Gage, on the other hand, was tall and lanky, and didn't seem at all suited to the cold. He wore a pair of Japanese selvedge jeans with the cuffs turned up to make sure everyone knew it. I'd have guessed he'd picked them up somewhere in SoHo if it weren't for the sweater he was wearing, useless against real cold, as all Californian sweaters are.".
-Nathan_Arrival is a man. The printed name is "Nathan". The description is "The sideswept brown locks  and pencil mustache were meant to look youthful and sporty, like he'd just stopped playing cricket for teatime. The lines on the face and brow made him look more Vincent Price than Errol Flynn, though. I could tell by the way he stood that he didn't have a care in the world, or at least I wasn't one of them. His half-lidded stare gave him an air of casual arrogance, like he was perpetually waiting for the valet to bring his car around.".
+Nathan_Arrival is a man. The printed name is "Nathan". The description is "The sideswept brown locks and pencil mustache were meant to look youthful and sporty, like he'd just stopped playing cricket for teatime. The lines on the face and brow made him look more Vincent Price than Errol Flynn, though. I could tell by the way he stood that he didn't have a care in the world, or at least I wasn't one of them. His half-lidded stare gave him an air of casual arrogance, like he was perpetually waiting for the valet to bring his car around.".
 
 Instead of saying hello to Jan_Arrival:
 	say "He didn't seem to be in a talking mood. He kept tapping his foot and looking at the door like he had somewhere to be, even though we both knew he wasn't leaving soon. None of us were.";
@@ -391,18 +395,14 @@ To decide whether first investigation starts:
 		decide yes;
 	decide no.
 
-[zippo lighter clue, requires cigarettes to use]	
-
 Section 10 - Scene First_Investigation
 
 When First_Investigation begins:
 	say "Val waited a minute for the conversations the three were having to die down.";
 	say "(Press a key)";
 	wait for any key;
-	say "She folded her arms across her chest and took a deep breath quiet enough that only I heard it.[paragraph break]"
-
-[TODO: When First_Investigation begins:
-	Now Scott_Investigation is in the ]
+	[TODO: clear the screen]
+	say "She folded her arms across her chest and took a deep breath quiet enough that only I heard it.[paragraph break][quotation mark]Gentlemen, we have a problem. Alan's dead. We found him upstairs, stabbed.[quotation mark][paragraph break]A stunned silence followed. When it was clear no one was going to break it, she went on. [quotation mark]I'm going to call it in to the New York Magistrate's and find out who isn't on vacation that they can send over.[quotation mark] She lifted a hand, exposing her pale wrist enough to read the face of her watch. [quotation mark]It's going to be at least six hours before they can send someone, and they'll have to make it through what's left of the winter storm. Until we can figure out exactly what happened and who's responsible, I suggest we all stay in our rooms. My associate here has some experience with police investigation, he can do the basics until the officials show up.[quotation mark][paragraph break]Nathaniel seemed to bristle at this. [quotation mark]Hang on a minute, wait in our rooms? Am I to take it you're presuming us suspects? How do I know you and your friend didn't just kill Alan?[quotation mark][paragraph break]Val shrugged and pointed at me.[quotation mark]It happens, my friend here is the only one of us with a solid alibi, unless I'm mistaken.[quotation mark][paragraph break]The lack of a response indicated that she wasn't, which bothered me a little. The three picked up their bags and trundled down the hall, varying degrees of insulted, Jan called back in a raised voice. [quotation mark]You know there's another possibility you haven't considered; someone out there picked off Alan, and now that we're all here, the hunt is really on.[quotation mark][paragraph break]He said it with false bravado, and I shouldn't have let the idea take root in my mind, but it did."
 
 Scott_Investigation is a man. The description is "He had an unlit cigarette between his lips. They all seemed to smoke. His fingers fumbled with a brushed metal lighter and didn't seem to be making much progress, but he was giving it the old college try."
 Jan_Investigation is a man.
@@ -413,6 +413,8 @@ Section 11 - Main House
 Hallway_Downstairs is a room. Hallway_Downstairs is east of the Greatroom. The printed name is "Downstairs Hallway".
 
 Hallway_Upstairs is above the Hallway_Downstairs. The printed name is "Upstairs Hallway".
+
+Kitchen is a room. Kitchen is east of the Hallway_Downstairs. The description is "The kitchen was probably the largest I've seen in my life. Wooden cabinets and handsome tile in earth tones went from wall to wall. The quaint country look was somewhat ruined by the collection of modern stainless steel kitchen appliances. They were brand new and it looked like not one of them had been used.".
 
 Wine_Cellar is a room. Wine_Cellar is below the Hallway_Downstairs. The printed name is "Wine Cellar". The description is "The second I walked into the dark wine cellar, recessed lights in the ceiling turned on, probably activated by a motion sensor.
 [paragraph break]
@@ -462,7 +464,7 @@ Val_Sleep is in the PC_Bedroom. The printed name is "Val".The description is "[i
 the bottle of bourbon is in the PC_Bedroom. The description is "A bottle of Four Roses small batch. One of the better ways to pass the time, if I had to choose. It was still half full, if I had to be an optimist about something." ;
 
 carry out drinking the bottle of bourbon for the first time:
-	say "I poured out a measure into one of the glasses on the chest of drawers and drank it slowly, letting it linger on my tongue.[paragraph break]I thought about the idea that someone was just outside the window, peering in, waiting . I thought about the three men I'd just met. I thought about the man I'd seen in the chair with his eyes wide open, who didn't seem to mind that I was drinking his bourbon, since he didn't mind much of anything anymore.";
+	say "I poured out a measure into one of the glasses on the chest of drawers and drank it slowly, letting it linger on my tongue.[paragraph break]I thought about the idea that someone was just outside the window, peering in, waiting the way a hunter sits in a blind, waiting for ducks. I thought about the three men I'd just met, and how I liked none of them. I thought about the man I'd seen in the chair with his eyes wide open, who didn't seem to mind that I was drinking his bourbon, since he didn't mind much of anything anymore.";
 carry out drinking the bottle of bourbon for the second time:
 	say "I went back to the bottle and poured again, more generous this time. I listened to the sound of something between snow and frozen rain pattering against the window. I listened to Val's steady breathing. She was either asleep, or thinking just as hard as I was. I stared at her back a long time, trying to decide if I wanted to talk to her.";
 [TODO: You can drink to think and pass the time in lieu of sleeping]
@@ -499,14 +501,35 @@ what time sunrise is a repeatable questioning quip.
 		it is off-limits.
 		it is available.]
 
-Section 17 - Conversation First_Investigation
+Section 17 - Conversations First_Investigation
 
-who nathan is a repeatable questioning quip.
-	The printed name is "about Nathan". The true-name is "who is Nathan".
-	The comment is "[quotation mark]This Nathan Wyndham, is he old money?[quotation mark] I asked."
+who alan is a repeatable questioning quip.
+	The printed name is "about Alan".
+	The comment is "[quotation mark]How well did you know Alan?[quotation mark]".
+	The reply is "[quotation mark]I knew him for probably ten years, we were only close for a handful of those. He wasn't perfect, but I knew him well enough that I feel like he deserved better than he got.[quotation mark]".
+	It quip-supplies Val_House.
+	The proper scene is First_Investigation.
+
+about murder is a repeatable questioning quip.
+	The printed name is "about the murder".[ The true-name is "what murder".]
+	The comment is "Val leaned in close until her face was inches from mine, and lowered her voice, even though no one was around. [quotation mark]Listen, kid. Here's how it's going down. We have a few hours before what passes for the law for our kind shows up stomping their flat feet around. They don't much care if the wrong one of us takes the rap, or if no one does. Alan's nobody to the Circle, I doubt they'd care if this case went stone cold. But he used to be a friend of mine, and this is just something I want to do for him.[quotation mark]."
+	The reply is "I didnt say anything.".
+	It quip-supplies Val_House.
+	The proper scene is First_Investigation.
+
+who nathaniel is a repeatable questioning quip.
+	The printed name is "about Nathaniel". The true-name is "about Nathaniel".
+	The comment is "[quotation mark]This Nathaniel Wyndham, is he old money?[quotation mark] I asked."
 	The reply is "[quotation mark]I guess. He made a sizeable fortune selling boots to the Allies during World War I, a real war profiteer. He used it to buy that ridiculous title, a couple of country estates, and even restored an old manor house. But a little time running with the Circle crowd will tell you that [quotation mark]old money[quotation mark] is a relative term.[quotation mark]".
 	It quip-supplies Val_House.
-	The proper scene of who nathan is First_Investigation.
+	The proper scene of who nathaniel is First_Investigation.
+	
+what was in it for me is a repeatable questioning quip.
+	The printed name is "what was in it for me". The true-name is "what was in it for me".
+	The comment is "[quotation mark]Seems like a pretty long way to stick my neck out for you. What's in it for me, exactly?[quotation mark]".
+	The reply is "She looked at me sharply. I could tell it got a lot of use, it was just as practiced as everything else about her. Here was a woman who wasn't afraid to throw her weight around, and made it bad practice to make her do it.[paragraph break][quotation mark]I'm your first client, and I know a lot of people, so how about you make this one on the house? You owe me, remember?[quotation mark][paragraph break]She had me there. I didn't know if this was the kind of thing I could pay back, but I didn't like owing that kind of debt.".
+	It quip-supplies Val_House.
+	The proper scene is First_Investigation.
 
 Section 18 - Command Overrides
 
@@ -587,25 +610,31 @@ Carry out asking for clues:
 	repeat through the Table of NotAloneClues:
 		if clue is examined:
 			say "[clue entry][line break]";
-	say "[paragraph break]";
+	say "[line break]";
 	repeat through the Table of StruggleClues:
+		if clue is examined:
+			say "[clue entry][line break]";
+	say "[line break]";
+	repeat through the Table of CrimeofPassionClues:
 		if clue is examined:
 			say "[clue entry][line break]";
 	[TODO: paragraph break between tables]
 
 Table of NotAloneClues
 clue
-the shattered wineglass
-the bottle of wine
+the shattered glass
+bottle of wine
 
 Table of StruggleClues
 clue
 the stain
+pool of wine
+wineglass
 
-Table of PremeditatedClues
+Table of CrimeofPassionClues
 clue
-the knife
-the lock
+knife
+lock
 
 Understand the command "hint" as something new. Understand "hint" as asking for a hint. Asking for a hint is an action out of world. Instead of thinking, try asking for a hint.
 Carry out asking for a hint:
@@ -627,21 +656,20 @@ The player is carrying a cell phone.
 Blood_status is a truth state that varies. Blood_status is usually false.
 
 [TODO: Make the cell phone break when the player enters the Bottom of Cliff by whatever method]
-[TODO: I felt like the sun could come up any minute, but Val kept driving, seemingly unconcerned.]
 	
 Section 22 - Tests
 
-Test me with "drive/drive/brake/look/unbuckle seat belt/kick windshield/any key/up/get in/talk about/ask about chalet/ask about Mercedes/ask about sunrise"
-
-Test firstconvo with "drive/drive/brake/look/unbuckle seat belt/kick windshield/any key/up/get in/talk about"
+Test firstconvo with "drive/drive/brake/look/unbuckle seat belt/kick windshield/any key/up/get in"
 
 Test sunrise_lose with "drive/drive/brake/look/unbuckle seat belt/kick windshield/n/n/n"
 
-Test discover with "drive/drive/brake/look/unbuckle seat belt/kick windshield/any key/up/get in/talk to val/ask about sunrise/ask about house/ask about car/wait"
+Test discover with "test firstconvo/talk to val/ask about sunrise/ask about house/ask about car/wait"
 
-Test body with "drive/drive/brake/look/unbuckle seat belt/kick windshield/any key/up/get in/talk to val/ask about sunrise/ask about house/ask about car/wait/e/e/e/u"
+Test body with "test discover/e/e/e/u"
 
-Test arrival with "drive/drive/brake/look/unbuckle seat belt/kick windshield/any key/up/get in/talk to val/ask about sunrise/ask about house/ask about car/wait/e/e/e/u/x body/d/w"
+Test arrival with "test body/x body/x body/d/e/w/e/w/e/w/e/w/e/w/w/w/talk to val"
+
+Test valinvest with "test arrival/ask about Alan/ask about murder/ask about nathaniel/ask what was in it for me";
 
 [They sent a constable, low level]
 [He was putting on a good show, but I could tell he didn't seem to have any interest in finding out who did it. That, or some brass had told him not to.]

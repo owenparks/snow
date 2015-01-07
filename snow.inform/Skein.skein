@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Skein rootNode="node-0x7be7d230" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x7beb26f0" />
+  <activeNode nodeId="node-0x7be7d230" />
   <item nodeId="node-0x7be7d230">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
@@ -25,1206 +25,16 @@ Not six hours earlier, I&apos;d turned in my badge and my gun and walked out, mo
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="53">NO</temporary>
+    <temporary score="110">NO</temporary>
     <children>
+      <child nodeId="node-0x7bf80ba0" />
+      <child nodeId="node-0x7bf80b30" />
+      <child nodeId="node-0x7e170570" />
+      <child nodeId="node-0x7bf80890" />
+      <child nodeId="node-0x7a1ef010" />
       <child nodeId="node-0x7bf7d560" />
       <child nodeId="node-0x7be7d2a0" />
-      <child nodeId="node-0x7bf80890" />
-      <child nodeId="node-0x7bf80b30" />
-      <child nodeId="node-0x7a1ef010" />
-      <child nodeId="node-0x7bf80ba0" />
     </children>
-  </item>
-  <item nodeId="node-0x7bf80ba0">
-    <command xml:space="preserve">hint</command>
-    <result xml:space="preserve">That noun did not make sense in this context.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1074">YES</temporary>
-  </item>
-  <item nodeId="node-0x7a1ef010">
-    <command xml:space="preserve">test</command>
-    <result xml:space="preserve">&gt;--&gt; The following tests are available:
-&apos;test firstconvo&apos;
-&apos;test sunrise_lose&apos;
-&apos;test discover&apos;
-&apos;test body&apos;
-&apos;test arrival&apos;
-&apos;test valinvest&apos;
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="53">YES</temporary>
-    <children>
-      <child nodeId="node-0x7a4f76e0" />
-      <child nodeId="node-0x78e0fc00" />
-    </children>
-  </item>
-  <item nodeId="node-0x78e0fc00">
-    <command xml:space="preserve">test valinvest</command>
-    <result xml:space="preserve">(Testing.)
-
-&gt;[1] test arrival
-(Testing.)
-
-&gt;[2] test body
-(Testing.)
-
-&gt;[3] test discover
-(Testing.)
-
-&gt;[4] test firstconvo
-(Testing.)
-
-&gt;[5] drive
-
-Mountain Pass
-I had the radio on tuned to some news station-- truth be told, I already missed the chatter of the dispatch as I was driving. The traffic report had little bearing on my current locale, but the weather gave me some concern: snowstorm coming up off the Great Lakes, apparently. Spending the weekend with a small crowd I barely knew appealed very little to me. Being cooped up with them the entire time due to weather seemed like a recipe for an epidemic of cabin fever.
-
-&gt;[6] drive
-
-Hairpin Turn
-If I&apos;d finished that last thought a few seconds earlier, I might&apos;ve noticed the caution sign for the sharp turn, barely visible through the snow. The car was going too fast, and the guardrail came out of nowhere.
-
-&gt;[7] brake
-I hit the brakes, but the car kept straight for the guardrail, slamming through, and going over.
-
-The back end of the car lost traction and swung out wide, trying vainly to follow the front, just like one of those car commercials. Unfortunately, I was not a professional driver, nor was this a closed course, and the right side of the car went over the edge of the cliff, momentum then taking the rest of the car with it. In shock, my brain couldn&apos;t manage to tell my body to do more than grip the wheel uselessly as the car tumbled down the steep incline. I lost count of the rolls after three. The roof hit a tree, and I was jerked upward against the seat belt. Snow from the branches fell into a pile onto the passenger window from the impact. I heard a thud, snuffing out the brief glimpse of moonlight.
-
-Upturned Car
-I wasn&apos;t sure how long I&apos;d been out. Taking stock of my situation, I was surprised to find myself more or less unhurt, save for a dull ache in my left wrist where I&apos;d tried to brace against the door. I took a few deep breaths, and tried to gather myself-- I was still a little mentally a little shocked and unfocused.
-
-The car was presently lying at the bottom of a cliff on its side. Above me, I could see moonlight, dimly mottled by the snow on the passenger side windows. The windshield in front of me showed nothing but evergreen forest, extending into the darkness.
-
-I was still strapped in, the seat belt made sure I stayed put. At least one thing in this car still knew how to do its job right.
-
-&gt;[8] look
-Upturned Car
-I wasn&apos;t sure how long I&apos;d been out. Taking stock of my situation, I was surprised to find myself more or less unhurt, save for a dull ache in my left wrist where I&apos;d tried to brace against the door. I took a few deep breaths, and tried to gather myself-- I was still a little mentally a little shocked and unfocused.
-
-The car was presently lying at the bottom of a cliff on its side. Above me, I could see moonlight, dimly mottled by the snow on the passenger side windows. The windshield in front of me showed nothing but evergreen forest, extending into the darkness.
-
-I was still strapped in, the seat belt made sure I stayed put. At least one thing in this car still knew how to do its job right.
-
-&gt;[9] unbuckle seat belt
-I wrestled with the jammed seat belt for a moment, then managed to undo it, falling a few inches down against the driver door once the chest belt was free.
-
-&gt;[10] kick windshield
-Bracing my back against the sideways seat, I gave the windshield a couple of sharp kicks. I felt the seal start to give, and then it dislodged entirely from the frame, making an exit. It fell out onto the snow with a muffled crunch, and the bitter wind started to blow into the old car. I grabbed my bag and stepped out into the forest.
-
-Bottom of Cliff
-I stood on a  ridge densely packed with trees some ways below the highway. My overturned car sat a few feet away. The ridge extended as far as I could see to the north, going nowhere in particular. To the west I saw the steep incline the car had rolled down, and the path it&apos;d cut through the snow and brush.
-
-I was miles from nowhere. It had stopped snowing for the moment. The night sky was starting to lighten, I figured I had an hour before sunrise.
-
-Fucking swell.
-
-&gt;[11] any key
-That noun did not make sense in this context.
-
-&gt;[12] up
-
-Sharp Bend
-I stood about a hundred feet from the hairpin turn where my car had gone over; I could see the tire tracks and broken guardrail to the south.
-
-The second I turned my head to look down the lane, I saw a pair of headlights approach. A black Mercedes pulled up and came to a stop just in front of me. The passenger door opened, and I saw Val looking out at me.
-
-&quot;Get in,&quot; she said.
-
-&gt;[13] get in
-I got into the Mercedes.
-
-Sedan
-The inside of the Mercedes was yards of brushed metal and hand-stitched leather. It still smelled new. Having run out of things to talk about, I had nothing to do but wait for us to arrive.
-
-Val drove the car, her eyes looking miles beyond the road, the mountains, and the horizon.
-
-&gt;[14] talk to val
-I said hello to Val.
-
-I could have asked ask about her car, ask about the chalet or ask about sunrise.
-
-&gt;[15] ask about sunrise
-&quot;Sun goes up at 7:03 today. Always check the time before you leave for the night,&quot; she said.
-
-I looked out the window, trying not to feel like a kid being lectured by his mom.
-
-I could have asked ask about her car or ask about the chalet.
-
-&gt;[16] ask about house
-Where are we going?
-
-TODO.
-
-I could have asked ask about her car.
-
-&gt;[17] ask about car
-&quot;Nice ride,&quot; I said.
-
-&quot;You should have called,&quot; Val replied, ignoring my comment.
-
-&gt;[18] wait
-Driveway
-We stood at the end of a long gravel drive, staring up at a large house with a dark red wood exterior. Steps to the east led to a porch that spanned the facade of the place, wrapping around to a deck in the back that presumably had a great view of the lake and the countryside. It was more ski lodge than cabin, and looked like it could comfortably shelter an entire biathlon team if it had to.
-
-Val got out of the car and took her bag out of the trunk.
-
-&quot;Come on, I&apos;ll introduce you to Alan,&quot; she said, walking up the drive.
-
-&gt;[19] e
-
-Front Porch
-Steps led up from the gravel driveway to the porch. Narrow unpainted wood planks extended the length of the house, along with windows that looked into rooms at the front of the house. Through them, I saw blinds, and a glint of something metallic, like a shutter.
-
-The front door stood open to the porch.
- I could tell right away that something was wrong, like the door had been damaged somehow.
-
-&gt;[20] e
-
-Foyer
-I walked into the spacious foyer, trying not to walk into the large lacquered screens in front of the door. The shiny black wood was decorated with an intricate picture in gold paint, depicting a Chinese court scene. It seemed at odds with the exterior of the house, but matched the rest of the decor; the interior was a mixture of Old World furniture and Asian influences.
-
-A layer of snow had blown in through the open doorway, and was slowly melting into a puddle on the enormous Persian rug. 
-
-The front door stood open to the porch.
- I could tell right away that something was wrong, like the door had been damaged somehow.
-
-
-&gt;[21] e
-
-Greatroom
-The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
-
-A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
-
-A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;Hark, The Herald Angels Sing&quot; warbling from what sounded like an old radio.
-
-&gt;[22] u
-
-Reading Nook
-I climbed the stairs to the reading nook. Shelves lined the walls of the small room, and a couple of books had been knocked off them onto the floor. A pair of wingback armchairs faced each other with a coffee table in between. A small pool of red liquid lay underneath the table.
-
-A man sat in one, slightly paunchy and slightly grey, his eyes and mouth wide open. His glasses were askew. He was wearing a navy blue cardigan, stained all over the front with a dark, almost black liquid. What looked like a small knife was sticking out of his neck, plunged in so far that only the handle was visible.
-
-An antique wooden radio sat on the table, playing Christmas carols.
-
-I could also see a bottle of wine and a wineglass here.
-
-&gt;[23] x body
-He looked like he was fifty, but something about his well-preserved look told me that he was probably sixty. It wasn&apos;t that he was in good shape-- I doubted he&apos;d seen much real exercise since he was in high school, and maybe not even then. He struck me as a debate team sort of guy.  I could tell he didn&apos;t get out much. His fingers were broad, but smooth. His hands had no calluses and no rings, but he wore a Rolex watch. It wasn&apos;t fake, and had cost probably three times what my car was worth before I&apos;d driven it off a cliff a few hours ago.
-
-&gt;[24] x body
-He looked like he was fifty, but something about his well-preserved look told me that he was probably sixty. It wasn&apos;t that he was in good shape-- I doubted he&apos;d seen much real exercise since he was in high school, and maybe not even then. He struck me as a debate team sort of guy.  I could tell he didn&apos;t get out much. His fingers were broad, but smooth. His hands had no calluses and no rings, but he wore a Rolex watch. It wasn&apos;t fake, and had cost probably three times what my car was worth before I&apos;d driven it off a cliff a few hours ago.
-
-Val came up the stairs, freezing the second she saw the body. Her eyes narrowed, and I could tell her mind was racing, the first time I&apos;d seen anything but placid boredom on her face. Half of me was relieved to know that there was something in this world that could perturb her. The other half was unnerved by it. She looked away and hitched the poker face back on pretty quick.
-
-Val nodded at the poor stiff and said, &quot;Meet Professor Alan Bowden, our host this weekend.&quot;
-
-&gt;[25] d
-
-Greatroom
-The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
-
-A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
-
-A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;Hark, The Herald Angels Sing&quot; warbling from what sounded like an old radio.
-
-&gt;[26] e
-
-Downstairs Hallway
-
-&gt;[27] w
-
-Greatroom
-The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
-
-A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
-
-A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;O Come, All Ye Faithful&quot; warbling from what sounded like an old radio.
-
-&gt;[28] e
-
-Downstairs Hallway
-
-&gt;[29] w
-
-Greatroom
-The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
-
-A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
-
-A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;We Three Kings&quot; warbling from what sounded like an old radio.
-
-&gt;[30] e
-
-Downstairs Hallway
-
-&gt;[31] w
-
-Greatroom
-The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
-
-A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
-
-A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;O Come, All Ye Faithful&quot; warbling from what sounded like an old radio.
-
-&gt;[32] e
-
-Downstairs Hallway
-
-&gt;[33] w
-
-Greatroom
-The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
-
-A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
-
-A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;Hark, The Herald Angels Sing&quot; warbling from what sounded like an old radio.
-
-&gt;[34] e
-
-Downstairs Hallway
-I heard the front door open, and the sound of voices from the foyer. It closed a minute later.
-
-
-&gt;[35] w
-
-Greatroom
-The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
-
-A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
-
-A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;We Three Kings&quot; warbling from what sounded like an old radio.
-
-&gt;[36] w
-
-Foyer
-I walked into the spacious foyer, trying not to walk into the large lacquered screens in front of the door. The shiny black wood was decorated with an intricate picture in gold paint, depicting a Chinese court scene. It seemed at odds with the exterior of the house, but matched the rest of the decor; the interior was a mixture of Old World furniture and Asian influences. 
-
-Three men stood on the rug, their coats and pant cuffs damp with snow. Val made introductions all around, as if nothing was wrong. 
-
-I studied their faces carefully. If one of them knew about Alan upstairs, they weren&apos;t letting on. The three men were overdressed for vacation, as rich men often are. But somehow, they were oddly mismatched. I doubted that they came here together.
-
-
- I could tell right away that something was wrong, like the door had been damaged somehow.
-
-I could also see Nathan, Scott and Jan here.
-
-&gt;[37] w
-Val waited a minute for the conversations the three were having to die down.
-(Press a key)She folded her arms across her chest and took a deep breath quiet enough that only I heard it.
-
-&quot;Gentlemen, we have a problem. Alan&apos;s dead. We found him upstairs, stabbed.&quot;
-
-A stunned silence followed. When it was clear no one was going to break it, she went on. &quot;I&apos;m going to call it in to the New York Magistrate&apos;s and find out who isn&apos;t on vacation that they can send over.&quot; She lifted a hand, exposing her pale wrist enough to read the face of her watch. &quot;It&apos;s going to be at least six hours before they can send someone, and they&apos;ll have to make it through what&apos;s left of the winter storm. Until we can figure out exactly what happened and who&apos;s responsible, I suggest we all stay in our rooms. My associate here has some experience with police investigation, he can do the basics until the officials show up.&quot;
-
-Nathaniel seemed to bristle at this. &quot;Hang on a minute, wait in our rooms? Am I to take it you&apos;re presuming us suspects? How do I know you and your friend didn&apos;t just kill Alan?&quot;
-
-Val shrugged and pointed at me.&quot;It happens, my friend here is the only one of us with a solid alibi, unless I&apos;m mistaken.&quot;
-
-The lack of a response indicated that she wasn&apos;t, which bothered me a little. The three picked up their bags and trundled down the hall, varying degrees of insulted, Jan called back in a raised voice. &quot;You know there&apos;s another possibility you haven&apos;t considered; someone out there picked off Alan, and now that we&apos;re all here, the hunt is really on.&quot;
-
-He said it with false bravado, and I shouldn&apos;t have let the idea take root in my mind, but it did.
-
-&gt;[38] talk to val
-I said hello to Val.
-
-I could have asked ask about Alan, ask about the murder, ask about Nathaniel or ask what was in it for me.
-
-&gt;[39] ask about alan
-&quot;How well did you know Alan?&quot;
-
-&quot;I knew him for probably ten years, we were only close for a handful of those. He wasn&apos;t perfect, but I knew him well enough that I feel like he deserved better than he got.&quot;
-
-I could have asked ask about the murder, ask about Nathaniel or ask what was in it for me.
-
-&gt;[40] ask about murder
-Val leaned in close until her face was inches from mine, and lowered her voice, even though no one was around. &quot;Listen, kid. Here&apos;s how it&apos;s going down. We have a few hours before what passes for the law for our kind shows up stomping their flat feet around. They don&apos;t much care if the wrong one of us takes the rap, or if no one does. Alan&apos;s nobody to the Circle, I doubt they&apos;d care if this case went stone cold. But he used to be a friend of mine, and this is just something I want to do for him.&quot;.
-
-I didnt say anything.
-
-I could have asked ask about Nathaniel or ask what was in it for me.
-
-&gt;[41] ask about nathaniel
-&quot;This Nathaniel Wyndham, is he old money?&quot; I asked.
-
-&quot;I guess. He made a sizeable fortune selling boots to the Allies during World War I, a real war profiteer. He used it to buy that ridiculous title, a couple of country estates, and even restored an old manor house. But a little time running with the Circle crowd will tell you that &quot;old money&quot; is a relative term.&quot;
-
-I could have asked ask what was in it for me.
-
-&gt;[42] ask what was in it for me
-&quot;Seems like a pretty long way to stick my neck out for you. What&apos;s in it for me, exactly?&quot;
-
-She looked at me sharply. I could tell it got a lot of use, it was just as practiced as everything else about her. Here was a woman who wasn&apos;t afraid to throw her weight around, and made it bad practice to make her do it.
-
-&quot;I&apos;m your first client, and I know a lot of people, so how about you make this one on the house? You owe me, remember?&quot;
-
-She had me there. I didn&apos;t know if this was the kind of thing I could pay back, but I didn&apos;t like owing that kind of debt.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="53">YES</temporary>
-    <children>
-      <child nodeId="node-0x78e13b30" />
-    </children>
-  </item>
-  <item nodeId="node-0x78e13b30">
-    <command xml:space="preserve"> look</command>
-    <result xml:space="preserve">Foyer
-I walked into the spacious foyer, trying not to walk into the large lacquered screens in front of the door. The shiny black wood was decorated with an intricate picture in gold paint, depicting a Chinese court scene. It seemed at odds with the exterior of the house, but matched the rest of the decor; the interior was a mixture of Old World furniture and Asian influences. 
-
-
- I could tell right away that something was wrong, like the door had been damaged somehow.
-
-I could also see Nathan, Scott and Jan here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="53">YES</temporary>
-    <children>
-      <child nodeId="node-0x7beb26f0" />
-    </children>
-  </item>
-  <item nodeId="node-0x7beb26f0">
-    <command xml:space="preserve">scenes</command>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="52">YES</temporary>
-  </item>
-  <item nodeId="node-0x7a4f76e0">
-    <command xml:space="preserve">test arrival</command>
-    <result xml:space="preserve">(Testing.)
-
-&gt;[1] test body
-(Testing.)
-
-&gt;[2] test discover
-(Testing.)
-
-&gt;[3] test firstconvo
-(Testing.)
-
-&gt;[4] drive
-
-Mountain Pass
-I had the radio on tuned to some news station-- truth be told, I already missed the chatter of the dispatch as I was driving. The traffic report had little bearing on my current locale, but the weather gave me some concern: snowstorm coming up off the Great Lakes, apparently. Spending the weekend with a small crowd I barely knew appealed very little to me. Being cooped up with them the entire time due to weather seemed like a recipe for an epidemic of cabin fever.
-
-&gt;[5] drive
-
-Hairpin Turn
-If I&apos;d finished that last thought a few seconds earlier, I might&apos;ve noticed the caution sign for the sharp turn, barely visible through the snow. The car was going too fast, and the guardrail came out of nowhere.
-
-&gt;[6] brake
-I hit the brakes, but the car kept straight for the guardrail, slamming through, and going over.
-
-The back end of the car lost traction and swung out wide, trying vainly to follow the front, just like one of those car commercials. Unfortunately, I was not a professional driver, nor was this a closed course, and the right side of the car went over the edge of the cliff, momentum then taking the rest of the car with it. In shock, my brain couldn&apos;t manage to tell my body to do more than grip the wheel uselessly as the car tumbled down the steep incline. I lost count of the rolls after three. The roof hit a tree, and I was jerked upward against the seat belt. Snow from the branches fell into a pile onto the passenger window from the impact. I heard a thud, snuffing out the brief glimpse of moonlight.
-
-Upturned Car
-I wasn&apos;t sure how long I&apos;d been out. Taking stock of my situation, I was surprised to find myself more or less unhurt, save for a dull ache in my left wrist where I&apos;d tried to brace against the door. I took a few deep breaths, and tried to gather myself-- I was still a little mentally a little shocked and unfocused.
-
-The car was presently lying at the bottom of a cliff on its side. Above me, I could see moonlight, dimly mottled by the snow on the passenger side windows. The windshield in front of me showed nothing but evergreen forest, extending into the darkness.
-
-I was still strapped in, the seat belt made sure I stayed put. At least one thing in this car still knew how to do its job right.
-
-&gt;[7] look
-Upturned Car
-I wasn&apos;t sure how long I&apos;d been out. Taking stock of my situation, I was surprised to find myself more or less unhurt, save for a dull ache in my left wrist where I&apos;d tried to brace against the door. I took a few deep breaths, and tried to gather myself-- I was still a little mentally a little shocked and unfocused.
-
-The car was presently lying at the bottom of a cliff on its side. Above me, I could see moonlight, dimly mottled by the snow on the passenger side windows. The windshield in front of me showed nothing but evergreen forest, extending into the darkness.
-
-I was still strapped in, the seat belt made sure I stayed put. At least one thing in this car still knew how to do its job right.
-
-&gt;[8] unbuckle seat belt
-I wrestled with the jammed seat belt for a moment, then managed to undo it, falling a few inches down against the driver door once the chest belt was free.
-
-&gt;[9] kick windshield
-Bracing my back against the sideways seat, I gave the windshield a couple of sharp kicks. I felt the seal start to give, and then it dislodged entirely from the frame, making an exit. It fell out onto the snow with a muffled crunch, and the bitter wind started to blow into the old car. I grabbed my bag and stepped out into the forest.
-
-Bottom of Cliff
-I stood on a  ridge densely packed with trees some ways below the highway. My overturned car sat a few feet away. The ridge extended as far as I could see to the north, going nowhere in particular. To the west I saw the steep incline the car had rolled down, and the path it&apos;d cut through the snow and brush.
-
-I was miles from nowhere. It had stopped snowing for the moment. The night sky was starting to lighten, I figured I had an hour before sunrise.
-
-Fucking swell.
-
-&gt;[10] any key
-That noun did not make sense in this context.
-
-&gt;[11] up
-
-Sharp Bend
-I stood about a hundred feet from the hairpin turn where my car had gone over; I could see the tire tracks and broken guardrail to the south.
-
-The second I turned my head to look down the lane, I saw a pair of headlights approach. A black Mercedes pulled up and came to a stop just in front of me. The passenger door opened, and I saw Val looking out at me.
-
-&quot;Get in,&quot; she said.
-
-&gt;[12] get in
-I got into the Mercedes.
-
-Sedan
-The inside of the Mercedes was yards of brushed metal and hand-stitched leather. It still smelled new. Having run out of things to talk about, I had nothing to do but wait for us to arrive.
-
-Val drove the car, her eyes looking miles beyond the road, the mountains, and the horizon.
-
-&gt;[13] talk to val
-I said hello to Val.
-
-I could have asked ask about her car, ask about the chalet or ask about sunrise.
-
-&gt;[14] ask about sunrise
-&quot;Sun goes up at 7:03 today. Always check the time before you leave for the night,&quot; she said.
-
-I looked out the window, trying not to feel like a kid being lectured by his mom.
-
-I could have asked ask about her car or ask about the chalet.
-
-&gt;[15] ask about house
-Where are we going?
-
-TODO.
-
-I could have asked ask about her car.
-
-&gt;[16] ask about car
-&quot;Nice ride,&quot; I said.
-
-&quot;You should have called,&quot; Val replied, ignoring my comment.
-
-&gt;[17] wait
-Driveway
-We stood at the end of a long gravel drive, staring up at a large house with a dark red wood exterior. Steps to the east led to a porch that spanned the facade of the place, wrapping around to a deck in the back that presumably had a great view of the lake and the countryside. It was more ski lodge than cabin, and looked like it could comfortably shelter an entire biathlon team if it had to.
-
-Val got out of the car and took her bag out of the trunk.
-
-&quot;Come on, I&apos;ll introduce you to Alan,&quot; she said, walking up the drive.
-
-&gt;[18] e
-
-Front Porch
-Steps led up from the gravel driveway to the porch. Narrow unpainted wood planks extended the length of the house, along with windows that looked into rooms at the front of the house. Through them, I saw blinds, and a glint of something metallic, like a shutter.
-
-The front door stood open to the porch.
- I could tell right away that something was wrong, like the door had been damaged somehow.
-
-&gt;[19] e
-
-Foyer
-I walked into the spacious foyer, trying not to walk into the large lacquered screens in front of the door. The shiny black wood was decorated with an intricate picture in gold paint, depicting a Chinese court scene. It seemed at odds with the exterior of the house, but matched the rest of the decor; the interior was a mixture of Old World furniture and Asian influences.
-
-A layer of snow had blown in through the open doorway, and was slowly melting into a puddle on the enormous Persian rug. 
-
-The front door stood open to the porch.
- I could tell right away that something was wrong, like the door had been damaged somehow.
-
-
-&gt;[20] e
-
-Greatroom
-The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
-
-A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
-
-A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;Angels We Have Heard on High&quot; warbling from what sounded like an old radio.
-
-&gt;[21] u
-
-Reading Nook
-I climbed the stairs to the reading nook. Shelves lined the walls of the small room, and a couple of books had been knocked off them onto the floor. A pair of wingback armchairs faced each other with a coffee table in between. A small pool of red liquid lay underneath the table.
-
-A man sat in one, slightly paunchy and slightly grey, his eyes and mouth wide open. His glasses were askew. He was wearing a navy blue cardigan, stained all over the front with a dark, almost black liquid. What looked like a small knife was sticking out of his neck, plunged in so far that only the handle was visible.
-
-An antique wooden radio sat on the table, playing Christmas carols.
-
-I could also see a bottle of wine and a wineglass here.
-
-&gt;[22] x body
-He looked like he was fifty, but something about his well-preserved look told me that he was probably sixty. It wasn&apos;t that he was in good shape-- I doubted he&apos;d seen much real exercise since he was in high school, and maybe not even then. He struck me as a debate team sort of guy.  I could tell he didn&apos;t get out much. His fingers were broad, but smooth. His hands had no calluses and no rings, but he wore a Rolex watch. It wasn&apos;t fake, and had cost probably three times what my car was worth before I&apos;d driven it off a cliff a few hours ago.
-
-&gt;[23] x body
-He looked like he was fifty, but something about his well-preserved look told me that he was probably sixty. It wasn&apos;t that he was in good shape-- I doubted he&apos;d seen much real exercise since he was in high school, and maybe not even then. He struck me as a debate team sort of guy.  I could tell he didn&apos;t get out much. His fingers were broad, but smooth. His hands had no calluses and no rings, but he wore a Rolex watch. It wasn&apos;t fake, and had cost probably three times what my car was worth before I&apos;d driven it off a cliff a few hours ago.
-
-Val came up the stairs, freezing the second she saw the body. Her eyes narrowed, and I could tell her mind was racing, the first time I&apos;d seen anything but placid boredom on her face. Half of me was relieved to know that there was something in this world that could perturb her. The other half was unnerved by it. She looked away and hitched the poker face back on pretty quick.
-
-Val nodded at the poor stiff and said, &quot;Meet Professor Alan Bowden, our host this weekend.&quot;
-
-&gt;[24] d
-
-Greatroom
-The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
-
-A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
-
-A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;God Rest Ye Merry, Gentlemen&quot; warbling from what sounded like an old radio.
-
-&gt;[25] e
-
-Downstairs Hallway
-
-&gt;[26] w
-
-Greatroom
-The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
-
-A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
-
-A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;We Three Kings&quot; warbling from what sounded like an old radio.
-
-&gt;[27] e
-
-Downstairs Hallway
-
-&gt;[28] w
-
-Greatroom
-The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
-
-A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
-
-A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;God Rest Ye Merry, Gentlemen&quot; warbling from what sounded like an old radio.
-
-&gt;[29] e
-
-Downstairs Hallway
-
-&gt;[30] w
-
-Greatroom
-The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
-
-A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
-
-A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;Hark, The Herald Angels Sing&quot; warbling from what sounded like an old radio.
-
-&gt;[31] e
-
-Downstairs Hallway
-
-&gt;[32] w
-
-Greatroom
-The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
-
-A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
-
-A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;Hark, The Herald Angels Sing&quot; warbling from what sounded like an old radio.
-
-&gt;[33] e
-
-Downstairs Hallway
-I heard the front door open, and the sound of voices from the foyer. It closed a minute later.
-
-
-&gt;[34] w
-
-Greatroom
-The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
-
-A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
-
-A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;Hark, The Herald Angels Sing&quot; warbling from what sounded like an old radio.
-
-&gt;[35] w
-
-Foyer
-I walked into the spacious foyer, trying not to walk into the large lacquered screens in front of the door. The shiny black wood was decorated with an intricate picture in gold paint, depicting a Chinese court scene. It seemed at odds with the exterior of the house, but matched the rest of the decor; the interior was a mixture of Old World furniture and Asian influences. 
-
-Three men stood on the rug, their coats and pant cuffs damp with snow. Val made introductions all around, as if nothing was wrong. 
-
-I studied their faces carefully. If one of them knew about Alan upstairs, they weren&apos;t letting on. The three men were overdressed for vacation, as rich men often are. But somehow, they were oddly mismatched. I doubted that they came here together.
-
-
- I could tell right away that something was wrong, like the door had been damaged somehow.
-
-I could also see Nathan, Scott and Jan here.
-
-&gt;[36] w
-Val waited a minute for the conversations the three were having to die down.
-(Press a key)She folded her arms across her chest and took a deep breath quiet enough that only I heard it.
-
-&quot;Gentlemen, we have a problem. Alan&apos;s dead. We found him upstairs, stabbed.&quot;
-
-A stunned silence followed. When it was clear no one was going to break it, she went on. &quot;I&apos;m going to call it in to the New York Magistrate&apos;s and find out who isn&apos;t on vacation that they can send over.&quot; She lifted a hand, exposing her pale wrist enough to read the face of her watch. &quot;It&apos;s going to be at least six hours before they can send someone, and they&apos;ll have to make it through what&apos;s left of the winter storm. Until we can figure out exactly what happened and who&apos;s responsible, I suggest we all stay in our rooms. My associate here has some experience with police investigation, he can do the basics until the officials show up.&quot;
-
-Nathaniel seemed to bristle at this. &quot;Hang on a minute, wait in our rooms? Am I to take it you&apos;re presuming us suspects? How do I know you and your friend didn&apos;t just kill Alan?&quot;
-
-Val shrugged and pointed at me.&quot;It happens, my friend here is the only one of us with a solid alibi, unless I&apos;m mistaken.&quot;
-
-The lack of a response indicated that she wasn&apos;t, which bothered me a little. The three picked up their bags and trundled down the hall, varying degrees of insulted, Jan called back in a raised voice. &quot;You know there&apos;s another possibility you haven&apos;t considered; someone out there picked off Alan, and now that we&apos;re all here, the hunt is really on.&quot;
-
-He said it with false bravado, and I shouldn&apos;t have let the idea take root in my mind, but it did.
-
-&gt;[37] talk to val
-I said hello to Val.
-
-I could have asked ask about Alan, ask about the murder, ask about Nathaniel or ask what was in it for me.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="49">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be6cba0" />
-      <child nodeId="node-0x7a41ec30" />
-      <child nodeId="node-0x7be6f8f0" />
-      <child nodeId="node-0x7a035bd0" />
-      <child nodeId="node-0x7a411440" />
-    </children>
-  </item>
-  <item nodeId="node-0x7a411440">
-    <command xml:space="preserve">ask about</command>
-    <result xml:space="preserve">Val leaned in close until her face was inches from mine, and lowered her voice, even though no one was around. &quot;Listen, kid. Here&apos;s how it&apos;s going down. We have a few hours before what passes for the law for our kind shows up stomping their flat feet around. They don&apos;t much care if the wrong one of us takes the rap, or if no one does. Alan&apos;s nobody to the Circle, I doubt they&apos;d care if this case went stone cold. But he used to be a friend of mine, and this is just something I want to do for him.&quot;.
-
-I didnt say anything.
-
-I could have asked ask about Alan, ask about Nathaniel or ask what&apos;s in it for me.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="32">YES</temporary>
-    <children>
-      <child nodeId="node-0x78ec0d80" />
-    </children>
-  </item>
-  <item nodeId="node-0x78ec0d80">
-    <command xml:space="preserve">ask about murder</command>
-    <result xml:space="preserve">Val leaned in close until her face was inches from mine, and lowered her voice, even though no one was around. &quot;Listen, kid. Here&apos;s how it&apos;s going down. We have a few hours before what passes for the law for our kind shows up stomping their flat feet around. They don&apos;t much care if the wrong one of us takes the rap, or if no one does. Alan&apos;s nobody to the Circle, I doubt they&apos;d care if this case went stone cold. But he used to be a friend of mine, and this is just something I want to do for him.&quot;.
-
-I didnt say anything.
-
-I could have asked ask about Alan, ask about Nathaniel or ask what&apos;s in it for me.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="32">YES</temporary>
-    <children>
-      <child nodeId="node-0x7a4fa740" />
-    </children>
-  </item>
-  <item nodeId="node-0x7a4fa740">
-    <command xml:space="preserve">ask about the murder</command>
-    <result xml:space="preserve">Val leaned in close until her face was inches from mine, and lowered her voice, even though no one was around. &quot;Listen, kid. Here&apos;s how it&apos;s going down. We have a few hours before what passes for the law for our kind shows up stomping their flat feet around. They don&apos;t much care if the wrong one of us takes the rap, or if no one does. Alan&apos;s nobody to the Circle, I doubt they&apos;d care if this case went stone cold. But he used to be a friend of mine, and this is just something I want to do for him.&quot;.
-
-I didnt say anything.
-
-I could have asked ask about Alan, ask about Nathaniel or ask what&apos;s in it for me.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="32">YES</temporary>
-    <children>
-      <child nodeId="node-0x7bf69900" />
-    </children>
-  </item>
-  <item nodeId="node-0x7bf69900">
-    <command xml:space="preserve">ask who nathan is</command>
-    <result xml:space="preserve">That doesn&apos;t seem to be a topic of conversation at the moment.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="32">YES</temporary>
-    <children>
-      <child nodeId="node-0x7a027300" />
-    </children>
-  </item>
-  <item nodeId="node-0x7a027300">
-    <command xml:space="preserve">ask who nathan</command>
-    <result xml:space="preserve">&quot;This Nathaniel Wyndham, is he old money?&quot; I asked.
-
-&quot;I guess. He made a sizeable fortune selling boots to the Allies during World War I, a real war profiteer. He used it to buy that ridiculous title, a couple of country estates, and even restored an old manor house. But a little time running with the Circle crowd will tell you that &quot;old money&quot; is a relative term.&quot;
-
-I could have asked ask about Alan or ask what&apos;s in it for me.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="32">YES</temporary>
-    <children>
-      <child nodeId="node-0x7bfd23d0" />
-    </children>
-  </item>
-  <item nodeId="node-0x7bfd23d0">
-    <command xml:space="preserve">ask about nathan</command>
-    <result xml:space="preserve">&quot;This Nathaniel Wyndham, is he old money?&quot; I asked.
-
-&quot;I guess. He made a sizeable fortune selling boots to the Allies during World War I, a real war profiteer. He used it to buy that ridiculous title, a couple of country estates, and even restored an old manor house. But a little time running with the Circle crowd will tell you that &quot;old money&quot; is a relative term.&quot;
-
-I could have asked ask about Alan or ask what&apos;s in it for me.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="32">YES</temporary>
-    <children>
-      <child nodeId="node-0x7a029f30" />
-    </children>
-  </item>
-  <item nodeId="node-0x7a029f30">
-    <command xml:space="preserve">ask about nathaniel</command>
-    <result xml:space="preserve">That doesn&apos;t seem to be a topic of conversation at the moment.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="31">YES</temporary>
-  </item>
-  <item nodeId="node-0x7a035bd0">
-    <command xml:space="preserve">ask about Nathan</command>
-    <result xml:space="preserve">&quot;This Nathan Wyndham, is he old money?&quot; I asked.
-
-&quot;I guess. He made a sizeable fortune selling boots to the Allies during World War I, a real war profiteer. He used it to buy that ridiculous title, a couple of country estates, and even restored an old manor house. But a little time running with the Circle crowd will tell you that &quot;old money&quot; is a relative term.&quot;
-
-I could have asked ask about the murder, ask what&apos;s in it for me or ask about alan.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="20">YES</temporary>
-    <children>
-      <child nodeId="node-0x7a4160e0" />
-    </children>
-  </item>
-  <item nodeId="node-0x7a4160e0">
-    <command xml:space="preserve">ask about the murder</command>
-    <result xml:space="preserve">Val leaned in close until her face was inches from mine, and lowered her voice, even though no one was around. &quot;Listen, kid. Here&apos;s how it&apos;s going down. We have a few hours before what passes for the law for our kind shows up stomping their flat feet around. They don&apos;t much care if the wrong one of us takes the rap, or if no one does. Alan&apos;s nobody to the Circle, I doubt they&apos;d care if this case went stone cold. But he used to be a friend of mine, and this is just something I want to do for him.&quot;.
-
-I didnt say anything.
-
-I could have asked ask what&apos;s in it for me or ask about alan.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="20">YES</temporary>
-    <children>
-      <child nodeId="node-0x78ee9410" />
-    </children>
-  </item>
-  <item nodeId="node-0x78ee9410">
-    <command xml:space="preserve">topics</command>
-    <result xml:space="preserve">I could have asked about Nathan, about the murder, what&apos;s in it for me or about alan.
-
-I could have asked about Nathan, about the murder, what&apos;s in it for me or about alan.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="20">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be531c0" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be531c0">
-    <command xml:space="preserve">ask abuot </command>
-    <result xml:space="preserve">That doesn&apos;t seem to be a topic of conversation at the moment.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="19">YES</temporary>
-  </item>
-  <item nodeId="node-0x7be6f8f0">
-    <command xml:space="preserve">ask what was in it for me</command>
-    <result xml:space="preserve">&quot;Seems like a pretty long way to stick my neck out for you. What&apos;s in it for me, exactly?&quot;.
-
-She looked at me sharply. I could tell it got a lot of use, it was just as practiced as everything else about her. Here was a woman who wasn&apos;t afraid to throw her weight around, and made it bad practice to make her do it.&quot;I&apos;m your first client, and I know a lot of people, so how about you make this one on the house? You owe me, remember?&quot;
-
-She had me there. I didn&apos;t know if this was the kind of thing I could pay back, but I didn&apos;t like owing that kind of debt.
-
-I could have asked ask about Alan, ask about the murder or ask about Nathaniel.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="49">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be60980" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be60980">
-    <command xml:space="preserve">topics</command>
-    <result xml:space="preserve">I could have asked about Alan, about the murder, about Nathaniel or what was in it for me.
-
-I could have asked about Alan, about the murder, about Nathaniel or what was in it for me.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="49">YES</temporary>
-    <children>
-      <child nodeId="node-0x7becc900" />
-    </children>
-  </item>
-  <item nodeId="node-0x7becc900">
-    <command xml:space="preserve">ask what was in it for me</command>
-    <result xml:space="preserve">&quot;Seems like a pretty long way to stick my neck out for you. What&apos;s in it for me, exactly?&quot;.
-
-She looked at me sharply. I could tell it got a lot of use, it was just as practiced as everything else about her. Here was a woman who wasn&apos;t afraid to throw her weight around, and made it bad practice to make her do it.&quot;I&apos;m your first client, and I know a lot of people, so how about you make this one on the house? You owe me, remember?&quot;
-
-She had me there. I didn&apos;t know if this was the kind of thing I could pay back, but I didn&apos;t like owing that kind of debt.
-
-I could have asked ask about Alan, ask about the murder or ask about Nathaniel.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="48">YES</temporary>
-  </item>
-  <item nodeId="node-0x7a41ec30">
-    <command xml:space="preserve">ask what</command>
-    <result xml:space="preserve">What would I like to discuss: about the murder or what&apos;s in it for me?
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="22">YES</temporary>
-  </item>
-  <item nodeId="node-0x7be6cba0">
-    <command xml:space="preserve">ask about nathan</command>
-    <result xml:space="preserve">&quot;This Nathaniel Wyndham, is he old money?&quot; I asked.
-
-&quot;I guess. He made a sizeable fortune selling boots to the Allies during World War I, a real war profiteer. He used it to buy that ridiculous title, a couple of country estates, and even restored an old manor house. But a little time running with the Circle crowd will tell you that &quot;old money&quot; is a relative term.&quot;
-
-I could have asked ask about Alan, ask about the murder or ask what&apos;s in it for me.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="40">YES</temporary>
-    <children>
-      <child nodeId="node-0x7bfb6bc0" />
-    </children>
-  </item>
-  <item nodeId="node-0x7bfb6bc0">
-    <command xml:space="preserve">ask about nathaniel</command>
-    <result xml:space="preserve">That doesn&apos;t seem to be a topic of conversation at the moment.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="40">YES</temporary>
-    <children>
-      <child nodeId="node-0x7a00e4b0" />
-    </children>
-  </item>
-  <item nodeId="node-0x7a00e4b0">
-    <command xml:space="preserve">ask about nathaniel</command>
-    <result xml:space="preserve">That doesn&apos;t seem to be a topic of conversation at the moment.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="40">YES</temporary>
-    <children>
-      <child nodeId="node-0x7be5fe70" />
-    </children>
-  </item>
-  <item nodeId="node-0x7be5fe70">
-    <command xml:space="preserve">ask what&apos;s in it for me</command>
-    <result xml:space="preserve">That doesn&apos;t seem to be a topic of conversation at the moment.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="40">YES</temporary>
-    <children>
-      <child nodeId="node-0x78ea5110" />
-    </children>
-  </item>
-  <item nodeId="node-0x78ea5110">
-    <command xml:space="preserve">ask what</command>
-    <result xml:space="preserve">&quot;Seems like a pretty long way to stick my neck out for you. What&apos;s in it for me, exactly?&quot;.
-
-She looked at me sharply. I could tell it got a lot of use, it was just as practiced as everything else about her. Here was a woman who wasn&apos;t afraid to throw her weight around, and made it bad practice to make her do it.&quot;I&apos;m your first client, and I know a lot of people, so how about you make this one on the house? You owe me, remember?&quot;
-
-She had me there. I didn&apos;t know if this was the kind of thing I could pay back, but I didn&apos;t like owing that kind of debt.
-
-I could have asked ask about Alan or ask about the murder.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="40">YES</temporary>
-    <children>
-      <child nodeId="node-0x7bf41be0" />
-    </children>
-  </item>
-  <item nodeId="node-0x7bf41be0">
-    <command xml:space="preserve">ask what was in it for me</command>
-    <result xml:space="preserve">That doesn&apos;t seem to be a topic of conversation at the moment.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="39">YES</temporary>
-  </item>
-  <item nodeId="node-0x7bf80b30">
-    <command xml:space="preserve">test discover</command>
-    <result xml:space="preserve">(Testing.)
-
-&gt;[1] test firstconvo
-(Testing.)
-
-&gt;[2] drive
-
-Mountain Pass
-I had the radio on tuned to some news station-- truth be told, I already missed the chatter of the dispatch as I was driving. The traffic report had little bearing on my current locale, but the weather gave me some concern: snowstorm coming up off the Great Lakes, apparently. Spending the weekend with a small crowd I barely knew appealed very little to me. Being cooped up with them the entire time due to weather seemed like a recipe for an epidemic of cabin fever.
-
-&gt;[3] drive
-
-Hairpin Turn
-If I&apos;d finished that last thought a few seconds earlier, I might&apos;ve noticed the caution sign for the sharp turn, barely visible through the snow. The car was going too fast, and the guardrail came out of nowhere.
-
-&gt;[4] brake
-I hit the brakes, but the car kept straight for the guardrail, slamming through, and going over.
-
-The back end of the car lost traction and swung out wide, trying vainly to follow the front, just like one of those car commercials. Unfortunately, I was not a professional driver, nor was this a closed course, and the right side of the car went over the edge of the cliff, momentum then taking the rest of the car with it. In shock, my brain couldn&apos;t manage to tell my body to do more than grip the wheel uselessly as the car tumbled down the steep incline. I lost count of the rolls after three. The roof hit a tree, and I was jerked upward against the seat belt. Snow from the branches fell into a pile onto the passenger window from the impact. I heard a thud, snuffing out the brief glimpse of moonlight.
-
-Upturned Car
-I wasn&apos;t sure how long I&apos;d been out. Taking stock of my situation, I was surprised to find myself more or less unhurt, save for a dull ache in my left wrist where I&apos;d tried to brace against the door. I took a few deep breaths, and tried to gather myself-- I was still a little mentally a little shocked and unfocused.
-
-The car was presently lying at the bottom of a cliff on its side. Above me, I could see moonlight, dimly mottled by the snow on the passenger side windows. The windshield in front of me showed nothing but evergreen forest, extending into the darkness.
-
-I was still strapped in, the seat belt made sure I stayed put. At least one thing in this car still knew how to do its job right.
-
-&gt;[5] look
-Upturned Car
-I wasn&apos;t sure how long I&apos;d been out. Taking stock of my situation, I was surprised to find myself more or less unhurt, save for a dull ache in my left wrist where I&apos;d tried to brace against the door. I took a few deep breaths, and tried to gather myself-- I was still a little mentally a little shocked and unfocused.
-
-The car was presently lying at the bottom of a cliff on its side. Above me, I could see moonlight, dimly mottled by the snow on the passenger side windows. The windshield in front of me showed nothing but evergreen forest, extending into the darkness.
-
-I was still strapped in, the seat belt made sure I stayed put. At least one thing in this car still knew how to do its job right.
-
-&gt;[6] unbuckle seat belt
-I wrestled with the jammed seat belt for a moment, then managed to undo it, falling a few inches down against the driver door once the chest belt was free.
-
-&gt;[7] kick windshield
-Bracing my back against the sideways seat, I gave the windshield a couple of sharp kicks. I felt the seal start to give, and then it dislodged entirely from the frame, making an exit. It fell out onto the snow with a muffled crunch, and the bitter wind started to blow into the old car. I grabbed my bag and stepped out into the forest.
-
-Bottom of Cliff
-I stood on a  ridge densely packed with trees some ways below the highway. My overturned car sat a few feet away. The ridge extended as far as I could see to the north, going nowhere in particular. To the west I saw the steep incline the car had rolled down, and the path it&apos;d cut through the snow and brush.
-
-I was miles from nowhere. It had stopped snowing for the moment. The night sky was starting to lighten, I figured I had an hour before sunrise.
-
-Fucking swell.
-
-&gt;[8] any key
-That noun did not make sense in this context.
-
-&gt;[9] up
-
-Sharp Bend
-I stood about a hundred feet from the hairpin turn where my car had gone over; I could see the tire tracks and broken guardrail to the south.
-
-The second I turned my head to look down the lane, I saw a pair of headlights approach. A black Mercedes pulled up and came to a stop just in front of me. The passenger door opened, and I saw Val looking out at me.
-
-&quot;Get in,&quot; she said.
-
-&gt;[10] get in
-I got into the Mercedes.
-
-Sedan
-The inside of the Mercedes was yards of brushed metal and hand-stitched leather. It still smelled new. Having run out of things to talk about, I had nothing to do but wait for us to arrive.
-
-Val drove the car, her eyes looking miles beyond the road, the mountains, and the horizon.
-
-&gt;[11] talk to val
-I said hello to Val.
-
-I could have asked ask about her car, ask about the chalet or ask about sunrise.
-
-&gt;[12] ask about sunrise
-&quot;Sun goes up at 7:03 today. Always check the time before you leave for the night,&quot; she said.
-
-I looked out the window, trying not to feel like a kid being lectured by his mom.
-
-I could have asked ask about her car or ask about the chalet.
-
-&gt;[13] ask about house
-Where are we going?
-
-TODO.
-
-I could have asked ask about her car.
-
-&gt;[14] ask about car
-&quot;Nice ride,&quot; I said.
-
-&quot;You should have called,&quot; Val replied, ignoring my comment.
-
-&gt;[15] wait
-Driveway
-We stood at the end of a long gravel drive, staring up at a large house with a dark red wood exterior. Steps to the east led to a porch that spanned the facade of the place, wrapping around to a deck in the back that presumably had a great view of the lake and the countryside. It was more ski lodge than cabin, and looked like it could comfortably shelter an entire biathlon team if it had to.
-
-Val got out of the car and took her bag out of the trunk.
-
-&quot;Come on, I&apos;ll introduce you to Alan,&quot; she said, walking up the drive.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="204">YES</temporary>
-  </item>
-  <item nodeId="node-0x7bf80890">
-    <command xml:space="preserve">test firstconvo</command>
-    <result xml:space="preserve">(Testing.)
-
-&gt;[1] drive
-
-Mountain Pass
-I had the radio on tuned to some news station-- truth be told, I already missed the chatter of the dispatch as I was driving. The traffic report had little bearing on my current locale, but the weather gave me some concern: snowstorm coming up off the Great Lakes, apparently. Spending the weekend with a small crowd I barely knew appealed very little to me. Being cooped up with them the entire time due to weather seemed like a recipe for an epidemic of cabin fever.
-
-&gt;[2] drive
-
-Hairpin Turn
-If I&apos;d finished that last thought a few seconds earlier, I might&apos;ve noticed the caution sign for the sharp turn, barely visible through the snow. The car was going too fast, and the guardrail came out of nowhere.
-
-&gt;[3] brake
-I hit the brakes, but the car kept straight for the guardrail, slamming through, and going over.
-
-The back end of the car lost traction and swung out wide, trying vainly to follow the front, just like one of those car commercials. Unfortunately, I was not a professional driver, nor was this a closed course, and the right side of the car went over the edge of the cliff, momentum then taking the rest of the car with it. In shock, my brain couldn&apos;t manage to tell my body to do more than grip the wheel uselessly as the car tumbled down the steep incline. I lost count of the rolls after three. The roof hit a tree, and I was jerked upward against the seat belt. Snow from the branches fell into a pile onto the passenger window from the impact. I heard a thud, snuffing out the brief glimpse of moonlight.
-
-Upturned Car
-I wasn&apos;t sure how long I&apos;d been out. Taking stock of my situation, I was surprised to find myself more or less unhurt, save for a dull ache in my left wrist where I&apos;d tried to brace against the door. I took a few deep breaths, and tried to gather myself-- I was still a little mentally a little shocked and unfocused.
-
-The car was presently lying at the bottom of a cliff on its side. Above me, I could see moonlight, dimly mottled by the snow on the passenger side windows. The windshield in front of me showed nothing but evergreen forest, extending into the darkness.
-
-I was still strapped in, the seat belt made sure I stayed put. At least one thing in this car still knew how to do its job right.
-
-&gt;[4] look
-Upturned Car
-I wasn&apos;t sure how long I&apos;d been out. Taking stock of my situation, I was surprised to find myself more or less unhurt, save for a dull ache in my left wrist where I&apos;d tried to brace against the door. I took a few deep breaths, and tried to gather myself-- I was still a little mentally a little shocked and unfocused.
-
-The car was presently lying at the bottom of a cliff on its side. Above me, I could see moonlight, dimly mottled by the snow on the passenger side windows. The windshield in front of me showed nothing but evergreen forest, extending into the darkness.
-
-I was still strapped in, the seat belt made sure I stayed put. At least one thing in this car still knew how to do its job right.
-
-&gt;[5] unbuckle seat belt
-I wrestled with the jammed seat belt for a moment, then managed to undo it, falling a few inches down against the driver door once the chest belt was free.
-
-&gt;[6] kick windshield
-Bracing my back against the sideways seat, I gave the windshield a couple of sharp kicks. I felt the seal start to give, and then it dislodged entirely from the frame, making an exit. It fell out onto the snow with a muffled crunch, and the bitter wind started to blow into the old car. I grabbed my bag and stepped out into the forest.
-
-Bottom of Cliff
-I stood on a  ridge densely packed with trees some ways below the highway. My overturned car sat a few feet away. The ridge extended as far as I could see to the north, going nowhere in particular. To the west I saw the steep incline the car had rolled down, and the path it&apos;d cut through the snow and brush.
-
-I was miles from nowhere. It had stopped snowing for the moment. The night sky was starting to lighten, I figured I had an hour before sunrise.
-
-Fucking swell.
-
-&gt;[7] any key
-That noun did not make sense in this context.
-
-&gt;[8] up
-
-Sharp Bend
-I stood about a hundred feet from the hairpin turn where my car had gone over; I could see the tire tracks and broken guardrail to the south.
-
-The second I turned my head to look down the lane, I saw a pair of headlights approach. A black Mercedes pulled up and came to a stop just in front of me. The passenger door opened, and I saw Val looking out at me.
-
-&quot;Get in,&quot; she said.
-
-&gt;[9] get in
-I got into the Mercedes.
-
-Sedan
-The inside of the Mercedes was yards of brushed metal and hand-stitched leather. It still smelled new. Having run out of things to talk about, I had nothing to do but wait for us to arrive.
-
-Val drove the car, her eyes looking miles beyond the road, the mountains, and the horizon.
-
-&gt;[10] talk about
-(the cell phone)
-(addressing Val)
-There was no reply.
-
-I could have asked ask about her car, ask about the chalet or ask about sunrise.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="204">YES</temporary>
-    <children>
-      <child nodeId="node-0x7bf80900" />
-    </children>
-  </item>
-  <item nodeId="node-0x7bf80900">
-    <command xml:space="preserve">talk to val</command>
-    <result xml:space="preserve">I was already talking to Val.
-
-I could have asked ask about her car, ask about the chalet or ask about sunrise.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="204">YES</temporary>
-    <children>
-      <child nodeId="node-0x7bf80970" />
-    </children>
-  </item>
-  <item nodeId="node-0x7bf80970">
-    <command xml:space="preserve">ask about sunrise</command>
-    <result xml:space="preserve">&quot;Sun goes up at 7:03 today. Always check the time before you leave for the night,&quot; she said.
-
-I looked out the window, trying not to feel like a kid being lectured by his mom.
-
-I could have asked ask about her car or ask about the chalet.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="204">YES</temporary>
-    <children>
-      <child nodeId="node-0x7bf809e0" />
-    </children>
-  </item>
-  <item nodeId="node-0x7bf809e0">
-    <command xml:space="preserve">ask about house</command>
-    <result xml:space="preserve">Where are we going?
-
-TODO.
-
-I could have asked ask about her car.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="204">YES</temporary>
-    <children>
-      <child nodeId="node-0x7bf80a50" />
-    </children>
-  </item>
-  <item nodeId="node-0x7bf80a50">
-    <command xml:space="preserve">ask about car</command>
-    <result xml:space="preserve">&quot;Nice ride,&quot; I said.
-
-&quot;You should have called,&quot; Val replied, ignoring my comment.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="204">YES</temporary>
-    <children>
-      <child nodeId="node-0x7bf80ac0" />
-    </children>
-  </item>
-  <item nodeId="node-0x7bf80ac0">
-    <command xml:space="preserve">topics</command>
-    <result xml:space="preserve">I could have asked about her car, about the chalet or about sunrise.
-
-I could have asked about her car, about the chalet or about sunrise.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="203">YES</temporary>
   </item>
   <item nodeId="node-0x7be7d2a0">
     <command xml:space="preserve">test arrival</command>
@@ -2964,5 +1774,1985 @@ I could see a broken wineglass here.
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="1058">YES</temporary>
+  </item>
+  <item nodeId="node-0x7a1ef010">
+    <command xml:space="preserve">test</command>
+    <result xml:space="preserve">&gt;--&gt; The following tests are available:
+&apos;test firstconvo&apos;
+&apos;test sunrise_lose&apos;
+&apos;test discover&apos;
+&apos;test body&apos;
+&apos;test arrival&apos;
+&apos;test valinvest&apos;
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="110">YES</temporary>
+    <children>
+      <child nodeId="node-0x7a4f76e0" />
+      <child nodeId="node-0x78e0fc00" />
+    </children>
+  </item>
+  <item nodeId="node-0x78e0fc00">
+    <command xml:space="preserve">test valinvest</command>
+    <result xml:space="preserve">(Testing.)
+
+&gt;[1] test arrival
+(Testing.)
+
+&gt;[2] test body
+(Testing.)
+
+&gt;[3] test discover
+(Testing.)
+
+&gt;[4] test firstconvo
+(Testing.)
+
+&gt;[5] drive
+
+Mountain Pass
+I had the radio on tuned to some news station-- truth be told, I already missed the chatter of the dispatch as I was driving. The traffic report had little bearing on my current locale, but the weather gave me some concern: snowstorm coming up off the Great Lakes, apparently. Spending the weekend with a small crowd I barely knew appealed very little to me. Being cooped up with them the entire time due to weather seemed like a recipe for an epidemic of cabin fever.
+
+&gt;[6] drive
+
+Hairpin Turn
+If I&apos;d finished that last thought a few seconds earlier, I might&apos;ve noticed the caution sign for the sharp turn, barely visible through the snow. The car was going too fast, and the guardrail came out of nowhere.
+
+&gt;[7] brake
+I hit the brakes, but the car kept straight for the guardrail, slamming through, and going over.
+
+The back end of the car lost traction and swung out wide, trying vainly to follow the front, just like one of those car commercials. Unfortunately, I was not a professional driver, nor was this a closed course, and the right side of the car went over the edge of the cliff, momentum then taking the rest of the car with it. In shock, my brain couldn&apos;t manage to tell my body to do more than grip the wheel uselessly as the car tumbled down the steep incline. I lost count of the rolls after three. The roof hit a tree, and I was jerked upward against the seat belt. Snow from the branches fell into a pile onto the passenger window from the impact. I heard a thud, snuffing out the brief glimpse of moonlight.
+
+Upturned Car
+I wasn&apos;t sure how long I&apos;d been out. Taking stock of my situation, I was surprised to find myself more or less unhurt, save for a dull ache in my left wrist where I&apos;d tried to brace against the door. I took a few deep breaths, and tried to gather myself-- I was still a little mentally a little shocked and unfocused.
+
+The car was presently lying at the bottom of a cliff on its side. Above me, I could see moonlight, dimly mottled by the snow on the passenger side windows. The windshield in front of me showed nothing but evergreen forest, extending into the darkness.
+
+I was still strapped in, the seat belt made sure I stayed put. At least one thing in this car still knew how to do its job right.
+
+&gt;[8] look
+Upturned Car
+I wasn&apos;t sure how long I&apos;d been out. Taking stock of my situation, I was surprised to find myself more or less unhurt, save for a dull ache in my left wrist where I&apos;d tried to brace against the door. I took a few deep breaths, and tried to gather myself-- I was still a little mentally a little shocked and unfocused.
+
+The car was presently lying at the bottom of a cliff on its side. Above me, I could see moonlight, dimly mottled by the snow on the passenger side windows. The windshield in front of me showed nothing but evergreen forest, extending into the darkness.
+
+I was still strapped in, the seat belt made sure I stayed put. At least one thing in this car still knew how to do its job right.
+
+&gt;[9] unbuckle seat belt
+I wrestled with the jammed seat belt for a moment, then managed to undo it, falling a few inches down against the driver door once the chest belt was free.
+
+&gt;[10] kick windshield
+Bracing my back against the sideways seat, I gave the windshield a couple of sharp kicks. I felt the seal start to give, and then it dislodged entirely from the frame, making an exit. It fell out onto the snow with a muffled crunch, and the bitter wind started to blow into the old car. I grabbed my bag and stepped out into the forest.
+
+Bottom of Cliff
+I stood on a  ridge densely packed with trees some ways below the highway. My overturned car sat a few feet away. The ridge extended as far as I could see to the north, going nowhere in particular. To the west I saw the steep incline the car had rolled down, and the path it&apos;d cut through the snow and brush.
+
+I was miles from nowhere. It had stopped snowing for the moment. The night sky was starting to lighten, I figured I had an hour before sunrise.
+
+Fucking swell.
+
+&gt;[11] any key
+That noun did not make sense in this context.
+
+&gt;[12] up
+
+Sharp Bend
+I stood about a hundred feet from the hairpin turn where my car had gone over; I could see the tire tracks and broken guardrail to the south.
+
+The second I turned my head to look down the lane, I saw a pair of headlights approach. A black Mercedes pulled up and came to a stop just in front of me. The passenger door opened, and I saw Val looking out at me.
+
+&quot;Get in,&quot; she said.
+
+&gt;[13] get in
+I got into the Mercedes.
+
+Sedan
+The inside of the Mercedes was yards of brushed metal and hand-stitched leather. It still smelled new. Having run out of things to talk about, I had nothing to do but wait for us to arrive.
+
+Val drove the car, her eyes looking miles beyond the road, the mountains, and the horizon.
+
+&gt;[14] talk to val
+I said hello to Val.
+
+I could have asked ask about her car, ask about the chalet or ask about sunrise.
+
+&gt;[15] ask about sunrise
+&quot;Sun goes up at 7:03 today. Always check the time before you leave for the night,&quot; she said.
+
+I looked out the window, trying not to feel like a kid being lectured by his mom.
+
+I could have asked ask about her car or ask about the chalet.
+
+&gt;[16] ask about house
+Where are we going?
+
+TODO.
+
+I could have asked ask about her car.
+
+&gt;[17] ask about car
+&quot;Nice ride,&quot; I said.
+
+&quot;You should have called,&quot; Val replied, ignoring my comment.
+
+&gt;[18] wait
+Driveway
+We stood at the end of a long gravel drive, staring up at a large house with a dark red wood exterior. Steps to the east led to a porch that spanned the facade of the place, wrapping around to a deck in the back that presumably had a great view of the lake and the countryside. It was more ski lodge than cabin, and looked like it could comfortably shelter an entire biathlon team if it had to.
+
+Val got out of the car and took her bag out of the trunk.
+
+&quot;Come on, I&apos;ll introduce you to Alan,&quot; she said, walking up the drive.
+
+&gt;[19] e
+
+Front Porch
+Steps led up from the gravel driveway to the porch. Narrow unpainted wood planks extended the length of the house, along with windows that looked into rooms at the front of the house. Through them, I saw blinds, and a glint of something metallic, like a shutter.
+
+The front door stood open to the porch.
+ I could tell right away that something was wrong, like the door had been damaged somehow.
+
+&gt;[20] e
+
+Foyer
+I walked into the spacious foyer, trying not to walk into the large lacquered screens in front of the door. The shiny black wood was decorated with an intricate picture in gold paint, depicting a Chinese court scene. It seemed at odds with the exterior of the house, but matched the rest of the decor; the interior was a mixture of Old World furniture and Asian influences.
+
+A layer of snow had blown in through the open doorway, and was slowly melting into a puddle on the enormous Persian rug. 
+
+The front door stood open to the porch.
+ I could tell right away that something was wrong, like the door had been damaged somehow.
+
+
+&gt;[21] e
+
+Greatroom
+The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
+
+A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
+
+A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;O Come, All Ye Faithful&quot; warbling from what sounded like an old radio.
+
+&gt;[22] u
+
+Reading Nook
+I climbed the stairs to the reading nook. Shelves lined the walls of the small room, and a couple of books had been knocked off them onto the floor. A pair of wingback armchairs faced each other with a coffee table in between. A small pool of red liquid lay underneath the table.
+
+A man sat in one, slightly paunchy and slightly grey, his eyes and mouth wide open. His glasses were askew. He was wearing a navy blue cardigan, stained all over the front with a dark, almost black liquid. What looked like a small knife was sticking out of his neck, plunged in so far that only the handle was visible.
+
+An antique wooden radio sat on the table, playing Christmas carols.
+
+I could also see a bottle of wine and a wineglass here.
+
+&gt;[23] x body
+He looked like he was fifty, but something about his well-preserved look told me that he was probably sixty. It wasn&apos;t that he was in good shape-- I doubted he&apos;d seen much real exercise since he was in high school, and maybe not even then. He struck me as a debate team sort of guy.  I could tell he didn&apos;t get out much. His fingers were broad, but smooth. His hands had no calluses and no rings, but he wore a Rolex watch. It wasn&apos;t fake, and had cost probably three times what my car was worth before I&apos;d driven it off a cliff a few hours ago.
+
+&gt;[24] x body
+He looked like he was fifty, but something about his well-preserved look told me that he was probably sixty. It wasn&apos;t that he was in good shape-- I doubted he&apos;d seen much real exercise since he was in high school, and maybe not even then. He struck me as a debate team sort of guy.  I could tell he didn&apos;t get out much. His fingers were broad, but smooth. His hands had no calluses and no rings, but he wore a Rolex watch. It wasn&apos;t fake, and had cost probably three times what my car was worth before I&apos;d driven it off a cliff a few hours ago.
+
+Val came up the stairs, freezing the second she saw the body. Her eyes narrowed, and I could tell her mind was racing, the first time I&apos;d seen anything but placid boredom on her face. Half of me was relieved to know that there was something in this world that could perturb her. The other half was unnerved by it. She looked away and hitched the poker face back on pretty quick.
+
+Val nodded at the poor stiff and said, &quot;Meet Professor Alan Bowden, our host this weekend.&quot;
+
+&gt;[25] d
+
+Greatroom
+The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
+
+A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
+
+A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;O Come, All Ye Faithful&quot; warbling from what sounded like an old radio.
+
+&gt;[26] e
+
+Downstairs Hallway
+
+&gt;[27] w
+
+Greatroom
+The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
+
+A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
+
+A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;Angels We Have Heard on High&quot; warbling from what sounded like an old radio.
+
+&gt;[28] e
+
+Downstairs Hallway
+
+&gt;[29] w
+
+Greatroom
+The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
+
+A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
+
+A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;God Rest Ye Merry, Gentlemen&quot; warbling from what sounded like an old radio.
+
+&gt;[30] e
+
+Downstairs Hallway
+
+&gt;[31] w
+
+Greatroom
+The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
+
+A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
+
+A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;God Rest Ye Merry, Gentlemen&quot; warbling from what sounded like an old radio.
+
+&gt;[32] e
+
+Downstairs Hallway
+
+&gt;[33] w
+
+Greatroom
+The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
+
+A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
+
+A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;God Rest Ye Merry, Gentlemen&quot; warbling from what sounded like an old radio.
+
+&gt;[34] e
+
+Downstairs Hallway
+I heard the front door open, and the sound of voices from the foyer. It closed a minute later.
+
+
+&gt;[35] w
+
+Greatroom
+The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
+
+A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
+
+A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;God Rest Ye Merry, Gentlemen&quot; warbling from what sounded like an old radio.
+
+&gt;[36] w
+
+Foyer
+I walked into the spacious foyer, trying not to walk into the large lacquered screens in front of the door. The shiny black wood was decorated with an intricate picture in gold paint, depicting a Chinese court scene. It seemed at odds with the exterior of the house, but matched the rest of the decor; the interior was a mixture of Old World furniture and Asian influences. 
+
+Three men stood on the rug, their coats and pant cuffs damp with snow. Val made introductions all around, as if nothing was wrong. 
+
+I studied their faces carefully. If one of them knew about Alan upstairs, they weren&apos;t letting on. The three men were overdressed for vacation, as rich men often are. But somehow, they were oddly mismatched. I doubted that they came here together.
+
+
+ I could tell right away that something was wrong, like the door had been damaged somehow.
+
+I could also see Nathan, Scott and Jan here.
+
+&gt;[37] w
+Val waited a minute for the conversations the three were having to die down.
+(Press a key)She folded her arms across her chest and took a deep breath quiet enough that only I heard it.
+
+&quot;Gentlemen, we have a problem. Alan&apos;s dead. We found him upstairs, stabbed.&quot;
+
+A stunned silence followed. When it was clear no one was going to break it, she went on. &quot;I&apos;m going to call it in to the New York Magistrate&apos;s and find out who isn&apos;t on vacation that they can send over.&quot; She lifted a hand, exposing her pale wrist enough to read the face of her watch. &quot;It&apos;s going to be at least six hours before they can send someone, and they&apos;ll have to make it through what&apos;s left of the winter storm. Until we can figure out exactly what happened and who&apos;s responsible, I suggest we all stay in our rooms. My associate here has some experience with police investigation, he can do the basics until the officials show up.&quot;
+
+Nathaniel seemed to bristle at this. &quot;Hang on a minute, wait in our rooms? Am I to take it you&apos;re presuming us suspects? How do I know you and your friend didn&apos;t just kill Alan?&quot;
+
+Val shrugged and pointed at me.&quot;It happens, my friend here is the only one of us with a solid alibi, unless I&apos;m mistaken.&quot;
+
+The lack of a response indicated that she wasn&apos;t, which bothered me a little. The three picked up their bags and trundled down the hall, varying degrees of insulted, Jan called back in a raised voice. &quot;You know there&apos;s another possibility you haven&apos;t considered; someone out there picked off Alan, and now that we&apos;re all here, the hunt is really on.&quot;
+
+He said it with false bravado, and I shouldn&apos;t have let the idea take root in my mind, but it did.
+
+&gt;[38] talk to val
+I said hello to Val.
+
+I could have asked ask about Alan, ask about the murder, ask about Nathaniel or ask what was in it for me.
+
+&gt;[39] ask about alan
+&quot;How well did you know Alan?&quot;
+
+&quot;I knew him for probably ten years, we were only close for a handful of those. He wasn&apos;t perfect, but I knew him well enough that I feel like he deserved better than he got.&quot;
+
+I could have asked ask about the murder, ask about Nathaniel or ask what was in it for me.
+
+&gt;[40] ask about murder
+Val leaned in close until her face was inches from mine, and lowered her voice, even though no one was around. &quot;Listen, kid. Here&apos;s how it&apos;s going down. We have a few hours before what passes for the law for our kind shows up stomping their flat feet around. They don&apos;t much care if the wrong one of us takes the rap, or if no one does. Alan&apos;s nobody to the Circle, I doubt they&apos;d care if this case went stone cold. But he used to be a friend of mine, and this is just something I want to do for him.&quot;.
+
+I didnt say anything.
+
+I could have asked ask about Nathaniel or ask what was in it for me.
+
+&gt;[41] ask about nathaniel
+&quot;This Nathaniel Wyndham, is he old money?&quot; I asked.
+
+&quot;I guess. He made a sizeable fortune selling boots to the Allies during World War I, a real war profiteer. He used it to buy that ridiculous title, a couple of country estates, and even restored an old manor house. But a little time running with the Circle crowd will tell you that &quot;old money&quot; is a relative term.&quot;
+
+I could have asked ask what was in it for me.
+
+&gt;[42] ask what was in it for me
+&quot;Seems like a pretty long way to stick my neck out for you. What&apos;s in it for me, exactly?&quot;
+
+She looked at me sharply. I could tell it got a lot of use, it was just as practiced as everything else about her. Here was a woman who wasn&apos;t afraid to throw her weight around, and made it bad practice to make her do it.
+
+&quot;I&apos;m your first client, and I know a lot of people, so how about you make this one on the house? You owe me, remember?&quot;
+
+She had me there. I didn&apos;t know if this was the kind of thing I could pay back, but I didn&apos;t like owing that kind of debt.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="110">YES</temporary>
+    <children>
+      <child nodeId="node-0x7bedb750" />
+      <child nodeId="node-0x78e13b30" />
+      <child nodeId="node-0x7e08e940" />
+      <child nodeId="node-0x7a027f90" />
+      <child nodeId="node-0x7bedf4e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7bedf4e0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">I couldn&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="110">YES</temporary>
+    <children>
+      <child nodeId="node-0x7beb5c70" />
+    </children>
+  </item>
+  <item nodeId="node-0x7beb5c70">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Greatroom
+The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
+
+A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
+
+A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;We Three Kings&quot; warbling from what sounded like an old radio.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="110">YES</temporary>
+    <children>
+      <child nodeId="node-0x7e150470" />
+    </children>
+  </item>
+  <item nodeId="node-0x7e150470">
+    <command xml:space="preserve">x closet</command>
+    <result xml:space="preserve">I couldn&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="110">YES</temporary>
+    <children>
+      <child nodeId="node-0x7e261d00" />
+    </children>
+  </item>
+  <item nodeId="node-0x7e261d00">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Greatroom
+The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
+
+A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
+
+A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;Angels We Have Heard on High&quot; warbling from what sounded like an old radio.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="110">YES</temporary>
+    <children>
+      <child nodeId="node-0x7e150e90" />
+    </children>
+  </item>
+  <item nodeId="node-0x7e150e90">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Foyer
+I walked into the spacious foyer, trying not to walk into the large lacquered screens in front of the door. The shiny black wood was decorated with an intricate picture in gold paint, depicting a Chinese court scene. It seemed at odds with the exterior of the house, but matched the rest of the decor; the interior was a mixture of Old World furniture and Asian influences. 
+
+
+ I could tell right away that something was wrong, like the door had been damaged somehow.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="110">YES</temporary>
+    <children>
+      <child nodeId="node-0x7be10690" />
+    </children>
+  </item>
+  <item nodeId="node-0x7be10690">
+    <command xml:space="preserve">x door</command>
+    <result xml:space="preserve">A large wooden door, painted white as a preacher&apos;s picket fence. It didn&apos;t have a window or peephole. Something seemed odd about the lock, like it had been damaged. There was splintered wood on the side of the doorframe where someone had apparently forced the door open.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="110">YES</temporary>
+    <children>
+      <child nodeId="node-0x7e175540" />
+    </children>
+  </item>
+  <item nodeId="node-0x7e175540">
+    <command xml:space="preserve">clues</command>
+    <result xml:space="preserve">Clues
+
+
+
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="110">YES</temporary>
+    <children>
+      <child nodeId="node-0x7e2824a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7e2824a0">
+    <command xml:space="preserve">x lock</command>
+    <result xml:space="preserve">I couldn&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="110">YES</temporary>
+    <children>
+      <child nodeId="node-0x7beb9ea0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7beb9ea0">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Foyer
+I walked into the spacious foyer, trying not to walk into the large lacquered screens in front of the door. The shiny black wood was decorated with an intricate picture in gold paint, depicting a Chinese court scene. It seemed at odds with the exterior of the house, but matched the rest of the decor; the interior was a mixture of Old World furniture and Asian influences. 
+
+
+ 
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="109">YES</temporary>
+  </item>
+  <item nodeId="node-0x7a027f90">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">I couldn&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="99">YES</temporary>
+    <children>
+      <child nodeId="node-0x7be87870" />
+    </children>
+  </item>
+  <item nodeId="node-0x7be87870">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">I couldn&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="99">YES</temporary>
+    <children>
+      <child nodeId="node-0x7beb82e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7beb82e0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">I walked into the closet and flicked on the light. Three quarters of it was the usual cruft that finds its way to a person&apos;s closet and never gets worn.
+
+I looked at the rest of it. A handful of suits that looked like they&apos;d been bought in the 80s, judging by the lapels. Performance fleece and hiking boots, never worn. Velvet smoking jacket, no sweatpants or loungewear. Professor Bowden seemed to have some old-fashioned sensibilities.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="99">YES</temporary>
+    <children>
+      <child nodeId="node-0x7a04b940" />
+    </children>
+  </item>
+  <item nodeId="node-0x7a04b940">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">I couldn&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="99">YES</temporary>
+    <children>
+      <child nodeId="node-0x7bf14020" />
+    </children>
+  </item>
+  <item nodeId="node-0x7bf14020">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">I couldn&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="99">YES</temporary>
+    <children>
+      <child nodeId="node-0x7a1298b0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7a1298b0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">I couldn&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="99">YES</temporary>
+    <children>
+      <child nodeId="node-0x7bf32ee0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7bf32ee0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">I couldn&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="99">YES</temporary>
+    <children>
+      <child nodeId="node-0x78edf200" />
+    </children>
+  </item>
+  <item nodeId="node-0x78edf200">
+    <command xml:space="preserve">x closet</command>
+    <result xml:space="preserve">I couldn&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="99">YES</temporary>
+    <children>
+      <child nodeId="node-0x7bf3afe0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7bf3afe0">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Kitchen
+The kitchen was probably the largest I&apos;ve seen in my life. Wooden cabinets and handsome tile in earth tones went from wall to wall. The quaint country look was somewhat ruined by the collection of modern stainless steel kitchen appliances. They were brand new and it looked like not one of them had been used.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="99">YES</temporary>
+    <children>
+      <child nodeId="node-0x7e04b070" />
+    </children>
+  </item>
+  <item nodeId="node-0x7e04b070">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">I walked into the closet and flicked on the light. Three quarters of it was the usual cruft that finds its way to a person&apos;s closet and never gets worn.
+
+I looked at the rest of it. A handful of suits that looked like they&apos;d been bought in the 80s, judging by the lapels. Performance fleece and hiking boots, never worn. Velvet smoking jacket, no sweatpants or loungewear. Professor Bowden seemed to have some old-fashioned sensibilities.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="98">YES</temporary>
+  </item>
+  <item nodeId="node-0x7e08e940">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Greatroom
+The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
+
+A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
+
+A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;Angels We Have Heard on High&quot; warbling from what sounded like an old radio.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="87">YES</temporary>
+    <children>
+      <child nodeId="node-0x7bef3620" />
+    </children>
+  </item>
+  <item nodeId="node-0x7bef3620">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Downstairs Hallway
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="87">YES</temporary>
+    <children>
+      <child nodeId="node-0x7bed5170" />
+    </children>
+  </item>
+  <item nodeId="node-0x7bed5170">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">
+Upstairs Hallway
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="87">YES</temporary>
+    <children>
+      <child nodeId="node-0x7bf22d30" />
+    </children>
+  </item>
+  <item nodeId="node-0x7bf22d30">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">I couldn&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="87">YES</temporary>
+    <children>
+      <child nodeId="node-0x7e16b690" />
+    </children>
+  </item>
+  <item nodeId="node-0x7e16b690">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+North Wing
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="87">YES</temporary>
+    <children>
+      <child nodeId="node-0x7becb6a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7becb6a0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">I couldn&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="87">YES</temporary>
+    <children>
+      <child nodeId="node-0x7bffa7d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7bffa7d0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">I couldn&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="87">YES</temporary>
+    <children>
+      <child nodeId="node-0x7be06f00" />
+    </children>
+  </item>
+  <item nodeId="node-0x7be06f00">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">I couldn&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="87">YES</temporary>
+    <children>
+      <child nodeId="node-0x7bf351c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7bf351c0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">(first opening master bedroom door)
+
+Master Bedroom
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="87">YES</temporary>
+    <children>
+      <child nodeId="node-0x7e0a38d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7e0a38d0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+North Wing
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="87">YES</temporary>
+    <children>
+      <child nodeId="node-0x7a1f1b50" />
+    </children>
+  </item>
+  <item nodeId="node-0x7a1f1b50">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">I couldn&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="86">YES</temporary>
+  </item>
+  <item nodeId="node-0x78e13b30">
+    <command xml:space="preserve"> look</command>
+    <result xml:space="preserve">Foyer
+I walked into the spacious foyer, trying not to walk into the large lacquered screens in front of the door. The shiny black wood was decorated with an intricate picture in gold paint, depicting a Chinese court scene. It seemed at odds with the exterior of the house, but matched the rest of the decor; the interior was a mixture of Old World furniture and Asian influences. 
+
+
+ I could tell right away that something was wrong, like the door had been damaged somehow.
+
+I could also see Nathan, Scott and Jan here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="53">YES</temporary>
+    <children>
+      <child nodeId="node-0x7beb26f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7beb26f0">
+    <command xml:space="preserve">scenes</command>
+    <result xml:space="preserve">Scene &apos;Entire Game&apos; playing (for 34 mins now)
+Scene &apos;Mountain_Driving&apos; ended
+Scene &apos;Car_Escape&apos; ended
+Scene &apos;Cliff_Climbing&apos; ended
+Scene &apos;Car_Embarking&apos; ended
+Scene &apos;Riding_Scene&apos; ended
+Scene &apos;Body_Discovery&apos; ended
+Scene &apos;Prearrival&apos; ended
+Scene &apos;Guest_Arrival&apos; ended
+Scene &apos;First_Investigation&apos; playing (for 7 mins now)
+(Scene monitoring now switched on. Type &quot;scenes off&quot; to switch it off again.)
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="52">YES</temporary>
+  </item>
+  <item nodeId="node-0x7bedb750">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">(first opening the front door)
+
+Front Porch
+Steps led up from the gravel driveway to the porch. Narrow unpainted wood planks extended the length of the house, along with windows that looked into rooms at the front of the house. Through them, I saw blinds, and a glint of something metallic, like a shutter.
+
+The front door stood open to the porch.
+ I could tell right away that something was wrong, like the door had been damaged somehow.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="74">YES</temporary>
+    <children>
+      <child nodeId="node-0x7be7e3d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7be7e3d0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Foyer
+I walked into the spacious foyer, trying not to walk into the large lacquered screens in front of the door. The shiny black wood was decorated with an intricate picture in gold paint, depicting a Chinese court scene. It seemed at odds with the exterior of the house, but matched the rest of the decor; the interior was a mixture of Old World furniture and Asian influences. 
+
+The front door stood open to the porch.
+ I could tell right away that something was wrong, like the door had been damaged somehow.
+
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="74">YES</temporary>
+    <children>
+      <child nodeId="node-0x7e16cc60" />
+    </children>
+  </item>
+  <item nodeId="node-0x7e16cc60">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">I couldn&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="74">YES</temporary>
+    <children>
+      <child nodeId="node-0x7a1d2ba0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7a1d2ba0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Greatroom
+The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
+
+A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
+
+A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;O Come, All Ye Faithful&quot; warbling from what sounded like an old radio.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="74">YES</temporary>
+    <children>
+      <child nodeId="node-0x7a02e760" />
+    </children>
+  </item>
+  <item nodeId="node-0x7a02e760">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">
+Reading Nook
+I climbed the stairs to the reading nook. Shelves lined the walls of the small room, and a couple of books had been knocked off them onto the floor. A pair of wingback armchairs faced each other with a coffee table in between. A small pool of red liquid lay underneath the table.
+
+A man sat in one, slightly paunchy and slightly grey, his eyes and mouth wide open. His glasses were askew. He was wearing a navy blue cardigan, stained all over the front with a dark, almost black liquid. What looked like a small knife was sticking out of his neck, plunged in so far that only the handle was visible.
+
+An antique wooden radio sat on the table, playing Christmas carols.
+
+I could also see a bottle of wine and a wineglass here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="74">YES</temporary>
+    <children>
+      <child nodeId="node-0x7be7fbe0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7be7fbe0">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">
+Greatroom
+The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
+
+A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
+
+A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;O Come, All Ye Faithful&quot; warbling from what sounded like an old radio.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="74">YES</temporary>
+    <children>
+      <child nodeId="node-0x7beb40a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7beb40a0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Downstairs Hallway
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="74">YES</temporary>
+    <children>
+      <child nodeId="node-0x7e07f0a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7e07f0a0">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">
+Upstairs Hallway
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="74">YES</temporary>
+    <children>
+      <child nodeId="node-0x7e05bf50" />
+    </children>
+  </item>
+  <item nodeId="node-0x7e05bf50">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">(first opening PC_Bedroom_Door)
+
+PC_Bedroom
+I checked my watch, it was getting late, almost noon. I had a million things to think about, but figured I should still get a few hours&quot; sleep while I still could.
+
+I could see Val and a bottle of bourbon here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="74">YES</temporary>
+    <children>
+      <child nodeId="node-0x7bff29a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7bff29a0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">I couldn&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="74">YES</temporary>
+    <children>
+      <child nodeId="node-0x7a012000" />
+    </children>
+  </item>
+  <item nodeId="node-0x7a012000">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">I couldn&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="74">YES</temporary>
+    <children>
+      <child nodeId="node-0x7a046530" />
+    </children>
+  </item>
+  <item nodeId="node-0x7a046530">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">I couldn&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="74">YES</temporary>
+    <children>
+      <child nodeId="node-0x7bf11b40" />
+    </children>
+  </item>
+  <item nodeId="node-0x7bf11b40">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">I couldn&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="74">YES</temporary>
+    <children>
+      <child nodeId="node-0x7e0c3160" />
+    </children>
+  </item>
+  <item nodeId="node-0x7e0c3160">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">I couldn&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="74">YES</temporary>
+    <children>
+      <child nodeId="node-0x7bff41b0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7bff41b0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Upstairs Hallway
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="74">YES</temporary>
+    <children>
+      <child nodeId="node-0x7a113200" />
+    </children>
+  </item>
+  <item nodeId="node-0x7a113200">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">I couldn&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="74">YES</temporary>
+    <children>
+      <child nodeId="node-0x7bfc3380" />
+    </children>
+  </item>
+  <item nodeId="node-0x7bfc3380">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">(first opening Master_Bedroom_Door)
+
+Master_Bedroom
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="74">YES</temporary>
+    <children>
+      <child nodeId="node-0x7be9bd50" />
+    </children>
+  </item>
+  <item nodeId="node-0x7be9bd50">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Upstairs Hallway
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="73">YES</temporary>
+  </item>
+  <item nodeId="node-0x7a4f76e0">
+    <command xml:space="preserve">test arrival</command>
+    <result xml:space="preserve">(Testing.)
+
+&gt;[1] test body
+(Testing.)
+
+&gt;[2] test discover
+(Testing.)
+
+&gt;[3] test firstconvo
+(Testing.)
+
+&gt;[4] drive
+
+Mountain Pass
+I had the radio on tuned to some news station-- truth be told, I already missed the chatter of the dispatch as I was driving. The traffic report had little bearing on my current locale, but the weather gave me some concern: snowstorm coming up off the Great Lakes, apparently. Spending the weekend with a small crowd I barely knew appealed very little to me. Being cooped up with them the entire time due to weather seemed like a recipe for an epidemic of cabin fever.
+
+&gt;[5] drive
+
+Hairpin Turn
+If I&apos;d finished that last thought a few seconds earlier, I might&apos;ve noticed the caution sign for the sharp turn, barely visible through the snow. The car was going too fast, and the guardrail came out of nowhere.
+
+&gt;[6] brake
+I hit the brakes, but the car kept straight for the guardrail, slamming through, and going over.
+
+The back end of the car lost traction and swung out wide, trying vainly to follow the front, just like one of those car commercials. Unfortunately, I was not a professional driver, nor was this a closed course, and the right side of the car went over the edge of the cliff, momentum then taking the rest of the car with it. In shock, my brain couldn&apos;t manage to tell my body to do more than grip the wheel uselessly as the car tumbled down the steep incline. I lost count of the rolls after three. The roof hit a tree, and I was jerked upward against the seat belt. Snow from the branches fell into a pile onto the passenger window from the impact. I heard a thud, snuffing out the brief glimpse of moonlight.
+
+Upturned Car
+I wasn&apos;t sure how long I&apos;d been out. Taking stock of my situation, I was surprised to find myself more or less unhurt, save for a dull ache in my left wrist where I&apos;d tried to brace against the door. I took a few deep breaths, and tried to gather myself-- I was still a little mentally a little shocked and unfocused.
+
+The car was presently lying at the bottom of a cliff on its side. Above me, I could see moonlight, dimly mottled by the snow on the passenger side windows. The windshield in front of me showed nothing but evergreen forest, extending into the darkness.
+
+I was still strapped in, the seat belt made sure I stayed put. At least one thing in this car still knew how to do its job right.
+
+&gt;[7] look
+Upturned Car
+I wasn&apos;t sure how long I&apos;d been out. Taking stock of my situation, I was surprised to find myself more or less unhurt, save for a dull ache in my left wrist where I&apos;d tried to brace against the door. I took a few deep breaths, and tried to gather myself-- I was still a little mentally a little shocked and unfocused.
+
+The car was presently lying at the bottom of a cliff on its side. Above me, I could see moonlight, dimly mottled by the snow on the passenger side windows. The windshield in front of me showed nothing but evergreen forest, extending into the darkness.
+
+I was still strapped in, the seat belt made sure I stayed put. At least one thing in this car still knew how to do its job right.
+
+&gt;[8] unbuckle seat belt
+I wrestled with the jammed seat belt for a moment, then managed to undo it, falling a few inches down against the driver door once the chest belt was free.
+
+&gt;[9] kick windshield
+Bracing my back against the sideways seat, I gave the windshield a couple of sharp kicks. I felt the seal start to give, and then it dislodged entirely from the frame, making an exit. It fell out onto the snow with a muffled crunch, and the bitter wind started to blow into the old car. I grabbed my bag and stepped out into the forest.
+
+Bottom of Cliff
+I stood on a  ridge densely packed with trees some ways below the highway. My overturned car sat a few feet away. The ridge extended as far as I could see to the north, going nowhere in particular. To the west I saw the steep incline the car had rolled down, and the path it&apos;d cut through the snow and brush.
+
+I was miles from nowhere. It had stopped snowing for the moment. The night sky was starting to lighten, I figured I had an hour before sunrise.
+
+Fucking swell.
+
+&gt;[10] any key
+That noun did not make sense in this context.
+
+&gt;[11] up
+
+Sharp Bend
+I stood about a hundred feet from the hairpin turn where my car had gone over; I could see the tire tracks and broken guardrail to the south.
+
+The second I turned my head to look down the lane, I saw a pair of headlights approach. A black Mercedes pulled up and came to a stop just in front of me. The passenger door opened, and I saw Val looking out at me.
+
+&quot;Get in,&quot; she said.
+
+&gt;[12] get in
+I got into the Mercedes.
+
+Sedan
+The inside of the Mercedes was yards of brushed metal and hand-stitched leather. It still smelled new. Having run out of things to talk about, I had nothing to do but wait for us to arrive.
+
+Val drove the car, her eyes looking miles beyond the road, the mountains, and the horizon.
+
+&gt;[13] talk to val
+I said hello to Val.
+
+I could have asked ask about her car, ask about the chalet or ask about sunrise.
+
+&gt;[14] ask about sunrise
+&quot;Sun goes up at 7:03 today. Always check the time before you leave for the night,&quot; she said.
+
+I looked out the window, trying not to feel like a kid being lectured by his mom.
+
+I could have asked ask about her car or ask about the chalet.
+
+&gt;[15] ask about house
+Where are we going?
+
+TODO.
+
+I could have asked ask about her car.
+
+&gt;[16] ask about car
+&quot;Nice ride,&quot; I said.
+
+&quot;You should have called,&quot; Val replied, ignoring my comment.
+
+&gt;[17] wait
+Driveway
+We stood at the end of a long gravel drive, staring up at a large house with a dark red wood exterior. Steps to the east led to a porch that spanned the facade of the place, wrapping around to a deck in the back that presumably had a great view of the lake and the countryside. It was more ski lodge than cabin, and looked like it could comfortably shelter an entire biathlon team if it had to.
+
+Val got out of the car and took her bag out of the trunk.
+
+&quot;Come on, I&apos;ll introduce you to Alan,&quot; she said, walking up the drive.
+
+&gt;[18] e
+
+Front Porch
+Steps led up from the gravel driveway to the porch. Narrow unpainted wood planks extended the length of the house, along with windows that looked into rooms at the front of the house. Through them, I saw blinds, and a glint of something metallic, like a shutter.
+
+The front door stood open to the porch.
+ I could tell right away that something was wrong, like the door had been damaged somehow.
+
+&gt;[19] e
+
+Foyer
+I walked into the spacious foyer, trying not to walk into the large lacquered screens in front of the door. The shiny black wood was decorated with an intricate picture in gold paint, depicting a Chinese court scene. It seemed at odds with the exterior of the house, but matched the rest of the decor; the interior was a mixture of Old World furniture and Asian influences.
+
+A layer of snow had blown in through the open doorway, and was slowly melting into a puddle on the enormous Persian rug. 
+
+The front door stood open to the porch.
+ I could tell right away that something was wrong, like the door had been damaged somehow.
+
+
+&gt;[20] e
+
+Greatroom
+The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
+
+A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
+
+A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;Angels We Have Heard on High&quot; warbling from what sounded like an old radio.
+
+&gt;[21] u
+
+Reading Nook
+I climbed the stairs to the reading nook. Shelves lined the walls of the small room, and a couple of books had been knocked off them onto the floor. A pair of wingback armchairs faced each other with a coffee table in between. A small pool of red liquid lay underneath the table.
+
+A man sat in one, slightly paunchy and slightly grey, his eyes and mouth wide open. His glasses were askew. He was wearing a navy blue cardigan, stained all over the front with a dark, almost black liquid. What looked like a small knife was sticking out of his neck, plunged in so far that only the handle was visible.
+
+An antique wooden radio sat on the table, playing Christmas carols.
+
+I could also see a bottle of wine and a wineglass here.
+
+&gt;[22] x body
+He looked like he was fifty, but something about his well-preserved look told me that he was probably sixty. It wasn&apos;t that he was in good shape-- I doubted he&apos;d seen much real exercise since he was in high school, and maybe not even then. He struck me as a debate team sort of guy.  I could tell he didn&apos;t get out much. His fingers were broad, but smooth. His hands had no calluses and no rings, but he wore a Rolex watch. It wasn&apos;t fake, and had cost probably three times what my car was worth before I&apos;d driven it off a cliff a few hours ago.
+
+&gt;[23] x body
+He looked like he was fifty, but something about his well-preserved look told me that he was probably sixty. It wasn&apos;t that he was in good shape-- I doubted he&apos;d seen much real exercise since he was in high school, and maybe not even then. He struck me as a debate team sort of guy.  I could tell he didn&apos;t get out much. His fingers were broad, but smooth. His hands had no calluses and no rings, but he wore a Rolex watch. It wasn&apos;t fake, and had cost probably three times what my car was worth before I&apos;d driven it off a cliff a few hours ago.
+
+Val came up the stairs, freezing the second she saw the body. Her eyes narrowed, and I could tell her mind was racing, the first time I&apos;d seen anything but placid boredom on her face. Half of me was relieved to know that there was something in this world that could perturb her. The other half was unnerved by it. She looked away and hitched the poker face back on pretty quick.
+
+Val nodded at the poor stiff and said, &quot;Meet Professor Alan Bowden, our host this weekend.&quot;
+
+&gt;[24] d
+
+Greatroom
+The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
+
+A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
+
+A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;God Rest Ye Merry, Gentlemen&quot; warbling from what sounded like an old radio.
+
+&gt;[25] e
+
+Downstairs Hallway
+
+&gt;[26] w
+
+Greatroom
+The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
+
+A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
+
+A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;We Three Kings&quot; warbling from what sounded like an old radio.
+
+&gt;[27] e
+
+Downstairs Hallway
+
+&gt;[28] w
+
+Greatroom
+The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
+
+A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
+
+A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;God Rest Ye Merry, Gentlemen&quot; warbling from what sounded like an old radio.
+
+&gt;[29] e
+
+Downstairs Hallway
+
+&gt;[30] w
+
+Greatroom
+The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
+
+A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
+
+A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;Hark, The Herald Angels Sing&quot; warbling from what sounded like an old radio.
+
+&gt;[31] e
+
+Downstairs Hallway
+
+&gt;[32] w
+
+Greatroom
+The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
+
+A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
+
+A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;Hark, The Herald Angels Sing&quot; warbling from what sounded like an old radio.
+
+&gt;[33] e
+
+Downstairs Hallway
+I heard the front door open, and the sound of voices from the foyer. It closed a minute later.
+
+
+&gt;[34] w
+
+Greatroom
+The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
+
+A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
+
+A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;Hark, The Herald Angels Sing&quot; warbling from what sounded like an old radio.
+
+&gt;[35] w
+
+Foyer
+I walked into the spacious foyer, trying not to walk into the large lacquered screens in front of the door. The shiny black wood was decorated with an intricate picture in gold paint, depicting a Chinese court scene. It seemed at odds with the exterior of the house, but matched the rest of the decor; the interior was a mixture of Old World furniture and Asian influences. 
+
+Three men stood on the rug, their coats and pant cuffs damp with snow. Val made introductions all around, as if nothing was wrong. 
+
+I studied their faces carefully. If one of them knew about Alan upstairs, they weren&apos;t letting on. The three men were overdressed for vacation, as rich men often are. But somehow, they were oddly mismatched. I doubted that they came here together.
+
+
+ I could tell right away that something was wrong, like the door had been damaged somehow.
+
+I could also see Nathan, Scott and Jan here.
+
+&gt;[36] w
+Val waited a minute for the conversations the three were having to die down.
+(Press a key)She folded her arms across her chest and took a deep breath quiet enough that only I heard it.
+
+&quot;Gentlemen, we have a problem. Alan&apos;s dead. We found him upstairs, stabbed.&quot;
+
+A stunned silence followed. When it was clear no one was going to break it, she went on. &quot;I&apos;m going to call it in to the New York Magistrate&apos;s and find out who isn&apos;t on vacation that they can send over.&quot; She lifted a hand, exposing her pale wrist enough to read the face of her watch. &quot;It&apos;s going to be at least six hours before they can send someone, and they&apos;ll have to make it through what&apos;s left of the winter storm. Until we can figure out exactly what happened and who&apos;s responsible, I suggest we all stay in our rooms. My associate here has some experience with police investigation, he can do the basics until the officials show up.&quot;
+
+Nathaniel seemed to bristle at this. &quot;Hang on a minute, wait in our rooms? Am I to take it you&apos;re presuming us suspects? How do I know you and your friend didn&apos;t just kill Alan?&quot;
+
+Val shrugged and pointed at me.&quot;It happens, my friend here is the only one of us with a solid alibi, unless I&apos;m mistaken.&quot;
+
+The lack of a response indicated that she wasn&apos;t, which bothered me a little. The three picked up their bags and trundled down the hall, varying degrees of insulted, Jan called back in a raised voice. &quot;You know there&apos;s another possibility you haven&apos;t considered; someone out there picked off Alan, and now that we&apos;re all here, the hunt is really on.&quot;
+
+He said it with false bravado, and I shouldn&apos;t have let the idea take root in my mind, but it did.
+
+&gt;[37] talk to val
+I said hello to Val.
+
+I could have asked ask about Alan, ask about the murder, ask about Nathaniel or ask what was in it for me.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="49">YES</temporary>
+    <children>
+      <child nodeId="node-0x7be6cba0" />
+      <child nodeId="node-0x7be6f8f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7be6f8f0">
+    <command xml:space="preserve">ask what was in it for me</command>
+    <result xml:space="preserve">&quot;Seems like a pretty long way to stick my neck out for you. What&apos;s in it for me, exactly?&quot;.
+
+She looked at me sharply. I could tell it got a lot of use, it was just as practiced as everything else about her. Here was a woman who wasn&apos;t afraid to throw her weight around, and made it bad practice to make her do it.&quot;I&apos;m your first client, and I know a lot of people, so how about you make this one on the house? You owe me, remember?&quot;
+
+She had me there. I didn&apos;t know if this was the kind of thing I could pay back, but I didn&apos;t like owing that kind of debt.
+
+I could have asked ask about Alan, ask about the murder or ask about Nathaniel.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="49">YES</temporary>
+    <children>
+      <child nodeId="node-0x7be60980" />
+    </children>
+  </item>
+  <item nodeId="node-0x7be60980">
+    <command xml:space="preserve">topics</command>
+    <result xml:space="preserve">I could have asked about Alan, about the murder, about Nathaniel or what was in it for me.
+
+I could have asked about Alan, about the murder, about Nathaniel or what was in it for me.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="49">YES</temporary>
+    <children>
+      <child nodeId="node-0x7becc900" />
+    </children>
+  </item>
+  <item nodeId="node-0x7becc900">
+    <command xml:space="preserve">ask what was in it for me</command>
+    <result xml:space="preserve">&quot;Seems like a pretty long way to stick my neck out for you. What&apos;s in it for me, exactly?&quot;.
+
+She looked at me sharply. I could tell it got a lot of use, it was just as practiced as everything else about her. Here was a woman who wasn&apos;t afraid to throw her weight around, and made it bad practice to make her do it.&quot;I&apos;m your first client, and I know a lot of people, so how about you make this one on the house? You owe me, remember?&quot;
+
+She had me there. I didn&apos;t know if this was the kind of thing I could pay back, but I didn&apos;t like owing that kind of debt.
+
+I could have asked ask about Alan, ask about the murder or ask about Nathaniel.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="48">YES</temporary>
+  </item>
+  <item nodeId="node-0x7be6cba0">
+    <command xml:space="preserve">ask about nathan</command>
+    <result xml:space="preserve">&quot;This Nathaniel Wyndham, is he old money?&quot; I asked.
+
+&quot;I guess. He made a sizeable fortune selling boots to the Allies during World War I, a real war profiteer. He used it to buy that ridiculous title, a couple of country estates, and even restored an old manor house. But a little time running with the Circle crowd will tell you that &quot;old money&quot; is a relative term.&quot;
+
+I could have asked ask about Alan, ask about the murder or ask what&apos;s in it for me.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="40">YES</temporary>
+    <children>
+      <child nodeId="node-0x7bfb6bc0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7bfb6bc0">
+    <command xml:space="preserve">ask about nathaniel</command>
+    <result xml:space="preserve">That doesn&apos;t seem to be a topic of conversation at the moment.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="40">YES</temporary>
+    <children>
+      <child nodeId="node-0x7a00e4b0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7a00e4b0">
+    <command xml:space="preserve">ask about nathaniel</command>
+    <result xml:space="preserve">That doesn&apos;t seem to be a topic of conversation at the moment.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="40">YES</temporary>
+    <children>
+      <child nodeId="node-0x7be5fe70" />
+    </children>
+  </item>
+  <item nodeId="node-0x7be5fe70">
+    <command xml:space="preserve">ask what&apos;s in it for me</command>
+    <result xml:space="preserve">That doesn&apos;t seem to be a topic of conversation at the moment.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="40">YES</temporary>
+    <children>
+      <child nodeId="node-0x78ea5110" />
+    </children>
+  </item>
+  <item nodeId="node-0x78ea5110">
+    <command xml:space="preserve">ask what</command>
+    <result xml:space="preserve">&quot;Seems like a pretty long way to stick my neck out for you. What&apos;s in it for me, exactly?&quot;.
+
+She looked at me sharply. I could tell it got a lot of use, it was just as practiced as everything else about her. Here was a woman who wasn&apos;t afraid to throw her weight around, and made it bad practice to make her do it.&quot;I&apos;m your first client, and I know a lot of people, so how about you make this one on the house? You owe me, remember?&quot;
+
+She had me there. I didn&apos;t know if this was the kind of thing I could pay back, but I didn&apos;t like owing that kind of debt.
+
+I could have asked ask about Alan or ask about the murder.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="40">YES</temporary>
+  </item>
+  <item nodeId="node-0x7bf80890">
+    <command xml:space="preserve">test firstconvo</command>
+    <result xml:space="preserve">(Testing.)
+
+&gt;[1] drive
+
+Mountain Pass
+I had the radio on tuned to some news station-- truth be told, I already missed the chatter of the dispatch as I was driving. The traffic report had little bearing on my current locale, but the weather gave me some concern: snowstorm coming up off the Great Lakes, apparently. Spending the weekend with a small crowd I barely knew appealed very little to me. Being cooped up with them the entire time due to weather seemed like a recipe for an epidemic of cabin fever.
+
+&gt;[2] drive
+
+Hairpin Turn
+If I&apos;d finished that last thought a few seconds earlier, I might&apos;ve noticed the caution sign for the sharp turn, barely visible through the snow. The car was going too fast, and the guardrail came out of nowhere.
+
+&gt;[3] brake
+I hit the brakes, but the car kept straight for the guardrail, slamming through, and going over.
+
+The back end of the car lost traction and swung out wide, trying vainly to follow the front, just like one of those car commercials. Unfortunately, I was not a professional driver, nor was this a closed course, and the right side of the car went over the edge of the cliff, momentum then taking the rest of the car with it. In shock, my brain couldn&apos;t manage to tell my body to do more than grip the wheel uselessly as the car tumbled down the steep incline. I lost count of the rolls after three. The roof hit a tree, and I was jerked upward against the seat belt. Snow from the branches fell into a pile onto the passenger window from the impact. I heard a thud, snuffing out the brief glimpse of moonlight.
+
+Upturned Car
+I wasn&apos;t sure how long I&apos;d been out. Taking stock of my situation, I was surprised to find myself more or less unhurt, save for a dull ache in my left wrist where I&apos;d tried to brace against the door. I took a few deep breaths, and tried to gather myself-- I was still a little mentally a little shocked and unfocused.
+
+The car was presently lying at the bottom of a cliff on its side. Above me, I could see moonlight, dimly mottled by the snow on the passenger side windows. The windshield in front of me showed nothing but evergreen forest, extending into the darkness.
+
+I was still strapped in, the seat belt made sure I stayed put. At least one thing in this car still knew how to do its job right.
+
+&gt;[4] look
+Upturned Car
+I wasn&apos;t sure how long I&apos;d been out. Taking stock of my situation, I was surprised to find myself more or less unhurt, save for a dull ache in my left wrist where I&apos;d tried to brace against the door. I took a few deep breaths, and tried to gather myself-- I was still a little mentally a little shocked and unfocused.
+
+The car was presently lying at the bottom of a cliff on its side. Above me, I could see moonlight, dimly mottled by the snow on the passenger side windows. The windshield in front of me showed nothing but evergreen forest, extending into the darkness.
+
+I was still strapped in, the seat belt made sure I stayed put. At least one thing in this car still knew how to do its job right.
+
+&gt;[5] unbuckle seat belt
+I wrestled with the jammed seat belt for a moment, then managed to undo it, falling a few inches down against the driver door once the chest belt was free.
+
+&gt;[6] kick windshield
+Bracing my back against the sideways seat, I gave the windshield a couple of sharp kicks. I felt the seal start to give, and then it dislodged entirely from the frame, making an exit. It fell out onto the snow with a muffled crunch, and the bitter wind started to blow into the old car. I grabbed my bag and stepped out into the forest.
+
+Bottom of Cliff
+I stood on a  ridge densely packed with trees some ways below the highway. My overturned car sat a few feet away. The ridge extended as far as I could see to the north, going nowhere in particular. To the west I saw the steep incline the car had rolled down, and the path it&apos;d cut through the snow and brush.
+
+I was miles from nowhere. It had stopped snowing for the moment. The night sky was starting to lighten, I figured I had an hour before sunrise.
+
+Fucking swell.
+
+&gt;[7] any key
+That noun did not make sense in this context.
+
+&gt;[8] up
+
+Sharp Bend
+I stood about a hundred feet from the hairpin turn where my car had gone over; I could see the tire tracks and broken guardrail to the south.
+
+The second I turned my head to look down the lane, I saw a pair of headlights approach. A black Mercedes pulled up and came to a stop just in front of me. The passenger door opened, and I saw Val looking out at me.
+
+&quot;Get in,&quot; she said.
+
+&gt;[9] get in
+I got into the Mercedes.
+
+Sedan
+The inside of the Mercedes was yards of brushed metal and hand-stitched leather. It still smelled new. Having run out of things to talk about, I had nothing to do but wait for us to arrive.
+
+Val drove the car, her eyes looking miles beyond the road, the mountains, and the horizon.
+
+&gt;[10] talk about
+(the cell phone)
+(addressing Val)
+There was no reply.
+
+I could have asked ask about her car, ask about the chalet or ask about sunrise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="204">YES</temporary>
+    <children>
+      <child nodeId="node-0x7bf80900" />
+    </children>
+  </item>
+  <item nodeId="node-0x7bf80900">
+    <command xml:space="preserve">talk to val</command>
+    <result xml:space="preserve">I was already talking to Val.
+
+I could have asked ask about her car, ask about the chalet or ask about sunrise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="204">YES</temporary>
+    <children>
+      <child nodeId="node-0x7bf80970" />
+    </children>
+  </item>
+  <item nodeId="node-0x7bf80970">
+    <command xml:space="preserve">ask about sunrise</command>
+    <result xml:space="preserve">&quot;Sun goes up at 7:03 today. Always check the time before you leave for the night,&quot; she said.
+
+I looked out the window, trying not to feel like a kid being lectured by his mom.
+
+I could have asked ask about her car or ask about the chalet.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="204">YES</temporary>
+    <children>
+      <child nodeId="node-0x7bf809e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7bf809e0">
+    <command xml:space="preserve">ask about house</command>
+    <result xml:space="preserve">Where are we going?
+
+TODO.
+
+I could have asked ask about her car.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="204">YES</temporary>
+    <children>
+      <child nodeId="node-0x7bf80a50" />
+    </children>
+  </item>
+  <item nodeId="node-0x7bf80a50">
+    <command xml:space="preserve">ask about car</command>
+    <result xml:space="preserve">&quot;Nice ride,&quot; I said.
+
+&quot;You should have called,&quot; Val replied, ignoring my comment.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="204">YES</temporary>
+    <children>
+      <child nodeId="node-0x7bf80ac0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7bf80ac0">
+    <command xml:space="preserve">topics</command>
+    <result xml:space="preserve">I could have asked about her car, about the chalet or about sunrise.
+
+I could have asked about her car, about the chalet or about sunrise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="203">YES</temporary>
+  </item>
+  <item nodeId="node-0x7e170570">
+    <command xml:space="preserve">test valinvest</command>
+    <result xml:space="preserve">(Testing.)
+
+&gt;[1] test arrival
+(Testing.)
+
+&gt;[2] test body
+(Testing.)
+
+&gt;[3] test discover
+(Testing.)
+
+&gt;[4] test firstconvo
+(Testing.)
+
+&gt;[5] drive
+
+Mountain Pass
+I had the radio on tuned to some news station-- truth be told, I already missed the chatter of the dispatch as I was driving. The traffic report had little bearing on my current locale, but the weather gave me some concern: snowstorm coming up off the Great Lakes, apparently. Spending the weekend with a small crowd I barely knew appealed very little to me. Being cooped up with them the entire time due to weather seemed like a recipe for an epidemic of cabin fever.
+
+&gt;[6] drive
+
+Hairpin Turn
+If I&apos;d finished that last thought a few seconds earlier, I might&apos;ve noticed the caution sign for the sharp turn, barely visible through the snow. The car was going too fast, and the guardrail came out of nowhere.
+
+&gt;[7] brake
+I hit the brakes, but the car kept straight for the guardrail, slamming through, and going over.
+
+The back end of the car lost traction and swung out wide, trying vainly to follow the front, just like one of those car commercials. Unfortunately, I was not a professional driver, nor was this a closed course, and the right side of the car went over the edge of the cliff, momentum then taking the rest of the car with it. In shock, my brain couldn&apos;t manage to tell my body to do more than grip the wheel uselessly as the car tumbled down the steep incline. I lost count of the rolls after three. The roof hit a tree, and I was jerked upward against the seat belt. Snow from the branches fell into a pile onto the passenger window from the impact. I heard a thud, snuffing out the brief glimpse of moonlight.
+
+Upturned Car
+I wasn&apos;t sure how long I&apos;d been out. Taking stock of my situation, I was surprised to find myself more or less unhurt, save for a dull ache in my left wrist where I&apos;d tried to brace against the door. I took a few deep breaths, and tried to gather myself-- I was still a little mentally a little shocked and unfocused.
+
+The car was presently lying at the bottom of a cliff on its side. Above me, I could see moonlight, dimly mottled by the snow on the passenger side windows. The windshield in front of me showed nothing but evergreen forest, extending into the darkness.
+
+I was still strapped in, the seat belt made sure I stayed put. At least one thing in this car still knew how to do its job right.
+
+&gt;[8] look
+Upturned Car
+I wasn&apos;t sure how long I&apos;d been out. Taking stock of my situation, I was surprised to find myself more or less unhurt, save for a dull ache in my left wrist where I&apos;d tried to brace against the door. I took a few deep breaths, and tried to gather myself-- I was still a little mentally a little shocked and unfocused.
+
+The car was presently lying at the bottom of a cliff on its side. Above me, I could see moonlight, dimly mottled by the snow on the passenger side windows. The windshield in front of me showed nothing but evergreen forest, extending into the darkness.
+
+I was still strapped in, the seat belt made sure I stayed put. At least one thing in this car still knew how to do its job right.
+
+&gt;[9] unbuckle seat belt
+I wrestled with the jammed seat belt for a moment, then managed to undo it, falling a few inches down against the driver door once the chest belt was free.
+
+&gt;[10] kick windshield
+Bracing my back against the sideways seat, I gave the windshield a couple of sharp kicks. I felt the seal start to give, and then it dislodged entirely from the frame, making an exit. It fell out onto the snow with a muffled crunch, and the bitter wind started to blow into the old car. I grabbed my bag and stepped out into the forest.
+
+Bottom of Cliff
+I stood on a  ridge densely packed with trees some ways below the highway. My overturned car sat a few feet away. The ridge extended as far as I could see to the north, going nowhere in particular. To the west I saw the steep incline the car had rolled down, and the path it&apos;d cut through the snow and brush.
+
+I was miles from nowhere. It had stopped snowing for the moment. The night sky was starting to lighten, I figured I had an hour before sunrise.
+
+Fucking swell.
+
+&gt;[11] any key
+That noun did not make sense in this context.
+
+&gt;[12] up
+
+Sharp Bend
+I stood about a hundred feet from the hairpin turn where my car had gone over; I could see the tire tracks and broken guardrail to the south.
+
+The second I turned my head to look down the lane, I saw a pair of headlights approach. A black Mercedes pulled up and came to a stop just in front of me. The passenger door opened, and I saw Val looking out at me.
+
+&quot;Get in,&quot; she said.
+
+&gt;[13] get in
+I got into the Mercedes.
+
+Sedan
+The inside of the Mercedes was yards of brushed metal and hand-stitched leather. It still smelled new. Having run out of things to talk about, I had nothing to do but wait for us to arrive.
+
+Val drove the car, her eyes looking miles beyond the road, the mountains, and the horizon.
+
+&gt;[14] talk to val
+I said hello to Val.
+
+I could have asked ask about her car, ask about the chalet or ask about sunrise.
+
+&gt;[15] ask about sunrise
+&quot;Sun goes up at 7:03 today. Always check the time before you leave for the night,&quot; she said.
+
+I looked out the window, trying not to feel like a kid being lectured by his mom.
+
+I could have asked ask about her car or ask about the chalet.
+
+&gt;[16] ask about house
+Where are we going?
+
+TODO.
+
+I could have asked ask about her car.
+
+&gt;[17] ask about car
+&quot;Nice ride,&quot; I said.
+
+&quot;You should have called,&quot; Val replied, ignoring my comment.
+
+&gt;[18] wait
+Driveway
+We stood at the end of a long gravel drive, staring up at a large house with a dark red wood exterior. Steps to the east led to a porch that spanned the facade of the place, wrapping around to a deck in the back that presumably had a great view of the lake and the countryside. It was more ski lodge than cabin, and looked like it could comfortably shelter an entire biathlon team if it had to.
+
+Val got out of the car and took her bag out of the trunk.
+
+&quot;Come on, I&apos;ll introduce you to Alan,&quot; she said, walking up the drive.
+
+&gt;[19] e
+
+Front Porch
+Steps led up from the gravel driveway to the porch. Narrow unpainted wood planks extended the length of the house, along with windows that looked into rooms at the front of the house. Through them, I saw blinds, and a glint of something metallic, like a shutter.
+
+The front door stood open to the porch.
+ I could tell right away that something was wrong, like the door had been damaged somehow.
+
+&gt;[20] e
+
+Foyer
+I walked into the spacious foyer, trying not to walk into the large lacquered screens in front of the door. The shiny black wood was decorated with an intricate picture in gold paint, depicting a Chinese court scene. It seemed at odds with the exterior of the house, but matched the rest of the decor; the interior was a mixture of Old World furniture and Asian influences.
+
+A layer of snow had blown in through the open doorway, and was slowly melting into a puddle on the enormous Persian rug. 
+
+The front door stood open to the porch.
+ I could tell right away that something was wrong, like the door had been damaged somehow.
+
+
+&gt;[21] e
+
+Greatroom
+The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
+
+A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
+
+A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;Hark, The Herald Angels Sing&quot; warbling from what sounded like an old radio.
+
+&gt;[22] u
+
+Reading Nook
+I climbed the stairs to the reading nook. Shelves lined the walls of the small room, and a couple of books had been knocked off them onto the floor. A pair of wingback armchairs faced each other with a coffee table in between. A small pool of red liquid lay underneath the table.
+
+A man sat in one, slightly paunchy and slightly grey, his eyes and mouth wide open. His glasses were askew. He was wearing a navy blue cardigan, stained all over the front with a dark, almost black liquid. What looked like a small knife was sticking out of his neck, plunged in so far that only the handle was visible.
+
+An antique wooden radio sat on the table, playing Christmas carols.
+
+I could also see a bottle of wine and a wineglass here.
+
+&gt;[23] x body
+He looked like he was fifty, but something about his well-preserved look told me that he was probably sixty. It wasn&apos;t that he was in good shape-- I doubted he&apos;d seen much real exercise since he was in high school, and maybe not even then. He struck me as a debate team sort of guy.  I could tell he didn&apos;t get out much. His fingers were broad, but smooth. His hands had no calluses and no rings, but he wore a Rolex watch. It wasn&apos;t fake, and had cost probably three times what my car was worth before I&apos;d driven it off a cliff a few hours ago.
+
+&gt;[24] x body
+He looked like he was fifty, but something about his well-preserved look told me that he was probably sixty. It wasn&apos;t that he was in good shape-- I doubted he&apos;d seen much real exercise since he was in high school, and maybe not even then. He struck me as a debate team sort of guy.  I could tell he didn&apos;t get out much. His fingers were broad, but smooth. His hands had no calluses and no rings, but he wore a Rolex watch. It wasn&apos;t fake, and had cost probably three times what my car was worth before I&apos;d driven it off a cliff a few hours ago.
+
+Val came up the stairs, freezing the second she saw the body. Her eyes narrowed, and I could tell her mind was racing, the first time I&apos;d seen anything but placid boredom on her face. Half of me was relieved to know that there was something in this world that could perturb her. The other half was unnerved by it. She looked away and hitched the poker face back on pretty quick.
+
+Val nodded at the poor stiff and said, &quot;Meet Professor Alan Bowden, our host this weekend.&quot;
+
+&gt;[25] d
+
+Greatroom
+The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
+
+A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
+
+A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;Angels We Have Heard on High&quot; warbling from what sounded like an old radio.
+
+&gt;[26] e
+
+Downstairs Hallway
+
+&gt;[27] w
+
+Greatroom
+The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
+
+A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
+
+A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;O Come, All Ye Faithful&quot; warbling from what sounded like an old radio.
+
+&gt;[28] e
+
+Downstairs Hallway
+
+&gt;[29] w
+
+Greatroom
+The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
+
+A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
+
+A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;God Rest Ye Merry, Gentlemen&quot; warbling from what sounded like an old radio.
+
+&gt;[30] e
+
+Downstairs Hallway
+
+&gt;[31] w
+
+Greatroom
+The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
+
+A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
+
+A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;Angels We Have Heard on High&quot; warbling from what sounded like an old radio.
+
+&gt;[32] e
+
+Downstairs Hallway
+
+&gt;[33] w
+
+Greatroom
+The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
+
+A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
+
+A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;Angels We Have Heard on High&quot; warbling from what sounded like an old radio.
+
+&gt;[34] e
+
+Downstairs Hallway
+I heard the front door open, and the sound of voices from the foyer. It closed a minute later.
+
+
+&gt;[35] w
+
+Greatroom
+The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
+
+A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
+
+A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard &quot;God Rest Ye Merry, Gentlemen&quot; warbling from what sounded like an old radio.
+
+&gt;[36] w
+
+Foyer
+I walked into the spacious foyer, trying not to walk into the large lacquered screens in front of the door. The shiny black wood was decorated with an intricate picture in gold paint, depicting a Chinese court scene. It seemed at odds with the exterior of the house, but matched the rest of the decor; the interior was a mixture of Old World furniture and Asian influences. 
+
+Three men stood on the rug, their coats and pant cuffs damp with snow. Val made introductions all around, as if nothing was wrong. 
+
+I studied their faces carefully. If one of them knew about Alan upstairs, they weren&apos;t letting on. The three men were overdressed for vacation, as rich men often are. But somehow, they were oddly mismatched. I doubted that they came here together.
+
+
+ I could tell right away that something was wrong, like the door had been damaged somehow.
+
+I could also see Nathan, Scott and Jan here.
+
+&gt;[37] w
+Val waited a minute for the conversations the three were having to die down.
+(Press a key)She folded her arms across her chest and took a deep breath quiet enough that only I heard it.
+
+&quot;Gentlemen, we have a problem. Alan&apos;s dead. We found him upstairs, stabbed.&quot;
+
+A stunned silence followed. When it was clear no one was going to break it, she went on. &quot;I&apos;m going to call it in to the New York Magistrate&apos;s and find out who isn&apos;t on vacation that they can send over.&quot; She lifted a hand, exposing her pale wrist enough to read the face of her watch. &quot;It&apos;s going to be at least six hours before they can send someone, and they&apos;ll have to make it through what&apos;s left of the winter storm. Until we can figure out exactly what happened and who&apos;s responsible, I suggest we all stay in our rooms. My associate here has some experience with police investigation, he can do the basics until the officials show up.&quot;
+
+Nathaniel seemed to bristle at this. &quot;Hang on a minute, wait in our rooms? Am I to take it you&apos;re presuming us suspects? How do I know you and your friend didn&apos;t just kill Alan?&quot;
+
+Val shrugged and pointed at me.&quot;It happens, my friend here is the only one of us with a solid alibi, unless I&apos;m mistaken.&quot;
+
+The lack of a response indicated that she wasn&apos;t, which bothered me a little. The three picked up their bags and trundled down the hall, varying degrees of insulted, Jan called back in a raised voice. &quot;You know there&apos;s another possibility you haven&apos;t considered; someone out there picked off Alan, and now that we&apos;re all here, the hunt is really on.&quot;
+
+He said it with false bravado, and I shouldn&apos;t have let the idea take root in my mind, but it did.
+
+&gt;[38] talk to val
+I said hello to Val.
+
+I could have asked ask about Alan, ask about the murder, ask about Nathaniel or ask what was in it for me.
+
+&gt;[39] ask about alan
+&quot;How well did you know Alan?&quot;
+
+&quot;I knew him for probably ten years, we were only close for a handful of those. He wasn&apos;t perfect, but I knew him well enough that I feel like he deserved better than he got.&quot;
+
+I could have asked ask about the murder, ask about Nathaniel or ask what was in it for me.
+
+&gt;[40] ask about murder
+Val leaned in close until her face was inches from mine, and lowered her voice, even though no one was around. &quot;Listen, kid. Here&apos;s how it&apos;s going down. We have a few hours before what passes for the law for our kind shows up stomping their flat feet around. They don&apos;t much care if the wrong one of us takes the rap, or if no one does. Alan&apos;s nobody to the Circle, I doubt they&apos;d care if this case went stone cold. But he used to be a friend of mine, and this is just something I want to do for him.&quot;.
+
+I didnt say anything.
+
+I could have asked ask about Nathaniel or ask what was in it for me.
+
+&gt;[41] ask about nathaniel
+&quot;This Nathaniel Wyndham, is he old money?&quot; I asked.
+
+&quot;I guess. He made a sizeable fortune selling boots to the Allies during World War I, a real war profiteer. He used it to buy that ridiculous title, a couple of country estates, and even restored an old manor house. But a little time running with the Circle crowd will tell you that &quot;old money&quot; is a relative term.&quot;
+
+I could have asked ask what was in it for me.
+
+&gt;[42] ask what was in it for me
+&quot;Seems like a pretty long way to stick my neck out for you. What&apos;s in it for me, exactly?&quot;
+
+She looked at me sharply. I could tell it got a lot of use, it was just as practiced as everything else about her. Here was a woman who wasn&apos;t afraid to throw her weight around, and made it bad practice to make her do it.
+
+&quot;I&apos;m your first client, and I know a lot of people, so how about you make this one on the house? You owe me, remember?&quot;
+
+She had me there. I didn&apos;t know if this was the kind of thing I could pay back, but I didn&apos;t like owing that kind of debt.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="53">YES</temporary>
+  </item>
+  <item nodeId="node-0x7bf80b30">
+    <command xml:space="preserve">test discover</command>
+    <result xml:space="preserve">(Testing.)
+
+&gt;[1] test firstconvo
+(Testing.)
+
+&gt;[2] drive
+
+Mountain Pass
+I had the radio on tuned to some news station-- truth be told, I already missed the chatter of the dispatch as I was driving. The traffic report had little bearing on my current locale, but the weather gave me some concern: snowstorm coming up off the Great Lakes, apparently. Spending the weekend with a small crowd I barely knew appealed very little to me. Being cooped up with them the entire time due to weather seemed like a recipe for an epidemic of cabin fever.
+
+&gt;[3] drive
+
+Hairpin Turn
+If I&apos;d finished that last thought a few seconds earlier, I might&apos;ve noticed the caution sign for the sharp turn, barely visible through the snow. The car was going too fast, and the guardrail came out of nowhere.
+
+&gt;[4] brake
+I hit the brakes, but the car kept straight for the guardrail, slamming through, and going over.
+
+The back end of the car lost traction and swung out wide, trying vainly to follow the front, just like one of those car commercials. Unfortunately, I was not a professional driver, nor was this a closed course, and the right side of the car went over the edge of the cliff, momentum then taking the rest of the car with it. In shock, my brain couldn&apos;t manage to tell my body to do more than grip the wheel uselessly as the car tumbled down the steep incline. I lost count of the rolls after three. The roof hit a tree, and I was jerked upward against the seat belt. Snow from the branches fell into a pile onto the passenger window from the impact. I heard a thud, snuffing out the brief glimpse of moonlight.
+
+Upturned Car
+I wasn&apos;t sure how long I&apos;d been out. Taking stock of my situation, I was surprised to find myself more or less unhurt, save for a dull ache in my left wrist where I&apos;d tried to brace against the door. I took a few deep breaths, and tried to gather myself-- I was still a little mentally a little shocked and unfocused.
+
+The car was presently lying at the bottom of a cliff on its side. Above me, I could see moonlight, dimly mottled by the snow on the passenger side windows. The windshield in front of me showed nothing but evergreen forest, extending into the darkness.
+
+I was still strapped in, the seat belt made sure I stayed put. At least one thing in this car still knew how to do its job right.
+
+&gt;[5] look
+Upturned Car
+I wasn&apos;t sure how long I&apos;d been out. Taking stock of my situation, I was surprised to find myself more or less unhurt, save for a dull ache in my left wrist where I&apos;d tried to brace against the door. I took a few deep breaths, and tried to gather myself-- I was still a little mentally a little shocked and unfocused.
+
+The car was presently lying at the bottom of a cliff on its side. Above me, I could see moonlight, dimly mottled by the snow on the passenger side windows. The windshield in front of me showed nothing but evergreen forest, extending into the darkness.
+
+I was still strapped in, the seat belt made sure I stayed put. At least one thing in this car still knew how to do its job right.
+
+&gt;[6] unbuckle seat belt
+I wrestled with the jammed seat belt for a moment, then managed to undo it, falling a few inches down against the driver door once the chest belt was free.
+
+&gt;[7] kick windshield
+Bracing my back against the sideways seat, I gave the windshield a couple of sharp kicks. I felt the seal start to give, and then it dislodged entirely from the frame, making an exit. It fell out onto the snow with a muffled crunch, and the bitter wind started to blow into the old car. I grabbed my bag and stepped out into the forest.
+
+Bottom of Cliff
+I stood on a  ridge densely packed with trees some ways below the highway. My overturned car sat a few feet away. The ridge extended as far as I could see to the north, going nowhere in particular. To the west I saw the steep incline the car had rolled down, and the path it&apos;d cut through the snow and brush.
+
+I was miles from nowhere. It had stopped snowing for the moment. The night sky was starting to lighten, I figured I had an hour before sunrise.
+
+Fucking swell.
+
+&gt;[8] any key
+That noun did not make sense in this context.
+
+&gt;[9] up
+
+Sharp Bend
+I stood about a hundred feet from the hairpin turn where my car had gone over; I could see the tire tracks and broken guardrail to the south.
+
+The second I turned my head to look down the lane, I saw a pair of headlights approach. A black Mercedes pulled up and came to a stop just in front of me. The passenger door opened, and I saw Val looking out at me.
+
+&quot;Get in,&quot; she said.
+
+&gt;[10] get in
+I got into the Mercedes.
+
+Sedan
+The inside of the Mercedes was yards of brushed metal and hand-stitched leather. It still smelled new. Having run out of things to talk about, I had nothing to do but wait for us to arrive.
+
+Val drove the car, her eyes looking miles beyond the road, the mountains, and the horizon.
+
+&gt;[11] talk to val
+I said hello to Val.
+
+I could have asked ask about her car, ask about the chalet or ask about sunrise.
+
+&gt;[12] ask about sunrise
+&quot;Sun goes up at 7:03 today. Always check the time before you leave for the night,&quot; she said.
+
+I looked out the window, trying not to feel like a kid being lectured by his mom.
+
+I could have asked ask about her car or ask about the chalet.
+
+&gt;[13] ask about house
+Where are we going?
+
+TODO.
+
+I could have asked ask about her car.
+
+&gt;[14] ask about car
+&quot;Nice ride,&quot; I said.
+
+&quot;You should have called,&quot; Val replied, ignoring my comment.
+
+&gt;[15] wait
+Driveway
+We stood at the end of a long gravel drive, staring up at a large house with a dark red wood exterior. Steps to the east led to a porch that spanned the facade of the place, wrapping around to a deck in the back that presumably had a great view of the lake and the countryside. It was more ski lodge than cabin, and looked like it could comfortably shelter an entire biathlon team if it had to.
+
+Val got out of the car and took her bag out of the trunk.
+
+&quot;Come on, I&apos;ll introduce you to Alan,&quot; she said, walking up the drive.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="204">YES</temporary>
+  </item>
+  <item nodeId="node-0x7bf80ba0">
+    <command xml:space="preserve">hint</command>
+    <result xml:space="preserve">That noun did not make sense in this context.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1074">YES</temporary>
   </item>
 </Skein>

@@ -105,7 +105,7 @@ A room is either strapped or unstrapped. A room is usually unstrapped.
 When the Car_Escape begins:
 	Now the cell phone is broken.
 	
-Upturned Car is a strapped room.[ Upturned Car is below the Hairpin_Turn.] The description is "I wasn't sure how long I'd been out. Taking stock of my situation, I was surprised to find myself more or less unhurt, save for a dull ache in my left wrist where I'd tried to brace against the door. I took a few deep breaths, and tried to gather myself-- I was still a little mentally a little shocked and unfocused.[paragraph break]The car was presently lying at the bottom of a cliff on its side. Above me, I could see moonlight, dimly mottled by the snow on the passenger side windows. The windshield in front of me showed nothing but evergreen forest, extending into the darkness.[if Upturned Car is strapped][paragraph break]I was still strapped in, the seat belt made sure I stayed put. At least one thing in this car still knew how to do its job right.[end if][if Upturned Car is unstrapped][paragraph break]I crouched at the bottom of the car on the driver door, trying to figure the best way out.[end if]".
+Upturned Car is a strapped room. The description is "I wasn't sure how long I'd been out. Taking stock of my situation, I was surprised to find myself more or less unhurt, save for a dull ache in my left wrist where I'd tried to brace against the door. I took a few deep breaths, and tried to gather myself-- I was still a little mentally a little shocked and unfocused.[paragraph break]The car was presently lying at the bottom of a cliff on its side. Above me, I could see moonlight, dimly mottled by the snow on the passenger side windows. The windshield in front of me showed nothing but evergreen forest, extending into the darkness.[if Upturned Car is strapped][paragraph break]I was still strapped in, the seat belt made sure I stayed put. At least one thing in this car still knew how to do its job right.[end if][if Upturned Car is unstrapped][paragraph break]I crouched at the bottom of the car on the driver door, trying to figure the best way out.[end if]".
 [The chest belt had dug into my neck pretty hard, but it hadn't left a bruise.]
 The driver door is scenery in the Upturned Car.
 Instead of kicking the driver door:
@@ -163,13 +163,13 @@ After reading a command:
 			say "The seat belt held me firmly in place in what was now the bottom of the upturned car. I wasn't going to be able to see or do much of anything until I unbuckled myself.";
 			stop the action;
 
-Section 4 - Scene Cliff_Climbing
+Chapter 4 - Scene Cliff_Climbing
 
 Bottom of Cliff is a room. Bottom of Cliff is below Sharp Bend. The description is "I stood on a  ridge densely packed with trees some ways below the highway. My overturned car sat a few feet away. The ridge extended as far as I could see to the north, going nowhere in particular. To the west I saw the steep incline the car had rolled down, and the path it'd cut through the snow and brush.[paragraph break]I was miles from nowhere[if we have examined the cell phone], and the cherry on top was that my cell phone was broken[end if]. It had stopped snowing for the moment. The night sky was starting to lighten, I figured I had an hour before sunrise.[paragraph break]Fucking swell."
 Instead of going west in the Bottom of Cliff:
 	try going up.
 
-Section 5 - Scene Car_Embarking
+Chapter 5 - Scene Car_Embarking
 
 Sharp Bend is a room. Sharp Bend is above Bottom of Cliff and north of Hairpin_Turn. The description is "I stood about a hundred feet from the hairpin turn where my car had gone over; I could see the tire tracks and broken guardrail to the south.".
 
@@ -197,8 +197,7 @@ When Car_Embarking begins:
 	say "The second I turned my head to look down the lane, I saw a pair of headlights approach. A black Mercedes pulled up and came to a stop just in front of me. The passenger door opened, and I saw Val looking out at me.[paragraph break][quotation mark]Get in,[quotation mark] she said.";
 	now the Valcar_Container is in the Sharp Bend.
 
-
-Section 6 - Scene Riding_Scene
+Chapter 6 - Scene Riding_Scene
 
 When Riding_Scene begins:
 	Now the player is in the Sedan.
@@ -217,7 +216,7 @@ Instead of waiting in the Sedan during Riding_Scene:
 	Otherwise:
 		Continue the action.
 
-Section 7 - Scene Cliff_Gameover
+Chapter 7 - Scene Cliff_Gameover
 
 Mountain Ridge is north of Bottom of Cliff. The description is "I had a bad feeling as I walked my way along the ridge, trudging a couple of miles through the foot-deep snow. The path didn't seem to be leading anywhere, and the sky kept getting lighter as I went. I still had enough time to turn back, if I wanted."
 
@@ -228,7 +227,7 @@ Precipice is north of Dense Forest. The description is "The forest abruptly ende
 When Cliff_Gameover begins:
 	end the story saying "The north end of the ridge had a stunning view of the eastern valley, and unfortunately the horizon, too. Through what must have been some quirk of fate, I never made it to the chalet. I smiled sardonically at the sunrise, searing like a fire newly kindled, even on that cold, windswept ridge. I guess I'd been spared what would have no doubt been an interminable weekend.[paragraph break]As far as last sights went, I supposed it could have been worse."
 
-Section 8 - Scene Body_Discovery
+Chapter 8 - Scene Body_Discovery
 
 Val_House is a woman. The printed name is "Val". Understand "Val" as Val_House. The description is "She wore a belted black overcoat with straight shoulders, which covered all of her except for the bottom of a long pencil skirt. She hadn't bothered taking her driving gloves off. I couldn't put my finger on it, but there was something stiffly formal and practised about the way she moved.[if Val_House is in the Reading_Nook][paragraph break]Her eyes rested on what was left of the professor, her expression unreadable.[end if]".
 
@@ -259,8 +258,6 @@ The lock is scenery in the Front_Porch. The lock is a clue. The description is "
 	
 Foyer is a room. The description is "I walked into the spacious foyer, trying not to walk into the large lacquered screens in front of the door. The shiny black wood was decorated with an intricate picture in gold paint, depicting a Chinese court scene. It seemed at odds with the exterior of the house, but matched the rest of the decor; the interior was a mixture of Old World furniture and Asian influences.[if Body_Discovery is happening][paragraph break]A layer of snow had blown in through the open doorway, and was slowly melting into a puddle on the enormous Persian rug.[end if]
 [if Guest_Arrival is happening][paragraph break]Three men stood on the rug, their coats and pant cuffs damp with snow. Val made introductions all around, as if nothing was wrong. [paragraph break]I studied their faces carefully. If one of them knew about Alan upstairs, they weren't letting on. The three men were overdressed for vacation, as rich men often are. But somehow, they were oddly mismatched. I doubted that they came here together.[end if]"
-[TODO: end scene when player leaves the room, or talks to Val]
-
 
 Greatroom is a room. Greatroom is east of the Foyer. The description is "The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
 	
@@ -345,7 +342,7 @@ When Body_Discovery ends:
 	say "Val came up the stairs, freezing the second she saw the body. Her eyes narrowed, and I could tell her mind was racing, the first time I'd seen anything but placid boredom on her face. Half of me was relieved to know that there was something in this world that could perturb her. The other half was unnerved by it. She looked away and hitched the poker face back on pretty quick.[paragraph break]Val nodded at the poor stiff and said, [quotation mark]Meet Professor Alan Bowden, our host this weekend.[quotation mark][line break]";
 	wait for any key;
 
-Section PreArrival
+Chapter 9 - Scene Prearrival
 
 Prearrival_Counter is a number variable. Prearrival_Counter is usually 0.
 Every turn during Prearrival:
@@ -355,7 +352,7 @@ To decide whether the guests arrive:
 	If Prearrival_Counter > 10, yes;
 	no.
 
-Section 9 - Scene Guest_Arrival
+Chapter 10 - Scene Guest_Arrival
 
 When Guest_Arrival begins:
 	say "[if the player is not in the Foyer]I heard the front door open, and the sound of voices from the foyer. It closed a minute later.[end if][if the player is in the Foyer]The front door opened, and three men filed in, a lanky one in designer jeans holding the door for the other two. He closed it behind them, and they stood there looking around and putting snow on the rug, as though they expected a butler to come and announce them.[end if][paragraph break][if the player is in the Reading_Nook]Val and I glanced at each other across the dead man, and she left back down the stairs.[end if][if the player is in the Greatroom]Val came down the stairs, and crossed the room toward the sound of the noise.[end if]";
@@ -365,6 +362,11 @@ When Guest_Arrival begins:
 	now Nathan_Arrival is in the Foyer;
 	now Val_House is in the Foyer;
 	now the front door is closed.
+
+When Guest_Arrival ends:
+	Remove Jan_Arrival from play;
+	Remove Scott_Arrival from play;
+	Remove Nathan_Arrival from play;
 
 Jan_Arrival is a man. The printed name is "Jan". The description is "Jan Svennson was a broad-shouldered man with pale blue eyes. He was casually brushing snow off a European performance fleece sweater. Either he liked ice climbing, or he wanted people to think he did. He had the handshake of a salesman and the grin of a frat boy.".
 Scott_Arrival is a man. The printed name is "Scott". The description is "Scott Gage, on the other hand, was tall and lanky, and didn't seem at all suited to the cold. He wore a pair of Japanese selvedge jeans with the cuffs turned up to make sure everyone knew it. I'd have guessed he'd picked them up somewhere in SoHo if it weren't for the sweater he was wearing, useless against real cold, as all Californian sweaters are.".
@@ -395,24 +397,27 @@ To decide whether first investigation starts:
 		decide yes;
 	decide no.
 
-Section 10 - Scene First_Investigation
+Chapter 11 - Scene First_Investigation
+
 
 When First_Investigation begins:
 	say "Val waited a minute for the conversations the three were having to die down.";
 	say "(Press a key)";
 	wait for any key;
 	[TODO: clear the screen]
-	say "She folded her arms across her chest and took a deep breath quiet enough that only I heard it.[paragraph break][quotation mark]Gentlemen, we have a problem. Alan's dead. We found him upstairs, stabbed.[quotation mark][paragraph break]A stunned silence followed. When it was clear no one was going to break it, she went on. [quotation mark]I'm going to call it in to the New York Magistrate's and find out who isn't on vacation that they can send over.[quotation mark] She lifted a hand, exposing her pale wrist enough to read the face of her watch. [quotation mark]It's going to be at least six hours before they can send someone, and they'll have to make it through what's left of the winter storm. Until we can figure out exactly what happened and who's responsible, I suggest we all stay in our rooms. My associate here has some experience with police investigation, he can do the basics until the officials show up.[quotation mark][paragraph break]Nathaniel seemed to bristle at this. [quotation mark]Hang on a minute, wait in our rooms? Am I to take it you're presuming us suspects? How do I know you and your friend didn't just kill Alan?[quotation mark][paragraph break]Val shrugged and pointed at me.[quotation mark]It happens, my friend here is the only one of us with a solid alibi, unless I'm mistaken.[quotation mark][paragraph break]The lack of a response indicated that she wasn't, which bothered me a little. The three picked up their bags and trundled down the hall, varying degrees of insulted, Jan called back in a raised voice. [quotation mark]You know there's another possibility you haven't considered; someone out there picked off Alan, and now that we're all here, the hunt is really on.[quotation mark][paragraph break]He said it with false bravado, and I shouldn't have let the idea take root in my mind, but it did."
+	say "She folded her arms across her chest and took a deep breath quiet enough that only I heard it.[paragraph break][quotation mark]Gentlemen, we have a problem. Alan's dead. We found him upstairs, stabbed.[quotation mark][paragraph break]A stunned silence followed. When it was clear no one was going to break it, she went on. [quotation mark]I'm going to call it in to the New York Magistrate's and find out who isn't on vacation that they can send over.[quotation mark] She lifted a hand, exposing her pale wrist enough to read the face of her watch. [quotation mark]It's going to be at least six hours before they can send someone, and they'll have to make it through what's left of the winter storm. Until we can figure out exactly what happened and who's responsible, I suggest we all stay in our rooms. My associate here has some experience with police investigation, he can do the basics until the officials show up.[quotation mark][paragraph break]Nathaniel seemed to bristle at this. [quotation mark]Hang on a minute, wait in our rooms? Am I to take it you're presuming us suspects? How do I know you and your friend didn't just kill Alan?[quotation mark][paragraph break]Val shrugged and pointed at me.[quotation mark]It happens, my friend here is the only one of us with a solid alibi, unless I'm mistaken.[quotation mark][paragraph break]The lack of a response indicated that she wasn't, which bothered me a little. The three picked up their bags and trundled down the hall, varying degrees of insulted, Jan called back in a raised voice. [quotation mark]You know there's another possibility you haven't considered; someone out there picked off Alan, and now that we're all here, the hunt is really on.[quotation mark][paragraph break]He said it with false bravado, and I shouldn't have let the idea take root in my mind, but it did.";
+	now Nathan_Investigation is in the Nathan_Room;
+
 
 Scott_Investigation is a man. The description is "He had an unlit cigarette between his lips. They all seemed to smoke. His fingers fumbled with a brushed metal lighter and didn't seem to be making much progress, but he was giving it the old college try."
 Jan_Investigation is a man.
 Nathan_Investigation is a man.
 
-Section 11 - Main House
+Section 1 - Main House
 
 Hallway_Downstairs is a room. Hallway_Downstairs is east of the Greatroom. The printed name is "Downstairs Hallway".
 
-Hallway_Upstairs is above the Hallway_Downstairs. The printed name is "Upstairs Hallway".
+
 
 Kitchen is a room. Kitchen is east of the Hallway_Downstairs. The description is "The kitchen was probably the largest I've seen in my life. Wooden cabinets and handsome tile in earth tones went from wall to wall. The quaint country look was somewhat ruined by the collection of modern stainless steel kitchen appliances. They were brand new and it looked like not one of them had been used.".
 
@@ -427,21 +432,47 @@ The wine rack is scenery in the Wine_Cellar. The description is "What had to be 
 Understand "missing wine" as wine rack.
 Understand "missing bottles" as wine rack.
 
-Section 12 Master Bedroom
+Section Upstairs
 
-Master_Bedroom_Door is a closed door. 
-Master_Bedroom_Door is scenery.
-Master_Bedroom_Door is north of the Hallway_Upstairs and south of the Master_Bedroom.
+Hallway_Upstairs is above the Hallway_Downstairs. The printed name is "Upstairs Hallway".
 
-Master_Bedroom is a room.
+North_Hallway is north of the Hallway_Upstairs. The printed name is "North Hallway".
 
-Section 13 Guest Bedrooms
+East_Hallway is east of the Hallway_Upstairs. The printed name is "East Hallway".
 
-Nathan_Room is a room. The printed name is "Oak Room";
+Section Master Bedroom
 
-Scott_Room is a room. The printed name is "Sumac Room";
+master bedroom door is a closed door. it is scenery. it is north of the North_Wing and south of the Master_Bedroom.
 
-Jan_Room is a room. The printed name is "Hemlock Room";
+Master_Bedroom is a room. The printed name is "Master Bedroom". The description is "The master suite sat at the north end of the house and [if SHUTTERS_DOWN is true]had the best  view of the valley and the lake for miles [end if][if SHUTTERS_DOWN is false]had a row of floor-to-ceiling paned windows that ran the length of the room, but the shutters were closed, keeping the room dark as night[end if]. A four-poster bed with a thick down comforter looked twice as soft as the dead man's sweater had. Ornate wooden nightstands flanked the bed on either side. One was bare except for a lamp, the other was piled high with what must have been bedtime reading. In the corner of the room, I could see into a spacious closet."
+[TODO: Get on bed as a nice to have]
+[TODO: Nightstand conceals blood]
+
+the book is a clue. the book is in the Master_Bedroom. The description is "[italic type]Kokoro[roman type], by Soseki Natsume. The binding looked expensive and uncracked.TODO".
+Rule for writing a paragraph about the book:
+	say "A book lay on the nightstand.".
+
+Instead of opening the book:
+	try reading the book.
+Instead of reading the book:
+	say "TODO".
+
+Instead of entering the closet:
+	try examining the closet.
+Instead of going west in the Master_Bedroom:
+	try examining the closet.
+
+Walk-in closet is scenery in the master_bedroom. The description is "I walked into the closet and flicked on the light. Three quarters of it was the usual cruft that finds its way to a person's closet and never gets worn.[paragraph break]I looked at the rest of it. A handful of suits that looked like they'd been bought in the 80s, judging by the lapels. Performance fleece and hiking boots, never worn. Velvet smoking jacket, no sweatpants or loungewear. Professor Bowden seemed to have some old-fashioned sensibilities.".
+
+Section 3 - Guest Bedrooms
+
+Nathan_Room is a room. The printed name is "Oak Room". It is east of the East_Hallway.
+
+Scott_Room is a room. The printed name is "Sumac Room". It is south of the East_Hallway.
+
+Jan_Room is a room. The printed name is "Hemlock Room". It is north of the East_Hallway. The description is "The room had an angled ceiling to give the impression of an attic or rustic country cabin, except it was about as big as my entire apartment. Piles of climbing equipment and rope were heaped in the corner on top of ".
+
+SHUTTERS_DOWN is a truth state that varies. SHUTTERS_DOWN is false.
 
 [one wineglass on the table, other knocked over the railing, having fallen somewhere
 finds shard of glass, but glass upstairs is whole, give clue if the player has examined the whole glass]
@@ -449,15 +480,15 @@ finds shard of glass, but glass upstairs is whole, give clue if the player has e
 [TODO: Adaptive hint system]
 [TODO: If the player is too confused, simply change to an objective, use the "acting confused" cues from EmShort]
 
-Section 14 Bedroom
+Section 4 - PC Bedroom
 
 PC_Bedroom_Door is a closed door.
 PC_Bedroom_Door is scenery.
-PC_Bedroom_Door is east of the Hallway_Upstairs and south of the PC_Bedroom.
+PC_Bedroom_Door is west of the North_Hallway and east of the PC_Bedroom.
 
-Section 15 - Scene First Sleep
+Chapter 12 - Scene First Sleep
 
-The PC_Bedroom is a room. The description is "[if the scene is First_Sleep]I checked my watch, it was getting late, almost noon. I had a million things to think about, but figured I should still get a few hours' sleep while I still could.[end if]"
+The PC_Bedroom is a room. The description is "[if the scene is First_Sleep]I checked my watch, it was getting late, almost noon. I had a million things to think about, but figured I should get a few hours' sleep while I still could.[end if]"
 
 Val_Sleep is in the PC_Bedroom. The printed name is "Val".The description is "[if the scene is First_Sleep]Val was lying on top of the covers, facing the window. Her breathing was steady and slow, but I couldn't tell if she was asleep. She wore just a satin pajama shirt. If the cold bothered her, she didn't show it.[end if]"
 
@@ -469,7 +500,7 @@ carry out drinking the bottle of bourbon for the second time:
 	say "I went back to the bottle and poured again, more generous this time. I listened to the sound of something between snow and frozen rain pattering against the window. I listened to Val's steady breathing. She was either asleep, or thinking just as hard as I was. I stared at her back a long time, trying to decide if I wanted to talk to her.";
 [TODO: You can drink to think and pass the time in lieu of sleeping]
 
-Section 16 - Conversation Riding_Scene
+Section 1 - Conversation Riding_Scene
 
 Chalet is a subject. Understand "ski chalet/house" as chalet.
 Sunrise is a subject. Understand "dawn" as sunrise.
@@ -501,7 +532,9 @@ what time sunrise is a repeatable questioning quip.
 		it is off-limits.
 		it is available.]
 
-Section 17 - Conversations First_Investigation
+Chapter 13 - Conversations First_Investigation
+
+Section 1 - Val
 
 who alan is a repeatable questioning quip.
 	The printed name is "about Alan".
@@ -531,7 +564,11 @@ what was in it for me is a repeatable questioning quip.
 	It quip-supplies Val_House.
 	The proper scene is First_Investigation.
 
-Section 18 - Command Overrides
+Chapter 14 - Game Mechanics
+
+Section 1 - Command Overrides
+
+Understand the command "read" as something new. Reading is an action applying to one thing. Understand "read [something]" as reading.
 
 Understand the command kick as something new. Kicking is an action applying to one thing. Understand "kick [something]" as kicking. 
 Instead of kicking a person:
@@ -549,7 +586,7 @@ Understand the command hit as something new. Hitting is an action applying to on
 After reading a command:
 	If the player's command matches "ask", replace the player's command with "topics".
 	
-Section 19 - Conversation Tweaks
+Section 2 - Conversation Tweaks
 
 [The standard listing subject changes rule is not listed in any rulebook.
 The standard report other subjects rule is not listed in any rulebook.]
@@ -590,7 +627,7 @@ if the number of quips which are recollected by someone is 0, say "You have not 
                 increment N;
         if N is 0, say "You haven't discussed [the noun] with anyone yet."]
 
-Section 20 - Clues and Hints
+Section 3 - Clues and Hints
 
 A thing can be examined or unexamined. A thing is usually unexamined.
 
@@ -636,6 +673,10 @@ clue
 knife
 lock
 
+Tables of BlackmailClues
+clue
+book
+
 Understand the command "hint" as something new. Understand "hint" as asking for a hint. Asking for a hint is an action out of world. Instead of thinking, try asking for a hint.
 Carry out asking for a hint:
 	say "[bold type]Objective[roman type][paragraph break]";
@@ -643,7 +684,7 @@ Carry out asking for a hint:
 
 Understand the command "help" as something new. Understand "help" as asking for a hint.
 
-Section 21 - Inventory and Mechanics
+Section 4 - Inventory and Mechanics
 
 A room can be indoors or outdoors. A room is usually indoors.
 
@@ -657,7 +698,7 @@ Blood_status is a truth state that varies. Blood_status is usually false.
 
 [TODO: Make the cell phone break when the player enters the Bottom of Cliff by whatever method]
 	
-Section 22 - Tests
+Section 5 - Tests
 
 Test firstconvo with "drive/drive/brake/look/unbuckle seat belt/kick windshield/any key/up/get in"
 
@@ -705,7 +746,6 @@ I told myself it was just tomato juice]
 [Carter died some 70 years ago. Cases was stone cold. And the fact that Val was bothering to throw me at it meant that she thought the killer was still alive.][You have to wait to sire, Val waited 50 years]
 [Someone opens the curtains to a room, auto shutter controls, player must escape]
 [V. Detective is dirty cop? Hence why the real killer isn't worried?]
-[But then when V. Detective refuses to be bribed per killer's request, he gets mad and kills him?]
 [V. Det. is more interested in favors from old money than actual cash payoffs]
 [After my car got wrecked in that accident / You still think that was an accident?]
 [V. Det. fastropes in?]

@@ -3,10 +3,12 @@
     - Nathan
     - Jan
     - Scott
+- Shutters come down as first_invest starts
 
 - COMPUTER LOGIC
     - Give player password on Night 2
 - EMAILS
+- FUSE BOX logic
 
 - MAKE SPECIAL EVENTS IN BOLD, SO PEOPLE DON"T MISS THEM?
 - Wall clock shows the time as it finishes, creating locked from the outside.
@@ -18,6 +20,8 @@
 Bugs
 
 - Fix fucking topics double printing and having wrong tenses or whatever
+
+- Lots of double spaces throughout.
 
 
 ==================================
@@ -38,3 +42,5 @@ Low priority:
 - Add scenery to all the mountain areas, add them to region I guess
 - Clock in the vals_car scenery
 - Examine self, you know people are going to do that shit and complain.
+
+- [TODO: Get on bed as a nice to have]

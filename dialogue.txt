@@ -1,0 +1,136 @@
+pname is a repeatable questioning quip.
+	The printed name is "pname". The true-name is "tname"
+	The comment is "[quotation mark]comment[quotation mark]\.
+	The reply is "[quotation mark]reply[quotation mark]".
+	It quip-supplies speaker.
+	The proper scene is scene.
+
+
+who jan is a repeatable questioning quip.
+	The printed name is "about jan". The true-name is "who is Jan"
+	The comment is "[quotation mark]Who is Jan?[quotation mark]\.
+	The reply is "[quotation mark]Some dude.[quotation mark]".
+	It quip-supplies Val_House.
+	The proper scene is First_Investigation.
+
+
+quipmaker.py is a repeatable questioning quip.
+	The printed name is "what the murder". The true-name is "what the murder".
+	The comment is "[quotation mark]Listen, kid. Here's how it's going down. We have about twelve hours before the law, our kind of law, shows up stomping their flat feet around. They don't much care if the wrong one of us takes the rap, or if no one does. Alan's nobody to the Circle, I doubt they'd care if this case went stone cold. But he was a friend of mine, and he deserves better than that.[quotation mark]\.
+	The reply is "[quotation mark]I didnt say anything[quotation mark]".
+	It quip-supplies Val_House.
+	The proper scene is First_Investigation.
+
+
+quipmaker.py is a repeatable questioning quip.
+	The printed name is "what's in it for me".
+	The comment is "[quotation mark]Seems like a pretty long way to stick my neck out for you. What's in it for me, exactly?[quotation mark]\.
+	The reply is "[quotation mark]She looked at me sharply. I'm your first client, and I know a lot of people, how about you make this one on the house? You owe me, remember? She had me there.[quotation mark]".
+	It quip-supplies Val_House.
+	The proper scene is First_Investigation.
+
+
+quipmaker.py is a repeatable questioning quip.
+	The printed name is "who alan".
+	The comment is "[quotation mark]How well did you know Alan?[quotation mark]".
+	The reply is "[quotation mark]I knew him for probably ten years, we were only close for a handful of those. Well enough that I feel like he deserved better than he got.[quotation mark]".
+	It quip-supplies Val_House.
+	The proper scene is First_Investigation.
+
+
+quipmaker.py is a repeatable questioning quip.
+	The printed name is "who alan".
+	The comment is "[quotation mark]How well did you know Alan?[quotation mark]".
+	The reply is "[quotation mark]I knew him for probably ten years, we were only close for a handful of those. Well enough that I feel like he deserved better than he got.[quotation mark]".
+	It quip-supplies Val_House.
+	The proper scene is First_Investigation.
+
+
+quipmaker.py is a repeatable questioning quip.
+	The printed name is "sanction".
+	The comment is "[quotation mark]What happens to folks who don't wait their turn?[quotation mark]".
+	The reply is "[quotation mark]Only single[quotation mark]".
+	It quip-supplies Scott_Investigation.
+	The proper scene is First_Investigation.
+
+
+quipmaker.py is a repeatable questioning quip.
+	The printed name is "jans work".
+	The comment is "[quotation mark]So what do you do for a living?[quotation mark]".
+	The reply is "[quotation mark]Hedge funds, mainly. It's a lot of handshaking and time on the golf course, but it pays for the rest of everything.[quotation mark]".
+	It quip-supplies Jan_Investigation.
+	The proper scene is First_Investigation.
+
+
+quipmaker.py is a repeatable questioning quip.
+	The printed name is "climbing".
+	The comment is "[quotation mark]Planning on doing some rock climbing?[quotation mark]".
+	The reply is "[quotation mark]I did before all this happened. You can find the best ice climbing on the Eastern seaboard in the Adirondacks, if you ask me.[quotation mark]".
+	It quip-supplies Jan_Investigation.
+	The proper scene is First_Investigation.
+
+
+quipmaker.py is a repeatable questioning quip.
+	The printed name is "business".
+	The comment is "[quotation mark]TODO[quotation mark]".
+	The reply is "[quotation mark]TODO[quotation mark]".
+	It quip-supplies Jan_Investigation.
+	The proper scene is First_Investigation.
+
+
+quipmaker.py is a repeatable questioning quip.
+	The printed name is "eat".
+	The comment is "[quotation mark]TODO[quotation mark]".
+	The reply is "[quotation mark]TODO[quotation mark]".
+	It quip-supplies Val_Investigation.
+	The proper scene is First_Investigation.
+
+
+quipmaker.py is a repeatable questioning quip.
+	The printed name is "pouch".
+	The comment is "[quotation mark]TODO[quotation mark]".
+	The reply is "[quotation mark]TODO[quotation mark]".
+	It quip-supplies Val_Investigation.
+	The proper scene is First_Investigation.
+
+
+quipmaker.py is a repeatable questioning quip.
+	The printed name is "jan".
+	The comment is "[quotation mark]TODO[quotation mark]".
+	The reply is "[quotation mark]TODO[quotation mark]".
+	It quip-supplies Scott_Investigation.
+	The proper scene is First_Investigation.
+
+
+quipmaker.py is a repeatable questioning quip.
+	The printed name is "why nathaniel here".
+	The comment is "[quotation mark]TODO[quotation mark]".
+	The reply is "[quotation mark]TODO[quotation mark]".
+	It quip-supplies Nathaniel_Investigation.
+	The proper scene is First_Investigation.
+
+
+quipmaker.py is a repeatable questioning quip.
+	The printed name is "whether he's been here before".
+	The comment is "[quotation mark]TODO[quotation mark]".
+	The reply is "[quotation mark]TODO[quotation mark]".
+	It quip-supplies Nathaniel_Investigation.
+	The proper scene is First_Investigation.
+
+
+quipmaker.py is a repeatable questioning quip.
+	The printed name is "why he isn't especially upset".
+	The comment is "[quotation mark]TODO[quotation mark]".
+	The reply is "[quotation mark]TODO[quotation mark]".
+	It quip-supplies Nathaniel_Investigation.
+	The proper scene is First_Investigation.
+
+
+quipmaker.py is a repeatable questioning quip.
+	The printed name is "about his alibi".
+	The comment is "[quotation mark]TODO[quotation mark]".
+	The reply is "[quotation mark]TODO[quotation mark]".
+	It quip-supplies Nathaniel_Investigation.
+	The proper scene is First_Investigation.
+
+

@@ -1,4 +1,4 @@
-"Blood on the Snow" by PN
+"A Long Drink" by PN
 [Cover art by Dan Smith
 Licensed under Creative Commons By 2.0
 Image at: https://flic.kr/p/pPkjHD
@@ -17,12 +17,13 @@ Include Exit Lister by Gavin Lambert.
 [Made with Threaded Conversation Version 2/140602]
 
 [CHANGE THE FOLLOWING LINE FOR DEBUGGING]
-Debug_on is a truth state that varies. Debug_on is usually false.
+Debug_on is a truth state that varies. Debug_on is usually true.
+Logging_on is a truth state that varies. Logging_on is usually false.
 
 When play begins:
 	now the story viewpoint is first person singular;
 	now the story tense is past tense;
-	If debug_on is true:
+	If logging_on is true:
 		try switching the story transcript on.
 
 A clue is a kind of thing.
@@ -259,7 +260,9 @@ The lock is scenery in the Front_Porch. The lock is a clue. The description is "
 Foyer is a room. The description is "I walked into the spacious foyer, trying not to walk into the large lacquered screens in front of the door. The shiny black wood was decorated with an intricate picture in gold paint, depicting a Chinese court scene. It seemed at odds with the exterior of the house, but matched the rest of the decor; the interior was a mixture of Old World furniture and Asian influences.[if Body_Discovery is happening][paragraph break]A layer of snow had blown in through the open doorway, and was slowly melting into a puddle on the enormous Persian rug.[end if]
 [if Guest_Arrival is happening][paragraph break]Three men stood on the rug, their coats and pant cuffs damp with snow. Val made introductions all around, as if nothing was wrong. [paragraph break]I studied their faces carefully. If one of them knew about Alan upstairs, they weren't letting on. The three men were overdressed for vacation, as rich men often are. But somehow, they were oddly mismatched. I doubted that they came here together.[end if]"
 
-Greatroom is a room. Greatroom is east of the Foyer. The description is "The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall dark rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
+Section 1 - Greatroom
+
+Greatroom is a room. Greatroom is east of the Foyer. The description is "The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall, dark wooden rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
 	
 A large set of sofas were arranged around a huge rug. A dark [if the stain is examined]wine [end if]stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. [if the fire is lit]A fire roared inside, fresh logs having been added not too long ago.[end if]
 
@@ -268,7 +271,7 @@ To decide whether the fire is lit:
 	If the scene is Body_Discovery, yes;
 	If the scene is First_Investigation, yes;
 	no.
-The stain is scenery in the greatroom. The stain is a clue. The printed name is "stain on Greatroom sofa". The description is "An oblong dark red spot about the size of a pear stood out from the beige couch. From the color, it looked like wine. As I was looking at it, I realized something on the floor was reflecting firelight back at me.".;
+The stain is scenery in the greatroom. The stain is a clue. The printed name is "stain on Greatroom sofa". The description is "An oblong dark red spot about the size of a pear stood out from the beige couch. From the color, it looked like wine. As I looked at it, I realized something on the floor was reflecting firelight back at me.".;
 
 The sofa is scenery in the greatroom. Understand "couch" as sofa.
 
@@ -277,12 +280,15 @@ After examining the sofa for the first time:
 	
 After examining the stain for the first time:
 	Now the glass shard is in the greatroom.
+	
+After examining the rug for the first time:
+	Now the glass shard is in the greatroom.
 
+[Does this work?]
 After examining the glass shard for the first time:
-	Remove the glass shard from play;
 	Now the shattered glass is in the greatroom.	
 
-The glass shard is a thing. The glass shard is fixed in place. The description is "A broken shard of glass.[if the shattered glass is examined] It came from a broken wineglass in the greatroom.[end if] The ruined facets of vintage crystal reflected light like a cheap engagement ring.[paragraph break]I crouched down for a closer look and realized it had come from a shattered wineglass,  the pieces obscured by the sofa".
+The glass shard is a thing. The glass shard is fixed in place. The description is "A broken shard of glass.[if the shattered glass is examined] It came from a broken wineglass in the greatroom.[end if] The ruined facets of vintage crystal reflected light like a cheap engagement ring.[paragraph break]I crouched down for a closer look and realized it had come from a shattered wineglass,  the pieces obscured by the sofa.".
 Instead of taking the glass shard:
 	try examining the glass shard.
 
@@ -290,6 +296,13 @@ The shattered glass is a clue. The printed name is "broken wineglass". Understan
 After taking the shattered glass:
 	say "I had enough of a mess on my hands without taking this one with me, but kept it anyway. It told an interesting story.";
 	stop the action.
+	
+[Nonsense scenery]
+The rug is scenery in the Greatroom. The description is "I looked at the plush carpet, checking it for footprints. A shoe size can be pretty damn circumstantial, but at this point, I needed every clue I could get.[paragraph break]I didn't see one, it was just as pristine as the drifts of snow in the valley below.[paragraph break]But something caught my eye, something small and sharp, glinting in the light of the room as I walked the perimeter of the rug. A shard of glass by the edge of the sofa.";
+
+The staircase is scenery in the Greatroom.The logs are scenery in the Greatroom.The balustrade is scenery in the Greatroom.The ceiling is scenery in the Greatroom.The rafters are scenery in the Greatroom.The beams are scenery in the Greatroom.
+
+Section 2 - Reading Nook
 
 Reading_Nook is a room. Reading_Nook is above Greatroom. The printed name is "Reading Nook". The description is "I climbed the stairs to the reading nook. Shelves lined the walls of the small room, and a couple of books had been knocked off them onto the floor. A pair of wingback armchairs faced each other with a coffee table in between. A small pool of red liquid lay underneath the table.[if the scene is body_discovery][paragraph break]A man sat in one, slightly paunchy and slightly grey, his eyes and mouth wide open. His glasses were askew. He was wearing a navy blue cardigan, stained all over the front with a dark, almost black liquid. What looked like a small knife was sticking out of his neck, plunged in so far that only the handle was visible.[end if]".
 The body is scenery in the reading_nook. Understand "corpse / man" as body. The description is "He looked like he was fifty, but something about his well-preserved look told me that he was probably sixty. It wasn't that he was in good shape-- I doubted he'd seen much real exercise since he was in high school, and maybe not even then. He struck me as a debate team sort of guy.  I could tell he didn't get out much. His fingers were broad, but smooth. His hands had no calluses and no rings, but he wore a Rolex watch. It wasn't fake, and had cost probably three times what my car was worth before I'd driven it off a cliff a few hours ago."[TODO: Master Bedroom closet, one pair of boots, unused]
@@ -400,26 +413,86 @@ To decide whether first investigation starts:
 Chapter 11 - Scene First_Investigation
 
 
+
 When First_Investigation begins:
 	say "Val waited a minute for the conversations the three were having to die down.";
 	say "(Press a key)";
 	wait for any key;
 	[TODO: clear the screen]
-	say "She folded her arms across her chest and took a deep breath quiet enough that only I heard it.[paragraph break][quotation mark]Gentlemen, we have a problem. Alan's dead. We found him upstairs, stabbed.[quotation mark][paragraph break]A stunned silence followed. When it was clear no one was going to break it, she went on. [quotation mark]I'm going to call it in to the New York Magistrate's and find out who isn't on vacation that they can send over.[quotation mark] She lifted a hand, exposing her pale wrist enough to read the face of her watch. [quotation mark]It's going to be at least six hours before they can send someone, and they'll have to make it through what's left of the winter storm. Until we can figure out exactly what happened and who's responsible, I suggest we all stay in our rooms. My associate here has some experience with police investigation, he can do the basics until the officials show up.[quotation mark][paragraph break]Nathaniel seemed to bristle at this. [quotation mark]Hang on a minute, wait in our rooms? Am I to take it you're presuming us suspects? How do I know you and your friend didn't just kill Alan?[quotation mark][paragraph break]Val shrugged and pointed at me.[quotation mark]It happens, my friend here is the only one of us with a solid alibi, unless I'm mistaken.[quotation mark][paragraph break]The lack of a response indicated that she wasn't, which bothered me a little. The three picked up their bags and trundled down the hall, varying degrees of insulted, Jan called back in a raised voice. [quotation mark]You know there's another possibility you haven't considered; someone out there picked off Alan, and now that we're all here, the hunt is really on.[quotation mark][paragraph break]He said it with false bravado, and I shouldn't have let the idea take root in my mind, but it did.";
-	now Nathan_Investigation is in the Nathan_Room;
+	say "She folded her arms across her chest and took a deep breath quiet enough that only I heard it.[paragraph break][quotation mark]Gentlemen, we have a problem. Alan's dead. We found him upstairs, stabbed.[quotation mark][paragraph break]A stunned silence followed. When it was clear no one was going to break it, she went on. [quotation mark]I'm going to call it in to the New York Magistrate's and find out who isn't on vacation that they can send over.[quotation mark] She lifted a hand, exposing her pale wrist enough to read the face of her watch. [quotation mark]It's going to be at least six hours before they can send someone, and they'll have to make it through what's left of the winter storm. Until we can figure out exactly what happened and who's responsible, I suggest we all stay in our rooms. My associate here has some experience with police investigation, he can do the basics until the officials show up.[quotation mark][paragraph break]Nathaniel seemed to bristle at this. [quotation mark]Hang on a minute, wait in our rooms? Am I to take it you're presuming us suspects? How do I know you and your friend didn't just kill Alan?[quotation mark][paragraph break]Val shrugged and pointed at me. [quotation mark]It happens that my friend here is the only one of us with a solid alibi, unless I'm mistaken.[quotation mark][paragraph break]The lack of a response indicated that she wasn't, which bothered me a little. The three picked up their bags and trundled down the hall, varying degrees of insulted, Jan called back in a raised voice. [quotation mark]You're making a big mistake. Don't you remember what happened at Lake Geneva in 1986? I think there's someone out there who got Alan, and now we're sitting ducks.[quotation mark][paragraph break]He said it with false bravado, and I shouldn't have let the idea take root in my mind, but it did.";
+	now Nathaniel_Investigation is in the Nathan_Room;
+	now Scott_Investigation is in the Scott_Room;
+	now Jan_Investigation is in the Jan_Room;
+	now the front door is closed;
+	now the front door is locked.
+	
+[LOGIC for when shutters come down]
+Shutter_Counter is a number variable. Shutter_Counter is usually 0.
+Every turn during First_Investigation:
+	Increase Shutter_Counter by 1;
+	If Shutter_Counter is 3:
+		say "Whisper quiet, shutters slid down on the inside of every window in the house. They looked like opaque fabric window shades, but the heavy sound of the seal told me the core was probably metal. The moonlight went out as suddenly as if someone had thrown a curtain over it.[paragraph break]";
+		now SHUTTERS_DOWN is true;
+		say "(press any key)";
+		wait for any key.
+[TODO: make shutters scenery visible from all interior rooms]
+		
+Scott_Investigation is a man. The description is "He had an unlit cigarette between his lips. They all seemed to smoke. His fingers fumbled with a brushed metal lighter and didn't seem to be making much progress, but he was giving it the old college try. I watched his eyes scan across the walls out of habit, and annoyance flicker briefly in them as he failed to find a TV on any of them."
 
 
-Scott_Investigation is a man. The description is "He had an unlit cigarette between his lips. They all seemed to smoke. His fingers fumbled with a brushed metal lighter and didn't seem to be making much progress, but he was giving it the old college try."
-Jan_Investigation is a man.
-Nathan_Investigation is a man.
+Jan_Investigation is a man. The printed name is "Jan". Understand "Jan" as Jan_Investigation. The description is "He stood well over six feet tall, but only about as wide as an aircraft carrier. His dirty blonde hair looked windswept, but it probably looked that way when he got out of bed. He wore a sleek gray performance jacket made from some synthetic material. The snow sat on top of it in beads. I didn't recognize the brand, which meant that it had probably cost about three hundred dollars.".
+			
+			[Even through the thick turtleneck he was wearing, I could tell from his size that his back and forearms got a lot of work. It didn't seem like he needed all that gear, I'd have believed he could claw his way to the top of Everest unaided.[paragraph break]The gray sweater had flecks of dark brown dried on it, only really visible in the light.]
+[TODO: move this description to his room when he removes the jacket]
+
+Rule for writing a paragraph about Jan_Investigation:
+	say "Jan stood here amid his piles climbing gear, coiling a long length of rope around one of his broad shoulders.";
+
+The blue sweater is worn by Jan_Investigation. Understand "sweater" as blue sweater.
+
+Nathaniel_Investigation is a man. The printed name is "Nathaniel". The description is "TODO".
 
 Section 1 - Main House
 
-Hallway_Downstairs is a room. Hallway_Downstairs is east of the Greatroom. The printed name is "Downstairs Hallway".
+Section 2 - Hallway Downstairs
 
+Hallway_Downstairs is a room. Hallway_Downstairs is east of the Greatroom. The printed name is "Downstairs Hallway". The description is "A long narrow corridor connected the entrance of the house with the bedrooms. Lights were recessed into the ceiling overhead, shining down onto the polished wood floor. Maybe some people liked this sterile modern crap, but it made the place look like an art gallery, as far as I was concerned. A couple of paintings even adorned the walls, so maybe that was the idea, and I was just uncultured."
 
+the painting is scenery in the Hallway_Downstairs. it is a closed openable container. The description is "An oil painting of a crowded scene, bright colors jumping out from shadows and mottled light coming down from above. Everyone in the painting seemed pretty upset, though it wasn't really apparent why. It looked like it was done in the Romantic style, but I'm no art historian. It could just as easily have been the Old Testament as Paradise Lost.".
 
-Kitchen is a room. Kitchen is east of the Hallway_Downstairs. The description is "The kitchen was probably the largest I've seen in my life. Wooden cabinets and handsome tile in earth tones went from wall to wall. The quaint country look was somewhat ruined by the collection of modern stainless steel kitchen appliances. They were brand new and it looked like not one of them had been used.".
+Carry out opening the painting:
+	say "I felt around the edges of the gold-trimmed frame and found a latch. The entire painting swung off the wall smoothly, like the hinges were well oiled. A refrigerated compartment inside leaked cold vapor like an old sci-fi movie used dry ice. It was full of plastic pouches.";
+	now the painting is open.
+
+The pouch of liquid is in the painting. The description is "The clear plastic was mostly covered with white labels and barcodes, most of which had been scratched out with a marker. It held a thick, dark liquid I tried not to look too closely at.".
+
+Instead of opening the pouch of liquid:
+	say "I was only going to open it for one reason.";
+	stop the action.
+
+Instead of drinking the pouch of liquid:
+	say "I tried not to look at the viscous contents as I tore off the end of the plastic with my teeth. I closed my eyes and forced myself to keep drinking until it was empty. It warmed me like drinking spiced cider by the fireside. Until that moment, I hadn't realized how cold I'd been.";
+	now Blood_status is true.
+
+Section 3 - Kitchen
+			
+Kitchen is a room. Kitchen is east of the Hallway_Downstairs. The description is "I stepped into a kitchen big enough for a game of football. Wooden cabinets and handsome tile in earth tones went from wall to wall. The quaint country look was somewhat ruined by the collection of modern stainless steel kitchen appliances. They were brand new and it looked like not one of them had been used. It figured, this didn't seem like the kind of place that had a cooking staff.".
+
+Section 4 - Office
+
+Office is a room. Office is north of the Hallway_Downstairs.
+
+desk is scenery in the office. desk is a closed openable container. The description is "Unlike most of the other expensive furniture in the house, it looked like the mahogany desk got a lot of use. A computer at least five years old, sat on it, the keyboard mostly buried by papers and books. Worn brass handles barely hung on to a row of drawers along the right side.";
+
+papers are scenery in the Office.
+Instead of examining papers:
+	say "I thumbed through the pile on the desk, finding term papers and dissertations, collections of academic journals. Underneath most of it was something that caught my eye, a document with dollar signs on it and more zeroes than I'm used to seeing on paper.";
+	Remove the bank statements from play;
+	now the bank statements are in the Office.
+
+bank statements are a thing. bank statements are inside the desk.
+
+Section 5 - Basement
 
 Wine_Cellar is a room. Wine_Cellar is below the Hallway_Downstairs. The printed name is "Wine Cellar". The description is "The second I walked into the dark wine cellar, recessed lights in the ceiling turned on, probably activated by a motion sensor.
 [paragraph break]
@@ -432,7 +505,11 @@ The wine rack is scenery in the Wine_Cellar. The description is "What had to be 
 Understand "missing wine" as wine rack.
 Understand "missing bottles" as wine rack.
 
-Section Upstairs
+NEED_EMERGENCY_SHUTTER is a truth state that varies. NEED_EMERGENCY_SHUTTER is false.
+
+The fuse box is in the wine cellar. The fuse box is a device.
+
+Section 6 - Upstairs Hallways
 
 Hallway_Upstairs is above the Hallway_Downstairs. The printed name is "Upstairs Hallway".
 
@@ -440,22 +517,20 @@ North_Hallway is north of the Hallway_Upstairs. The printed name is "North Hallw
 
 East_Hallway is east of the Hallway_Upstairs. The printed name is "East Hallway".
 
-Section Master Bedroom
+Section 7 - Master Bedroom
 
-master bedroom door is a closed door. it is scenery. it is north of the North_Wing and south of the Master_Bedroom.
+master bedroom door is a closed door. it is scenery. it is north of the North_Hallway and south of the Master_Bedroom.
 
 Master_Bedroom is a room. The printed name is "Master Bedroom". The description is "The master suite sat at the north end of the house and [if SHUTTERS_DOWN is true]had the best  view of the valley and the lake for miles [end if][if SHUTTERS_DOWN is false]had a row of floor-to-ceiling paned windows that ran the length of the room, but the shutters were closed, keeping the room dark as night[end if]. A four-poster bed with a thick down comforter looked twice as soft as the dead man's sweater had. Ornate wooden nightstands flanked the bed on either side. One was bare except for a lamp, the other was piled high with what must have been bedtime reading. In the corner of the room, I could see into a spacious closet."
-[TODO: Get on bed as a nice to have]
-[TODO: Nightstand conceals blood]
 
-the book is a clue. the book is in the Master_Bedroom. The description is "[italic type]Kokoro[roman type], by Soseki Natsume. The binding looked expensive and uncracked.TODO".
+the book is a clue. the book is in the Master_Bedroom. The description is "[italic type]Kokoro[roman type], by Soseki Natsume. The binding looked expensive and uncracked. A post-it note was stuck to the cover. Just two words were written on it: [quotation mark]I'm sorry.[quotation mark][paragraph break]I started to flip through the book and noticed something handwritten on the title page. The cursive looked like it'd been written with a fountain pen.[paragraph break][paragraph break]For Kelly[line break]     Somewhat appropriately, I got this book from my teacher, and now I'd like you to have it. More than whatever literary value it may have, from now on, I'll always remember it as the first book we read together.[paragraph break]Yours,[line break]Alan".
 Rule for writing a paragraph about the book:
 	say "A book lay on the nightstand.".
 
 Instead of opening the book:
-	try reading the book.
+	try examining the book.
 Instead of reading the book:
-	say "TODO".
+	try examining the book.
 
 Instead of entering the closet:
 	try examining the closet.
@@ -464,23 +539,20 @@ Instead of going west in the Master_Bedroom:
 
 Walk-in closet is scenery in the master_bedroom. The description is "I walked into the closet and flicked on the light. Three quarters of it was the usual cruft that finds its way to a person's closet and never gets worn.[paragraph break]I looked at the rest of it. A handful of suits that looked like they'd been bought in the 80s, judging by the lapels. Performance fleece and hiking boots, never worn. Velvet smoking jacket, no sweatpants or loungewear. Professor Bowden seemed to have some old-fashioned sensibilities.".
 
-Section 3 - Guest Bedrooms
+Section 8 - Guest Bedrooms
 
-Nathan_Room is a room. The printed name is "Oak Room". It is east of the East_Hallway.
+Nathan_Room is a room. The printed name is "Oak Room". It is east of the East_Hallway. The description is "The room had a large white rug in the center, and a four-poster bed that looked nice enough that it might have once sat in the master bedroom. An ugly, expensive-looking valise lay on the bed, its weight sinking it a full six inches into the feathertop mattress.".
 
 Scott_Room is a room. The printed name is "Sumac Room". It is south of the East_Hallway.
 
-Jan_Room is a room. The printed name is "Hemlock Room". It is north of the East_Hallway. The description is "The room had an angled ceiling to give the impression of an attic or rustic country cabin, except it was about as big as my entire apartment. Piles of climbing equipment and rope were heaped in the corner on top of ".
+Jan_Room is a room. The printed name is "Hemlock Room". It is north of the East_Hallway. The description is "The room had an angled ceiling to give the impression of a cozy attic or country cabin, except it was about as big as my entire apartment. Piles of climbing equipment and bunched-up coils of rope were heaped in the corner on top of his luggage.".
 
 SHUTTERS_DOWN is a truth state that varies. SHUTTERS_DOWN is false.
+[TODO move me]
 
-[one wineglass on the table, other knocked over the railing, having fallen somewhere
-finds shard of glass, but glass upstairs is whole, give clue if the player has examined the whole glass]
-
-[TODO: Adaptive hint system]
 [TODO: If the player is too confused, simply change to an objective, use the "acting confused" cues from EmShort]
 
-Section 4 - PC Bedroom
+Section 9 - PC Bedroom
 
 PC_Bedroom_Door is a closed door.
 PC_Bedroom_Door is scenery.
@@ -544,10 +616,17 @@ who alan is a repeatable questioning quip.
 	The proper scene is First_Investigation.
 
 about murder is a repeatable questioning quip.
-	The printed name is "about the murder".[ The true-name is "what murder".]
-	The comment is "Val leaned in close until her face was inches from mine, and lowered her voice, even though no one was around. [quotation mark]Listen, kid. Here's how it's going down. We have a few hours before what passes for the law for our kind shows up stomping their flat feet around. They don't much care if the wrong one of us takes the rap, or if no one does. Alan's nobody to the Circle, I doubt they'd care if this case went stone cold. But he used to be a friend of mine, and this is just something I want to do for him.[quotation mark]."
-	The reply is "I didnt say anything.".
+	The printed name is "about the murder".
+	The comment is "Val leaned in close until her face was inches from mine, and lowered her voice, even though no one was around. [quotation mark]Listen, kid. Here's how it's going down. We have a few hours before what passes for the law for our kind shows up and starts stomping its flat feet around. They don't much care if the wrong one of us takes the rap, or if no one does. Alan's nobody to the Circle, I doubt they'd care if this case went stone cold. But he used to be a friend of mine, and this is something I want to do for him.[quotation mark]".
+	The reply is "I didn't say anything.".
 	It quip-supplies Val_House.
+	The proper scene is First_Investigation.
+
+about pouch is a repeatable questioning quip.
+	The printed name is "about the pouch".
+	The comment is "[quotation mark]So where exactly did you get... Who--[quotation mark] I began.".
+	The reply is "[quotation mark]They've got a skim set up with the Red Cross. Like the mafia used to do with the nightly take at casinos. We've got ways to keep anyone from talking about it.[quotation mark][if Blood_status is true][paragraph break]Something inside me rebelled at the thought of it, my stomach churning. [quotation mark]I can't just take it, it could've been used to help someone![quotation mark][paragraph break][quotation mark]It is going to help someone: you. If someone from outside killed Alan, I need to know if he's likely to come back. If it was someone here, I need you on your toes.[end if]".
+	It quip-supplies Val_Investigation.
 	The proper scene is First_Investigation.
 
 who nathaniel is a repeatable questioning quip.
@@ -560,8 +639,96 @@ who nathaniel is a repeatable questioning quip.
 what was in it for me is a repeatable questioning quip.
 	The printed name is "what was in it for me". The true-name is "what was in it for me".
 	The comment is "[quotation mark]Seems like a pretty long way to stick my neck out for you. What's in it for me, exactly?[quotation mark]".
-	The reply is "She looked at me sharply. I could tell it got a lot of use, it was just as practiced as everything else about her. Here was a woman who wasn't afraid to throw her weight around, and made it bad practice to make her do it.[paragraph break][quotation mark]I'm your first client, and I know a lot of people, so how about you make this one on the house? You owe me, remember?[quotation mark][paragraph break]She had me there. I didn't know if this was the kind of thing I could pay back, but I didn't like owing that kind of debt.".
+	The reply is "She gave me a sharp look. I could tell it got a lot of use, it was just as practiced as everything else about her. Here was a woman who wasn't afraid to throw her weight around, and made it a bad habit to make her do it.[paragraph break][quotation mark]Think of me as your first client as a private dick. I'm asking you to make this one on the house. You owe me, remember?[quotation mark][paragraph break]She had me there. I didn't know if this was the kind of thing I could pay back, but I didn't like owing that kind of debt.".
 	It quip-supplies Val_House.
+	The proper scene is First_Investigation.
+	
+Section 2 - Nathaniel
+
+why nathaniel here is a repeatable questioning quip.
+	The printed name is "why Nathaniel came here".
+	The comment is "[quotation mark]So, do you come here often? I'm having trouble telling if this is a private party or a resort. Were you good friends with Alan?[quotation mark]".
+	The reply is "[quotation mark]He was all right. Really, the house has nice position, and at the height of skiing season, it's hard to beat the crowd.[quotation mark] He gestured vaguely towards the surrounding countryside as though it were a buffet.".
+	It quip-supplies Nathaniel_Investigation.
+	The proper scene is First_Investigation.
+
+whether he's been here before is a repeatable questioning quip.
+	The printed name is "whether he's been here before".
+	The comment is "[quotation mark]You've been here before.[quotation mark]".
+	The reply is "[quotation mark]Oh, sure. He liked to keep things small, but he always wanted to be the center of attention. He'd do these little get-togethers a few times a season. Here in the winter, and his home in Martha's Vineyard for the summers. There's nothing quite like riding a horse along the beach in the moonlight, is there?[quotation mark]".
+	It quip-supplies Nathaniel_Investigation.
+	The proper scene is First_Investigation.
+	
+why isn't nate upset is a a repeatable questioning quip.
+	The printed name is "why he isn't especially upset".
+	The comment is "[quotation mark]You don't seem all that upset he's dead.[quotation mark]".
+	The reply is "[quotation mark]I liked him well enough, but it was really only ever a friendship of convenience. He threw great parties, knew the right people, you know. He raised both eyebrows playfully. You can't possibly still think one of us did it? I think it's pretty clear that it was an outsider who did the killing.[quotation mark]".
+	It quip-supplies Nathaniel_Investigation.
+	The proper scene is First_Investigation.
+an availability rule for why isn't nate upset:
+	if the player recollects why nathaniel here, it is available;
+	otherwise it is off-limits.
+	
+about nates alibi is a repeatable questioning quip.
+	The printed name is "about his alibi".
+	The comment is "[quotation mark]Where were you last night?[quotation mark]".
+	The reply is "His lofty affected manner disappeared the second I asked. His smile was still fixed on his face, but the black eyes were suddenly cold and threatening. I met his gaze, unflinching. It felt like skinny dipping in Lake Ontario.[paragraph break][quotation mark]I don't know what the hell you think you're playing at, but let's get one thing straight. You're nobody, and if you carry on making wild accusations, you're going to make a lot of enemies. Who knows, maybe even one your little girlfriend can't protect you from.[quotation mark]".
+	It quip-supplies Nathaniel_Investigation.
+	The proper scene is First_Investigation.
+an availability rule for about nates alibi:
+	if the player recollects why isn't nate upset, it is available;
+	otherwise it is off-limits.
+
+what sanction is a repeatable questioning quip.
+	The printed name is "about the Sanction".
+	The comment is "[quotation mark]What happens to folks who don't wait their turn?[quotation mark]".
+	The reply is "[quotation mark]The Circle only really has a single sanction.[quotation mark][line break]
+[quotation mark]What is it?[quotation mark][line break]
+He gave me a smile enough like a leer that it made my skin crawl, and looked at me through half-lidded eyes.[line break][quotation mark]What do you think?[quotation mark]".
+	It quip-supplies Nathaniel_Investigation.
+	The proper scene is First_Investigation.
+
+Section 3 - Scott
+
+about jan svensson is a repeatable questioning quip.
+	The printed name is "Jan".
+	The comment is "[quotation mark]Have you met Mr. Svensson?[quotation mark] I asked".
+	The reply is "[quotation mark]Jan? Jesus, I can't stand him. He's insufferable at every damn conference I meet him at. Blowhards like him look down their noses at people like you and me, you know? He'll act like he's slumming it investing in startups, then take all the credit when a tech rally helps lift that boat anchor of a fund he runs.[quotation mark]".
+	It quip-supplies Scott_Investigation.
+	The proper scene is First_Investigation.
+	
+hedge fund is a repeatable questioning quip.
+	The printed name is "about the hedge fund".
+	The comment is "[quotation mark]I take it you're not invested in Svensson's financial ventures, then?[quotation mark]".
+	The reply is "He gave me a conspiratorial grin that was not at all kind. [quotation mark]Did he already give you the sales pitch? He probably left out the part where he's lost good ten percent more than the indexes. That joke of a fund of his is bleeding money, it's not surprising he's trying to get new clients to keep things solvent.[quotation mark]".
+	It quip-supplies Scott_Investigation.
+	The proper scene is First_Investigation.
+An availability rule for hedge fund:
+	if the player recollects about jan svensson, it is available;
+	otherwise it is off-limits.
+
+Section 4 - Jan
+
+jans work is a repeatable questioning quip.
+	The printed name is "about his work".
+	The comment is "[quotation mark]So what do you do for a living, Mr. Svensson?[quotation mark] I kept my voice light and conversational, like we were at a cocktail party.".
+	The reply is "[quotation mark]Hedge funds, mainly. It's a lot of handshaking and time on the golf course, but it pays for the rest of everything.[quotation mark] He gestured vaguely at the gear.".
+	It quip-supplies Jan_Investigation.
+	The proper scene is First_Investigation.
+
+about climbing is a repeatable questioning quip.
+	The printed name is "about climbing".
+	The comment is "[quotation mark]Planning on doing some rock climbing?[quotation mark]".
+	The reply is "[quotation mark]I was, before all this happened. You can find the best ice climbing on the Eastern seaboard in the Adirondacks, if you ask me.[quotation mark]".
+	It quip-supplies Jan_Investigation.
+	The proper scene is First_Investigation.
+
+[TODO: Formatting's a mess here]
+about business is a repeatable questioning quip.
+	The printed name is "about business".
+	The comment is "[quotation mark]How are the markets treating you? With everything I hear in the news...[quotation mark] I trailed off, waiting for the self-appointed expert to jump in and correct the ignorant layperson. He didn't disappoint.".
+	The reply is "[quotation mark]Oh sure, we took a hit during the downturn, but so did everyone. We'll bounce back, and I'm not worried, nor are our high-profile clients.[quotation mark][paragraph break]It all sounded a little too well-rehearsed. I saw him give me a quick once over, it was almost imperceptible.[paragraph break][quotation mark]Now's the best time to buy in, when you consider the numbers. Do you know someone who'd be interested in an account with us? Your friend, Ms. Carter, perhaps?[quotation mark][line break]I chuckled politely and gave a noncommital shrug.[line break][quotation mark]There'd be a finder's fee in it for you, of course, if things did move to business. Think it over.[quotation mark]".
+	It quip-supplies Jan_Investigation.
 	The proper scene is First_Investigation.
 
 Chapter 14 - Game Mechanics
@@ -631,29 +798,38 @@ Section 3 - Clues and Hints
 
 A thing can be examined or unexamined. A thing is usually unexamined.
 
-After examining something:
-	Now the noun is examined.
+Before examining a noun:
+	If the noun is unexamined:
+		Now the noun is examined;
+		If the noun is a clue:
+			Increment FoundClues;
 
-After examining something for the first time:
-	If the noun is a clue:
-		Increase FoundClues by 1.
+FoundClues is a number variable.[ FoundClues is 0.]
+When play begins:
+	Let FoundClues be 0;
 
-FoundClues is a number that varies. FoundClues is 0.
+Every turn:
+	if Debug_on is true:
+		say "FoundClues: [FoundClues]";
 
 Understand the command "clues" as something new. Understand "clues" as asking for clues. Asking for clues is an action out of world.
 
 Carry out asking for clues:
 	say "[bold type]Clues[roman type][paragraph break]";
 	repeat through the Table of NotAloneClues:
-		if clue is examined:
-			say "[clue entry][line break]";
-	say "[line break]";
+		if the clue entry is examined:
+			say "[clue entry][line break]";		
+	say "[line break]"; 
 	repeat through the Table of StruggleClues:
-		if clue is examined:
+		if the clue entry is examined:
 			say "[clue entry][line break]";
 	say "[line break]";
 	repeat through the Table of CrimeofPassionClues:
-		if clue is examined:
+		if the clue entry is examined:
+			say "[clue entry][line break]";
+	say "[line break]";
+	repeat through the Table of BlackmailClues:
+		if the clue entry is examined:
 			say "[clue entry][line break]";
 	[TODO: paragraph break between tables]
 
@@ -673,7 +849,7 @@ clue
 knife
 lock
 
-Tables of BlackmailClues
+Table of BlackmailClues
 clue
 book
 
@@ -697,8 +873,8 @@ The player is carrying a cell phone.
 Blood_status is a truth state that varies. Blood_status is usually false.
 
 [TODO: Make the cell phone break when the player enters the Bottom of Cliff by whatever method]
-	
-Section 5 - Tests
+
+Section 6 - Tests
 
 Test firstconvo with "drive/drive/brake/look/unbuckle seat belt/kick windshield/any key/up/get in"
 
@@ -710,7 +886,15 @@ Test body with "test discover/e/e/e/u"
 
 Test arrival with "test body/x body/x body/d/e/w/e/w/e/w/e/w/e/w/w/w/talk to val"
 
+Test myclues with "test arrival/e/anykey/x stain/x shard/x broken wineglass/u/x bottle/x knife/x wineglass"
+
 Test valinvest with "test arrival/ask about Alan/ask about murder/ask about nathaniel/ask what was in it for me";
+
+Test janinv with "test valinvest/e/e/u/e/n/talk to jan/ask about work/ask about business/ask about climbing";
+
+Test master with "test arrival/e/e/u/n/";
+
+Test me with "test janinv/s/w/d/open painting/take all/x pouch/drink pouch";
 
 [They sent a constable, low level]
 [He was putting on a good show, but I could tell he didn't seem to have any interest in finding out who did it. That, or some brass had told him not to.]
@@ -740,7 +924,7 @@ I told myself it was just tomato juice]
 
 [speakeasy; "They pass the Volstead Act again when I wasn't looking?"]
 [It's near to a full moon]
-[Werewolves? Something tells me they aren't getting their security deposit back]
+
 [V has deliberately asked for MC to be in the room when she's interrogated to get him a trail of bread crumbs]
 ["Why didn't you just tell me?" "Because I need you to find something I missed. You're a fresh set of eyes, and I don't want to bias what you see."]
 [Carter died some 70 years ago. Cases was stone cold. And the fact that Val was bothering to throw me at it meant that she thought the killer was still alive.][You have to wait to sire, Val waited 50 years]

@@ -1,3 +1,5 @@
+- Have to page through test results
+
 - Problem with Inform7
     - Threaded Conversation did not work
         - Fixed version is in Git
@@ -16,3 +18,13 @@
     - If the scene is scenename (does not work within strings)
     - Every turn during scenename
 - Dialogue punctuation by Ron Newcomb is broken
+    - Fixed it, it apparently does not like commas. Fuck.
+
+- Example with math "x is a number that varies / change x to x+1" does not work, as I saw in an example.
+
+Versioning:
+I am writing Inform 7, the build number is 6L38, and the version is 1.54. Why does the build for Inform7 start with 6? Why do I need to know my build number? There are serious syntax changes and extension breakages between build numbers, so what is the version number supposed to indicate? When people tell me to upgrade "build numbers" which should not even have the level of difference of a minor version update, lots of things break. Really brittle plugin base
+
+- When examining something/a noun for the first time:
+    ACTUALLY means when examining ANY object for the first time
+

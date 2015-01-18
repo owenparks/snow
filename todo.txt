@@ -4,10 +4,15 @@
     - Jan
     - Scott
 - Shutters come down as first_invest starts
+- First night starts after X turns or X clues
+- Once inside, no choice but to sleep or wait
+- Next day, note on nightstand, shutters open
+- Go to hairpin turn again
 
 - COMPUTER LOGIC
     - Give player password on Night 2
-- EMAILS
+    - EMAILS
+    - Web autocomplete
 - FUSE BOX logic
 
 - MAKE SPECIAL EVENTS IN BOLD, SO PEOPLE DON"T MISS THEM?

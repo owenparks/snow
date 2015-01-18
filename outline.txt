@@ -1,5 +1,4 @@
 
-
 A plot: Who killed Alan?
 B plot: What was he being blackmailed over?
 C plot: Why did Val turn the MC?
@@ -11,13 +10,28 @@ Prelude
 - Get to road
 - Car trip with Val
 - Arrive at house, find body
-Day 1
+- After 10 turns, Guests arrive, look at them, no talking
+- They go to rooms, can go talk to them
+    * Need to write Val's dialogue
+    * Need to write their dialogue
+- Can explore office (requires computer password)
+- Can explore Master Bedroom
 - Time to investigate house and clues
-- After 20 turns, Guests arrive, look at them, no talking
-- They go to rooms, talk to them, investigate
 - Report clues to Val
     - (A) Results are that it was probably someone he knew
     - (B) Book in master bedroom returned from Kelly
     - (C) Val has been waiting a long time for a protege
 Night 1
-- 
+- Arrival of VDet
+    - Val's Interrogation
+- Sleep again
+- Storm breaks
+- Go investigate car
+- Get back, collect final number of clues
+    - Once player collects enough, trigger final scene
+- After getting back, sun rises again.
+- Sunrise kills VDet
+- Player goes to find cause, gets hit
+- Player wins final scene, you win
+- Goes to car, sets up some of Val's motivations and the lead in for next story taking place in Vegas.
+

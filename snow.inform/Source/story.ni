@@ -12,6 +12,7 @@ The story genre is "Mystery".
 Include Basic Screen Effects by Emily Short.
 Include Threaded Conversation by Chris Conley.
 Include Exit Lister by Gavin Lambert.
+Include Menus by Emily Short.
 [Include Dialogue Punctuation by Ron Newcomb.]
 [TODO: Use default Exit Lister Version 3 and make all modifications here]
 [Made with Threaded Conversation Version 2/140602]
@@ -27,8 +28,46 @@ When play begins:
 		try switching the story transcript on.
 
 A clue is a kind of thing.
+
+Section 1 - Computer
+
+Understand "computer" as using the computer.
+
+Using the computer is an action out of world.
+
+Carry out using the computer:
+	Now the current menu is the Table of Emails;
+	carry out the displaying activity;
+	clear the screen;
+	try looking.
+
+tab is some text that varies. tab is usually "     ".
+	
+Table of Emails
+title	subtable	description	toggle
+"Date[tab]From[tab][tab]Subject"	--	"Make a selection"	--
+"Dec 20"	--	"Stuff"	--
+"Dec 18"	--	"Stuff"	--
+"Dec 12"	--	"Stuff"	--
+"Dec 10"	--	"Stuff"	--
+"Dec 06"	--	"Stuff"	--
+"Nov 24[tab]JBates@Barnett.edu[tab][tab]Out of Office until 12/01 Autoreply"	--	"I am out of the office today, 11/24 and will respond to your message on Monday, 12/01."	--
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
 		
-Chapter 1 - Game Scene List
+Chapter 2 - Game Scene List
 
 Mountain_Driving is a scene. Mountain_Driving begins when play begins. Mountain_Driving ends when Car_Escape begins.
 Car_Escape is a scene. Car_Escape begins when Upturned Car is visited. Car_Escape ends when Bottom of Cliff is visited.
@@ -43,7 +82,7 @@ First_Sleep is a scene. First_Sleep begins when First_Investigation ends.
 
 Cliff_Gameover is a scene. Cliff_Gameover begins when the player is in the Precipice for the first time.
 
-Chapter 2 - Scene Mountain_Driving
+Chapter 3 - Scene Mountain_Driving
 
 Introcar is a region.
 
@@ -100,7 +139,7 @@ After reading a command:
 			now the player is in the Upturned Car;
 			stop the action.
 	
-Chapter 3 - Scene Car_Escape
+Chapter 4 - Scene Car_Escape
 
 A room is either strapped or unstrapped. A room is usually unstrapped.
 When the Car_Escape begins:
@@ -164,13 +203,13 @@ After reading a command:
 			say "The seat belt held me firmly in place in what was now the bottom of the upturned car. I wasn't going to be able to see or do much of anything until I unbuckled myself.";
 			stop the action;
 
-Chapter 4 - Scene Cliff_Climbing
+Chapter 5 - Scene Cliff_Climbing
 
 Bottom of Cliff is a room. Bottom of Cliff is below Sharp Bend. The description is "I stood on a  ridge densely packed with trees some ways below the highway. My overturned car sat a few feet away. The ridge extended as far as I could see to the north, going nowhere in particular. To the west I saw the steep incline the car had rolled down, and the path it'd cut through the snow and brush.[paragraph break]I was miles from nowhere[if we have examined the cell phone], and the cherry on top was that my cell phone was broken[end if]. It had stopped snowing for the moment. The night sky was starting to lighten, I figured I had an hour before sunrise.[paragraph break]Fucking swell."
 Instead of going west in the Bottom of Cliff:
 	try going up.
 
-Chapter 5 - Scene Car_Embarking
+Chapter 6 - Scene Car_Embarking
 
 Sharp Bend is a room. Sharp Bend is above Bottom of Cliff and north of Hairpin_Turn. The description is "I stood about a hundred feet from the hairpin turn where my car had gone over; I could see the tire tracks and broken guardrail to the south.".
 
@@ -198,7 +237,7 @@ When Car_Embarking begins:
 	say "The second I turned my head to look down the lane, I saw a pair of headlights approach. A black Mercedes pulled up and came to a stop just in front of me. The passenger door opened, and I saw Val looking out at me.[paragraph break][quotation mark]Get in,[quotation mark] she said.";
 	now the Valcar_Container is in the Sharp Bend.
 
-Chapter 6 - Scene Riding_Scene
+Chapter 7 - Scene Riding_Scene
 
 When Riding_Scene begins:
 	Now the player is in the Sedan.
@@ -217,7 +256,7 @@ Instead of waiting in the Sedan during Riding_Scene:
 	Otherwise:
 		Continue the action.
 
-Chapter 7 - Scene Cliff_Gameover
+Chapter 8 - Scene Cliff_Gameover
 
 Mountain Ridge is north of Bottom of Cliff. The description is "I had a bad feeling as I walked my way along the ridge, trudging a couple of miles through the foot-deep snow. The path didn't seem to be leading anywhere, and the sky kept getting lighter as I went. I still had enough time to turn back, if I wanted."
 
@@ -228,7 +267,7 @@ Precipice is north of Dense Forest. The description is "The forest abruptly ende
 When Cliff_Gameover begins:
 	end the story saying "The north end of the ridge had a stunning view of the eastern valley, and unfortunately the horizon, too. Through what must have been some quirk of fate, I never made it to the chalet. I smiled sardonically at the sunrise, searing like a fire newly kindled, even on that cold, windswept ridge. I guess I'd been spared what would have no doubt been an interminable weekend.[paragraph break]As far as last sights went, I supposed it could have been worse."
 
-Chapter 8 - Scene Body_Discovery
+Chapter 9 - Scene Body_Discovery
 
 Val_House is a woman. The printed name is "Val". Understand "Val" as Val_House. The description is "She wore a belted black overcoat with straight shoulders, which covered all of her except for the bottom of a long pencil skirt. She hadn't bothered taking her driving gloves off. I couldn't put my finger on it, but there was something stiffly formal and practised about the way she moved.[if Val_House is in the Reading_Nook][paragraph break]Her eyes rested on what was left of the professor, her expression unreadable.[end if]".
 
@@ -355,7 +394,7 @@ When Body_Discovery ends:
 	say "Val came up the stairs, freezing the second she saw the body. Her eyes narrowed, and I could tell her mind was racing, the first time I'd seen anything but placid boredom on her face. Half of me was relieved to know that there was something in this world that could perturb her. The other half was unnerved by it. She looked away and hitched the poker face back on pretty quick.[paragraph break]Val nodded at the poor stiff and said, [quotation mark]Meet Professor Alan Bowden, our host this weekend.[quotation mark][line break]";
 	wait for any key;
 
-Chapter 9 - Scene Prearrival
+Chapter 10 - Scene Prearrival
 
 Prearrival_Counter is a number variable. Prearrival_Counter is usually 0.
 Every turn during Prearrival:
@@ -365,7 +404,7 @@ To decide whether the guests arrive:
 	If Prearrival_Counter > 10, yes;
 	no.
 
-Chapter 10 - Scene Guest_Arrival
+Chapter 11 - Scene Guest_Arrival
 
 When Guest_Arrival begins:
 	say "[if the player is not in the Foyer]I heard the front door open, and the sound of voices from the foyer. It closed a minute later.[end if][if the player is in the Foyer]The front door opened, and three men filed in, a lanky one in designer jeans holding the door for the other two. He closed it behind them, and they stood there looking around and putting snow on the rug, as though they expected a butler to come and announce them.[end if][paragraph break][if the player is in the Reading_Nook]Val and I glanced at each other across the dead man, and she left back down the stairs.[end if][if the player is in the Greatroom]Val came down the stairs, and crossed the room toward the sound of the noise.[end if]";
@@ -410,7 +449,7 @@ To decide whether first investigation starts:
 		decide yes;
 	decide no.
 
-Chapter 11 - Scene First_Investigation
+Chapter 12 - Scene First_Investigation
 
 
 
@@ -480,17 +519,21 @@ Kitchen is a room. Kitchen is east of the Hallway_Downstairs. The description is
 
 Section 4 - Office
 
-Office is a room. Office is north of the Hallway_Downstairs.
+Office is a room. Office is north of the Hallway_Downstairs. The description is "Of all the rooms I'd seen in the house, this one looked the most lived in. It had the musty smell of old books mixed with stale coffee coming from several cups on the desk.".
 
-desk is scenery in the office. desk is a closed openable container. The description is "Unlike most of the other expensive furniture in the house, it looked like the mahogany desk got a lot of use. A computer at least five years old, sat on it, the keyboard mostly buried by papers and books. Worn brass handles barely hung on to a row of drawers along the right side.";
+cups are scenery in the office. The description is "Mugs of coffee, stone cold. I could see brown stains on the sides of the half-empty cups where the liquid had evaporated. They'd been here a few days, but that didn't indicate a time of death. The kind of man who leaves more than two coffee cups sitting on a desk isn't in a hurry to clean up after himself.".
+Instead of taking the cups:
+	say "Val asked me to find his killer. I wasn't going to do his dishes.";
 
-papers are scenery in the Office.
+the desk is scenery in the office. the desk is a closed openable container. The description is "Unlike most of the other expensive furniture in the house, it looked like the mahogany desk got a lot of use. A computer at least five years old, sat on it, the keyboard mostly buried by papers and books. Worn brass handles barely hung on to a row of drawers along the right side.";
+
+the papers are scenery in the Office.
 Instead of examining papers:
 	say "I thumbed through the pile on the desk, finding term papers and dissertations, collections of academic journals. Underneath most of it was something that caught my eye, a document with dollar signs on it and more zeroes than I'm used to seeing on paper.";
-	Remove the bank statements from play;
-	now the bank statements are in the Office.
+	Remove the bank statement from play;
+	now the bank statement is in the Office.
 
-bank statements are a thing. bank statements are inside the desk.
+a bank statement is a clue. it is inside the desk.
 
 Section 5 - Basement
 
@@ -558,7 +601,7 @@ PC_Bedroom_Door is a closed door.
 PC_Bedroom_Door is scenery.
 PC_Bedroom_Door is west of the North_Hallway and east of the PC_Bedroom.
 
-Chapter 12 - Scene First Sleep
+Chapter 13 - Scene First Sleep
 
 The PC_Bedroom is a room. The description is "[if the scene is First_Sleep]I checked my watch, it was getting late, almost noon. I had a million things to think about, but figured I should get a few hours' sleep while I still could.[end if]"
 
@@ -604,7 +647,7 @@ what time sunrise is a repeatable questioning quip.
 		it is off-limits.
 		it is available.]
 
-Chapter 13 - Conversations First_Investigation
+Chapter 14 - Conversations First_Investigation
 
 Section 1 - Val
 
@@ -731,7 +774,7 @@ about business is a repeatable questioning quip.
 	It quip-supplies Jan_Investigation.
 	The proper scene is First_Investigation.
 
-Chapter 14 - Game Mechanics
+Chapter 15 - Game Mechanics
 
 Section 1 - Command Overrides
 
@@ -808,9 +851,24 @@ FoundClues is a number variable.[ FoundClues is 0.]
 When play begins:
 	Let FoundClues be 0;
 
+Section 4 - Debugging
+
 Every turn:
 	if Debug_on is true:
+		say "Turn Count: [Turn Count][line break]";
 		say "FoundClues: [FoundClues]";
+
+First_Sleepy is a truth state that varies. First_Sleepy is initially false.
+To decide whether First_Sleepy:
+	If First_Investigation is happening:
+		If the Turn Count is greater than 50:
+			Decide yes;
+		If FoundClues is greater than 4:
+			Decide yes;
+	Decide no.
+
+
+[TODO: Move me]
 
 Understand the command "clues" as something new. Understand "clues" as asking for clues. Asking for clues is an action out of world.
 
@@ -852,6 +910,7 @@ lock
 Table of BlackmailClues
 clue
 book
+bank statement
 
 Understand the command "hint" as something new. Understand "hint" as asking for a hint. Asking for a hint is an action out of world. Instead of thinking, try asking for a hint.
 Carry out asking for a hint:
@@ -860,7 +919,7 @@ Carry out asking for a hint:
 
 Understand the command "help" as something new. Understand "help" as asking for a hint.
 
-Section 4 - Inventory and Mechanics
+Section 5 - Inventory and Mechanics
 
 A room can be indoors or outdoors. A room is usually indoors.
 
@@ -886,7 +945,7 @@ Test body with "test discover/e/e/e/u"
 
 Test arrival with "test body/x body/x body/d/e/w/e/w/e/w/e/w/e/w/w/w/talk to val"
 
-Test myclues with "test arrival/e/anykey/x stain/x shard/x broken wineglass/u/x bottle/x knife/x wineglass"
+Test myclues with "test arrival/e/anykey/x stain/x shard/x broken wineglass/u/x bottle/x knife/x wineglass/d/e/n"
 
 Test valinvest with "test arrival/ask about Alan/ask about murder/ask about nathaniel/ask what was in it for me";
 

@@ -30,13 +30,10 @@ Gold ring around Val's neck
     - Stalker outside the house, extra set of footprints
     - Missing car
 
-- V Det. brings suit?
+========
 
-
-=========
-[if 
-Is he old money?
-One thing you learn in our world is that old money is a relative term.
+Wire transfers then switches to cash
+Either indicates two separate people, or else money got increasingly desperate
 
 ======
 
@@ -55,13 +52,19 @@ Do I strike you as one of the eager young undergrads he'd bring up here for a we
 
 ====
 
+Val leaves note for PC on waking up for the first time
+"You'll be hungry soon. Alan kept a personal stash behind a painting in the hallway downstairs. Help yourself, I need you to stay sharp for this one. Or don't, your call."
+
+=====
+
 I drank it down in one, and it warmed me like spiced cider with brandy in it. Until that moment, I hadn't realized how cold I'd been.
 
 ========
+VDet
 What about your girlfriend? You think she could have done it?
 ??
 You know what I think? I think Alan tried to ask the wrong person for help, I think he ended up running straight into the arms of his blackmailer, and that's why he got killed.
-=======
+==============
 Oh sure, he has a private jet and can get a tee time at Loch Lomond, but it's not as though that really fools any of us.
 
 I know he bought his way into the Circle, just like he bought his way into any country club young enough to want him.
@@ -78,30 +81,36 @@ He looked me up and down, taking a long drag on his cigarette.
 "I suppose she could have done worse."
 
 ==============================================
-We went way back. He wasn't perfect, but I know he deserved better than he got.
-==================================
+
 (Once blackmail is known)
 You said you were going to be straight with me.
 I have been.
 Maybe you forgot to mention the little fact that he was being blackmailed?
 I didn't think it was relevant.
 =================================================
+
 How the hell didn't you think that was relevant?
 Because blackmailers don't kill their marks.
+If you're right, then the blackmailer and the killer aren't the same person. If I'm right, then the blackmailer didn't come here intending to kill Alan, it just worked out that way.
+
 ===========================================
+Sunlight of Vdet proves there's hunter, says other suspect
+But doesn't make sense to kill him since he's the biggest proponent of the hunter theory
+=======
 Did you know this was going to happen?
 No.
 ========================================
-Listen, kid. Here's how it's going down. We have about twelve hours before the law, our kind of law, shows up stomping their flat feet around. They don't much care if the wrong one of us takes the rap, or if no one does. Alan's nobody to the Circle, I doubt they'd care if this case went stone cold. But he was a friend of mine, and he deserves better than that.
-======================================
-What's in it for me?
-I'm your first client, and I know a lot of people, how about you make this one on the house? You owe me, remember?
-===================================
+(about Scott)
+He ran some idiotic startup during the dot com boom. You know the kind, glass meeting rooms and a pony for every young programmer and bottles of Dom Perignon for staff parties. It went under like all the rest during the crash, but that hasn't kept him from bouncing back. I even heard he gave a TED talk about "The Success of Failing" or some bullshit like that, and they ate it up. These days there's still plenty of witless idiots in suits willing to throw money at the talentless idiots in polos. And willing to bring them into the Circle, terrified they'll miss the next big thing. None of these crusty old farts understand any of it, they're just terrified of looking out of touch.
+
+========
+
 Why you working so hard on this case? You'd never even heard of Alan until today.
 Him and Val go way back, apparently. She owes him and I owe her. I pay my debts.
+
 ===================================
 We've got a dead man upstairs.
-Oh, no one's debating that, old sport. I just don't see the point of all these questions.
+Oh, no one's debating that, old boy. I just don't see the point of all these questions.
 =============================
 With the steady clacking sound of a roller coaster ascending (nah, too opposite) opaque metal shutters came down on every window in the place.
 ======
@@ -110,16 +119,22 @@ And it turns out that actually he had installed one??
 Yet the killer knew about it
     - That plus the fact that the PC's brakes were cut indicates premeditation
 ===========
+
+(On the car ride out)
+
+about something to eat is a repeatable questioning quip.
+    The printed name is "about something to eat".
+    The comment is "[quotation mark]You'll be getting hungry soon, you should eat something. It'll keep your senses sharp.[quotation mark] She looked at me with something approaching regret.".
+    The reply is "[quotation mark]All right. And how would I go about doing that?[quotation mark][paragraph break][quotation mark]There's a hidden compartment behind one of the paintings in the hall. Alan was the sort of fellow that liked the convenience of not having to leave the house.[quotation mark]".
+    It quip-supplies Val_Investigation.
+    The proper scene is First_Investigation.
+
+======
+
 What happened to the body?
 Nothing. It's still there.
+
 ==========
-
-What happens to folks who don't wait their turn?
-The Circle only really has a single sanction.
-What is it?
-He took a slow drag on his cigarette for effect. "What do you think?"
-
-============
 
 Your merit badge is cute. You been wearing it long?
 I've worn the Mark for more than a hundred years, so longer than that police badge you've got.
@@ -133,7 +148,6 @@ I've only been one of you people for 48 hours, and I already have a file?
 You've had a file for three weeks now.
 I didn't like that. I didn't like it so much I could hardly think of a cute comeback to make. He seemed to enjoy lording over me the fact that he knew something I didn't. It was probably a feeling he didn't get to enjoy very often.
 "We all have files," he went on. "Did you think you could just get a hickey and you'd be in like Flynn, learn the secret handshake and everything? It takes resources to sweep something this size under the rug for this long. Know-how, connections, and money, and that means paperwork."
-
 
 =========
 
@@ -161,20 +175,17 @@ Val
         - about file (if asked)
             - It's all supposed to be confidential
 
-Ask her about Nathan
-Is he old money? 
-I guess. He made a sizeable fortune selling boots to the Allies during World War I, a real war profiteer. He used it to buy that ridiculous title, a couple of country estates, and even restored an old manor house. But a little time running with the Circle crowd will tell you that "old money" is a relative term. 
+========================
 
-=========================
+So this hunter found out where Alan lives, came kitted out with gear to break in and kill him. He gets to the front door, tries to pick it with the skill of a drunk raccoon, finally gives up and breaks the door open. Alan doesn't hear him come in. Okay, that part could hold water, he had the radio turned up pretty high. But then they both sit down to a nice glass of the most expensive wine he had in his house, and then the guy stabs Alan with his own letter opener?
 
-So this hunter found out where Alan lives, came kitted out with gear to break in and kill him. He gets to the front door, tries to pick it with the skill of a drunk raccoon, finally gives up and breaks the door open. Alan doesn't hear him come in. Okay, that part could hold water, he had the radio turned up pretty high. But then they both sit down to a nice glass of the most expensive wine he had in his house, and then Alan gets stabbed with his own letter opener?
-
+Available if
 (if front door is examined)
 (if letter opener is examined)
 
 ========================
 
-Brake lines were cut by the blackmailer, not the killer
+Brake lines were cut by the blackmailer
 
 =====================
 
@@ -208,21 +219,56 @@ A sunny place for shady people
 - W Somerset Maugham
 ==============================
 
-Why are you here?
-ALan's all right. Really, the house has nice position, and at the height of skiing season, it's hard to beat the crowd. He gestured vaguely towards the surrounding countryside as though it were a buffet.
 
-You've been here before.
-Oh, sure. He liked to keep things small, but he always wanted to be the center of attention. He'd do these little get-togethers a few times a season. Here in the winter, and his home in Martha's Vineyard for the summers. There's nothing quite like riding a horse along the beach in the moonlight, is there?
+I was so focused on the clue that I didnt hear the door open. I didn't hear the footsteps, or the sound of fingers tightening around a fireplace poker.
 
-You don't seem all that upset he's dead.
-I liked him well enough, but it was really only ever a friendship of convenience. He threw great parties, knew the right people, you know. He raised both eyebrows playfully. You can't possibly still think one of us did it? I think it's pretty clear 
+I woke up with a headache like I'd kissed the Long Island Express goodnight.
 
-Where were you last night? (Final)
-His lofty affected manner disappeared the second I asked. His smile was still fixed on his face, but the black eyes were suddenly cold and threatening. I met his gaze, unflinching. It felt like skinny dipping in Lake Ontario.
+==========================
+(tied up)
+I grinned like an idiot.
+I hate cops, you're all the same. Every last one of you is for sale, snug in someone else's pocket. We all are. We try to fly towards the sun, but those clueless old shits with their piles of money don't let you forget who paid for the wings. They're pulling all our strings, man, and I'm cutting mine. I'm doing you a favor, really. You really want to live the rest of forever playing lapdog to someone else? You think you're ever going to have another dream, another idea she isn't put there to make you to dance like a puppet?
 
-"I don't know what the hell you think you're playing at, but let's get one thing straight. You're nobody, and if you carry on making wild accusations, you're going to make a lot of enemies. Who knows, an enemy in the Circle is trouble not even Val can protect you from." (TODO a little blunt)
+He had me dead to rights. I didn't know if anyone was still home, if anyone would hear if I yelled. I didn't want to try it unless I knew for sure help would come; that's really only a trick that works once. Despite that, his eyes burned with the bitterness and rage of a cornered man making his last stand. The shy nerd standing resentfully by the punch bowl was gone.
 
-- Nathan
+=========================
 
-===============================
+I looked down at him, sprawled out on the floor like he was making a snow angel. He'd been young and desperate, and his reckless blackmail of Alan had been a product of youth, and his panicked murder had been a product of his desperation. He thought he'd get his chance at greatness through angel investors, and then maybe the Circle. Maybe he'd made a deal with the devil, but I had a hard time blaming him. We'd all made the same one. What did any of us do when life had us over a barrel, and someone like Val came along, and offered to take a long drink? We sold a part of our soul just for a chance to spin the wheel one more time. Scott's number had just come up sooner than mine, and a little after Alan's. All of us were for sale.
 
+
+
+=========
+
+His eyes went wild, and for a moment I felt like I could actually see his nerve fray and snap. His upper lip curled back over bared teeth so far it looked inhuman. It was the yellow-eyed look of a wolf baring its fangs. He was no wolf, but maybe he was so livid, he'd just forgotten. He whirled the gun around to point it straight at Val's serene face, and pulled the trigger. Her head was nowhere near the gun when it went off. She'd ducked to the side faster than I'd seen anyone move before, like Mayweather slipping a punch. 
+
+When Scott tried to aim the gun at her this time, screaming an unearthly scream, her hands were already up in a blur. She let him get another shot off, which I remember thinking was pretty charitable of her. There was nothing resembling charity in her green eyes, burning with a cold fury. It seemed for a second like she'd disarmed him as the gun dropped to the floor. It took an eternity to fall. Then I noticed in the dim light of the wine cellar a glint of silver attached to his neck, a small knife labeled with the initials TODO. His empty hands went to his throat, and he crumpled over. We listened to quiet gasping for a minute as Val came over to untie me from the chair. By the time she'd finished, it had stopped.
+
+=======
+
+Climbing quip dependent on asking about gear
+
+==================
+
+Scott
+
+================
+
+Even through the thick turtleneck he was wearing, I could tell from his size that his back and forearms got a lot of work. It didn't seem like he needed all that gear, I'd have believed he could claw his way to the top of Everest unaided.[paragraph break]The gray sweater had flecks of dark brown dried on it, only really visible in the light.
+
+===============
+
+I was thirsty. And no quantity of a dead man's expensive bourbon was going to help.
+
+======
+
+I saw the shattered remains of the wine bottle I'd been hit with over in the corner by the fuse box.
+
+======
+
+Val leaves at some point during the second day?
+
+
+=================================
+Have several emails with Kelly, then none
+Email another student asking if Kelly is okay, terse response
+================================

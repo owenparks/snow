@@ -1,4 +1,4 @@
-"A Long Drink" by PN
+"A Long Drink" by Owen Parks
 [Cover art by Dan Smith
 Licensed under Creative Commons By 2.0
 Image at: https://flic.kr/p/pPkjHD
@@ -29,44 +29,6 @@ When play begins:
 
 A clue is a kind of thing.
 
-Section 1 - Computer
-
-Understand "computer" as using the computer.
-
-Using the computer is an action out of world.
-
-Carry out using the computer:
-	Now the current menu is the Table of Emails;
-	carry out the displaying activity;
-	clear the screen;
-	try looking.
-
-tab is some text that varies. tab is usually "     ".
-	
-Table of Emails
-title	subtable	description	toggle
-"Date[tab]From[tab][tab]Subject"	--	"Make a selection"	--
-"Dec 20"	--	"Stuff"	--
-"Dec 18"	--	"Stuff"	--
-"Dec 12"	--	"Stuff"	--
-"Dec 10"	--	"Stuff"	--
-"Dec 06"	--	"Stuff"	--
-"Nov 24[tab]JBates@Barnett.edu[tab][tab]Out of Office until 12/01 Autoreply"	--	"I am out of the office today, 11/24 and will respond to your message on Monday, 12/01."	--
-""
-""
-""
-""
-""
-""
-""
-""
-""
-""
-""
-""
-""
-""
-		
 Chapter 2 - Game Scene List
 
 Mountain_Driving is a scene. Mountain_Driving begins when play begins. Mountain_Driving ends when Car_Escape begins.
@@ -78,19 +40,47 @@ Body_Discovery is a scene. Body_Discovery begins when the player is in the Drive
 Prearrival is a scene. Prearrival begins when Body_Discovery ends. Prearrival ends when Guest_Arrival begins.
 Guest_Arrival is a scene. Guest_Arrival begins when guests arrive. Guest_Arrival ends when first investigation starts.
 First_Investigation is a scene. First_Investigation begins when Guest_Arrival ends. First_Investigation ends when PC_Bedroom_Door is open. [TODO: Move Val here after some amount of time]
-First_Sleep is a scene. First_Sleep begins when First_Investigation ends.
+First_Sleep is a scene. First_Sleep begins when First_Investigation ends. First_Sleep ends when first_slept is true.
+Wakeup is a scene. Wakeup begins when First_Sleep ends. Wakeup ends when Interrogation begins.
+Interrogation is a scene. Interrogation begins when INTERRO_START is true. Interrogation ends when scene_conversation is exhausted.
+Second_Investigation is a scene. Second_Investigation begins when Interrogation ends.
 
 Cliff_Gameover is a scene. Cliff_Gameover begins when the player is in the Precipice for the first time.
+
+[Arrival logic for guests to arrive after body is found]
+Prearrival_Counter is a number variable. Prearrival_Counter is usually 0.
+Every turn during Prearrival:
+	Increase Prearrival_Counter by 1.
+		
+To decide whether the guests arrive:
+	If Prearrival_Counter > 10, yes;
+	no.	
+
+[Gives the "you should sleep message]
+[TODO: make a table of messages and pick one]
+First_Sleepy is a truth state that varies. First_Sleepy is initially false.
+To decide whether First_Sleepy:
+	If First_Investigation is happening:
+		If the Turn Count is greater than 50:
+			Decide yes;
+		If FoundClues is greater than 4:
+			Decide yes;
+	Decide no.
+	
+First_Slept is a truth state that varies. First_Slept is initially false.
+
+Section 1 - Sleep Mechanics
+
+Every turn:
+	If First_Sleepy is true:
+		say "I was starting to feel tired. Everything that had happened in the past few days was finally starting to take its toll. I thought it might help to find a bedroom and sleep for a few hours."
+
 
 Chapter 3 - Scene Mountain_Driving
 
 Introcar is a region.
 
 Understand the command drive as something new. Understand "drive" as driving. Driving is an action applying to one visible thing.
-[Carry out driving:
-	Try going the noun.]
-[Carry out driving in a direction:
-	Try going in the direction.]
 	
 Before climbing a direction (called D), try going D instead.
 Before driving a direction (called D), try going D instead.
@@ -396,13 +386,7 @@ When Body_Discovery ends:
 
 Chapter 10 - Scene Prearrival
 
-Prearrival_Counter is a number variable. Prearrival_Counter is usually 0.
-Every turn during Prearrival:
-	Increase Prearrival_Counter by 1.
-		
-To decide whether the guests arrive:
-	If Prearrival_Counter > 10, yes;
-	no.
+
 
 Chapter 11 - Scene Guest_Arrival
 
@@ -487,8 +471,6 @@ Jan_Investigation is a man. The printed name is "Jan". Understand "Jan" as Jan_I
 Rule for writing a paragraph about Jan_Investigation:
 	say "Jan stood here amid his piles climbing gear, coiling a long length of rope around one of his broad shoulders.";
 
-The blue sweater is worn by Jan_Investigation. Understand "sweater" as blue sweater.
-
 Nathaniel_Investigation is a man. The printed name is "Nathaniel". The description is "TODO".
 
 Section 1 - Main House
@@ -511,7 +493,8 @@ Instead of opening the pouch of liquid:
 
 Instead of drinking the pouch of liquid:
 	say "I tried not to look at the viscous contents as I tore off the end of the plastic with my teeth. I closed my eyes and forced myself to keep drinking until it was empty. It warmed me like drinking spiced cider by the fireside. Until that moment, I hadn't realized how cold I'd been.";
-	now Blood_status is true.
+	now Blood_status is true;
+	remove the pouch from play.
 
 Section 3 - Kitchen
 			
@@ -582,38 +565,80 @@ Instead of going west in the Master_Bedroom:
 
 Walk-in closet is scenery in the master_bedroom. The description is "I walked into the closet and flicked on the light. Three quarters of it was the usual cruft that finds its way to a person's closet and never gets worn.[paragraph break]I looked at the rest of it. A handful of suits that looked like they'd been bought in the 80s, judging by the lapels. Performance fleece and hiking boots, never worn. Velvet smoking jacket, no sweatpants or loungewear. Professor Bowden seemed to have some old-fashioned sensibilities.".
 
+the wall safe is a closed locked container in the Master_Bedroom.
+
+the manila envelope is a closed container in the wall safe.
+instead of opening the manila envelope:
+	say "I opened the envelope, and took out the contents, a handful of photos";
+	now the player has the photos;
+	remove the manila envelope from play.
+
+the photos are a clue. The description is "Several photographs of a blonde young man in his early twenties, taken with a telephoto lens. He hadn't spotted the photographer. He's wearing a polo shirt and jeans, so it must have been taken months ago. The man was holding a cup of coffee, and exiting a coffee shop. The daily routine must have made it pretty easy for whoever was tailing him. The height of the shots puts the photographer in a car across the street. The photos looked dim and hazy, even for a black and white shot.".
+
 Section 8 - Guest Bedrooms
 
 Nathan_Room is a room. The printed name is "Oak Room". It is east of the East_Hallway. The description is "The room had a large white rug in the center, and a four-poster bed that looked nice enough that it might have once sat in the master bedroom. An ugly, expensive-looking valise lay on the bed, its weight sinking it a full six inches into the feathertop mattress.".
 
 Scott_Room is a room. The printed name is "Sumac Room". It is south of the East_Hallway.
 
-Jan_Room is a room. The printed name is "Hemlock Room". It is north of the East_Hallway. The description is "The room had an angled ceiling to give the impression of a cozy attic or country cabin, except it was about as big as my entire apartment. Piles of climbing equipment and bunched-up coils of rope were heaped in the corner on top of his luggage.".
-
+Jan_Room is a room. The printed name is "Hemlock Room". It is north of the East_Hallway. The description is "The room had an angled ceiling to give the impression of a cozy attic or country cabin, except it was about as big as my entire apartment. Piles of climbing equipment and bunched-up coils of rope were heaped in the corner on top of his luggage. A gray sweater hung on a chair, flecks of dark reddish-brown stains dried on it.".
+The sweater is scenery in the Jan_Room. The description is "It was a thick wool turtleneck, so big it looked like a blanket draped over the chair. Around the front and the sleeves, blood stains were visible where some had apparently splashed back onto it."
+		
 SHUTTERS_DOWN is a truth state that varies. SHUTTERS_DOWN is false.
 [TODO move me]
 
 [TODO: If the player is too confused, simply change to an objective, use the "acting confused" cues from EmShort]
 
+Chapter 13 - Scene First Sleep
+
 Section 9 - PC Bedroom
 
-PC_Bedroom_Door is a closed door.
+PC_Bedroom_Door is a closed door. The printed name is "bedroom door".
 PC_Bedroom_Door is scenery.
 PC_Bedroom_Door is west of the North_Hallway and east of the PC_Bedroom.
 
-Chapter 13 - Scene First Sleep
+Rule for writing a paragraph about the PC_Bedroom_Door:
+	say "".
 
-The PC_Bedroom is a room. The description is "[if the scene is First_Sleep]I checked my watch, it was getting late, almost noon. I had a million things to think about, but figured I should get a few hours' sleep while I still could.[end if]"
+Before opening PC_Bedroom_Door for the first time:
+	if First_Sleepy is true:
+		Continue the action;
+	Otherwise:
+		say "I reached the room where Val was staying, and supposed it was where I was staying, too. My tired fingers closed tightly around the doorknob like a pitcher throwing his last solid knuckleball in the ninth inning. [paragraph break]I paused for a moment, mentally tallying what I'd put together about what had happened. I figured I ought to make sure I'd found enough clues for the day before I turned in.";
+		stop the action.
 
-Val_Sleep is in the PC_Bedroom. The printed name is "Val".The description is "[if the scene is First_Sleep]Val was lying on top of the covers, facing the window. Her breathing was steady and slow, but I couldn't tell if she was asleep. She wore just a satin pajama shirt. If the cold bothered her, she didn't show it.[end if]"
+The PC_Bedroom is a room. The printed name is "Bedroom". The description is "[if the scene is First_Sleep]I checked my watch, it was getting late, almost noon. I had a million things to think about, but figured I should get a few hours' sleep while I still could.[end if]"
 
-the bottle of bourbon is in the PC_Bedroom. The description is "A bottle of Four Roses small batch. One of the better ways to pass the time, if I had to choose. It was still half full, if I had to be an optimist about something." ;
+Val_Sleep is a woman. The printed name is "Val". Understand "Val" as Val_Sleep. The description is "[if the scene is First_Sleep]Val was lying on top of the covers, facing the window. Her breathing was steady and slow, but I couldn't tell if she was asleep. She wore just a satin pajama shirt. If the cold bothered her, she didn't show it.[end if]"
 
-carry out drinking the bottle of bourbon for the first time:
-	say "I poured out a measure into one of the glasses on the chest of drawers and drank it slowly, letting it linger on my tongue.[paragraph break]I thought about the idea that someone was just outside the window, peering in, waiting the way a hunter sits in a blind, waiting for ducks. I thought about the three men I'd just met, and how I liked none of them. I thought about the man I'd seen in the chair with his eyes wide open, who didn't seem to mind that I was drinking his bourbon, since he didn't mind much of anything anymore.";
-carry out drinking the bottle of bourbon for the second time:
+the bottle of bourbon is in the PC_Bedroom. The description is "A bottle of Woodford Reserve. One of the better ways to pass the time, if I had to choose. It was still half full, if I had to be an optimist about something." ;
+
+instead of drinking the bottle of bourbon for the first time:
+	say "I poured out a measure into one of the glasses on the nightstand and drank it slowly, letting it linger on my tongue.[paragraph break]I thought about the idea that someone was just outside the window, peering in, waiting the way a hunter sits in a blind, waiting for ducks. I thought about the three men I'd just met, and how I liked none of them. I thought about the man I'd seen in the chair with his eyes wide open, who didn't seem to mind that I was drinking his bourbon, since he didn't mind much of anything anymore.";
+instead of drinking the bottle of bourbon for the second time:
 	say "I went back to the bottle and poured again, more generous this time. I listened to the sound of something between snow and frozen rain pattering against the window. I listened to Val's steady breathing. She was either asleep, or thinking just as hard as I was. I stared at her back a long time, trying to decide if I wanted to talk to her.";
+	
+instead of drinking the bottle of bourbon for the third time:
+	try sleeping.
+	
+instead of taking the bottle of bourbon:
+	say "Taking the entire bottle with me wouldn't have been a very classy move, but the thought crossed my mind.".
 [TODO: You can drink to think and pass the time in lieu of sleeping]
+
+instead of sleeping in the PC_Bedroom during First_Sleep:
+	now first_slept is true.
+
+When First_Sleep begins:
+	now Val_Sleep is in the PC_Bedroom.
+	
+When First_Sleep ends:
+	say "I changed into my pajamas and got into bed under the covers. I kept a reasonable distance between the two of us on the bed, though she didn't seem the type to get prudish about that kind of thing. I lay there thinking for a long time, trying to put together everything I'd heard into a picture that made sense. After five minutes that took two hours, I fell asleep, and dreamt of nothing.";
+	remove Val_Sleep from play;
+	say "[paragraph break](press any key)";
+	wait for any key.
+	
+	
+The memo is a thing. The description is "Kid,[line break]You'll be hungry soon. Alan used to keep a personal stash behind a painting in the hallway downstairs. [paragraph break]Help yourself, I need you to stay sharp for this one. Or don't, your call.".
 
 Section 1 - Conversation Riding_Scene
 
@@ -647,7 +672,7 @@ what time sunrise is a repeatable questioning quip.
 		it is off-limits.
 		it is available.]
 
-Chapter 14 - Conversations First_Investigation
+Chapter 15 - Conversations First_Investigation
 
 Section 1 - Val
 
@@ -736,19 +761,33 @@ Section 3 - Scott
 about jan svensson is a repeatable questioning quip.
 	The printed name is "Jan".
 	The comment is "[quotation mark]Have you met Mr. Svensson?[quotation mark] I asked".
-	The reply is "[quotation mark]Jan? Jesus, I can't stand him. He's insufferable at every damn conference I meet him at. Blowhards like him look down their noses at people like you and me, you know? He'll act like he's slumming it investing in startups, then take all the credit when a tech rally helps lift that boat anchor of a fund he runs.[quotation mark]".
+	The reply is "[quotation mark]Jan? Jesus, I can't stand him. He's insufferable at every damn conference I run into him at. Blowhards like him look down their noses at people like you and me, you know? He'll act like he's slumming it investing in startups, then take all the credit when a tech rally helps lift that boat anchor of a fund he runs.[quotation mark]".
 	It quip-supplies Scott_Investigation.
 	The proper scene is First_Investigation.
 	
 hedge fund is a repeatable questioning quip.
 	The printed name is "about the hedge fund".
 	The comment is "[quotation mark]I take it you're not invested in Svensson's financial ventures, then?[quotation mark]".
-	The reply is "He gave me a conspiratorial grin that was not at all kind. [quotation mark]Did he already give you the sales pitch? He probably left out the part where he's lost good ten percent more than the indexes. That joke of a fund of his is bleeding money, it's not surprising he's trying to get new clients to keep things solvent.[quotation mark]".
+	The reply is "He gave me a knowing smile that was not at all kind. [quotation mark]Did he already give you the sales pitch? He probably left out the part where he's lost good ten percent more than the indexes. That joke of a fund of his is bleeding money, it's not surprising he's trying to get new clients to keep things solvent.[quotation mark]".
 	It quip-supplies Scott_Investigation.
 	The proper scene is First_Investigation.
 An availability rule for hedge fund:
 	if the player recollects about jan svensson, it is available;
 	otherwise it is off-limits.
+
+who scott killer is a repeatable questioning quip.
+	The printed name is "who he thinks did it".
+	The comment is "'Who you figure got to Bowden before we got here?'".
+	The reply is "The second I asked, he started shifting around like something was crawling under his skin. 'There's someone out there, you mark my words. Did you see the door? They knew he lived alone, broke in, and stabbed him, simple as that. You can bet I'm getting the hell out of here the second the sun sets. This is like Geneva all over again, I'm not ending up like those people!' His high voice was a whine now, the shrill panic of a man who didn't deal well with stress.".
+	It quip-supplies Scott_Investigation.
+	The proper scene is First_Investigation.
+	
+what happened in Geneva is a repeatable questioning quip.
+	The printed name is "what happened in Geneva".
+	The comment is "'What happened in Geneva in 1986?'".
+	The reply is "'Some fucking do-gooder with a gun and a handful of silver bullets. Our people are connected enough in the media and the government to keep a tight lid on any leaks, but every so often, one person comes along who can slip through the net. He buried himself in the snow and found a vantage point on a house by Lake Geneva, a wealthy Patron was having a party. Anyone who tried to leave the house at night was picked off at fifty paces. Anyone who tried to run during the day... well, you can imagine.[paragraph break]The Inquisition made a big public show of the execution when they caught him. You know how it goes, they had to look like the situation was under control after a colossal security fuckup like that.'".
+	It quip-supplies Scott_Investigation.
+	The proper scene is First_Investigation.
 
 Section 4 - Jan
 
@@ -774,9 +813,107 @@ about business is a repeatable questioning quip.
 	It quip-supplies Jan_Investigation.
 	The proper scene is First_Investigation.
 
-Chapter 15 - Game Mechanics
+about val jan is a repeatable questioning quip.
+The printed name is "about Val".
+	The comment is "'You've met Val?'".
+	The reply is "He looked surprised. 'Sure. Everybody knows Val. For someone who's been around as long as her, I'm surprised she hasn't tried her hand at politics. Just about all the other elders love their little backroom deals and power plays. She hasn't been very interestd in becoming a Patron either. I think you're her first.'".
+	It quip-supplies Jan_Investigation.
+	The proper scene is First_Investigation.
 
-Section 1 - Command Overrides
+about patron is a repeatable questioning quip.
+	The printed name is "about Patronage".
+	The comment is "'Patron?'".
+	The reply is "He gave a hearty laugh that didn't endear me any more to him. 'Wow, I guess she's as tight-lipped as they say. Patronage is the flowery little euphemism for the way we expand our little Circle. I was told the term came from the aristocrats in the old days. You know, bring in an artist or a mathematician, someone of value, and preserve their genius for all time. And of course, the prestige that comes from having such a stable. A little trophy case to show off in front of the other elders.' He gave me a grin that made him look like an overgrown schoolboy. 'Well, that was the idea, anyway. In reality, Patrons have needs like anyone else. They'll bring in someone who can bring something practical to the table. Unique skills, money... love.' His grin was starting to look more like a leer.".
+	It quip-supplies Jan_Investigation.
+	The proper scene is First_Investigation.
+		
+an availability rule for about patron:
+			if the player recollects about val jan, it is available;
+			otherwise it is off-limits.
+
+
+Section 5 - Val_Sleep
+
+how long she'd known Bowden is a repeatable questioning quip.
+	The comment is "[quotation mark]How well did you know Alan?[quotation mark]".
+	The reply is "[quotation mark]I suppose we've spent a lot of time together over the years at little soirées like this one. But not well, no.[if BLACKMAIL_KNOWN is true][paragraph break]'Well enough that he'd ask you for help with a blackmailer?'[paragraph break]I listened hard, straining to hear anything against the silence. For what, I wasn't sure. Certainly not a gasp of surprise. I couldn't even hear her blinking.[end if][quotation mark]".
+	It quip-supplies Val_Sleep.
+	The proper scene is First_Sleep.
+
+	
+Chapter 16 - Scene Wakeup
+
+When Wakeup begins:
+	now the memo is in the PC_Bedroom;
+	now SHUTTERS_DOWN is false;
+	now Adrian_Investigation is in the North_Hallway;
+	say "I awoke to an empty room, bathed in the silver moonlight. She hadn't made a sound when she'd left. It took a second for me to realize that the shutters had gone back up. Through the window, I could see that lights were starting to come on in the distant houses dotted across the mountainside.[paragraph break]I wasn't sure how long I'd slept, but it must have been about eight o'clock.".
+
+When Wakeup ends:
+	remove Adrian_Investigation from play;
+	say "TODO";
+
+Section 1 - Adrian_Investigation
+
+Adrian_Investigation is a man. The printed name is "Adrian". The description is "He stood well over six feet with a build that belonged on the inside of a steel cage. The designer charcoal suit he wore hadn’t quite been successfully altered to his wide frame. A deep purple tie sat at his neck in a fat knot Donald Trump would have approved of. The dark hair atop his head was neatly parted at the side, and slicked back almost flat to his head. His eyes were gray, and there was something baleful deep in them, peering out.  The deeply furrowed brow made him look like a gorilla in Prada.[paragraph break]He introduced himself as 'Adrian Castillo, Deputy to the Warden of the Peace, appointed to serve at the pleasure of the Honorable Countess of Westchester.' I didn't know what most of that meant, but I knew his suit was a little too nice for a cop entirely on the level. I wondered if that all fit on his business card.".
+
+[He was thirty-five and yet not.. He had the look of an old man bitter at the world and the look of a young man pulling the wings off a butterfly. Here was someone who enjoyed pushing people with impunity, I'd bet money on it.]
+
+INTERRO_START is a truth state that varies. INTERRO_START is initially false.
+
+Instead of going south in the North_Hallway during Wakeup:
+	now INTERRO_START is true.
+
+about questioning me is a repeatable questioning quip.
+	The printed name is "about questioning me".
+	The comment is "[quotation mark]So am I a suspect here?[quotation mark]".
+	The reply is "'Oh, nah. I'm just going through the formalities, just in case. I just wanted to talk to everyone who had a personal connection with the guy. That leaves you off the hook. Not to mention the the alibi you left, according to your girlfriend.[paragraph break]'Oh?'[paragraph break]'Yeah, that twisted junk heap at the bottom of a cliff. They'll have a heck of a time towing that up. Anyway, if you were wandering out there a couple of hours ago, then there's no way you could get here at the time of death. But hey, if the lady turns out to have done it, maybe I can pin you with accessory to murder if you smile at me real nice.'".
+	It quip-supplies Adrian_Investigation.
+	The proper scene is Wakeup.
+
+about val adrian is a repeatable questioning quip.
+	The printed name is "about questioning val".
+	The comment is "[quotation mark]TODO[quotation mark]".
+	The reply is "TODO".
+	It quip-supplies Adrian_Investigation.
+	The proper scene is Wakeup.
+	
+An availability rule for about val adrian:
+	If the player recollects about questioning me, it is available;
+	Otherwise it is off-limits.
+
+
+
+Chapter Scene Interrogation
+
+When Interrogation begins:
+	say "TODO";
+	now the player is in the Office;
+	now Adrian_Interrogation is in the Office;
+	now Val_Interrogation is in the Office.
+
+When Interrogation ends:
+	say "Val put her cigarette out and got up. Her expression was stony, the businesslike demeanor she'd started with was gone now. Castillo got up, too, but stopped himself from saying anything. He didn't strike me as the sharpest tool in the shed, but he'd clearly learned where the line was. Staying in the good graces of his employer meant staying within the level of harassment his job warranted, and not ruffling the feathers of anyone too important in the Circle.[paragraph break]'You'll let me know if there's anything else I can do to help, Deputy?' she said icily. She hadn't bothered looking at him as she said, it, and left the room without a backward glance.".
+
+Section 1 - Adrian_Interrogation
+
+Adrian_Interrogation is a man.
+
+Section 2 - Val_Interrogation
+
+Val_Interrogation is a woman.
+
+Chapter 17 - Game Mechanics
+
+Section 1 - Global Variables
+
+BLACKMAIL_KNOWN is a truth state that varies. BLACKMAIL_KNOWN is initially false.
+
+This is the make blackmail known rule:
+	if BLACKMAIL_KNOWN is false:
+		now BLACKMAIL_KNOWN is true.
+
+Section 2 - Command Overrides
 
 Understand the command "read" as something new. Reading is an action applying to one thing. Understand "read [something]" as reading.
 
@@ -786,7 +923,7 @@ Instead of kicking a person:
 
 Understand the command punch as something new. Punching is an action applying to one thing. Understand "punch [something]" as punching.
 Instead of punching a person:
-	say "Might be hard to believe from the way I look, but I always thought of my investigative methods as more Hercule Poirot than Dick Tracy. Trust me, I'm easy like Sunday morning.".
+	say "Might be hard to believe from the way I look, but I always thought of my investigative methods as more Hercule Poirot than Dick Tracy.".
 Instead of punching something:
 	say "I had an Everlast heavy bag for that sort of thing.".
 [TODO: Give useful error message for unpunchable things]
@@ -796,7 +933,7 @@ Understand the command hit as something new. Hitting is an action applying to on
 After reading a command:
 	If the player's command matches "ask", replace the player's command with "topics".
 	
-Section 2 - Conversation Tweaks
+Section 3 - Conversation Tweaks
 
 [The standard listing subject changes rule is not listed in any rulebook.
 The standard report other subjects rule is not listed in any rulebook.]
@@ -837,7 +974,7 @@ if the number of quips which are recollected by someone is 0, say "You have not 
                 increment N;
         if N is 0, say "You haven't discussed [the noun] with anyone yet."]
 
-Section 3 - Clues and Hints
+Section 4 - Clues and Hints
 
 A thing can be examined or unexamined. A thing is usually unexamined.
 
@@ -851,24 +988,13 @@ FoundClues is a number variable.[ FoundClues is 0.]
 When play begins:
 	Let FoundClues be 0;
 
-Section 4 - Debugging
+Section 5 - Debugging
 
 Every turn:
 	if Debug_on is true:
 		say "Turn Count: [Turn Count][line break]";
 		say "FoundClues: [FoundClues]";
 
-First_Sleepy is a truth state that varies. First_Sleepy is initially false.
-To decide whether First_Sleepy:
-	If First_Investigation is happening:
-		If the Turn Count is greater than 50:
-			Decide yes;
-		If FoundClues is greater than 4:
-			Decide yes;
-	Decide no.
-
-
-[TODO: Move me]
 
 Understand the command "clues" as something new. Understand "clues" as asking for clues. Asking for clues is an action out of world.
 
@@ -919,7 +1045,7 @@ Carry out asking for a hint:
 
 Understand the command "help" as something new. Understand "help" as asking for a hint.
 
-Section 5 - Inventory and Mechanics
+Section 6 - Inventory and Mechanics
 
 A room can be indoors or outdoors. A room is usually indoors.
 
@@ -933,7 +1059,7 @@ Blood_status is a truth state that varies. Blood_status is usually false.
 
 [TODO: Make the cell phone break when the player enters the Bottom of Cliff by whatever method]
 
-Section 6 - Tests
+Section 7 - Tests
 
 Test firstconvo with "drive/drive/brake/look/unbuckle seat belt/kick windshield/any key/up/get in"
 
@@ -952,8 +1078,130 @@ Test valinvest with "test arrival/ask about Alan/ask about murder/ask about nath
 Test janinv with "test valinvest/e/e/u/e/n/talk to jan/ask about work/ask about business/ask about climbing";
 
 Test master with "test arrival/e/e/u/n/";
+	
+Test computer with "test myclues"
+	
+Test bedtime with "test myclues/s/u/w/n/w/w/x val/drink bourbon/drink bourbon/drink bourbon"
+
+Test vdet with "test bedtime / e / s / d"
 
 Test me with "test janinv/s/w/d/open painting/take all/x pouch/drink pouch";
+
+Section 8 - Computer
+
+The computer is a device in the Office. The computer is switched off.
+
+Instead of switching on the computer:
+	say "I booted up Alan's computer to see what I could find. There were barely any house phones, and I hadn't found his cell phone yet. That meant his e-mail and web browser were probably his main points of contact.[line break](Type 'email' to access e-mail, 'history' for search engine autocomplete history)";
+
+Understand the command "history" as something new. Understand "history" as historying. Historying is an action applying to a topic. Understand "history [text]" as historying.
+
+Carry out historying a topic:
+	say "Searching webhistory for [The topic understood]...[line break]";
+	repeat through the Table of BrowserHistory:
+		If the link entry matches the regular expression "^[The topic understood]":
+			say "[link entry][line break]";
+
+After reading a command:
+	If the player's command matches "history":
+		replace the player's command with "history null".
+
+[Rule for supplying a missing second noun while historying the topic understood (this is the avoid empty history rule):
+	now the text is "asdf".]
+
+Table of BrowserHistory
+link
+"blackmail"
+"how to hire a private detective"
+"new york private detectives"
+"blackmail felony"
+"transfer money"
+"cayman bank"
+"asian literature"
+"chinese literature journal"
+"japanese medieval literature"
+"medieval japanese literature"
+"premodern japanese literature"
+"swiss bank"
+"bank transfer"
+"kokoro first edition"
+"kokoro natsume soseki"
+"tales of the water margin"
+"journey to the west"
+"all men are brothers"
+"new york blackmail law"
+"japanese language and literature"
+"new york extortion law"
+"extortion felony"
+"hiring a private detective"
+"private detective agencies"
+"academic literature journals"
+"jstor"
+"chinese language and literature"
+"american historical review"
+"detective agencies in new york"
+"barnett college"
+"barnett faculty portal"
+"atm maximum withdrawal limit"
+"withdrawal limit bank"
+"bank account withdrawal limit"
+"detective agency"
+"literature review"
+"tale of genji"
+"journal of east asian literature"
+"asian language and literature"
+"literature of chinese diaspora"
+
+Understand "email" as using the computer.
+Understand "e-mail" as using the computer.
+
+Using the computer is an action out of world.
+
+Carry out using the computer:
+	Now the current menu is the Table of Emails;
+	carry out the displaying activity;
+	clear the screen;
+	try looking.
+
+tab is some text that varies. tab is usually "     ".
+
+Table of Emails
+title	subtable	description	toggle
+"Inbox"	Table of InboxEmails	--	--
+"Sent"	Table of SentEmails	--	--
+	
+Table of InboxEmails
+title	subtable	description	toggle
+"Date[tab]From[tab][tab]Subject"	--	"Make a selection"	--
+"Dec 20"	--	"Stuff"	--
+"Dec 18"	--	"Stuff"	--
+"Dec 12"	--	"Stuff"	--
+"Dec 10"	--	"Stuff"	--
+"Dec 06"	--	"Stuff"	--
+"Nov 24[tab]JBates@Barnett.edu[tab][tab]Out of Office until 12/01 Autoreply"	--	"I am out of the office today, 11/24 and will respond to your message on Monday, 12/01."	--
+"Sep 02[tab]PStillman@barnett.edu[tab][tab]Final Exam"	--	"Hi Professor I was just wondering when the final exam was because I have a lot of classes and think one of them might conflict with another class I'm taking thanks"	--
+"Sep 02[tab]TDeavers@barnett.edu[tab][tab]Final"	--	"Professor Bowden,[line break]When is the final exam?"	--
+"Sep 02[tab]MChung@barnett.edu[tab][tab]Registration[tab]"	--	"Professor,[line break]When I got to the registration system it said the class was full, even though there appear to be slots open in the listing. I wasn't able to contact anyone at the registrar's office, can you help me? I need to take this class for my major.[line break]Thanks,[line break]Melissa Chung"	--
+
+
+Table of SentEmails
+title	subtable	description	toggle
+"Nov 12[tab]To: valcarter7@beyondcoast.org"	--	"TODO"	make blackmail known rule
+"Nov 29[tab]To: Cassie Detra[tab]Quick question"	--	"Hi Cassie,[line break]I haven't seen Kelly in class recently, have the two of you had any contact? Just thought I'd ask.[line break][line break]Hope all's well,[EmailSignature]"	--
+"Nov 20[tab]To: AsianStudies201@barnett.edu[tab][tab]Thanksgiving Holiday"	--	"All,[line break]I'd like to wish everyone a Happy Thanksgiving, please take some time off to relax and spend it with family. For those of you who are traveling home,  have a safe journey. For those of you who are not able to, I'm hosting Thanksgiving dinner at my home, and all are welcome to attend. There's a great view of the lake, and I promise excellent food, drink, and company.[line break]Happy Holidays,[EmailSignature]"	--
+"Nov 12[tab]To: "	--	"TODO"	--
+"Nov 11[tab]"	--	"TODO"	--
+"Nov 10[tab]"	--	"TODO"	--
+"Nov 01[tab]To: registrar@barnett.edu[tab]Late registration"	--	"Hi Linda,[line break]A couple of students in my class were trying to register past the add deadline, and said there was an error accessing the online system, is this indeed the case? Let me know if you anticipate any problems doing a manual add.[line break]Thanks,[EmailSignature]"	--
+"Sep 18[tab]To: A"	--	"TODO"	--
+"Sep 03[tab]To: AsianStudies201@barnett.edu[tab]Course Syllabus"	--	"Class,[line break]I've already received several questions about the homework and date of the final exam, which as I've already stated, is in the course syllabus, which is available at the intranet link I mentioned in class. The syllabus already has the date of the midterm and final exam, as well as the grading policy for the entire semester listed in detail. I regret that I will not be able to answer any further questions to which the answers are already available.[line break]Regards,[EmailSignature]"	--
+"Sep 02[tab]To: AsianStudies201@barnett.edu[tab]Welcome to another semester"	--	"Class,[line break]As you may have heard, my name is Mark Bowden, and I'll be teaching Intro to Asian Literature 201, as I do every fall. Even after so many years of teaching in this field, I love seeing a class of fresh new faces, and the enthusiasm and ideas with which you tackle this material. More than just having you read journals and criticism, my goal this semester is to teach you to think critically, and how to hone your own ideas about some of the world's oldest classics. For some of you, this will be a time to get your feet wet in a different literary tradition than you're used to. I look forward to an enjoyable semester together! For your reference, the syllabus may be found at the following intranet link.[line break]Regards,[EmailSignature]"	--
+
+
+
+EmailSignature is some text that varies. EmailSignature is "[line break]--[line break]Mark Bowden[line break]Asian Studies Department[line break]Barnett College, NY[line break]mbowden@barnett.edu"
+
+
 
 [They sent a constable, low level]
 [He was putting on a good show, but I could tell he didn't seem to have any interest in finding out who did it. That, or some brass had told him not to.]

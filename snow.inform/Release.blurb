@@ -21,7 +21,7 @@ placeholder [IFID] = "615AD313-D26C-44F5-9110-1C79488431D3"
 placeholder [RELEASE] = "1"
 placeholder [YEAR] = "2015"
 placeholder [TITLE] = "A Long Drink"
-placeholder [AUTHOR] = "PN"
+placeholder [AUTHOR] = "Owen Parks"
 placeholder [BLURB] = "A work of interactive fiction."
 
 ! Other material to release

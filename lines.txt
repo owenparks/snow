@@ -42,24 +42,11 @@ Crime is one of passion, or the blackmailer and the murderer are different peopl
 
 ======
 
-Did you know him?
-Pretty well, once upon a time.
-[if val_help_letter is known]Still well enough that he wrote to you asking for help with a blackmailer.
-[end if]
-
 How did you know him, were you a student of his?
 Do I strike you as one of the eager young undergrads he'd bring up here for a weekend?
 
-====
-
-Val leaves note for PC on waking up for the first time
-"You'll be hungry soon. Alan kept a personal stash behind a painting in the hallway downstairs. Help yourself, I need you to stay sharp for this one. Or don't, your call."
-
-=====
-
-I drank it down in one, and it warmed me like spiced cider with brandy in it. Until that moment, I hadn't realized how cold I'd been.
-
 ========
+
 VDet
 What about your girlfriend? You think she could have done it?
 ??
@@ -255,6 +242,9 @@ Scott
 
 Even through the thick turtleneck he was wearing, I could tell from his size that his back and forearms got a lot of work. It didn't seem like he needed all that gear, I'd have believed he could claw his way to the top of Everest unaided.[paragraph break]The gray sweater had flecks of dark brown dried on it, only really visible in the light.
 
+examine sweater
+talk about sweater
+
 ===============
 
 I was thirsty. And no quantity of a dead man's expensive bourbon was going to help.
@@ -267,8 +257,34 @@ I saw the shattered remains of the wine bottle I'd been hit with over in the cor
 
 Val leaves at some point during the second day?
 
-
 =================================
 Have several emails with Kelly, then none
 Email another student asking if Kelly is okay, terse response
 ================================
+
+empirestate.edu
+barnett.edu
+
+
+=============
+
+Description of jacket off Jan, sweater wool commando, beard, hemingway
+
+==========
+
+Note about gold ring around neck 
+
+Mention that Emil's been dead for 40 years
+
+=====
+
+As a matter of fact, shamus, I've got another murder for you to solve.
+
+I have a little experience doing that.
+
+This one's been cold for 40 years.
+
+I like a challenge.
+
+What was the last time you were in Vegas?
+

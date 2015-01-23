@@ -22,9 +22,9 @@ Prelude
     - (B) Book in master bedroom returned from Kelly
     - (C) Val has been waiting a long time for a protege
 Night 1
+===========
 - Arrival of VDet
     - Val's Interrogation
-- Sleep again
 - Storm breaks
 - Go investigate car
 - Get back, collect final number of clues

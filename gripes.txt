@@ -28,3 +28,5 @@ I am writing Inform 7, the build number is 6L38, and the version is 1.54. Why do
 - When examining something/a noun for the first time:
     ACTUALLY means when examining ANY object for the first time
 
+- Using menus, I need to release and then compile for things to work
+

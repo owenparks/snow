@@ -32,6 +32,10 @@ Gold ring around Val's neck
 
 ========
 
+Our eyes met over the car just before I got in, and in that moment, I barely recognized what was inside them. It was something approaching regret, the look of a gambler who had bet big and lost, and bled too much to the house to cut her losses. It was the look of an old man who has realized that a young man must inherit his war. I blinked, and it was gone, and the only things reflected there were the moon and the snow and the darkness.[line break]She got into the car, and for the first time I saw her necklace dangle out from her blouse, a gold ring on a tiny chain.
+
+=======
+
 Wire transfers then switches to cash
 Either indicates two separate people, or else money got increasingly desperate
 
@@ -109,12 +113,7 @@ Yet the killer knew about it
 
 (On the car ride out)
 
-about something to eat is a repeatable questioning quip.
-    The printed name is "about something to eat".
-    The comment is "[quotation mark]You'll be getting hungry soon, you should eat something. It'll keep your senses sharp.[quotation mark] She looked at me with something approaching regret.".
-    The reply is "[quotation mark]All right. And how would I go about doing that?[quotation mark][paragraph break][quotation mark]There's a hidden compartment behind one of the paintings in the hall. Alan was the sort of fellow that liked the convenience of not having to leave the house.[quotation mark]".
-    It quip-supplies Val_Investigation.
-    The proper scene is First_Investigation.
+[quotation mark] She looked at me with something approaching regret.".
 
 ======
 
@@ -146,8 +145,6 @@ Val
     - Hunter: It's possible. It's rare, but it does happen from time to time. Some nut gets it in their head
     - Circle: So you're telling me that I am now part of an international cabal of parasites. There's no need to be so dramatic about it. It's not like I recruited you into a Wall St. firm.
     - Patron:
-        - My file if (my file) is known: You've been stalking me for weeks now? I wouldn't put it like that. How would you put it then? I got the go ahead for a patron application I put in a while back. That sort of opportunity doesn't come every day, so I scouted for a recruit. And then I made you an offer. 
-        - (If my file has been discussed) Our first meeting: So the first time we met, that wasn't a coincidence, was it? Would you have chosen differently if you'd known? No. Then what the hell are you sore about? She sounded impatient again.
      
     - House:
     - Blackmail: Did you know about this?
@@ -233,6 +230,10 @@ When Scott tried to aim the gun at her this time, screaming an unearthly scream,
 =======
 
 Climbing quip dependent on asking about gear
+
+==========
+
+Untouched snow covered the valley in disheveled waves like an unmade bed.
 
 ==================
 

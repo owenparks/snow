@@ -42,7 +42,7 @@ Guest_Arrival is a scene. Guest_Arrival begins when guests arrive. Guest_Arrival
 First_Investigation is a scene. First_Investigation begins when Guest_Arrival ends. First_Investigation ends when PC_Bedroom_Door is open. [TODO: Move Val here after some amount of time]
 First_Sleep is a scene. First_Sleep begins when First_Investigation ends. First_Sleep ends when first_slept is true.
 Wakeup is a scene. Wakeup begins when First_Sleep ends. Wakeup ends when Interrogation begins.
-Interrogation is a scene. Interrogation begins when INTERRO_START is true. Interrogation ends when scene_conversation is exhausted.
+Interrogation is a scene. Interrogation begins when INTERRO_START is true. Interrogation ends when the player recollects about her husband.[TODO: change me to the last quip in the tree]
 Second_Investigation is a scene. Second_Investigation begins when Interrogation ends.
 
 Cliff_Gameover is a scene. Cliff_Gameover begins when the player is in the Precipice for the first time.
@@ -607,7 +607,7 @@ Before opening PC_Bedroom_Door for the first time:
 		say "I reached the room where Val was staying, and supposed it was where I was staying, too. My tired fingers closed tightly around the doorknob like a pitcher throwing his last solid knuckleball in the ninth inning. [paragraph break]I paused for a moment, mentally tallying what I'd put together about what had happened. I figured I ought to make sure I'd found enough clues for the day before I turned in.";
 		stop the action.
 
-The PC_Bedroom is a room. The printed name is "Bedroom". The description is "[if the scene is First_Sleep]I checked my watch, it was getting late, almost noon. I had a million things to think about, but figured I should get a few hours' sleep while I still could.[end if]"
+The PC_Bedroom is a room. The printed name is "Bedroom". The description is "[if the scene is First_Sleep]I checked my watch, it was getting late, almost noon. I had a million things to think about, but figured I should get a few hours of sleep while I still could.[end if]"
 
 Val_Sleep is a woman. The printed name is "Val". Understand "Val" as Val_Sleep. The description is "[if the scene is First_Sleep]Val was lying on top of the covers, facing the window. Her breathing was steady and slow, but I couldn't tell if she was asleep. She wore just a satin pajama shirt. If the cold bothered her, she didn't show it.[end if]"
 
@@ -620,10 +620,15 @@ instead of drinking the bottle of bourbon for the second time:
 	
 instead of drinking the bottle of bourbon for the third time:
 	try sleeping.
+
+[TODO: Make sure sleeping has a decent message]
+[TODO: Make sure drinking bourbon outside the First_Sleep results in good messages]
+
+instead of drinking the bottle of bourbon:
+	say "I decided it was time to cut myself off. I'd never found a clue hidden at the bottom of a whiskey bottle.".
 	
 instead of taking the bottle of bourbon:
 	say "Taking the entire bottle with me wouldn't have been a very classy move, but the thought crossed my mind.".
-[TODO: You can drink to think and pass the time in lieu of sleeping]
 
 instead of sleeping in the PC_Bedroom during First_Sleep:
 	now first_slept is true.
@@ -734,6 +739,7 @@ why isn't nate upset is a a repeatable questioning quip.
 	It quip-supplies Nathaniel_Investigation.
 	The proper scene is First_Investigation.
 an availability rule for why isn't nate upset:
+	If the current interlocutor is not Nathaniel_Investigation, it is off-limits;
 	if the player recollects why nathaniel here, it is available;
 	otherwise it is off-limits.
 	
@@ -744,6 +750,7 @@ about nates alibi is a repeatable questioning quip.
 	It quip-supplies Nathaniel_Investigation.
 	The proper scene is First_Investigation.
 an availability rule for about nates alibi:
+	If the current interlocutor is not Nathaniel_Investigation, it is off-limits;
 	if the player recollects why isn't nate upset, it is available;
 	otherwise it is off-limits.
 
@@ -760,7 +767,7 @@ Section 3 - Scott
 
 about jan svensson is a repeatable questioning quip.
 	The printed name is "Jan".
-	The comment is "[quotation mark]Have you met Mr. Svensson?[quotation mark] I asked".
+	The comment is "[quotation mark]Have you met Mr. Svensson?[quotation mark] I asked.".
 	The reply is "[quotation mark]Jan? Jesus, I can't stand him. He's insufferable at every damn conference I run into him at. Blowhards like him look down their noses at people like you and me, you know? He'll act like he's slumming it investing in startups, then take all the credit when a tech rally helps lift that boat anchor of a fund he runs.[quotation mark]".
 	It quip-supplies Scott_Investigation.
 	The proper scene is First_Investigation.
@@ -772,6 +779,7 @@ hedge fund is a repeatable questioning quip.
 	It quip-supplies Scott_Investigation.
 	The proper scene is First_Investigation.
 An availability rule for hedge fund:
+	If the current interlocutor is not Scott_Investigation, it is off-limits;
 	if the player recollects about jan svensson, it is available;
 	otherwise it is off-limits.
 
@@ -828,8 +836,9 @@ about patron is a repeatable questioning quip.
 	The proper scene is First_Investigation.
 		
 an availability rule for about patron:
-			if the player recollects about val jan, it is available;
-			otherwise it is off-limits.
+	if the current interlocutor is not Jan_Investigation, it is off-limits;
+	if the player recollects about val jan, it is available;
+	otherwise it is off-limits.
 
 
 Section 5 - Val_Sleep
@@ -839,7 +848,6 @@ how long she'd known Bowden is a repeatable questioning quip.
 	The reply is "[quotation mark]I suppose we've spent a lot of time together over the years at little soirées like this one. But not well, no.[if BLACKMAIL_KNOWN is true][paragraph break]'Well enough that he'd ask you for help with a blackmailer?'[paragraph break]I listened hard, straining to hear anything against the silence. For what, I wasn't sure. Certainly not a gasp of surprise. I couldn't even hear her blinking.[end if][quotation mark]".
 	It quip-supplies Val_Sleep.
 	The proper scene is First_Sleep.
-
 	
 Chapter 16 - Scene Wakeup
 
@@ -855,7 +863,7 @@ When Wakeup ends:
 
 Section 1 - Adrian_Investigation
 
-Adrian_Investigation is a man. The printed name is "Adrian". The description is "He stood well over six feet with a build that belonged on the inside of a steel cage. The designer charcoal suit he wore hadn’t quite been successfully altered to his wide frame. A deep purple tie sat at his neck in a fat knot Donald Trump would have approved of. The dark hair atop his head was neatly parted at the side, and slicked back almost flat to his head. His eyes were gray, and there was something baleful deep in them, peering out.  The deeply furrowed brow made him look like a gorilla in Prada.[paragraph break]He introduced himself as 'Adrian Castillo, Deputy to the Warden of the Peace, appointed to serve at the pleasure of the Honorable Countess of Westchester.' I didn't know what most of that meant, but I knew his suit was a little too nice for a cop entirely on the level. I wondered if that all fit on his business card.".
+Adrian_Investigation is a man. The printed name is "Adrian". Understand "Adrian" as Adrian_Investigation. The description is "He stood well over six feet with a build that belonged on the inside of a steel cage. The designer charcoal suit he wore hadn’t quite been successfully altered to his wide frame. A deep purple tie sat at his neck in a fat knot Donald Trump would have approved of. The dark hair atop his head was neatly parted at the side, and slicked back almost flat to his head. His eyes were gray, and there was something baleful deep in them, peering out.  His size and heavy brow made him look like a gorilla in Prada.[if Wakeup is happening][paragraph break]He introduced himself as 'Adrian Castillo, Deputy to the Warden of the Peace, appointed to serve at the pleasure of the Honorable Countess of Westchester.' I didn't know what most of that meant, but I knew his suit was a little too nice for a cop entirely on the level. I wondered if that all fit on his business card.".
 
 [He was thirty-five and yet not.. He had the look of an old man bitter at the world and the look of a young man pulling the wings off a butterfly. Here was someone who enjoyed pushing people with impunity, I'd bet money on it.]
 
@@ -867,41 +875,116 @@ Instead of going south in the North_Hallway during Wakeup:
 about questioning me is a repeatable questioning quip.
 	The printed name is "about questioning me".
 	The comment is "[quotation mark]So am I a suspect here?[quotation mark]".
-	The reply is "'Oh, nah. I'm just going through the formalities, just in case. I just wanted to talk to everyone who had a personal connection with the guy. That leaves you off the hook. Not to mention the the alibi you left, according to your girlfriend.[paragraph break]'Oh?'[paragraph break]'Yeah, that twisted junk heap at the bottom of a cliff. They'll have a heck of a time towing that up. Anyway, if you were wandering out there a couple of hours ago, then there's no way you could get here at the time of death. But hey, if the lady turns out to have done it, maybe I can pin you with accessory to murder if you smile at me real nice.'".
+	The reply is "'Nah. I'm just going through the formalities, just in case. I just wanted to talk to everyone who had a personal connection with the guy. That leaves you off the hook. Not to mention the the alibi you left, according to your girlfriend.[line break]'Oh?'[line break]'Yeah, that twisted junk heap at the bottom of a cliff. They'll have a heck of a time towing that up. Anyway, if you were wandering out there a couple of hours ago, then there's no way you could get here at the time of death. But hey, if the lady turns out to have done it, maybe I can pin you with accessory to murder if you smile at me real nice.'".
 	It quip-supplies Adrian_Investigation.
 	The proper scene is Wakeup.
 
-about val adrian is a repeatable questioning quip.
+about questioning val is a repeatable questioning quip. It indirectly-follows about questioning me.
 	The printed name is "about questioning val".
-	The comment is "[quotation mark]TODO[quotation mark]".
-	The reply is "TODO".
+	The comment is "'I'm going to need you to come with me downstairs. I've got to ask Ms. Carter a few questions, and she asked you be present.' That confused me a bit. I wasn't entirely certain what Val and I were to each other, but I sure as hell wasn't her lawyer.".
+	The reply is "".
 	It quip-supplies Adrian_Investigation.
 	The proper scene is Wakeup.
-	
-An availability rule for about val adrian:
-	If the player recollects about questioning me, it is available;
-	Otherwise it is off-limits.
 
+[TODO: add him calling my name to the intro scene of going in the hallway]
+
+how he knew my name is a repeatable questioning quip.
+	The printed name is "how he knew my name".
+	The comment is "'Did Val tell you about me?'".
+	The reply is "'Nah, you I remember. I couldn't tell you much about these old timers, but your paperwork went through the office just the other day. We like to keep tabs on the newcomers. Your file said you used to work in homicide, huh.' It wasn't a question.".
+	It quip-supplies Adrian_Investigation.
+	The proper scene is Wakeup.
+
+about my file adrian is a repeatable questioning quip. It indirectly-follows how he knew my name.
+	The printed name is "about my file".
+	The comment is "'I've only been one of you people for 48 hours, and I already have a file?'".
+	The reply is "'You've had a file for three weeks now.' I didn't like that. I didn't like it so much I could hardly think of a cute comeback to make. He seemed to enjoy lording over me the fact that he knew something that I didn't. It was probably a feeling he didn't get to enjoy very often.".
+	It quip-supplies Adrian_Investigation.
+	The proper scene is Wakeup.
+				
+[An availability rule for about questioning val:
+	If the current interlocutor is not Adrian_Investigation, it is off-limits;
+	If the player recollects about questioning me, it is available;
+	Otherwise it is off-limits.]
+
+about anyone outside is a repeatable questioning quip. It indirectly-follows about questioning val.
+	The printed name is "about anyone outside".
+	The comment is "'See anyone on your way in? A couple of guests seemed pretty spooked about the idea that the killer would come back, something about Lake Geneva.' I kept my voice smooth and casual, like I wasn't at all nervous about the idea of being game in somebody else's pheasant hunt.".
+	The reply is "'Nope, all quiet out there.' Something in my face must've shown my silent vote of no confidence, since he tried to follow it up. 'Listen, punk. I've been in this business twice as long as you've been alive. If I don't see nobody out there, there ain't nobody.' I didn't tell him that that meant exactly jack and shit in my book. One look at him told me he didn't have an eye for detail. There's people on every force who can't think their way out of a wet paper bag, and I'd have bet my weight in cake donuts that Detective Castillo here was one of them.".
+	It quip-supplies Adrian_Investigation.
+	The proper scene is Wakeup.
 
 
 Chapter Scene Interrogation
 
 When Interrogation begins:
-	say "TODO";
+	say "TODO[paragraph break]";
 	now the player is in the Office;
 	now Adrian_Interrogation is in the Office;
+	now the quip-suggestion-phrase is "He [could] ";
 	now Val_Interrogation is in the Office.
 
 When Interrogation ends:
-	say "Val put her cigarette out and got up. Her expression was stony, the businesslike demeanor she'd started with was gone now. Castillo got up, too, but stopped himself from saying anything. He didn't strike me as the sharpest tool in the shed, but he'd clearly learned where the line was. Staying in the good graces of his employer meant staying within the level of harassment his job warranted, and not ruffling the feathers of anyone too important in the Circle.[paragraph break]'You'll let me know if there's anything else I can do to help, Deputy?' she said icily. She hadn't bothered looking at him as she said, it, and left the room without a backward glance.".
+	say "Val put her cigarette out and got up. Her expression was stony, the businesslike demeanor she'd started with was gone now. Castillo got up, too, but stopped himself from saying anything. He didn't strike me as the sharpest tool in the shed, but he'd clearly learned where the line was. Staying in the good graces of his employer meant staying within the level of harassment his job warranted, and not ruffling the feathers of anyone too important in the Circle.[paragraph break]'You'll let me know if there's anything else I can do to help, Deputy?' she said icily. She hadn't bothered looking at him as she said, it. She gave me a look full of meaning and left the room in the direction of the foyer and closing the door behind her. Castillo suddenly seemed very small standing behind the desk. He must have felt it, too, because he got up and left without another word to me.";
+	remove Val_Interrogation from play;
+	now Adrian_Interrogation is in the Hallway_Downstairs;
+	now Val_SecondInv is in the Foyer;
 
-Section 1 - Adrian_Interrogation
+Section 1 - Val_SecondInv
+	
+Val_SecondInv is a woman. The printed name is "Val". Understand "Val" as Val_SecondInv.
 
-Adrian_Interrogation is a man.
+about my file val is a repeatable questioning quip. It indirectly-follows about my file adrian.
+	The printed name is "about my file".
+	The comment is "I put on my tough detective voice to try and take some of the surprise out of it. I had an image to maintain. 'I heard about my file from Castillo. You've been stalking me for weeks now?'[line break]'I wouldn't put it like that.'[line break]'How would you put it then? I got the go ahead for a Patron application I put in a while back. That sort of opportunity doesn't come every day, so I scouted for a recruit. And then I made you an offer.'".
+	The reply is "".
+	It quip-supplies Val_SecondInv.
+	The proper scene is Second_Investigation.
+	
+about our first meeting is a repeatable questioning quip. It indirectly-follows about my file val.
+	The printed name is "about our first meeting".
+	The comment is "'So the first time we met, that wasn't a coincidence, was it?'[line break]'Would you have chosen differently if you'd known?'[line break]'No.'[line break]'Then what the hell are you sore about?' She was starting to sound impatient again.".
+	The reply is "".
+	It quip-supplies Val_SecondInv.
+	The proper scene is Second_Investigation.
 
-Section 2 - Val_Interrogation
+what she wanted to see me about is a repeatable questioning quip.
+	The printed name is "what she wanted to see me about".
+	The comment is "She lowered her voiceTODO".
+	The reply is "".
+	It quip-supplies Val_SecondInv.
+	The proper scene is Second_Investigation.
 
-Val_Interrogation is a woman.
+Section 2 - Adrian_Interrogation
+
+Adrian_Interrogation is a man. The printed name is "Adrian". Understand "Adrian" as Adrian_Interrogation.
+
+Section 3 - Val_Interrogation
+
+Val_Interrogation is a woman. The printed name is "Val". Understand "Val" as Val_Interrogation.
+
+Section 4 Val_Interrogation
+
+about herself interro is a repeatable questioning quip.
+	The printed name is "about herself".
+	The comment is "Castillo took an official sort of bearing, or the nearest he could manage to one. 'Please state your name for the record.'".
+	The reply is "'Valentine Elizabeth Carter.'[paragraph break]'Any aliases or other names you've used before?'[paragraph break]'Elizabeth Deverell, but not recently.'".
+	It quip-supplies val_interrogation.
+	The proper scene is interrogation.
+
+about her family interro is a repeatable questioning quip.
+	The printed name is "about her family".
+	The comment is "'Any family?'[line break]'None living.'[line break]'Married?'[line break]'Widowed.'".
+	The reply is "".
+	It quip-supplies val_interrogation.
+	The proper scene is interrogation.
+
+about her husband interro is a repeatable questioning quip. it indirectly-follows about her family.
+	The printed name is "about her husband".
+	The comment is "'And what was your late husband's name?'[paragraph break]'Emil. But seeing as he's been dead fifty years, how about we leave him out of this?'".
+	The reply is "Castillo didn't pursue it any further after hearing her tone. He probably could have, but didn't want to push things into open antagonism without a reason. I wouldn't have, in his place.'".
+	It quip-supplies val_interrogation.
+	The proper scene is interrogation.
 
 Chapter 17 - Game Mechanics
 
@@ -961,6 +1044,9 @@ When play begins:
 
 To decide whether scene_conversation is exhausted:
 	decide on whether or not the number of available quips which are not recollected by someone is 0.
+
+To decide whether interro_conversation is exhausted:
+	decide on whether or not the number of available quips which are not recollected by Val_Interrogation is 0.
 
 [Understand "remember [any subject]" or "remember [something]" as remembering. Remembering is an action applying to one visible thing.]
 [Check remembering:
@@ -1201,7 +1287,7 @@ title	subtable	description	toggle
 
 EmailSignature is some text that varies. EmailSignature is "[line break]--[line break]Mark Bowden[line break]Asian Studies Department[line break]Barnett College, NY[line break]mbowden@barnett.edu"
 
-
+[TODO: computer cannot be used during Interrogation]
 
 [They sent a constable, low level]
 [He was putting on a good show, but I could tell he didn't seem to have any interest in finding out who did it. That, or some brass had told him not to.]

@@ -17,8 +17,8 @@ if __name__ == "__main__":
     qname, pname, tname, comment, reply, speaker, scene = sys.argv
     outfile.write("%s is a repeatable questioning quip.\n" % qname)
     outfile.write("\tThe printed name is \"%s\".\n" % pname)
-    outfile.write("\tThe comment is \"[quotation mark]%s[quotation mark]\".\n" % comment)
-    outfile.write("\tThe reply is \"[quotation mark]%s[quotation mark]\".\n" % reply)
+    outfile.write("\tThe comment is \"%s\".\n" % comment)
+    outfile.write("\tThe reply is \"%s\".\n" % reply)
     outfile.write("\tIt quip-supplies %s.\n" % speaker)
     outfile.write("\tThe proper scene is %s.\n" % scene)
     outfile.write("\n\n")

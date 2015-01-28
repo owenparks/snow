@@ -55,16 +55,20 @@ Low priority:
 
 - [ BUG: Sleepy message persists even after waking up]
 - [ BuG: I need to use indirectly-follows instead of an availability rule]
+- bug: change "he could have ask" phrase outside of interrogation
 - bug: Move interrogation npcs to room before scene change not after so there's not a slack turn
 
 ===============
 
-- Finish interrogation
+Critical path
+
+- Add car object to driveway, make it so that it transports between house and hairpin so long as the scene is second_investigation
 - Val conversation leading to car revisit
+	- What did you find? (clue context sensitive)
 - Car revisit scene now has clues in it
 - Wall safe stuff, more clues
+	- Cash for blackmail, put comment in final scene for it
 - Emails need to have clue rules when you read them
-- Finish email text
 - When get back, split up with Val, sun rises again
 - vdet gets hit wth light, go to investigate
 - get hit on the head upon discovering it
@@ -72,3 +76,10 @@ Low priority:
 
 - denouement, discussion with Val, leave in car
 
+======================
+
+Needs revision
+
+
+- Finish interrogation
+- Finish email text

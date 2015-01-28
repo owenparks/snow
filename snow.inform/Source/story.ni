@@ -29,7 +29,7 @@ When play begins:
 
 A clue is a kind of thing.
 
-Chapter 2 - Game Scene List
+Chapter 1 - Game Scene List
 
 Mountain_Driving is a scene. Mountain_Driving begins when play begins. Mountain_Driving ends when Car_Escape begins.
 Car_Escape is a scene. Car_Escape begins when Upturned Car is visited. Car_Escape ends when Bottom of Cliff is visited.
@@ -75,8 +75,7 @@ Every turn:
 	If First_Sleepy is true:
 		say "I was starting to feel tired. Everything that had happened in the past few days was finally starting to take its toll. I thought it might help to find a bedroom and sleep for a few hours."
 
-
-Chapter 3 - Scene Mountain_Driving
+Chapter 2 - Scene Mountain_Driving
 
 Introcar is a region.
 
@@ -129,7 +128,7 @@ After reading a command:
 			now the player is in the Upturned Car;
 			stop the action.
 	
-Chapter 4 - Scene Car_Escape
+Chapter 3 - Scene Car_Escape
 
 A room is either strapped or unstrapped. A room is usually unstrapped.
 When the Car_Escape begins:
@@ -193,18 +192,21 @@ After reading a command:
 			say "The seat belt held me firmly in place in what was now the bottom of the upturned car. I wasn't going to be able to see or do much of anything until I unbuckled myself.";
 			stop the action;
 
-Chapter 5 - Scene Cliff_Climbing
+Chapter 4 - Scene Cliff_Climbing
 
-Bottom of Cliff is a room. Bottom of Cliff is below Sharp Bend. The description is "I stood on a  ridge densely packed with trees some ways below the highway. My overturned car sat a few feet away. The ridge extended as far as I could see to the north, going nowhere in particular. To the west I saw the steep incline the car had rolled down, and the path it'd cut through the snow and brush.[paragraph break]I was miles from nowhere[if we have examined the cell phone], and the cherry on top was that my cell phone was broken[end if]. It had stopped snowing for the moment. The night sky was starting to lighten, I figured I had an hour before sunrise.[paragraph break]Fucking swell."
+Bottom of Cliff is a room. Bottom of Cliff is below Sharp Bend. The description is "I stood on a ridge densely packed with trees some ways below the highway. My overturned car sat a few feet away. The ridge extended as far as I could see to the north, going nowhere in particular. To the west I saw the steep incline the car had rolled down, and the path it'd cut through the snow and brush.[if Cliff_Climbing is happening][paragraph break]I was miles from nowhere, and the cherry on top was that my cell phone was broken. It had stopped snowing for the moment. The night sky was starting to lighten, I figured I had an hour before sunrise.[paragraph break]Fucking swell.[end if]".
 Instead of going west in the Bottom of Cliff:
 	try going up.
 
-Chapter 6 - Scene Car_Embarking
+Chapter 5 - Scene Car_Embarking
 
 Sharp Bend is a room. Sharp Bend is above Bottom of Cliff and north of Hairpin_Turn. The description is "I stood about a hundred feet from the hairpin turn where my car had gone over; I could see the tire tracks and broken guardrail to the south.".
 
 Rule for writing a paragraph about the Valcar_Container:
-	say "A Mercedes is quietly idling here, V8 purring.";
+	if the location is Driveway:
+		say "Val's Mercedes was parked to one side of the driveway.";
+	Otherwise:
+		say "A Mercedes is quietly idling here, V8 purring.";
 	
 [TODO: Maybe leaving this in could leave a trail of fixmes]
 Rule for writing a paragraph about a person:
@@ -214,25 +216,29 @@ Rule for writing a paragraph about Val:
 	If Val is in the Sedan:
 		say "Val drove the car, her eyes looking miles beyond the road, the mountains, and the horizon.".
 	
-Before going south in the Sharp Bend:
-	If the scene is Cliff_Climbing:
+Instead of going south in the Sharp Bend:
+	If Cliff_Climbing is happening:
 		say "I'd only known Val a couple of days, but I knew she didn't like to be kept waiting.";
-		stop the action.
+		stop the action;
+	Otherwise:
+		say "There was nothing interesting that way except for Manhattan, and it was a little far to walk.".
 Before going down in the Sharp Bend:
-	If the scene is Cliff_Climbing:
+	If Cliff_Climbing is happening:
 		say "I'd only known Val a couple of days, but I knew she didn't like to be kept waiting.";
-		stop the action.
+		stop the action;
+	Otherwise:
+		Continue the action.
 
 When Car_Embarking begins:
 	say "The second I turned my head to look down the lane, I saw a pair of headlights approach. A black Mercedes pulled up and came to a stop just in front of me. The passenger door opened, and I saw Val looking out at me.[paragraph break][quotation mark]Get in,[quotation mark] she said.";
 	now the Valcar_Container is in the Sharp Bend.
 
-Chapter 7 - Scene Riding_Scene
+Chapter 6 - Scene Riding_Scene
 
 When Riding_Scene begins:
 	Now the player is in the Sedan.
 
-The Valcar_Container is an enterable container. The printed name is "Mercedes".
+The Valcar_Container is an enterable container. The printed name is "Mercedes". Understand "Mercedes" as Valcar_Container. Understand "Val's car" as Valcar_Container. Understand "Val's Mercedes" as Valcar_Container. Understand "car" as Valcar_Container.
 [TODO: Can't go down in initial scene, but allow the player to come back here]
 
 Sedan is a room. The description is "The inside of the Mercedes was yards of brushed metal and hand-stitched leather. It still smelled new.[if scene_conversation is exhausted] Having run out of things to talk about, I had nothing to do but wait for us to arrive.[end if]".
@@ -246,7 +252,7 @@ Instead of waiting in the Sedan during Riding_Scene:
 	Otherwise:
 		Continue the action.
 
-Chapter 8 - Scene Cliff_Gameover
+Chapter 7 - Scene Cliff_Gameover
 
 Mountain Ridge is north of Bottom of Cliff. The description is "I had a bad feeling as I walked my way along the ridge, trudging a couple of miles through the foot-deep snow. The path didn't seem to be leading anywhere, and the sky kept getting lighter as I went. I still had enough time to turn back, if I wanted."
 
@@ -257,14 +263,14 @@ Precipice is north of Dense Forest. The description is "The forest abruptly ende
 When Cliff_Gameover begins:
 	end the story saying "The north end of the ridge had a stunning view of the eastern valley, and unfortunately the horizon, too. Through what must have been some quirk of fate, I never made it to the chalet. I smiled sardonically at the sunrise, searing like a fire newly kindled, even on that cold, windswept ridge. I guess I'd been spared what would have no doubt been an interminable weekend.[paragraph break]As far as last sights went, I supposed it could have been worse."
 
-Chapter 9 - Scene Body_Discovery
+Chapter 8 - Scene Body_Discovery
 
-Val_House is a woman. The printed name is "Val". Understand "Val" as Val_House. The description is "She wore a belted black overcoat with straight shoulders, which covered all of her except for the bottom of a long pencil skirt. She hadn't bothered taking her driving gloves off. I couldn't put my finger on it, but there was something stiffly formal and practised about the way she moved.[if Val_House is in the Reading_Nook][paragraph break]Her eyes rested on what was left of the professor, her expression unreadable.[end if]".
+Val_House is a woman. The printed name is "Val_HouseTODO". Understand "Val" as Val_House. The description is "She wore a belted black overcoat with straight shoulders, which covered all of her except for the bottom of a long pencil skirt. She hadn't bothered taking her driving gloves off. I couldn't put my finger on it, but there was something stiffly formal and practised about the way she moved.[if Val_House is in the Reading_Nook][paragraph break]Her eyes rested on what was left of the professor, her expression unreadable.[end if]".
 
 Rule for writing a paragraph about Val_House:
 	If Val_House is in the Reading_Nook:
 		say "Val stood to my left, looking impassively at the body of Alan Bowden.";
-	If the scene is Guest_Arrival:
+	If Guest_Arrival is happening:
 		say "";
 
 When Body_Discovery begins:
@@ -276,20 +282,40 @@ House is scenery in the Driveway. Understand "facade/chalet/lodge" as house. The
 Driveway_scenery is scenery in the Driveway. Understand "driveway" as driveway_scenery. The printed name is "the driveway".
 [TODO: Cars, killer's car has a cold engine? Or else, owner's car is missing?]
 
+Section 1 - Mercedes
+	
+Instead of entering the Valcar_Container:
+	if Second_Investigation is happening:
+		if the location is Driveway:
+			now Val_SecondInv is in the Sharp Bend;
+			now Valcar_Container is in the Sharp Bend;
+			now the player is in the Sharp Bend;
+		otherwise if the location is Sharp Bend:
+			now Val_SecondInv is in the Driveway;
+			now Valcar_Container is in the Driveway;
+			now the player is in the Driveway;	
+	Otherwise:
+		Continue the action.	
+
 Front_Porch is a room. Front_Porch is east of the Driveway. The printed name is "Front Porch". The description is "Steps led up from the gravel driveway to the porch. Narrow unpainted wood planks extended the length of the house, along with windows that looked into rooms at the front of the house. Through them, I saw blinds, and a glint of something metallic, like a shutter.".
 Windows are scenery in the Front_Porch. The description is "I peered at the window next to the door. It looked to be double or triple pane glass. Crouching down slightly, I saw a recessed mechanism for a metal shutter door, almost like a security gate. Presumably, upon activation, it would slam down and block entry.". Understand "shutter" as windows. Understand "blinds" as windows.
 [TODO: Ask Val about shutters if they are observed]
 
 the front door is a lockable unlocked door. the front door is open. front door is west of the Foyer and east of the Front_Porch. The description is "A large wooden door, painted white as a preacher's picket fence. It didn't have a window or peephole. Something seemed odd about the lock, like it had been damaged. There was splintered wood on the side of the doorframe where someone had apparently forced the door open." Understand "doorframe" as front door.
 Rule for writing a paragraph about the front door:
-	say "[if the front door is open]The front door stood open to the porch.[end if] [if the front door is unexamined]I could tell right away that something was wrong, like the door had been damaged somehow.[end if]".
+	say "[if the front door is open]The front door stood open to the porch.[end if][if the front door is unexamined]There was something about the door that looked like a B&E job.[end if]".
 	
 The lock is scenery in the Front_Porch. The lock is a clue. The description is "I could see obvious scratch marks at the deadbolt that could've been left by an intruder using a lockpick. Going by the state of the doorframe, the attempt hadn't been successful.";
+
+lock_dummyobj is scenery in the Foyer. Understand "lock" as lock_dummyobj.
+Instead of examining the lock_dummyobj:
+	If the location is Foyer:
+		say "I needed to be on the other side of the door to see what'd been done to the lock.".
 	
-Foyer is a room. The description is "I walked into the spacious foyer, trying not to walk into the large lacquered screens in front of the door. The shiny black wood was decorated with an intricate picture in gold paint, depicting a Chinese court scene. It seemed at odds with the exterior of the house, but matched the rest of the decor; the interior was a mixture of Old World furniture and Asian influences.[if Body_Discovery is happening][paragraph break]A layer of snow had blown in through the open doorway, and was slowly melting into a puddle on the enormous Persian rug.[end if]
+Foyer is a room. The description is "I walked into the spacious foyer, trying not to walk into the large lacquered wood screens in front of the door. The shiny black surfaces were decorated with an intricate picture in gold paint, depicting a Chinese court scene. It seemed at odds with the exterior of the house, but matched the rest of the decor; the interior was a mixture of Old World furniture and Asian influences.[if Body_Discovery is happening][paragraph break]A layer of snow had blown in through the open doorway, and was slowly melting into a puddle on the enormous Persian rug.[end if]
 [if Guest_Arrival is happening][paragraph break]Three men stood on the rug, their coats and pant cuffs damp with snow. Val made introductions all around, as if nothing was wrong. [paragraph break]I studied their faces carefully. If one of them knew about Alan upstairs, they weren't letting on. The three men were overdressed for vacation, as rich men often are. But somehow, they were oddly mismatched. I doubted that they came here together.[end if]"
 
-Section 1 - Greatroom
+Section 2 - Greatroom
 
 Greatroom is a room. Greatroom is east of the Foyer. The description is "The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall, dark wooden rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
 	
@@ -297,8 +323,8 @@ A large set of sofas were arranged around a huge rug. A dark [if the stain is ex
 
 A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade.[if the radio is switched on] Coming from somewhere up there I heard [carol title] warbling from what sounded like an old radio.[end if]".
 To decide whether the fire is lit:
-	If the scene is Body_Discovery, yes;
-	If the scene is First_Investigation, yes;
+	If Body_Discovery is happening, yes;
+	If First_Investigation is happening, yes;
 	no.
 The stain is scenery in the greatroom. The stain is a clue. The printed name is "stain on Greatroom sofa". The description is "An oblong dark red spot about the size of a pear stood out from the beige couch. From the color, it looked like wine. As I looked at it, I realized something on the floor was reflecting firelight back at me.".;
 
@@ -331,8 +357,9 @@ The rug is scenery in the Greatroom. The description is "I looked at the plush c
 
 The staircase is scenery in the Greatroom.The logs are scenery in the Greatroom.The balustrade is scenery in the Greatroom.The ceiling is scenery in the Greatroom.The rafters are scenery in the Greatroom.The beams are scenery in the Greatroom.
 
-Section 2 - Reading Nook
+Section 3 - Reading Nook
 
+[TODO: should I correct the if body discovery is happening line below so the corpse gets removed? just gets rid of clues, really]
 Reading_Nook is a room. Reading_Nook is above Greatroom. The printed name is "Reading Nook". The description is "I climbed the stairs to the reading nook. Shelves lined the walls of the small room, and a couple of books had been knocked off them onto the floor. A pair of wingback armchairs faced each other with a coffee table in between. A small pool of red liquid lay underneath the table.[if the scene is body_discovery][paragraph break]A man sat in one, slightly paunchy and slightly grey, his eyes and mouth wide open. His glasses were askew. He was wearing a navy blue cardigan, stained all over the front with a dark, almost black liquid. What looked like a small knife was sticking out of his neck, plunged in so far that only the handle was visible.[end if]".
 The body is scenery in the reading_nook. Understand "corpse / man" as body. The description is "He looked like he was fifty, but something about his well-preserved look told me that he was probably sixty. It wasn't that he was in good shape-- I doubted he'd seen much real exercise since he was in high school, and maybe not even then. He struck me as a debate team sort of guy.  I could tell he didn't get out much. His fingers were broad, but smooth. His hands had no calluses and no rings, but he wore a Rolex watch. It wasn't fake, and had cost probably three times what my car was worth before I'd driven it off a cliff a few hours ago."[TODO: Master Bedroom closet, one pair of boots, unused]
 Instead of taking body:
@@ -384,11 +411,11 @@ When Body_Discovery ends:
 	say "Val came up the stairs, freezing the second she saw the body. Her eyes narrowed, and I could tell her mind was racing, the first time I'd seen anything but placid boredom on her face. Half of me was relieved to know that there was something in this world that could perturb her. The other half was unnerved by it. She looked away and hitched the poker face back on pretty quick.[paragraph break]Val nodded at the poor stiff and said, [quotation mark]Meet Professor Alan Bowden, our host this weekend.[quotation mark][line break]";
 	wait for any key;
 
-Chapter 10 - Scene Prearrival
+Chapter 9 - Scene Prearrival
 
 
 
-Chapter 11 - Scene Guest_Arrival
+Chapter 10 - Scene Guest_Arrival
 
 When Guest_Arrival begins:
 	say "[if the player is not in the Foyer]I heard the front door open, and the sound of voices from the foyer. It closed a minute later.[end if][if the player is in the Foyer]The front door opened, and three men filed in, a lanky one in designer jeans holding the door for the other two. He closed it behind them, and they stood there looking around and putting snow on the rug, as though they expected a butler to come and announce them.[end if][paragraph break][if the player is in the Reading_Nook]Val and I glanced at each other across the dead man, and she left back down the stairs.[end if][if the player is in the Greatroom]Val came down the stairs, and crossed the room toward the sound of the noise.[end if]";
@@ -433,7 +460,7 @@ To decide whether first investigation starts:
 		decide yes;
 	decide no.
 
-Chapter 12 - Scene First_Investigation
+Chapter 11 - Scene First_Investigation
 
 
 
@@ -516,6 +543,8 @@ Instead of examining papers:
 	Remove the bank statement from play;
 	now the bank statement is in the Office.
 
+[TODO: front door lock should be scenery/clue]
+
 a bank statement is a clue. it is inside the desk.
 
 Section 5 - Basement
@@ -585,13 +614,23 @@ Jan_Room is a room. The printed name is "Hemlock Room". It is north of the East_
 The sweater is scenery in the Jan_Room. The description is "It was a thick wool turtleneck, so big it looked like a blanket draped over the chair. Around the front and the sleeves, blood stains were visible where some had apparently splashed back onto it."
 		
 SHUTTERS_DOWN is a truth state that varies. SHUTTERS_DOWN is false.
-[TODO move me]
+[TODO move me this is a global]
 
 [TODO: If the player is too confused, simply change to an objective, use the "acting confused" cues from EmShort]
 
-Chapter 13 - Scene First Sleep
+Chapter 12 - Scene First Sleep
 
-Section 9 - PC Bedroom
+Section 1 - PC Bedroom
+
+When First_Sleep begins:
+	remove Val_House from play;
+	now Val_Sleep is in the PC_Bedroom.
+	
+When First_Sleep ends:
+	say "I changed into my pajamas and got into bed under the covers. I kept a reasonable distance between the two of us on the bed, though she didn't seem the type to get prudish about that kind of thing. I lay there thinking for a long time, trying to put together everything I'd heard into a picture that made sense. After five minutes that took two hours, I fell asleep, and dreamt of nothing.";
+	remove Val_Sleep from play;
+	say "[paragraph break](press any key)";
+	wait for any key.
 
 PC_Bedroom_Door is a closed door. The printed name is "bedroom door".
 PC_Bedroom_Door is scenery.
@@ -624,6 +663,9 @@ instead of drinking the bottle of bourbon for the third time:
 [TODO: Make sure sleeping has a decent message]
 [TODO: Make sure drinking bourbon outside the First_Sleep results in good messages]
 
+Instead of drinking the bottle of bourbon for the fourth time:
+	say "The bottle beckoned, but I had a rule about not having the same thing for two meals in a row.".
+
 instead of drinking the bottle of bourbon:
 	say "I decided it was time to cut myself off. I'd never found a clue hidden at the bottom of a whiskey bottle.".
 	
@@ -633,19 +675,11 @@ instead of taking the bottle of bourbon:
 instead of sleeping in the PC_Bedroom during First_Sleep:
 	now first_slept is true.
 
-When First_Sleep begins:
-	now Val_Sleep is in the PC_Bedroom.
-	
-When First_Sleep ends:
-	say "I changed into my pajamas and got into bed under the covers. I kept a reasonable distance between the two of us on the bed, though she didn't seem the type to get prudish about that kind of thing. I lay there thinking for a long time, trying to put together everything I'd heard into a picture that made sense. After five minutes that took two hours, I fell asleep, and dreamt of nothing.";
-	remove Val_Sleep from play;
-	say "[paragraph break](press any key)";
-	wait for any key.
 	
 	
 The memo is a thing. The description is "Kid,[line break]You'll be hungry soon. Alan used to keep a personal stash behind a painting in the hallway downstairs. [paragraph break]Help yourself, I need you to stay sharp for this one. Or don't, your call.".
 
-Section 1 - Conversation Riding_Scene
+Section 2 - Conversation Riding_Scene
 
 Chalet is a subject. Understand "ski chalet/house" as chalet.
 Sunrise is a subject. Understand "dawn" as sunrise.
@@ -677,7 +711,7 @@ what time sunrise is a repeatable questioning quip.
 		it is off-limits.
 		it is available.]
 
-Chapter 15 - Conversations First_Investigation
+Chapter 13 - Conversations First_Investigation
 
 Section 1 - Val
 
@@ -849,9 +883,10 @@ how long she'd known Bowden is a repeatable questioning quip.
 	It quip-supplies Val_Sleep.
 	The proper scene is First_Sleep.
 	
-Chapter 16 - Scene Wakeup
+Chapter 14 - Scene Wakeup
 
 When Wakeup begins:
+	now the front door is unlocked;
 	now the memo is in the PC_Bedroom;
 	now SHUTTERS_DOWN is false;
 	now Adrian_Investigation is in the North_Hallway;
@@ -893,27 +928,18 @@ how he knew my name is a repeatable questioning quip.
 	The comment is "'Did Val tell you about me?'".
 	The reply is "'Nah, you I remember. I couldn't tell you much about these old timers, but your paperwork went through the office just the other day. We like to keep tabs on the newcomers. Your file said you used to work in homicide, huh.' It wasn't a question.".
 	It quip-supplies Adrian_Investigation.
-	The proper scene is Wakeup.
 
 about my file adrian is a repeatable questioning quip. It indirectly-follows how he knew my name.
 	The printed name is "about my file".
 	The comment is "'I've only been one of you people for 48 hours, and I already have a file?'".
 	The reply is "'You've had a file for three weeks now.' I didn't like that. I didn't like it so much I could hardly think of a cute comeback to make. He seemed to enjoy lording over me the fact that he knew something that I didn't. It was probably a feeling he didn't get to enjoy very often.".
 	It quip-supplies Adrian_Investigation.
-	The proper scene is Wakeup.
-				
-[An availability rule for about questioning val:
-	If the current interlocutor is not Adrian_Investigation, it is off-limits;
-	If the player recollects about questioning me, it is available;
-	Otherwise it is off-limits.]
 
 about anyone outside is a repeatable questioning quip. It indirectly-follows about questioning val.
 	The printed name is "about anyone outside".
 	The comment is "'See anyone on your way in? A couple of guests seemed pretty spooked about the idea that the killer would come back, something about Lake Geneva.' I kept my voice smooth and casual, like I wasn't at all nervous about the idea of being game in somebody else's pheasant hunt.".
 	The reply is "'Nope, all quiet out there.' Something in my face must've shown my silent vote of no confidence, since he tried to follow it up. 'Listen, punk. I've been in this business twice as long as you've been alive. If I don't see nobody out there, there ain't nobody.' I didn't tell him that that meant exactly jack and shit in my book. One look at him told me he didn't have an eye for detail. There's people on every force who can't think their way out of a wet paper bag, and I'd have bet my weight in cake donuts that Detective Castillo here was one of them.".
 	It quip-supplies Adrian_Investigation.
-	The proper scene is Wakeup.
-
 
 Chapter Scene Interrogation
 
@@ -927,33 +953,11 @@ When Interrogation begins:
 When Interrogation ends:
 	say "Val put her cigarette out and got up. Her expression was stony, the businesslike demeanor she'd started with was gone now. Castillo got up, too, but stopped himself from saying anything. He didn't strike me as the sharpest tool in the shed, but he'd clearly learned where the line was. Staying in the good graces of his employer meant staying within the level of harassment his job warranted, and not ruffling the feathers of anyone too important in the Circle.[paragraph break]'You'll let me know if there's anything else I can do to help, Deputy?' she said icily. She hadn't bothered looking at him as she said, it. She gave me a look full of meaning and left the room in the direction of the foyer and closing the door behind her. Castillo suddenly seemed very small standing behind the desk. He must have felt it, too, because he got up and left without another word to me.";
 	remove Val_Interrogation from play;
-	now Adrian_Interrogation is in the Hallway_Downstairs;
+	remove Adrian_Interrogation from play;
+	now Adrian_Investigation is in the Hallway_Downstairs;
 	now Val_SecondInv is in the Foyer;
 
-Section 1 - Val_SecondInv
-	
-Val_SecondInv is a woman. The printed name is "Val". Understand "Val" as Val_SecondInv.
 
-about my file val is a repeatable questioning quip. It indirectly-follows about my file adrian.
-	The printed name is "about my file".
-	The comment is "I put on my tough detective voice to try and take some of the surprise out of it. I had an image to maintain. 'I heard about my file from Castillo. You've been stalking me for weeks now?'[line break]'I wouldn't put it like that.'[line break]'How would you put it then? I got the go ahead for a Patron application I put in a while back. That sort of opportunity doesn't come every day, so I scouted for a recruit. And then I made you an offer.'".
-	The reply is "".
-	It quip-supplies Val_SecondInv.
-	The proper scene is Second_Investigation.
-	
-about our first meeting is a repeatable questioning quip. It indirectly-follows about my file val.
-	The printed name is "about our first meeting".
-	The comment is "'So the first time we met, that wasn't a coincidence, was it?'[line break]'Would you have chosen differently if you'd known?'[line break]'No.'[line break]'Then what the hell are you sore about?' She was starting to sound impatient again.".
-	The reply is "".
-	It quip-supplies Val_SecondInv.
-	The proper scene is Second_Investigation.
-
-what she wanted to see me about is a repeatable questioning quip.
-	The printed name is "what she wanted to see me about".
-	The comment is "She lowered her voiceTODO".
-	The reply is "".
-	It quip-supplies Val_SecondInv.
-	The proper scene is Second_Investigation.
 
 Section 2 - Adrian_Interrogation
 
@@ -986,7 +990,43 @@ about her husband interro is a repeatable questioning quip. it indirectly-follow
 	It quip-supplies val_interrogation.
 	The proper scene is interrogation.
 
-Chapter 17 - Game Mechanics
+Chapter Scene Second_Investigation
+
+When Second_Investigation begins:
+	Now the Valcar_Container is in the Driveway.
+
+Section 1 - Val_SecondInv
+	
+Val_SecondInv is a woman. The printed name is "Val_SecondInv_TODO". Understand "Val" as Val_SecondInv.
+
+about my file val is a repeatable questioning quip.[ It indirectly-follows about my file adrian.]
+	The printed name is "about my file".
+	The comment is "I put on my tough detective voice to try and take some of the surprise out of it. I had an image to maintain. 'I heard about my file from Castillo. You've been stalking me for weeks now?'[line break]'I wouldn't put it like that.'[line break]'How would you put it then?'[line break]'I got the go ahead for a Patron application I put in a while back. That sort of opportunity doesn't come every day, so I scouted for a recruit. And then I made you an offer.'".
+	The reply is "".
+	It quip-supplies Val_SecondInv.
+	The proper scene is Second_Investigation.
+
+An availability rule for about my file val:
+	If the player does not recollect about my file adrian:
+		It is off-limits.
+	
+about our first meeting is a repeatable questioning quip. It indirectly-follows about my file val.
+	The printed name is "about our first meeting".
+	The comment is "'So the first time we met, that wasn't a coincidence, was it?'[line break]'Would you have chosen differently if you'd known?'[line break]'No.'[line break]'Then what the hell are you sore about?' She was starting to sound impatient again.".
+	The reply is "".
+	It quip-supplies Val_SecondInv.
+	The proper scene is Second_Investigation.
+
+what she wanted to see me about is a repeatable questioning quip.
+	The printed name is "what she wanted to see me about".
+	The comment is "She lowered her voiceTODO".
+	The reply is "".
+	It quip-supplies Val_SecondInv.
+	The proper scene is Second_Investigation.
+
+
+
+Chapter 1 - Game Mechanics
 
 Section 1 - Global Variables
 
@@ -1170,6 +1210,8 @@ Test computer with "test myclues"
 Test bedtime with "test myclues/s/u/w/n/w/w/x val/drink bourbon/drink bourbon/drink bourbon"
 
 Test vdet with "test bedtime / e / s / d"
+
+Test cartrip with "test vdet / talk to val / ask about herself / ask about her family / ask about her husband /s /w /w/w/w/enter Mercedes"
 
 Test me with "test janinv/s/w/d/open painting/take all/x pouch/drink pouch";
 

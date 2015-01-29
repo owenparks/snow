@@ -45,7 +45,7 @@ Wakeup is a scene. Wakeup begins when First_Sleep ends. Wakeup ends when Interro
 Interrogation is a scene. Interrogation begins when INTERRO_START is true. Interrogation ends when the player recollects about her husband.[TODO: change me to the last quip in the tree]
 Second_Investigation is a scene. Second_Investigation begins when Interrogation ends.
 
-Cliff_Gameover is a scene. Cliff_Gameover begins when the player is in the Precipice for the first time.
+Cliff_Gameover is a scene. Cliff_Gameover begins when the player is in the Precipice and Cliff_Climbing is happening.
 
 [Arrival logic for guests to arrive after body is found]
 Prearrival_Counter is a number variable. Prearrival_Counter is usually 0.
@@ -194,13 +194,15 @@ After reading a command:
 
 Chapter 4 - Scene Cliff_Climbing
 
-Bottom of Cliff is a room. Bottom of Cliff is below Sharp Bend. The description is "I stood on a ridge densely packed with trees some ways below the highway. My overturned car sat a few feet away. The ridge extended as far as I could see to the north, going nowhere in particular. To the west I saw the steep incline the car had rolled down, and the path it'd cut through the snow and brush.[if Cliff_Climbing is happening][paragraph break]I was miles from nowhere, and the cherry on top was that my cell phone was broken. It had stopped snowing for the moment. The night sky was starting to lighten, I figured I had an hour before sunrise.[paragraph break]Fucking swell.[end if]".
+Bottom of Cliff is a room. Bottom of Cliff is below Sharp Bend. The description is "I stood on a ridge densely packed with trees some ways below the highway. My wrecked car sat a few feet away. The ridge extended as far as I could see to the north, going nowhere in particular. To the west I saw the steep incline the car had rolled down, and the path it'd cut through the snow and brush.[if Cliff_Climbing is happening][paragraph break]I was miles from nowhere, and the cherry on top was that my cell phone was broken. It had stopped snowing for the moment. The night sky was starting to lighten, I figured I had an hour before sunrise.[paragraph break]Fucking swell.[end if]".
 Instead of going west in the Bottom of Cliff:
 	try going up.
 
 Chapter 5 - Scene Car_Embarking
 
-Sharp Bend is a room. Sharp Bend is above Bottom of Cliff and north of Hairpin_Turn. The description is "I stood about a hundred feet from the hairpin turn where my car had gone over; I could see the tire tracks and broken guardrail to the south.".
+Section 1 - Sharp Bend
+
+Sharp Bend is a room. Sharp Bend is above Bottom of Cliff and north of Hairpin_Turn. The description is "I walked on the snowy road about a hundred feet from the hairpin turn where my car had gone over; I could see the tire tracks and broken guardrail to the east.".
 
 Rule for writing a paragraph about the Valcar_Container:
 	if the location is Driveway:
@@ -228,6 +230,9 @@ Before going down in the Sharp Bend:
 		stop the action;
 	Otherwise:
 		Continue the action.
+
+Instead of going east in the Sharp Bend:
+	try going down.
 
 When Car_Embarking begins:
 	say "The second I turned my head to look down the lane, I saw a pair of headlights approach. A black Mercedes pulled up and came to a stop just in front of me. The passenger door opened, and I saw Val looking out at me.[paragraph break][quotation mark]Get in,[quotation mark] she said.";
@@ -956,8 +961,7 @@ When Interrogation ends:
 	remove Adrian_Interrogation from play;
 	now Adrian_Investigation is in the Hallway_Downstairs;
 	now Val_SecondInv is in the Foyer;
-
-
+	now the quip-suggestion-phrase is "[We] [could] ".
 
 Section 2 - Adrian_Interrogation
 
@@ -993,7 +997,42 @@ about her husband interro is a repeatable questioning quip. it indirectly-follow
 Chapter Scene Second_Investigation
 
 When Second_Investigation begins:
-	Now the Valcar_Container is in the Driveway.
+	Now the Valcar_Container is in the Driveway;
+	Now the Players_Cluecar is in the Bottom of Cliff.
+
+Players_Cluecar is a device. The printed name is "my car". Understand "my car" as Players_Cluecar. Understand "car" as Players_Cluecar. 
+
+Rule for writing a paragraph about the Players_Cluecar:
+	say "My Toyota Corolla in a fetching 'Regatta Blue' that must have looked appealing under bright dealership lights when it was brand new back in 1990. It now sat on its side like a beached whale, exactly where I'd left it. The key was still in the ignition.[if the Players_Cluecar is switched on] The power was on, and the dashboard blinked orange and red lights at me.[end if]".
+
+the brake line is scenery. the brake line is a clue. the brake line is part of the Players_Cluecar. The description is "I put a hand behind the wheel and the suspension arm and felt along the metal tube of the brake line, nearly slicing my finger on a thin slit. It wasn't a bit of rust or metal fatigue, the cut was too clean. It might have been made by a dremel or a wire cutter. Whatever my state of mind or driving had been on that turn, this wasn't an accident.[paragraph break]The fact that I was able to see all of this without a flashlight barely registered.".
+
+the dashboard is scenery. the dashboard is part of the Players_Cluecar. The description is "[if the Players_Cluecar is switched off]The car was off, the dashboard only showed dust and smudgy fingerprints. I hadn't been a big believer in car washing.[end if][if the Players_Cluecar is switched on]I scanned the panel, and saw a red indicator I'd never seen lit before. The brake light.[end if]".
+
+the brakes are scenery in the Bottom of Cliff. The description is "The rotors were pretty worn, and a little rusty, but they were too expensive to replace as often as I should.".
+
+Carry out examining the brakes:
+	if the Players_Cluecar is switched on and we have examined the dashboard:
+		try examining the brake line;
+		stop the action;
+
+the tires are scenery in the Bottom of Cliff.
+the cluecar_windshield is scenery. The cluecar_windshield is part of the Player_Cluecar. The printed name is "windshield". Understand "windshield" as cluecar_windshield. The description is "The windshield lay on the ground where I'd kicked it out, already dusted with an inch of fresh snow.".
+
+the tires are scenery in the Bottom of Cliff.
+the wheels are scenery in the Bottom of Cliff.
+
+report switching on the Players_Cluecar:
+	say "I leaned into the cabin through the hole left by the windshield and turned the key. The headlights flicked on, and the dashboard lit up. I heard the radio bleat into the empty forest, muffled by the dull roar of air pouring out of the A/C vents. The engine turned over but didn't start. The inertia switch had cut off fuel to the engine when the car rolled down the hill. I didn't really mind, I hadn't planned on driving it out of here.";
+	
+instead of switching off the Players_Cluecar:
+	say "At this point, there was no harm in letting the battery drain. It was going to get hauled off anyway.";
+
+Rule for writing a paragraph about the Players_Cluecar:
+	if the brake line is examined:
+		say "I took one last look at the wreck of my old car, it'd told me everything it could. It was stupid, but for the first time I felt a little bad leaving it abandoned here. The old bucket had been with me a long time. That's sentimentalism, I suppose.";
+	otherwise:
+		say "I walked over to the car and crouched down beside it to look for clues. There had to be something to tell me if Val's hunch was right or not."
 
 Section 1 - Val_SecondInv
 	
@@ -1024,7 +1063,35 @@ what she wanted to see me about is a repeatable questioning quip.
 	It quip-supplies Val_SecondInv.
 	The proper scene is Second_Investigation.
 
+An availability rule for what she wanted to see me about:
+	If the location is Sharp Bend:
+		It is off-limits.
 
+whether she was ready to head back is a questioning quip.
+	The printed name is "whether she was ready to head back".
+	The comment is "'I'm all done here.'[line break]'Find anything interesting?'[line break]'Just that my fan club is even smaller than I imagined.'[line break]".
+	The reply is "".
+	It quip-supplies Val_SecondInv.
+	The proper scene is Second_Investigation.
+
+who else would have access to my file is a repeatable questioning quip. It indirectly-follows whether she was ready to head back.
+	The printed name is "who else would have access to my file".
+	The comment is "".
+	The reply is "".
+	It quip-supplies Val_SecondInv.
+	The proper scene is Second_Investigation.	
+	
+why she hid things from me is a repeatable questioning quip. It indirectly-follows whether she was ready to head back.
+	The comment is "Something I'd been thinking about for a while boiled over in my mind. I decided to finally ask her about it. 'You said you were going to be straight with me.'[line break]'I have been.'[line break]'Maybe you forgot to mention the little fact that he was being blackmailed?'[line break]'I didn't think it was relevant.'".
+	The reply is "".
+	It quip-supplies Val_SecondInv.
+	The proper scene is Second_Investigation.	
+
+An availability rule for why she hid things from me:
+	If BLACKMAIL_KNOWN is false:
+		It is off-limits.
+
+how the hell she didn't think it was relevant is a repeatable questioning quip. It indirectly follows why she hid things from me.
 
 Chapter 1 - Game Mechanics
 

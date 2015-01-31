@@ -10,10 +10,11 @@
 - Go to hairpin turn again
 
 - COMPUTER LOGIC
-    - Give player password on Night 2
     - EMAILS
     - Web autocomplete
 - FUSE BOX logic
+- TODO: Make walkthrough getting all clues
+- TODO Later: Make one that gets none, compare
 
 - MAKE SPECIAL EVENTS IN BOLD, SO PEOPLE DON"T MISS THEM?
 - Wall clock shows the time as it finishes, creating locked from the outside.
@@ -40,6 +41,8 @@ Nice to have
 
 - Drinking blood (optional) will give heightened senses and make solving puzzles easier.
 - Add descriptions for scenery obviously listed in room descriptions
+- TODO: Sensible messages for getting in car
+- TODO: Change I beg your pardon message
 
 - Emails list full of boring student crap, need to key off the initials from book
 - Getting into a knife fight is a bad proposition. The loser dies in the street, the winner gets to die in the hospital.

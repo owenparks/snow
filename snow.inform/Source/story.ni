@@ -43,7 +43,10 @@ First_Investigation is a scene. First_Investigation begins when Guest_Arrival en
 First_Sleep is a scene. First_Sleep begins when First_Investigation ends. First_Sleep ends when first_slept is true.
 Wakeup is a scene. Wakeup begins when First_Sleep ends. Wakeup ends when Interrogation begins.
 Interrogation is a scene. Interrogation begins when INTERRO_START is true. Interrogation ends when the player recollects about her husband.[TODO: change me to the last quip in the tree]
-Second_Investigation is a scene. Second_Investigation begins when Interrogation ends.
+Second_Investigation is a scene. Second_Investigation begins when Interrogation ends. Second_Investigation ends when ComingBack begins.
+ComingBack is a scene. ComingBack begins when the brake line is examined and the location is Foyer. ComingBack ends when DiscoverDet begins.
+DiscoverDet is a scene. DiscoverDet begins when the sun rises. DiscoverDet ends when the location is Wine_Cellar.
+CellarThink is a scene. CellarThink begins when DiscoverDet ends. CellarThink ends when scene_conversation is exhausted.
 
 Cliff_Gameover is a scene. Cliff_Gameover begins when the player is in the Precipice and Cliff_Climbing is happening.
 
@@ -69,6 +72,12 @@ To decide whether First_Sleepy:
 	
 First_Slept is a truth state that varies. First_Slept is initially false.
 
+[Knocked_Out is a truth state that varies. Knocked_Out is initially false.
+To decide whether Knocked_Out:
+	If DiscoverDet is happening and the location is Wine Cellar:
+		Decide yes;
+	Decide no.]
+	
 Section 1 - Sleep Mechanics
 
 Every turn:
@@ -303,12 +312,19 @@ Instead of entering the Valcar_Container:
 		Continue the action.	
 
 Front_Porch is a room. Front_Porch is east of the Driveway. The printed name is "Front Porch". The description is "Steps led up from the gravel driveway to the porch. Narrow unpainted wood planks extended the length of the house, along with windows that looked into rooms at the front of the house. Through them, I saw blinds, and a glint of something metallic, like a shutter.".
+
+Carry out going east in the Front_Porch:
+	if Second_Investigation is happening:
+		say "I walked into the house, taking care to close the door behind me.";
+		now the front door is closed;
+		now the player is in the Foyer.
+
 Windows are scenery in the Front_Porch. The description is "I peered at the window next to the door. It looked to be double or triple pane glass. Crouching down slightly, I saw a recessed mechanism for a metal shutter door, almost like a security gate. Presumably, upon activation, it would slam down and block entry.". Understand "shutter" as windows. Understand "blinds" as windows.
 [TODO: Ask Val about shutters if they are observed]
 
 the front door is a lockable unlocked door. the front door is open. front door is west of the Foyer and east of the Front_Porch. The description is "A large wooden door, painted white as a preacher's picket fence. It didn't have a window or peephole. Something seemed odd about the lock, like it had been damaged. There was splintered wood on the side of the doorframe where someone had apparently forced the door open." Understand "doorframe" as front door.
 Rule for writing a paragraph about the front door:
-	say "[if the front door is open]The front door stood open to the porch.[end if][if the front door is unexamined]There was something about the door that looked like a B&E job.[end if]".
+	say "[if the front door is open]The front door stood open.[end if][if the front door is unexamined][line break]There was something about the door that looked like a B&E job.[end if]".
 	
 The lock is scenery in the Front_Porch. The lock is a clue. The description is "I could see obvious scratch marks at the deadbolt that could've been left by an intruder using a lockpick. Going by the state of the doorframe, the attempt hadn't been successful.";
 
@@ -352,7 +368,7 @@ The glass shard is a thing. The glass shard is fixed in place. The description i
 Instead of taking the glass shard:
 	try examining the glass shard.
 
-The shattered glass is a clue. The printed name is "broken wineglass". Understand "broken wineglass" as shattered glass. The description is "The curves of the wineglass were jagged edges now, a heap of shattered crystal under the sofa. It must've fallen from quite a height.".
+The shattered glass is a clue. The printed name is "broken wineglass". Understand "broken wineglass" as shattered glass. Understand "wineglass" as shattered glass. The description is "The curves of the wineglass were jagged edges now, a heap of shattered crystal under the sofa. It must've fallen from quite a height.".
 After taking the shattered glass:
 	say "I had enough of a mess on my hands without taking this one with me, but kept it anyway. It told an interesting story.";
 	stop the action.
@@ -370,7 +386,7 @@ The body is scenery in the reading_nook. Understand "corpse / man" as body. The 
 Instead of taking body:
 	say "I didn't want to move him just yet.";
 	stop the action.
-The knife is scenery in the reading_nook. The knife is a clue. The description is "It looked like a silver carving knife with an ivory handle. A monogram on the end read [quotation mark]AHB[quotation mark]. It didn't look that long or that sharp, but someone had made a pretty clean business of stabbing Bowden with it. Or maybe they'd just gotten lucky. It happens like that sometimes."
+The knife is scenery in the reading_nook. The knife is a clue. The description is "It looked like a silver letter opener with an ivory handle. A monogram on the end read [quotation mark]AHB[quotation mark]. It didn't look that long or that sharp, but someone had made a pretty clean business of stabbing Bowden with it. Or maybe they'd just gotten lucky. It happens like that sometimes."
 
 the shelves are scenery in the reading_nook. Understand "bookshelves" as shelves. The description is "Mostly non-fiction: scholarly journal archives, collections of essays, and books on literature. A small section appeared to contain first and second editions. The owner seemed to have a bit of a collector's streak.".
 
@@ -905,7 +921,7 @@ Section 1 - Adrian_Investigation
 
 Adrian_Investigation is a man. The printed name is "Adrian". Understand "Adrian" as Adrian_Investigation. The description is "He stood well over six feet with a build that belonged on the inside of a steel cage. The designer charcoal suit he wore hadn’t quite been successfully altered to his wide frame. A deep purple tie sat at his neck in a fat knot Donald Trump would have approved of. The dark hair atop his head was neatly parted at the side, and slicked back almost flat to his head. His eyes were gray, and there was something baleful deep in them, peering out.  His size and heavy brow made him look like a gorilla in Prada.[if Wakeup is happening][paragraph break]He introduced himself as 'Adrian Castillo, Deputy to the Warden of the Peace, appointed to serve at the pleasure of the Honorable Countess of Westchester.' I didn't know what most of that meant, but I knew his suit was a little too nice for a cop entirely on the level. I wondered if that all fit on his business card.".
 
-[He was thirty-five and yet not.. He had the look of an old man bitter at the world and the look of a young man pulling the wings off a butterfly. Here was someone who enjoyed pushing people with impunity, I'd bet money on it.]
+[He was thirty-five and yet not.. He had the eyes of an old man bitter at the world and the look of a young boy pulling the wings off a butterfly. Here was someone who enjoyed pushing people with impunity, I'd bet money on it.]
 
 INTERRO_START is a truth state that varies. INTERRO_START is initially false.
 
@@ -1000,16 +1016,19 @@ When Second_Investigation begins:
 	Now the Valcar_Container is in the Driveway;
 	Now the Players_Cluecar is in the Bottom of Cliff.
 
-Players_Cluecar is a device. The printed name is "my car". Understand "my car" as Players_Cluecar. Understand "car" as Players_Cluecar. 
+Players_Cluecar is a device. The printed name is "my car". Understand "my car" as Players_Cluecar. Understand "car" as Players_Cluecar.
+
+Instead of examining the Players_Cluecar:
+	say "The car I'd driven for close to the last hundred thousand miles, fender bent and windshield missing. I hadn't expected to have to look at it again, but if Val thought there was something here, that's the hunch I was going to play.[paragraph break]If I was going to find anything, I'd have to look through it piece by piece to figure out what happened. I started to feel detached from the place, like I'd never been there before. Start fresh, don't miss anything. I told myself to treat it like any other crime scene.[if the Players_Cluecar is switched on][paragraph break]The radio chattered away to nobody, muffled slightly by the sound of air flowing out of the heater.[end if]".
 
 Rule for writing a paragraph about the Players_Cluecar:
-	say "My Toyota Corolla in a fetching 'Regatta Blue' that must have looked appealing under bright dealership lights when it was brand new back in 1990. It now sat on its side like a beached whale, exactly where I'd left it. The key was still in the ignition.[if the Players_Cluecar is switched on] The power was on, and the dashboard blinked orange and red lights at me.[end if]".
+	say "My Toyota Corolla in a fetching 'Regatta Blue' that must have looked appealing under bright dealership lights when it was brand new back in 1990. I wouldn't know. It now sat on its side like a beached whale, exactly where I'd left it. The key was still in the ignition.[if the Players_Cluecar is switched on] The power was on, and the dashboard blinked orange and red lights at me.[end if]".
 
-the brake line is scenery. the brake line is a clue. the brake line is part of the Players_Cluecar. The description is "I put a hand behind the wheel and the suspension arm and felt along the metal tube of the brake line, nearly slicing my finger on a thin slit. It wasn't a bit of rust or metal fatigue, the cut was too clean. It might have been made by a dremel or a wire cutter. Whatever my state of mind or driving had been on that turn, this wasn't an accident.[paragraph break]The fact that I was able to see all of this without a flashlight barely registered.".
+the brake line is scenery. the brake line is a clue. the brake line is part of the Players_Cluecar. The description is "I put a hand behind the wheel and the suspension arm and felt along the metal tube of the brake line, nearly slicing my finger on a thin slit. It wasn't a bit of rust or metal fatigue, the cut was too clean. It might have been made by a dremel or a wire cutter. Cutting brake lines straight through would stop the front brakes from working. But a leak like this could take hours to affect performance. Whatever my state of mind or driving had been on that turn, this wasn't an accident.[paragraph break]The fact that I was able to see all of this without a flashlight barely registered.".
 
 the dashboard is scenery. the dashboard is part of the Players_Cluecar. The description is "[if the Players_Cluecar is switched off]The car was off, the dashboard only showed dust and smudgy fingerprints. I hadn't been a big believer in car washing.[end if][if the Players_Cluecar is switched on]I scanned the panel, and saw a red indicator I'd never seen lit before. The brake light.[end if]".
 
-the brakes are scenery in the Bottom of Cliff. The description is "The rotors were pretty worn, and a little rusty, but they were too expensive to replace as often as I should.".
+the brakes are scenery in the Bottom of Cliff. The description is "The rotors were pretty worn, and a little rusty, but they were too expensive to replace as often as they say.".
 
 Carry out examining the brakes:
 	if the Players_Cluecar is switched on and we have examined the dashboard:
@@ -1022,8 +1041,9 @@ the cluecar_windshield is scenery. The cluecar_windshield is part of the Player_
 the tires are scenery in the Bottom of Cliff.
 the wheels are scenery in the Bottom of Cliff.
 
-report switching on the Players_Cluecar:
+instead of switching on the Players_Cluecar:
 	say "I leaned into the cabin through the hole left by the windshield and turned the key. The headlights flicked on, and the dashboard lit up. I heard the radio bleat into the empty forest, muffled by the dull roar of air pouring out of the A/C vents. The engine turned over but didn't start. The inertia switch had cut off fuel to the engine when the car rolled down the hill. I didn't really mind, I hadn't planned on driving it out of here.";
+	now the Players_Cluecar is switched on.
 	
 instead of switching off the Players_Cluecar:
 	say "At this point, there was no harm in letting the battery drain. It was going to get hauled off anyway.";
@@ -1074,8 +1094,8 @@ whether she was ready to head back is a questioning quip.
 	It quip-supplies Val_SecondInv.
 	The proper scene is Second_Investigation.
 
-who else would have access to my file is a repeatable questioning quip. It indirectly-follows whether she was ready to head back.
-	The printed name is "who else would have access to my file".
+about who else would is a repeatable questioning quip. It indirectly-follows whether she was ready to head back.
+	The printed name is "about who else would have access to my file".
 	The comment is "".
 	The reply is "".
 	It quip-supplies Val_SecondInv.
@@ -1091,7 +1111,85 @@ An availability rule for why she hid things from me:
 	If BLACKMAIL_KNOWN is false:
 		It is off-limits.
 
-how the hell she didn't think it was relevant is a repeatable questioning quip. It indirectly follows why she hid things from me.
+how the hell she didn't think it was relevant is a repeatable questioning quip. It indirectly-follows why she hid things from me.
+	The comment is "'How the hell didn't you think that was relevant?'[line break]'Because blackmailers don't kill their marks.'[line break]She'd clearly thought it out, but I thought she was missing something. 'You asked me to be on this, you're going to have to get used to the idea of doing things my way. That means giving me the clearest picture possible. Unless you've changed your mind and want the Deputy back there to handle it.'[line break]'Fair enough.'".
+	The reply is "".
+	It quip-supplies Val_SecondInv.
+	The proper scene is Second_Investigation.	
+
+why she didn't tell me about the blackmail is a repeatable questioning quip. It indirectly-follows how the hell she didn't think it was relevant.
+	The comment is "'Why didn't you tell me he was being blackmailed?'[line break]'We all have secrets. I wanted to save Alan some embarassment. Not to mention that knowing things like that is often a way to get yourself involved too deep in someone else's business.'[line break]'It's a bit late for that.'[line break]'Jesus, what do you want from me?' She gave a tired sigh.'".
+	The reply is "".
+	It quip-supplies Val_SecondInv.
+	The proper scene is Second_Investigation.	
+
+what he was being blackmailed over is a repeatable questioning quip. It indirectly-follows why she didn't tell me about the blackmail.
+	The comment is "'Did he tell you what this was about?'[line break]'No. He could be an idiot sometimes, but thank God he had the sense to not put it in an e-mail.'[line break]'You must have some idea. How much shady business could a guy like that possibly have going on?'[line break]'I have an idea. Let's just say he didn't invite the students up here for polite little tea parties.'".
+
+Chapter Scene ComingBack
+
+When ComingBack begins:
+	Now the front door is locked;
+	Remove Adrian_Investigation from play;
+	say "I hadn't realized it until I saw an edge of light blue on the horizon, but we'd cut things pretty close again. A quiet whirring of the closing shutters and a click of the lock was the only indication that the sun was about to rise. The foyer went artificially dark again, except for the light of the brass chandelier.";
+
+[Arrival logic for guests to arrive after body is found]
+Sun_Counter is a number variable. Sun_Counter is usually 0.
+Every turn during ComingBack:
+	Increase Sun_Counter by 1.
+		
+To decide whether the sun rises:
+	If Sun_Counter > 2, yes;
+	no.	
+
+Chapter Scene DiscoverDet
+
+When DiscoverDet begins:
+	say "Through the stillness of the house, I heard yelling upstairs. It started as a panicked cry of shock and surprise, but quickly turned to screams of agony. It went on, loud and incoherent, muffled by the wooden walls of the house, getting more raspy and strangled, like a pillow smothering a face. Then, just as suddenly, it stopped. I felt a lump in my stomach like a lead weight, and reached for a gun that wasn't there.";
+	say "(press any key)";
+	wait for any key.
+
+When DiscoverDet ends:
+	say "I was so focused on trying to read the labels on the fuse box that I didn't notice the footsteps behind me. Maybe I wouldn't have anyway. I heard a dull crack and realized it was the sound of a heavy bottle hitting the back of my head. It was the last thing I remembered thinking about before the rush of unconsciousness. I was out before I hit the floor.";
+	say "(press any key)";
+	wait for any key.
+
+[shutters are open in parts of the upstairs and the guest room and the hallway]
+
+Chapter Scene CellarThink
+
+When CellarThink begins:
+	now the description of the Wine_Cellar is "I woke up with a headache like I'd kissed the Long Island Express goodnight. When I tried to put my hands up to feel the back of my head, I realized it was tied to the chair, along with my legs. He'd gotten the drop on me, that was for sure.[paragraph break]Well, I was in pretty deep now. I looked around the dark room. No one to talk to but myself.";
+	now the quip-suggestion-phrase is "[We] [could] have";
+	now the player is in the Wine_Cellar;
+	
+When CellarThink ends:
+	Now the quip-suggestion-phrase is "[We] [could] ";
+	now Scott_Villain is in the Wine_Cellar.
+	
+[TODO: Move me]
+Scott_Villain is a man.
+
+me_npc is a person.
+
+why there were two wineglasses is a questioning quip.
+	the comment is "There were two wineglasses[if the bottle of wine is examined]and an expensive bottle of wine[end if] that once sat on that table in the reading nook. Alan had known whoever it was well enough, or wanted to impress them enough to warrant opening a bottle of Bordeaux.".
+
+why Alan was stabbed using a letter opener is a repeatable questioning quip.
+	the comment is "Why had that particular murder weapon been used? He hadn't been stabbed with a knife, he'd been stabbed by his own letter opener, the initials proved that. Whoever had stabbed him hadn't planned to. It seemed pretty farfetched that someone would drive all the way here with the express purpose of killing a man, and trust finding a letter opener to do it with.".
+
+why there was a stain on the sofa is a questioning quip.
+	the comment is "Alan and his visitor were apparently having civilized conversation and drinking their wine for some time, judging by the state of the bottle. Then suddenly, a struggle had broken out. One wineglass got knocked over onto the floor. The other went over the railing into the living room. And of course, the other man won the struggle. "
+
+An availability rule for why there was a stain on the sofa:
+	if the stain is unexamined:
+		it is off-limits.
+
+why someone cut my brakes is a questioning quip.
+	the comment is "This got under my skin more than the rest of it. It almost seemed unrelated and personal. Someone hadn't wanted me here. But to all of these people, I was nobody until yesterday. Even then, I might've just been some guest Val brought along.[if BLACKMAIL_KNOWN is true] I could think of another reason it might be advantageous to not have a cop at the house: they were the one blackmailing Alan.[end if]".
+
+Chapter Scene FinalFight
+
 
 Chapter 1 - Game Mechanics
 
@@ -1188,7 +1286,6 @@ Every turn:
 		say "Turn Count: [Turn Count][line break]";
 		say "FoundClues: [FoundClues]";
 
-
 Understand the command "clues" as something new. Understand "clues" as asking for clues. Asking for clues is an action out of world.
 
 Carry out asking for clues:
@@ -1279,6 +1376,8 @@ Test bedtime with "test myclues/s/u/w/n/w/w/x val/drink bourbon/drink bourbon/dr
 Test vdet with "test bedtime / e / s / d"
 
 Test cartrip with "test vdet / talk to val / ask about herself / ask about her family / ask about her husband /s /w /w/w/w/enter Mercedes"
+
+Test gettinbopped with "test cartrip / e / turn on car / x dashboard / x brakes / w / enter car / e / e /e /e/down/anykey /"
 
 Test me with "test janinv/s/w/d/open painting/take all/x pouch/drink pouch";
 
@@ -1418,8 +1517,6 @@ Gage suggests maybe he's making a political move, and/or wants to buy Gage's com
 [Clue: No signs of forced entry at gate]
 [Clue: One set of beds isn't made, Gage wasn't expected]
 
-[Val says to get the blood from hidden door, Bowden sometimes brought regular students up here]
-
 [Once player drinks blood, someone complains to Val "Don't tell me you're forcing him to eat those disgusting leftovers from the fridge! It's terrible about poor Alan and all, but there's no reason we can't go out for food, right?"
 
 I told myself it was just tomato juice]
@@ -1442,7 +1539,6 @@ I told myself it was just tomato juice]
 
 [V.Det: What are bad pennies made of?]
 
-[Rich investor apparenty cancelled, imply maybe had something to do with the situation, knew there was going to be an attacker]
 [Turns out was a crime where startup owner realized there wasn't going to be an investment, got angry
 That lazy piece of shit? He never worked a day in his life. Born with a silver spoon in his mouth, ran a factory or two during the war, and reinvented himself as some scholar? What a fucking joke. He sits in this house drinking thousand dollar bottles of wine and fucking undergrads.]
 

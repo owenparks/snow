@@ -37,6 +37,15 @@ It wasn't really a question, so I let that
 
 =======
 
+TODO: Cash in safe
+TODO: Availability rules for the quips at the end
+
+=========
+
+Val opened the door noiselessly behind him. She tiptoed behind him quietly on stockinged feet, her eyes never leaving him. She moved deliberately and gracefully, like a show I'd once seen of a panther stalking an impala. Neither of them seemed to really be in a hurry.
+
+=======
+
 Our eyes met over the car just before I got in, and in that moment, I barely recognized what was inside them. It was something approaching regret, the look of a gambler who had bet big and lost, and bled too much to the house to cut her losses. It was the look of an old man who has realized that a young man must inherit his war. I blinked, and it was gone, and the only things reflected there were the moon and the snow and the darkness.[line break]She got into the car, and for the first time I saw her necklace dangle out from her blouse, a gold ring on a tiny chain.
 
 =======
@@ -81,16 +90,25 @@ The shades are open in parts, separating parts of the house with sunlight
 
 ==============================================
 
-(Once blackmail is known)
-You said you were going to be straight with me.
-I have been.
-Maybe you forgot to mention the little fact that he was being blackmailed?
-I didn't think it was relevant.
-=================================================
 
 How the hell didn't you think that was relevant?
 Because blackmailers don't kill their marks.
 If you're right, then the blackmailer and the killer aren't the same person. If I'm right, then the blackmailer didn't come here intending to kill Alan, it just worked out that way.
+
+
+=====
+
+Nice car quip-- mention being lucky at poker.
+
+=====
+
+Must mention that vampires are sometimes made by accident 
+
+
+====
+
+ask who else
+(include note why we're asking this-- someone had to know who the PC is in order to garget him/her)
 
 ===========================================
 Sunlight of Vdet proves there's hunter, says other suspect
@@ -127,11 +145,6 @@ I was dimly aware of the sound of the shutters closing which signaled the sunris
 
 [quotation mark] She looked at me with something approaching regret.".
 
-======
-
-What happened to the body?
-Nothing. It's still there.
-
 ==========
 
 Your merit badge is cute. You been wearing it long?
@@ -164,7 +177,7 @@ Val
 
     - Nathan: He's in financial trouble (unlocked by having item or dialogue option?) and is trying to get an investment from Alan, and is using his knowledge of Alan's affair to get it
 
-    =========
+=========
     At crash scene
     Val:
         - about brake line
@@ -200,13 +213,6 @@ planned to open all the shutters,
 
 ========
 
-V Det
-
-He stood well over six feet with a build that belonged on the inside of an octagon cage. The designer charcoal suit he wore hadn’t quite been successfully altered to his wide frame. A deep purple tie sat at his neck in a fat knot Donald Trump would have approved of. 
-
-Pretty well dressed for a cop, or whatever passed for one in Val's world. Probably a little too well dressed for him to be entirely on the level. The deeply furrowed brow made  him look like a gorilla in Prada. I had no trouble believing his was the man left in the office, someone who was in charge because everyone else had been smart enough to make an excuse and not show up for the holidays.
-
-=====================
 Final scene, player is sapped and tied up, "talk to self" is the final way to puzzle out the mystery.
 
 ==============================

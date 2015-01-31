@@ -60,6 +60,7 @@ To decide whether the guests arrive:
 	no.	
 
 [Gives the "you should sleep message]
+[TODO: This only seems to work if turn count is true]
 [TODO: make a table of messages and pick one]
 First_Sleepy is a truth state that varies. First_Sleepy is initially false.
 To decide whether First_Sleepy:
@@ -326,7 +327,7 @@ the front door is a lockable unlocked door. the front door is open. front door i
 Rule for writing a paragraph about the front door:
 	say "[if the front door is open]The front door stood open.[end if][if the front door is unexamined][line break]There was something about the door that looked like a B&E job.[end if]".
 	
-The lock is scenery in the Front_Porch. The lock is a clue. The description is "I could see obvious scratch marks at the deadbolt that could've been left by an intruder using a lockpick. Going by the state of the doorframe, the attempt hadn't been successful.";
+The lock is scenery in the Front_Porch. The lock is a clue. The description is "I could see obvious scratch marks at the deadbolt that could've been left by an intruder using a lockpick. Judging by the deep gouges in the doorframe, the attempt hadn't been successful.";
 
 lock_dummyobj is scenery in the Foyer. Understand "lock" as lock_dummyobj.
 Instead of examining the lock_dummyobj:
@@ -364,15 +365,18 @@ After examining the rug for the first time:
 After examining the glass shard for the first time:
 	Now the shattered glass is in the greatroom.	
 
-The glass shard is a thing. The glass shard is fixed in place. The description is "A broken shard of glass.[if the shattered glass is examined] It came from a broken wineglass in the greatroom.[end if] The ruined facets of vintage crystal reflected light like a cheap engagement ring.[paragraph break]I crouched down for a closer look and realized it had come from a shattered wineglass,  the pieces obscured by the sofa.".
-Instead of taking the glass shard:
-	try examining the glass shard.
+The glass shard is a thing. The description is "A broken shard of glass.[if the shattered glass is examined] It came from a broken wineglass in the greatroom.[end if] The ruined facets of vintage crystal reflected light like a cheap engagement ring.[paragraph break]I crouched down for a closer look and realized it had come from a shattered wineglass,  the pieces obscured by the sofa.".
+[Instead of taking the glass shard:
+	try examining the glass shard.]
 
 The shattered glass is a clue. The printed name is "broken wineglass". Understand "broken wineglass" as shattered glass. Understand "wineglass" as shattered glass. The description is "The curves of the wineglass were jagged edges now, a heap of shattered crystal under the sofa. It must've fallen from quite a height.".
 After taking the shattered glass:
 	say "I had enough of a mess on my hands without taking this one with me, but kept it anyway. It told an interesting story.";
 	stop the action.
-	
+
+[TODO: Fireplace as clue scenery]
+The fireplace is scenery in the Greatroom. The description is "A fireplace big enough for a country manor house.[if the fire is lit] Flames crackled inside, the logs slowly burning into hot coals.[otherwise] It was still warm from the fire that had been burning earlier.[end if]".
+
 [Nonsense scenery]
 The rug is scenery in the Greatroom. The description is "I looked at the plush carpet, checking it for footprints. A shoe size can be pretty damn circumstantial, but at this point, I needed every clue I could get.[paragraph break]I didn't see one, it was just as pristine as the drifts of snow in the valley below.[paragraph break]But something caught my eye, something small and sharp, glinting in the light of the room as I walked the perimeter of the rug. A shard of glass by the edge of the sofa.";
 
@@ -452,9 +456,9 @@ When Guest_Arrival ends:
 	Remove Scott_Arrival from play;
 	Remove Nathan_Arrival from play;
 
-Jan_Arrival is a man. The printed name is "Jan". The description is "Jan Svennson was a broad-shouldered man with pale blue eyes. He was casually brushing snow off a European performance fleece sweater. Either he liked ice climbing, or he wanted people to think he did. He had the handshake of a salesman and the grin of a frat boy.".
-Scott_Arrival is a man. The printed name is "Scott". The description is "Scott Gage, on the other hand, was tall and lanky, and didn't seem at all suited to the cold. He wore a pair of Japanese selvedge jeans with the cuffs turned up to make sure everyone knew it. I'd have guessed he'd picked them up somewhere in SoHo if it weren't for the sweater he was wearing, useless against real cold, as all Californian sweaters are.".
-Nathan_Arrival is a man. The printed name is "Nathan". The description is "The sideswept brown locks and pencil mustache were meant to look youthful and sporty, like he'd just stopped playing cricket for teatime. The lines on the face and brow made him look more Vincent Price than Errol Flynn, though. I could tell by the way he stood that he didn't have a care in the world, or at least I wasn't one of them. His half-lidded stare gave him an air of casual arrogance, like he was perpetually waiting for the valet to bring his car around.".
+Jan_Arrival is a man. The printed name is "Jan". Understand "Jan" as Jan_Arrival. The description is "Jan Svennson was a broad-shouldered man with pale blue eyes. He was casually brushing snow off a European performance fleece sweater. Either he liked ice climbing, or he wanted people to think he did. He had the handshake of a salesman and the grin of a frat boy.".
+Scott_Arrival is a man. The printed name is "Scott". Understand "Scott" as Scott_Arrival. The description is "Scott Gage, on the other hand, was tall and lanky, and didn't seem at all suited to the cold. He wore a pair of Japanese selvedge jeans with the cuffs turned up to make sure everyone knew it. I'd have guessed he'd picked them up somewhere in SoHo if it weren't for the sweater he was wearing, useless against real cold, as all Californian sweaters are.".
+Nathan_Arrival is a man. The printed name is "Nathan". Understand "Nathan" as Nathan_Arrival. The description is "The sideswept brown locks and pencil mustache were meant to look youthful and sporty, like he'd just stopped playing cricket for teatime. The lines on the face and brow made him look more Vincent Price than Errol Flynn, though. I could tell by the way he stood that he didn't have a care in the world, or at least I wasn't one of them. His half-lidded stare gave him an air of casual arrogance, like he was perpetually waiting for the valet to bring his car around.".
 
 Instead of saying hello to Jan_Arrival:
 	say "He didn't seem to be in a talking mood. He kept tapping his foot and looking at the door like he had somewhere to be, even though we both knew he wasn't leaving soon. None of us were.";
@@ -496,6 +500,10 @@ When First_Investigation begins:
 	now Jan_Investigation is in the Jan_Room;
 	now the front door is closed;
 	now the front door is locked.
+	
+[TODO: this still seems to take an extra turn for Val to appear]
+When First_Investigation ends:
+	now Val_Sleep is in the PC_Bedroom.
 	
 [LOGIC for when shutters come down]
 Shutter_Counter is a number variable. Shutter_Counter is usually 0.
@@ -645,7 +653,7 @@ Section 1 - PC Bedroom
 
 When First_Sleep begins:
 	remove Val_House from play;
-	now Val_Sleep is in the PC_Bedroom.
+	
 	
 When First_Sleep ends:
 	say "I changed into my pajamas and got into bed under the covers. I kept a reasonable distance between the two of us on the bed, though she didn't seem the type to get prudish about that kind of thing. I lay there thinking for a long time, trying to put together everything I'd heard into a picture that made sense. After five minutes that took two hours, I fell asleep, and dreamt of nothing.";
@@ -667,9 +675,10 @@ Before opening PC_Bedroom_Door for the first time:
 		say "I reached the room where Val was staying, and supposed it was where I was staying, too. My tired fingers closed tightly around the doorknob like a pitcher throwing his last solid knuckleball in the ninth inning. [paragraph break]I paused for a moment, mentally tallying what I'd put together about what had happened. I figured I ought to make sure I'd found enough clues for the day before I turned in.";
 		stop the action.
 
-The PC_Bedroom is a room. The printed name is "Bedroom". The description is "[if the scene is First_Sleep]I checked my watch, it was getting late, almost noon. I had a million things to think about, but figured I should get a few hours of sleep while I still could.[end if]"
+[TODO: fix this description for the wakeup scene]
+The PC_Bedroom is a room. The printed name is "Bedroom". The description is "[if First_Sleep is happening]I checked my watch, it was getting late, almost noon. I had a million things to think about, but figured I should get a few hours of sleep while I still could.[end if]"
 
-Val_Sleep is a woman. The printed name is "Val". Understand "Val" as Val_Sleep. The description is "[if the scene is First_Sleep]Val was lying on top of the covers, facing the window. Her breathing was steady and slow, but I couldn't tell if she was asleep. She wore just a satin pajama shirt. If the cold bothered her, she didn't show it.[end if]"
+Val_Sleep is a woman. The printed name is "Val". Understand "Val" as Val_Sleep. The description is "[If First_Sleep is happening]Val was lying on top of the covers, facing the window. Her breathing was steady and slow, but I couldn't tell if she was asleep. She wore just a satin pajama shirt. If the cold bothered her, she didn't show it.[end if]"
 
 the bottle of bourbon is in the PC_Bedroom. The description is "A bottle of Woodford Reserve. One of the better ways to pass the time, if I had to choose. It was still half full, if I had to be an optimist about something." ;
 
@@ -911,7 +920,7 @@ When Wakeup begins:
 	now the memo is in the PC_Bedroom;
 	now SHUTTERS_DOWN is false;
 	now Adrian_Investigation is in the North_Hallway;
-	say "I awoke to an empty room, bathed in the silver moonlight. She hadn't made a sound when she'd left. It took a second for me to realize that the shutters had gone back up. Through the window, I could see that lights were starting to come on in the distant houses dotted across the mountainside.[paragraph break]I wasn't sure how long I'd slept, but it must have been about eight o'clock.".
+	say "I awoke to an empty room, bathed in the silver moonlight. She hadn't made a sound when she'd left. It took a second for me to realize that the shutters had gone back up. Through the window, I could see that lights were starting to come on in the distant houses dotted across the mountainside.[paragraph break]I wasn't sure how long I'd slept, but it must have been about eight o'clock in the evening.".
 
 When Wakeup ends:
 	remove Adrian_Investigation from play;
@@ -920,6 +929,10 @@ When Wakeup ends:
 Section 1 - Adrian_Investigation
 
 Adrian_Investigation is a man. The printed name is "Adrian". Understand "Adrian" as Adrian_Investigation. The description is "He stood well over six feet with a build that belonged on the inside of a steel cage. The designer charcoal suit he wore hadn’t quite been successfully altered to his wide frame. A deep purple tie sat at his neck in a fat knot Donald Trump would have approved of. The dark hair atop his head was neatly parted at the side, and slicked back almost flat to his head. His eyes were gray, and there was something baleful deep in them, peering out.  His size and heavy brow made him look like a gorilla in Prada.[if Wakeup is happening][paragraph break]He introduced himself as 'Adrian Castillo, Deputy to the Warden of the Peace, appointed to serve at the pleasure of the Honorable Countess of Westchester.' I didn't know what most of that meant, but I knew his suit was a little too nice for a cop entirely on the level. I wondered if that all fit on his business card.".
+
+Before talking to Adrian_Investigation:
+	try examining Adrian_Investigation;
+	continue the action.
 
 [He was thirty-five and yet not.. He had the eyes of an old man bitter at the world and the look of a young boy pulling the wings off a butterfly. Here was someone who enjoyed pushing people with impunity, I'd bet money on it.]
 
@@ -1167,28 +1180,40 @@ When CellarThink ends:
 	Now the quip-suggestion-phrase is "[We] [could] ";
 	now Scott_Villain is in the Wine_Cellar.
 	
-[TODO: Move me]
-Scott_Villain is a man.
-
 me_npc is a person.
 
 why there were two wineglasses is a questioning quip.
 	the comment is "There were two wineglasses[if the bottle of wine is examined]and an expensive bottle of wine[end if] that once sat on that table in the reading nook. Alan had known whoever it was well enough, or wanted to impress them enough to warrant opening a bottle of Bordeaux.".
+	It quip-supplies me_npc.
+	The proper scene is CellarThink.
 
 why Alan was stabbed using a letter opener is a repeatable questioning quip.
 	the comment is "Why had that particular murder weapon been used? He hadn't been stabbed with a knife, he'd been stabbed by his own letter opener, the initials proved that. Whoever had stabbed him hadn't planned to. It seemed pretty farfetched that someone would drive all the way here with the express purpose of killing a man, and trust finding a letter opener to do it with.".
+	It quip-supplies me_npc.
+	The proper scene is CellarThink.
 
 why there was a stain on the sofa is a questioning quip.
-	the comment is "Alan and his visitor were apparently having civilized conversation and drinking their wine for some time, judging by the state of the bottle. Then suddenly, a struggle had broken out. One wineglass got knocked over onto the floor. The other went over the railing into the living room. And of course, the other man won the struggle. "
+	the comment is "Alan and his visitor were apparently having civilized conversation and drinking their wine for some time, judging by the state of the bottle. Then suddenly, a struggle had broken out. One wineglass got knocked over onto the floor. The other went over the railing into the living room. And of course, the other man won the struggle. ".
+	It quip-supplies me_npc.
+	The proper scene is CellarThink.
 
 An availability rule for why there was a stain on the sofa:
 	if the stain is unexamined:
 		it is off-limits.
 
 why someone cut my brakes is a questioning quip.
-	the comment is "This got under my skin more than the rest of it. It almost seemed unrelated and personal. Someone hadn't wanted me here. But to all of these people, I was nobody until yesterday. Even then, I might've just been some guest Val brought along.[if BLACKMAIL_KNOWN is true] I could think of another reason it might be advantageous to not have a cop at the house: they were the one blackmailing Alan.[end if]".
+	the comment is "This got under my skin more than the rest of it. It almost seemed entirely unrelated and oddly personal. Someone hadn't wanted me here. But to all of these people, I was nobody until yesterday. Even then, I might've just been some guest Val brought along.[if BLACKMAIL_KNOWN is true] I could think of another reason it might be advantageous to not have a cop at the house: they were the one blackmailing Alan.[end if]".
+	It quip-supplies me_npc.
+	The proper scene is CellarThink.
+[TODO: Rest of the clues]	
+
 
 Chapter Scene FinalFight
+
+Section 1 - Scott_Villain
+
+Scott_Villain is a man.
+
 
 
 Chapter 1 - Game Mechanics
@@ -1383,10 +1408,13 @@ Test me with "test janinv/s/w/d/open painting/take all/x pouch/drink pouch";
 
 Section 8 - Computer
 
-The computer is a device in the Office. The computer is switched off.
+The computer is a device in the Office. The computer is switched off. The computer is fixed in place.
 
 Instead of switching on the computer:
 	say "I booted up Alan's computer to see what I could find. There were barely any house phones, and I hadn't found his cell phone yet. That meant his e-mail and web browser were probably his main points of contact.[line break](Type 'email' to access e-mail, 'history' for search engine autocomplete history)";
+
+Instead of taking the computer:
+	say "I wasn't about to seize the whole thing and hand it over to the boys in data forensics, considering I wasn't a cop anymore.";
 
 Understand the command "history" as something new. Understand "history" as historying. Historying is an action applying to a topic. Understand "history [text]" as historying.
 
@@ -1399,9 +1427,6 @@ Carry out historying a topic:
 After reading a command:
 	If the player's command matches "history":
 		replace the player's command with "history null".
-
-[Rule for supplying a missing second noun while historying the topic understood (this is the avoid empty history rule):
-	now the text is "asdf".]
 
 Table of BrowserHistory
 link

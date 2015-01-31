@@ -1,0 +1,83 @@
+drive
+drive
+brake
+
+unbuckle self
+kick windshield
+
+west
+get in
+talk to val
+ask about her car
+ask about the chalet
+ask about sunrise
+wait
+east
+examine door
+examine lock
+east
+east
+examine stain
+look
+examine shard
+examine broken wineglass
+take all
+up
+examine bottle
+examine wineglass
+examine body
+
+examine knife
+examine pool
+down
+up
+down
+up
+down
+up
+down
+up
+
+down
+west
+examine Nathan
+examine Scott
+examine Jan
+east
+
+talk to val
+
+ask about Alan
+ask about the murder
+ask about nathaniel
+ask what was in it for me
+east
+east
+north
+examine cups
+examine books
+open desk
+examine papers
+examine bank statement
+take all
+south
+up
+north
+west
+west
+
+drink bourbon
+drink bourbon
+drink bourbon
+talk to val
+ask how long
+sleep
+
+east
+talk to Adrian
+ask about questioning me
+ask about questioning val
+ask how he knew my name
+ask about my file
+ask about anyone outside
+south

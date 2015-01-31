@@ -43,6 +43,8 @@ Nice to have
 - Add descriptions for scenery obviously listed in room descriptions
 - TODO: Sensible messages for getting in car
 - TODO: Change I beg your pardon message
+- TODO: Pool of wine should be a struggle clue
+- TODO: Fallen book should be a struggle clue
 
 - Emails list full of boring student crap, need to key off the initials from book
 - Getting into a knife fight is a bad proposition. The loser dies in the street, the winner gets to die in the hospital.

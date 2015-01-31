@@ -47,6 +47,9 @@ Second_Investigation is a scene. Second_Investigation begins when Interrogation 
 ComingBack is a scene. ComingBack begins when the brake line is examined and the location is Foyer. ComingBack ends when DiscoverDet begins.
 DiscoverDet is a scene. DiscoverDet begins when the sun rises. DiscoverDet ends when the location is Wine_Cellar.
 CellarThink is a scene. CellarThink begins when DiscoverDet ends. CellarThink ends when scene_conversation is exhausted.
+VillainMonologue is a scene. VillainMonologue begins when CellarThink ends. VillainMonologue ends when scene_conversation is exhausted.
+GetOutOfDodge is a scene. GetOutOfDodge begins when VillainMonologue ends. GetOutOfDodge ends when SHUTTERS_DOWN is false.
+Conclusion is a scene. Conclusion begins when GetOutOfDodge ends.
 
 Cliff_Gameover is a scene. Cliff_Gameover begins when the player is in the Precipice and Cliff_Climbing is happening.
 
@@ -390,7 +393,7 @@ The body is scenery in the reading_nook. Understand "corpse / man" as body. The 
 Instead of taking body:
 	say "I didn't want to move him just yet.";
 	stop the action.
-The knife is scenery in the reading_nook. The knife is a clue. The description is "It looked like a silver letter opener with an ivory handle. A monogram on the end read [quotation mark]AHB[quotation mark]. It didn't look that long or that sharp, but someone had made a pretty clean business of stabbing Bowden with it. Or maybe they'd just gotten lucky. It happens like that sometimes."
+The knife is scenery in the reading_nook. The knife is a clue. The description is "It looked like a silver letter opener with an ivory handle. A monogram on the end read 'AHB'. It didn't look that long or that sharp, but someone had made a pretty clean business of stabbing Bowden with it. Or maybe they'd just gotten lucky. It happens like that sometimes."
 
 the shelves are scenery in the reading_nook. Understand "bookshelves" as shelves. The description is "Mostly non-fiction: scholarly journal archives, collections of essays, and books on literature. A small section appeared to contain first and second editions. The owner seemed to have a bit of a collector's streak.".
 
@@ -930,7 +933,7 @@ Section 1 - Adrian_Investigation
 
 Adrian_Investigation is a man. The printed name is "Adrian". Understand "Adrian" as Adrian_Investigation. The description is "He stood well over six feet with a build that belonged on the inside of a steel cage. The designer charcoal suit he wore hadn’t quite been successfully altered to his wide frame. A deep purple tie sat at his neck in a fat knot Donald Trump would have approved of. The dark hair atop his head was neatly parted at the side, and slicked back almost flat to his head. His eyes were gray, and there was something baleful deep in them, peering out.  His size and heavy brow made him look like a gorilla in Prada.[if Wakeup is happening][paragraph break]He introduced himself as 'Adrian Castillo, Deputy to the Warden of the Peace, appointed to serve at the pleasure of the Honorable Countess of Westchester.' I didn't know what most of that meant, but I knew his suit was a little too nice for a cop entirely on the level. I wondered if that all fit on his business card.".
 
-Before talking to Adrian_Investigation:
+Before saying hello to Adrian_Investigation:
 	try examining Adrian_Investigation;
 	continue the action.
 
@@ -985,7 +988,7 @@ When Interrogation begins:
 	now Val_Interrogation is in the Office.
 
 When Interrogation ends:
-	say "Val put her cigarette out and got up. Her expression was stony, the businesslike demeanor she'd started with was gone now. Castillo got up, too, but stopped himself from saying anything. He didn't strike me as the sharpest tool in the shed, but he'd clearly learned where the line was. Staying in the good graces of his employer meant staying within the level of harassment his job warranted, and not ruffling the feathers of anyone too important in the Circle.[paragraph break]'You'll let me know if there's anything else I can do to help, Deputy?' she said icily. She hadn't bothered looking at him as she said, it. She gave me a look full of meaning and left the room in the direction of the foyer and closing the door behind her. Castillo suddenly seemed very small standing behind the desk. He must have felt it, too, because he got up and left without another word to me.";
+	say "Val put her cigarette out and got up. Her expression was stony, the businesslike demeanor she'd started with was gone now. Castillo got up, too, but stopped himself from saying anything. He didn't strike me as the sharpest tool in the shed, but he'd clearly learned where the line was. Staying in the good graces of his employer meant staying within the level of harassment his job warranted, and not ruffling the feathers of anyone too important in the Circle.[paragraph break]'You'll let me know if there's anything else I can do to help, Deputy?' she said icily. She hadn't bothered looking at him as she said it. She gave me a look full of meaning and left the room in the direction of the foyer, closing the door behind her. Castillo suddenly seemed very small standing behind the desk. He must have felt it, too, because he got up and left without another word to me.";
 	remove Val_Interrogation from play;
 	remove Adrian_Interrogation from play;
 	now Adrian_Investigation is in the Hallway_Downstairs;
@@ -1106,7 +1109,11 @@ whether she was ready to head back is a questioning quip.
 	The reply is "".
 	It quip-supplies Val_SecondInv.
 	The proper scene is Second_Investigation.
-
+	
+An availability rule for whether she was ready to head back:
+	If the location is not Sharp Bend:
+		It is off-limits.
+		
 about who else would is a repeatable questioning quip. It indirectly-follows whether she was ready to head back.
 	The printed name is "about who else would have access to my file".
 	The comment is "".
@@ -1143,6 +1150,7 @@ Chapter Scene ComingBack
 
 When ComingBack begins:
 	Now the front door is locked;
+	Now SHUTTERS_DOWN is true;
 	Remove Adrian_Investigation from play;
 	say "I hadn't realized it until I saw an edge of light blue on the horizon, but we'd cut things pretty close again. A quiet whirring of the closing shutters and a click of the lock was the only indication that the sun was about to rise. The foyer went artificially dark again, except for the light of the brass chandelier.";
 
@@ -1172,15 +1180,27 @@ When DiscoverDet ends:
 Chapter Scene CellarThink
 
 When CellarThink begins:
+	[now the can't greet yourself rule is not listed in any rulebook;]
+	now me_npc is in the Wine_Cellar;
 	now the description of the Wine_Cellar is "I woke up with a headache like I'd kissed the Long Island Express goodnight. When I tried to put my hands up to feel the back of my head, I realized it was tied to the chair, along with my legs. He'd gotten the drop on me, that was for sure.[paragraph break]Well, I was in pretty deep now. I looked around the dark room. No one to talk to but myself.";
 	now the quip-suggestion-phrase is "[We] [could] have";
 	now the player is in the Wine_Cellar;
 	
 When CellarThink ends:
+	Remove me_npc from play;
 	Now the quip-suggestion-phrase is "[We] [could] ";
 	now Scott_Villain is in the Wine_Cellar.
 	
-me_npc is a person.
+me_npc is a person. The printed name is "myself". Understand "self" as me_npc. Understand "myself" as me_npc.
+
+Rule for writing a paragraph about me_npc:
+	stop.
+
+Instead of saying hello to the player:
+	If CellarThink is happening:
+		try saying hello to me_npc;
+	Otherwise:
+		say "Talking to [yourself] [regarding it][are] unrewarding at the moment.";
 
 why there were two wineglasses is a questioning quip.
 	the comment is "There were two wineglasses[if the bottle of wine is examined]and an expensive bottle of wine[end if] that once sat on that table in the reading nook. Alan had known whoever it was well enough, or wanted to impress them enough to warrant opening a bottle of Bordeaux.".
@@ -1208,13 +1228,57 @@ why someone cut my brakes is a questioning quip.
 [TODO: Rest of the clues]	
 
 
-Chapter Scene FinalFight
+Chapter Scene VillainMonologue
+
+When VillainMonologue begins:
+	now the current interlocutor is Scott_Villain.
+	
+When VillainMonologue ends:
+	say "His eyes went wild, and for a moment I felt like I could actually see his nerves fray and snap. His upper lip curled back over bared teeth so far it looked inhuman. It was the yellow-eyed look of a wolf baring its fangs. He was no wolf, but maybe he was so livid, he'd just forgotten. He whirled the gun around to point it straight at Val's serene face, and pulled the trigger. Her head was nowhere near the gun when it went off. She'd ducked to the side faster than I'd seen anyone move before, like Mayweather slipping a punch.[paragraph break]When Scott tried to aim the gun at her this time, screaming an unearthly scream, her hands were already up in a blur. She let him get another shot off, which I remember thinking was pretty charitable of her. There was nothing resembling charity in her green eyes, burning with a cold fury. It seemed for a second like she'd disarmed him as the gun dropped to the floor. It took an eternity to fall. Then I noticed in the dim light of the wine cellar a glint of silver attached to his neck, a small knife labeled with the initials 'AHB.' His empty hands went to his throat, and he crumpled over. We listened to quiet gasping for a minute as Val came over to untie me from the chair. By the time she'd finished, it had stopped.".
+
+Every turn during VillainMonologue:
+	If the number of available quips which are not recollected by Scott_Villain is 1:
+		say "Val opened the door noiselessly behind him. She tiptoed behind him quietly on stockinged feet, her eyes never leaving him. She moved deliberately and gracefully, like a show I'd once seen of a panther stalking an impala. Neither of them seemed to really be in a hurry.";
+	if Debug_on is true:
+		say "Total number of quips left: [the number of available quips which are not recollected by Scott_Villain]".
+
+Instead of leavetaking during VillainMonologue:
+	say "I had to keep talking. In my situation, keeping him distracted was the only thing keeping me alive.";
+	
+Instead of going up during VillainMonologue:
+	say "I was tied tight to the chair, I wasn't going anywhere.".
 
 Section 1 - Scott_Villain
 
-Scott_Villain is a man.
+Scott_Villain is a man. The printed name is "Scott". Understand "Scott" as Scott_Villain. The description is "The self-assured genius entrepreneur was gone. There was no trace of ironic amusement or even disdain in his face now. The strain seemed to pull his skin grotesquely taut over his gaunt face like stretched rubber. He was a cornered fox, a desperate man preparing to do desperate things.".
 
+how he planned on getting away is a questioning quip. The printed name is "how he planned on getting away".
+	The comment is "You seriously plan to just kill us and get out of here?".
+	The reply is "It'll be easy. A house full of corpses turned to ash, I can just make sure it looks like mine is among them. I disappear, and start over with a new life. It's easy enough to pull off, we all have to do it every fifty years or so. No one will come looking for me, we'll just be tragic victims of some rogue hunter. I take care of you and the lady, open all the shutters, and that's that. Come sundown, that makes a clean getaway.".
+	It quip-supplies Scott_Villain.
+	The proper scene is VillainMonologue.
+	
+Chapter Scene GetOutOfDodge
 
+When GetOutOfDodge ends:
+	now the front door is unlocked;
+
+[TODO:Make sure shutters are up or down in all the proper scene changes]
+After waiting during GetOutOfDodge:
+	now SHUTTERS_DOWN is false;
+	say "The shutters clicked open, the most musical sound I'd ever heard in my life.";
+	[consider the scene changing rules;]
+	
+Chapter Scene Conclusion
+
+Instead of entering the Valcar_Container during Conclusion:
+	say "I walked to the Mercedes and she and I looked at each other over the roof. I didn't realize I was on the driver's side until she tossed me the keys.[line break]'That was some good work back there.'[line break]I shrugged, and not out of modesty. It was going to be a while before I got used to operating like this.[line break]'Hey kid... Thanks.'[line break]I smiled, and the muscles felt stiff. 'So where we headed?'[line break]'What was the last time you were in Vegas, kid?' We got in and I started the car. 'It's a long story, let me start at the beginning,' she said.[paragraph break]We started off down the road and we began to talk, really talk, for the first time since I'd met her. We started off down the long road to the Mojave, in the shadow of the  mountain, high above the valley and its waves and ribbons of untouched snow like an unmade bed. [paragraph break]I was already getting thirsty, and no quantity of expensive bourbon was going to help.";
+	end the story finally;
+
+[I have a little experience doing that.
+This one's been cold for 40 years.
+I like a challenge.
+What was the last time you were in Vegas?]
 
 Chapter 1 - Game Mechanics
 

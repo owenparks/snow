@@ -150,3 +150,19 @@ quipmaker.py is a repeatable questioning quip.
 	The proper scene is Wakeup.
 
 
+quipmaker.py is a repeatable questioning quip.
+	The printed name is "about herself".
+	The comment is "[quotation mark]TODO[quotation mark]".
+	The reply is "[quotation mark]TODO[quotation mark]".
+	It quip-supplies val_interrogation.
+	The proper scene is interrogation.
+
+
+quipmaker.py is a repeatable questioning quip.
+	The printed name is "about hunter".
+	The comment is "TODO".
+	The reply is "TODO".
+	It quip-supplies adrian_investigation.
+	The proper scene is Wakeup.
+ 
+

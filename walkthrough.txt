@@ -81,3 +81,38 @@ ask how he knew my name
 ask about my file
 ask about anyone outside
 south
+talk to val
+ask about herself
+ask about her family
+ask about her husband
+south
+west
+west
+talk to val
+ask about my file
+ask what she wanted to see me about
+ask about our first meeting
+west
+west
+get in
+east
+turn on car
+examine dashboard
+examine brakes
+west
+get in car
+east
+east
+east
+
+east
+down
+
+ask how he planned on getting away
+up
+west
+west
+wait
+west
+west
+get in Mercedes

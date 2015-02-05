@@ -1,25 +1,31 @@
-"A Long Drink" by Owen Parks
+"A Long Drink" by Owen Parks.
+The story headline is "An Interactive Mystery".
 [Cover art by Dan Smith
 Licensed under Creative Commons By 2.0
 Image at: https://flic.kr/p/pPkjHD
 License Terms at: https://creativecommons.org/licenses/by/2.0/]
 
 Release along with a website and interpreter and cover art.
-The Release number is 1.
+The Release number is 2.
 
 The story genre is "Mystery".
+
+The story description is "The first time I'd met Val was the day before yesterday, on my way out of the hospital. I'd been in a numb stupor for hours. There's no good way to take that kind of news.  She'd asked me out for a drink. I remember thinking there was something Old Hollywood glam about her, like Veronica Lake or Lauren Bacall. I figured she was trouble, but I had nothing to lose, and she looked like my kind of trouble. Turns out I didn't know the half of it.
+
+Daybreak was just a few hours away. I stared at the crumpled remains of my car, and beyond to the frozen lake below. I wondered if I'd ever see her again.".
 
 Include Basic Screen Effects by Emily Short.
 Include Threaded Conversation by Chris Conley.
 Include Exit Lister by Gavin Lambert.
 Include Menus by Emily Short.
+Include Glulx Text Effects by Emily Short.
 [Include Dialogue Punctuation by Ron Newcomb.]
 [TODO: Use default Exit Lister Version 3 and make all modifications here]
 [Made with Threaded Conversation Version 2/140602]
 
 [CHANGE THE FOLLOWING LINE FOR DEBUGGING]
 Debug_on is a truth state that varies. Debug_on is usually true.
-Logging_on is a truth state that varies. Logging_on is usually false.
+Logging_on is a truth state that varies. Logging_on is usually true.
 
 When play begins:
 	now the story viewpoint is first person singular;
@@ -29,7 +35,7 @@ When play begins:
 
 A clue is a kind of thing.
 
-Chapter 1 - Game Scene List
+Chapter 2 - Game Scene List
 
 Mountain_Driving is a scene. Mountain_Driving begins when play begins. Mountain_Driving ends when Car_Escape begins.
 Car_Escape is a scene. Car_Escape begins when Upturned Car is visited. Car_Escape ends when Bottom of Cliff is visited.
@@ -75,20 +81,15 @@ To decide whether First_Sleepy:
 	Decide no.
 	
 First_Slept is a truth state that varies. First_Slept is initially false.
+SHUTTERS_DOWN is a truth state that varies. SHUTTERS_DOWN is false.
 
-[Knocked_Out is a truth state that varies. Knocked_Out is initially false.
-To decide whether Knocked_Out:
-	If DiscoverDet is happening and the location is Wine Cellar:
-		Decide yes;
-	Decide no.]
-	
 Section 1 - Sleep Mechanics
 
 Every turn:
 	If First_Sleepy is true:
 		say "I was starting to feel tired. Everything that had happened in the past few days was finally starting to take its toll. I thought it might help to find a bedroom and sleep for a few hours."
 
-Chapter 2 - Scene Mountain_Driving
+Chapter 3 - Scene Mountain_Driving
 
 Introcar is a region.
 
@@ -99,7 +100,7 @@ Before driving a direction (called D), try going D instead.
 
 Road is a backdrop. Road is in the introcar. The description is " Snow was coming down in great, big flakes, landing right on top of the packed, slippery mess on the road.".
 Window is a backdrop. Window is in the introcar.
-Introcar_radio is a backdrop. Introcar_radio is in the introcar. The printed name is "radio".
+Introcar_radio is a backdrop. Introcar_radio is in the introcar. The printed name is "radio". Understand "radio" as Introcar_radio. The description is "An aftermarket stereo the previous owner put in. The blue lights and shiny dials were stark against the shabby interior of the rest of the car."
 Instead of examining outside when the player is in the introcar:
 	Try examining the road.
 Instead of examining the window when the player is in the introcar:
@@ -114,9 +115,9 @@ After reading a command:
 			try going north;
 			stop the action.
 		
-Mountain_Road is a room in the introcar. The printed name of Mountain_Road is "Mountain Road". The description is "They say you shouldn't drive when you're angry. That was just one of a hundred pieces of good advice I was ignoring as I drove north along the icy road to the chalet, my foot a little heavier on the gas than it needed to be.[paragraph break]I'd had a long, promising career in homicide ahead of me, or so I kept telling myself, and it was all down the drain now. I had planned on a senior detective's desk being in the cards for me, at least. Maybe even quitting and going into private investigations. Well, I guessed I could still do that.[paragraph break]Not six hours earlier, I'd turned in my badge and my gun and walked out, more or less the way I'd seen it in the movies. The captain was yelling his head off, couldn't figure out why a promising young detective like me would just up and quit. I honestly hoped he never did."
+Mountain_Road is a room in the introcar. The printed name of Mountain_Road is "Mountain Road". The description is "They say you shouldn't drive when you're angry. That was just one of a hundred pieces of good advice I was ignoring as I drove north along the icy road to the chalet, my foot a little heavier on the gas than it needed to be.[paragraph break]I'd had a long, promising career in homicide ahead of me, or so I kept telling myself, and it was all down the drain now. I had planned on a senior detective's desk being in the cards for me, at least. Maybe even quitting and going into private investigations. Well, I guessed I could still do that.[paragraph break]Not six hours earlier, I'd turned in my badge and my gun and walked out, more or less the way I'd seen it in the movies. The captain was yelling his head off, couldn't figure out why a promising young detective like me would just up and quit. I honestly hoped he never did.[paragraph break][hint reminder]"
 
-Mountain_Pass is a room in the introcar. The printed name of Mountain_Pass is "Mountain Pass". Mountain_Pass is north of the Mountain_Road. The description is "I had the radio on tuned to some news station-- truth be told, I already missed the chatter of the dispatch as I was driving. The traffic report had little bearing on my current locale, but the weather gave me some concern: snowstorm coming up off the Great Lakes, apparently. Spending the weekend with a small crowd I barely knew appealed very little to me. Being cooped up with them the entire time due to weather seemed like a recipe for an epidemic of cabin fever."
+Mountain_Pass is a room in the introcar. The printed name of Mountain_Pass is "Mountain Pass". Mountain_Pass is north of the Mountain_Road. The description is "I had the radio on tuned to some news station-- truth be told, I already missed the chatter of the dispatch as I was driving. The traffic report had little bearing on my current locale, but the weather gave me some concern: a snowstorm coming up off the Great Lakes, apparently. Spending the weekend with a small crowd I barely knew appealed very little to me. Being cooped up with them the entire time due to weather seemed like a recipe for an epidemic of cabin fever."
 Instead of going south when the player is in the Mountain_Pass:
 	say "I had somewhere to be. Making a U-turn wasn't going to get me there any faster.";
 	stop the action.	
@@ -129,29 +130,30 @@ Instead of going north when the player is in the Hairpin_Turn:
 Instead of going south when the player is in the Hairpin_Turn:
 	Try going down.
 Carry out going down when the player is in the Hairpin_Turn:
-	Say "It's too late to stop, so I don't even bother. Instead, I press my head and back against the seat and put my arms in front of my face.[paragraph break]The back end of the car lost traction and swung out wide, trying vainly to follow the front, just like one of those car commercials. Unfortunately, I was not a professional driver, nor was this a closed course, and the right side of the car went over the edge of the cliff, momentum then taking the rest of the car with it. In shock, my brain couldn't manage to tell my body to do more than grip the wheel uselessly as the car tumbled down the steep incline. I lost count of the rolls after three. The roof hit a tree, and I jerked upward against the seat belt. Snow from the branches fell into a pile onto the passenger window from the impact. I heard a thud, snuffing out the brief glimpse of moonlight.[paragraph break]";
+	Say "It was too late to stop, so I didn't even bother. Instead, I press my head and back against the seat and put my arms in front of my face.[paragraph break]The back end of the car lost traction and swung out wide, trying valiantly to chase the front like a powerslide in a car commercials. Unfortunately, I was not a professional driver, nor was this a closed course, and the right side of the car went over the edge of the cliff, momentum then taking the rest of the car with it. In shock, my brain couldn't manage to tell my body to do more than grip the wheel uselessly as the car tumbled down the steep incline. I lost count of the rolls after three. The roof hit a tree, and I jerked upward against the seat belt. Snow from the branches fell into a pile onto the passenger window from the impact. I heard a thud, snuffing out the brief glimpse of moonlight.[paragraph break]";
 	wait for any key;
 	now the player is in the Upturned Car.
 
 After reading a command:
 	If the player's command matches "brake" or the player's command matches "stop":
 		If the player is in the Hairpin_Turn:
-			say "I hit the brakes, but the car kept straight for the guardrail, slamming through, and going over.[paragraph break]The back end of the car lost traction and swung out wide, trying vainly to follow the front, just like one of those car commercials. Unfortunately, I was not a professional driver, nor was this a closed course, and the right side of the car went over the edge of the cliff, momentum then taking the rest of the car with it. In shock, my brain couldn't manage to tell my body to do more than grip the wheel uselessly as the car tumbled down the steep incline. I lost count of the rolls after three. The roof hit a tree, and I was jerked upward against the seat belt. Snow from the branches fell into a pile onto the passenger window from the impact. I heard a thud, snuffing out the brief glimpse of moonlight.[paragraph break]";
+			say "I hit the brakes, but the car kept straight for the guardrail, slamming through, and going over.[paragraph break]The back end of the car lost traction and swung out wide, trying vainly to follow the front, just like one of those car commercials. Unfortunately, I was not a professional driver, nor was this a closed course, and the right side of the car went over the edge of the cliff, momentum then taking the rest of the car with it. In shock, my brain couldn't manage to tell my body to do more than grip the wheel uselessly as the car tumbled down the steep incline. I lost count of the rolls after three. The roof hit a tree, and I was jerked upward against the seat belt. Snow from the branches fell in a pile onto the passenger window from the impact. I heard a thud, snuffing out the brief glimpse of moonlight. Everything went black.[paragraph break]";
+			say "(press any key)";
 			wait for any key;
 			now the player is in the Upturned Car;
 			stop the action.
 	
-Chapter 3 - Scene Car_Escape
+Chapter 4 - Scene Car_Escape
 
 A room is either strapped or unstrapped. A room is usually unstrapped.
 When the Car_Escape begins:
 	Now the cell phone is broken.
 	
-Upturned Car is a strapped room. The description is "I wasn't sure how long I'd been out. Taking stock of my situation, I was surprised to find myself more or less unhurt, save for a dull ache in my left wrist where I'd tried to brace against the door. I took a few deep breaths, and tried to gather myself-- I was still a little mentally a little shocked and unfocused.[paragraph break]The car was presently lying at the bottom of a cliff on its side. Above me, I could see moonlight, dimly mottled by the snow on the passenger side windows. The windshield in front of me showed nothing but evergreen forest, extending into the darkness.[if Upturned Car is strapped][paragraph break]I was still strapped in, the seat belt made sure I stayed put. At least one thing in this car still knew how to do its job right.[end if][if Upturned Car is unstrapped][paragraph break]I crouched at the bottom of the car on the driver door, trying to figure the best way out.[end if]".
-[The chest belt had dug into my neck pretty hard, but it hadn't left a bruise.]
+Upturned Car is a strapped room. The description is "I wasn't sure how long I'd been out. Taking stock of my situation, I was surprised to find myself more or less unhurt, save for a dull ache in my left wrist where I'd tried to brace against the door. I took a few deep breaths, and tried to gather myself-- I was still a little mentally unfocused.[paragraph break]The car was currently lying at the bottom of a cliff on its side. Above me, I could dimly see the light of the moon, mottled by the snow on the passenger side windows. The windshield in front of me showed nothing but evergreen forest, extending into the darkness.[if Upturned Car is strapped][paragraph break]I was still strapped in, the seat belt made sure I stayed put. At least one thing in this car still knew how to do its job right.[end if][if Upturned Car is unstrapped][paragraph break]I crouched at the bottom of the car on the driver door, trying to figure the best way out.[end if]".
+
 The driver door is scenery in the Upturned Car.
 Instead of kicking the driver door:
-	say "It's down against a foot of packed snow, with the hard earth below that. I try to kick the driver's side door, but don't get further than cracking the window.";
+	say "It's down against a foot of packed snow, with hard earth below that. I try to kick the driver's side door, but don't get further than cracking the window.";
 	stop the action.
 Instead of punching the driver door:
 	say "That wouldn't accomplish much.";
@@ -164,27 +166,24 @@ Instead of opening the driver door:
 
 The passenger door is scenery in the Upturned Car.
 Instead of kicking the passenger door:
-	say "It's a little tough for me to kick up there. Even bracing against an armrest, I can't get enough reach and power to open it.";
-	stop the action.
+	say "It's a little tough for me to kick up there. Even bracing against an armrest, I can't get enough reach and power to open it.".
 Instead of punching the passenger door:
-	say "I slam my fists against the window above me, but it doesn't break.";
-	stop the action.
+	say "I slam my fists against the window above me, but it doesn't break.".
+Instead of attacking the passenger door:
+	try punching the passenger door.
 Instead of opening the passenger door:
-	say "There's too much snow on top. I try to push, but the weight keeps the door from opening.";
-	stop the action.
+	say "There's too much snow on top. I try to push, but the weight keeps the door from opening.".
 
-The windshield is scenery in the Upturned Car. The description is "Flecked with snow and road salt, it was already cracked in a spiderweb pattern where it'd collided with a rock.".
+The windshield is scenery in the Upturned Car. The description is "Flecked with snow and road salt, it was already cracked in a spiderweb pattern where it'd collided with a rock on the way down.".
 Instead of opening the windshield:
-	say "That's not something that typically opens on a car, I'll have to use some force.";
-	stop the action.
+	say "That's not something that typically opens on a car, I'll have to use some force.".
 Instead of punching the windshield:
-	say "I hit the windshield a few times, and can feel it start to come loose. A good solid kick ought to do it.";
-	stop the action.
+	say "I hit the windshield a few times, and can feel it start to come loose. A good solid kick ought to do it.".
 Instead of attacking the windshield:
-	try punching the windshield;
-	stop the action.
+	try punching the windshield.
 Instead of kicking the windshield:
-	say "Bracing my back against the sideways seat, I gave the windshield a couple of sharp kicks. I felt the seal start to give, and then it dislodged entirely from the frame, making an exit. It fell out onto the snow with a muffled crunch, and the bitter wind started to blow into the old car. I grabbed my bag and stepped out into the forest.[paragraph break]".;
+	say "Bracing my back against the sideways seat, I gave the windshield a couple of sharp kicks. I felt the seal start to give, and then it dislodged entirely from the frame, making an exit. It fell out onto the snow with a muffled crunch, and the bitter wind started to blow into the old car. I pulled my coat tight around me, and stepped out into the forest.[paragraph break]".;
+	say "(press any key)";
 	wait for any key;
 	Now the player is in the Bottom of Cliff;
 	stop the action.
@@ -205,13 +204,13 @@ After reading a command:
 			say "The seat belt held me firmly in place in what was now the bottom of the upturned car. I wasn't going to be able to see or do much of anything until I unbuckled myself.";
 			stop the action;
 
-Chapter 4 - Scene Cliff_Climbing
+Chapter 5 - Scene Cliff_Climbing
 
 Bottom of Cliff is a room. Bottom of Cliff is below Sharp Bend. The description is "I stood on a ridge densely packed with trees some ways below the highway. My wrecked car sat a few feet away. The ridge extended as far as I could see to the north, going nowhere in particular. To the west I saw the steep incline the car had rolled down, and the path it'd cut through the snow and brush.[if Cliff_Climbing is happening][paragraph break]I was miles from nowhere, and the cherry on top was that my cell phone was broken. It had stopped snowing for the moment. The night sky was starting to lighten, I figured I had an hour before sunrise.[paragraph break]Fucking swell.[end if]".
 Instead of going west in the Bottom of Cliff:
 	try going up.
 
-Chapter 5 - Scene Car_Embarking
+Chapter 6 - Scene Car_Embarking
 
 Section 1 - Sharp Bend
 
@@ -248,10 +247,10 @@ Instead of going east in the Sharp Bend:
 	try going down.
 
 When Car_Embarking begins:
-	say "The second I turned my head to look down the lane, I saw a pair of headlights approach. A black Mercedes pulled up and came to a stop just in front of me. The passenger door opened, and I saw Val looking out at me.[paragraph break][quotation mark]Get in,[quotation mark] she said.";
+	say "The second I turned my head to look down the lane, I saw a pair of headlights approach. A black Mercedes pulled up and came to a stop just in front of me. The timing was a little unnerving. The passenger door opened, and I saw Val looking out at me.[paragraph break][quotation mark]Get in,[quotation mark] she said.";
 	now the Valcar_Container is in the Sharp Bend.
 
-Chapter 6 - Scene Riding_Scene
+Chapter 7 - Scene Riding_Scene
 
 When Riding_Scene begins:
 	Now the player is in the Sedan.
@@ -270,9 +269,9 @@ Instead of waiting in the Sedan during Riding_Scene:
 	Otherwise:
 		Continue the action.
 
-Chapter 7 - Scene Cliff_Gameover
+Chapter 8 - Scene Cliff_Gameover
 
-Mountain Ridge is north of Bottom of Cliff. The description is "I had a bad feeling as I walked my way along the ridge, trudging a couple of miles through the foot-deep snow. The path didn't seem to be leading anywhere, and the sky kept getting lighter as I went. I still had enough time to turn back, if I wanted."
+Mountain Ridge is north of Bottom of Cliff. The description is "I had a bad feeling as I walked my way along the ridge, trudging a couple of miles through the foot-deep snow. The path didn't seem to be leading anywhere, and the sky kept getting lighter as I went. I still had enough time to turn back, if I wanted to."
 
 Dense Forest is north of Mountain Ridge. The description is "I walked for what must have been half an hour through the pines, which kept getting denser. In the light just before dawn, I saw the evergreen foliage come to a sudden stop ahead. I was starting to get seriously worried."
 
@@ -281,9 +280,9 @@ Precipice is north of Dense Forest. The description is "The forest abruptly ende
 When Cliff_Gameover begins:
 	end the story saying "The north end of the ridge had a stunning view of the eastern valley, and unfortunately the horizon, too. Through what must have been some quirk of fate, I never made it to the chalet. I smiled sardonically at the sunrise, searing like a fire newly kindled, even on that cold, windswept ridge. I guess I'd been spared what would have no doubt been an interminable weekend.[paragraph break]As far as last sights went, I supposed it could have been worse."
 
-Chapter 8 - Scene Body_Discovery
+Chapter 9 - Scene Body_Discovery
 
-Val_House is a woman. The printed name is "Val_HouseTODO". Understand "Val" as Val_House. The description is "She wore a belted black overcoat with straight shoulders, which covered all of her except for the bottom of a long pencil skirt. She hadn't bothered taking her driving gloves off. I couldn't put my finger on it, but there was something stiffly formal and practised about the way she moved.[if Val_House is in the Reading_Nook][paragraph break]Her eyes rested on what was left of the professor, her expression unreadable.[end if]".
+Val_House is a woman. The printed name is "Val". Understand "Val" as Val_House. The description is "She wore a belted black overcoat with straight shoulders, which covered all of her except for the bottom of a long pencil skirt. She hadn't bothered taking her driving gloves off. I couldn't put my finger on it, but there was something stiffly formal and practised about the way she moved.[if Val_House is in the Reading_Nook][paragraph break]Her eyes rested on what was left of the professor, her expression unreadable.[end if]".
 
 Rule for writing a paragraph about Val_House:
 	If Val_House is in the Reading_Nook:
@@ -296,7 +295,7 @@ When Body_Discovery begins:
 	say "Val got out of the car and took her bag out of the trunk.[paragraph break][quotation mark]Come on, I'll introduce you to Alan,[quotation mark] she said, walking up the drive.".
 
 Driveway is a room. "We stood at the end of a long gravel drive, staring up at a large house with a dark red wood exterior. Steps to the east led to a porch that spanned the facade of the place, wrapping around to a deck in the back that presumably had a great view of the lake and the countryside. It was more ski lodge than cabin, and looked like it could comfortably shelter an entire biathlon team if it had to."
-House is scenery in the Driveway. Understand "facade/chalet/lodge" as house. The description is "It seemed oddly imposing for what was just another vacation home in the Adirondacks. From the front, it looked like two or three  spacious floors with high ceilings. The steeply angled roofs were clearly designed to shed the several feet of snow dumped on it by nor'easters every year. ".
+House is scenery in the Driveway. Understand "facade/chalet/lodge" as house. The description is "It seemed oddly imposing for what was just another vacation home in the Adirondacks. From the front, it looked like two or three spacious floors with high ceilings. The steeply angled roofs were clearly designed to shed the several feet of snow dumped on it by nor'easters every year. ".
 Driveway_scenery is scenery in the Driveway. Understand "driveway" as driveway_scenery. The printed name is "the driveway".
 [TODO: Cars, killer's car has a cold engine? Or else, owner's car is missing?]
 
@@ -368,7 +367,7 @@ After examining the rug for the first time:
 After examining the glass shard for the first time:
 	Now the shattered glass is in the greatroom.	
 
-The glass shard is a thing. The description is "A broken shard of glass.[if the shattered glass is examined] It came from a broken wineglass in the greatroom.[end if] The ruined facets of vintage crystal reflected light like a cheap engagement ring.[paragraph break]I crouched down for a closer look and realized it had come from a shattered wineglass,  the pieces obscured by the sofa.".
+The glass shard is a thing. The description is "A broken shard of glass.[if the shattered glass is examined] It came from a broken wineglass in the greatroom.[end if] The ruined facets of vintage crystal reflected light like a cheap engagement ring.[paragraph break]I crouched down for a closer look and realized it had come from a shattered wineglass, the pieces obscured by the sofa.".
 [Instead of taking the glass shard:
 	try examining the glass shard.]
 
@@ -389,7 +388,7 @@ Section 3 - Reading Nook
 
 [TODO: should I correct the if body discovery is happening line below so the corpse gets removed? just gets rid of clues, really]
 Reading_Nook is a room. Reading_Nook is above Greatroom. The printed name is "Reading Nook". The description is "I climbed the stairs to the reading nook. Shelves lined the walls of the small room, and a couple of books had been knocked off them onto the floor. A pair of wingback armchairs faced each other with a coffee table in between. A small pool of red liquid lay underneath the table.[if the scene is body_discovery][paragraph break]A man sat in one, slightly paunchy and slightly grey, his eyes and mouth wide open. His glasses were askew. He was wearing a navy blue cardigan, stained all over the front with a dark, almost black liquid. What looked like a small knife was sticking out of his neck, plunged in so far that only the handle was visible.[end if]".
-The body is scenery in the reading_nook. Understand "corpse / man" as body. The description is "He looked like he was fifty, but something about his well-preserved look told me that he was probably sixty. It wasn't that he was in good shape-- I doubted he'd seen much real exercise since he was in high school, and maybe not even then. He struck me as a debate team sort of guy.  I could tell he didn't get out much. His fingers were broad, but smooth. His hands had no calluses and no rings, but he wore a Rolex watch. It wasn't fake, and had cost probably three times what my car was worth before I'd driven it off a cliff a few hours ago."[TODO: Master Bedroom closet, one pair of boots, unused]
+The body is scenery in the reading_nook. Understand "corpse / man" as body. The description is "He looked like he was fifty, but something about his well-preserved look told me that he was probably sixty. It wasn't that he was in good shape-- I doubted he'd seen much real exercise since he was in high school, and maybe not even then. He struck me as a debate team sort of guy. I could tell he didn't get out much. His fingers were broad, but smooth. His hands had no calluses and no rings, but he wore a Rolex watch. It wasn't fake, and had cost probably three times what my car was worth before I'd driven it off a cliff a few hours ago."[TODO: Master Bedroom closet, one pair of boots, unused]
 Instead of taking body:
 	say "I didn't want to move him just yet.";
 	stop the action.
@@ -439,11 +438,11 @@ When Body_Discovery ends:
 	say "Val came up the stairs, freezing the second she saw the body. Her eyes narrowed, and I could tell her mind was racing, the first time I'd seen anything but placid boredom on her face. Half of me was relieved to know that there was something in this world that could perturb her. The other half was unnerved by it. She looked away and hitched the poker face back on pretty quick.[paragraph break]Val nodded at the poor stiff and said, [quotation mark]Meet Professor Alan Bowden, our host this weekend.[quotation mark][line break]";
 	wait for any key;
 
-Chapter 9 - Scene Prearrival
+Chapter 10 - Scene Prearrival
 
 
 
-Chapter 10 - Scene Guest_Arrival
+Chapter 11 - Scene Guest_Arrival
 
 When Guest_Arrival begins:
 	say "[if the player is not in the Foyer]I heard the front door open, and the sound of voices from the foyer. It closed a minute later.[end if][if the player is in the Foyer]The front door opened, and three men filed in, a lanky one in designer jeans holding the door for the other two. He closed it behind them, and they stood there looking around and putting snow on the rug, as though they expected a butler to come and announce them.[end if][paragraph break][if the player is in the Reading_Nook]Val and I glanced at each other across the dead man, and she left back down the stairs.[end if][if the player is in the Greatroom]Val came down the stairs, and crossed the room toward the sound of the noise.[end if]";
@@ -474,12 +473,12 @@ Instead of saying hello to Nathan_Arrival:
 	stop the action.
 
 [LOGIC to change scene conditions from Guest_Arrival to First_Investigation]
-Left_Guests is a truth state that varies. Left_Guests is false.
+Left_Guests is a truth state that varies. Left_Guests is initially false.
 
 Instead of going west in the Foyer during Guest_Arrival:
-		now Left_Guests is true;
+	now Left_Guests is true;
 Instead of going east in the Foyer during Guest_Arrival:
-		now Left_Guests is true;
+	now Left_Guests is true;
 Instead of saying hello to Val_House in the Foyer during Guest_Arrival:
 	now Left_Guests is true;
 
@@ -488,7 +487,7 @@ To decide whether first investigation starts:
 		decide yes;
 	decide no.
 
-Chapter 11 - Scene First_Investigation
+Chapter 12 - Scene First_Investigation
 
 
 
@@ -519,7 +518,7 @@ Every turn during First_Investigation:
 		wait for any key.
 [TODO: make shutters scenery visible from all interior rooms]
 		
-Scott_Investigation is a man. The description is "He had an unlit cigarette between his lips. They all seemed to smoke. His fingers fumbled with a brushed metal lighter and didn't seem to be making much progress, but he was giving it the old college try. I watched his eyes scan across the walls out of habit, and annoyance flicker briefly in them as he failed to find a TV on any of them."
+Scott_Investigation is a man. The printed name is "Scott". The description is "He had an unlit cigarette between his lips. They all seemed to smoke. His fingers fumbled with a brushed metal lighter and didn't seem to be making much progress, but he was giving it the old college try. I watched his eyes scan across the walls out of habit, and annoyance flicker briefly in them as he failed to find a TV on any of them."
 
 
 Jan_Investigation is a man. The printed name is "Jan". Understand "Jan" as Jan_Investigation. The description is "He stood well over six feet tall, but only about as wide as an aircraft carrier. His dirty blonde hair looked windswept, but it probably looked that way when he got out of bed. He wore a sleek gray performance jacket made from some synthetic material. The snow sat on top of it in beads. I didn't recognize the brand, which meant that it had probably cost about three hundred dollars.".
@@ -530,7 +529,8 @@ Jan_Investigation is a man. The printed name is "Jan". Understand "Jan" as Jan_I
 Rule for writing a paragraph about Jan_Investigation:
 	say "Jan stood here amid his piles climbing gear, coiling a long length of rope around one of his broad shoulders.";
 
-Nathaniel_Investigation is a man. The printed name is "Nathaniel". The description is "TODO".
+Nathaniel_Investigation is a man. The printed name is "Nathaniel". The description is "The sideswept brown locks and pencil mustache were meant to look youthful and sporty, like he'd just stopped playing cricket for teatime. The lines on the face and brow made him look more Vincent Price than Errol Flynn, though. I could tell by the way he stood that he didn't have a care in the world, or at least I wasn't one of them. His half-lidded stare gave him an air of casual arrogance, like he was perpetually waiting for the valet to bring his car around. He sat in the chair, smoking idly.".
+[TODO: custom description here]
 
 Section 1 - Main House
 
@@ -600,15 +600,15 @@ Section 6 - Upstairs Hallways
 
 Hallway_Upstairs is above the Hallway_Downstairs. The printed name is "Upstairs Hallway".
 
-North_Hallway is north of the Hallway_Upstairs. The printed name is "North Hallway".
+North_Hallway is north of the Hallway_Upstairs. The printed name is "North Hallway". The description is "TODO".
 
-East_Hallway is east of the Hallway_Upstairs. The printed name is "East Hallway".
+East_Hallway is east of the Hallway_Upstairs. The printed name is "East Hallway". The description is "The eastern side of the upper floor led to several guest bedrooms. A window [if SHUTTERS_DOWN is false]looked out onto the valley and a vast lake, a real one put there by nature, not a big hole dug by a developer to increase 'lakeside' property values.[end if][if SHUTTERS_DOWN is true]faced north, blocked by the closed shutter.[end if]".
 
 Section 7 - Master Bedroom
 
 master bedroom door is a closed door. it is scenery. it is north of the North_Hallway and south of the Master_Bedroom.
 
-Master_Bedroom is a room. The printed name is "Master Bedroom". The description is "The master suite sat at the north end of the house and [if SHUTTERS_DOWN is true]had the best  view of the valley and the lake for miles [end if][if SHUTTERS_DOWN is false]had a row of floor-to-ceiling paned windows that ran the length of the room, but the shutters were closed, keeping the room dark as night[end if]. A four-poster bed with a thick down comforter looked twice as soft as the dead man's sweater had. Ornate wooden nightstands flanked the bed on either side. One was bare except for a lamp, the other was piled high with what must have been bedtime reading. In the corner of the room, I could see into a spacious closet."
+Master_Bedroom is a room. The printed name is "Master Bedroom". The description is "The master suite sat at the north end of the house and [if SHUTTERS_DOWN is false]had the best view of the valley and the lake for miles [end if][if SHUTTERS_DOWN is true]had a row of floor-to-ceiling paned windows that ran the length of the room, but the shutters were closed, keeping the room dark as night[end if]. A four-poster bed with a thick down comforter looked like it would sink at least half a foot under any weight. Ornate wooden nightstands flanked the bed on either side. One was bare except for a lamp, the other was piled high with what must have been bedtime reading. In the corner of the room, I could see into a spacious closet."
 
 the book is a clue. the book is in the Master_Bedroom. The description is "[italic type]Kokoro[roman type], by Soseki Natsume. The binding looked expensive and uncracked. A post-it note was stuck to the cover. Just two words were written on it: [quotation mark]I'm sorry.[quotation mark][paragraph break]I started to flip through the book and noticed something handwritten on the title page. The cursive looked like it'd been written with a fountain pen.[paragraph break][paragraph break]For Kelly[line break]     Somewhat appropriately, I got this book from my teacher, and now I'd like you to have it. More than whatever literary value it may have, from now on, I'll always remember it as the first book we read together.[paragraph break]Yours,[line break]Alan".
 Rule for writing a paragraph about the book:
@@ -624,7 +624,7 @@ Instead of entering the closet:
 Instead of going west in the Master_Bedroom:
 	try examining the closet.
 
-Walk-in closet is scenery in the master_bedroom. The description is "I walked into the closet and flicked on the light. Three quarters of it was the usual cruft that finds its way to a person's closet and never gets worn.[paragraph break]I looked at the rest of it. A handful of suits that looked like they'd been bought in the 80s, judging by the lapels. Performance fleece and hiking boots, never worn. Velvet smoking jacket, no sweatpants or loungewear. Professor Bowden seemed to have some old-fashioned sensibilities.".
+Walk-in closet is scenery in the master_bedroom. The description is "I walked into the closet and flicked on the light. Three quarters of it was the usual cruft that finds its way to a person's closet and never gets worn.[paragraph break]I looked at the rest of it. A handful of suits that looked like they'd been bought in the 80s, judging by the lapels. Performance fleece winter gear and hiking boots, none of it looked like it had been worn. Velvet smoking jacket, no sweatpants or loungewear. Professor Bowden seemed to have some old-fashioned sensibilities.".
 
 the wall safe is a closed locked container in the Master_Bedroom.
 
@@ -633,8 +633,10 @@ instead of opening the manila envelope:
 	say "I opened the envelope, and took out the contents, a handful of photos";
 	now the player has the photos;
 	remove the manila envelope from play.
+	
+the cash is in the wall safe. the cash is a clue. The description is "five neat stacks of worn bills, each banded with a gold paper strip reading '10,000.'".
 
-the photos are a clue. The description is "Several photographs of a blonde young man in his early twenties, taken with a telephoto lens. He hadn't spotted the photographer. He's wearing a polo shirt and jeans, so it must have been taken months ago. The man was holding a cup of coffee, and exiting a coffee shop. The daily routine must have made it pretty easy for whoever was tailing him. The height of the shots puts the photographer in a car across the street. The photos looked dim and hazy, even for a black and white shot.".
+the photos are a clue. The description is "Several photographs of a blonde young man in his early twenties, taken with a telephoto lens. He hadn't spotted the photographer. He's wearing a shortsleeve polo shirt and jeans, so it must have been taken months ago. The man was holding a cup of coffee, and exiting a coffee shop. The daily routine must have made it pretty easy for whoever was tailing him. The height of the shots put the photographer in a car across the street. The photos looked dim and hazy, even for a black and white shot.".
 
 Section 8 - Guest Bedrooms
 
@@ -645,12 +647,10 @@ Scott_Room is a room. The printed name is "Sumac Room". It is south of the East_
 Jan_Room is a room. The printed name is "Hemlock Room". It is north of the East_Hallway. The description is "The room had an angled ceiling to give the impression of a cozy attic or country cabin, except it was about as big as my entire apartment. Piles of climbing equipment and bunched-up coils of rope were heaped in the corner on top of his luggage. A gray sweater hung on a chair, flecks of dark reddish-brown stains dried on it.".
 The sweater is scenery in the Jan_Room. The description is "It was a thick wool turtleneck, so big it looked like a blanket draped over the chair. Around the front and the sleeves, blood stains were visible where some had apparently splashed back onto it."
 		
-SHUTTERS_DOWN is a truth state that varies. SHUTTERS_DOWN is false.
-[TODO move me this is a global]
 
 [TODO: If the player is too confused, simply change to an objective, use the "acting confused" cues from EmShort]
 
-Chapter 12 - Scene First Sleep
+Chapter 13 - Scene First Sleep
 
 Section 1 - PC Bedroom
 
@@ -744,11 +744,11 @@ what time sunrise is a repeatable questioning quip.
 		it is off-limits.
 		it is available.]
 
-Chapter 13 - Conversations First_Investigation
+Chapter 14 - Conversations First_Investigation
 
 Section 1 - Val
 
-who alan is a repeatable questioning quip.
+about alan is a repeatable questioning quip.
 	The printed name is "about Alan".
 	The comment is "[quotation mark]How well did you know Alan?[quotation mark]".
 	The reply is "[quotation mark]I knew him for probably ten years, we were only close for a handful of those. He wasn't perfect, but I knew him well enough that I feel like he deserved better than he got.[quotation mark]".
@@ -768,6 +768,10 @@ about pouch is a repeatable questioning quip.
 	The reply is "[quotation mark]They've got a skim set up with the Red Cross. Like the mafia used to do with the nightly take at casinos. We've got ways to keep anyone from talking about it.[quotation mark][if Blood_status is true][paragraph break]Something inside me rebelled at the thought of it, my stomach churning. [quotation mark]I can't just take it, it could've been used to help someone![quotation mark][paragraph break][quotation mark]It is going to help someone: you. If someone from outside killed Alan, I need to know if he's likely to come back. If it was someone here, I need you on your toes.[end if]".
 	It quip-supplies Val_Investigation.
 	The proper scene is First_Investigation.
+	
+an availability rule for about pouch:
+	if the pouch is unexamined:
+		it is off-limits.
 
 who nathaniel is a repeatable questioning quip.
 	The printed name is "about Nathaniel". The true-name is "about Nathaniel".
@@ -884,7 +888,7 @@ about climbing is a repeatable questioning quip.
 about business is a repeatable questioning quip.
 	The printed name is "about business".
 	The comment is "[quotation mark]How are the markets treating you? With everything I hear in the news...[quotation mark] I trailed off, waiting for the self-appointed expert to jump in and correct the ignorant layperson. He didn't disappoint.".
-	The reply is "[quotation mark]Oh sure, we took a hit during the downturn, but so did everyone. We'll bounce back, and I'm not worried, nor are our high-profile clients.[quotation mark][paragraph break]It all sounded a little too well-rehearsed. I saw him give me a quick once over, it was almost imperceptible.[paragraph break][quotation mark]Now's the best time to buy in, when you consider the numbers. Do you know someone who'd be interested in an account with us? Your friend, Ms. Carter, perhaps?[quotation mark][line break]I chuckled politely and gave a noncommital shrug.[line break][quotation mark]There'd be a finder's fee in it for you, of course, if things did move to business. Think it over.[quotation mark]".
+	The reply is "[quotation mark]Oh sure, we took a hit during the downturn, but so did everyone. We'll bounce back, and I'm not worried, nor are our high-profile clients.[quotation mark][paragraph break]It all sounded a little too well-rehearsed. I saw him give me a quick once over, it was almost imperceptible.[paragraph break][quotation mark]Now's the best time to buy in, when you consider the numbers. Do you know someone who'd be interested in an account with us? Your friend, Ms. Sinclair, perhaps?[quotation mark][line break]I chuckled politely and gave a noncommital shrug.[line break][quotation mark]There'd be a finder's fee in it for you, of course, if things did move to business. Think it over.[quotation mark]".
 	It quip-supplies Jan_Investigation.
 	The proper scene is First_Investigation.
 
@@ -916,7 +920,7 @@ how long she'd known Bowden is a repeatable questioning quip.
 	It quip-supplies Val_Sleep.
 	The proper scene is First_Sleep.
 	
-Chapter 14 - Scene Wakeup
+Chapter 15 - Scene Wakeup
 
 When Wakeup begins:
 	now the front door is unlocked;
@@ -931,7 +935,7 @@ When Wakeup ends:
 
 Section 1 - Adrian_Investigation
 
-Adrian_Investigation is a man. The printed name is "Adrian". Understand "Adrian" as Adrian_Investigation. The description is "He stood well over six feet with a build that belonged on the inside of a steel cage. The designer charcoal suit he wore hadn’t quite been successfully altered to his wide frame. A deep purple tie sat at his neck in a fat knot Donald Trump would have approved of. The dark hair atop his head was neatly parted at the side, and slicked back almost flat to his head. His eyes were gray, and there was something baleful deep in them, peering out.  His size and heavy brow made him look like a gorilla in Prada.[if Wakeup is happening][paragraph break]He introduced himself as 'Adrian Castillo, Deputy to the Warden of the Peace, appointed to serve at the pleasure of the Honorable Countess of Westchester.' I didn't know what most of that meant, but I knew his suit was a little too nice for a cop entirely on the level. I wondered if that all fit on his business card.".
+Adrian_Investigation is a man. The printed name is "Adrian". Understand "Adrian" as Adrian_Investigation. The description is "He stood well over six feet with a build that belonged on the inside of a steel cage. The designer charcoal suit he wore hadn’t quite been successfully altered to his wide frame. A deep purple tie sat at his neck in a fat knot Donald Trump would have approved of. The dark hair atop his head was neatly parted at the side, and slicked back almost flat to his head. His eyes were gray, and there was something baleful deep in them, peering out. His size and heavy brow made him look like a gorilla in Prada.[if Wakeup is happening][paragraph break]He introduced himself as 'Adrian Castillo, Deputy to the Warden of the Peace, appointed to serve at the pleasure of the Honorable Countess of Westchester.' I didn't know what most of that meant, but I knew his suit was a little too nice for a cop entirely on the level. I wondered if that all fit on his business card.".
 
 Before saying hello to Adrian_Investigation:
 	try examining Adrian_Investigation;
@@ -953,7 +957,7 @@ about questioning me is a repeatable questioning quip.
 
 about questioning val is a repeatable questioning quip. It indirectly-follows about questioning me.
 	The printed name is "about questioning val".
-	The comment is "'I'm going to need you to come with me downstairs. I've got to ask Ms. Carter a few questions, and she asked you be present.' That confused me a bit. I wasn't entirely certain what Val and I were to each other, but I sure as hell wasn't her lawyer.".
+	The comment is "'I'm going to need you to come with me downstairs. I've got to ask Ms. Sinclair a few questions, and she asked you be present.' That confused me a bit. I wasn't entirely certain what Val and I were to each other, but I sure as hell wasn't her lawyer.".
 	The reply is "".
 	It quip-supplies Adrian_Investigation.
 	The proper scene is Wakeup.
@@ -978,7 +982,7 @@ about anyone outside is a repeatable questioning quip. It indirectly-follows abo
 	The reply is "'Nope, all quiet out there.' Something in my face must've shown my silent vote of no confidence, since he tried to follow it up. 'Listen, punk. I've been in this business twice as long as you've been alive. If I don't see nobody out there, there ain't nobody.' I didn't tell him that that meant exactly jack and shit in my book. One look at him told me he didn't have an eye for detail. There's people on every force who can't think their way out of a wet paper bag, and I'd have bet my weight in cake donuts that Detective Castillo here was one of them.".
 	It quip-supplies Adrian_Investigation.
 
-Chapter Scene Interrogation
+Chapter 16 Interrogation
 
 When Interrogation begins:
 	say "TODO[paragraph break]";
@@ -995,20 +999,20 @@ When Interrogation ends:
 	now Val_SecondInv is in the Foyer;
 	now the quip-suggestion-phrase is "[We] [could] ".
 
-Section 2 - Adrian_Interrogation
+Section 1 - Adrian_Interrogation
 
 Adrian_Interrogation is a man. The printed name is "Adrian". Understand "Adrian" as Adrian_Interrogation.
 
-Section 3 - Val_Interrogation
+Section 2 - Val_Interrogation
 
 Val_Interrogation is a woman. The printed name is "Val". Understand "Val" as Val_Interrogation.
 
-Section 4 Val_Interrogation
+Section 3 Val_Interrogation
 
 about herself interro is a repeatable questioning quip.
 	The printed name is "about herself".
 	The comment is "Castillo took an official sort of bearing, or the nearest he could manage to one. 'Please state your name for the record.'".
-	The reply is "'Valentine Elizabeth Carter.'[paragraph break]'Any aliases or other names you've used before?'[paragraph break]'Elizabeth Deverell, but not recently.'".
+	The reply is "'Valentine Nicole Sinclair.'[paragraph break]'Any aliases or other names you've used before?'[paragraph break]'Nicky Deverell, but not recently.'".
 	It quip-supplies val_interrogation.
 	The proper scene is interrogation.
 
@@ -1021,12 +1025,12 @@ about her family interro is a repeatable questioning quip.
 
 about her husband interro is a repeatable questioning quip. it indirectly-follows about her family.
 	The printed name is "about her husband".
-	The comment is "'And what was your late husband's name?'[paragraph break]'Emil. But seeing as he's been dead fifty years, how about we leave him out of this?'".
+	The comment is "'And what was your late husband's name?'[paragraph break]'Maxwell. But seeing as he's been dead fifty years, how about we leave him out of this?'".
 	The reply is "Castillo didn't pursue it any further after hearing her tone. He probably could have, but didn't want to push things into open antagonism without a reason. I wouldn't have, in his place.'".
 	It quip-supplies val_interrogation.
 	The proper scene is interrogation.
 
-Chapter Scene Second_Investigation
+Chapter 17 Second_Investigation
 
 When Second_Investigation begins:
 	Now the Valcar_Container is in the Driveway;
@@ -1072,7 +1076,7 @@ Rule for writing a paragraph about the Players_Cluecar:
 
 Section 1 - Val_SecondInv
 	
-Val_SecondInv is a woman. The printed name is "Val_SecondInv_TODO". Understand "Val" as Val_SecondInv.
+Val_SecondInv is a woman. The printed name is "Val". Understand "Val" as Val_SecondInv.
 
 about my file val is a repeatable questioning quip.[ It indirectly-follows about my file adrian.]
 	The printed name is "about my file".
@@ -1094,7 +1098,7 @@ about our first meeting is a repeatable questioning quip. It indirectly-follows 
 
 what she wanted to see me about is a repeatable questioning quip.
 	The printed name is "what she wanted to see me about".
-	The comment is "She lowered her voiceTODO".
+	The comment is "She came over and leaned against the wall next to me. She leaned over, as though she were stretching, or just killing time on a lazy Sunday afternoon.[line break]'Did you tell anyone you were coming here? Your boss, or your partner, maybe?'[line break]I shook my head. 'Why, what's this all about?'[line break]'What if I told you that a week ago, Alan told me he was in some trouble?'[line break][if BLACKMAIL_KNOWN is true]'You mean blackmail.' I didn't make a question out of it. She looked up at me, then around to make sure no one else was in earshot.[otherwise]'Go on,', I said.[end if][line break]".
 	The reply is "".
 	It quip-supplies Val_SecondInv.
 	The proper scene is Second_Investigation.
@@ -1146,7 +1150,7 @@ why she didn't tell me about the blackmail is a repeatable questioning quip. It 
 what he was being blackmailed over is a repeatable questioning quip. It indirectly-follows why she didn't tell me about the blackmail.
 	The comment is "'Did he tell you what this was about?'[line break]'No. He could be an idiot sometimes, but thank God he had the sense to not put it in an e-mail.'[line break]'You must have some idea. How much shady business could a guy like that possibly have going on?'[line break]'I have an idea. Let's just say he didn't invite the students up here for polite little tea parties.'".
 
-Chapter Scene ComingBack
+Chapter 18 ComingBack
 
 When ComingBack begins:
 	Now the front door is locked;
@@ -1163,7 +1167,7 @@ To decide whether the sun rises:
 	If Sun_Counter > 2, yes;
 	no.	
 
-Chapter Scene DiscoverDet
+Chapter 19 DiscoverDet
 
 When DiscoverDet begins:
 	say "Through the stillness of the house, I heard yelling upstairs. It started as a panicked cry of shock and surprise, but quickly turned to screams of agony. It went on, loud and incoherent, muffled by the wooden walls of the house, getting more raspy and strangled, like a pillow smothering a face. Then, just as suddenly, it stopped. I felt a lump in my stomach like a lead weight, and reached for a gun that wasn't there.";
@@ -1177,7 +1181,7 @@ When DiscoverDet ends:
 
 [shutters are open in parts of the upstairs and the guest room and the hallway]
 
-Chapter Scene CellarThink
+Chapter 20 CellarThink
 
 When CellarThink begins:
 	[now the can't greet yourself rule is not listed in any rulebook;]
@@ -1228,13 +1232,13 @@ why someone cut my brakes is a questioning quip.
 [TODO: Rest of the clues]	
 
 
-Chapter Scene VillainMonologue
+Chapter 21 VillainMonologue
 
 When VillainMonologue begins:
 	now the current interlocutor is Scott_Villain.
 	
 When VillainMonologue ends:
-	say "His eyes went wild, and for a moment I felt like I could actually see his nerves fray and snap. His upper lip curled back over bared teeth so far it looked inhuman. It was the yellow-eyed look of a wolf baring its fangs. He was no wolf, but maybe he was so livid, he'd just forgotten. He whirled the gun around to point it straight at Val's serene face, and pulled the trigger. Her head was nowhere near the gun when it went off. She'd ducked to the side faster than I'd seen anyone move before, like Mayweather slipping a punch.[paragraph break]When Scott tried to aim the gun at her this time, screaming an unearthly scream, her hands were already up in a blur. She let him get another shot off, which I remember thinking was pretty charitable of her. There was nothing resembling charity in her green eyes, burning with a cold fury. It seemed for a second like she'd disarmed him as the gun dropped to the floor. It took an eternity to fall. Then I noticed in the dim light of the wine cellar a glint of silver attached to his neck, a small knife labeled with the initials 'AHB.' His empty hands went to his throat, and he crumpled over. We listened to quiet gasping for a minute as Val came over to untie me from the chair. By the time she'd finished, it had stopped.".
+	say "His eyes went wild, and for a moment I felt like I could actually see his nerves fray and snap. His upper lip curled back over bared teeth so far it looked inhuman. It was the yellow-eyed look of a wolf baring its fangs. He was no wolf, but maybe he was so livid, he'd just forgotten. He whirled the gun around to point it straight at Val's serene face, and pulled the trigger. Her head was nowhere near the gun when it went off. She'd ducked to the side faster than I'd seen anyone move before, like Mayweather slipping a punch.[paragraph break]When Scott tried to aim the gun at her this time, screaming an unearthly scream, her hands were already up in a blur. She let him get another shot off, which I thought was pretty charitable of her. There was nothing resembling charity in her green eyes, burning with a cold fury. It seemed for a second like she'd disarmed him as the gun dropped to the floor. It took an eternity to fall. Then I noticed in the dim light of the wine cellar a glint of silver attached to his neck, a small knife labeled with the initials 'AHB.' His empty hands went to his throat, and he crumpled over. We listened to quiet gasping for a minute as Val came over to untie me from the chair. By the time she'd finished, it had stopped.".
 
 Every turn during VillainMonologue:
 	If the number of available quips which are not recollected by Scott_Villain is 1:
@@ -1258,21 +1262,20 @@ how he planned on getting away is a questioning quip. The printed name is "how h
 	It quip-supplies Scott_Villain.
 	The proper scene is VillainMonologue.
 	
-Chapter Scene GetOutOfDodge
+Chapter 22 GetOutOfDodge
 
 When GetOutOfDodge ends:
 	now the front door is unlocked;
 
-[TODO:Make sure shutters are up or down in all the proper scene changes]
 After waiting during GetOutOfDodge:
 	now SHUTTERS_DOWN is false;
 	say "The shutters clicked open, the most musical sound I'd ever heard in my life.";
-	[consider the scene changing rules;]
 	
-Chapter Scene Conclusion
+Chapter 23 Conclusion
 
 Instead of entering the Valcar_Container during Conclusion:
-	say "I walked to the Mercedes and she and I looked at each other over the roof. I didn't realize I was on the driver's side until she tossed me the keys.[line break]'That was some good work back there.'[line break]I shrugged, and not out of modesty. It was going to be a while before I got used to operating like this.[line break]'Hey kid... Thanks.'[line break]I smiled, and the muscles felt stiff. 'So where we headed?'[line break]'What was the last time you were in Vegas, kid?' We got in and I started the car. 'It's a long story, let me start at the beginning,' she said.[paragraph break]We started off down the road and we began to talk, really talk, for the first time since I'd met her. We started off down the long road to the Mojave, in the shadow of the  mountain, high above the valley and its waves and ribbons of untouched snow like an unmade bed. [paragraph break]I was already getting thirsty, and no quantity of expensive bourbon was going to help.";
+	say "I walked to the Mercedes and she and I looked at each other over the roof. I didn't realize I was on the driver's side until she tossed me the keys.[if BLACKMAIL_KNOWN is true][line break]Your friend Alan seemed like quite a romantic. Thing like that gets a guy in trouble.'[line break]'We all have things we'd rather not let go of. Even you.'[line break]'Like that?' I pointed to the gold ring on her necklace, which had come into view, resting on the front flap of her coat. She gave me a hard look, and for a second I'd thought I'd crossed the line. Then, a smile broke out on her face.[line break]'C[']mon, drive. I'll tell you the whole story on the way.
+[line break]'So where we headed?'[line break]'What was the last time you were in Vegas?' We got in and I started the car.[paragraph break]We started off down the road and we began to talk, really talk, for the first time since I'd met her. We started off down the open road, in the shadow of the mountain, high above the valley and its waves and ribbons of untouched snow like an unmade bed. [paragraph break]I was already getting thirsty, and no quantity of expensive bourbon was going to help.";
 	end the story finally;
 
 [I have a little experience doing that.
@@ -1280,7 +1283,7 @@ This one's been cold for 40 years.
 I like a challenge.
 What was the last time you were in Vegas?]
 
-Chapter 1 - Game Mechanics
+Chapter 24 - Game Mechanics
 
 Section 1 - Global Variables
 
@@ -1322,6 +1325,9 @@ Rule for listing repeatable quips (this is the standard listing repeatable subje
     say "[quip-suggestion-phrase][the prepared list delimited in disjunctive style]." (A).
 
 Check changing the subject (this is the subject change revised rule):
+	unless the current interlocutor is a person:
+		say "[We] wasn't talking to anyone.";
+		stop the action;
 	if the number of repeatable quips is 0:
 		say "[We] [can think] of no valid changes of subject right [now]." (A) instead.
 
@@ -1354,7 +1360,30 @@ if the number of quips which are recollected by someone is 0, say "You have not 
                 increment N;
         if N is 0, say "You haven't discussed [the noun] with anyone yet."]
 
-Section 4 - Clues and Hints
+Section 4 - Credits
+
+Understand the command "credits" as something new. Understand "credits" as asking for credits. Asking for credits is an action out of world.
+
+Understand the command "about" as something new. Understand "about" as asking for credits.
+
+Carry out asking for credits:
+	say "[italic type]A word from the author:[line break]I'd like to thank to everyone who made this work possible. Special thanks to my beta testers: FK, TF, KG, and DO.[line break]This story has many edge cases. If you believe you have found a bug, please send an email to: alongdrink@beyondcoast.org[paragraph break]Thanks for playing.[roman type]"
+
+Section 5 - Clues and Hints
+
+Hint reminder is some text that varies. Hint reminder is initially "(type 'help' at any point for hints)"
+
+Understand the command "hint" as something new. Understand "hint" as asking for a hint. Asking for a hint is an action out of world. Instead of thinking, try asking for a hint.
+Carry out asking for a hint:
+	Try asking for objective;
+	Try asking for clues;
+	say "[paragraph break]";
+	say "[command reminder]";
+
+Understand the command "help" as something new. Understand "help" as asking for a hint.
+
+After reading a command:
+	If the player's command matches "load", replace the player's command with "restore".
 
 A thing can be examined or unexamined. A thing is usually unexamined.
 
@@ -1364,17 +1393,62 @@ Before examining a noun:
 		If the noun is a clue:
 			Increment FoundClues;
 
-FoundClues is a number variable.[ FoundClues is 0.]
+FoundClues is a number variable.
 When play begins:
 	Let FoundClues be 0;
+	
+command reminder is some text that varies. command reminder is initially "[bold type]Command Help[roman type][paragraph break]exits: List exits[line break]talk to (name): start conversation[line break]stop talking: end conversation[line break]topics: list dialogue choices[line break]save: save progress[line break]restore: load savegame[paragraph break]";
 
-Section 5 - Debugging
+Understand the command "objective" as something new. Understand "objective" as asking for objective. Asking for objective is an action out of world.
 
-Every turn:
-	if Debug_on is true:
-		say "Turn Count: [Turn Count][line break]";
-		say "FoundClues: [FoundClues]";
-
+[OBJECTIVE LOGIC Scene and status specific objectives, should be one for every scene]
+Carry out asking for objective:
+	say "[bold type]Objective[roman type][paragraph break]";
+	if Mountain_Driving is happening:
+		say "Val said we were going to spend the weekend at her friend's cabin in the mountains. Maybe it was childish or stubborn, trying to cling to my independence like this. I'd decided to drive myself, even through this weather.";
+	otherwise if Car_Escape is happening:
+		say "The doors were stuck, and there was no way out but through.";
+	otherwise if Cliff_Climbing is happening:
+		say "I had to get back to the road to get help or else hitch a ride. In a few hours, the sunrise would make this a less than ideal place to camp out.";
+	otherwise if Car_Embarking is happening:
+		say "In the short time I'd known her, Val seemed like the kind of woman who was thinking ten moves ahead, though how she knew I'd need a ride was a little unsettling.";
+	otherwise if Riding_Scene is happening:
+		say "The thing about long car trips is that the awkward silences can spiral and echo. I tried to fill it as best I could with small talk.";
+	otherwise if Body_Discovery is happening:
+		if the Foyer is not visited:
+			say "Now to find Val's friend. He had to be somewhere in this huge place.";
+		otherwise:
+			say "I'd been around long enough to know something was wrong with this scene: front door open, no one answering. We had to find Alan, wherever he was.";
+	otherwise if Prearrival is happening:
+		say "TODO";
+	otherwise if Guest_Arrival is happening:
+		say "TODO";
+	otherwise if First_Investigation is happening:
+		say "TODO";
+	otherwise if First_Sleep is happening:
+		say "TODO";		
+	otherwise if Wakeup is happening:
+		say "TODO";
+	otherwise if Interrogation is happening:
+		say "TODO";
+	otherwise if Second_Investigation is happening:
+		say "TODO";
+	otherwise if ComingBack is happening:
+		say "TODO";
+	otherwise if DiscoverDet is happening:
+		say "TODO";
+	otherwise if CellarThink is happening:
+		say "TODO";
+	otherwise if VillainMonologue is happening:
+		say "TODO";
+	otherwise if GetOutOfDodge is happening:
+		say "TODO";
+	otherwise if Conclusion is happening:
+		say "TODO";
+	otherwise if CellarThink is happening:
+		say "TODO";
+	
+		
 Understand the command "clues" as something new. Understand "clues" as asking for clues. Asking for clues is an action out of world.
 
 Carry out asking for clues:
@@ -1394,7 +1468,6 @@ Carry out asking for clues:
 	repeat through the Table of BlackmailClues:
 		if the clue entry is examined:
 			say "[clue entry][line break]";
-	[TODO: paragraph break between tables]
 
 Table of NotAloneClues
 clue
@@ -1417,14 +1490,15 @@ clue
 book
 bank statement
 
-Understand the command "hint" as something new. Understand "hint" as asking for a hint. Asking for a hint is an action out of world. Instead of thinking, try asking for a hint.
-Carry out asking for a hint:
-	say "[bold type]Objective[roman type][paragraph break]";
-	Try asking for clues.
 
-Understand the command "help" as something new. Understand "help" as asking for a hint.
+Section 6 - Debugging
 
-Section 6 - Inventory and Mechanics
+Every turn:
+	if Debug_on is true:
+		say "Turn Count: [Turn Count][line break]";
+		say "FoundClues: [FoundClues]"; 
+
+Section 7 - Inventory and Mechanics
 
 A room can be indoors or outdoors. A room is usually indoors.
 
@@ -1432,13 +1506,13 @@ Doors are usually closed.
 
 A thing can be either broken or unbroken. A thing is usually unbroken.
 
-The player is carrying a cell phone.
+The player is carrying a cell phone. The description is "A smartphone a few hardware revisions back. [if the cell phone is broken]The screen had shattered due to an impact, rendering it unusable.[end if]".
 
 Blood_status is a truth state that varies. Blood_status is usually false.
 
 [TODO: Make the cell phone break when the player enters the Bottom of Cliff by whatever method]
 
-Section 7 - Tests
+Section 8 - Tests
 
 Test firstconvo with "drive/drive/brake/look/unbuckle seat belt/kick windshield/any key/up/get in"
 
@@ -1470,7 +1544,7 @@ Test gettinbopped with "test cartrip / e / turn on car / x dashboard / x brakes 
 
 Test me with "test janinv/s/w/d/open painting/take all/x pouch/drink pouch";
 
-Section 8 - Computer
+Section 9 - Computer
 
 The computer is a device in the Office. The computer is switched off. The computer is fixed in place.
 
@@ -1482,6 +1556,16 @@ Instead of taking the computer:
 
 Understand the command "history" as something new. Understand "history" as historying. Historying is an action applying to a topic. Understand "history [text]" as historying.
 
+Before historying a topic:
+	if Debug_on is true:
+		continue the action;
+	if the location is not Office:
+		say "I'd need to go to the office for that.";
+		stop the action;
+	if Interrogation is happening:
+		say "This didn't really seem like the time to be digging around on the computer.";
+		stop the action;
+
 Carry out historying a topic:
 	say "Searching webhistory for [The topic understood]...[line break]";
 	repeat through the Table of BrowserHistory:
@@ -1490,10 +1574,15 @@ Carry out historying a topic:
 
 After reading a command:
 	If the player's command matches "history":
-		replace the player's command with "history null".
+		say "Please supply a search term, e.g. 'history new york'";
+		stop the action;
+		[replace the player's command with "history null".]
 
 Table of BrowserHistory
 link
+"new york traffic"
+"new york city map"
+"new york weather"
 "blackmail"
 "how to hire a private detective"
 "new york private detectives"
@@ -1512,10 +1601,17 @@ link
 "tales of the water margin"
 "journey to the west"
 "all men are brothers"
+"new york traffic"
+"buying a gun"
+"where to buy a gun"
+"where to buy a gun in new york"
+"new york gun shops"
 "new york blackmail law"
 "japanese language and literature"
 "new york extortion law"
 "extortion felony"
+"bibliography mla format citation"
+"bibliography citing a source"
 "hiring a private detective"
 "private detective agencies"
 "academic literature journals"
@@ -1569,9 +1665,9 @@ title	subtable	description	toggle
 
 Table of SentEmails
 title	subtable	description	toggle
-"Nov 12[tab]To: valcarter7@beyondcoast.org"	--	"TODO"	make blackmail known rule
+"Nov 12[tab]To: valsinclair7@beyondcoast.org"	--	"TODO"	make blackmail known rule
 "Nov 29[tab]To: Cassie Detra[tab]Quick question"	--	"Hi Cassie,[line break]I haven't seen Kelly in class recently, have the two of you had any contact? Just thought I'd ask.[line break][line break]Hope all's well,[EmailSignature]"	--
-"Nov 20[tab]To: AsianStudies201@barnett.edu[tab][tab]Thanksgiving Holiday"	--	"All,[line break]I'd like to wish everyone a Happy Thanksgiving, please take some time off to relax and spend it with family. For those of you who are traveling home,  have a safe journey. For those of you who are not able to, I'm hosting Thanksgiving dinner at my home, and all are welcome to attend. There's a great view of the lake, and I promise excellent food, drink, and company.[line break]Happy Holidays,[EmailSignature]"	--
+"Nov 20[tab]To: AsianStudies201@barnett.edu[tab][tab]Thanksgiving Holiday"	--	"All,[line break]I'd like to wish everyone a Happy Thanksgiving, please take some time off to relax and spend it with family. For those of you who are traveling home, have a safe journey. For those of you who are not able to, I'm hosting Thanksgiving dinner at my home, and all are welcome to attend. There's a great view of the lake, and I promise excellent food, drink, and company.[line break]Happy Holidays,[EmailSignature]"	--
 "Nov 12[tab]To: "	--	"TODO"	--
 "Nov 11[tab]"	--	"TODO"	--
 "Nov 10[tab]"	--	"TODO"	--
@@ -1583,8 +1679,6 @@ title	subtable	description	toggle
 
 
 EmailSignature is some text that varies. EmailSignature is "[line break]--[line break]Mark Bowden[line break]Asian Studies Department[line break]Barnett College, NY[line break]mbowden@barnett.edu"
-
-[TODO: computer cannot be used during Interrogation]
 
 [They sent a constable, low level]
 [He was putting on a good show, but I could tell he didn't seem to have any interest in finding out who did it. That, or some brass had told him not to.]
@@ -1600,22 +1694,18 @@ Gage suggests maybe he's making a political move, and/or wants to buy Gage's com
 [Redherring: Suggests that Val did it before she went to pick up the MC]
 [Redherring: Doubt in the player's mind if she can glamor him]
 
-[Clue: Discovery of cut brakes reveal it was premeditated]
-[Clue: Destruction of shutters to kill constable]
 
 [Clue: No signs of forced entry at gate]
 [Clue: One set of beds isn't made, Gage wasn't expected]
 
-[Once player drinks blood, someone complains to Val "Don't tell me you're forcing him to eat those disgusting leftovers from the fridge! It's terrible about poor Alan and all, but there's no reason we can't go out for food, right?"
-
-I told myself it was just tomato juice]
+[I told myself it was just tomato juice]
 
 [speakeasy; "They pass the Volstead Act again when I wasn't looking?"]
 [It's near to a full moon]
 
 [V has deliberately asked for MC to be in the room when she's interrogated to get him a trail of bread crumbs]
 ["Why didn't you just tell me?" "Because I need you to find something I missed. You're a fresh set of eyes, and I don't want to bias what you see."]
-[Carter died some 70 years ago. Cases was stone cold. And the fact that Val was bothering to throw me at it meant that she thought the killer was still alive.][You have to wait to sire, Val waited 50 years]
+[Sinclair died some 70 years ago. Cases was stone cold. And the fact that Val was bothering to throw me at it meant that she thought the killer was still alive.][You have to wait to sire, Val waited 50 years]
 [Someone opens the curtains to a room, auto shutter controls, player must escape]
 [V. Detective is dirty cop? Hence why the real killer isn't worried?]
 [V. Det. is more interested in favors from old money than actual cash payoffs]

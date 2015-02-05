@@ -1,51 +1,44 @@
-- Write guest room descriptions
-- Dialogue for first_investigation
-    - Nathan
-    - Jan
-    - Scott
-- Shutters come down as first_invest starts
-- First night starts after X turns or X clues
-- Once inside, no choice but to sleep or wait
-- Next day, note on nightstand, shutters open
-- Go to hairpin turn again
-
-- COMPUTER LOGIC
-    - EMAILS
-    - Web autocomplete
-- FUSE BOX logic
-- TODO: Make walkthrough getting all clues
 - TODO Later: Make one that gets none, compare
 
 - MAKE SPECIAL EVENTS IN BOLD, SO PEOPLE DON"T MISS THEM?
-- Wall clock shows the time as it finishes, creating locked from the outside.
 
 
 - Let Adrian go down first when the player goes south in the hallway, have a line about "don't keep me waiting too long"
+================================
+
+Necessary for game to work / work better
+
+- TODO: Pool of wine should be a struggle clue
+- TODO: Fallen book should be a struggle clue
+
+
+=================================
+
+Critical impact on experience
+
+- TODO: Quip-suggestion phrase in normal game, interrogation, and talking to self
+- TODO: Add descriptions for scenery obviously listed in room descriptions
+- TODO: Add (press any key) when necessary
+- TODO: Game hint depending on scene/scene status
+- TODO: Change I beg your pardon message
+- TODO Fix fucking topics double printing and having wrong tenses or whatever
+- Examine self, you know people are going to do that shit and complain.
+
+=================================
 
 
 ==================================
 
 Bugs
 
-- Fix fucking topics double printing and having wrong tenses or whatever
-
-- Lots of double spaces throughout.
 
 
 ==================================
 
-Nice to have
-
-- Prearrival, Val says she'll look around the house.
-    - TODO it would be nice to give Val actual pathing, but this is really just a nice to have
+Won't Fix / No time to implement
 
 - Drinking blood (optional) will give heightened senses and make solving puzzles easier.
-- Add descriptions for scenery obviously listed in room descriptions
 - TODO: Sensible messages for getting in car
-- TODO: Change I beg your pardon message
-- TODO: Pool of wine should be a struggle clue
-- TODO: Fallen book should be a struggle clue
-
 - Emails list full of boring student crap, need to key off the initials from book
 - Getting into a knife fight is a bad proposition. The loser dies in the street, the winner gets to die in the hospital.
 
@@ -53,7 +46,6 @@ Low priority:
 - Some kind of freaking map
 - Add scenery to all the mountain areas, add them to region I guess
 - Clock in the vals_car scenery
-- Examine self, you know people are going to do that shit and complain.
 
 - Add stage direction type sentences to the beginning of paragraphs
 

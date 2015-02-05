@@ -6,10 +6,15 @@ Val looked at him blankly for a moment, the face of a woman realizing that if sh
 (give phone to her, show that it's broken)
 (make sure player can't drop items)
 
+======
+TODO bug: the player can probably use the computer outside of the room, and during interrogation
+
 ===================
-Valentine Elizabeth Carter. Born 1902, Los Angeles, CA. turned 1936 by Emil Carter.
+
+Valentine Nicole Sinclair. Born 1903, Los Angeles, CA. turned 1936 by Emil Carter.
 
 It was all news to me.
+
 ======
 
 She turned around and looked over her shoulder, holding me briefly in the piercing emerald gaze.
@@ -31,6 +36,10 @@ Gold ring around Val's neck
     - Missing car
 
 ========
+
+We all have things we'd rather not let go of.
+
+====
 
 You don't seem like her type.
 It wasn't really a question, so I let that 
@@ -298,3 +307,21 @@ I like a challenge.
 
 What was the last time you were in Vegas?
 
+
+========
+
+SEXY_PARTIES_KNOWN
+
+- Did the university know about his hobbies up here?
+- I'm sure they must have. This was going on for quite some time. If anyone had anything to say about it, I'm sure they hushed it up pretty quick.
+
+
+=======
+
+There was a posh bar set that looked like it was made from riveted aircraft aluminum and stitched leather. He was using it to mix a martini, badly.
+
+========
+
+It happens more likely than you'd think, and most get away with it. There's just not enough oversight to peep over everyone's shoulders all the time. Some people think they're too clever to get caught, some think the rules don't apply to them, some see a juicy new recruit they don't want to pass up, and backdate all the paperwork. Some even get caught up in the throes of passion with a pretty little plaything.
+
+=====

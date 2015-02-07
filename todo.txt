@@ -1,4 +1,5 @@
 - TODO Later: Make one that gets none, compare
+- TODO: Instead of talking to Val during discovery, custom message and then she leaves
 
 - MAKE SPECIAL EVENTS IN BOLD, SO PEOPLE DON"T MISS THEM?
 

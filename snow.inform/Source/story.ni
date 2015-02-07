@@ -1,9 +1,5 @@
 "A Long Drink" by Owen Parks.
 The story headline is "An Interactive Mystery".
-[Cover art by Dan Smith
-Licensed under Creative Commons By 2.0
-Image at: https://flic.kr/p/pPkjHD
-License Terms at: https://creativecommons.org/licenses/by/2.0/]
 
 Release along with a website and interpreter and cover art.
 The Release number is 2.
@@ -35,7 +31,7 @@ When play begins:
 
 A clue is a kind of thing.
 
-Chapter 2 - Game Scene List
+Chapter 1 - Game Scene List
 
 Mountain_Driving is a scene. Mountain_Driving begins when play begins. Mountain_Driving ends when Car_Escape begins.
 Car_Escape is a scene. Car_Escape begins when Upturned Car is visited. Car_Escape ends when Bottom of Cliff is visited.
@@ -72,16 +68,19 @@ To decide whether the guests arrive:
 [TODO: This only seems to work if turn count is true]
 [TODO: make a table of messages and pick one]
 First_Sleepy is a truth state that varies. First_Sleepy is initially false.
-To decide whether First_Sleepy:
+To decide whether or not First_Sleepy:
 	If First_Investigation is happening:
-		If the Turn Count is greater than 50:
+		If the Turn Count is greater than 100:
 			Decide yes;
 		If FoundClues is greater than 4:
 			Decide yes;
 	Decide no.
 	
 First_Slept is a truth state that varies. First_Slept is initially false.
-SHUTTERS_DOWN is a truth state that varies. SHUTTERS_DOWN is false.
+SHUTTERS_DOWN is a truth state that varies. SHUTTERS_DOWN is initially false.
+DET_DISCOVERED is a truth state that varies. DET_DISCOVERED is initially false.
+
+[TODO cut off passage to guest rooms]
 
 Section 1 - Sleep Mechanics
 
@@ -89,7 +88,7 @@ Every turn:
 	If First_Sleepy is true:
 		say "I was starting to feel tired. Everything that had happened in the past few days was finally starting to take its toll. I thought it might help to find a bedroom and sleep for a few hours."
 
-Chapter 3 - Scene Mountain_Driving
+Chapter 2 - Scene Mountain_Driving
 
 Introcar is a region.
 
@@ -143,7 +142,7 @@ After reading a command:
 			now the player is in the Upturned Car;
 			stop the action.
 	
-Chapter 4 - Scene Car_Escape
+Chapter 3 - Scene Car_Escape
 
 A room is either strapped or unstrapped. A room is usually unstrapped.
 When the Car_Escape begins:
@@ -204,13 +203,13 @@ After reading a command:
 			say "The seat belt held me firmly in place in what was now the bottom of the upturned car. I wasn't going to be able to see or do much of anything until I unbuckled myself.";
 			stop the action;
 
-Chapter 5 - Scene Cliff_Climbing
+Chapter 4 - Scene Cliff_Climbing
 
 Bottom of Cliff is a room. Bottom of Cliff is below Sharp Bend. The description is "I stood on a ridge densely packed with trees some ways below the highway. My wrecked car sat a few feet away. The ridge extended as far as I could see to the north, going nowhere in particular. To the west I saw the steep incline the car had rolled down, and the path it'd cut through the snow and brush.[if Cliff_Climbing is happening][paragraph break]I was miles from nowhere, and the cherry on top was that my cell phone was broken. It had stopped snowing for the moment. The night sky was starting to lighten, I figured I had an hour before sunrise.[paragraph break]Fucking swell.[end if]".
 Instead of going west in the Bottom of Cliff:
 	try going up.
 
-Chapter 6 - Scene Car_Embarking
+Chapter 5 - Scene Car_Embarking
 
 Section 1 - Sharp Bend
 
@@ -250,7 +249,7 @@ When Car_Embarking begins:
 	say "The second I turned my head to look down the lane, I saw a pair of headlights approach. A black Mercedes pulled up and came to a stop just in front of me. The timing was a little unnerving. The passenger door opened, and I saw Val looking out at me.[paragraph break][quotation mark]Get in,[quotation mark] she said.";
 	now the Valcar_Container is in the Sharp Bend.
 
-Chapter 7 - Scene Riding_Scene
+Chapter 6 - Scene Riding_Scene
 
 When Riding_Scene begins:
 	Now the player is in the Sedan.
@@ -269,7 +268,7 @@ Instead of waiting in the Sedan during Riding_Scene:
 	Otherwise:
 		Continue the action.
 
-Chapter 8 - Scene Cliff_Gameover
+Chapter 7 - Scene Cliff_Gameover
 
 Mountain Ridge is north of Bottom of Cliff. The description is "I had a bad feeling as I walked my way along the ridge, trudging a couple of miles through the foot-deep snow. The path didn't seem to be leading anywhere, and the sky kept getting lighter as I went. I still had enough time to turn back, if I wanted to."
 
@@ -280,9 +279,9 @@ Precipice is north of Dense Forest. The description is "The forest abruptly ende
 When Cliff_Gameover begins:
 	end the story saying "The north end of the ridge had a stunning view of the eastern valley, and unfortunately the horizon, too. Through what must have been some quirk of fate, I never made it to the chalet. I smiled sardonically at the sunrise, searing like a fire newly kindled, even on that cold, windswept ridge. I guess I'd been spared what would have no doubt been an interminable weekend.[paragraph break]As far as last sights went, I supposed it could have been worse."
 
-Chapter 9 - Scene Body_Discovery
+Chapter 8 - Scene Body_Discovery
 
-Val_House is a woman. The printed name is "Val". Understand "Val" as Val_House. The description is "She wore a belted black overcoat with straight shoulders, which covered all of her except for the bottom of a long pencil skirt. She hadn't bothered taking her driving gloves off. I couldn't put my finger on it, but there was something stiffly formal and practised about the way she moved.[if Val_House is in the Reading_Nook][paragraph break]Her eyes rested on what was left of the professor, her expression unreadable.[end if]".
+Val_House is a woman. The printed name is "Val". Understand "Val" as Val_House. The description is "She wore a belted black raincoat with straight shoulders, which covered all of her except for the bottom of a long pencil skirt. She hadn't bothered taking her driving gloves off. I couldn't put my finger on it, but there was something stiffly formal and practised about the way she moved.[if Val_House is in the Reading_Nook][paragraph break]Her eyes rested on what was left of the professor, her expression unreadable.[end if]".
 
 Rule for writing a paragraph about Val_House:
 	If Val_House is in the Reading_Nook:
@@ -293,6 +292,10 @@ Rule for writing a paragraph about Val_House:
 When Body_Discovery begins:
 	now Val_House is in the Foyer;
 	say "Val got out of the car and took her bag out of the trunk.[paragraph break][quotation mark]Come on, I'll introduce you to Alan,[quotation mark] she said, walking up the drive.".
+	
+Instead of saying hello to Val_House during Body_Discovery:
+	say "I started to talk to her, but she walked further into the house, apparently looking for the owner.";
+	remove Val_House from play.
 
 Driveway is a room. "We stood at the end of a long gravel drive, staring up at a large house with a dark red wood exterior. Steps to the east led to a porch that spanned the facade of the place, wrapping around to a deck in the back that presumably had a great view of the lake and the countryside. It was more ski lodge than cabin, and looked like it could comfortably shelter an entire biathlon team if it had to."
 House is scenery in the Driveway. Understand "facade/chalet/lodge" as house. The description is "It seemed oddly imposing for what was just another vacation home in the Adirondacks. From the front, it looked like two or three spacious floors with high ceilings. The steeply angled roofs were clearly designed to shed the several feet of snow dumped on it by nor'easters every year. ".
@@ -436,16 +439,19 @@ a wineglass is in the Reading_Nook. It is a clue. The description is "A crystal 
 When Body_Discovery ends:
 	Now Val_House is in the Reading_Nook;
 	say "Val came up the stairs, freezing the second she saw the body. Her eyes narrowed, and I could tell her mind was racing, the first time I'd seen anything but placid boredom on her face. Half of me was relieved to know that there was something in this world that could perturb her. The other half was unnerved by it. She looked away and hitched the poker face back on pretty quick.[paragraph break]Val nodded at the poor stiff and said, [quotation mark]Meet Professor Alan Bowden, our host this weekend.[quotation mark][line break]";
+	say "(press any key)";
 	wait for any key;
 
-Chapter 10 - Scene Prearrival
+Chapter 9 - Scene Prearrival
 
+Instead of saying hello to Val_House during Prearrival:
+	say "She stood there in stunned silence. There'd be time for questions later.";
 
-
-Chapter 11 - Scene Guest_Arrival
+Chapter 10 - Scene Guest_Arrival
 
 When Guest_Arrival begins:
 	say "[if the player is not in the Foyer]I heard the front door open, and the sound of voices from the foyer. It closed a minute later.[end if][if the player is in the Foyer]The front door opened, and three men filed in, a lanky one in designer jeans holding the door for the other two. He closed it behind them, and they stood there looking around and putting snow on the rug, as though they expected a butler to come and announce them.[end if][paragraph break][if the player is in the Reading_Nook]Val and I glanced at each other across the dead man, and she left back down the stairs.[end if][if the player is in the Greatroom]Val came down the stairs, and crossed the room toward the sound of the noise.[end if]";
+	say "(press any key)";
 	wait for any key;
 	now Jan_Arrival is in the Foyer;
 	now Scott_Arrival is in the Foyer;
@@ -487,21 +493,21 @@ To decide whether first investigation starts:
 		decide yes;
 	decide no.
 
-Chapter 12 - Scene First_Investigation
-
-
+Chapter 11 - Scene First_Investigation
 
 When First_Investigation begins:
 	say "Val waited a minute for the conversations the three were having to die down.";
 	say "(Press a key)";
 	wait for any key;
-	[TODO: clear the screen]
+	clear the screen;
 	say "She folded her arms across her chest and took a deep breath quiet enough that only I heard it.[paragraph break][quotation mark]Gentlemen, we have a problem. Alan's dead. We found him upstairs, stabbed.[quotation mark][paragraph break]A stunned silence followed. When it was clear no one was going to break it, she went on. [quotation mark]I'm going to call it in to the New York Magistrate's and find out who isn't on vacation that they can send over.[quotation mark] She lifted a hand, exposing her pale wrist enough to read the face of her watch. [quotation mark]It's going to be at least six hours before they can send someone, and they'll have to make it through what's left of the winter storm. Until we can figure out exactly what happened and who's responsible, I suggest we all stay in our rooms. My associate here has some experience with police investigation, he can do the basics until the officials show up.[quotation mark][paragraph break]Nathaniel seemed to bristle at this. [quotation mark]Hang on a minute, wait in our rooms? Am I to take it you're presuming us suspects? How do I know you and your friend didn't just kill Alan?[quotation mark][paragraph break]Val shrugged and pointed at me. [quotation mark]It happens that my friend here is the only one of us with a solid alibi, unless I'm mistaken.[quotation mark][paragraph break]The lack of a response indicated that she wasn't, which bothered me a little. The three picked up their bags and trundled down the hall, varying degrees of insulted, Jan called back in a raised voice. [quotation mark]You're making a big mistake. Don't you remember what happened at Lake Geneva in 1986? I think there's someone out there who got Alan, and now we're sitting ducks.[quotation mark][paragraph break]He said it with false bravado, and I shouldn't have let the idea take root in my mind, but it did.";
 	now Nathaniel_Investigation is in the Nathan_Room;
 	now Scott_Investigation is in the Scott_Room;
 	now Jan_Investigation is in the Jan_Room;
 	now the front door is closed;
-	now the front door is locked.
+	now the front door is locked;
+	say "(Press a key)";
+	wait for any key;
 	
 [TODO: this still seems to take an extra turn for Val to appear]
 When First_Investigation ends:
@@ -512,7 +518,7 @@ Shutter_Counter is a number variable. Shutter_Counter is usually 0.
 Every turn during First_Investigation:
 	Increase Shutter_Counter by 1;
 	If Shutter_Counter is 3:
-		say "Whisper quiet, shutters slid down on the inside of every window in the house. They looked like opaque fabric window shades, but the heavy sound of the seal told me the core was probably metal. The moonlight went out as suddenly as if someone had thrown a curtain over it.[paragraph break]";
+		say "With no more sound than a loud whisper, shutters slid down on the inside of every window in the house. They looked like opaque fabric window shades, but the heavy sound of the seal told me the core was probably metal. The moonlight went out as suddenly as if someone had thrown a curtain over it.[paragraph break]";
 		now SHUTTERS_DOWN is true;
 		say "(press any key)";
 		wait for any key.
@@ -563,7 +569,7 @@ Section 4 - Office
 
 Office is a room. Office is north of the Hallway_Downstairs. The description is "Of all the rooms I'd seen in the house, this one looked the most lived in. It had the musty smell of old books mixed with stale coffee coming from several cups on the desk.".
 
-cups are scenery in the office. The description is "Mugs of coffee, stone cold. I could see brown stains on the sides of the half-empty cups where the liquid had evaporated. They'd been here a few days, but that didn't indicate a time of death. The kind of man who leaves more than two coffee cups sitting on a desk isn't in a hurry to clean up after himself.".
+cups are scenery in the office. The description is "Mugs of coffee, stone cold. I could see rings on the sides of the half-empty cups where the liquid had evaporated. They'd been here a few days, but that didn't indicate a time of death. The kind of man who leaves more than two coffee cups sitting on a desk isn't in a hurry to clean up after himself.".
 Instead of taking the cups:
 	say "Val asked me to find his killer. I wasn't going to do his dishes.";
 
@@ -650,19 +656,20 @@ The sweater is scenery in the Jan_Room. The description is "It was a thick wool 
 
 [TODO: If the player is too confused, simply change to an objective, use the "acting confused" cues from EmShort]
 
-Chapter 13 - Scene First Sleep
+Chapter 12 - Scene First Sleep
 
 Section 1 - PC Bedroom
 
 When First_Sleep begins:
-	remove Val_House from play;
-	
+	remove Val_House from play;	
 	
 When First_Sleep ends:
 	say "I changed into my pajamas and got into bed under the covers. I kept a reasonable distance between the two of us on the bed, though she didn't seem the type to get prudish about that kind of thing. I lay there thinking for a long time, trying to put together everything I'd heard into a picture that made sense. After five minutes that took two hours, I fell asleep, and dreamt of nothing.";
 	remove Val_Sleep from play;
 	say "[paragraph break](press any key)";
 	wait for any key.
+
+[Vampires don't dream?]
 
 PC_Bedroom_Door is a closed door. The printed name is "bedroom door".
 PC_Bedroom_Door is scenery.
@@ -744,7 +751,7 @@ what time sunrise is a repeatable questioning quip.
 		it is off-limits.
 		it is available.]
 
-Chapter 14 - Conversations First_Investigation
+Chapter 13 - Conversations First_Investigation
 
 Section 1 - Val
 
@@ -783,7 +790,7 @@ who nathaniel is a repeatable questioning quip.
 what was in it for me is a repeatable questioning quip.
 	The printed name is "what was in it for me". The true-name is "what was in it for me".
 	The comment is "[quotation mark]Seems like a pretty long way to stick my neck out for you. What's in it for me, exactly?[quotation mark]".
-	The reply is "She gave me a sharp look. I could tell it got a lot of use, it was just as practiced as everything else about her. Here was a woman who wasn't afraid to throw her weight around, and made it a bad habit to make her do it.[paragraph break][quotation mark]Think of me as your first client as a private dick. I'm asking you to make this one on the house. You owe me, remember?[quotation mark][paragraph break]She had me there. I didn't know if this was the kind of thing I could pay back, but I didn't like owing that kind of debt.".
+	The reply is "She gave me a sharp look. I could tell it got a lot of use, it was just as practiced as everything else about her. Here was a woman who wasn't afraid to throw her weight around, and made it a bad habit to force her to do it.[paragraph break][quotation mark]Think of me as your first client as a private dick. I'm asking you to make this one on the house. You owe me, remember?[quotation mark][paragraph break]She had me there. I didn't know if this was the kind of thing I could pay back, but I didn't like owing that kind of debt.".
 	It quip-supplies Val_House.
 	The proper scene is First_Investigation.
 	
@@ -803,34 +810,29 @@ whether he's been here before is a repeatable questioning quip.
 	It quip-supplies Nathaniel_Investigation.
 	The proper scene is First_Investigation.
 	
-why isn't nate upset is a a repeatable questioning quip.
+why he isn't especially upset is a a repeatable questioning quip.
 	The printed name is "why he isn't especially upset".
-	The comment is "[quotation mark]You don't seem all that upset he's dead.[quotation mark]".
-	The reply is "[quotation mark]I liked him well enough, but it was really only ever a friendship of convenience. He threw great parties, knew the right people, you know. He raised both eyebrows playfully. You can't possibly still think one of us did it? I think it's pretty clear that it was an outsider who did the killing.[quotation mark]".
+	The comment is "'You know there's a dead man upstairs, right?' I asked.[line break]'Oh, no one's arguing that, sweetheart.'[line break]'It's just that you don't seem all that upset.'[line break]'I liked him well enough, but it was really only ever a friendship of convenience. He threw great parties, knew the right people, you know. He raised both eyebrows playfully. You can't possibly still think one of us did it? I think it's pretty clear that it was an outsider who did the killing.".
+	The reply is "".
 	It quip-supplies Nathaniel_Investigation.
 	The proper scene is First_Investigation.
-an availability rule for why isn't nate upset:
+an availability rule for why he isn't especially upset:
 	If the current interlocutor is not Nathaniel_Investigation, it is off-limits;
 	if the player recollects why nathaniel here, it is available;
 	otherwise it is off-limits.
 	
-about nates alibi is a repeatable questioning quip.
+about nates alibi is a repeatable questioning quip. It indirectly-follows why he isn't especially upset.
 	The printed name is "about his alibi".
 	The comment is "[quotation mark]Where were you last night?[quotation mark]".
-	The reply is "His lofty affected manner disappeared the second I asked. His smile was still fixed on his face, but the black eyes were suddenly cold and threatening. I met his gaze, unflinching. It felt like skinny dipping in Lake Ontario.[paragraph break][quotation mark]I don't know what the hell you think you're playing at, but let's get one thing straight. You're nobody, and if you carry on making wild accusations, you're going to make a lot of enemies. Who knows, maybe even one your little girlfriend can't protect you from.[quotation mark]".
+	The reply is "His lofty affected manner disappeared the second I asked. His smile was still fixed on his face, but the black eyes were suddenly cold and threatening. I met his gaze, unflinching. It felt like skinny dipping in Lake Ontario.[paragraph break][quotation mark]I don't know what the hell you think you're playing at, but let's get one thing straight. You're nobody, and if you carry on making wild accusations, you're going to make a lot of enemies. Who knows, maybe even one your little sugar mommy can't protect you from.[quotation mark]".
 	It quip-supplies Nathaniel_Investigation.
 	The proper scene is First_Investigation.
-an availability rule for about nates alibi:
-	If the current interlocutor is not Nathaniel_Investigation, it is off-limits;
-	if the player recollects why isn't nate upset, it is available;
-	otherwise it is off-limits.
 
 what sanction is a repeatable questioning quip.
 	The printed name is "about the Sanction".
-	The comment is "[quotation mark]What happens to folks who don't wait their turn?[quotation mark]".
-	The reply is "[quotation mark]The Circle only really has a single sanction.[quotation mark][line break]
-[quotation mark]What is it?[quotation mark][line break]
-He gave me a smile enough like a leer that it made my skin crawl, and looked at me through half-lidded eyes.[line break][quotation mark]What do you think?[quotation mark]".
+	The comment is "'What happens to folks who don't wait their turn for becoming a Patron?'[line break]'The Circle only really has a single sanction.'[line break]'What is it?'[line break]
+He gave me one of his best condescending smiles, and looked at me through half-lidded eyes. It made my skin crawl.[line break][quotation mark]What do you think?[quotation mark]".
+	The reply is "".
 	It quip-supplies Nathaniel_Investigation.
 	The proper scene is First_Investigation.
 
@@ -888,25 +890,25 @@ about climbing is a repeatable questioning quip.
 about business is a repeatable questioning quip.
 	The printed name is "about business".
 	The comment is "[quotation mark]How are the markets treating you? With everything I hear in the news...[quotation mark] I trailed off, waiting for the self-appointed expert to jump in and correct the ignorant layperson. He didn't disappoint.".
-	The reply is "[quotation mark]Oh sure, we took a hit during the downturn, but so did everyone. We'll bounce back, and I'm not worried, nor are our high-profile clients.[quotation mark][paragraph break]It all sounded a little too well-rehearsed. I saw him give me a quick once over, it was almost imperceptible.[paragraph break][quotation mark]Now's the best time to buy in, when you consider the numbers. Do you know someone who'd be interested in an account with us? Your friend, Ms. Sinclair, perhaps?[quotation mark][line break]I chuckled politely and gave a noncommital shrug.[line break][quotation mark]There'd be a finder's fee in it for you, of course, if things did move to business. Think it over.[quotation mark]".
+	The reply is "[quotation mark]Oh sure, we took a hit during the downturn, but so did everyone. We'll bounce back, and I'm not worried, nor are our high-profile clients.[quotation mark][paragraph break]It all sounded a little too well-rehearsed. I saw him give me a quick once over, it was almost imperceptible.[paragraph break][quotation mark]Now's the best time to buy in, when you consider the numbers. Do you know someone who'd be interested in an account with us? Your friend, Ms. Sinclair, perhaps?[quotation mark][line break]I chuckled politely and gave a noncommittal shrug.[line break][quotation mark]There'd be a finder's fee in it for you, of course, if things did move to business. Think it over.[quotation mark]".
 	It quip-supplies Jan_Investigation.
 	The proper scene is First_Investigation.
 
 about val jan is a repeatable questioning quip.
 The printed name is "about Val".
 	The comment is "'You've met Val?'".
-	The reply is "He looked surprised. 'Sure. Everybody knows Val. For someone who's been around as long as her, I'm surprised she hasn't tried her hand at politics. Just about all the other elders love their little backroom deals and power plays. She hasn't been very interestd in becoming a Patron either. I think you're her first.'".
+	The reply is "He looked surprised. 'Sure. Everybody knows Val. For someone who's been around as long as her, I'm surprised she hasn't tried her hand at politics. Just about all the other elders love their little backroom deals and power plays. She hasn't been very interested in becoming a Patron either. I think you're her first in some fifty years.'".
 	It quip-supplies Jan_Investigation.
 	The proper scene is First_Investigation.
 
-about patron is a repeatable questioning quip.
+about patronage is a repeatable questioning quip.
 	The printed name is "about Patronage".
 	The comment is "'Patron?'".
 	The reply is "He gave a hearty laugh that didn't endear me any more to him. 'Wow, I guess she's as tight-lipped as they say. Patronage is the flowery little euphemism for the way we expand our little Circle. I was told the term came from the aristocrats in the old days. You know, bring in an artist or a mathematician, someone of value, and preserve their genius for all time. And of course, the prestige that comes from having such a stable. A little trophy case to show off in front of the other elders.' He gave me a grin that made him look like an overgrown schoolboy. 'Well, that was the idea, anyway. In reality, Patrons have needs like anyone else. They'll bring in someone who can bring something practical to the table. Unique skills, money... love.' His grin was starting to look more like a leer.".
 	It quip-supplies Jan_Investigation.
 	The proper scene is First_Investigation.
 		
-an availability rule for about patron:
+an availability rule for about patronage:
 	if the current interlocutor is not Jan_Investigation, it is off-limits;
 	if the player recollects about val jan, it is available;
 	otherwise it is off-limits.
@@ -920,7 +922,7 @@ how long she'd known Bowden is a repeatable questioning quip.
 	It quip-supplies Val_Sleep.
 	The proper scene is First_Sleep.
 	
-Chapter 15 - Scene Wakeup
+Chapter 14 - Scene Wakeup
 
 When Wakeup begins:
 	now the front door is unlocked;
@@ -982,7 +984,7 @@ about anyone outside is a repeatable questioning quip. It indirectly-follows abo
 	The reply is "'Nope, all quiet out there.' Something in my face must've shown my silent vote of no confidence, since he tried to follow it up. 'Listen, punk. I've been in this business twice as long as you've been alive. If I don't see nobody out there, there ain't nobody.' I didn't tell him that that meant exactly jack and shit in my book. One look at him told me he didn't have an eye for detail. There's people on every force who can't think their way out of a wet paper bag, and I'd have bet my weight in cake donuts that Detective Castillo here was one of them.".
 	It quip-supplies Adrian_Investigation.
 
-Chapter 16 Interrogation
+Chapter 15 Interrogation
 
 When Interrogation begins:
 	say "TODO[paragraph break]";
@@ -1030,7 +1032,7 @@ about her husband interro is a repeatable questioning quip. it indirectly-follow
 	It quip-supplies val_interrogation.
 	The proper scene is interrogation.
 
-Chapter 17 Second_Investigation
+Chapter 16 Second_Investigation
 
 When Second_Investigation begins:
 	Now the Valcar_Container is in the Driveway;
@@ -1078,6 +1080,12 @@ Section 1 - Val_SecondInv
 	
 Val_SecondInv is a woman. The printed name is "Val". Understand "Val" as Val_SecondInv.
 
+about the deputy is a repeatable questioning quip.
+	The comment is "'That guy was quite a character,' I said, trying not to sound too judgemental in case Val liked him. It seemed unlikely.[line break]'Adrian? What did you make of him, was he up to your standards for a lawman?'[line break]'Ever hear the schoolyard joke about what pennies are made of?'[line break]She laughed. It wasn't a high, put-on laugh, but something rich and throaty, like a note from a cello.".
+	The reply is "".
+	It quip-supplies Val_SecondInv.
+	The proper scene is Second_Investigation.
+
 about my file val is a repeatable questioning quip.[ It indirectly-follows about my file adrian.]
 	The printed name is "about my file".
 	The comment is "I put on my tough detective voice to try and take some of the surprise out of it. I had an image to maintain. 'I heard about my file from Castillo. You've been stalking me for weeks now?'[line break]'I wouldn't put it like that.'[line break]'How would you put it then?'[line break]'I got the go ahead for a Patron application I put in a while back. That sort of opportunity doesn't come every day, so I scouted for a recruit. And then I made you an offer.'".
@@ -1098,7 +1106,7 @@ about our first meeting is a repeatable questioning quip. It indirectly-follows 
 
 what she wanted to see me about is a repeatable questioning quip.
 	The printed name is "what she wanted to see me about".
-	The comment is "She came over and leaned against the wall next to me. She leaned over, as though she were stretching, or just killing time on a lazy Sunday afternoon.[line break]'Did you tell anyone you were coming here? Your boss, or your partner, maybe?'[line break]I shook my head. 'Why, what's this all about?'[line break]'What if I told you that a week ago, Alan told me he was in some trouble?'[line break][if BLACKMAIL_KNOWN is true]'You mean blackmail.' I didn't make a question out of it. She looked up at me, then around to make sure no one else was in earshot.[otherwise]'Go on,', I said.[end if][line break]".
+	The comment is "She came over and leaned against the wall next to me. She bent over slightly, as though she were stretching, or just killing time on a lazy Sunday afternoon.[line break]'Did you tell anyone you were coming here? Your boss, or your partner, maybe?'[line break]I shook my head. 'Why, what's this all about?'[line break]'What if I told you that a week ago, Alan contacted me, saying he was in some trouble?'[line break][if BLACKMAIL_KNOWN is true]'You mean blackmail.' I didn't make a question out of it. She looked up at me, then around to make sure no one else was in earshot.[otherwise]'Go on,', I said.[end if][line break]".
 	The reply is "".
 	It quip-supplies Val_SecondInv.
 	The proper scene is Second_Investigation.
@@ -1149,8 +1157,19 @@ why she didn't tell me about the blackmail is a repeatable questioning quip. It 
 
 what he was being blackmailed over is a repeatable questioning quip. It indirectly-follows why she didn't tell me about the blackmail.
 	The comment is "'Did he tell you what this was about?'[line break]'No. He could be an idiot sometimes, but thank God he had the sense to not put it in an e-mail.'[line break]'You must have some idea. How much shady business could a guy like that possibly have going on?'[line break]'I have an idea. Let's just say he didn't invite the students up here for polite little tea parties.'".
+	It quip-supplies Val_SecondInv.
+	The proper scene is Second_Investigation.
 
-Chapter 18 ComingBack
+about the bourbon is a repeatable questioning quip.
+	The comment is "'Your friend Alan seems to have kept this place well-stocked with liquor,' I said.[line break]'Like I mentioned, he entertained a lot of guests. You seem to have a taste for bourbon yourself.'[line break]'Sure,' I said. 'There's this great speakeasy I know on the East Side, off Houston Street.'[line break]'A [italic type]what?[roman type]'[line break]'A speakeasy,' I repeated. She rolled her eyes.".
+	It quip-supplies Val_SecondInv.
+	The proper scene is Second_Investigation.
+
+an availability rule for about the bourbon:
+	If the bottle of bourbon is unexamined:
+		It is off-limits.
+
+Chapter 17 ComingBack
 
 When ComingBack begins:
 	Now the front door is locked;
@@ -1167,7 +1186,7 @@ To decide whether the sun rises:
 	If Sun_Counter > 2, yes;
 	no.	
 
-Chapter 19 DiscoverDet
+Chapter 18 DiscoverDet
 
 When DiscoverDet begins:
 	say "Through the stillness of the house, I heard yelling upstairs. It started as a panicked cry of shock and surprise, but quickly turned to screams of agony. It went on, loud and incoherent, muffled by the wooden walls of the house, getting more raspy and strangled, like a pillow smothering a face. Then, just as suddenly, it stopped. I felt a lump in my stomach like a lead weight, and reached for a gun that wasn't there.";
@@ -1181,7 +1200,7 @@ When DiscoverDet ends:
 
 [shutters are open in parts of the upstairs and the guest room and the hallway]
 
-Chapter 20 CellarThink
+Chapter 19 CellarThink
 
 When CellarThink begins:
 	[now the can't greet yourself rule is not listed in any rulebook;]
@@ -1232,7 +1251,7 @@ why someone cut my brakes is a questioning quip.
 [TODO: Rest of the clues]	
 
 
-Chapter 21 VillainMonologue
+Chapter 20 VillainMonologue
 
 When VillainMonologue begins:
 	now the current interlocutor is Scott_Villain.
@@ -1262,7 +1281,7 @@ how he planned on getting away is a questioning quip. The printed name is "how h
 	It quip-supplies Scott_Villain.
 	The proper scene is VillainMonologue.
 	
-Chapter 22 GetOutOfDodge
+Chapter 21 GetOutOfDodge
 
 When GetOutOfDodge ends:
 	now the front door is unlocked;
@@ -1271,7 +1290,7 @@ After waiting during GetOutOfDodge:
 	now SHUTTERS_DOWN is false;
 	say "The shutters clicked open, the most musical sound I'd ever heard in my life.";
 	
-Chapter 23 Conclusion
+Chapter 22 Conclusion
 
 Instead of entering the Valcar_Container during Conclusion:
 	say "I walked to the Mercedes and she and I looked at each other over the roof. I didn't realize I was on the driver's side until she tossed me the keys.[if BLACKMAIL_KNOWN is true][line break]Your friend Alan seemed like quite a romantic. Thing like that gets a guy in trouble.'[line break]'We all have things we'd rather not let go of. Even you.'[line break]'Like that?' I pointed to the gold ring on her necklace, which had come into view, resting on the front flap of her coat. She gave me a hard look, and for a second I'd thought I'd crossed the line. Then, a smile broke out on her face.[line break]'C[']mon, drive. I'll tell you the whole story on the way.
@@ -1283,7 +1302,7 @@ This one's been cold for 40 years.
 I like a challenge.
 What was the last time you were in Vegas?]
 
-Chapter 24 - Game Mechanics
+Chapter 23 - Game Mechanics
 
 Section 1 - Global Variables
 
@@ -1296,6 +1315,16 @@ This is the make blackmail known rule:
 Section 2 - Command Overrides
 
 Understand the command "read" as something new. Reading is an action applying to one thing. Understand "read [something]" as reading.
+
+Ascending is an action applying to nothing. Understand "ascend", "go
+upstairs", and "upstairs" as ascending.
+
+Instead of ascending: try going up.
+
+Descending is an action applying to nothing. Understand "descend",
+"downstairs", and "go downstairs" as descending.
+
+Instead of descending: try going down.
 
 Understand the command kick as something new. Kicking is an action applying to one thing. Understand "kick [something]" as kicking. 
 Instead of kicking a person:
@@ -1367,7 +1396,11 @@ Understand the command "credits" as something new. Understand "credits" as askin
 Understand the command "about" as something new. Understand "about" as asking for credits.
 
 Carry out asking for credits:
-	say "[italic type]A word from the author:[line break]I'd like to thank to everyone who made this work possible. Special thanks to my beta testers: FK, TF, KG, and DO.[line break]This story has many edge cases. If you believe you have found a bug, please send an email to: alongdrink@beyondcoast.org[paragraph break]Thanks for playing.[roman type]"
+	say "[italic type]A word from the author:[line break]I'd like to thank to everyone who made this work possible. Special thanks to my beta testers: FK, TF, KG, and DO.[line break]This story has many edge cases. If you believe you have found a bug, please send an email to: alongdrink@beyondcoast.org[paragraph break]Cover art by Dan Smith
+Licensed under Creative Commons By 2.0
+Image at: https://flic.kr/p/pPkjHD
+License Terms at: https://creativecommons.org/licenses/by/2.0/
+[paragraph break]Thanks for playing.[roman type]"
 
 Section 5 - Clues and Hints
 
@@ -1418,25 +1451,36 @@ Carry out asking for objective:
 		if the Foyer is not visited:
 			say "Now to find Val's friend. He had to be somewhere in this huge place.";
 		otherwise:
-			say "I'd been around long enough to know something was wrong with this scene: front door open, no one answering. We had to find Alan, wherever he was.";
+			say "I'd been around long enough to know something was wrong with this scene: front door open, no one answering. We had to find Val's friend, wherever he was.";
 	otherwise if Prearrival is happening:
-		say "TODO";
+		say "Alan Bowden was sitting in an armchair in his own home, apparently deader than McKinley. Why was a distant question in my mind at the moment, I was more interested in anything that could tell me who had done it, and where they were.";
 	otherwise if Guest_Arrival is happening:
-		say "TODO";
+		if the location is not Foyer:
+			say "It sounded like we weren't the only guests who had arrived a little late.";
+		otherwise:
+			say "I didn't know who these guys were, but I didn't like the look of them. Either they were in the same boat as Val and I, or one of them might have been related to the murder.";
 	otherwise if First_Investigation is happening:
-		say "TODO";
+		say "Now was my chance to look through the place and see if anything could tell me what happened to Alan, and why.";
 	otherwise if First_Sleep is happening:
-		say "TODO";		
+		say "It had been a long day. I was ready to turn in for the moment. There'd be plenty of time to look around tomorrow.";
 	otherwise if Wakeup is happening:
-		say "TODO";
+		say "I wasn't a morning person, even if the time had shifted to 7 in the evening. Whatever passed for the heat in Val's world must have shown up by now.";
 	otherwise if Interrogation is happening:
-		say "TODO";
+		say "It seemed like we weren't going anywhere until Adrian asked his questions. None of them were going to lead anywhere, of course, but he had to pretend like he was doing a job.";
 	otherwise if Second_Investigation is happening:
-		say "TODO";
+		if the player does not recollect what she wanted to see me about:
+			say "Val looked like she had something to tell me that couldn't wait.";
+		otherwise if the brake line is unexamined:
+			say "We thought that maybe whoever killed Alan had wanted to prevent me from getting here in the first place. At least, I thought it was worth going back to that cliff to find out.";
+		otherwise:
+			say "I had another chance to look around the house for clues. I figured I should use it.";
 	otherwise if ComingBack is happening:
-		say "TODO";
+		say "I had another chance to look around the house for clues. I figured I should use it.";
 	otherwise if DiscoverDet is happening:
-		say "TODO";
+		if DET_DISCOVERED is false:
+			say "The screams I heard from the second floor had the air of finality about them. Someone was dead or dying, and I was running out of time to find out who.";
+		otherwise:
+			say "Adrian was dead. Someone had rigged the shutters in his room to stay open at sunrise, though thankfully something had stopped them before they were able to uncover the whole house.[paragraph break]If there was a manual override or circuit breaker, it'd be in the basement.";
 	otherwise if CellarThink is happening:
 		say "TODO";
 	otherwise if VillainMonologue is happening:
@@ -1445,9 +1489,6 @@ Carry out asking for objective:
 		say "TODO";
 	otherwise if Conclusion is happening:
 		say "TODO";
-	otherwise if CellarThink is happening:
-		say "TODO";
-	
 		
 Understand the command "clues" as something new. Understand "clues" as asking for clues. Asking for clues is an action out of world.
 
@@ -1506,7 +1547,7 @@ Doors are usually closed.
 
 A thing can be either broken or unbroken. A thing is usually unbroken.
 
-The player is carrying a cell phone. The description is "A smartphone a few hardware revisions back. [if the cell phone is broken]The screen had shattered due to an impact, rendering it unusable.[end if]".
+The player is carrying a cell phone. The description of the cell phone is "A smartphone a few hardware revisions back. [if the cell phone is broken]The screen had shattered due to an impact, rendering it unusable.[end if]".
 
 Blood_status is a truth state that varies. Blood_status is usually false.
 
@@ -1634,6 +1675,16 @@ link
 Understand "email" as using the computer.
 Understand "e-mail" as using the computer.
 
+Check using the computer:
+	if Debug_on is true:
+		continue the action;
+	if the location is not Office:
+		say "I'd need to go to the office for that.";
+		stop the action;
+	if Interrogation is happening:
+		say "This didn't really seem like the time to be digging around on the computer.";
+		stop the action;
+
 Using the computer is an action out of world.
 
 Carry out using the computer:
@@ -1683,25 +1734,15 @@ EmailSignature is some text that varies. EmailSignature is "[line break]--[line 
 [They sent a constable, low level]
 [He was putting on a good show, but I could tell he didn't seem to have any interest in finding out who did it. That, or some brass had told him not to.]
 
-[No shit.]
-[Val didn't tell anyone, expecting the blackmail to resolve peacefully]
-[foreshadow shutters as soon as the player enters chalet]
-[tell the truth rather than lying in interrogation]
-
 [Redherring: Isn't it suspicious that Svensson canceled, and then this happened?
 Gage suggests maybe he's making a political move, and/or wants to buy Gage's company]
 
 [Redherring: Suggests that Val did it before she went to pick up the MC]
 [Redherring: Doubt in the player's mind if she can glamor him]
 
-
-[Clue: No signs of forced entry at gate]
-[Clue: One set of beds isn't made, Gage wasn't expected]
-
 [I told myself it was just tomato juice]
 
 [speakeasy; "They pass the Volstead Act again when I wasn't looking?"]
-[It's near to a full moon]
 
 [V has deliberately asked for MC to be in the room when she's interrogated to get him a trail of bread crumbs]
 ["Why didn't you just tell me?" "Because I need you to find something I missed. You're a fresh set of eyes, and I don't want to bias what you see."]
@@ -1710,11 +1751,10 @@ Gage suggests maybe he's making a political move, and/or wants to buy Gage's com
 [V. Detective is dirty cop? Hence why the real killer isn't worried?]
 [V. Det. is more interested in favors from old money than actual cash payoffs]
 [After my car got wrecked in that accident / You still think that was an accident?]
-[V. Det. fastropes in?]
 [Deader than McKinley]
-[Lots of people in the Red Cross]
 [Snobbish vam prefer the lodge to inferior skiing towns, but would love]
-
+[TODO line about patrtons creating vam in the throes of passion]
+[TODO scene in future game where player is slipped a key via a kiss ]
 
 [V.Det: What are bad pennies made of?]
 

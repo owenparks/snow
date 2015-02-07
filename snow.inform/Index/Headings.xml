@@ -11,406 +11,406 @@
     </dict>
     <key>1</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>38</integer>
-        <key>Title</key><string>Chapter 2 - Game Scene List</string>
+        <key>Line</key><integer>34</integer>
+        <key>Title</key><string>Chapter 1 - Game Scene List</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>2</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>86</integer>
+        <key>Line</key><integer>85</integer>
         <key>Title</key><string>Section 1 - Sleep Mechanics</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>3</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>92</integer>
-        <key>Title</key><string>Chapter 3 - Scene Mountain_Driving</string>
+        <key>Line</key><integer>91</integer>
+        <key>Title</key><string>Chapter 2 - Scene Mountain_Driving</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>4</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>146</integer>
-        <key>Title</key><string>Chapter 4 - Scene Car_Escape</string>
+        <key>Line</key><integer>145</integer>
+        <key>Title</key><string>Chapter 3 - Scene Car_Escape</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>5</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>207</integer>
-        <key>Title</key><string>Chapter 5 - Scene Cliff_Climbing</string>
+        <key>Line</key><integer>206</integer>
+        <key>Title</key><string>Chapter 4 - Scene Cliff_Climbing</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>6</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>213</integer>
-        <key>Title</key><string>Chapter 6 - Scene Car_Embarking</string>
+        <key>Line</key><integer>212</integer>
+        <key>Title</key><string>Chapter 5 - Scene Car_Embarking</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>7</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>215</integer>
+        <key>Line</key><integer>214</integer>
         <key>Title</key><string>Section 1 - Sharp Bend</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>8</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>253</integer>
-        <key>Title</key><string>Chapter 7 - Scene Riding_Scene</string>
+        <key>Line</key><integer>252</integer>
+        <key>Title</key><string>Chapter 6 - Scene Riding_Scene</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>9</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>272</integer>
-        <key>Title</key><string>Chapter 8 - Scene Cliff_Gameover</string>
+        <key>Line</key><integer>271</integer>
+        <key>Title</key><string>Chapter 7 - Scene Cliff_Gameover</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>10</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>283</integer>
-        <key>Title</key><string>Chapter 9 - Scene Body_Discovery</string>
+        <key>Line</key><integer>282</integer>
+        <key>Title</key><string>Chapter 8 - Scene Body_Discovery</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>11</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>302</integer>
+        <key>Line</key><integer>305</integer>
         <key>Title</key><string>Section 1 - Mercedes</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>12</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>342</integer>
+        <key>Line</key><integer>345</integer>
         <key>Title</key><string>Section 2 - Greatroom</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>13</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>387</integer>
+        <key>Line</key><integer>390</integer>
         <key>Title</key><string>Section 3 - Reading Nook</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>14</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>441</integer>
-        <key>Title</key><string>Chapter 10 - Scene Prearrival</string>
+        <key>Line</key><integer>445</integer>
+        <key>Title</key><string>Chapter 9 - Scene Prearrival</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>15</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>445</integer>
-        <key>Title</key><string>Chapter 11 - Scene Guest_Arrival</string>
+        <key>Line</key><integer>450</integer>
+        <key>Title</key><string>Chapter 10 - Scene Guest_Arrival</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>16</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>490</integer>
-        <key>Title</key><string>Chapter 12 - Scene First_Investigation</string>
+        <key>Line</key><integer>496</integer>
+        <key>Title</key><string>Chapter 11 - Scene First_Investigation</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>17</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>535</integer>
+        <key>Line</key><integer>541</integer>
         <key>Title</key><string>Section 1 - Main House</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>18</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>537</integer>
+        <key>Line</key><integer>543</integer>
         <key>Title</key><string>Section 2 - Hallway Downstairs</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>19</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>558</integer>
+        <key>Line</key><integer>564</integer>
         <key>Title</key><string>Section 3 - Kitchen</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>20</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>562</integer>
+        <key>Line</key><integer>568</integer>
         <key>Title</key><string>Section 4 - Office</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>21</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>582</integer>
+        <key>Line</key><integer>588</integer>
         <key>Title</key><string>Section 5 - Basement</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>22</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>599</integer>
+        <key>Line</key><integer>605</integer>
         <key>Title</key><string>Section 6 - Upstairs Hallways</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>23</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>607</integer>
+        <key>Line</key><integer>613</integer>
         <key>Title</key><string>Section 7 - Master Bedroom</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>24</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>641</integer>
+        <key>Line</key><integer>647</integer>
         <key>Title</key><string>Section 8 - Guest Bedrooms</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>25</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>653</integer>
-        <key>Title</key><string>Chapter 13 - Scene First Sleep</string>
+        <key>Line</key><integer>659</integer>
+        <key>Title</key><string>Chapter 12 - Scene First Sleep</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>26</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>655</integer>
+        <key>Line</key><integer>661</integer>
         <key>Title</key><string>Section 1 - PC Bedroom</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>27</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>715</integer>
+        <key>Line</key><integer>722</integer>
         <key>Title</key><string>Section 2 - Conversation Riding_Scene</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>28</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>747</integer>
-        <key>Title</key><string>Chapter 14 - Conversations First_Investigation</string>
+        <key>Line</key><integer>754</integer>
+        <key>Title</key><string>Chapter 13 - Conversations First_Investigation</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>29</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>749</integer>
+        <key>Line</key><integer>756</integer>
         <key>Title</key><string>Section 1 - Val</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>30</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>790</integer>
+        <key>Line</key><integer>797</integer>
         <key>Title</key><string>Section 2 - Nathaniel</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>31</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>837</integer>
+        <key>Line</key><integer>839</integer>
         <key>Title</key><string>Section 3 - Scott</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>32</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>871</integer>
+        <key>Line</key><integer>873</integer>
         <key>Title</key><string>Section 4 - Jan</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>33</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>915</integer>
+        <key>Line</key><integer>917</integer>
         <key>Title</key><string>Section 5 - Val_Sleep</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>34</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>923</integer>
-        <key>Title</key><string>Chapter 15 - Scene Wakeup</string>
+        <key>Line</key><integer>925</integer>
+        <key>Title</key><string>Chapter 14 - Scene Wakeup</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>35</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>936</integer>
+        <key>Line</key><integer>938</integer>
         <key>Title</key><string>Section 1 - Adrian_Investigation</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>36</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>985</integer>
-        <key>Title</key><string>Chapter 16 Interrogation</string>
+        <key>Line</key><integer>987</integer>
+        <key>Title</key><string>Chapter 15 Interrogation</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>37</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>1002</integer>
+        <key>Line</key><integer>1004</integer>
         <key>Title</key><string>Section 1 - Adrian_Interrogation</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>38</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>1006</integer>
+        <key>Line</key><integer>1008</integer>
         <key>Title</key><string>Section 2 - Val_Interrogation</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>39</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>1010</integer>
+        <key>Line</key><integer>1012</integer>
         <key>Title</key><string>Section 3 Val_Interrogation</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>40</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>1033</integer>
-        <key>Title</key><string>Chapter 17 Second_Investigation</string>
+        <key>Line</key><integer>1035</integer>
+        <key>Title</key><string>Chapter 16 Second_Investigation</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>41</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>1077</integer>
+        <key>Line</key><integer>1079</integer>
         <key>Title</key><string>Section 1 - Val_SecondInv</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>42</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>1153</integer>
-        <key>Title</key><string>Chapter 18 ComingBack</string>
+        <key>Line</key><integer>1172</integer>
+        <key>Title</key><string>Chapter 17 ComingBack</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>43</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>1170</integer>
-        <key>Title</key><string>Chapter 19 DiscoverDet</string>
+        <key>Line</key><integer>1189</integer>
+        <key>Title</key><string>Chapter 18 DiscoverDet</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>44</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>1184</integer>
-        <key>Title</key><string>Chapter 20 CellarThink</string>
+        <key>Line</key><integer>1203</integer>
+        <key>Title</key><string>Chapter 19 CellarThink</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>45</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>1235</integer>
-        <key>Title</key><string>Chapter 21 VillainMonologue</string>
+        <key>Line</key><integer>1254</integer>
+        <key>Title</key><string>Chapter 20 VillainMonologue</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>46</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>1255</integer>
+        <key>Line</key><integer>1274</integer>
         <key>Title</key><string>Section 1 - Scott_Villain</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>47</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>1265</integer>
-        <key>Title</key><string>Chapter 22 GetOutOfDodge</string>
+        <key>Line</key><integer>1284</integer>
+        <key>Title</key><string>Chapter 21 GetOutOfDodge</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>48</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>1274</integer>
-        <key>Title</key><string>Chapter 23 Conclusion</string>
+        <key>Line</key><integer>1293</integer>
+        <key>Title</key><string>Chapter 22 Conclusion</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>49</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>1286</integer>
-        <key>Title</key><string>Chapter 24 - Game Mechanics</string>
+        <key>Line</key><integer>1305</integer>
+        <key>Title</key><string>Chapter 23 - Game Mechanics</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>50</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>1288</integer>
+        <key>Line</key><integer>1307</integer>
         <key>Title</key><string>Section 1 - Global Variables</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>51</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>1296</integer>
+        <key>Line</key><integer>1315</integer>
         <key>Title</key><string>Section 2 - Command Overrides</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>52</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>1316</integer>
+        <key>Line</key><integer>1345</integer>
         <key>Title</key><string>Section 3 - Conversation Tweaks</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>53</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>1363</integer>
+        <key>Line</key><integer>1392</integer>
         <key>Title</key><string>Section 4 - Credits</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>54</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>1372</integer>
+        <key>Line</key><integer>1405</integer>
         <key>Title</key><string>Section 5 - Clues and Hints</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>55</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>1494</integer>
+        <key>Line</key><integer>1535</integer>
         <key>Title</key><string>Section 6 - Debugging</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>56</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>1501</integer>
+        <key>Line</key><integer>1542</integer>
         <key>Title</key><string>Section 7 - Inventory and Mechanics</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>57</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>1515</integer>
+        <key>Line</key><integer>1556</integer>
         <key>Title</key><string>Section 8 - Tests</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>58</key><dict>
         <key>Filename</key><string>/Users/spanky/Dropbox/snow/snow.inform/Source/story.ni</string>
-        <key>Line</key><integer>1547</integer>
+        <key>Line</key><integer>1588</integer>
         <key>Title</key><string>Section 9 - Computer</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>

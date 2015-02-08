@@ -3,7 +3,6 @@
 
 - MAKE SPECIAL EVENTS IN BOLD, SO PEOPLE DON"T MISS THEM?
 
-
 - Let Adrian go down first when the player goes south in the hallway, have a line about "don't keep me waiting too long"
 ================================
 

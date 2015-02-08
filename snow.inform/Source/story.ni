@@ -65,16 +65,17 @@ To decide whether the guests arrive:
 	no.	
 
 [Gives the "you should sleep message]
-[TODO: This only seems to work if turn count is true]
 [TODO: make a table of messages and pick one]
-First_Sleepy is a truth state that varies. First_Sleepy is initially false.
-To decide whether or not First_Sleepy:
+[FIXME: This doesn't work at all and I don't know why]
+[To decide whether Player_Sleepy:
 	If First_Investigation is happening:
-		If the Turn Count is greater than 100:
+		Decide yes;
+	Decide no.
+		If the Turn Count is greater than 10:
 			Decide yes;
 		If FoundClues is greater than 4:
 			Decide yes;
-	Decide no.
+	Decide no.]
 	
 First_Slept is a truth state that varies. First_Slept is initially false.
 SHUTTERS_DOWN is a truth state that varies. SHUTTERS_DOWN is initially false.
@@ -84,9 +85,12 @@ DET_DISCOVERED is a truth state that varies. DET_DISCOVERED is initially false.
 
 Section 1 - Sleep Mechanics
 
+[This ugliness is because Inform7 made the decide function go nuts and I'm tired of trying to figure out what the fuck is wrong.]
 Every turn:
-	If First_Sleepy is true:
-		say "I was starting to feel tired. Everything that had happened in the past few days was finally starting to take its toll. I thought it might help to find a bedroom and sleep for a few hours."
+	if First_Investigation is happening and the Turn Count is greater than 100:
+		say "I was starting to feel tired. Everything that had happened in the past few days was finally starting to take its toll. I thought it might help to find a bedroom and sleep for a few hours.";
+	if First_Investigation is happening and FoundClues is greater than 4:
+		say "I was starting to feel tired. Everything that had happened in the past few days was finally starting to take its toll. I thought it might help to find a bedroom and sleep for a few hours.";
 
 Chapter 2 - Scene Mountain_Driving
 
@@ -260,7 +264,7 @@ The Valcar_Container is an enterable container. The printed name is "Mercedes". 
 Sedan is a room. The description is "The inside of the Mercedes was yards of brushed metal and hand-stitched leather. It still smelled new.[if scene_conversation is exhausted] Having run out of things to talk about, I had nothing to do but wait for us to arrive.[end if]".
 [TODO: Move NPCs to their own section?]
 [TODO: Add scenery]
-Val is a woman. Val is in the Sedan. The description is "The first thing I noticed were the dark green eyes, clear even driving down a street with no lights. She looked to be in her thirties, but she could have been three hundred for all I knew. Her face shone in the moonlight, pale and beautiful and unnatural. She was wearing too-red lipstick, which gave her the look of a Venetian mask. Straight auburn hair framed a face I wouldn't have kicked out of bed for eating crackers.[paragraph break]".
+Val is a woman. Val is in the Sedan. The description is "The first thing I noticed were the dark green eyes, clear even driving down a street with no lights. She looked to be in her thirties, but she could have been three hundred for all I knew. Her face shone in the moonlight, pale and beautiful and unnatural. She was wearing too-red lipstick, which gave her the look of a Venetian mask. Wavy auburn hair framed a face I wouldn't have kicked out of bed for eating crackers.[paragraph break]".
 
 Instead of waiting in the Sedan during Riding_Scene:
 	If scene_conversation is exhausted:
@@ -281,7 +285,7 @@ When Cliff_Gameover begins:
 
 Chapter 8 - Scene Body_Discovery
 
-Val_House is a woman. The printed name is "Val". Understand "Val" as Val_House. The description is "She wore a belted black raincoat with straight shoulders, which covered all of her except for the bottom of a long pencil skirt. She hadn't bothered taking her driving gloves off. I couldn't put my finger on it, but there was something stiffly formal and practised about the way she moved.[if Val_House is in the Reading_Nook][paragraph break]Her eyes rested on what was left of the professor, her expression unreadable.[end if]".
+Val_House is a woman. The printed name is "Val". Understand "Val" as Val_House. The description is "She wore a belted black raincoat with straight shoulders, which covered all of her except for the bottom of a long pencil skirt. She hadn't bothered taking her driving gloves off. I couldn't put my finger on it, but there was something stiffly formal and practiced about the way she moved.[if Val_House is in the Reading_Nook][paragraph break]Her eyes rested on what was left of the professor, her expression unreadable.[end if]".
 
 Rule for writing a paragraph about Val_House:
 	If Val_House is in the Reading_Nook:
@@ -518,7 +522,7 @@ Shutter_Counter is a number variable. Shutter_Counter is usually 0.
 Every turn during First_Investigation:
 	Increase Shutter_Counter by 1;
 	If Shutter_Counter is 3:
-		say "With no more sound than a loud whisper, shutters slid down on the inside of every window in the house. They looked like opaque fabric window shades, but the heavy sound of the seal told me the core was probably metal. The moonlight went out as suddenly as if someone had thrown a curtain over it.[paragraph break]";
+		say "With no more sound than a loud whisper, shutters slid down on the inside of every window in the house. They looked like opaque fabric window shades, but the heavy sound of the seal told me the core was probably metal. The light from outside went out as suddenly as if someone had thrown a curtain over the moon.[paragraph break]";
 		now SHUTTERS_DOWN is true;
 		say "(press any key)";
 		wait for any key.
@@ -604,15 +608,17 @@ The fuse box is in the wine cellar. The fuse box is a device.
 
 Section 6 - Upstairs Hallways
 
-Hallway_Upstairs is above the Hallway_Downstairs. The printed name is "Upstairs Hallway".
+Hallway_Upstairs is above the Hallway_Downstairs. The printed name is "Upstairs Hallway". The description of Hallway_Upstairs is "I stood in a normal-sized hallway that seemed cramped compared to the dimensions of the rest of the house. The hardwood floor was just as polished as the one downstairs. To the east were a couple of the smaller rooms clearly intended for overnight guests. To the north was another bedroom, and a set of double doors that led to the master suite.".
 
-North_Hallway is north of the Hallway_Upstairs. The printed name is "North Hallway". The description is "TODO".
+North_Hallway is north of the Hallway_Upstairs. The printed name is "North Hallway". The description is "The northmost section of the upstairs hallway led to a couple of guest bedrooms.".
 
 East_Hallway is east of the Hallway_Upstairs. The printed name is "East Hallway". The description is "The eastern side of the upper floor led to several guest bedrooms. A window [if SHUTTERS_DOWN is false]looked out onto the valley and a vast lake, a real one put there by nature, not a big hole dug by a developer to increase 'lakeside' property values.[end if][if SHUTTERS_DOWN is true]faced north, blocked by the closed shutter.[end if]".
 
 Section 7 - Master Bedroom
 
 master bedroom door is a closed door. it is scenery. it is north of the North_Hallway and south of the Master_Bedroom.
+
+[TODO: Name who's staying where based on "scene has happened"]
 
 Master_Bedroom is a room. The printed name is "Master Bedroom". The description is "The master suite sat at the north end of the house and [if SHUTTERS_DOWN is false]had the best view of the valley and the lake for miles [end if][if SHUTTERS_DOWN is true]had a row of floor-to-ceiling paned windows that ran the length of the room, but the shutters were closed, keeping the room dark as night[end if]. A four-poster bed with a thick down comforter looked like it would sink at least half a foot under any weight. Ornate wooden nightstands flanked the bed on either side. One was bare except for a lamp, the other was piled high with what must have been bedtime reading. In the corner of the room, I could see into a spacious closet."
 
@@ -653,7 +659,6 @@ Scott_Room is a room. The printed name is "Sumac Room". It is south of the East_
 Jan_Room is a room. The printed name is "Hemlock Room". It is north of the East_Hallway. The description is "The room had an angled ceiling to give the impression of a cozy attic or country cabin, except it was about as big as my entire apartment. Piles of climbing equipment and bunched-up coils of rope were heaped in the corner on top of his luggage. A gray sweater hung on a chair, flecks of dark reddish-brown stains dried on it.".
 The sweater is scenery in the Jan_Room. The description is "It was a thick wool turtleneck, so big it looked like a blanket draped over the chair. Around the front and the sleeves, blood stains were visible where some had apparently splashed back onto it."
 		
-
 [TODO: If the player is too confused, simply change to an objective, use the "acting confused" cues from EmShort]
 
 Chapter 12 - Scene First Sleep
@@ -679,7 +684,9 @@ Rule for writing a paragraph about the PC_Bedroom_Door:
 	say "".
 
 Before opening PC_Bedroom_Door for the first time:
-	if First_Sleepy is true:
+	if First_Investigation is happening and the Turn Count is greater than 100:
+		Continue the action;
+	if First_Investigation is happening and FoundClues is greater than 4:
 		Continue the action;
 	Otherwise:
 		say "I reached the room where Val was staying, and supposed it was where I was staying, too. My tired fingers closed tightly around the doorknob like a pitcher throwing his last solid knuckleball in the ninth inning. [paragraph break]I paused for a moment, mentally tallying what I'd put together about what had happened. I figured I ought to make sure I'd found enough clues for the day before I turned in.";
@@ -701,7 +708,6 @@ instead of drinking the bottle of bourbon for the third time:
 	try sleeping.
 
 [TODO: Make sure sleeping has a decent message]
-[TODO: Make sure drinking bourbon outside the First_Sleep results in good messages]
 
 Instead of drinking the bottle of bourbon for the fourth time:
 	say "The bottle beckoned, but I had a rule about not having the same thing for two meals in a row.".
@@ -714,8 +720,6 @@ instead of taking the bottle of bourbon:
 
 instead of sleeping in the PC_Bedroom during First_Sleep:
 	now first_slept is true.
-
-	
 	
 The memo is a thing. The description is "Kid,[line break]You'll be hungry soon. Alan used to keep a personal stash behind a painting in the hallway downstairs. [paragraph break]Help yourself, I need you to stay sharp for this one. Or don't, your call.".
 
@@ -1537,7 +1541,8 @@ Section 6 - Debugging
 Every turn:
 	if Debug_on is true:
 		say "Turn Count: [Turn Count][line break]";
-		say "FoundClues: [FoundClues]"; 
+		say "FoundClues: [FoundClues][line break]"; 
+[		say "Sleepy: [First_Sleepy]";]
 
 Section 7 - Inventory and Mechanics
 
@@ -1551,9 +1556,9 @@ The player is carrying a cell phone. The description of the cell phone is "A sma
 
 Blood_status is a truth state that varies. Blood_status is usually false.
 
-[TODO: Make the cell phone break when the player enters the Bottom of Cliff by whatever method]
-
 Section 8 - Tests
+
+Test tcarescape with "drive/drive/brake/look/unbuckle seat belt"
 
 Test firstconvo with "drive/drive/brake/look/unbuckle seat belt/kick windshield/any key/up/get in"
 
@@ -1703,61 +1708,40 @@ title	subtable	description	toggle
 Table of InboxEmails
 title	subtable	description	toggle
 "Date[tab]From[tab][tab]Subject"	--	"Make a selection"	--
-"Dec 20"	--	"Stuff"	--
-"Dec 18"	--	"Stuff"	--
-"Dec 12"	--	"Stuff"	--
-"Dec 10"	--	"Stuff"	--
-"Dec 06"	--	"Stuff"	--
+"Dec 20[tab]payroll@barnett.edu[tab][tab]W-2 Copy Request"	--	"A copy of your W-2 has already been mailed to you. If you need an additional copy of your W-2 form for recordkeeping, please request it directly from Jennifer at the payroll office."	--
+"Dec 18[tab]payroll@barnett.edu[tab][tab]"	--	"Stuff"	--
+"Dec 12[tab]hchanthavong@barnett.edu[tab][tab]Recommendation"	--	"Hi Professor Bowden,[line break]I was wondering if you'd be willing to write me a recommendation for a graduate program I'll be applying to in a few months. I hope you've been happy with my work TAing the 200 level classes, and I'd be happy to give more specifics about my interests if that would help. The deadline for the submission is in a few months. I look forward to hearing back from you.[line break]Thanks,[line break] Hilary Chanthavong"	--
 "Nov 24[tab]JBates@Barnett.edu[tab][tab]Out of Office until 12/01 Autoreply"	--	"I am out of the office today, 11/24 and will respond to your message on Monday, 12/01."	--
-"Sep 02[tab]PStillman@barnett.edu[tab][tab]Final Exam"	--	"Hi Professor I was just wondering when the final exam was because I have a lot of classes and think one of them might conflict with another class I'm taking thanks"	--
+"Sep 02[tab]PStillman@barnett.edu[tab]Final Exam"	--	"Hi Professor I was just wondering when the final exam was because I have a lot of classes and think one of them might conflict with another class I'm taking thanks"	--
 "Sep 02[tab]TDeavers@barnett.edu[tab][tab]Final"	--	"Professor Bowden,[line break]When is the final exam?"	--
 "Sep 02[tab]MChung@barnett.edu[tab][tab]Registration[tab]"	--	"Professor,[line break]When I got to the registration system it said the class was full, even though there appear to be slots open in the listing. I wasn't able to contact anyone at the registrar's office, can you help me? I need to take this class for my major.[line break]Thanks,[line break]Melissa Chung"	--
 
 
 Table of SentEmails
 title	subtable	description	toggle
-"Nov 12[tab]To: valsinclair7@beyondcoast.org"	--	"TODO"	make blackmail known rule
+"Dec 12[tab]To: valsinclair7@beyondcoast.org"	--	"Val,[line break][tab]I know we haven't spoken in some time, and I hope this letter finds you well. Forgive my sudden request, but I really don't know where else to turn. A few months ago, I received a series of threatening letters from an anonymous individual demanding payment. I can't go into the details here, but suffice it to say that I gave in to the threats, and attempted to find a sum that this person would settle for. Recently, things took a turn for the worse, and I can't possibly hope to pay the amount of money he's asking for. Please, I need you to find who this is, and scare them off, or something, and I need it done quietly. The matter is very delicate, and not the sort of thing I could take to the police in the first place. I'm having my one of my usual Christmas gatherings, you can come up here then, and we'll discuss it. In case this person is watching me, it shouldn't attract any suspicion if you come here with others.[line break]Sincerely,[line break]Alan"	make blackmail known rule
 "Nov 29[tab]To: Cassie Detra[tab]Quick question"	--	"Hi Cassie,[line break]I haven't seen Kelly in class recently, have the two of you had any contact? Just thought I'd ask.[line break][line break]Hope all's well,[EmailSignature]"	--
 "Nov 20[tab]To: AsianStudies201@barnett.edu[tab][tab]Thanksgiving Holiday"	--	"All,[line break]I'd like to wish everyone a Happy Thanksgiving, please take some time off to relax and spend it with family. For those of you who are traveling home, have a safe journey. For those of you who are not able to, I'm hosting Thanksgiving dinner at my home, and all are welcome to attend. There's a great view of the lake, and I promise excellent food, drink, and company.[line break]Happy Holidays,[EmailSignature]"	--
-"Nov 12[tab]To: "	--	"TODO"	--
-"Nov 11[tab]"	--	"TODO"	--
-"Nov 10[tab]"	--	"TODO"	--
-"Nov 01[tab]To: registrar@barnett.edu[tab]Late registration"	--	"Hi Linda,[line break]A couple of students in my class were trying to register past the add deadline, and said there was an error accessing the online system, is this indeed the case? Let me know if you anticipate any problems doing a manual add.[line break]Thanks,[EmailSignature]"	--
-"Sep 18[tab]To: A"	--	"TODO"	--
+"Nov 12[tab]To: FranklinColl@barnett.edu[tab][tab]Happy Hour "	--	"Hi Frank,[line break]We have a guest speaker coming in to give a talk about historical architecture in Kyoto. I thought I'd give you guys a heads up in case your department or any of your students had an interest in that. I think her talk might be a little light on the history and heavy on the architecture, so just be aware of that. It's this Wednesday at 6pm in the Weber Hall auditorium, light refreshments to follow."	--
+"Nov 11[tab]To: AlexandraCohen@barnett.edu[tab]Copier malfunction"	--	"Alex,[line break]It seems like the photocopy machine in the Asian Studies department office is low on toner, who do I talk to about getting that replaced?[line break]Thanks,[line break][EmailSignature]"	--
+"Nov 10[tab]To: kakhtar@barnett.edu[tab][tab]Office hours"	--	"Karam,[line break]You mentioned in class today you wanted to discuss some revisions to your midterm paper in my office hours. I'm on campus Mondays and Tuesdays late in the evening, stop by sometime after 7. One of the TAs may have more convenient hours for you."	--
+"Nov 01[tab]To: registrar@barnett.edu[tab][tab][tab]Late registration"	--	"Hi Linda,[line break]A couple of students in my class were trying to register past the add deadline, and said there was an error accessing the online system, is this indeed the case? Let me know if you anticipate any problems doing a manual add.[line break]Thanks,[EmailSignature]"	--
 "Sep 03[tab]To: AsianStudies201@barnett.edu[tab]Course Syllabus"	--	"Class,[line break]I've already received several questions about the homework and date of the final exam, which as I've already stated, is in the course syllabus, which is available at the intranet link I mentioned in class. The syllabus already has the date of the midterm and final exam, as well as the grading policy for the entire semester listed in detail. I regret that I will not be able to answer any further questions to which the answers are already available.[line break]Regards,[EmailSignature]"	--
-"Sep 02[tab]To: AsianStudies201@barnett.edu[tab]Welcome to another semester"	--	"Class,[line break]As you may have heard, my name is Mark Bowden, and I'll be teaching Intro to Asian Literature 201, as I do every fall. Even after so many years of teaching in this field, I love seeing a class of fresh new faces, and the enthusiasm and ideas with which you tackle this material. More than just having you read journals and criticism, my goal this semester is to teach you to think critically, and how to hone your own ideas about some of the world's oldest classics. For some of you, this will be a time to get your feet wet in a different literary tradition than you're used to. I look forward to an enjoyable semester together! For your reference, the syllabus may be found at the following intranet link.[line break]Regards,[EmailSignature]"	--
+"Sep 02[tab]To: AsianStudies201@barnett.edu[tab]Welcome to another semester"	--	"Class,[line break]As you may have heard, my name is Alan Bowden, and I'll be teaching Intro to Asian Literature 201, as I do every fall. Even after so many years of teaching in this field, I love seeing a class of fresh new faces, and the enthusiasm and ideas with which you tackle this material. More than just having you read journals and criticism, my goal this semester is to teach you to think critically, and how to hone your own ideas about some of the world's oldest classics. For some of you, this will be a time to get your feet wet in a different literary tradition than you're used to. I look forward to an enjoyable semester together! For your reference, the syllabus may be found at the following intranet link.[line break]Regards,[EmailSignature]"	--
 
 
 
-EmailSignature is some text that varies. EmailSignature is "[line break]--[line break]Mark Bowden[line break]Asian Studies Department[line break]Barnett College, NY[line break]mbowden@barnett.edu"
+EmailSignature is some text that varies. EmailSignature is "[line break]--[line break]Alan Bowden[line break]Asian Studies Department[line break]Barnett College, NY[line break]mbowden@barnett.edu"
 
-[They sent a constable, low level]
 [He was putting on a good show, but I could tell he didn't seem to have any interest in finding out who did it. That, or some brass had told him not to.]
-
-[Redherring: Isn't it suspicious that Svensson canceled, and then this happened?
-Gage suggests maybe he's making a political move, and/or wants to buy Gage's company]
-
-[Redherring: Suggests that Val did it before she went to pick up the MC]
-[Redherring: Doubt in the player's mind if she can glamor him]
 
 [I told myself it was just tomato juice]
 
 [speakeasy; "They pass the Volstead Act again when I wasn't looking?"]
 
-[V has deliberately asked for MC to be in the room when she's interrogated to get him a trail of bread crumbs]
 ["Why didn't you just tell me?" "Because I need you to find something I missed. You're a fresh set of eyes, and I don't want to bias what you see."]
 [Sinclair died some 70 years ago. Cases was stone cold. And the fact that Val was bothering to throw me at it meant that she thought the killer was still alive.][You have to wait to sire, Val waited 50 years]
-[Someone opens the curtains to a room, auto shutter controls, player must escape]
-[V. Detective is dirty cop? Hence why the real killer isn't worried?]
-[V. Det. is more interested in favors from old money than actual cash payoffs]
-[After my car got wrecked in that accident / You still think that was an accident?]
-[Deader than McKinley]
-[Snobbish vam prefer the lodge to inferior skiing towns, but would love]
 [TODO line about patrtons creating vam in the throes of passion]
-[TODO scene in future game where player is slipped a key via a kiss ]
 
-[V.Det: What are bad pennies made of?]
-
-[Turns out was a crime where startup owner realized there wasn't going to be an investment, got angry
-That lazy piece of shit? He never worked a day in his life. Born with a silver spoon in his mouth, ran a factory or two during the war, and reinvented himself as some scholar? What a fucking joke. He sits in this house drinking thousand dollar bottles of wine and fucking undergrads.]
+[That lazy piece of shit? He never worked a day in his life. Born with a silver spoon in his mouth, ran a factory or two during the war, and reinvented himself as some scholar? What a fucking joke. He sits in this house drinking thousand dollar bottles of wine and fucking undergrads.]
 

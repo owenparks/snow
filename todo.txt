@@ -1,3 +1,11 @@
+CRITICAL Fix before release
+
+- Scott needs entrance scene
+- Clues need to be in the freaking table
+- "could have asked message" needs fixing in all cases
+
+============================
+
 - TODO Later: Make one that gets none, compare
 - TODO: Instead of talking to Val during discovery, custom message and then she leaves
 
@@ -8,7 +16,6 @@
 
 Necessary for game to work / work better
 
-- TODO: Pool of wine should be a struggle clue
 - TODO: Fallen book should be a struggle clue
 
 
@@ -16,6 +23,7 @@ Necessary for game to work / work better
 
 Critical impact on experience
 
+- TODO: Make sure all clues are in a table
 - TODO: Quip-suggestion phrase in normal game, interrogation, and talking to self
 - TODO: Add descriptions for scenery obviously listed in room descriptions
 - TODO: Add (press any key) when necessary
@@ -30,8 +38,6 @@ Critical impact on experience
 ==================================
 
 Bugs
-
-
 
 ==================================
 

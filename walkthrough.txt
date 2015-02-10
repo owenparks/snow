@@ -1,10 +1,13 @@
+(To drive until the car goes over)
 drive
 drive
 brake
-
+ANYKEY
+(To get out of the upturned car)
 unbuckle self
 kick windshield
-
+ANYKEY
+(To get to the house)
 west
 get in
 talk to val
@@ -12,6 +15,7 @@ ask about her car
 ask about the chalet
 ask about sunrise
 wait
+(To discover the body)
 east
 examine door
 examine lock
@@ -26,7 +30,8 @@ up
 examine bottle
 examine wineglass
 examine body
-
+ANYKEY
+(To find clues and kill time until guests arrive)
 examine knife
 examine pool
 down
@@ -37,16 +42,19 @@ down
 up
 down
 up
-
+ANYKEY
+(To meet the suspects in the Foyer)
 down
 west
 examine Nathan
 examine Scott
 examine Jan
 east
-
+ANYKEY
+ANYKEY
+(First investigation phase, talking to Val, getting clues)
 talk to val
-
+ANYKEY
 ask about Alan
 ask about the murder
 ask about nathaniel
@@ -59,20 +67,20 @@ examine books
 open desk
 examine papers
 examine bank statement
+examine bullets
 take all
+(Going to sleep)
 south
 up
 north
 west
 west
-
+ANYKEY
 drink bourbon
 drink bourbon
 drink bourbon
-talk to val
-ask how long
-sleep
-
+ANYKEY
+(Talking to Castillo)
 east
 talk to Adrian
 ask about questioning me
@@ -80,11 +88,13 @@ ask about questioning val
 ask how he knew my name
 ask about my file
 ask about anyone outside
+(Going to Val’s questioning FIXME)
 south
 talk to val
 ask about herself
 ask about her family
 ask about her husband
+(Second Investigation phase)
 south
 west
 west
@@ -92,23 +102,38 @@ talk to val
 ask about my file
 ask what she wanted to see me about
 ask about our first meeting
+ask about deputy
 west
 west
 get in
+ANYKEY
+(Examining crash site)
 east
 turn on car
 examine dashboard
 examine brakes
 west
 get in car
+ANYKEY
+(Back at house)
 east
 east
 east
-
 east
+ANYKEY
+(Gettin conked out)
 down
-
+ANYKEY
+(Talking to yourself)
+ask why there were two wineglasses
+ask why Alan was stabbed using a letter opener
+ask why there was a stain on the sofa
+ask why someone cut my brakes
 ask how he planned on getting away
+ask where he got the gun
+ask why he killed Alan
+ask why he needed the money
+
 up
 west
 west

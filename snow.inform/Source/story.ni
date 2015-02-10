@@ -7,7 +7,7 @@ The Release number is 2.
 The story genre is "Mystery".
 
 The story description is "The first time I'd met Val was the day before yesterday, on my way out of the hospital. I'd been in a numb stupor for hours. There's no good way to take that kind of news.  She'd asked me out for a drink. I remember thinking there was something Old Hollywood glam about her, like Veronica Lake or Lauren Bacall. I figured she was trouble, but I had nothing to lose, and she looked like my kind of trouble. Turns out I didn't know the half of it.
-
+re
 Daybreak was just a few hours away. I stared at the crumpled remains of my car, and beyond to the frozen lake below. I wondered if I'd ever see her again.".
 
 Include Basic Screen Effects by Emily Short.
@@ -41,10 +41,10 @@ Riding_Scene is a scene. Riding_Scene begins when the player is in the Valcar_Co
 Body_Discovery is a scene. Body_Discovery begins when the player is in the Driveway for the first time. Body_Discovery ends when the body is examined.
 Prearrival is a scene. Prearrival begins when Body_Discovery ends. Prearrival ends when Guest_Arrival begins.
 Guest_Arrival is a scene. Guest_Arrival begins when guests arrive. Guest_Arrival ends when first investigation starts.
-First_Investigation is a scene. First_Investigation begins when Guest_Arrival ends. First_Investigation ends when PC_Bedroom_Door is open. [TODO: Move Val here after some amount of time]
+First_Investigation is a scene. First_Investigation begins when Guest_Arrival ends. First_Investigation ends when PC_Bedroom_Door is open.
 First_Sleep is a scene. First_Sleep begins when First_Investigation ends. First_Sleep ends when first_slept is true.
 Wakeup is a scene. Wakeup begins when First_Sleep ends. Wakeup ends when Interrogation begins.
-Interrogation is a scene. Interrogation begins when INTERRO_START is true. Interrogation ends when the player recollects about her husband.[TODO: change me to the last quip in the tree]
+Interrogation is a scene. Interrogation begins when INTERRO_START is true. Interrogation ends when the player recollects about her husband.
 Second_Investigation is a scene. Second_Investigation begins when Interrogation ends. Second_Investigation ends when ComingBack begins.
 ComingBack is a scene. ComingBack begins when the brake line is examined and the location is Foyer. ComingBack ends when DiscoverDet begins.
 DiscoverDet is a scene. DiscoverDet begins when the sun rises. DiscoverDet ends when the location is Wine_Cellar.
@@ -94,6 +94,9 @@ Every turn:
 
 Chapter 2 - Scene Mountain_Driving
 
+
+[TODO: Mention that shutters are closed at game ending time in case player still wants to look around]
+
 Introcar is a region.
 
 Understand the command drive as something new. Understand "drive" as driving. Driving is an action applying to one visible thing.
@@ -135,6 +138,7 @@ Instead of going south when the player is in the Hairpin_Turn:
 Carry out going down when the player is in the Hairpin_Turn:
 	Say "It was too late to stop, so I didn't even bother. Instead, I press my head and back against the seat and put my arms in front of my face.[paragraph break]The back end of the car lost traction and swung out wide, trying valiantly to chase the front like a powerslide in a car commercials. Unfortunately, I was not a professional driver, nor was this a closed course, and the right side of the car went over the edge of the cliff, momentum then taking the rest of the car with it. In shock, my brain couldn't manage to tell my body to do more than grip the wheel uselessly as the car tumbled down the steep incline. I lost count of the rolls after three. The roof hit a tree, and I jerked upward against the seat belt. Snow from the branches fell into a pile onto the passenger window from the impact. I heard a thud, snuffing out the brief glimpse of moonlight.[paragraph break]";
 	wait for any key;
+	say "(press any key)";
 	now the player is in the Upturned Car.
 
 After reading a command:
@@ -304,17 +308,26 @@ Instead of saying hello to Val_House during Body_Discovery:
 Driveway is a room. "We stood at the end of a long gravel drive, staring up at a large house with a dark red wood exterior. Steps to the east led to a porch that spanned the facade of the place, wrapping around to a deck in the back that presumably had a great view of the lake and the countryside. It was more ski lodge than cabin, and looked like it could comfortably shelter an entire biathlon team if it had to."
 House is scenery in the Driveway. Understand "facade/chalet/lodge" as house. The description is "It seemed oddly imposing for what was just another vacation home in the Adirondacks. From the front, it looked like two or three spacious floors with high ceilings. The steeply angled roofs were clearly designed to shed the several feet of snow dumped on it by nor'easters every year. ".
 Driveway_scenery is scenery in the Driveway. Understand "driveway" as driveway_scenery. The printed name is "the driveway".
-[TODO: Cars, killer's car has a cold engine? Or else, owner's car is missing?]
 
 Section 1 - Mercedes
-	
+
+[TODO: Can the player enter in other scenes??]
+[TODO: Add custom message]
 Instead of entering the Valcar_Container:
+	if the brake line is examined and Second_Investigation is happening:
+		say "I learned what I needed to, there wasn't much point in going back to the crash site now."; 
 	if Second_Investigation is happening:
 		if the location is Driveway:
 			now Val_SecondInv is in the Sharp Bend;
 			now Valcar_Container is in the Sharp Bend;
+			say "We got in the car and Val pulled out of the driveway. A short while later, we were back at the mountain road where I'd broken through the guardrail.";
+			say "(press any key)";
+			wait for any key;
 			now the player is in the Sharp Bend;
 		otherwise if the location is Sharp Bend:
+			say "I got back in the Mercedes, and Val drove us to the house. Neither of us spoke on the way back, we had too much on our minds, I guess.";
+			say "(press any key)";
+			wait for any key;
 			now Val_SecondInv is in the Driveway;
 			now Valcar_Container is in the Driveway;
 			now the player is in the Driveway;	
@@ -554,6 +567,10 @@ Carry out opening the painting:
 	say "I felt around the edges of the gold-trimmed frame and found a latch. The entire painting swung off the wall smoothly, like the hinges were well oiled. A refrigerated compartment inside leaked cold vapor like an old sci-fi movie used dry ice. It was full of plastic pouches.";
 	now the painting is open.
 
+After reading a command:
+	If the location is Hallway_Downstairs:
+		If the player's command matches "move painting", replace the player's command with "open painting".
+
 The pouch of liquid is in the painting. The description is "The clear plastic was mostly covered with white labels and barcodes, most of which had been scratched out with a marker. It held a thick, dark liquid I tried not to look too closely at.".
 
 Instead of opening the pouch of liquid:
@@ -569,30 +586,32 @@ Section 3 - Kitchen
 			
 Kitchen is a room. Kitchen is east of the Hallway_Downstairs. The description is "I stepped into a kitchen big enough for a game of football. Wooden cabinets and handsome tile in earth tones went from wall to wall. The quaint country look was somewhat ruined by the collection of modern stainless steel kitchen appliances. They were brand new and it looked like not one of them had been used. It figured, this didn't seem like the kind of place that had a cooking staff.".
 
-Section 4 - Office
+Section 4 - Library
 
-Office is a room. Office is north of the Hallway_Downstairs. The description is "Of all the rooms I'd seen in the house, this one looked the most lived in. It had the musty smell of old books mixed with stale coffee coming from several cups on the desk.".
+Library is a room. Library is north of the Hallway_Downstairs. The description is "Of all the rooms I'd seen in the house, this one looked the most lived in. It had the musty smell of old books mixed with stale coffee coming from several cups on the desk.".
 
-cups are scenery in the office. The description is "Mugs of coffee, stone cold. I could see rings on the sides of the half-empty cups where the liquid had evaporated. They'd been here a few days, but that didn't indicate a time of death. The kind of man who leaves more than two coffee cups sitting on a desk isn't in a hurry to clean up after himself.".
+cups are scenery in the Library. The description is "Mugs of coffee, stone cold. I could see rings on the sides of the half-empty cups where the liquid had evaporated. They'd been here a few days, but that didn't indicate a time of death. The kind of man who leaves more than two coffee cups sitting on a desk isn't in a hurry to clean up after himself.".
 Instead of taking the cups:
 	say "Val asked me to find his killer. I wasn't going to do his dishes.";
 
-the desk is scenery in the office. the desk is a closed openable container. The description is "Unlike most of the other expensive furniture in the house, it looked like the mahogany desk got a lot of use. A computer at least five years old, sat on it, the keyboard mostly buried by papers and books. Worn brass handles barely hung on to a row of drawers along the right side.";
+the desk is scenery in the Library. the desk is a closed openable container. The description is "Unlike most of the other expensive furniture in the house, it looked like the mahogany desk got a lot of use. A computer at least five years old, sat on it, the keyboard mostly buried by papers and books. Worn brass handles barely hung on to a row of drawers along the right side.";
 
-the papers are scenery in the Office.
+the papers are scenery in the Library.
 Instead of examining papers:
 	say "I thumbed through the pile on the desk, finding term papers and dissertations, collections of academic journals. Underneath most of it was something that caught my eye, a document with dollar signs on it and more zeroes than I'm used to seeing on paper.";
 	Remove the bank statement from play;
-	now the bank statement is in the Office.
+	now the bank statement is in the Library.
 
 [TODO: front door lock should be scenery/clue]
 
-a bank statement is a clue. it is inside the desk.
+a bank statement is a clue. it is inside the desk. The description is "A bank statement detailing transactions for the past 6 months. Most of it is purchases of home furnishings and luxury goods. A couple of withdrawals stand out as having too many zeroes. Alan had made some large bank transfers every month to a foreign bank, and then one last cash withdrawal for the balance of the account. He'd needed liquid capital fast, which seemed a little odd for someone who seemed to be so financially stable.".
+
+the box of bullets is a clue. it is inside the desk. "A box of bullets, but no gun. The outside reads:[paragraph break][tab]Birmingham Arms Co.[line break][tab]38 Special[line break][tab]125 Gr[line break][tab]Sterling Silver[line break][tab]Jacketed Hollow Point[paragraph break]Six are missing."
 
 Section 5 - Basement
 
-Wine_Cellar is a room. Wine_Cellar is below the Hallway_Downstairs. The printed name is "Wine Cellar". The description is "The second I walked into the dark wine cellar, recessed lights in the ceiling turned on, probably activated by a motion sensor.
-[paragraph break]
+Wine_Cellar is a room. Wine_Cellar is below the Hallway_Downstairs. The printed name is "Wine Cellar". The description is "[if DiscoverDet is not happening]The second I walked into the dark wine cellar, recessed lights in the ceiling turned on, probably activated by a motion sensor.
+[paragraph break][end if]
 A wine rack ran the perimeter of the room, holding enough bottles to supply a French restaurant. A few seemed to be missing here and there. A wooden chair sat in the corner."
 
 The wooden chair is scenery in the Wine_Cellar. The description is "A simple chair made from dark wood, appearing to have woven reeds for the seat. It's probably just here to add to the country style decor, I can't imagine anyone sitting in the cellar drinking wine long enough to use it.".
@@ -604,7 +623,16 @@ Understand "missing bottles" as wine rack.
 
 NEED_EMERGENCY_SHUTTER is a truth state that varies. NEED_EMERGENCY_SHUTTER is false.
 
-The fuse box is in the wine cellar. The fuse box is a device.
+The fuse box is in the Wine_Cellar. The fuse box is a device. The description is "The box was sleek and black, nothing like the ones I'd seen in old city buildings. It was some sort of custom installation.";
+
+Rule for writing a paragraph about the fuse box:
+	say "In the corner was a fuse box, partially obscured by shelves.";
+	
+Instead of switching on the fuse box:
+	say "I saw no reason to mess with it now.";
+	
+Instead of switching off the fuse box:
+	say "I saw no reason to mess with it now.";
 
 Section 6 - Upstairs Hallways
 
@@ -693,7 +721,7 @@ Before opening PC_Bedroom_Door for the first time:
 		stop the action.
 
 [TODO: fix this description for the wakeup scene]
-The PC_Bedroom is a room. The printed name is "Bedroom". The description is "[if First_Sleep is happening]I checked my watch, it was getting late, almost noon. I had a million things to think about, but figured I should get a few hours of sleep while I still could.[end if]"
+The PC_Bedroom is a room. The printed name is "Bedroom". The description is "[if First_Sleep is happening]It was getting late, almost noon. I had a million things to think about, but figured I should get a few hours of sleep while I still could.[end if]"
 
 Val_Sleep is a woman. The printed name is "Val". Understand "Val" as Val_Sleep. The description is "[If First_Sleep is happening]Val was lying on top of the covers, facing the window. Her breathing was steady and slow, but I couldn't tell if she was asleep. She wore just a satin pajama shirt. If the cold bothered her, she didn't show it.[end if]"
 
@@ -742,7 +770,7 @@ what the chalet is a repeatable questioning quip.
 	It mentions ski chalet.
 	[Understand "ski chalet/house" as what the chalet.]
 	The comment is "Where are we going?".
-	The reply is "TODO.".
+	The reply is "I already told you, a friend's house. He lives not too far from here, halfway up the mountain.".
 	The proper scene is Riding_Scene.
 what time sunrise is a repeatable questioning quip.
 	The printed name is "about sunrise". The true-name is "what time sunrise".
@@ -935,9 +963,10 @@ When Wakeup begins:
 	now Adrian_Investigation is in the North_Hallway;
 	say "I awoke to an empty room, bathed in the silver moonlight. She hadn't made a sound when she'd left. It took a second for me to realize that the shutters had gone back up. Through the window, I could see that lights were starting to come on in the distant houses dotted across the mountainside.[paragraph break]I wasn't sure how long I'd slept, but it must have been about eight o'clock in the evening.".
 
+[TODO: This needs to go before the scene change]
 When Wakeup ends:
 	remove Adrian_Investigation from play;
-	say "TODO";
+	
 
 Section 1 - Adrian_Investigation
 
@@ -952,7 +981,13 @@ Before saying hello to Adrian_Investigation:
 INTERRO_START is a truth state that varies. INTERRO_START is initially false.
 
 Instead of going south in the North_Hallway during Wakeup:
-	now INTERRO_START is true.
+	if the player recollects about questioning val:
+		say "I followed the enormous man downstairs and into the library. Val was already sitting in one of the chairs at the desk, apparently at ease, like she had nothing else she'd rather be doing.";
+		now INTERRO_START is true;
+	otherwise if the current interlocutor is Adrian_Investigation:
+		say "I moved to leave, but he blocked my way. It seemed like had something to say to me.";
+	otherwise:
+		try saying hello to Adrian_Investigation.
 
 about questioning me is a repeatable questioning quip.
 	The printed name is "about questioning me".
@@ -985,17 +1020,17 @@ about my file adrian is a repeatable questioning quip. It indirectly-follows how
 about anyone outside is a repeatable questioning quip. It indirectly-follows about questioning val.
 	The printed name is "about anyone outside".
 	The comment is "'See anyone on your way in? A couple of guests seemed pretty spooked about the idea that the killer would come back, something about Lake Geneva.' I kept my voice smooth and casual, like I wasn't at all nervous about the idea of being game in somebody else's pheasant hunt.".
-	The reply is "'Nope, all quiet out there.' Something in my face must've shown my silent vote of no confidence, since he tried to follow it up. 'Listen, punk. I've been in this business twice as long as you've been alive. If I don't see nobody out there, there ain't nobody.' I didn't tell him that that meant exactly jack and shit in my book. One look at him told me he didn't have an eye for detail. There's people on every force who can't think their way out of a wet paper bag, and I'd have bet my weight in cake donuts that Detective Castillo here was one of them.".
+	The reply is "'Nope, all quiet out there.' Something in my face must've shown my silent vote of no confidence, since he tried to follow it up. 'Listen, punk. I've been in this business twice as long as you've been alive. If I don't see nobody out there, there ain't nobody.' I didn't tell him that that meant exactly jack and shit in my book. One look at him told me he didn't have an eye for detail. There's people on every force who can't think their way out of a wet paper bag, and I'd have bet my weight in cake donuts that Deputy Castillo here was one of them.".
 	It quip-supplies Adrian_Investigation.
 
 Chapter 15 Interrogation
 
+[TODO:Does this need to move to the wakeup scene ending?]
 When Interrogation begins:
-	say "TODO[paragraph break]";
-	now the player is in the Office;
-	now Adrian_Interrogation is in the Office;
+	now the player is in the Library;
+	now Adrian_Interrogation is in the Library;
 	now the quip-suggestion-phrase is "He [could] ";
-	now Val_Interrogation is in the Office.
+	now Val_Interrogation is in the Library.
 
 When Interrogation ends:
 	say "Val put her cigarette out and got up. Her expression was stony, the businesslike demeanor she'd started with was gone now. Castillo got up, too, but stopped himself from saying anything. He didn't strike me as the sharpest tool in the shed, but he'd clearly learned where the line was. Staying in the good graces of his employer meant staying within the level of harassment his job warranted, and not ruffling the feathers of anyone too important in the Circle.[paragraph break]'You'll let me know if there's anything else I can do to help, Deputy?' she said icily. She hadn't bothered looking at him as she said it. She gave me a look full of meaning and left the room in the direction of the foyer, closing the door behind her. Castillo suddenly seemed very small standing behind the desk. He must have felt it, too, because he got up and left without another word to me.";
@@ -1005,6 +1040,12 @@ When Interrogation ends:
 	now Val_SecondInv is in the Foyer;
 	now the quip-suggestion-phrase is "[We] [could] ".
 
+Instead of going south in the Library during Interrogation:
+	say "";
+	
+Instead of saying hello to Adrian_Interrogation:
+	say "He was occupied with his conversation with Val.";
+	
 Section 1 - Adrian_Interrogation
 
 Adrian_Interrogation is a man. The printed name is "Adrian". Understand "Adrian" as Adrian_Interrogation.
@@ -1044,17 +1085,25 @@ When Second_Investigation begins:
 
 Players_Cluecar is a device. The printed name is "my car". Understand "my car" as Players_Cluecar. Understand "car" as Players_Cluecar.
 
+After reading a command:
+	If the location is Bottom of Cliff and Second_Investigation is happening:
+		if the player's command matches "turn key", replace the player's command with "switch on car".
+
+Instead of entering the Players_Cluecar:
+	say "Given the state it was in, I could see everything I needed to from the outside.".
+
 Instead of examining the Players_Cluecar:
 	say "The car I'd driven for close to the last hundred thousand miles, fender bent and windshield missing. I hadn't expected to have to look at it again, but if Val thought there was something here, that's the hunch I was going to play.[paragraph break]If I was going to find anything, I'd have to look through it piece by piece to figure out what happened. I started to feel detached from the place, like I'd never been there before. Start fresh, don't miss anything. I told myself to treat it like any other crime scene.[if the Players_Cluecar is switched on][paragraph break]The radio chattered away to nobody, muffled slightly by the sound of air flowing out of the heater.[end if]".
 
 Rule for writing a paragraph about the Players_Cluecar:
-	say "My Toyota Corolla in a fetching 'Regatta Blue' that must have looked appealing under bright dealership lights when it was brand new back in 1990. I wouldn't know. It now sat on its side like a beached whale, exactly where I'd left it. The key was still in the ignition.[if the Players_Cluecar is switched on] The power was on, and the dashboard blinked orange and red lights at me.[end if]".
+	say "My Toyota Corolla in a fetching 'Regatta Blue' that must have looked appealing under bright dealership lights when it was brand new back in 1990. I wouldn't know. It now sat on its side like a beached whale, exactly where I'd left it. The key was still in the ignition.[if the Players_Cluecar is switched on][paragraph break]The power was on, and the dashboard blinked orange and red lights at me.[end if]".
 
-the brake line is scenery. the brake line is a clue. the brake line is part of the Players_Cluecar. The description is "I put a hand behind the wheel and the suspension arm and felt along the metal tube of the brake line, nearly slicing my finger on a thin slit. It wasn't a bit of rust or metal fatigue, the cut was too clean. It might have been made by a dremel or a wire cutter. Cutting brake lines straight through would stop the front brakes from working. But a leak like this could take hours to affect performance. Whatever my state of mind or driving had been on that turn, this wasn't an accident.[paragraph break]The fact that I was able to see all of this without a flashlight barely registered.".
+
+the brake line is scenery. the brake line is a clue. the brake line is part of the Players_Cluecar. The description is "I put a hand behind the wheel and the suspension arm and felt along the metal tube of the brake line, nearly slicing my finger on a thin slit. It wasn't a bit of rust or metal fatigue, the cut was too clean. It might have been made by a dremel or a wire cutter. Cutting brake lines straight through would stop the front brakes from working entirely. But a leak like this could take hours to affect performance. Whatever my state of mind or driving had been on that turn, this wasn't an accident.[paragraph break]The fact that I was able to see all of this without a flashlight barely registered.".
 
 the dashboard is scenery. the dashboard is part of the Players_Cluecar. The description is "[if the Players_Cluecar is switched off]The car was off, the dashboard only showed dust and smudgy fingerprints. I hadn't been a big believer in car washing.[end if][if the Players_Cluecar is switched on]I scanned the panel, and saw a red indicator I'd never seen lit before. The brake light.[end if]".
 
-the brakes are scenery in the Bottom of Cliff. The description is "The rotors were pretty worn, and a little rusty, but they were too expensive to replace as often as they say.".
+the brakes are scenery in the Bottom of Cliff. The description is "The rotors were pretty worn, and a little rusty, but they were too expensive to replace as often as they say. Something occurred to me suddenly, and I thought I should check the brake line.".
 
 Carry out examining the brakes:
 	if the Players_Cluecar is switched on and we have examined the dashboard:
@@ -1114,25 +1163,29 @@ what she wanted to see me about is a repeatable questioning quip.
 	The reply is "".
 	It quip-supplies Val_SecondInv.
 	The proper scene is Second_Investigation.
-
-An availability rule for what she wanted to see me about:
-	If the location is Sharp Bend:
-		It is off-limits.
+		
+what she was trying to say is a repeatable questioning quip. It indirectly-follows what she wanted to see me about.
+	The comment is "'What are you trying to say, exactly?'[line break]'If someone was squeezing Alan for money, it's possible that the blackmailer didn't want a detective in the house.'[line break]'Are you saying that you think whoever killed Alan is coming after me next?'[line break]'I'm saying I think they already tried. You still think your car going off that cliff was an accident? If someone as clueless as Castillo has his hands on your file, how many other people knew about you, and that you were coming here? It'd be easy, especially if it's someone who could dig up serious dirt on Alan in the first place.[line break]I didn't really want to believe it. Though I was clearly a small fish in this pond, I'd taken some comfort in what I thought was my anonymity as a newcomer. Being an unknown quantity can be an advantage in a lot of situations. I'd chalked up that crash to bad driving on a shitty road, but Val and I seemed to have at least one thing in common in that we didn't really believe in coincidence.'".
+	The reply is "".
+	It quip-supplies Val_SecondInv.
+	The proper scene is Second_Investigation.
 
 whether she was ready to head back is a questioning quip.
 	The printed name is "whether she was ready to head back".
-	The comment is "'I'm all done here.'[line break]'Find anything interesting?'[line break]'Just that my fan club is even smaller than I imagined.'[line break]".
+	The comment is "'I'm all done here.'[line break]'Find anything interesting?' she asked.[line break]'Just that my fan club is even smaller than I imagined.'[line break]She looked down the steep incline at the wreck, eyes narrowed like she was trying to see something far on the horizon. 'I've been thinking about it since I picked you up, but I don't figure why they went after you in the first place. They had to know that the law would show up eventually once they killed Alan.'[line break]'They didn't plan on killing him in the first place. Like you said, blackmailers don't have any reason to kill their marks, since there's no money in it. [if the knife is examined]The murder weapon was clearly an object that was lying around in the house, not something the killer brought with them.[end if]' [if the box of bullets is examined]There were bullets in the desk, but no gun. The killer might have found it, but after he killed Alan, because they weren't used in the crime.[end if] Most of all, it doesn't make sense to kill a man just before sunrise, with house guests on the way. If he'd planned it, why do it at a time when there'd be no chance of escape, and a high possibility of being trapped in a house with people who know there's been a murder?".
 	The reply is "".
 	It quip-supplies Val_SecondInv.
 	The proper scene is Second_Investigation.
 	
 An availability rule for whether she was ready to head back:
 	If the location is not Sharp Bend:
+		It is off-limits;
+	If the brake line is unexamined:
 		It is off-limits.
 		
 about who else would is a repeatable questioning quip. It indirectly-follows whether she was ready to head back.
 	The printed name is "about who else would have access to my file".
-	The comment is "".
+	The comment is "'Can you tell me anything about who else might have seen my file?' I asked.[line break]'Almost anyone with connections to Castillo, the Countess, the ability to hack the ancient computers they use, or enough money to bribe one of the Archivists. So almost anyone, really.'".
 	The reply is "".
 	It quip-supplies Val_SecondInv.
 	The proper scene is Second_Investigation.	
@@ -1165,7 +1218,7 @@ what he was being blackmailed over is a repeatable questioning quip. It indirect
 	The proper scene is Second_Investigation.
 
 about the bourbon is a repeatable questioning quip.
-	The comment is "'Your friend Alan seems to have kept this place well-stocked with liquor,' I said.[line break]'Like I mentioned, he entertained a lot of guests. You seem to have a taste for bourbon yourself.'[line break]'Sure,' I said. 'There's this great speakeasy I know on the East Side, off Houston Street.'[line break]'A [italic type]what?[roman type]'[line break]'A speakeasy,' I repeated. She rolled her eyes.".
+	The comment is "'Your friend Alan seems to have kept this place well-stocked with liquor,' I said.[line break]'Like I mentioned, he entertained a lot of guests. You seem to have a taste for bourbon yourself.'[line break]'Sure,' I said. 'I know this great speakeasy I know on the East Side, off Houston Street. Best selection of bourbon you'll ever see.'[line break]'A [italic type]what?[roman type]'[line break]'A speakeasy,' I repeated. She rolled her eyes.".
 	It quip-supplies Val_SecondInv.
 	The proper scene is Second_Investigation.
 
@@ -1193,30 +1246,49 @@ To decide whether the sun rises:
 Chapter 18 DiscoverDet
 
 When DiscoverDet begins:
-	say "Through the stillness of the house, I heard yelling upstairs. It started as a panicked cry of shock and surprise, but quickly turned to screams of agony. It went on, loud and incoherent, muffled by the wooden walls of the house, getting more raspy and strangled, like a pillow smothering a face. Then, just as suddenly, it stopped. I felt a lump in my stomach like a lead weight, and reached for a gun that wasn't there.";
+	say "Through the stillness of the house, I heard yelling upstairs. It started as a panicked cry of shock and surprise, but quickly turned to screams of agony. It went on, loud and incoherent, muffled by the wooden walls of the house, getting more raspy and strangled, like a pillow smothering a face. Then, just as suddenly, it stopped. I felt a lump in my stomach like a lead weight, and reached for where my shoulder holster used to be for a gun that wasn't there.";
 	say "(press any key)";
 	wait for any key.
 
 When DiscoverDet ends:
 	say "I was so focused on trying to read the labels on the fuse box that I didn't notice the footsteps behind me. Maybe I wouldn't have anyway. I heard a dull crack and realized it was the sound of a heavy bottle hitting the back of my head. It was the last thing I remembered thinking about before the rush of unconsciousness. I was out before I hit the floor.";
 	say "(press any key)";
-	wait for any key.
+	wait for any key;
+	now me_npc is in the Wine_Cellar;
+	now the current interlocutor is me_npc;
+	now the description of the Wine_Cellar is "I woke up with a headache like I'd kissed the Long Island Express goodnight. When I tried to put my hands up to feel the back of my head, they jerked against ropes tying them to the chair, along with my legs. He'd gotten the drop on me, that was for sure.[paragraph break]Well, I was in pretty deep now. I looked around the dark room. No one to talk to but myself for the moment.";
+	now the quip-suggestion-phrase is "[We] [could] have ";
+		
+Before going north in the North_Hallway:
+	if DiscoverDet is happening:
+		say "The door to the master bedroom was ajar. I opened it a crack to peer inside. Castillo must have been looking for something in Alan's room. That's the only reason he would've gone in there. It struck me suddenly how bright the room was; the shutters were open, flooding the entire room with daylight.[paragraph break]I saw a figure on the floor, though figure was no longer an apt term for it. It was a mass draped in expensive suitcloth, lumpy and charred. There was nothing I could do for him now. I couldn't even get to him, for that matter. He might as well have been on the surface of the sun itself. What I needed to do now was reset the circuit, if something shorted. Any overrides would probably be in a basement fuse box.";
+		now DET_DISCOVERED is true;
+		say "[paragraph break](press any key)";
+		wait for any key;
+		stop the action;
+	otherwise:
+		continue the action.
 
+Before going east in the Hallway_Upstairs:
+	if DiscoverDet is happening:
+		say "The shutter at the end of the east hallway hadn't closed with the sunrise. Light from outside was slowly stretching across the floor. No way was I going over there.";
+		stop the action;
+	otherwise:
+		continue the action.
 [shutters are open in parts of the upstairs and the guest room and the hallway]
 
 Chapter 19 CellarThink
 
 When CellarThink begins:
-	[now the can't greet yourself rule is not listed in any rulebook;]
-	now me_npc is in the Wine_Cellar;
-	now the description of the Wine_Cellar is "I woke up with a headache like I'd kissed the Long Island Express goodnight. When I tried to put my hands up to feel the back of my head, I realized it was tied to the chair, along with my legs. He'd gotten the drop on me, that was for sure.[paragraph break]Well, I was in pretty deep now. I looked around the dark room. No one to talk to but myself.";
-	now the quip-suggestion-phrase is "[We] [could] have";
 	now the player is in the Wine_Cellar;
 	
 When CellarThink ends:
+	now the description of the Wine_Cellar is "";
 	Remove me_npc from play;
 	Now the quip-suggestion-phrase is "[We] [could] ";
-	now Scott_Villain is in the Wine_Cellar.
+	Now the description of the Wine_Cellar is "Scott had me dead to rights. The overhead lights in the cellar made his brow and nose cast long shadows down his face. Even so, I could tell his eyes burned with hate and bitterness. It wasn't all for me. He'd formed himself from a shy nerd into a the confidence man who gave TED talks and blithely took the venture capital thrown at him. But every day of it had been a tremendous effort. I saw it now that years of simmering hatred had stripped it away, down to the bone.[paragraph break]None of that mattered now. I was in his way, and whatever plan he'd come here with had unravelled spectacularly. If I didn't talk fast, I wasn't making it out of this basement. I wasn't sure if anyone was still home, or still alive. Maybe someone would hear if I yelled. I didn't want to try it unless I knew for sure that help would come; that's really only a trick that works once.";
+	now Scott_Villain is in the Wine_Cellar;
+	now the player is in the Wine_Cellar.
 	
 me_npc is a person. The printed name is "myself". Understand "self" as me_npc. Understand "myself" as me_npc.
 
@@ -1229,6 +1301,12 @@ Instead of saying hello to the player:
 	Otherwise:
 		say "Talking to [yourself] [regarding it][are] unrewarding at the moment.";
 
+Instead of leavetaking during CellarThink:
+	say "I didn't really have anyone else to talk to.";
+
+Instead of saying goodbye to me_npc during Cellarthink:
+	say "I didn't really have anyone else to talk to.";
+
 why there were two wineglasses is a questioning quip.
 	the comment is "There were two wineglasses[if the bottle of wine is examined]and an expensive bottle of wine[end if] that once sat on that table in the reading nook. Alan had known whoever it was well enough, or wanted to impress them enough to warrant opening a bottle of Bordeaux.".
 	It quip-supplies me_npc.
@@ -1240,7 +1318,7 @@ why Alan was stabbed using a letter opener is a repeatable questioning quip.
 	The proper scene is CellarThink.
 
 why there was a stain on the sofa is a questioning quip.
-	the comment is "Alan and his visitor were apparently having civilized conversation and drinking their wine for some time, judging by the state of the bottle. Then suddenly, a struggle had broken out. One wineglass got knocked over onto the floor. The other went over the railing into the living room. And of course, the other man won the struggle. ".
+	the comment is "Alan and his visitor were apparently having civilized conversation and drinking their wine for some time, judging by the state of the bottle. Then suddenly, a struggle had broken out. One wineglass got knocked over onto the floor, another went over the railing into the living room and under the sofa. And of course, Alan's assailant won the struggle. ".
 	It quip-supplies me_npc.
 	The proper scene is CellarThink.
 
@@ -1249,27 +1327,46 @@ An availability rule for why there was a stain on the sofa:
 		it is off-limits.
 
 why someone cut my brakes is a questioning quip.
-	the comment is "This got under my skin more than the rest of it. It almost seemed entirely unrelated and oddly personal. Someone hadn't wanted me here. But to all of these people, I was nobody until yesterday. Even then, I might've just been some guest Val brought along.[if BLACKMAIL_KNOWN is true] I could think of another reason it might be advantageous to not have a cop at the house: they were the one blackmailing Alan.[end if]".
+	the comment is "That part got under my skin more than the rest of it. It almost seemed entirely unrelated and oddly personal. Someone hadn't wanted me here. But to all of these people, I was nobody until yesterday. Even then, I might've just been some guest Val brought along.[if BLACKMAIL_KNOWN is true] I could think of another reason it might be advantageous to not have a cop at the house: they were the one blackmailing Alan.[end if]".
 	It quip-supplies me_npc.
 	The proper scene is CellarThink.
-[TODO: Rest of the clues]	
 
+[TODO: Can add bottle-sensitive clue wording to this]
+why the lock had scratches on it is a questioning quip.
+	the comment is "The scratches on the lock and damage to the front door frame were a nice touch. Anyone responding to the house would think the killer had broken in, that it was someone Alan hadn't known.[if the shattered glass is examined] Alan hadn't been alone, and it was someone he'd known for a long time.[end if][if the knife is examined] On top of all that, it didn't add up that someone would go through all that trouble to break in and kill Alan, and end up doing it with a letter opener that happened to be lying around.[end if]".
+	It quip-supplies me_npc.
+	The proper scene is CellarThink.
+
+An availability rule for why the lock had scratches on it:
+	if the lock is unexamined:
+		it is off-limits.
+[TODO: Rest of the clues]
 
 Chapter 20 VillainMonologue
 
 When VillainMonologue begins:
+	remove the knife from play;
 	now the current interlocutor is Scott_Villain.
 	
 When VillainMonologue ends:
-	say "His eyes went wild, and for a moment I felt like I could actually see his nerves fray and snap. His upper lip curled back over bared teeth so far it looked inhuman. It was the yellow-eyed look of a wolf baring its fangs. He was no wolf, but maybe he was so livid, he'd just forgotten. He whirled the gun around to point it straight at Val's serene face, and pulled the trigger. Her head was nowhere near the gun when it went off. She'd ducked to the side faster than I'd seen anyone move before, like Mayweather slipping a punch.[paragraph break]When Scott tried to aim the gun at her this time, screaming an unearthly scream, her hands were already up in a blur. She let him get another shot off, which I thought was pretty charitable of her. There was nothing resembling charity in her green eyes, burning with a cold fury. It seemed for a second like she'd disarmed him as the gun dropped to the floor. It took an eternity to fall. Then I noticed in the dim light of the wine cellar a glint of silver attached to his neck, a small knife labeled with the initials 'AHB.' His empty hands went to his throat, and he crumpled over. We listened to quiet gasping for a minute as Val came over to untie me from the chair. By the time she'd finished, it had stopped.".
+	remove Scott_Villain from play;
+	say "Val was almost within reaching distance of Scott now, and he somehow sensed it, turning his head around. His eyes went wild, and for a moment I felt like I could actually see his nerves fray and snap. His upper lip curled back over bared teeth so far it looked inhuman. He swung the revolver to point it straight at Val's serene face, and pulled the trigger. Her head was nowhere near the gun when it went off. She'd ducked to the side faster than I'd seen anyone move before, like Mayweather slipping a punch.[paragraph break]When Scott tried to aim the gun at her this time, screaming an unearthly scream, her hands were already up in a blur. She let him get another shot off, which I thought was pretty charitable of her, except there didn't seem to be anything behind her eyes but cold fury. It seemed for a second like she'd disarmed him as the gun dropped to the floor. It took a long time to fall. Then I noticed in the dim light of the wine cellar a glint of silver attached to his neck, a small knife labeled with the initials 'AHB.' His now empty hands went to his throat, and he crumpled over. We listened to quiet gasping for a minute as Val came over to untie me from the chair. By the time she'd finished, it had stopped.";
+	say "(press any key)";
+	now Scott_Body is in the Wine_Cellar;
+	wait for any key;
 
+[TODO: Change the number of quips it takes for Val to enter]
 Every turn during VillainMonologue:
 	If the number of available quips which are not recollected by Scott_Villain is 1:
-		say "Val opened the door noiselessly behind him. She tiptoed behind him quietly on stockinged feet, her eyes never leaving him. She moved deliberately and gracefully, like a show I'd once seen of a panther stalking an impala. Neither of them seemed to really be in a hurry.";
+		now the knife is in the Wine_Cellar;
+		say "Val opened the door noiselessly behind him. He was too absorbed in his rant to really notice. I had to make sure it stayed that way. She tiptoed behind him quietly on stockinged feet, her gaze never leaving him. She was holding something in her right hand, something slender and reflective. My heart was pounding away in my neck as I tried not to betray any sign that anything was out of the ordinary. Her walk was as painfully deliberate as a leopard making an ambush. Every step took an eternity.";
 	if Debug_on is true:
 		say "Total number of quips left: [the number of available quips which are not recollected by Scott_Villain]".
 
 Instead of leavetaking during VillainMonologue:
+	say "I had to keep talking. In my situation, keeping him distracted was the only thing keeping me alive.";
+	
+Instead of saying goodbye to the current interlocutor during VillainMonologue:
 	say "I had to keep talking. In my situation, keeping him distracted was the only thing keeping me alive.";
 	
 Instead of going up during VillainMonologue:
@@ -1277,7 +1374,7 @@ Instead of going up during VillainMonologue:
 
 Section 1 - Scott_Villain
 
-Scott_Villain is a man. The printed name is "Scott". Understand "Scott" as Scott_Villain. The description is "The self-assured genius entrepreneur was gone. There was no trace of ironic amusement or even disdain in his face now. The strain seemed to pull his skin grotesquely taut over his gaunt face like stretched rubber. He was a cornered fox, a desperate man preparing to do desperate things.".
+Scott_Villain is a man. The printed name is "Scott". Understand "Scott" as Scott_Villain. The description is "He held what I assumed was Alan's revolver in his hand, pointed straight at me. The self-assured genius entrepreneur was gone. There was no trace of ironic amusement or even disdain in his face now. The strain seemed to pull his skin grotesquely taut over his gaunt face like stretched rubber. He looked cornered, a desperate man preparing to do desperate things.".
 
 how he planned on getting away is a questioning quip. The printed name is "how he planned on getting away".
 	The comment is "You seriously plan to just kill us and get out of here?".
@@ -1285,7 +1382,39 @@ how he planned on getting away is a questioning quip. The printed name is "how h
 	It quip-supplies Scott_Villain.
 	The proper scene is VillainMonologue.
 	
+where he got the gun is a questioning quip.
+	The comment is "I licked my lips, trying not to look as panicky as I felt. 'Where'd you get the gun? Alan's desk?'".
+	It quip-supplies Scott_Villain.
+	The proper scene is VillainMonologue.
+	
+why he needed the money is a questioning quip.
+	The comment is "".
+	It quip-supplies Scott_Villain.
+	The proper scene is VillainMonologue.
+an availability rule for why he needed the money:
+	if BLACKMAIL_KNOWN is true:
+		it is available;
+	otherwise if the player recollects why  he killed Alan:
+		it is available;
+	otherwise:
+		it is off-limits.
+	
+why he killed Alan is a questioning quip. It indirectly-follows where he got the gun.
+	The comment is "".
+	It quip-supplies Scott_Villain.
+	The proper scene is VillainMonologue.
+	
+how he found out about Alan's secret is a questioning quip. It indirectly-follows why he needed the money.
+	
 Chapter 21 GetOutOfDodge
+
+Scott_Body is a thing. The printed name is "Scott's body.". The description is "I looked down at him, sprawled out on the floor like he was making a snow angel. He'd been young and desperate, and his insane plan had been a result of that youth, and Alan's panicked murder had been a product of his desperation. He thought he'd get his chance at greatness through angel investors, and after that, maybe the Circle. Maybe he'd made a deal with the devil, but I had a hard time blaming him. We'd all made the same one. What did any of us do when life had us over a barrel, and someone like Val came along, and offered to take a long drink? We sold a part of our soul just for a chance to spin the wheel one more time. Scott's number had just come up sooner than mine, and a little after Alan's.".
+
+Rule for writing a paragraph about Scott_Body:
+	say "Scott's body was lying on the floor face-up, in a pool of blood.".
+
+When GetOutOfDodge begins:
+	now the description of Wine_Cellar is "The wine cellar had at first seemed like a display of hedonistic excess at first. A monument to one man's appetites and the material wealth to indulge every inch of them. Now, it was just another dank warehouse with a body in it.".
 
 When GetOutOfDodge ends:
 	now the front door is unlocked;
@@ -1339,7 +1468,6 @@ Instead of punching a person:
 	say "Might be hard to believe from the way I look, but I always thought of my investigative methods as more Hercule Poirot than Dick Tracy.".
 Instead of punching something:
 	say "I had an Everlast heavy bag for that sort of thing.".
-[TODO: Give useful error message for unpunchable things]
 
 Understand the command hit as something new. Hitting is an action applying to one thing. Understand "hit [something]" as attacking.
 
@@ -1350,6 +1478,8 @@ Section 3 - Conversation Tweaks
 
 [The standard listing subject changes rule is not listed in any rulebook.
 The standard report other subjects rule is not listed in any rulebook.]
+
+the default greeting rule is not listed in any rulebook.
 
 Listing repeatable quips is an activity.
 
@@ -1473,7 +1603,7 @@ Carry out asking for objective:
 		say "It seemed like we weren't going anywhere until Adrian asked his questions. None of them were going to lead anywhere, of course, but he had to pretend like he was doing a job.";
 	otherwise if Second_Investigation is happening:
 		if the player does not recollect what she wanted to see me about:
-			say "Val looked like she had something to tell me that couldn't wait.";
+			say "Val looked like she had something to tell me that couldn't wait. I thought I saw her walk off towards the front door.";
 		otherwise if the brake line is unexamined:
 			say "We thought that maybe whoever killed Alan had wanted to prevent me from getting here in the first place. At least, I thought it was worth going back to that cliff to find out.";
 		otherwise:
@@ -1484,7 +1614,7 @@ Carry out asking for objective:
 		if DET_DISCOVERED is false:
 			say "The screams I heard from the second floor had the air of finality about them. Someone was dead or dying, and I was running out of time to find out who.";
 		otherwise:
-			say "Adrian was dead. Someone had rigged the shutters in his room to stay open at sunrise, though thankfully something had stopped them before they were able to uncover the whole house.[paragraph break]If there was a manual override or circuit breaker, it'd be in the basement.";
+			say "Castillo was dead. Someone had rigged the shutters in his room to stay open at sunrise, though thankfully something had stopped them before they were able to uncover the whole house.[paragraph break]If there was a manual override or circuit breaker, it'd be in the basement.";
 	otherwise if CellarThink is happening:
 		say "TODO";
 	otherwise if VillainMonologue is happening:
@@ -1592,7 +1722,7 @@ Test me with "test janinv/s/w/d/open painting/take all/x pouch/drink pouch";
 
 Section 9 - Computer
 
-The computer is a device in the Office. The computer is switched off. The computer is fixed in place.
+The computer is a device in the Library. The computer is switched off. The computer is fixed in place.
 
 Instead of switching on the computer:
 	say "I booted up Alan's computer to see what I could find. There were barely any house phones, and I hadn't found his cell phone yet. That meant his e-mail and web browser were probably his main points of contact.[line break](Type 'email' to access e-mail, 'history' for search engine autocomplete history)";
@@ -1605,8 +1735,8 @@ Understand the command "history" as something new. Understand "history" as histo
 Before historying a topic:
 	if Debug_on is true:
 		continue the action;
-	if the location is not Office:
-		say "I'd need to go to the office for that.";
+	if the location is not Library:
+		say "I'd need to go to the library for that.";
 		stop the action;
 	if Interrogation is happening:
 		say "This didn't really seem like the time to be digging around on the computer.";
@@ -1683,8 +1813,8 @@ Understand "e-mail" as using the computer.
 Check using the computer:
 	if Debug_on is true:
 		continue the action;
-	if the location is not Office:
-		say "I'd need to go to the office for that.";
+	if the location is not Library:
+		say "I'd need to go to the library for that.";
 		stop the action;
 	if Interrogation is happening:
 		say "This didn't really seem like the time to be digging around on the computer.";
@@ -1736,8 +1866,6 @@ EmailSignature is some text that varies. EmailSignature is "[line break]--[line 
 [He was putting on a good show, but I could tell he didn't seem to have any interest in finding out who did it. That, or some brass had told him not to.]
 
 [I told myself it was just tomato juice]
-
-[speakeasy; "They pass the Volstead Act again when I wasn't looking?"]
 
 ["Why didn't you just tell me?" "Because I need you to find something I missed. You're a fresh set of eyes, and I don't want to bias what you see."]
 [Sinclair died some 70 years ago. Cases was stone cold. And the fact that Val was bothering to throw me at it meant that she thought the killer was still alive.][You have to wait to sire, Val waited 50 years]

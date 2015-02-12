@@ -7,7 +7,7 @@ The Release number is 2.
 The story genre is "Mystery".
 
 The story description is "The first time I'd met Val was the day before yesterday, on my way out of the hospital. I'd been in a numb stupor for hours. There's no good way to take that kind of news.  She'd asked me out for a drink. I remember thinking there was something Old Hollywood glam about her, like Veronica Lake or Lauren Bacall. I figured she was trouble, but I had nothing to lose, and she looked like my kind of trouble. Turns out I didn't know the half of it.
-re
+
 Daybreak was just a few hours away. I stared at the crumpled remains of my car, and beyond to the frozen lake below. I wondered if I'd ever see her again.".
 
 Include Basic Screen Effects by Emily Short.
@@ -21,13 +21,15 @@ Include Glulx Text Effects by Emily Short.
 
 [CHANGE THE FOLLOWING LINE FOR DEBUGGING]
 Debug_on is a truth state that varies. Debug_on is usually true.
-Logging_on is a truth state that varies. Logging_on is usually true.
+Logging_on is a truth state that varies. Logging_on is usually false.
 
 When play begins:
 	now the story viewpoint is first person singular;
 	now the story tense is past tense;
 	If logging_on is true:
 		try switching the story transcript on.
+		
+The description of the player is "Clothes were a little wrinkled, but I wasn't used to having people to impress. None the worse for wear, considering what I'd been through.".
 
 A clue is a kind of thing.
 
@@ -80,7 +82,7 @@ To decide whether the guests arrive:
 First_Slept is a truth state that varies. First_Slept is initially false.
 SHUTTERS_DOWN is a truth state that varies. SHUTTERS_DOWN is initially false.
 DET_DISCOVERED is a truth state that varies. DET_DISCOVERED is initially false.
-
+TRIED_BRAKING is a truth state that varies. TRIED_BRAKING is initially false.
 [TODO cut off passage to guest rooms]
 
 Section 1 - Sleep Mechanics
@@ -141,14 +143,15 @@ Carry out going down when the player is in the Hairpin_Turn:
 	say "(press any key)";
 	now the player is in the Upturned Car.
 
-After reading a command:
+After reading a command while the location is Hairpin_Turn:
 	If the player's command matches "brake" or the player's command matches "stop":
-		If the player is in the Hairpin_Turn:
-			say "I hit the brakes, but the car kept straight for the guardrail, slamming through, and going over.[paragraph break]The back end of the car lost traction and swung out wide, trying vainly to follow the front, just like one of those car commercials. Unfortunately, I was not a professional driver, nor was this a closed course, and the right side of the car went over the edge of the cliff, momentum then taking the rest of the car with it. In shock, my brain couldn't manage to tell my body to do more than grip the wheel uselessly as the car tumbled down the steep incline. I lost count of the rolls after three. The roof hit a tree, and I was jerked upward against the seat belt. Snow from the branches fell in a pile onto the passenger window from the impact. I heard a thud, snuffing out the brief glimpse of moonlight. Everything went black.[paragraph break]";
-			say "(press any key)";
-			wait for any key;
-			now the player is in the Upturned Car;
-			stop the action.
+		now TRIED_BRAKING is true;
+	If the player is in the Hairpin_Turn:
+		say "[if TRIED_BRAKING is true]I hit the brakes, but the car kept straight for the guardrail, slamming through, and going over.[otherwise]I didn't have the chance to stop, and the car slammed through the guardrail, and went over the edge.[end if][paragraph break]The back end of the car lost traction and swung out wide, trying vainly to follow the front, just like one of those car commercials. Unfortunately, I was not a professional driver, nor was this a closed course, and the right side of the car went over the edge of the cliff, momentum then taking the rest of the car with it. In shock, my brain couldn't manage to tell my body to do more than grip the wheel uselessly as the car tumbled down the steep incline. I lost count of the rolls after three. The roof hit a tree, and I was jerked upward against the seat belt. Snow from the branches fell in a pile onto the passenger window from the impact. I heard a thud, snuffing out the brief glimpse of moonlight. Everything went black.[paragraph break]";
+		say "(press any key)";
+		wait for any key;
+		now the player is in the Upturned Car;
+		stop the action.
 	
 Chapter 3 - Scene Car_Escape
 
@@ -769,8 +772,8 @@ what the chalet is a repeatable questioning quip.
 	It mentions house.
 	It mentions ski chalet.
 	[Understand "ski chalet/house" as what the chalet.]
-	The comment is "Where are we going?".
-	The reply is "I already told you, a friend's house. He lives not too far from here, halfway up the mountain.".
+	The comment is "'Where are we going?'".
+	The reply is "'I already told you, a friend's house. He lives not too far from here, halfway up the mountain.'".
 	The proper scene is Riding_Scene.
 what time sunrise is a repeatable questioning quip.
 	The printed name is "about sunrise". The true-name is "what time sunrise".
@@ -1389,12 +1392,11 @@ where he got the gun is a questioning quip.
 	
 why he needed the money is a questioning quip.
 	The comment is "".
+	The reply is "".
 	It quip-supplies Scott_Villain.
 	The proper scene is VillainMonologue.
 an availability rule for why he needed the money:
-	if BLACKMAIL_KNOWN is true:
-		it is available;
-	otherwise if the player recollects why  he killed Alan:
+	if BLACKMAIL_KNOWN is true and the current interlocutor is Scott_Villain:
 		it is available;
 	otherwise:
 		it is off-limits.
@@ -1405,6 +1407,9 @@ why he killed Alan is a questioning quip. It indirectly-follows where he got the
 	The proper scene is VillainMonologue.
 	
 how he found out about Alan's secret is a questioning quip. It indirectly-follows why he needed the money.
+	The comment is "'How'd you find out about Alan's dirty little secret?'[line break]'People who have been around as long as him aren't exactly technologically savvy. His email password was sent unencrypted. Not to mention the fact that it was a five letter English word and easy to guess. I barely had to do any work at all to dig up something.'".
+	It quip-supplies Scott_Villain.
+	The proper scene is VillainMonologue.
 	
 Chapter 21 GetOutOfDodge
 
@@ -1448,6 +1453,9 @@ This is the make blackmail known rule:
 Section 2 - Command Overrides
 
 Understand the command "read" as something new. Reading is an action applying to one thing. Understand "read [something]" as reading.
+
+After reading a command:
+	If the player's command matches "what", replace the player's command with "";
 
 Ascending is an action applying to nothing. Understand "ascend", "go
 upstairs", and "upstairs" as ascending.
@@ -1530,7 +1538,7 @@ Understand the command "credits" as something new. Understand "credits" as askin
 Understand the command "about" as something new. Understand "about" as asking for credits.
 
 Carry out asking for credits:
-	say "[italic type]A word from the author:[line break]I'd like to thank to everyone who made this work possible. Special thanks to my beta testers: FK, TF, KG, and DO.[line break]This story has many edge cases. If you believe you have found a bug, please send an email to: alongdrink@beyondcoast.org[paragraph break]Cover art by Dan Smith
+	say "[italic type]A word from the author:[line break]I'd like to thank to everyone who made this work possible. Special thanks to my testers: FK, TF, KG, DO, and caleb.[line break]This story has many edge cases. If you believe you have found a bug, please send an email to: alongdrink@beyondcoast.org[paragraph break]Cover art by Dan Smith
 Licensed under Creative Commons By 2.0
 Image at: https://flic.kr/p/pPkjHD
 License Terms at: https://creativecommons.org/licenses/by/2.0/

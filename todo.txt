@@ -4,27 +4,51 @@ CRITICAL Fix before release
 - Clues need to be in the freaking table
 - "could have asked message" needs fixing in all cases
 
+- TODO: Convert interrogation quips to playing automatically.
+
+===========================
+
+Scenery stuff:
+-- Not much seems to clue the clue that you need to DRIVE to keep going.
+-- You can't EXAMINE THE CAR, for one thing, nor try to GET OUT.
+-- Room description mentions radio tuned to some news station; LISTEN does nothing.
+
+-- OPEN BELT should be a synonym for UNBUCKLE BELT.
+-- OUT and other attempts at going give an uninformative response.
+-- Car doors missing a description.
+
+Foyer:
+-- No "snow" object
+-- No "rug" object
+
+Greatroom:
+-- Again, mention of a radio but no response to LISTEN.
+-- No description of the sofa
+-- Examining the stain after finding the wineglass still hints that it's there
+-- No response for EXAMINE FLOOR or other attempts at finding the reflective thing mentioned by the stain
+-- No exits in room description
+
+
+
+============================
+DONE
+
+- disable "what"
+
 ============================
 
 - TODO Later: Make one that gets none, compare
-- TODO: Instead of talking to Val during discovery, custom message and then she leaves
 
-- MAKE SPECIAL EVENTS IN BOLD, SO PEOPLE DON"T MISS THEM?
-
-- Let Adrian go down first when the player goes south in the hallway, have a line about "don't keep me waiting too long"
 ================================
 
 Necessary for game to work / work better
 
 - TODO: Fallen book should be a struggle clue
 
-
 =================================
 
 Critical impact on experience
 
-- TODO: Make sure all clues are in a table
-- TODO: Quip-suggestion phrase in normal game, interrogation, and talking to self
 - TODO: Add descriptions for scenery obviously listed in room descriptions
 - TODO: Add (press any key) when necessary
 - TODO: Game hint depending on scene/scene status
@@ -43,11 +67,6 @@ Bugs
 
 Won't Fix / No time to implement
 
-- Drinking blood (optional) will give heightened senses and make solving puzzles easier.
-- TODO: Sensible messages for getting in car
-- Emails list full of boring student crap, need to key off the initials from book
-- Getting into a knife fight is a bad proposition. The loser dies in the street, the winner gets to die in the hospital.
-
 Low priority:
 - Some kind of freaking map
 - Add scenery to all the mountain areas, add them to region I guess
@@ -55,13 +74,8 @@ Low priority:
 
 - Add stage direction type sentences to the beginning of paragraphs
 
-- [TODO: Get on bed as a nice to have]
-
-
-- [ BUG: Sleepy message persists even after waking up]
 - [ BuG: I need to use indirectly-follows instead of an availability rule]
 - bug: change "he could have ask" phrase outside of interrogation
-- bug: Move interrogation npcs to room before scene change not after so there's not a slack turn
 - bug: going to the precipice after the initial scene should not result in gameover
 
 ===============
@@ -70,24 +84,7 @@ Critical path
 
 - Gloves
 - Make the front door have a dummy item examining it also examines, and have that be a clue?
-- MAKE SURE ALL CLUES HAVE A TABLE ENTRY FOR HINTS
-- Val conversation leading to car revisit
-	- What did you find? (clue context sensitive)
-- Car revisit scene now has clues in it
 - Wall safe stuff, more clues
 	- Cash for blackmail, put comment in final scene for it
 - Emails need to have clue rules when you read them
-- When get back, split up with Val, sun rises again
-- vdet gets hit wth light, go to investigate
-- get hit on the head upon discovering it
-- wake up in wine cellar, climax scene
 
-- denouement, discussion with Val, leave in car
-
-======================
-
-Needs revision
-
-
-- Finish interrogation
-- Finish email text

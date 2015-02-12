@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Skein rootNode="node-0x7feb4ee0" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x7feb4ee0" />
+  <activeNode nodeId="node-0x812d81b0" />
   <item nodeId="node-0x7feb4ee0">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
@@ -11,11 +11,9 @@ Mercedes is a subject.
 Ski chalet is a subject.
 Dawn is a subject.
 
-Attempt to begin transcript failed.
-
 A Long Drink
 An Interactive Mystery by Owen Parks
-Release 2 / Serial number 150209 / Inform 7 build 6L38 (I6/v6.33 lib 6/12N) SD
+Release 2 / Serial number 150211 / Inform 7 build 6L38 (I6/v6.33 lib 6/12N) SD
 
 Mountain Road
 They say you shouldn&apos;t drive when you&apos;re angry. That was just one of a hundred pieces of good advice I was ignoring as I drove north along the icy road to the chalet, my foot a little heavier on the gas than it needed to be.
@@ -48,7 +46,7 @@ Not six hours earlier, I&apos;d turned in my badge and my gun and walked out, mo
 &gt;</commentary>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="25">NO</temporary>
+    <temporary score="34">NO</temporary>
     <children>
       <child nodeId="node-0x7feb4f30" />
       <child nodeId="node-0x81006c90" />
@@ -58,7 +56,7 @@ Not six hours earlier, I&apos;d turned in my badge and my gun and walked out, mo
     <command xml:space="preserve">drive</command>
     <result xml:space="preserve">
 Mountain Pass
-I had the radio on tuned to some news station-- truth be told, I already missed the chatter of the dispatch as I was driving. The traffic report had little bearing on my current locale, but the weather gave me some concern: snowstorm coming up off the Great Lakes, apparently. Spending the weekend with a small crowd I barely knew appealed very little to me. Being cooped up with them the entire time due to weather seemed like a recipe for an epidemic of cabin fever.
+I had the radio on tuned to some news station-- truth be told, I already missed the chatter of the dispatch as I was driving. The traffic report had little bearing on my current locale, but the weather gave me some concern: a snowstorm coming up off the Great Lakes, apparently. Spending the weekend with a small crowd I barely knew appealed very little to me. Being cooped up with them the entire time due to weather seemed like a recipe for an epidemic of cabin fever.
 
 &gt;</result>
     <commentary xml:space="preserve">
@@ -68,7 +66,7 @@ I had the radio on tuned to some news station-- truth be told, I already missed 
 &gt;</commentary>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="8">NO</temporary>
+    <temporary score="34">NO</temporary>
     <children>
       <child nodeId="node-0x81006c30" />
     </children>
@@ -87,10 +85,149 @@ If I&apos;d finished that last thought a few seconds earlier, I might&apos;ve no
 &gt;</commentary>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="2970">NO</temporary>
+    <temporary score="34">NO</temporary>
     <children>
       <child nodeId="node-0x81006730" />
+      <child nodeId="node-0x7fe7a160" />
     </children>
+  </item>
+  <item nodeId="node-0x7fe7a160">
+    <command xml:space="preserve">borf</command>
+    <result xml:space="preserve">I didn&apos;t have the chance to stop, and the car slammed through the guardrail, and went over the edge.
+
+
+The back end of the car lost traction and swung out wide, trying vainly to follow the front, just like one of those car commercials. Unfortunately, I was not a professional driver, nor was this a closed course, and the right side of the car went over the edge of the cliff, momentum then taking the rest of the car with it. In shock, my brain couldn&apos;t manage to tell my body to do more than grip the wheel uselessly as the car tumbled down the steep incline. I lost count of the rolls after three. The roof hit a tree, and I was jerked upward against the seat belt. Snow from the branches fell in a pile onto the passenger window from the impact. I heard a thud, snuffing out the brief glimpse of moonlight. Everything went black.
+
+(press any key)
+Upturned Car
+I wasn&apos;t sure how long I&apos;d been out. Taking stock of my situation, I was surprised to find myself more or less unhurt, save for a dull ache in my left wrist where I&apos;d tried to brace against the door. I took a few deep breaths, and tried to gather myself-- I was still a little mentally unfocused.
+
+The car was currently lying at the bottom of a cliff on its side. Above me, I could dimly see the light of the moon, mottled by the snow on the passenger side windows. The windshield in front of me showed nothing but evergreen forest, extending into the darkness.
+
+I was still strapped in, the seat belt made sure I stayed put. At least one thing in this car still knew how to do its job right.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="34">YES</temporary>
+    <children>
+      <child nodeId="node-0x8172ccd0" />
+    </children>
+  </item>
+  <item nodeId="node-0x8172ccd0">
+    <command xml:space="preserve">listen</command>
+    <result xml:space="preserve">The seat belt held me firmly in place in what was now the bottom of the upturned car. I wasn&apos;t going to be able to see or do much of anything until I unbuckled myself.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="34">YES</temporary>
+    <children>
+      <child nodeId="node-0x7bf8e2c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7bf8e2c0">
+    <command xml:space="preserve">unbuckle self</command>
+    <result xml:space="preserve">I wrestled with the jammed seat belt for a moment, then managed to undo it, falling a few inches down against the driver door once the chest belt was free.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="34">YES</temporary>
+    <children>
+      <child nodeId="node-0x815bea30" />
+    </children>
+  </item>
+  <item nodeId="node-0x815bea30">
+    <command xml:space="preserve">listen</command>
+    <result xml:space="preserve">I heard nothing unexpected.
+
+Turn Count: 1
+FoundClues: 0
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="34">YES</temporary>
+    <children>
+      <child nodeId="node-0x8152aaf0" />
+    </children>
+  </item>
+  <item nodeId="node-0x8152aaf0">
+    <command xml:space="preserve">restart</command>
+    <result xml:space="preserve">Are you sure you want to restart? </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="34">YES</temporary>
+    <children>
+      <child nodeId="node-0x812622d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x812622d0">
+    <command xml:space="preserve">yes</command>
+    <result xml:space="preserve">
+
+
+Mercedes is a subject.
+Ski chalet is a subject.
+Dawn is a subject.
+
+A Long Drink
+An Interactive Mystery by Owen Parks
+Release 2 / Serial number 150211 / Inform 7 build 6L38 (I6/v6.33 lib 6/12N) SD
+
+Mountain Road
+They say you shouldn&apos;t drive when you&apos;re angry. That was just one of a hundred pieces of good advice I was ignoring as I drove north along the icy road to the chalet, my foot a little heavier on the gas than it needed to be.
+
+I&apos;d had a long, promising career in homicide ahead of me, or so I kept telling myself, and it was all down the drain now. I had planned on a senior detective&apos;s desk being in the cards for me, at least. Maybe even quitting and going into private investigations. Well, I guessed I could still do that.
+
+Not six hours earlier, I&apos;d turned in my badge and my gun and walked out, more or less the way I&apos;d seen it in the movies. The captain was yelling his head off, couldn&apos;t figure out why a promising young detective like me would just up and quit. I honestly hoped he never did.
+
+(type &quot;help&quot; at any point for hints)
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="34">YES</temporary>
+    <children>
+      <child nodeId="node-0x7be00790" />
+    </children>
+  </item>
+  <item nodeId="node-0x7be00790">
+    <command xml:space="preserve">x radio</command>
+    <result xml:space="preserve">An aftermarket stereo the previous owner put in. The blue lights and shiny dials were stark against the shabby interior of the rest of the car.
+
+Turn Count: 1
+FoundClues: 0
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="34">YES</temporary>
+    <children>
+      <child nodeId="node-0x7d0c5ed0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7d0c5ed0">
+    <command xml:space="preserve">listen</command>
+    <result xml:space="preserve">I heard nothing unexpected.
+
+Turn Count: 2
+FoundClues: 0
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="34">YES</temporary>
+    <children>
+      <child nodeId="node-0x812d81b0" />
+    </children>
+  </item>
+  <item nodeId="node-0x812d81b0">
+    <command xml:space="preserve">listen to radio</command>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="33">YES</temporary>
   </item>
   <item nodeId="node-0x81006730">
     <command xml:space="preserve">brake</command>

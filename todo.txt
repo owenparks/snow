@@ -1,45 +1,12 @@
 CRITICAL Fix before release
 
 - Scott needs entrance scene
-- Clues need to be in the freaking table
 - "could have asked message" needs fixing in all cases
+- Make combination to safe, and safe opens if combination is examined (absentminded professor)
 
 - TODO: Convert interrogation quips to playing automatically.
 
-===========================
-
-Scenery stuff:
--- Not much seems to clue the clue that you need to DRIVE to keep going.
--- You can't EXAMINE THE CAR, for one thing, nor try to GET OUT.
--- Room description mentions radio tuned to some news station; LISTEN does nothing.
-
--- OPEN BELT should be a synonym for UNBUCKLE BELT.
--- OUT and other attempts at going give an uninformative response.
--- Car doors missing a description.
-
-Foyer:
--- No "snow" object
--- No "rug" object
-
-Greatroom:
--- Again, mention of a radio but no response to LISTEN.
--- No description of the sofa
--- Examining the stain after finding the wineglass still hints that it's there
--- No response for EXAMINE FLOOR or other attempts at finding the reflective thing mentioned by the stain
--- No exits in room description
-
-
-
 ============================
-DONE
-
-- disable "what"
-
-============================
-
-- TODO Later: Make one that gets none, compare
-
-================================
 
 Necessary for game to work / work better
 
@@ -50,14 +17,8 @@ Necessary for game to work / work better
 Critical impact on experience
 
 - TODO: Add descriptions for scenery obviously listed in room descriptions
-- TODO: Add (press any key) when necessary
-- TODO: Game hint depending on scene/scene status
 - TODO: Change I beg your pardon message
 - TODO Fix fucking topics double printing and having wrong tenses or whatever
-- Examine self, you know people are going to do that shit and complain.
-
-=================================
-
 
 ==================================
 
@@ -68,23 +29,9 @@ Bugs
 Won't Fix / No time to implement
 
 Low priority:
-- Some kind of freaking map
-- Add scenery to all the mountain areas, add them to region I guess
-- Clock in the vals_car scenery
-
-- Add stage direction type sentences to the beginning of paragraphs
-
-- [ BuG: I need to use indirectly-follows instead of an availability rule]
 - bug: change "he could have ask" phrase outside of interrogation
 - bug: going to the precipice after the initial scene should not result in gameover
+- saying ask by itself
 
 ===============
-
-Critical path
-
-- Gloves
-- Make the front door have a dummy item examining it also examines, and have that be a clue?
-- Wall safe stuff, more clues
-	- Cash for blackmail, put comment in final scene for it
-- Emails need to have clue rules when you read them
 

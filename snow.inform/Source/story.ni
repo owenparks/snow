@@ -13,6 +13,7 @@ Daybreak was just a few hours away. I stared at the crumpled remains of my car, 
 Include Basic Screen Effects by Emily Short.
 Include Threaded Conversation by Chris Conley.
 Include Exit Lister by Gavin Lambert.
+[Include Exit Lister by Eric Eve.]
 Include Menus by Emily Short.
 Include Glulx Text Effects by Emily Short.
 Include List Control by Eric Eve.
@@ -71,8 +72,6 @@ To decide whether the guests arrive:
 [FIXME: This doesn't work at all and I don't know why]
 [To decide whether Player_Sleepy:
 	If First_Investigation is happening:
-		Decide yes;
-	Decide no.
 		If the Turn Count is greater than 10:
 			Decide yes;
 		If FoundClues is greater than 4:
@@ -86,7 +85,7 @@ TRIED_BRAKING is a truth state that varies. TRIED_BRAKING is initially false.
 
 Section 1 - Sleep Mechanics
 
-[This ugliness is because Inform7 made the decide function go nuts and I'm tired of trying to figure out what the fuck is wrong.]
+[FIXME: This ugliness is because Inform7 made the decide function go nuts and I'm tired of trying to figure out what the fuck is wrong.]
 
 Every turn when a random chance of 1 in 5 succeeds:
 	if First_Investigation is happening and the Turn Count is greater than 100:
@@ -95,7 +94,6 @@ Every turn when a random chance of 1 in 5 succeeds:
 		say "I was starting to feel tired. Everything that had happened in the past few days was finally starting to take its toll. I thought it might help to find a bedroom and sleep for a few hours.";
 
 Chapter 2 - Scene Mountain_Driving
-
 
 [TODO: Mention that shutters are closed at game ending time in case player still wants to look around]
 
@@ -130,7 +128,7 @@ After reading a command:
 		
 Mountain_Road is a room in the introcar. The printed name of Mountain_Road is "Mountain Road". The description is "They say you shouldn't drive when you're angry. That was just one of a hundred pieces of good advice I was ignoring as I drove along the icy road to the chalet, my foot a little heavier on the gas than it needed to be.[paragraph break]I'd had a long, promising career in homicide ahead of me, or so I kept telling myself, and it was all down the drain now. I had planned on a senior detective's desk being in the cards for me, at least. Maybe even quitting and going into private investigations. Well, I guessed I could still do that.[paragraph break]Not six hours earlier, I'd turned in my badge and my gun and walked out, more or less the way I'd seen it in the movies. The captain was yelling his head off, couldn't figure out why a promising young detective like me would just up and quit. I honestly hoped he never did.[paragraph break]I kept on driving north.[paragraph break][hint reminder]"
 
-Mountain_Pass is a room in the introcar. The printed name of Mountain_Pass is "Mountain Pass". Mountain_Pass is north of the Mountain_Road. The description is "I had the radio on tuned to some news station-- truth be told, I already missed the chatter of the dispatch as I was driving. The traffic report had little bearing on my current locale, but the weather gave me some concern: a snowstorm coming up off the Great Lakes. Spending the weekend with a small crowd I barely knew wasn't my idea of a good time. Being cooped up with them the entire time due to weather seemed like a recipe for an epidemic of cabin fever."
+Mountain_Pass is a room in the introcar. The printed name of Mountain_Pass is "Mountain Pass". Mountain_Pass is north of the Mountain_Road. The description is "I had the radio on tuned to some news station-- truth be told, I already missed the chatter of the dispatch as I was driving. The traffic report had little bearing on my current locale, but the weather gave me some concern: a snowstorm coming up off the Great Lakes. Spending the weekend with a small crowd I barely knew wasn't my idea of a good time. Being cooped up with them the entire time due to weather seemed like a recipe for an epidemic of cabin fever.[paragraph break]I continued north along the snowy road."
 Instead of going south when the player is in the Mountain_Pass:
 	say "I had somewhere to be. Making a U-turn wasn't going to get me there any faster.";
 	stop the action.	
@@ -143,7 +141,7 @@ Instead of going north when the player is in the Hairpin_Turn:
 Instead of going south when the player is in the Hairpin_Turn:
 	Try going down.
 Carry out going down when the player is in the Hairpin_Turn:
-	Say "It was too late to stop, so I didn't even bother. Instead, I press my head and back against the seat and put my arms in front of my face.[paragraph break]The back end of the car lost traction and swung out wide, trying valiantly to chase the front like a powerslide in a car commercials. The right side of the car went over the edge of the cliff, momentum then taking the rest of the car with it. In shock, my brain couldn't manage to tell my body to do more than grip the wheel uselessly as the car tumbled down the steep incline. I lost count of the rolls after three. The roof hit a tree, and I jerked upward against the seat belt. Snow from the branches fell into a pile onto the passenger window from the impact. I heard a thud, snuffing out the brief glimpse of moonlight.[paragraph break]";
+	Say "It was too late to stop, so I didn't even bother. Instead, I press my head and back against the seat and put my arms in front of my face.[paragraph break]The back end of the car lost traction and swung out wide, trying valiantly to chase the front like a powerslide in a car commercials. The right side of the car went over the edge of the cliff, momentum taking the rest of the car with it. In shock, my brain couldn't manage to tell my body to do more than grip the wheel uselessly as the car tumbled down the steep incline. I lost count of the rolls after three. The roof hit a tree, and I jerked upward against the seat belt. Snow from the branches fell into a pile onto the passenger window from the impact. I heard it thud, and the brief glimpse of moonlight was snuffed out.[paragraph break]";
 	wait for any key;
 	say "(press any key)";
 	now the player is in the upturned_car.
@@ -152,7 +150,7 @@ After reading a command while the location is Hairpin_Turn:
 	If the player's command matches "brake" or the player's command matches "stop":
 		now TRIED_BRAKING is true;
 	If the player is in the Hairpin_Turn:
-		say "[if TRIED_BRAKING is true]I hit the brakes, but the car kept straight for the guardrail, slamming through, and going over.[otherwise]I didn't have the chance to stop, and the car slammed through the guardrail, and went over the edge.[end if][paragraph break]The back end of the car lost traction and swung out wide, trying vainly to follow the front, just like one of those car commercials. Unfortunately, I was not a professional driver, nor was this a closed course, and the right side of the car went over the edge of the cliff, momentum then taking the rest of the car with it. In shock, my brain couldn't manage to tell my body to do more than grip the wheel uselessly as the car tumbled down the steep incline. I lost count of the rolls after three. The roof hit a tree, and I was jerked upward against the seat belt. Snow from the branches fell in a pile onto the passenger window from the impact. I heard a thud, snuffing out the brief glimpse of moonlight. Everything went black.[paragraph break]";
+		say "[if TRIED_BRAKING is true]I hit the brakes, but the car kept straight for the guardrail, slamming through, and going over.[otherwise]I didn't have the chance to stop, and the car slammed through the guardrail, and went over the edge.[end if][paragraph break]The back end of the car lost traction and swung out wide, trying vainly to follow the front, just like one of those car commercials. Unfortunately, I was not a professional driver, nor was this a closed course, and the right side of the car went over the edge of the cliff, momentum taking the rest of the car with it. In shock, my brain couldn't manage to tell my body to do more than grip the wheel uselessly as the car tumbled down the steep incline. I lost count of the rolls after three. The roof hit a tree, and I was jerked upward against the seat belt. Snow from the branches fell in a pile onto the passenger window from the impact. I heard it thud, and the brief glimpse of moonlight was snuffed out.[paragraph break]";
 		say "(press any key)";
 		wait for any key;
 		now the player is in the upturned_car;
@@ -171,6 +169,8 @@ The glove compartment is scenery in the Upturned_Car. The description is "The gl
 Instead of opening the glove compartment:
 	Try examining the glove compartment;
 	stop the action;
+
+The windows are scenery in the Upturned_Car. The description is "The driver window or the passenger window?".
 
 The driver door is scenery in the Upturned_Car. The description is "The door was underneath me, now acting as the floor. Nothing was visible through the window but snow, crushed from the impact.".
 Instead of kicking the driver door:
@@ -242,7 +242,7 @@ After reading a command:
 	If the player is in the upturned_car:
 		If the player's command matches "look":
 			Continue the action;
-		If the player's command matches "unbuckle seat belt" or the player's command matches "unbuckle" or the player's command matches "unbuckle me" or the player's command matches "unbuckle myself" or the player's command matches "unstrap" or the player's command matches "unstrap seat belt" or the player's command matches "undo seat belt" or the player's command matches "remove seat belt" or the player's command matches "unbuckle self":
+		If the player's command matches "unbuckle seat belt" or the player's command matches "unbuckle" or the player's command matches "unbuckle me" or the player's command matches "unbuckle myself" or the player's command matches "unstrap" or the player's command matches "unstrap seat belt" or the player's command matches "undo seat belt" or the player's command matches "remove seat belt" or the player's command matches "unbuckle self" or the player's command matches "take off seat belt"  or the player's command matches "take off seatbelt"  or the player's command matches "remove seat belt"  or the player's command matches "remove seatbelt"  or the player's command matches "undo seatbelt"  or the player's command matches "undo seat belt" or the player's command matches "unbuckle seatbelt":
 			if the upturned_car is strapped:
 				say "I wrestled with the jammed seat belt for a moment, then managed to undo it, falling a few inches down against the driver door once the chest belt was free.";
 				now the upturned_car is unstrapped;
@@ -251,7 +251,7 @@ After reading a command:
 				say "I'd already extricated myself from the restraints.";
 				stop the action;
 		If the upturned_car is strapped:
-			say "The seat belt held me firmly in place in what was now the bottom of the upturned_car. I wasn't going to be able to see or do much of anything until I unbuckled myself.";
+			say "The seat belt held me firmly in place in what was now the bottom of the upturned car. I wasn't going to be able to see or do much of anything until I unbuckled myself.";
 			stop the action;
 
 Chapter 4 - Scene Cliff_Climbing
@@ -284,11 +284,13 @@ car_embark is scenery in the Sharp Bend. Understand "car" as car_embark. Underst
 
 Sharp Bend is a room. Sharp Bend is above Bottom of Cliff and north of Hairpin_Turn. The description is "I walked on the snowy road about a hundred feet from the hairpin turn where my car had gone over; I could see the tire tracks and broken guardrail to the east.".
 
+The guardrail is scenery in the Sharp Bend. The description is "[if Mountain_Driving is not happening]The impact had torn the gray metal wide open. It gaped like a cut ribbon.[otherwise]A metal guardrail, the only thing between the road and a steep cliff going a hundred feet down[end if]".
+
 Rule for writing a paragraph about the Valcar_Container:
 	if the location is Driveway:
 		say "Val's Mercedes was parked to one side of the driveway.";
 	Otherwise:
-		say "A Mercedes is quietly idling here, V8 purring.";
+		say "A Mercedes was quietly idling in the middle of the road, V8 purring.";
 	
 [TODO: Maybe leaving this in could leave a trail of fixmes]
 Rule for writing a paragraph about a person:
@@ -324,7 +326,7 @@ The Valcar_Container is an enterable container. It is not portable. The printed 
 [TODO: Can't go down in initial scene, but allow the player to come back here]
 
 Sedan is a room. The description is "The inside of the Mercedes was yards of brushed metal and hand-stitched leather. It still smelled new.[if the player recollects what the chalet and the player recollects what time sunrise and the player recollects what time sunrise] Having run out of things to talk about, I had nothing to do but wait for us to arrive.[end if]".
-[TODO: Move NPCs to their own section?]
+
 [TODO: Add scenery]
 Val is a woman. Val is in the Sedan. The description is "The first thing I noticed were the dark green eyes, clear even driving down a street with no lights. She looked to be in her thirties, but she could have been three hundred for all I knew. Her face shone in the moonlight, pale and beautiful and unnatural. She was wearing too-red lipstick, which gave her the look of a Venetian mask. Wavy auburn hair framed a face I wouldn't have kicked out of bed for eating crackers.[paragraph break]".
 
@@ -357,15 +359,18 @@ Rule for writing a paragraph about Val_House:
 
 When Body_Discovery begins:
 	now Val_House is in the Foyer;
+	now ValCar_Container is in the Driveway;
 	say "Val got out of the car, and took her bag out of the trunk.[paragraph break][quotation mark]Come on, I'll introduce you to Alan,[quotation mark] she said, walking up the drive.".
 	
 Instead of saying hello to Val_House during Body_Discovery:
 	say "I started to talk to her, but she walked further into the house, apparently looking for the owner.";
 	remove Val_House from play.
 
-Driveway is a room. "We stood at the end of a long gravel drive, staring up at a large house with a dark red wood exterior. Steps to the east led to a porch that spanned the facade of the place, wrapping around to a deck in the back that presumably had a great view of the lake and the countryside. It was more ski lodge than cabin, and looked like it could comfortably shelter an entire biathlon team if it had to."
+Driveway is a room. "I stood at the end of a long gravel drive, staring up at a large house with a dark red wood exterior. A porch spanned the facade of the place, wrapping around to a deck in the back that presumably had a great view of the lake and the countryside. It was more ski lodge than cabin, and looked like it could comfortably shelter an entire biathlon team if it had to.[paragraph break]To the east, I could see a path up to the house."
 House is scenery in the Driveway. Understand "facade/chalet/lodge" as house. The description is "It seemed oddly imposing for what was just another vacation home in the Adirondacks. From the front, it looked like two or three spacious floors with high ceilings. The steeply angled roofs were clearly designed to shed the several feet of snow dumped on it by nor'easters every year. ".
-Driveway_scenery is scenery in the Driveway. Understand "driveway" as driveway_scenery. Understand "drive" as driveway_scenery. The printed name is "the driveway". The description is "It seemed to be fine gravel underneath, but it was hard to tell under all the snow. Tires had cleaved into the powder, leaving tracks all over.";
+Driveway_scenery is scenery in the Driveway. Understand "driveway" as driveway_scenery. Understand "drive" as driveway_scenery. The printed name is "the driveway". The description is "It seemed to be fine gravel underneath, but it was hard to tell under all the snow. Tires had cleaved into the powder, leaving tracks all over.".
+
+Countryside is scenery in the Driveway. The description is "The mountain and valley were blanketed with snow.".
 
 Section 1 - Mercedes
 
@@ -408,7 +413,7 @@ Windows are scenery in the Front_Porch. The description is "I peered at the wind
 
 the front door is a lockable unlocked door. the front door is open. front door is west of the Foyer and east of the Front_Porch. The description is "A large wooden door, painted white as a preacher's picket fence. It didn't have a window or peephole. Something seemed odd about the lock, like it had been damaged. There was splintered wood on the side of the doorframe where someone had apparently forced the door open." Understand "doorframe" as front door.
 Rule for writing a paragraph about the front door:
-	say "[if the front door is open]The front door stood open.[end if][if the front door is unexamined][line break]There was something about the door that looked like a B&E job.[end if]".
+	say "The front door stood [if the front door is open]open [end if]to the east.[if the front door is unexamined][line break]There was something about the door that looked like a B&E job.[end if]".
 	
 The lock is scenery in the Front_Porch. The lock is a clue. The description is "I could see obvious scratch marks at the deadbolt that could've been left by an intruder using a lockpick. Judging by the deep gouges in the doorframe, the attempt hadn't been successful.";
 
@@ -480,7 +485,7 @@ Section 3 - Reading Nook
 
 [TODO: should I correct the if body discovery is happening line below so the corpse gets removed? just gets rid of clues, really]
 Reading_Nook is a room. Reading_Nook is above Greatroom. The printed name is "Reading Nook". The description is "I climbed the stairs to the reading nook. Shelves lined the walls of the small room, and a couple of books had been knocked off them onto the floor. A pair of wingback armchairs faced each other with a coffee table in between. A small pool of red liquid lay underneath the table.[if the scene is body_discovery][paragraph break]A man sat in one, slightly paunchy and slightly grey, his eyes and mouth wide open. His glasses were askew. He was wearing a navy blue cardigan, stained all over the front with a dark, almost black liquid. What looked like a small knife was sticking out of his neck, plunged in so far that only the handle was visible.[end if]".
-The body is scenery in the reading_nook. Understand "corpse / man" as body. The description is "He looked like he was fifty, but something about his well-preserved look told me that he was probably sixty. It wasn't that he was in good shape-- I doubted he'd seen much real exercise since he was in high school, and maybe not even then. He struck me as a debate team sort of guy. I could tell he didn't get out much. His fingers were broad, but smooth. His hands had no calluses and no rings, but he wore a Rolex watch. It wasn't fake, and had cost probably three times what my car was worth before I'd driven it off a cliff a few hours ago."
+The body is scenery in the reading_nook. Understand "corpse / man" as body. The description is "He looked like he was fifty, but something about his well-preserved look told me that he was probably sixty. It wasn't that he was in good shape-- I doubted he'd seen much real exercise since he was in high school, and maybe not even then. He struck me as a debate team sort of guy. I could tell he didn't get out much. His fingers were broad, but smooth. His soft, uncallused hands had no rings, but he wore a Rolex watch. It wasn't fake, and had cost probably three times what my car was worth before I'd driven it off a cliff a few hours ago."
 Instead of taking body:
 	say "I didn't want to move him just yet.";
 	stop the action.
@@ -621,7 +626,7 @@ Every turn during First_Investigation:
 		now SHUTTERS_DOWN is true;
 		say "(press any key)";
 		wait for any key.
-[TODO: make shutters scenery visible from all interior rooms]
+[TODO: make shutters scenery visible from all interior rooms, maybe it should be a backdrop.]
 		
 Scott_Investigation is a man. The printed name is "Scott". The description is "He had an unlit cigarette between his lips. They all seemed to smoke. His fingers fumbled with a brushed metal lighter and didn't seem to be making much progress, but he was giving it the old college try. I watched his eyes scan across the walls out of habit, and annoyance flicker briefly in them as he failed to find a TV on any of them."
 
@@ -940,6 +945,7 @@ what was in it for me is a repeatable questioning quip.
 	
 Section 2 - Nathaniel
 
+[TODO: fix name]
 why nathaniel here is a repeatable questioning quip.
 	The printed name is "why Nathaniel came here".
 	The comment is "[quotation mark]So, do you come here often? I'm having trouble telling if this is a private party or a resort. Were you good friends with Alan?[quotation mark]".
@@ -965,6 +971,7 @@ an availability rule for why he isn't especially upset:
 	if the player recollects why nathaniel here, it is available;
 	otherwise it is off-limits.
 	
+[TODO: match name]
 about nates alibi is a repeatable questioning quip. It indirectly-follows why he isn't especially upset.
 	The printed name is "about his alibi".
 	The comment is "[quotation mark]Where were you last night?[quotation mark]".
@@ -972,6 +979,7 @@ about nates alibi is a repeatable questioning quip. It indirectly-follows why he
 	It quip-supplies Nathaniel_Investigation.
 	The proper scene is First_Investigation.
 
+[TODO: Fix name]
 what sanction is a repeatable questioning quip.
 	The printed name is "about the Sanction".
 	The comment is "'What happens to folks who don't wait their turn for becoming a Patron?'[line break]'The Circle only really has a single sanction.'[line break]'What is it?'[line break]
@@ -1662,7 +1670,7 @@ License Terms at: https://creativecommons.org/licenses/by/2.0/
 
 Section 5 - Clues and Hints
 
-Hint reminder is some text that varies. Hint reminder is initially "(type 'help' at any point for hints)"
+Hint reminder is some text that varies. Hint reminder is initially "(first time players type HELP)"
 
 Understand the command "hint" as something new. Understand "hint" as asking for a hint. Asking for a hint is an action out of world. Instead of thinking, try asking for a hint.
 Carry out asking for a hint:

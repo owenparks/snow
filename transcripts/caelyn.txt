@@ -1,0 +1,3287 @@
+Start of a transcript of
+
+A Long Drink
+An Interactive Mystery by Owen Parks
+Release 2 / Serial number 150209 / Inform 7 build 6L38 (I6/v6.33 lib 6/12N) SD
+Identification number: //615AD313-D26C-44F5-9110-1C79488431D3//
+Interpreter version 1.2.9 / VM 3.1.2 / Library serial number 080126
+Standard Rules version 3/120430 by Graham Nelson
+Threaded Conversation version 5/140601 by Chris Conley (modified from Threaded Conversation by Emily Short and based on Alabaster by Emily Short, et. al.)
+Exit Lister version 3 by Gavin Lambert
+Conversation Framework version 11 by Eric Eve
+Epistemology version 8 by Eric Eve
+
+A Long Drink
+An Interactive Mystery by Owen Parks
+Release 2 / Serial number 150209 / Inform 7 build 6L38 (I6/v6.33 lib 6/12N) SD
+
+Mountain Road
+They say you shouldn't drive when you're angry. That was just one of a hundred pieces of good advice I was ignoring as I drove north along the icy road to the chalet, my foot a little heavier on the gas than it needed to be.
+
+I'd had a long, promising career in homicide ahead of me, or so I kept telling myself, and it was all down the drain now. I had planned on a senior detective's desk being in the cards for me, at least. Maybe even quitting and going into private investigations. Well, I guessed I could still do that.
+
+Not six hours earlier, I'd turned in my badge and my gun and walked out, more or less the way I'd seen it in the movies. The captain was yelling his head off, couldn't figure out why a promising young detective like me would just up and quit. I honestly hoped he never did.
+
+(type "help" at any point for hints)
+
+>hog.d
+That noun did not make sense in this context.
+
+>drive
+
+Mountain Pass
+I had the radio on tuned to some news station-- truth be told, I already missed the chatter of the dispatch as I was driving. The traffic report had little bearing on my current locale, but the weather gave me some concern: a snowstorm coming up off the Great Lakes, apparently. Spending the weekend with a small crowd I barely knew appealed very little to me. Being cooped up with them the entire time due to weather seemed like a recipe for an epidemic of cabin fever.
+
+>x me
+As good-looking as ever.
+
+Turn Count: 1
+FoundClues: 0
+
+>i
+I was carrying:
+  a cell phone
+
+Turn Count: 2
+FoundClues: 0
+
+>x phone
+A smartphone a few hardware revisions back. 
+
+Turn Count: 3
+FoundClues: 0
+
+>switch phone on
+It wasn't something I could switch.
+
+Turn Count: 4
+FoundClues: 0
+
+>drive
+
+Hairpin Turn
+If I'd finished that last thought a few seconds earlier, I might've noticed the caution sign for the sharp turn, barely visible through the snow. The car was going too fast, and the guardrail came out of nowhere.
+
+>stop
+I hit the brakes, but the car kept straight for the guardrail, slamming through, and going over.
+
+The back end of the car lost traction and swung out wide, trying vainly to follow the front, just like one of those car commercials. Unfortunately, I was not a professional driver, nor was this a closed course, and the right side of the car went over the edge of the cliff, momentum then taking the rest of the car with it. In shock, my brain couldn't manage to tell my body to do more than grip the wheel uselessly as the car tumbled down the steep incline. I lost count of the rolls after three. The roof hit a tree, and I was jerked upward against the seat belt. Snow from the branches fell in a pile onto the passenger window from the impact. I heard a thud, snuffing out the brief glimpse of moonlight. Everything went black.
+
+(press any key)
+Upturned Car
+I wasn't sure how long I'd been out. Taking stock of my situation, I was surprised to find myself more or less unhurt, save for a dull ache in my left wrist where I'd tried to brace against the door. I took a few deep breaths, and tried to gather myself-- I was still a little mentally unfocused.
+
+The car was currently lying at the bottom of a cliff on its side. Above me, I could dimly see the light of the moon, mottled by the snow on the passenger side windows. The windshield in front of me showed nothing but evergreen forest, extending into the darkness.
+
+I was still strapped in, the seat belt made sure I stayed put. At least one thing in this car still knew how to do its job right.
+
+>unbuckle
+I wrestled with the jammed seat belt for a moment, then managed to undo it, falling a few inches down against the driver door once the chest belt was free.
+
+>open door
+Which do you mean, the driver door or the passenger door?
+
+>driver
+It's flat on the ground, no way that's happening.
+
+Turn Count: 5
+FoundClues: 0
+
+>open passenger door
+There's too much snow on top. I try to push, but the weight keeps the door from opening.
+
+Turn Count: 6
+FoundClues: 0
+
+>search car
+I couldn't see any such thing.
+
+>l
+Upturned Car
+I wasn't sure how long I'd been out. Taking stock of my situation, I was surprised to find myself more or less unhurt, save for a dull ache in my left wrist where I'd tried to brace against the door. I took a few deep breaths, and tried to gather myself-- I was still a little mentally unfocused.
+
+The car was currently lying at the bottom of a cliff on its side. Above me, I could dimly see the light of the moon, mottled by the snow on the passenger side windows. The windshield in front of me showed nothing but evergreen forest, extending into the darkness.
+
+I crouched at the bottom of the car on the driver door, trying to figure the best way out.
+
+Turn Count: 7
+FoundClues: 0
+
+>kick
+(the cell phone)
+Turn Count: 8
+FoundClues: 0
+
+>* Yeah! Take that, cell phone!
+You seem to want to talk to someone, but I can't see whom.
+
+>kick windshield
+Bracing my back against the sideways seat, I gave the windshield a couple of sharp kicks. I felt the seal start to give, and then it dislodged entirely from the frame, making an exit. It fell out onto the snow with a muffled crunch, and the bitter wind started to blow into the old car. I pulled my coat tight around me, and stepped out into the forest.
+
+(press any key)
+Bottom of Cliff
+I stood on a ridge densely packed with trees some ways below the highway. My wrecked car sat a few feet away. The ridge extended as far as I could see to the north, going nowhere in particular. To the west I saw the steep incline the car had rolled down, and the path it'd cut through the snow and brush.
+
+Turn Count: 9
+FoundClues: 0
+
+>w
+
+Sharp Bend
+I walked on the snowy road about a hundred feet from the hairpin turn where my car had gone over; I could see the tire tracks and broken guardrail to the east.
+
+The second I turned my head to look down the lane, I saw a pair of headlights approach. A black Mercedes pulled up and came to a stop just in front of me. The timing was a little unnerving. The passenger door opened, and I saw Val looking out at me.
+
+"Get in," she said.
+
+Turn Count: 10
+FoundClues: 0
+
+>enter car
+I got into the Mercedes.
+
+Sedan
+The inside of the Mercedes was yards of brushed metal and hand-stitched leather. It still smelled new. Having run out of things to talk about, I had nothing to do but wait for us to arrive.
+
+Val drove the car, her eyes looking miles beyond the road, the mountains, and the horizon.
+
+Turn Count: 11
+FoundClues: 0
+
+>x val
+The first thing I noticed were the dark green eyes, clear even driving down a street with no lights. She looked to be in her thirties, but she could have been three hundred for all I knew. Her face shone in the moonlight, pale and beautiful and unnatural. She was wearing too-red lipstick, which gave her the look of a Venetian mask. Wavy auburn hair framed a face I wouldn't have kicked out of bed for eating crackers.
+
+
+
+Turn Count: 12
+FoundClues: 0
+
+>ask val about car
+Turn Count: 13
+FoundClues: 0
+
+"Nice ride," I said.
+
+"You should have called," Val replied, ignoring my comment.
+
+Turn Count: 14
+FoundClues: 0
+
+I could have asked ask about the chalet or ask about sunrise.
+
+>ask val about phone
+That doesn't seem to be a topic of conversation at the moment.
+
+>* typo in the "I could have asked"
+That noun did not make sense in this context.
+
+>ask about chalet
+Where are we going?
+
+I already told you, a friend's house. He lives not too far from here, halfway up the mountain.
+
+Turn Count: 15
+FoundClues: 0
+
+I could have asked ask about sunrise.
+
+>ask about sunrise
+"Sun goes up at 7:03 today. Always check the time before you leave for the night," she said.
+
+I looked out the window, trying not to feel like a kid being lectured by his mom.
+
+Turn Count: 16
+FoundClues: 0
+
+>* no quotes in the chalet thing
+That doesn't seem to be a topic of conversation at the moment.
+
+>check time
+I couldn't see any such thing.
+
+>x phone
+A smartphone a few hardware revisions back. The screen had shattered due to an impact, rendering it unusable.
+
+Turn Count: 17
+FoundClues: 0
+
+>use phone
+That noun did not make sense in this context.
+
+>l
+Sedan
+The inside of the Mercedes was yards of brushed metal and hand-stitched leather. It still smelled new. Having run out of things to talk about, I had nothing to do but wait for us to arrive.
+
+Val drove the car, her eyes looking miles beyond the road, the mountains, and the horizon.
+
+Turn Count: 18
+FoundClues: 0
+
+>z
+Driveway
+We stood at the end of a long gravel drive, staring up at a large house with a dark red wood exterior. Steps to the east led to a porch that spanned the facade of the place, wrapping around to a deck in the back that presumably had a great view of the lake and the countryside. It was more ski lodge than cabin, and looked like it could comfortably shelter an entire biathlon team if it had to.
+
+Val got out of the car and took her bag out of the trunk.
+
+"Come on, I'll introduce you to Alan," she said, walking up the drive.
+
+Turn Count: 19
+FoundClues: 0
+
+>follow
+That noun did not make sense in this context.
+
+>enter
+You must supply a noun.
+
+Turn Count: 20
+FoundClues: 0
+
+>e
+
+Front Porch
+Steps led up from the gravel driveway to the porch. Narrow unpainted wood planks extended the length of the house, along with windows that looked into rooms at the front of the house. Through them, I saw blinds, and a glint of something metallic, like a shutter.
+
+The front door stood open.
+
+There was something about the door that looked like a B&E job.
+
+Turn Count: 21
+FoundClues: 0
+
+>x door
+A large wooden door, painted white as a preacher's picket fence. It didn't have a window or peephole. Something seemed odd about the lock, like it had been damaged. There was splintered wood on the side of the doorframe where someone had apparently forced the door open.
+
+Turn Count: 22
+FoundClues: 0
+
+>x lock
+I could see obvious scratch marks at the deadbolt that could've been left by an intruder using a lockpick. Judging by the deep gouges in the doorframe, the attempt hadn't been successful.
+
+Turn Count: 23
+FoundClues: 1
+
+>x wood
+I couldn't see any such thing.
+
+>l
+Front Porch
+Steps led up from the gravel driveway to the porch. Narrow unpainted wood planks extended the length of the house, along with windows that looked into rooms at the front of the house. Through them, I saw blinds, and a glint of something metallic, like a shutter.
+
+The front door stood open.
+
+Turn Count: 24
+FoundClues: 1
+
+>x metallic
+I couldn't see any such thing.
+
+>x shutter
+I peered at the window next to the door. It looked to be double or triple pane glass. Crouching down slightly, I saw a recessed mechanism for a metal shutter door, almost like a security gate. Presumably, upon activation, it would slam down and block entry.
+
+Turn Count: 25
+FoundClues: 1
+
+>e
+
+Foyer
+I walked into the spacious foyer, trying not to walk into the large lacquered wood screens in front of the door. The shiny black surfaces were decorated with an intricate picture in gold paint, depicting a Chinese court scene. It seemed at odds with the exterior of the house, but matched the rest of the decor; the interior was a mixture of Old World furniture and Asian influences.
+
+A layer of snow had blown in through the open doorway, and was slowly melting into a puddle on the enormous Persian rug. 
+
+The front door stood open.
+
+I could also see Val here.
+
+Turn Count: 26
+FoundClues: 1
+
+>ask val about door
+I started to talk to her, but she walked further into the house, apparently looking for the owner.
+
+Turn Count: 27
+FoundClues: 1
+
+>close door
+I closed the front door.
+
+Turn Count: 28
+FoundClues: 1
+
+>l
+Foyer
+I walked into the spacious foyer, trying not to walk into the large lacquered wood screens in front of the door. The shiny black surfaces were decorated with an intricate picture in gold paint, depicting a Chinese court scene. It seemed at odds with the exterior of the house, but matched the rest of the decor; the interior was a mixture of Old World furniture and Asian influences.
+
+A layer of snow had blown in through the open doorway, and was slowly melting into a puddle on the enormous Persian rug. 
+
+
+Turn Count: 29
+FoundClues: 1
+
+>e
+
+Greatroom
+The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall, dark wooden rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
+
+A large set of sofas were arranged around a huge rug. A dark stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
+
+A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard "O Come, All Ye Faithful" warbling from what sounded like an old radio.
+
+Turn Count: 30
+FoundClues: 1
+
+>x fire
+I couldn't see any such thing.
+
+>* definitely implement 'fire'
+That noun did not make sense in this context.
+
+>x fireplace
+A fireplace big enough for a country manor house. Flames crackled inside, the logs slowly burning into hot coals.
+
+Turn Count: 31
+FoundClues: 1
+
+>x stain
+An oblong dark red spot about the size of a pear stood out from the beige couch. From the color, it looked like wine. As I looked at it, I realized something on the floor was reflecting firelight back at me.
+
+Turn Count: 32
+FoundClues: 2
+
+>x floor
+I couldn't see any such thing.
+
+>* probably a good thing to implement here too
+That doesn't seem to be a topic of conversation at the moment.
+
+>* reflection
+That noun did not make sense in this context.
+
+>x something
+I couldn't see any such thing.
+
+>* It's hard to figure out how to look at the something on the floor.
+That doesn't seem to be a topic of conversation at the moment.
+
+>l
+Greatroom
+The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall, dark wooden rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
+
+A large set of sofas were arranged around a huge rug. A dark wine stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
+
+A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade. Coming from somewhere up there I heard "God Rest Ye Merry, Gentlemen" warbling from what sounded like an old radio.
+
+I could see a glass shard here.
+
+Turn Count: 33
+FoundClues: 2
+
+>x shard
+A broken shard of glass. The ruined facets of vintage crystal reflected light like a cheap engagement ring.
+
+I crouched down for a closer look and realized it had come from a shattered wineglass, the pieces obscured by the sofa.
+
+Turn Count: 34
+FoundClues: 2
+
+>x glass
+Which do you mean, the broken wineglass or the glass shard?
+
+>wineglass
+The curves of the wineglass were jagged edges now, a heap of shattered crystal under the sofa. It must've fallen from quite a height.
+
+Turn Count: 35
+FoundClues: 3
+
+>x rug
+I looked at the plush carpet, checking it for footprints. A shoe size can be pretty damn circumstantial, but at this point, I needed every clue I could get.
+
+I didn't see one, it was just as pristine as the drifts of snow in the valley below.
+
+But something caught my eye, something small and sharp, glinting in the light of the room as I walked the perimeter of the rug. A shard of glass by the edge of the sofa.
+
+Turn Count: 36
+FoundClues: 3
+
+>up
+
+Reading Nook
+I climbed the stairs to the reading nook. Shelves lined the walls of the small room, and a couple of books had been knocked off them onto the floor. A pair of wingback armchairs faced each other with a coffee table in between. A small pool of red liquid lay underneath the table.
+
+A man sat in one, slightly paunchy and slightly grey, his eyes and mouth wide open. His glasses were askew. He was wearing a navy blue cardigan, stained all over the front with a dark, almost black liquid. What looked like a small knife was sticking out of his neck, plunged in so far that only the handle was visible.
+
+An antique wooden radio sat on the table, playing Christmas carols.
+
+I could also see a bottle of wine and a wineglass here.
+
+Turn Count: 37
+FoundClues: 3
+
+>x bottle
+A Bordeaux from back in 2001, uncorked and almost empty. Expensive bottle to be drinking alone.
+
+Turn Count: 38
+FoundClues: 4
+
+>x wineglass
+A crystal wineglass, empty but for a few drops of red wine at the bottom.
+
+Turn Count: 39
+FoundClues: 5
+
+>x knife
+It looked like a silver letter opener with an ivory handle. A monogram on the end read "AHB". It didn't look that long or that sharp, but someone had made a pretty clean business of stabbing Bowden with it. Or maybe they'd just gotten lucky. It happens like that sometimes.
+
+Turn Count: 40
+FoundClues: 6
+
+>x corpse
+He looked like he was fifty, but something about his well-preserved look told me that he was probably sixty. It wasn't that he was in good shape-- I doubted he'd seen much real exercise since he was in high school, and maybe not even then. He struck me as a debate team sort of guy. I could tell he didn't get out much. His fingers were broad, but smooth. His hands had no calluses and no rings, but he wore a Rolex watch. It wasn't fake, and had cost probably three times what my car was worth before I'd driven it off a cliff a few hours ago.
+
+Val came up the stairs, freezing the second she saw the body. Her eyes narrowed, and I could tell her mind was racing, the first time I'd seen anything but placid boredom on her face. Half of me was relieved to know that there was something in this world that could perturb her. The other half was unnerved by it. She looked away and hitched the poker face back on pretty quick.
+
+Val nodded at the poor stiff and said, "Meet Professor Alan Bowden, our host this weekend."
+(press any key)
+Turn Count: 41
+FoundClues: 6
+
+>ask val about bowden
+She stood there in stunned silence. There'd be time for questions later.
+
+Turn Count: 42
+FoundClues: 6
+
+>x watch
+I couldn't see any such thing.
+
+>l
+Reading Nook
+I climbed the stairs to the reading nook. Shelves lined the walls of the small room, and a couple of books had been knocked off them onto the floor. A pair of wingback armchairs faced each other with a coffee table in between. A small pool of red liquid lay underneath the table.
+
+A man sat in one, slightly paunchy and slightly grey, his eyes and mouth wide open. His glasses were askew. He was wearing a navy blue cardigan, stained all over the front with a dark, almost black liquid. What looked like a small knife was sticking out of his neck, plunged in so far that only the handle was visible.
+
+Val stood to my left, looking impassively at the body of Alan Bowden.
+
+An antique wooden radio sat on the table, playing Christmas carols.
+
+I could also see a bottle of wine and a wineglass here.
+
+Turn Count: 43
+FoundClues: 6
+
+>x book
+I couldn't see any such thing.
+
+>x books
+I saw nothing special about the books.
+
+Turn Count: 44
+FoundClues: 6
+
+>x shelves
+Mostly non-fiction: scholarly journal archives, collections of essays, and books on literature. A small section appeared to contain first and second editions. The owner seemed to have a bit of a collector's streak.
+
+Turn Count: 45
+FoundClues: 6
+
+>x glasses
+I couldn't see any such thing.
+
+>x radio
+It was vintage, maybe 1920 or 1930 if I had to guess, though the polished dark wood didn't look like it'd aged a day.
+
+The radio was switched on.
+
+Turn Count: 46
+FoundClues: 6
+
+>switch off radio
+I switched the radio off.
+
+Turn Count: 47
+FoundClues: 6
+
+>take knife
+That was hardly portable.
+
+Turn Count: 48
+FoundClues: 6
+
+>l
+Reading Nook
+I climbed the stairs to the reading nook. Shelves lined the walls of the small room, and a couple of books had been knocked off them onto the floor. A pair of wingback armchairs faced each other with a coffee table in between. A small pool of red liquid lay underneath the table.
+
+A man sat in one, slightly paunchy and slightly grey, his eyes and mouth wide open. His glasses were askew. He was wearing a navy blue cardigan, stained all over the front with a dark, almost black liquid. What looked like a small knife was sticking out of his neck, plunged in so far that only the handle was visible.
+
+Val stood to my left, looking impassively at the body of Alan Bowden.
+
+An antique wooden radio sat on the table.
+
+I could also see a bottle of wine and a wineglass here.
+
+Turn Count: 49
+FoundClues: 6
+
+>* maybe a different default message for being unable to take things?
+That doesn't seem to be a topic of conversation at the moment.
+
+>x armchairs
+I couldn't see any such thing.
+
+>x chair
+I couldn't see any such thing.
+
+>x table
+I couldn't see any such thing.
+
+>* basic descriptions for these probably good
+That doesn't seem to be a topic of conversation at the moment.
+
+>l
+Reading Nook
+I climbed the stairs to the reading nook. Shelves lined the walls of the small room, and a couple of books had been knocked off them onto the floor. A pair of wingback armchairs faced each other with a coffee table in between. A small pool of red liquid lay underneath the table.
+
+A man sat in one, slightly paunchy and slightly grey, his eyes and mouth wide open. His glasses were askew. He was wearing a navy blue cardigan, stained all over the front with a dark, almost black liquid. What looked like a small knife was sticking out of his neck, plunged in so far that only the handle was visible.
+
+Val stood to my left, looking impassively at the body of Alan Bowden.
+
+An antique wooden radio sat on the table.
+
+I could also see a bottle of wine and a wineglass here.
+
+Turn Count: 50
+FoundClues: 6
+
+>x pool
+A small pool of red wine had fallen on the rug underneath the table, bleeding out onto the wood floor.
+
+Turn Count: 51
+FoundClues: 7
+
+I heard the front door open, and the sound of voices from the foyer. It closed a minute later.
+
+
+Val and I glanced at each other across the dead man, and she left back down the stairs.
+(press any key)
+>d
+
+Greatroom
+The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall, dark wooden rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
+
+A large set of sofas were arranged around a huge rug. A dark wine stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. 
+
+A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade.
+
+I could see a glass shard and a broken wineglass here.
+
+Turn Count: 52
+FoundClues: 7
+
+>z
+Time passed.
+
+Turn Count: 53
+FoundClues: 7
+
+>x rafters
+I saw nothing special about the rafters.
+
+Turn Count: 54
+FoundClues: 7
+
+>u
+
+Reading Nook
+I climbed the stairs to the reading nook. Shelves lined the walls of the small room, and a couple of books had been knocked off them onto the floor. A pair of wingback armchairs faced each other with a coffee table in between. A small pool of red liquid lay underneath the table.
+
+A man sat in one, slightly paunchy and slightly grey, his eyes and mouth wide open. His glasses were askew. He was wearing a navy blue cardigan, stained all over the front with a dark, almost black liquid. What looked like a small knife was sticking out of his neck, plunged in so far that only the handle was visible.
+
+An antique wooden radio sat on the table.
+
+I could also see a bottle of wine and a wineglass here.
+
+Turn Count: 55
+FoundClues: 7
+
+>x cardigan
+I couldn't see any such thing.
+
+>d
+
+Greatroom
+The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall, dark wooden rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
+
+A large set of sofas were arranged around a huge rug. A dark wine stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. 
+
+A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade.
+
+I could see a glass shard and a broken wineglass here.
+
+Turn Count: 56
+FoundClues: 7
+
+>z
+Time passed.
+
+Turn Count: 57
+FoundClues: 7
+
+>z
+Time passed.
+
+Turn Count: 58
+FoundClues: 7
+
+>z
+Time passed.
+
+Turn Count: 59
+FoundClues: 7
+
+>z
+Time passed.
+
+Turn Count: 60
+FoundClues: 7
+
+>w
+
+Foyer
+I walked into the spacious foyer, trying not to walk into the large lacquered wood screens in front of the door. The shiny black surfaces were decorated with an intricate picture in gold paint, depicting a Chinese court scene. It seemed at odds with the exterior of the house, but matched the rest of the decor; the interior was a mixture of Old World furniture and Asian influences. 
+
+Three men stood on the rug, their coats and pant cuffs damp with snow. Val made introductions all around, as if nothing was wrong. 
+
+I studied their faces carefully. If one of them knew about Alan upstairs, they weren't letting on. The three men were overdressed for vacation, as rich men often are. But somehow, they were oddly mismatched. I doubted that they came here together.
+
+
+
+I could also see Nathan, Scott and Jan here.
+
+Turn Count: 61
+FoundClues: 7
+
+>z
+Time passed.
+
+Turn Count: 62
+FoundClues: 7
+
+>x nathan
+The sideswept brown locks and pencil mustache were meant to look youthful and sporty, like he'd just stopped playing cricket for teatime. The lines on the face and brow made him look more Vincent Price than Errol Flynn, though. I could tell by the way he stood that he didn't have a care in the world, or at least I wasn't one of them. His half-lidded stare gave him an air of casual arrogance, like he was perpetually waiting for the valet to bring his car around.
+
+Turn Count: 63
+FoundClues: 7
+
+>x scott
+Scott Gage, on the other hand, was tall and lanky, and didn't seem at all suited to the cold. He wore a pair of Japanese selvedge jeans with the cuffs turned up to make sure everyone knew it. I'd have guessed he'd picked them up somewhere in SoHo if it weren't for the sweater he was wearing, useless against real cold, as all Californian sweaters are.
+
+Turn Count: 64
+FoundClues: 7
+
+>x jan
+Jan Svennson was a broad-shouldered man with pale blue eyes. He was casually brushing snow off a European performance fleece sweater. Either he liked ice climbing, or he wanted people to think he did. He had the handshake of a salesman and the grin of a frat boy.
+
+Turn Count: 65
+FoundClues: 7
+
+>e
+Val waited a minute for the conversations the three were having to die down.
+(Press a key)She folded her arms across her chest and took a deep breath quiet enough that only I heard it.
+
+"Gentlemen, we have a problem. Alan's dead. We found him upstairs, stabbed."
+
+A stunned silence followed. When it was clear no one was going to break it, she went on. "I'm going to call it in to the New York Magistrate's and find out who isn't on vacation that they can send over." She lifted a hand, exposing her pale wrist enough to read the face of her watch. "It's going to be at least six hours before they can send someone, and they'll have to make it through what's left of the winter storm. Until we can figure out exactly what happened and who's responsible, I suggest we all stay in our rooms. My associate here has some experience with police investigation, he can do the basics until the officials show up."
+
+Nathaniel seemed to bristle at this. "Hang on a minute, wait in our rooms? Am I to take it you're presuming us suspects? How do I know you and your friend didn't just kill Alan?"
+
+Val shrugged and pointed at me. "It happens that my friend here is the only one of us with a solid alibi, unless I'm mistaken."
+
+The lack of a response indicated that she wasn't, which bothered me a little. The three picked up their bags and trundled down the hall, varying degrees of insulted, Jan called back in a raised voice. "You're making a big mistake. Don't you remember what happened at Lake Geneva in 1986? I think there's someone out there who got Alan, and now we're sitting ducks."
+
+He said it with false bravado, and I shouldn't have let the idea take root in my mind, but it did.
+(Press a key)
+I was starting to feel tired. Everything that had happened in the past few days was finally starting to take its toll. I thought it might help to find a bedroom and sleep for a few hours.
+
+Turn Count: 66
+FoundClues: 7
+
+>l
+Foyer
+I walked into the spacious foyer, trying not to walk into the large lacquered wood screens in front of the door. The shiny black surfaces were decorated with an intricate picture in gold paint, depicting a Chinese court scene. It seemed at odds with the exterior of the house, but matched the rest of the decor; the interior was a mixture of Old World furniture and Asian influences. 
+
+
+I could also see Val here.
+
+I was starting to feel tired. Everything that had happened in the past few days was finally starting to take its toll. I thought it might help to find a bedroom and sleep for a few hours.
+
+Turn Count: 67
+FoundClues: 7
+
+>ask about alan
+That doesn't seem to be a topic of conversation at the moment.
+
+>ask about Alan
+That doesn't seem to be a topic of conversation at the moment.
+
+>ask about murder
+That doesn't seem to be a topic of conversation at the moment.
+
+>talk to val
+With no more sound than a loud whisper, shutters slid down on the inside of every window in the house. They looked like opaque fabric window shades, but the heavy sound of the seal told me the core was probably metal. The light from outside went out as suddenly as if someone had thrown a curtain over the moon.
+
+(press any key)
+I was starting to feel tired. Everything that had happened in the past few days was finally starting to take its toll. I thought it might help to find a bedroom and sleep for a few hours.
+
+Turn Count: 68
+FoundClues: 7
+
+I could have asked ask about Alan, ask about the murder, ask about Nathaniel or ask what was in it for me.
+
+>* note: the need to use 'talk to' in addition to 'ask about' is a hair confusing.
+That doesn't seem to be a topic of conversation at the moment.
+
+>ask what was in it for me
+"Seems like a pretty long way to stick my neck out for you. What's in it for me, exactly?"
+
+She gave me a sharp look. I could tell it got a lot of use, it was just as practiced as everything else about her. Here was a woman who wasn't afraid to throw her weight around, and made it a bad habit to force her to do it.
+
+"Think of me as your first client as a private dick. I'm asking you to make this one on the house. You owe me, remember?"
+
+She had me there. I didn't know if this was the kind of thing I could pay back, but I didn't like owing that kind of debt.
+
+I was starting to feel tired. Everything that had happened in the past few days was finally starting to take its toll. I thought it might help to find a bedroom and sleep for a few hours.
+
+Turn Count: 69
+FoundClues: 7
+
+I could have asked ask about Alan, ask about the murder or ask about Nathaniel.
+
+>ask about alan
+"How well did you know Alan?"
+
+"I knew him for probably ten years, we were only close for a handful of those. He wasn't perfect, but I knew him well enough that I feel like he deserved better than he got."
+
+I was starting to feel tired. Everything that had happened in the past few days was finally starting to take its toll. I thought it might help to find a bedroom and sleep for a few hours.
+
+Turn Count: 70
+FoundClues: 7
+
+I could have asked ask about the murder or ask about Nathaniel.
+
+>ask about murder
+Val leaned in close until her face was inches from mine, and lowered her voice, even though no one was around. "Listen, kid. Here's how it's going down. We have a few hours before what passes for the law for our kind shows up and starts stomping its flat feet around. They don't much care if the wrong one of us takes the rap, or if no one does. Alan's nobody to the Circle, I doubt they'd care if this case went stone cold. But he used to be a friend of mine, and this is something I want to do for him."
+
+I didn't say anything.
+
+I was starting to feel tired. Everything that had happened in the past few days was finally starting to take its toll. I thought it might help to find a bedroom and sleep for a few hours.
+
+Turn Count: 71
+FoundClues: 7
+
+I could have asked ask about Nathaniel.
+
+>ask about nathaniel
+"This Nathaniel Wyndham, is he old money?" I asked.
+
+"I guess. He made a sizeable fortune selling boots to the Allies during World War I, a real war profiteer. He used it to buy that ridiculous title, a couple of country estates, and even restored an old manor house. But a little time running with the Circle crowd will tell you that "old money" is a relative term."
+
+I was starting to feel tired. Everything that had happened in the past few days was finally starting to take its toll. I thought it might help to find a bedroom and sleep for a few hours.
+
+Turn Count: 72
+FoundClues: 7
+
+>e
+
+Greatroom
+The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall, dark wooden rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
+
+A large set of sofas were arranged around a huge rug. A dark wine stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. A fire roared inside, fresh logs having been added not too long ago.
+
+A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade.
+
+I could see a glass shard and a broken wineglass here.
+
+I was starting to feel tired. Everything that had happened in the past few days was finally starting to take its toll. I thought it might help to find a bedroom and sleep for a few hours.
+
+Turn Count: 73
+FoundClues: 7
+
+>e
+
+Downstairs Hallway
+A long narrow corridor connected the entrance of the house with the bedrooms. Lights were recessed into the ceiling overhead, shining down onto the polished wood floor. Maybe some people liked this sterile modern crap, but it made the place look like an art gallery, as far as I was concerned. A couple of paintings even adorned the walls, so maybe that was the idea, and I was just uncultured.
+
+I was starting to feel tired. Everything that had happened in the past few days was finally starting to take its toll. I thought it might help to find a bedroom and sleep for a few hours.
+
+Turn Count: 74
+FoundClues: 7
+
+>n
+
+Library
+Of all the rooms I'd seen in the house, this one looked the most lived in. It had the musty smell of old books mixed with stale coffee coming from several cups on the desk.
+
+I could see a computer here.
+
+I was starting to feel tired. Everything that had happened in the past few days was finally starting to take its toll. I thought it might help to find a bedroom and sleep for a few hours.
+
+Turn Count: 75
+FoundClues: 7
+
+>x computer
+The computer was switched off.
+
+I was starting to feel tired. Everything that had happened in the past few days was finally starting to take its toll. I thought it might help to find a bedroom and sleep for a few hours.
+
+Turn Count: 76
+FoundClues: 7
+
+>switch computer on
+I booted up Alan's computer to see what I could find. There were barely any house phones, and I hadn't found his cell phone yet. That meant his e-mail and web browser were probably his main points of contact.
+(Type "email" to access e-mail, "history" for search engine autocomplete history)
+I was starting to feel tired. Everything that had happened in the past few days was finally starting to take its toll. I thought it might help to find a bedroom and sleep for a few hours.
+
+Turn Count: 77
+FoundClues: 7
+
+>history
+Please supply a search term, e.g. "history new york"
+>email
+ > Inbox
+   Sent
+
+ > Date     From          Subject
+   Dec 20     payroll@barnett.edu          W-2 Copy Request
+   Dec 18     payroll@barnett.edu          
+   Dec 12     hchanthavong@barnett.edu          Recommendation
+   Nov 24     JBates@Barnett.edu          Out of Office until 12/01 Autoreply
+   Sep 02     PStillman@barnett.edu     Final Exam
+   Sep 02     TDeavers@barnett.edu          Final
+   Sep 02     MChung@barnett.edu          Registration     
+
+   Date     From          Subject
+ > Dec 20     payroll@barnett.edu          W-2 Copy Request
+   Dec 18     payroll@barnett.edu          
+   Dec 12     hchanthavong@barnett.edu          Recommendation
+   Nov 24     JBates@Barnett.edu          Out of Office until 12/01 Autoreply
+   Sep 02     PStillman@barnett.edu     Final Exam
+   Sep 02     TDeavers@barnett.edu          Final
+   Sep 02     MChung@barnett.edu          Registration     
+   Date     From          Subject
+ > Dec 20     payroll@barnett.edu          W-2 Copy Request
+   Dec 18     payroll@barnett.edu          
+   Dec 12     hchanthavong@barnett.edu          Recommendation
+   Nov 24     JBates@Barnett.edu          Out of Office until 12/01 Autoreply
+   Sep 02     PStillman@barnett.edu     Final Exam
+   Sep 02     TDeavers@barnett.edu          Final
+   Sep 02     MChung@barnett.edu          Registration     
+
+   Date     From          Subject
+   Dec 20     payroll@barnett.edu          W-2 Copy Request
+ > Dec 18     payroll@barnett.edu          
+   Dec 12     hchanthavong@barnett.edu          Recommendation
+   Nov 24     JBates@Barnett.edu          Out of Office until 12/01 Autoreply
+   Sep 02     PStillman@barnett.edu     Final Exam
+   Sep 02     TDeavers@barnett.edu          Final
+   Sep 02     MChung@barnett.edu          Registration     
+   Date     From          Subject
+   Dec 20     payroll@barnett.edu          W-2 Copy Request
+ > Dec 18     payroll@barnett.edu          
+   Dec 12     hchanthavong@barnett.edu          Recommendation
+   Nov 24     JBates@Barnett.edu          Out of Office until 12/01 Autoreply
+   Sep 02     PStillman@barnett.edu     Final Exam
+   Sep 02     TDeavers@barnett.edu          Final
+   Sep 02     MChung@barnett.edu          Registration     
+
+   Date     From          Subject
+ > Dec 20     payroll@barnett.edu          W-2 Copy Request
+   Dec 18     payroll@barnett.edu          
+   Dec 12     hchanthavong@barnett.edu          Recommendation
+   Nov 24     JBates@Barnett.edu          Out of Office until 12/01 Autoreply
+   Sep 02     PStillman@barnett.edu     Final Exam
+   Sep 02     TDeavers@barnett.edu          Final
+   Sep 02     MChung@barnett.edu          Registration     
+   Date     From          Subject
+ > Dec 20     payroll@barnett.edu          W-2 Copy Request
+   Dec 18     payroll@barnett.edu          
+   Dec 12     hchanthavong@barnett.edu          Recommendation
+   Nov 24     JBates@Barnett.edu          Out of Office until 12/01 Autoreply
+   Sep 02     PStillman@barnett.edu     Final Exam
+   Sep 02     TDeavers@barnett.edu          Final
+   Sep 02     MChung@barnett.edu          Registration     
+
+   Date     From          Subject
+   Dec 20     payroll@barnett.edu          W-2 Copy Request
+ > Dec 18     payroll@barnett.edu          
+   Dec 12     hchanthavong@barnett.edu          Recommendation
+   Nov 24     JBates@Barnett.edu          Out of Office until 12/01 Autoreply
+   Sep 02     PStillman@barnett.edu     Final Exam
+   Sep 02     TDeavers@barnett.edu          Final
+   Sep 02     MChung@barnett.edu          Registration     
+   Date     From          Subject
+   Dec 20     payroll@barnett.edu          W-2 Copy Request
+ > Dec 18     payroll@barnett.edu          
+   Dec 12     hchanthavong@barnett.edu          Recommendation
+   Nov 24     JBates@Barnett.edu          Out of Office until 12/01 Autoreply
+   Sep 02     PStillman@barnett.edu     Final Exam
+   Sep 02     TDeavers@barnett.edu          Final
+   Sep 02     MChung@barnett.edu          Registration     
+
+   Date     From          Subject
+   Dec 20     payroll@barnett.edu          W-2 Copy Request
+   Dec 18     payroll@barnett.edu          
+ > Dec 12     hchanthavong@barnett.edu          Recommendation
+   Nov 24     JBates@Barnett.edu          Out of Office until 12/01 Autoreply
+   Sep 02     PStillman@barnett.edu     Final Exam
+   Sep 02     TDeavers@barnett.edu          Final
+   Sep 02     MChung@barnett.edu          Registration     
+   Date     From          Subject
+   Dec 20     payroll@barnett.edu          W-2 Copy Request
+   Dec 18     payroll@barnett.edu          
+ > Dec 12     hchanthavong@barnett.edu          Recommendation
+   Nov 24     JBates@Barnett.edu          Out of Office until 12/01 Autoreply
+   Sep 02     PStillman@barnett.edu     Final Exam
+   Sep 02     TDeavers@barnett.edu          Final
+   Sep 02     MChung@barnett.edu          Registration     
+
+   Date     From          Subject
+   Dec 20     payroll@barnett.edu          W-2 Copy Request
+   Dec 18     payroll@barnett.edu          
+   Dec 12     hchanthavong@barnett.edu          Recommendation
+ > Nov 24     JBates@Barnett.edu          Out of Office until 12/01 Autoreply
+   Sep 02     PStillman@barnett.edu     Final Exam
+   Sep 02     TDeavers@barnett.edu          Final
+   Sep 02     MChung@barnett.edu          Registration     
+   Date     From          Subject
+   Dec 20     payroll@barnett.edu          W-2 Copy Request
+   Dec 18     payroll@barnett.edu          
+   Dec 12     hchanthavong@barnett.edu          Recommendation
+ > Nov 24     JBates@Barnett.edu          Out of Office until 12/01 Autoreply
+   Sep 02     PStillman@barnett.edu     Final Exam
+   Sep 02     TDeavers@barnett.edu          Final
+   Sep 02     MChung@barnett.edu          Registration     
+
+   Date     From          Subject
+   Dec 20     payroll@barnett.edu          W-2 Copy Request
+   Dec 18     payroll@barnett.edu          
+   Dec 12     hchanthavong@barnett.edu          Recommendation
+   Nov 24     JBates@Barnett.edu          Out of Office until 12/01 Autoreply
+ > Sep 02     PStillman@barnett.edu     Final Exam
+   Sep 02     TDeavers@barnett.edu          Final
+   Sep 02     MChung@barnett.edu          Registration     
+   Date     From          Subject
+   Dec 20     payroll@barnett.edu          W-2 Copy Request
+   Dec 18     payroll@barnett.edu          
+   Dec 12     hchanthavong@barnett.edu          Recommendation
+   Nov 24     JBates@Barnett.edu          Out of Office until 12/01 Autoreply
+ > Sep 02     PStillman@barnett.edu     Final Exam
+   Sep 02     TDeavers@barnett.edu          Final
+   Sep 02     MChung@barnett.edu          Registration     
+
+   Date     From          Subject
+   Dec 20     payroll@barnett.edu          W-2 Copy Request
+   Dec 18     payroll@barnett.edu          
+   Dec 12     hchanthavong@barnett.edu          Recommendation
+   Nov 24     JBates@Barnett.edu          Out of Office until 12/01 Autoreply
+   Sep 02     PStillman@barnett.edu     Final Exam
+ > Sep 02     TDeavers@barnett.edu          Final
+   Sep 02     MChung@barnett.edu          Registration     
+   Date     From          Subject
+   Dec 20     payroll@barnett.edu          W-2 Copy Request
+   Dec 18     payroll@barnett.edu          
+   Dec 12     hchanthavong@barnett.edu          Recommendation
+   Nov 24     JBates@Barnett.edu          Out of Office until 12/01 Autoreply
+   Sep 02     PStillman@barnett.edu     Final Exam
+ > Sep 02     TDeavers@barnett.edu          Final
+   Sep 02     MChung@barnett.edu          Registration     
+
+   Date     From          Subject
+   Dec 20     payroll@barnett.edu          W-2 Copy Request
+   Dec 18     payroll@barnett.edu          
+   Dec 12     hchanthavong@barnett.edu          Recommendation
+   Nov 24     JBates@Barnett.edu          Out of Office until 12/01 Autoreply
+   Sep 02     PStillman@barnett.edu     Final Exam
+   Sep 02     TDeavers@barnett.edu          Final
+ > Sep 02     MChung@barnett.edu          Registration     
+   Date     From          Subject
+   Dec 20     payroll@barnett.edu          W-2 Copy Request
+   Dec 18     payroll@barnett.edu          
+   Dec 12     hchanthavong@barnett.edu          Recommendation
+   Nov 24     JBates@Barnett.edu          Out of Office until 12/01 Autoreply
+   Sep 02     PStillman@barnett.edu     Final Exam
+   Sep 02     TDeavers@barnett.edu          Final
+ > Sep 02     MChung@barnett.edu          Registration     
+
+   Date     From          Subject
+   Dec 20     payroll@barnett.edu          W-2 Copy Request
+   Dec 18     payroll@barnett.edu          
+   Dec 12     hchanthavong@barnett.edu          Recommendation
+   Nov 24     JBates@Barnett.edu          Out of Office until 12/01 Autoreply
+   Sep 02     PStillman@barnett.edu     Final Exam
+   Sep 02     TDeavers@barnett.edu          Final
+ > Sep 02     MChung@barnett.edu          Registration     
+   Date     From          Subject
+   Dec 20     payroll@barnett.edu          W-2 Copy Request
+   Dec 18     payroll@barnett.edu          
+   Dec 12     hchanthavong@barnett.edu          Recommendation
+   Nov 24     JBates@Barnett.edu          Out of Office until 12/01 Autoreply
+   Sep 02     PStillman@barnett.edu     Final Exam
+   Sep 02     TDeavers@barnett.edu          Final
+ > Sep 02     MChung@barnett.edu          Registration     
+
+Professor,
+When I got to the registration system it said the class was full, even though there appear to be slots open in the listing. I wasn't able to contact anyone at the registrar's office, can you help me? I need to take this class for my major.
+Thanks,
+Melissa Chung
+
+
+
+Please press SPACE to continue.
+   Date     From          Subject
+   Dec 20     payroll@barnett.edu          W-2 Copy Request
+   Dec 18     payroll@barnett.edu          
+   Dec 12     hchanthavong@barnett.edu          Recommendation
+   Nov 24     JBates@Barnett.edu          Out of Office until 12/01 Autoreply
+   Sep 02     PStillman@barnett.edu     Final Exam
+   Sep 02     TDeavers@barnett.edu          Final
+ > Sep 02     MChung@barnett.edu          Registration     
+   Date     From          Subject
+   Dec 20     payroll@barnett.edu          W-2 Copy Request
+   Dec 18     payroll@barnett.edu          
+   Dec 12     hchanthavong@barnett.edu          Recommendation
+   Nov 24     JBates@Barnett.edu          Out of Office until 12/01 Autoreply
+   Sep 02     PStillman@barnett.edu     Final Exam
+   Sep 02     TDeavers@barnett.edu          Final
+ > Sep 02     MChung@barnett.edu          Registration     
+
+   Date     From          Subject
+   Dec 20     payroll@barnett.edu          W-2 Copy Request
+   Dec 18     payroll@barnett.edu          
+   Dec 12     hchanthavong@barnett.edu          Recommendation
+   Nov 24     JBates@Barnett.edu          Out of Office until 12/01 Autoreply
+   Sep 02     PStillman@barnett.edu     Final Exam
+ > Sep 02     TDeavers@barnett.edu          Final
+   Sep 02     MChung@barnett.edu          Registration     
+   Date     From          Subject
+   Dec 20     payroll@barnett.edu          W-2 Copy Request
+   Dec 18     payroll@barnett.edu          
+   Dec 12     hchanthavong@barnett.edu          Recommendation
+   Nov 24     JBates@Barnett.edu          Out of Office until 12/01 Autoreply
+   Sep 02     PStillman@barnett.edu     Final Exam
+ > Sep 02     TDeavers@barnett.edu          Final
+   Sep 02     MChung@barnett.edu          Registration     
+
+Professor Bowden,
+When is the final exam?
+
+
+
+Please press SPACE to continue.
+   Date     From          Subject
+   Dec 20     payroll@barnett.edu          W-2 Copy Request
+   Dec 18     payroll@barnett.edu          
+   Dec 12     hchanthavong@barnett.edu          Recommendation
+   Nov 24     JBates@Barnett.edu          Out of Office until 12/01 Autoreply
+   Sep 02     PStillman@barnett.edu     Final Exam
+ > Sep 02     TDeavers@barnett.edu          Final
+   Sep 02     MChung@barnett.edu          Registration     
+   Date     From          Subject
+   Dec 20     payroll@barnett.edu          W-2 Copy Request
+   Dec 18     payroll@barnett.edu          
+   Dec 12     hchanthavong@barnett.edu          Recommendation
+   Nov 24     JBates@Barnett.edu          Out of Office until 12/01 Autoreply
+   Sep 02     PStillman@barnett.edu     Final Exam
+ > Sep 02     TDeavers@barnett.edu          Final
+   Sep 02     MChung@barnett.edu          Registration     
+
+   Date     From          Subject
+   Dec 20     payroll@barnett.edu          W-2 Copy Request
+   Dec 18     payroll@barnett.edu          
+   Dec 12     hchanthavong@barnett.edu          Recommendation
+   Nov 24     JBates@Barnett.edu          Out of Office until 12/01 Autoreply
+ > Sep 02     PStillman@barnett.edu     Final Exam
+   Sep 02     TDeavers@barnett.edu          Final
+   Sep 02     MChung@barnett.edu          Registration     
+   Date     From          Subject
+   Dec 20     payroll@barnett.edu          W-2 Copy Request
+   Dec 18     payroll@barnett.edu          
+   Dec 12     hchanthavong@barnett.edu          Recommendation
+   Nov 24     JBates@Barnett.edu          Out of Office until 12/01 Autoreply
+ > Sep 02     PStillman@barnett.edu     Final Exam
+   Sep 02     TDeavers@barnett.edu          Final
+   Sep 02     MChung@barnett.edu          Registration     
+
+Hi Professor I was just wondering when the final exam was because I have a lot of classes and think one of them might conflict with another class I'm taking thanks
+
+
+
+Please press SPACE to continue.
+   Date     From          Subject
+   Dec 20     payroll@barnett.edu          W-2 Copy Request
+   Dec 18     payroll@barnett.edu          
+   Dec 12     hchanthavong@barnett.edu          Recommendation
+   Nov 24     JBates@Barnett.edu          Out of Office until 12/01 Autoreply
+ > Sep 02     PStillman@barnett.edu     Final Exam
+   Sep 02     TDeavers@barnett.edu          Final
+   Sep 02     MChung@barnett.edu          Registration     
+   Date     From          Subject
+   Dec 20     payroll@barnett.edu          W-2 Copy Request
+   Dec 18     payroll@barnett.edu          
+   Dec 12     hchanthavong@barnett.edu          Recommendation
+   Nov 24     JBates@Barnett.edu          Out of Office until 12/01 Autoreply
+ > Sep 02     PStillman@barnett.edu     Final Exam
+   Sep 02     TDeavers@barnett.edu          Final
+   Sep 02     MChung@barnett.edu          Registration     
+
+   Date     From          Subject
+   Dec 20     payroll@barnett.edu          W-2 Copy Request
+   Dec 18     payroll@barnett.edu          
+   Dec 12     hchanthavong@barnett.edu          Recommendation
+ > Nov 24     JBates@Barnett.edu          Out of Office until 12/01 Autoreply
+   Sep 02     PStillman@barnett.edu     Final Exam
+   Sep 02     TDeavers@barnett.edu          Final
+   Sep 02     MChung@barnett.edu          Registration     
+   Date     From          Subject
+   Dec 20     payroll@barnett.edu          W-2 Copy Request
+   Dec 18     payroll@barnett.edu          
+   Dec 12     hchanthavong@barnett.edu          Recommendation
+ > Nov 24     JBates@Barnett.edu          Out of Office until 12/01 Autoreply
+   Sep 02     PStillman@barnett.edu     Final Exam
+   Sep 02     TDeavers@barnett.edu          Final
+   Sep 02     MChung@barnett.edu          Registration     
+
+I am out of the office today, 11/24 and will respond to your message on Monday, 12/01.
+
+
+
+Please press SPACE to continue.
+   Date     From          Subject
+   Dec 20     payroll@barnett.edu          W-2 Copy Request
+   Dec 18     payroll@barnett.edu          
+   Dec 12     hchanthavong@barnett.edu          Recommendation
+ > Nov 24     JBates@Barnett.edu          Out of Office until 12/01 Autoreply
+   Sep 02     PStillman@barnett.edu     Final Exam
+   Sep 02     TDeavers@barnett.edu          Final
+   Sep 02     MChung@barnett.edu          Registration     
+   Date     From          Subject
+   Dec 20     payroll@barnett.edu          W-2 Copy Request
+   Dec 18     payroll@barnett.edu          
+   Dec 12     hchanthavong@barnett.edu          Recommendation
+ > Nov 24     JBates@Barnett.edu          Out of Office until 12/01 Autoreply
+   Sep 02     PStillman@barnett.edu     Final Exam
+   Sep 02     TDeavers@barnett.edu          Final
+   Sep 02     MChung@barnett.edu          Registration     
+
+   Date     From          Subject
+   Dec 20     payroll@barnett.edu          W-2 Copy Request
+   Dec 18     payroll@barnett.edu          
+ > Dec 12     hchanthavong@barnett.edu          Recommendation
+   Nov 24     JBates@Barnett.edu          Out of Office until 12/01 Autoreply
+   Sep 02     PStillman@barnett.edu     Final Exam
+   Sep 02     TDeavers@barnett.edu          Final
+   Sep 02     MChung@barnett.edu          Registration     
+   Date     From          Subject
+   Dec 20     payroll@barnett.edu          W-2 Copy Request
+   Dec 18     payroll@barnett.edu          
+ > Dec 12     hchanthavong@barnett.edu          Recommendation
+   Nov 24     JBates@Barnett.edu          Out of Office until 12/01 Autoreply
+   Sep 02     PStillman@barnett.edu     Final Exam
+   Sep 02     TDeavers@barnett.edu          Final
+   Sep 02     MChung@barnett.edu          Registration     
+
+Hi Professor Bowden,
+I was wondering if you'd be willing to write me a recommendation for a graduate program I'll be applying to in a few months. I hope you've been happy with my work TAing the 200 level classes, and I'd be happy to give more specifics about my interests if that would help. The deadline for the submission is in a few months. I look forward to hearing back from you.
+Thanks,
+ Hilary Chanthavong
+
+
+
+Please press SPACE to continue.
+   Date     From          Subject
+   Dec 20     payroll@barnett.edu          W-2 Copy Request
+   Dec 18     payroll@barnett.edu          
+ > Dec 12     hchanthavong@barnett.edu          Recommendation
+   Nov 24     JBates@Barnett.edu          Out of Office until 12/01 Autoreply
+   Sep 02     PStillman@barnett.edu     Final Exam
+   Sep 02     TDeavers@barnett.edu          Final
+   Sep 02     MChung@barnett.edu          Registration     
+   Date     From          Subject
+   Dec 20     payroll@barnett.edu          W-2 Copy Request
+   Dec 18     payroll@barnett.edu          
+ > Dec 12     hchanthavong@barnett.edu          Recommendation
+   Nov 24     JBates@Barnett.edu          Out of Office until 12/01 Autoreply
+   Sep 02     PStillman@barnett.edu     Final Exam
+   Sep 02     TDeavers@barnett.edu          Final
+   Sep 02     MChung@barnett.edu          Registration     
+
+   Date     From          Subject
+   Dec 20     payroll@barnett.edu          W-2 Copy Request
+ > Dec 18     payroll@barnett.edu          
+   Dec 12     hchanthavong@barnett.edu          Recommendation
+   Nov 24     JBates@Barnett.edu          Out of Office until 12/01 Autoreply
+   Sep 02     PStillman@barnett.edu     Final Exam
+   Sep 02     TDeavers@barnett.edu          Final
+   Sep 02     MChung@barnett.edu          Registration     
+   Date     From          Subject
+   Dec 20     payroll@barnett.edu          W-2 Copy Request
+ > Dec 18     payroll@barnett.edu          
+   Dec 12     hchanthavong@barnett.edu          Recommendation
+   Nov 24     JBates@Barnett.edu          Out of Office until 12/01 Autoreply
+   Sep 02     PStillman@barnett.edu     Final Exam
+   Sep 02     TDeavers@barnett.edu          Final
+   Sep 02     MChung@barnett.edu          Registration     
+
+Stuff
+
+
+
+Please press SPACE to continue.
+   Date     From          Subject
+   Dec 20     payroll@barnett.edu          W-2 Copy Request
+ > Dec 18     payroll@barnett.edu          
+   Dec 12     hchanthavong@barnett.edu          Recommendation
+   Nov 24     JBates@Barnett.edu          Out of Office until 12/01 Autoreply
+   Sep 02     PStillman@barnett.edu     Final Exam
+   Sep 02     TDeavers@barnett.edu          Final
+   Sep 02     MChung@barnett.edu          Registration     
+   Date     From          Subject
+   Dec 20     payroll@barnett.edu          W-2 Copy Request
+ > Dec 18     payroll@barnett.edu          
+   Dec 12     hchanthavong@barnett.edu          Recommendation
+   Nov 24     JBates@Barnett.edu          Out of Office until 12/01 Autoreply
+   Sep 02     PStillman@barnett.edu     Final Exam
+   Sep 02     TDeavers@barnett.edu          Final
+   Sep 02     MChung@barnett.edu          Registration     
+
+   Date     From          Subject
+ > Dec 20     payroll@barnett.edu          W-2 Copy Request
+   Dec 18     payroll@barnett.edu          
+   Dec 12     hchanthavong@barnett.edu          Recommendation
+   Nov 24     JBates@Barnett.edu          Out of Office until 12/01 Autoreply
+   Sep 02     PStillman@barnett.edu     Final Exam
+   Sep 02     TDeavers@barnett.edu          Final
+   Sep 02     MChung@barnett.edu          Registration     
+   Date     From          Subject
+ > Dec 20     payroll@barnett.edu          W-2 Copy Request
+   Dec 18     payroll@barnett.edu          
+   Dec 12     hchanthavong@barnett.edu          Recommendation
+   Nov 24     JBates@Barnett.edu          Out of Office until 12/01 Autoreply
+   Sep 02     PStillman@barnett.edu     Final Exam
+   Sep 02     TDeavers@barnett.edu          Final
+   Sep 02     MChung@barnett.edu          Registration     
+
+A copy of your W-2 has already been mailed to you. If you need an additional copy of your W-2 form for recordkeeping, please request it directly from Jennifer at the payroll office.
+
+
+
+Please press SPACE to continue.
+   Date     From          Subject
+ > Dec 20     payroll@barnett.edu          W-2 Copy Request
+   Dec 18     payroll@barnett.edu          
+   Dec 12     hchanthavong@barnett.edu          Recommendation
+   Nov 24     JBates@Barnett.edu          Out of Office until 12/01 Autoreply
+   Sep 02     PStillman@barnett.edu     Final Exam
+   Sep 02     TDeavers@barnett.edu          Final
+   Sep 02     MChung@barnett.edu          Registration     
+   Date     From          Subject
+ > Dec 20     payroll@barnett.edu          W-2 Copy Request
+   Dec 18     payroll@barnett.edu          
+   Dec 12     hchanthavong@barnett.edu          Recommendation
+   Nov 24     JBates@Barnett.edu          Out of Office until 12/01 Autoreply
+   Sep 02     PStillman@barnett.edu     Final Exam
+   Sep 02     TDeavers@barnett.edu          Final
+   Sep 02     MChung@barnett.edu          Registration     
+
+ > Inbox
+   Sent
+
+   Inbox
+ > Sent
+   Inbox
+ > Sent
+
+ > Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+
+ > Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+ > Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+
+   Dec 12     To: valsinclair7@beyondcoast.org
+ > Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+   Dec 12     To: valsinclair7@beyondcoast.org
+ > Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+
+ > Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+ > Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+
+ > Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+ > Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+
+ > Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+ > Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+
+   Dec 12     To: valsinclair7@beyondcoast.org
+ > Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+   Dec 12     To: valsinclair7@beyondcoast.org
+ > Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+
+Hi Cassie,
+I haven't seen Kelly in class recently, have the two of you had any contact? Just thought I'd ask.
+
+Hope all's well,
+--
+Alan Bowden
+Asian Studies Department
+Barnett College, NY
+mbowden@barnett.edu
+
+
+
+Please press SPACE to continue.
+   Dec 12     To: valsinclair7@beyondcoast.org
+ > Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+   Dec 12     To: valsinclair7@beyondcoast.org
+ > Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+
+ > Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+ > Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+
+ > Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+ > Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+
+ > Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+ > Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+
+ > Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+ > Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+
+ > Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+ > Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+
+ > Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+ > Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+
+ > Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+ > Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+
+ > Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+ > Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+
+ > Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+ > Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+
+   Dec 12     To: valsinclair7@beyondcoast.org
+ > Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+   Dec 12     To: valsinclair7@beyondcoast.org
+ > Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+
+   Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+ > Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+   Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+ > Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+
+All,
+I'd like to wish everyone a Happy Thanksgiving, please take some time off to relax and spend it with family. For those of you who are traveling home, have a safe journey. For those of you who are not able to, I'm hosting Thanksgiving dinner at my home, and all are welcome to attend. There's a great view of the lake, and I promise excellent food, drink, and company.
+Happy Holidays,
+--
+Alan Bowden
+Asian Studies Department
+Barnett College, NY
+mbowden@barnett.edu
+
+
+
+Please press SPACE to continue.
+   Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+ > Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+   Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+ > Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+
+   Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+ > Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+   Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+ > Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+
+Hi Frank,
+We have a guest speaker coming in to give a talk about historical architecture in Kyoto. I thought I'd give you guys a heads up in case your department or any of your students had an interest in that. I think her talk might be a little light on the history and heavy on the architecture, so just be aware of that. It's this Wednesday at 6pm in the Weber Hall auditorium, light refreshments to follow.
+
+
+
+Please press SPACE to continue.
+   Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+ > Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+   Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+ > Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+
+   Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+ > Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+   Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+ > Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+
+Alex,
+It seems like the photocopy machine in the Asian Studies department office is low on toner, who do I talk to about getting that replaced?
+Thanks,
+
+--
+Alan Bowden
+Asian Studies Department
+Barnett College, NY
+mbowden@barnett.edu
+
+
+
+Please press SPACE to continue.
+   Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+ > Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+   Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+ > Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+
+   Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+ > Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+   Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+ > Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+
+Karam,
+You mentioned in class today you wanted to discuss some revisions to your midterm paper in my office hours. I'm on campus Mondays and Tuesdays late in the evening, stop by sometime after 7. One of the TAs may have more convenient hours for you.
+
+
+
+Please press SPACE to continue.
+   Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+ > Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+   Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+ > Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+
+   Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+ > Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+   Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+ > Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+
+Hi Linda,
+A couple of students in my class were trying to register past the add deadline, and said there was an error accessing the online system, is this indeed the case? Let me know if you anticipate any problems doing a manual add.
+Thanks,
+--
+Alan Bowden
+Asian Studies Department
+Barnett College, NY
+mbowden@barnett.edu
+
+
+
+Please press SPACE to continue.
+   Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+ > Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+   Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+ > Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+
+   Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+ > Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+   Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+ > Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+
+Class,
+I've already received several questions about the homework and date of the final exam, which as I've already stated, is in the course syllabus, which is available at the intranet link I mentioned in class. The syllabus already has the date of the midterm and final exam, as well as the grading policy for the entire semester listed in detail. I regret that I will not be able to answer any further questions to which the answers are already available.
+Regards,
+--
+Alan Bowden
+Asian Studies Department
+Barnett College, NY
+mbowden@barnett.edu
+
+
+
+Please press SPACE to continue.
+   Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+ > Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+   Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+ > Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+
+   Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+ > Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+   Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+ > Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+
+Class,
+As you may have heard, my name is Alan Bowden, and I'll be teaching Intro to Asian Literature 201, as I do every fall. Even after so many years of teaching in this field, I love seeing a class of fresh new faces, and the enthusiasm and ideas with which you tackle this material. More than just having you read journals and criticism, my goal this semester is to teach you to think critically, and how to hone your own ideas about some of the world's oldest classics. For some of you, this will be a time to get your feet wet in a different literary tradition than you're used to. I look forward to an enjoyable semester together! For your reference, the syllabus may be found at the following intranet link.
+Regards,
+--
+Alan Bowden
+Asian Studies Department
+Barnett College, NY
+mbowden@barnett.edu
+
+
+
+Please press SPACE to continue.
+   Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+ > Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+   Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+ > Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+
+   Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+ > Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+   Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+ > Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+
+   Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+ > Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+   Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+ > Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+
+   Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+ > Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+   Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+ > Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+
+   Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+ > Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+   Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+ > Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+
+   Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+ > Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+   Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+ > Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+
+   Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+ > Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+   Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+ > Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+
+   Dec 12     To: valsinclair7@beyondcoast.org
+ > Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+   Dec 12     To: valsinclair7@beyondcoast.org
+ > Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+
+ > Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+ > Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+
+ > Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+ > Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+
+ > Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+ > Dec 12     To: valsinclair7@beyondcoast.org
+   Nov 29     To: Cassie Detra     Quick question
+   Nov 20     To: AsianStudies201@barnett.edu          Thanksgiving Holiday
+   Nov 12     To: FranklinColl@barnett.edu          Happy Hour 
+   Nov 11     To: AlexandraCohen@barnett.edu     Copier malfunction
+   Nov 10     To: kakhtar@barnett.edu          Office hours
+   Nov 01     To: registrar@barnett.edu               Late registration
+   Sep 03     To: AsianStudies201@barnett.edu     Course Syllabus
+   Sep 02     To: AsianStudies201@barnett.edu     Welcome to another semester
+
+   Inbox
+ > Sent
+
+Library
+Of all the rooms I'd seen in the house, this one looked the most lived in. It had the musty smell of old books mixed with stale coffee coming from several cups on the desk.
+
+I could see a computer here.
+
+>* the december 12 entry in 'sent' does not work.
+I wasn't talking to anyone.
+
+>* also, there's an e-mail from payroll that just says 'Stuff'
+You seem to want to talk to someone, but I can't see whom.
+
+>* also also that last error message is in the 2nd person rather than 1st
+That noun did not make sense in this context.
+
+>* nbd tho
+That noun did not make sense in this context.
+
+>l
+Library
+Of all the rooms I'd seen in the house, this one looked the most lived in. It had the musty smell of old books mixed with stale coffee coming from several cups on the desk.
+
+I could see a computer here.
+
+I was starting to feel tired. Everything that had happened in the past few days was finally starting to take its toll. I thought it might help to find a bedroom and sleep for a few hours.
+
+Turn Count: 78
+FoundClues: 7
+
+>x cups
+Mugs of coffee, stone cold. I could see rings on the sides of the half-empty cups where the liquid had evaporated. They'd been here a few days, but that didn't indicate a time of death. The kind of man who leaves more than two coffee cups sitting on a desk isn't in a hurry to clean up after himself.
+
+I was starting to feel tired. Everything that had happened in the past few days was finally starting to take its toll. I thought it might help to find a bedroom and sleep for a few hours.
+
+Turn Count: 79
+FoundClues: 7
+
+>x books
+I couldn't see any such thing.
+
+>l
+Library
+Of all the rooms I'd seen in the house, this one looked the most lived in. It had the musty smell of old books mixed with stale coffee coming from several cups on the desk.
+
+I could see a computer here.
+
+I was starting to feel tired. Everything that had happened in the past few days was finally starting to take its toll. I thought it might help to find a bedroom and sleep for a few hours.
+
+Turn Count: 80
+FoundClues: 7
+
+>x old books
+I couldn't see any such thing.
+
+>x book
+I couldn't see any such thing.
+
+>* that's part of the walkthrough, so probably best if implemented
+You seem to want to talk to someone, but I can't see whom.
+
+>x desk
+Unlike most of the other expensive furniture in the house, it looked like the mahogany desk got a lot of use. A computer at least five years old, sat on it, the keyboard mostly buried by papers and books. Worn brass handles barely hung on to a row of drawers along the right side.
+
+I was starting to feel tired. Everything that had happened in the past few days was finally starting to take its toll. I thought it might help to find a bedroom and sleep for a few hours.
+
+Turn Count: 81
+FoundClues: 7
+
+>x books
+I couldn't see any such thing.
+
+>open drawer
+I couldn't see any such thing.
+
+>open desk
+I opened the desk, revealing a bank statement and a box of bullets.
+
+I was starting to feel tired. Everything that had happened in the past few days was finally starting to take its toll. I thought it might help to find a bedroom and sleep for a few hours.
+
+Turn Count: 82
+FoundClues: 7
+
+>x bullets
+I saw nothing special about the box of bullets.
+
+I was starting to feel tired. Everything that had happened in the past few days was finally starting to take its toll. I thought it might help to find a bedroom and sleep for a few hours.
+
+Turn Count: 83
+FoundClues: 8
+
+>* Bullets could use a description
+I wasn't talking to anyone.
+
+>x statement
+A bank statement detailing transactions for the past 6 months. Most of it is purchases of home furnishings and luxury goods. A couple of withdrawals stand out as having too many zeroes. Alan had made some large bank transfers every month to a foreign bank, and then one last cash withdrawal for the balance of the account. He'd needed liquid capital fast, which seemed a little odd for someone who seemed to be so financially stable.
+
+I was starting to feel tired. Everything that had happened in the past few days was finally starting to take its toll. I thought it might help to find a bedroom and sleep for a few hours.
+
+Turn Count: 84
+FoundClues: 9
+
+>x paper
+I couldn't see any such thing.
+
+>x papers
+I thumbed through the pile on the desk, finding term papers and dissertations, collections of academic journals. Underneath most of it was something that caught my eye, a document with dollar signs on it and more zeroes than I'm used to seeing on paper.
+
+I was starting to feel tired. Everything that had happened in the past few days was finally starting to take its toll. I thought it might help to find a bedroom and sleep for a few hours.
+
+Turn Count: 85
+FoundClues: 9
+
+>take all
+bank statement: Taken.
+box of bullets: Taken.
+
+I was starting to feel tired. Everything that had happened in the past few days was finally starting to take its toll. I thought it might help to find a bedroom and sleep for a few hours.
+
+Turn Count: 86
+FoundClues: 9
+
+>s
+
+Downstairs Hallway
+A long narrow corridor connected the entrance of the house with the bedrooms. Lights were recessed into the ceiling overhead, shining down onto the polished wood floor. Maybe some people liked this sterile modern crap, but it made the place look like an art gallery, as far as I was concerned. A couple of paintings even adorned the walls, so maybe that was the idea, and I was just uncultured.
+
+I was starting to feel tired. Everything that had happened in the past few days was finally starting to take its toll. I thought it might help to find a bedroom and sleep for a few hours.
+
+Turn Count: 87
+FoundClues: 9
+
+>u
+
+Upstairs Hallway
+I stood in a normal-sized hallway that seemed cramped compared to the dimensions of the rest of the house. The hardwood floor was just as polished as the one downstairs. To the east were a couple of the smaller rooms clearly intended for overnight guests. To the north was another bedroom, and a set of double doors that led to the master suite.
+
+I was starting to feel tired. Everything that had happened in the past few days was finally starting to take its toll. I thought it might help to find a bedroom and sleep for a few hours.
+
+Turn Count: 88
+FoundClues: 9
+
+>n
+
+North Hallway
+The northmost section of the upstairs hallway led to a couple of guest bedrooms.
+
+I was starting to feel tired. Everything that had happened in the past few days was finally starting to take its toll. I thought it might help to find a bedroom and sleep for a few hours.
+
+Turn Count: 89
+FoundClues: 9
+
+>w
+(first opening bedroom door)
+
+Bedroom
+
+
+I could see a bottle of bourbon here.
+
+Turn Count: 90
+FoundClues: 9
+
+>* No room description
+That noun did not make sense in this context.
+
+>take bourbon
+Taking the entire bottle with me wouldn't have been a very classy move, but the thought crossed my mind.
+
+Turn Count: 91
+FoundClues: 9
+
+>x bourbon
+A bottle of Woodford Reserve. One of the better ways to pass the time, if I had to choose. It was still half full, if I had to be an optimist about something.
+
+Turn Count: 92
+FoundClues: 9
+
+>drink bourbon
+I poured out a measure into one of the glasses on the nightstand and drank it slowly, letting it linger on my tongue.
+
+I thought about the idea that someone was just outside the window, peering in, waiting the way a hunter sits in a blind, waiting for ducks. I thought about the three men I'd just met, and how I liked none of them. I thought about the man I'd seen in the chair with his eyes wide open, who didn't seem to mind that I was drinking his bourbon, since he didn't mind much of anything anymore.
+
+Turn Count: 93
+FoundClues: 9
+
+>x window
+I couldn't see any such thing.
+
+>l
+Bedroom
+It was getting late, almost noon. I had a million things to think about, but figured I should get a few hours of sleep while I still could.
+
+I could see Val and a bottle of bourbon here.
+
+Turn Count: 94
+FoundClues: 9
+
+>x val
+Val was lying on top of the covers, facing the window. Her breathing was steady and slow, but I couldn't tell if she was asleep. She wore just a satin pajama shirt. If the cold bothered her, she didn't show it.
+
+Turn Count: 95
+FoundClues: 9
+
+>talk to val
+Turn Count: 96
+FoundClues: 9
+
+I could have asked ask how long she'd known Bowden or ask why he needed the money.
+
+>ask how long she'd known bowden
+"How well did you know Alan?"
+
+"I suppose we've spent a lot of time together over the years at little soirées like this one. But not well, no.
+
+"Well enough that he'd ask you for help with a blackmailer?"
+
+I listened hard, straining to hear anything against the silence. For what, I wasn't sure. Certainly not a gasp of surprise. I couldn't even hear her blinking."
+
+Turn Count: 97
+FoundClues: 9
+
+I could have asked ask why he needed the money.
+
+>ask why he needed the money
+
+
+
+
+Turn Count: 98
+FoundClues: 9
+
+I could have asked ask how he found out about Alan's secret.
+
+>* Topic needs implementing
+That noun did not make sense in this context.
+
+>ask how he found out about Alan's secret
+
+
+
+
+Turn Count: 99
+FoundClues: 9
+
+>* Topic needs implementing
+That noun did not make sense in this context.
+
+>drink bourbon
+I went back to the bottle and poured again, more generous this time. I listened to the sound of something between snow and frozen rain pattering against the window. I listened to Val's steady breathing. She was either asleep, or thinking just as hard as I was. I stared at her back a long time, trying to decide if I wanted to talk to her.
+
+Turn Count: 100
+FoundClues: 9
+
+>talk to val
+I was already talking to Val.
+
+Turn Count: 101
+FoundClues: 9
+
+>ask about val
+That doesn't seem to be a topic of conversation at the moment.
+
+>l
+Bedroom
+It was getting late, almost noon. I had a million things to think about, but figured I should get a few hours of sleep while I still could.
+
+I could see Val and a bottle of bourbon here.
+
+Turn Count: 102
+FoundClues: 9
+
+>drink
+What do you want to drink?
+
+>bourbon
+I changed into my pajamas and got into bed under the covers. I kept a reasonable distance between the two of us on the bed, though she didn't seem the type to get prudish about that kind of thing. I lay there thinking for a long time, trying to put together everything I'd heard into a picture that made sense. After five minutes that took two hours, I fell asleep, and dreamt of nothing.
+
+
+(press any key)
+I awoke to an empty room, bathed in the silver moonlight. She hadn't made a sound when she'd left. It took a second for me to realize that the shutters had gone back up. Through the window, I could see that lights were starting to come on in the distant houses dotted across the mountainside.
+
+I wasn't sure how long I'd slept, but it must have been about eight o'clock in the evening.
+
+Turn Count: 103
+FoundClues: 9
+
+>e
+
+North Hallway
+The northmost section of the upstairs hallway led to a couple of guest bedrooms.
+
+I could see Adrian here.
+
+Turn Count: 104
+FoundClues: 9
+
+>talk to adrian
+He stood well over six feet with a build that belonged on the inside of a steel cage. The designer charcoal suit he wore hadn't quite been successfully altered to his wide frame. A deep purple tie sat at his neck in a fat knot Donald Trump would have approved of. The dark hair atop his head was neatly parted at the side, and slicked back almost flat to his head. His eyes were gray, and there was something baleful deep in them, peering out. His size and heavy brow made him look like a gorilla in Prada.
+
+He introduced himself as "Adrian Castillo, Deputy to the Warden of the Peace, appointed to serve at the pleasure of the Honorable Countess of Westchester." I didn't know what most of that meant, but I knew his suit was a little too nice for a cop entirely on the level. I wondered if that all fit on his business card.
+
+Turn Count: 105
+FoundClues: 9
+
+I could have asked ask about questioning me, ask how he knew my name or ask why he needed the money.
+
+>ask about questioning me
+"So am I a suspect here?"
+
+"Nah. I'm just going through the formalities, just in case. I just wanted to talk to everyone who had a personal connection with the guy. That leaves you off the hook. Not to mention the the alibi you left, according to your girlfriend.
+"Oh?"
+"Yeah, that twisted junk heap at the bottom of a cliff. They'll have a heck of a time towing that up. Anyway, if you were wandering out there a couple of hours ago, then there's no way you could get here at the time of death. But hey, if the lady turns out to have done it, maybe I can pin you with accessory to murder if you smile at me real nice."
+
+Turn Count: 106
+FoundClues: 9
+
+I could have asked ask about questioning val, ask how he knew my name or ask why he needed the money.
+
+>ask about questioning val
+"I'm going to need you to come with me downstairs. I've got to ask Ms. Sinclair a few questions, and she asked you be present." That confused me a bit. I wasn't entirely certain what Val and I were to each other, but I sure as hell wasn't her lawyer.
+
+
+
+Turn Count: 107
+FoundClues: 9
+
+I could have asked ask about anyone outside.
+
+>ask about anyone outside
+"See anyone on your way in? A couple of guests seemed pretty spooked about the idea that the killer would come back, something about Lake Geneva." I kept my voice smooth and casual, like I wasn't at all nervous about the idea of being game in somebody else's pheasant hunt.
+
+"Nope, all quiet out there." Something in my face must've shown my silent vote of no confidence, since he tried to follow it up. "Listen, punk. I've been in this business twice as long as you've been alive. If I don't see nobody out there, there ain't nobody." I didn't tell him that that meant exactly jack and shit in my book. One look at him told me he didn't have an eye for detail. There's people on every force who can't think their way out of a wet paper bag, and I'd have bet my weight in cake donuts that Deputy Castillo here was one of them.
+
+Turn Count: 108
+FoundClues: 9
+
+I could have asked ask how he knew my name or ask why he needed the money.
+
+>ask why he needed the money
+
+
+
+
+Turn Count: 109
+FoundClues: 9
+
+I could have asked ask how he knew my name or ask how he found out about Alan's secret.
+
+>* Topic needs implementing
+That noun did not make sense in this context.
+
+>ask how he knew my name
+"Did Val tell you about me?"
+
+"Nah, you I remember. I couldn't tell you much about these old timers, but your paperwork went through the office just the other day. We like to keep tabs on the newcomers. Your file said you used to work in homicide, huh." It wasn't a question.
+
+Turn Count: 110
+FoundClues: 9
+
+I could have asked ask about my file or ask how he found out about Alan's secret.
+
+>ask how he found out about Alan's secret
+
+
+
+
+Turn Count: 111
+FoundClues: 9
+
+I could have asked ask about my file.
+
+>ask how he knew my name
+"Did Val tell you about me?"
+
+"Nah, you I remember. I couldn't tell you much about these old timers, but your paperwork went through the office just the other day. We like to keep tabs on the newcomers. Your file said you used to work in homicide, huh." It wasn't a question.
+
+Turn Count: 112
+FoundClues: 9
+
+I could have asked ask about my file.
+
+>ask how he found out about Alan's secret
+That doesn't seem to be a topic of conversation at the moment.
+
+>* Topic about alan's secret needs implementing
+That doesn't seem to be a topic of conversation at the moment.
+
+>ask about my file
+"I've only been one of you people for 48 hours, and I already have a file?"
+
+"You've had a file for three weeks now." I didn't like that. I didn't like it so much I could hardly think of a cute comeback to make. He seemed to enjoy lording over me the fact that he knew something that I didn't. It was probably a feeling he didn't get to enjoy very often.
+
+Turn Count: 113
+FoundClues: 9
+
+>d
+I couldn't go that way.
+
+Turn Count: 114
+FoundClues: 9
+
+>l
+North Hallway
+The northmost section of the upstairs hallway led to a couple of guest bedrooms.
+
+I could see Adrian here.
+
+Turn Count: 115
+FoundClues: 9
+
+>e
+I couldn't go that way.
+
+Turn Count: 116
+FoundClues: 9
+
+>s
+I followed the enormous man downstairs and into the library. Val was already sitting in one of the chairs at the desk, apparently at ease, like she had nothing else she'd rather be doing.
+
+Library
+Of all the rooms I'd seen in the house, this one looked the most lived in. It had the musty smell of old books mixed with stale coffee coming from several cups on the desk.
+
+I could see a computer here.
+
+Turn Count: 117
+FoundClues: 9
+
+>history money
+Searching webhistory for money...
+
+Turn Count: 118
+FoundClues: 9
+
+>e
+I couldn't go that way.
+
+Turn Count: 119
+FoundClues: 9
+
+>n
+I couldn't go that way.
+
+Turn Count: 120
+FoundClues: 9
+
+>s
+
+Turn Count: 121
+FoundClues: 9
+
+>l
+Library
+Of all the rooms I'd seen in the house, this one looked the most lived in. It had the musty smell of old books mixed with stale coffee coming from several cups on the desk.
+
+I could see Val, Adrian and a computer here.
+
+Turn Count: 122
+FoundClues: 9
+
+>n
+I couldn't go that way.
+
+Turn Count: 123
+FoundClues: 9
+
+>s
+
+Turn Count: 124
+FoundClues: 9
+
+>e
+I couldn't go that way.
+
+Turn Count: 125
+FoundClues: 9
+
+>w
+I couldn't go that way.
+
+Turn Count: 126
+FoundClues: 9
+
+>e
+I couldn't go that way.
+
+Turn Count: 127
+FoundClues: 9
+
+>s
+
+Turn Count: 128
+FoundClues: 9
+
+>l
+Library
+Of all the rooms I'd seen in the house, this one looked the most lived in. It had the musty smell of old books mixed with stale coffee coming from several cups on the desk.
+
+I could see Val, Adrian and a computer here.
+
+Turn Count: 129
+FoundClues: 9
+
+>verbose
+A Long Drink is now in its "verbose" mode, which always gives long descriptions of locations (even if you've been there before).
+
+>* It'd be nice if you had exit listings in all these rooms
+That doesn't seem to be a topic of conversation at the moment.
+
+>talk to val
+Turn Count: 130
+FoundClues: 9
+
+He could have ask about herself, ask about her family or ask why he needed the money.
+
+>ask about herself
+Castillo took an official sort of bearing, or the nearest he could manage to one. "Please state your name for the record."
+
+"Valentine Nicole Sinclair."
+
+"Any aliases or other names you've used before?"
+
+"Nicky Deverell, but not recently."
+
+Turn Count: 131
+FoundClues: 9
+
+He could have ask about her family or ask why he needed the money.
+
+>ask about family
+"Any family?"
+"None living."
+"Married?"
+"Widowed."
+
+
+
+Turn Count: 132
+FoundClues: 9
+
+He could have ask about her husband or ask why he needed the money.
+
+>ask about husband
+"And what was your late husband's name?"
+
+"Maxwell. But seeing as he's been dead fifty years, how about we leave him out of this?"
+
+Castillo didn't pursue it any further after hearing her tone. He probably could have, but didn't want to push things into open antagonism without a reason. I wouldn't have, in his place."
+
+Turn Count: 133
+FoundClues: 9
+
+Val put her cigarette out and got up. Her expression was stony, the businesslike demeanor she'd started with was gone now. Castillo got up, too, but stopped himself from saying anything. He didn't strike me as the sharpest tool in the shed, but he'd clearly learned where the line was. Staying in the good graces of his employer meant staying within the level of harassment his job warranted, and not ruffling the feathers of anyone too important in the Circle.
+
+"You'll let me know if there's anything else I can do to help, Deputy?" she said icily. She hadn't bothered looking at him as she said it. She gave me a look full of meaning and left the room in the direction of the foyer, closing the door behind her. Castillo suddenly seemed very small standing behind the desk. He must have felt it, too, because he got up and left without another word to me.
+
+I could have ask why he needed the money.
+
+>ask why he needed the money
+
+
+Turn Count: 134
+FoundClues: 9
+
+I could have ask why he needed the money.
+
+>* This seems like a bug maybe
+That doesn't seem to be a topic of conversation at the moment.
+
+>s
+
+Downstairs Hallway
+A long narrow corridor connected the entrance of the house with the bedrooms. Lights were recessed into the ceiling overhead, shining down onto the polished wood floor. Maybe some people liked this sterile modern crap, but it made the place look like an art gallery, as far as I was concerned. A couple of paintings even adorned the walls, so maybe that was the idea, and I was just uncultured.
+
+I could see Adrian here.
+
+Turn Count: 135
+FoundClues: 9
+
+I could have ask why he needed the money.
+
+>w
+
+Greatroom
+The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall, dark wooden rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
+
+A large set of sofas were arranged around a huge rug. A dark wine stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. 
+
+A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade.
+
+I could see a glass shard and a broken wineglass here.
+
+Turn Count: 136
+FoundClues: 9
+
+I could have ask why he needed the money.
+
+>* Evidently I can ask why he needed the money even when no one is present.
+That doesn't seem to be a topic of conversation at the moment.
+
+>w
+
+Foyer
+I walked into the spacious foyer, trying not to walk into the large lacquered wood screens in front of the door. The shiny black surfaces were decorated with an intricate picture in gold paint, depicting a Chinese court scene. It seemed at odds with the exterior of the house, but matched the rest of the decor; the interior was a mixture of Old World furniture and Asian influences. 
+
+
+I could also see Val here.
+
+Turn Count: 137
+FoundClues: 9
+
+I could have ask why he needed the money.
+
+>talk to val
+Turn Count: 138
+FoundClues: 9
+
+I could have ask about the deputy, ask about my file, ask what she wanted to see me about, ask about the bourbon or ask why he needed the money.
+
+>ask about file
+I put on my tough detective voice to try and take some of the surprise out of it. I had an image to maintain. "I heard about my file from Castillo. You've been stalking me for weeks now?"
+"I wouldn't put it like that."
+"How would you put it then?"
+"I got the go ahead for a Patron application I put in a while back. That sort of opportunity doesn't come every day, so I scouted for a recruit. And then I made you an offer."
+
+
+
+Turn Count: 139
+FoundClues: 9
+
+I could have ask about the deputy, ask about our first meeting, ask what she wanted to see me about, ask about the bourbon or ask why he needed the money.
+
+>ask about deputy
+"That guy was quite a character," I said, trying not to sound too judgemental in case Val liked him. It seemed unlikely.
+"Adrian? What did you make of him, was he up to your standards for a lawman?"
+"Ever hear the schoolyard joke about what pennies are made of?"
+She laughed. It wasn't a high, put-on laugh, but something rich and throaty, like a note from a cello.
+
+
+
+Turn Count: 140
+FoundClues: 9
+
+I could have ask about our first meeting, ask what she wanted to see me about, ask about the bourbon or ask why he needed the money.
+
+>ask about first meeting
+"So the first time we met, that wasn't a coincidence, was it?"
+"Would you have chosen differently if you'd known?"
+"No."
+"Then what the hell are you sore about?" She was starting to sound impatient again.
+
+
+
+Turn Count: 141
+FoundClues: 9
+
+I could have ask what she wanted to see me about, ask about the bourbon or ask why he needed the money.
+
+>ask about what she wanted to see me about
+She came over and leaned against the wall next to me. She bent over slightly, as though she were stretching, or just killing time on a lazy Sunday afternoon.
+"Did you tell anyone you were coming here? Your boss, or your partner, maybe?"
+I shook my head. "Why, what's this all about?"
+"What if I told you that a week ago, Alan contacted me, saying he was in some trouble?"
+"You mean blackmail." I didn't make a question out of it. She looked up at me, then around to make sure no one else was in earshot.
+
+
+
+
+Turn Count: 142
+FoundClues: 9
+
+I could have ask what she was trying to say, ask about the bourbon or ask why he needed the money.
+
+>ask what she was trying to say
+"What are you trying to say, exactly?"
+"If someone was squeezing Alan for money, it's possible that the blackmailer didn't want a detective in the house."
+"Are you saying that you think whoever killed Alan is coming after me next?"
+"I'm saying I think they already tried. You still think your car going off that cliff was an accident? If someone as clueless as Castillo has his hands on your file, how many other people knew about you, and that you were coming here? It'd be easy, especially if it's someone who could dig up serious dirt on Alan in the first place.
+I didn't really want to believe it. Though I was clearly a small fish in this pond, I'd taken some comfort in what I thought was my anonymity as a newcomer. Being an unknown quantity can be an advantage in a lot of situations. I'd chalked up that crash to bad driving on a shitty road, but Val and I seemed to have at least one thing in common in that we didn't really believe in coincidence."
+
+
+
+Turn Count: 143
+FoundClues: 9
+
+I could have ask about the bourbon or ask why he needed the money.
+
+>ask about bourbon
+"Your friend Alan seems to have kept this place well-stocked with liquor," I said.
+"Like I mentioned, he entertained a lot of guests. You seem to have a taste for bourbon yourself."
+"Sure," I said. "I know this great speakeasy I know on the East Side, off Houston Street. Best selection of bourbon you'll ever see."
+"A what?"
+"A speakeasy," I repeated. She rolled her eyes.
+
+
+
+Turn Count: 144
+FoundClues: 9
+
+I could have ask why he needed the money.
+
+>w
+(first opening the front door)
+
+Front Porch
+Steps led up from the gravel driveway to the porch. Narrow unpainted wood planks extended the length of the house, along with windows that looked into rooms at the front of the house. Through them, I saw blinds, and a glint of something metallic, like a shutter.
+
+The front door stood open.
+
+Turn Count: 145
+FoundClues: 9
+
+>w
+
+Driveway
+We stood at the end of a long gravel drive, staring up at a large house with a dark red wood exterior. Steps to the east led to a porch that spanned the facade of the place, wrapping around to a deck in the back that presumably had a great view of the lake and the countryside. It was more ski lodge than cabin, and looked like it could comfortably shelter an entire biathlon team if it had to.
+
+Val's Mercedes was parked to one side of the driveway.
+
+Turn Count: 146
+FoundClues: 9
+
+>get in
+We got in the car and Val pulled out of the driveway. A short while later, we were back at the mountain road where I'd broken through the guardrail.
+(press any key)
+Sharp Bend
+I walked on the snowy road about a hundred feet from the hairpin turn where my car had gone over; I could see the tire tracks and broken guardrail to the east.
+
+A Mercedes is quietly idling here, V8 purring.
+
+I could also see Val here.
+
+Turn Count: 147
+FoundClues: 9
+
+>e
+
+Bottom of Cliff
+I stood on a ridge densely packed with trees some ways below the highway. My wrecked car sat a few feet away. The ridge extended as far as I could see to the north, going nowhere in particular. To the west I saw the steep incline the car had rolled down, and the path it'd cut through the snow and brush.
+
+My Toyota Corolla in a fetching "Regatta Blue" that must have looked appealing under bright dealership lights when it was brand new back in 1990. I wouldn't know. It now sat on its side like a beached whale, exactly where I'd left it. The key was still in the ignition.
+
+Turn Count: 148
+FoundClues: 9
+
+>turn on car
+I leaned into the cabin through the hole left by the windshield and turned the key. The headlights flicked on, and the dashboard lit up. I heard the radio bleat into the empty forest, muffled by the dull roar of air pouring out of the A/C vents. The engine turned over but didn't start. The inertia switch had cut off fuel to the engine when the car rolled down the hill. I didn't really mind, I hadn't planned on driving it out of here.
+
+Turn Count: 149
+FoundClues: 9
+
+>x dash
+I couldn't see any such thing.
+
+>x dashboard
+I scanned the panel, and saw a red indicator I'd never seen lit before. The brake light.
+
+Turn Count: 150
+FoundClues: 9
+
+>x light
+I couldn't see any such thing.
+
+>x brake light
+I only understood you as far as wanting to examine the brake line.
+
+>x brakes
+I put a hand behind the wheel and the suspension arm and felt along the metal tube of the brake line, nearly slicing my finger on a thin slit. It wasn't a bit of rust or metal fatigue, the cut was too clean. It might have been made by a dremel or a wire cutter. Cutting brake lines straight through would stop the front brakes from working entirely. But a leak like this could take hours to affect performance. Whatever my state of mind or driving had been on that turn, this wasn't an accident.
+
+The fact that I was able to see all of this without a flashlight barely registered.
+
+Turn Count: 151
+FoundClues: 10
+
+>w
+
+Sharp Bend
+I walked on the snowy road about a hundred feet from the hairpin turn where my car had gone over; I could see the tire tracks and broken guardrail to the east.
+
+A Mercedes is quietly idling here, V8 purring.
+
+I could also see Val here.
+
+Turn Count: 152
+FoundClues: 10
+
+>get in
+I learned what I needed to, there wasn't much point in going back to the crash site now.
+I got back in the Mercedes, and Val drove us to the house. Neither of us spoke on the way back, we had too much on our minds, I guess.
+(press any key)
+Driveway
+We stood at the end of a long gravel drive, staring up at a large house with a dark red wood exterior. Steps to the east led to a porch that spanned the facade of the place, wrapping around to a deck in the back that presumably had a great view of the lake and the countryside. It was more ski lodge than cabin, and looked like it could comfortably shelter an entire biathlon team if it had to.
+
+Val's Mercedes was parked to one side of the driveway.
+
+I could also see Val here.
+
+Turn Count: 153
+FoundClues: 10
+
+>e
+
+Front Porch
+Steps led up from the gravel driveway to the porch. Narrow unpainted wood planks extended the length of the house, along with windows that looked into rooms at the front of the house. Through them, I saw blinds, and a glint of something metallic, like a shutter.
+
+The front door stood open.
+
+Turn Count: 154
+FoundClues: 10
+
+>e
+I walked into the house, taking care to close the door behind me.
+
+Foyer
+I walked into the spacious foyer, trying not to walk into the large lacquered wood screens in front of the door. The shiny black surfaces were decorated with an intricate picture in gold paint, depicting a Chinese court scene. It seemed at odds with the exterior of the house, but matched the rest of the decor; the interior was a mixture of Old World furniture and Asian influences. 
+
+
+Foyer
+I walked into the spacious foyer, trying not to walk into the large lacquered wood screens in front of the door. The shiny black surfaces were decorated with an intricate picture in gold paint, depicting a Chinese court scene. It seemed at odds with the exterior of the house, but matched the rest of the decor; the interior was a mixture of Old World furniture and Asian influences. 
+
+
+I hadn't realized it until I saw an edge of light blue on the horizon, but we'd cut things pretty close again. A quiet whirring of the closing shutters and a click of the lock was the only indication that the sun was about to rise. The foyer went artificially dark again, except for the light of the brass chandelier.
+
+Turn Count: 155
+FoundClues: 10
+
+>e
+
+Greatroom
+The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall, dark wooden rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
+
+A large set of sofas were arranged around a huge rug. A dark wine stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. 
+
+A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade.
+
+I could see a glass shard and a broken wineglass here.
+
+Turn Count: 156
+FoundClues: 10
+
+>e
+
+Downstairs Hallway
+A long narrow corridor connected the entrance of the house with the bedrooms. Lights were recessed into the ceiling overhead, shining down onto the polished wood floor. Maybe some people liked this sterile modern crap, but it made the place look like an art gallery, as far as I was concerned. A couple of paintings even adorned the walls, so maybe that was the idea, and I was just uncultured.
+
+Turn Count: 157
+FoundClues: 10
+
+Through the stillness of the house, I heard yelling upstairs. It started as a panicked cry of shock and surprise, but quickly turned to screams of agony. It went on, loud and incoherent, muffled by the wooden walls of the house, getting more raspy and strangled, like a pillow smothering a face. Then, just as suddenly, it stopped. I felt a lump in my stomach like a lead weight, and reached for where my shoulder holster used to be for a gun that wasn't there.
+(press any key)
+>u
+
+Upstairs Hallway
+I stood in a normal-sized hallway that seemed cramped compared to the dimensions of the rest of the house. The hardwood floor was just as polished as the one downstairs. To the east were a couple of the smaller rooms clearly intended for overnight guests. To the north was another bedroom, and a set of double doors that led to the master suite.
+
+Turn Count: 158
+FoundClues: 10
+
+>s
+I couldn't go that way.
+
+Turn Count: 159
+FoundClues: 10
+
+>d
+
+Downstairs Hallway
+A long narrow corridor connected the entrance of the house with the bedrooms. Lights were recessed into the ceiling overhead, shining down onto the polished wood floor. Maybe some people liked this sterile modern crap, but it made the place look like an art gallery, as far as I was concerned. A couple of paintings even adorned the walls, so maybe that was the idea, and I was just uncultured.
+
+Turn Count: 160
+FoundClues: 10
+
+>d
+
+Wine Cellar
+ A wine rack ran the perimeter of the room, holding enough bottles to supply a French restaurant. A few seemed to be missing here and there. A wooden chair sat in the corner.
+
+In the corner was a fuse box, partially obscured by shelves.
+
+I was so focused on trying to read the labels on the fuse box that I didn't notice the footsteps behind me. Maybe I wouldn't have anyway. I heard a dull crack and realized it was the sound of a heavy bottle hitting the back of my head. It was the last thing I remembered thinking about before the rush of unconsciousness. I was out before I hit the floor.
+(press any key)
+Wine Cellar
+I woke up with a headache like I'd kissed the Long Island Express goodnight. When I tried to put my hands up to feel the back of my head, they jerked against ropes tying them to the chair, along with my legs. He'd gotten the drop on me, that was for sure.
+
+Well, I was in pretty deep now. I looked around the dark room. No one to talk to but myself for the moment.
+
+In the corner was a fuse box, partially obscured by shelves.
+
+I could also see myself here.
+
+Turn Count: 161
+FoundClues: 10
+
+I could have have ask why there were two wineglasses, ask why Alan was stabbed using a letter opener, ask why there was a stain on the sofa, ask why someone cut my brakes, ask why the lock had scratches on it or ask why he needed the money.
+
+>ask wineglasses
+There were two wineglassesand an expensive bottle of wine that once sat on that table in the reading nook. Alan had known whoever it was well enough, or wanted to impress them enough to warrant opening a bottle of Bordeaux.
+
+
+
+Turn Count: 162
+FoundClues: 10
+
+I could have have ask why Alan was stabbed using a letter opener, ask why there was a stain on the sofa, ask why someone cut my brakes, ask why the lock had scratches on it or ask why he needed the money.
+
+>* typo in topic
+That noun did not make sense in this context.
+
+>ask letter
+Why had that particular murder weapon been used? He hadn't been stabbed with a knife, he'd been stabbed by his own letter opener, the initials proved that. Whoever had stabbed him hadn't planned to. It seemed pretty farfetched that someone would drive all the way here with the express purpose of killing a man, and trust finding a letter opener to do it with.
+
+
+
+Turn Count: 163
+FoundClues: 10
+
+I could have have ask why there was a stain on the sofa, ask why someone cut my brakes, ask why the lock had scratches on it or ask why he needed the money.
+
+>x sofa
+I couldn't see any such thing.
+
+>ask sofa
+Alan and his visitor were apparently having civilized conversation and drinking their wine for some time, judging by the state of the bottle. Then suddenly, a struggle had broken out. One wineglass got knocked over onto the floor, another went over the railing into the living room and under the sofa. And of course, Alan's assailant won the struggle. 
+
+
+
+Turn Count: 164
+FoundClues: 10
+
+I could have have ask why someone cut my brakes, ask why the lock had scratches on it or ask why he needed the money.
+
+>ask brakes
+That part got under my skin more than the rest of it. It almost seemed entirely unrelated and oddly personal. Someone hadn't wanted me here. But to all of these people, I was nobody until yesterday. Even then, I might've just been some guest Val brought along. I could think of another reason it might be advantageous to not have a cop at the house: they were the one blackmailing Alan.
+
+
+
+Turn Count: 165
+FoundClues: 10
+
+I could have have ask why the lock had scratches on it or ask why he needed the money.
+
+>ask getting
+That doesn't seem to be a topic of conversation at the moment.
+
+>ask getting away
+That doesn't seem to be a topic of conversation at the moment.
+
+>ask lock
+The scratches on the lock and damage to the front door frame were a nice touch. Anyone responding to the house would think the killer had broken in, that it was someone Alan hadn't known. Alan hadn't been alone, and it was someone he'd known for a long time. On top of all that, it didn't add up that someone would go through all that trouble to break in and kill Alan, and end up doing it with a letter opener that happened to be lying around.
+
+
+
+Turn Count: 166
+FoundClues: 10
+
+Wine Cellar
+Scott had me dead to rights. The overhead lights in the cellar made his brow and nose cast long shadows down his face. Even so, I could tell his eyes burned with hate and bitterness. It wasn't all for me. He'd formed himself from a shy nerd into a the confidence man who gave TED talks and blithely took the venture capital thrown at him. But every day of it had been a tremendous effort. I saw it now that years of simmering hatred had stripped it away, down to the bone.
+
+None of that mattered now. I was in his way, and whatever plan he'd come here with had unravelled spectacularly. If I didn't talk fast, I wasn't making it out of this basement. I wasn't sure if anyone was still home, or still alive. Maybe someone would hear if I yelled. I didn't want to try it unless I knew for sure that help would come; that's really only a trick that works once.
+
+In the corner was a fuse box, partially obscured by shelves.
+
+I could also see Scott here.
+
+I could have ask how he planned on getting away, ask where he got the gun or ask why he needed the money.
+
+>ask getting away
+You seriously plan to just kill us and get out of here?
+
+Total number of quips left: 3
+It'll be easy. A house full of corpses turned to ash, I can just make sure it looks like mine is among them. I disappear, and start over with a new life. It's easy enough to pull off, we all have to do it every fifty years or so. No one will come looking for me, we'll just be tragic victims of some rogue hunter. I take care of you and the lady, open all the shutters, and that's that. Come sundown, that makes a clean getaway.
+
+Turn Count: 167
+FoundClues: 10
+
+I could have ask where he got the gun or ask why he needed the money.
+
+>ask gun
+I licked my lips, trying not to look as panicky as I felt. "Where'd you get the gun? Alan's desk?"
+
+Total number of quips left: 2
+
+
+Turn Count: 168
+FoundClues: 10
+
+I could have ask why he needed the money or ask why he killed Alan.
+
+>ask killed
+
+
+Total number of quips left: 2
+
+
+Turn Count: 169
+FoundClues: 10
+
+Val was almost within reaching distance of Scott now, and he somehow sensed it, turning his head around. His eyes went wild, and for a moment I felt like I could actually see his nerves fray and snap. His upper lip curled back over bared teeth so far it looked inhuman. He swung the revolver to point it straight at Val's serene face, and pulled the trigger. Her head was nowhere near the gun when it went off. She'd ducked to the side faster than I'd seen anyone move before, like Mayweather slipping a punch.
+
+When Scott tried to aim the gun at her this time, screaming an unearthly scream, her hands were already up in a blur. She let him get another shot off, which I thought was pretty charitable of her, except there didn't seem to be anything behind her eyes but cold fury. It seemed for a second like she'd disarmed him as the gun dropped to the floor. It took a long time to fall. Then I noticed in the dim light of the wine cellar a glint of silver attached to his neck, a small knife labeled with the initials "AHB." His now empty hands went to his throat, and he crumpled over. We listened to quiet gasping for a minute as Val came over to untie me from the chair. By the time she'd finished, it had stopped.
+(press any key)
+I could have ask why he needed the money.
+
+>ask why he needed the money
+
+
+Turn Count: 170
+FoundClues: 10
+
+I could have ask why he needed the money.
+
+>* haha
+That noun did not make sense in this context.
+
+>u
+
+Downstairs Hallway
+A long narrow corridor connected the entrance of the house with the bedrooms. Lights were recessed into the ceiling overhead, shining down onto the polished wood floor. Maybe some people liked this sterile modern crap, but it made the place look like an art gallery, as far as I was concerned. A couple of paintings even adorned the walls, so maybe that was the idea, and I was just uncultured.
+
+Turn Count: 171
+FoundClues: 10
+
+I could have ask why he needed the money.
+
+>w
+
+Greatroom
+The greatroom was clearly where the occupants of the house were meant to spend the majority of their time. Tall, dark wooden rafters criscrossed the high ceiling, the exposed beams clearly meant to evoke a Swiss chalet.
+
+A large set of sofas were arranged around a huge rug. A dark wine stain was conspicuous on the armrest, standing out on the white fabric. Everything in the room faced a gray slate fireplace. 
+
+A small spiral staircase in the corner led up to a reading nook, which was open to the greatroom, separated by a wooden balustrade.
+
+I could see a glass shard and a broken wineglass here.
+
+Turn Count: 172
+FoundClues: 10
+
+I could have ask why he needed the money.
+
+>w
+
+Foyer
+I walked into the spacious foyer, trying not to walk into the large lacquered wood screens in front of the door. The shiny black surfaces were decorated with an intricate picture in gold paint, depicting a Chinese court scene. It seemed at odds with the exterior of the house, but matched the rest of the decor; the interior was a mixture of Old World furniture and Asian influences. 
+
+
+Turn Count: 173
+FoundClues: 10
+
+I could have ask why he needed the money.
+
+>z
+The shutters clicked open, the most musical sound I'd ever heard in my life.
+
+Turn Count: 174
+FoundClues: 10
+
+I could have ask why he needed the money.
+
+>w
+(first opening the front door)
+
+Front Porch
+Steps led up from the gravel driveway to the porch. Narrow unpainted wood planks extended the length of the house, along with windows that looked into rooms at the front of the house. Through them, I saw blinds, and a glint of something metallic, like a shutter.
+
+The front door stood open.
+
+Turn Count: 175
+FoundClues: 10
+
+I could have ask why he needed the money.
+
+>w
+
+Driveway
+We stood at the end of a long gravel drive, staring up at a large house with a dark red wood exterior. Steps to the east led to a porch that spanned the facade of the place, wrapping around to a deck in the back that presumably had a great view of the lake and the countryside. It was more ski lodge than cabin, and looked like it could comfortably shelter an entire biathlon team if it had to.
+
+Val's Mercedes was parked to one side of the driveway.
+
+I could also see Val here.
+
+Turn Count: 176
+FoundClues: 10
+
+I could have ask why he needed the money.
+
+>get in
+I walked to the Mercedes and she and I looked at each other over the roof. I didn't realize I was on the driver's side until she tossed me the keys.
+
+Your friend Alan seemed like quite a romantic. Thing like that gets a guy in trouble."
+"We all have things we'd rather not let go of. Even you."
+"Like that?" I pointed to the gold ring on her necklace, which had come into view, resting on the front flap of her coat. She gave me a hard look, and for a second I'd thought I'd crossed the line. Then, a smile broke out on her face.
+"C'mon, drive. I'll tell you the whole story on the way. 
+"So where we headed?"
+"What was the last time you were in Vegas?" We got in and I started the car.
+
+We started off down the road and we began to talk, really talk, for the first time since I'd met her. We started off down the open road, in the shadow of the mountain, high above the valley and its waves and ribbons of untouched snow like an unmade bed. 
+
+I was already getting thirsty, and no quantity of expensive bourbon was going to help.
+
+
+
+    *** The End ***
+
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+> 
